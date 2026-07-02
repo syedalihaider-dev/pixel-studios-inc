@@ -1,0 +1,107 @@
+/* Header.module.css */
+.headerContainer {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+
+.headerInner {
+  background: rgba(25, 25, 25, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 100px; /* Pill shape */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.scrolled {
+  background: rgba(15, 15, 15, 0.95);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  color: #fff;
+  font-family: var(--font-base), sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 15px;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover, .navLink.active {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Mobile Offcanvas */
+.mobileMenuBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .desktopNav {
+    display: none !important;
+  }
+  .mobileMenuBtn {
+    display: block;
+  }
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  background: #000;
+  z-index: 1001;
+  padding: 30px;
+  transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas.open {
+  right: 0;
+}
+
+.closeBtn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.offcanvasNav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
