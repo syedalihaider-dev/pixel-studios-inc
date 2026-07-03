@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './Header.module.css';
 import CTAButton from './CTAButton';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
@@ -35,7 +36,12 @@ const Header = () => {
         <div className={`${styles.headerInner} ${scrolled ? styles.scrolled : ''}`}>
           {/* Logo */}
           <Link href="/" className={styles.logo}>
-            <img src="/logo.webp" alt="Pixel Studios" style={{ height: '80px', width: 'auto' }} />
+            <Image
+              src="/logo.webp"
+              alt="Pixel Studios Logo"
+              width={500}
+              height={250}
+            />
           </Link>
 
           {/* Desktop Nav */}

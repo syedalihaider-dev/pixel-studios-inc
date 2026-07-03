@@ -9,6 +9,7 @@ import ProcessSliderSection from "../components/home/ProcessSliderSection";
 import TrustedClientsSection from "../components/home/TrustedClientsSection";
 import IndustrySection from "../components/home/IndustrySection";
 import TestimonialSection from "../components/home/TestimonialSection";
+import FaqSection from "../components/home/FaqSection";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <TrustedClientsSection />
       <IndustrySection />
       <TestimonialSection />
+      <FaqSection />
     </main>
   );
 }

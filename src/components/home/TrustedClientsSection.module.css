@@ -21,7 +21,7 @@
   line-height: 125px;
   leading-trim: both;
   text-edge: cap;
-  letter-spacing: -0.08em;
+  letter-spacing: -4px;
   text-transform: uppercase;
   background: linear-gradient(90.99deg, #19042D 38.72%, #CB09A4 116.31%);
   -webkit-background-clip: text;
@@ -37,6 +37,7 @@
   color: #19042D;
   max-width: 650px;
   font-weight: 500;
+  margin: 0;
 }
 
 .marqueeWrapper {
