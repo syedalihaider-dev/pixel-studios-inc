@@ -6,6 +6,7 @@ import WhyInvestSection from "@/components/2d-animation/WhyInvestSection";
 import AnimationPortfolio from "@/components/2d-animation/AnimationPortfolio";
 import CostSection from "@/components/2d-animation/CostSection";
 import GetQuoteSection from "@/components/2d-animation/GetQuoteSection";
+import TestimonialsSlider from "@/components/2d-animation/TestimonialsSlider";
 import TrustedClientsSection from "@/components/2d-animation/TrustedClientsSection";
 import IndustrySection from "@/components/2d-animation/IndustrySection";
 import TestimonialSection from "@/components/2d-animation/TestimonialSection";
@@ -24,6 +25,7 @@ export default function Home() {
         <CostSection />
         <GetQuoteSection />
       </div>
+      <TestimonialsSlider />
       <TrustedClientsSection />
       <IndustrySection />
       <TestimonialSection />
