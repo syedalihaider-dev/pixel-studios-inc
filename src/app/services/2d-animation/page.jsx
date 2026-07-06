@@ -9,6 +9,7 @@ import GetQuoteSection from "@/components/2d-animation/GetQuoteSection";
 import TestimonialsSlider from "@/components/2d-animation/TestimonialsSlider";
 import TrustedClientsSection from "@/components/2d-animation/TrustedClientsSection";
 import IndustrySection from "@/components/2d-animation/IndustrySection";
+import GreatVideosSection from "@/components/2d-animation/GreatVideosSection";
 import TestimonialSection from "@/components/2d-animation/TestimonialSection";
 import FaqSection from "@/components/2d-animation/FaqSection";
 
@@ -26,9 +27,10 @@ export default function Home() {
         <GetQuoteSection />
       </div>
       <TestimonialsSlider />
+      <GreatVideosSection />
+      <TestimonialSection />
       <TrustedClientsSection />
       <IndustrySection />
-      <TestimonialSection />
       <FaqSection />
     </main>
   );
