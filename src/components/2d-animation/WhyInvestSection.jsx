@@ -3,67 +3,26 @@ import React, { useState } from 'react';
 import styles from './WhyInvestSection.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import CTAButton from '../common/CTAButton';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const accordionData = [
   {
     id: 1,
-    icon: '/increase.png',
-    title: 'Landing page conversion',
-    content: 'rates increase by up to 80% when a high-quality explainer video is present on the page.',
-    hasButtons: true
+    icon: '/discovery.png', // Using existing icon name or place holder
+    title: 'Discovery and Conceptualization',
+    content: 'We establish the audience, the objective, the brand voice, the competitive context, and the distribution channels before any creative work begins.',
   },
   {
     id: 2,
-    icon: '/email-campaign.png',
-    title: 'Email campaigns with video',
-    content: 'can see a significant boost in click-through rates, leading to higher engagement and more conversions.',
-    hasButtons: false
+    icon: '/storyboarding.png', // Using existing icon name or place holder
+    title: 'Storyboarding and Design',
+    content: 'Our team crafts a comprehensive storyboard and custom style frames to visualize the narrative and ensure it aligns with your brand identity before animation starts.',
   },
   {
     id: 3,
-    icon: '/consumers.png',
-    title: '68% of consumers say',
-    content: 'they would rather watch a short video to learn about a new product or service than read text.',
-    hasButtons: false
-  },
-  {
-    id: 4,
-    icon: '/brand-security.png',
-    title: 'Brands that publish consistent',
-    content: 'video content see much stronger brand recall and overall customer loyalty.',
-    hasButtons: false
-  },
-  {
-    id: 5,
-    icon: '/linked.png',
-    title: 'Video generates more shares',
-    content: 'than text and images combined on social media platforms.',
-    hasButtons: false
-  }
-];
-
-const floatingBoxes = [
-  {
-    id: 1,
-    icon: '/icons/conversion.png',
-    value: '80%',
-    text: 'Higher\nConversions',
-    position: styles.box1
-  },
-  {
-    id: 2,
-    icon: '/icons/growth.png',
-    value: '3X',
-    text: 'More Shares\nThan Text',
-    position: styles.box2
-  },
-  {
-    id: 3,
-    icon: '/icons/envelope.png',
-    value: '68%',
-    text: 'Consumers Prefer\nVideo Email',
-    position: styles.box3
+    icon: '/animation.png', // Using existing icon name or place holder
+    title: 'Animation Development',
+    content: 'We bring the designs to life using advanced 2D animation techniques, adding motion, sound design, and effects to create a compelling final product.',
   }
 ];
 
@@ -71,61 +30,36 @@ const WhyInvestSection = () => {
   const [activeId, setActiveId] = useState(1);
 
   return (
-    <section className={styles.investSection}>
+    <section className={styles.workflowSection}>
       <div className="container">
+        <div className="row align-items-center">
 
-        {/* Header */}
-        <motion.div
-          className={styles.header}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          <h2 className={styles.mainTitle}>Brands That Invest in Professional<br />Video Animation Services Go Further</h2>
-          <p className={styles.subText}>The data on video animation in marketing is not ambiguous anymore.</p>
-        </motion.div>
-
-        <div className="row align-items-center mt-5 pt-4">
-
-          {/* Left Column - Rocket */}
-          <div className="col-lg-6 position-relative d-flex justify-content-center align-items-center mb-5 mb-lg-0">
+          {/* Left Column - Text Content */}
+          <div className="col-lg-6 mb-5 mb-lg-0">
             <motion.div
-              className={styles.rocketWrapper}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
+              className={styles.textContent}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6 }}
             >
-              <Image
-                src="/3d-growth-rocket.png.png"
-                alt="3D Growth Rocket"
-                width={529}
-                height={676}
-                className={styles.rocketImage}
-                priority
-              />
-
-              {/* Floating Boxes */}
-              {floatingBoxes.map((box, idx) => (
-                <motion.div
-                  key={box.id}
-                  className={`${styles.floatingBox} ${box.position}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 + (idx * 0.2) }}
-                  viewport={{ once: true }}
-                >
-                  <img src={box.icon} alt="Icon" className={styles.boxIcon} />
-                  <div className={styles.boxValue}>{box.value}</div>
-                  <div className={styles.boxText}>{box.text}</div>
-                </motion.div>
-              ))}
+              <h6 className={styles.subtitle}>HOW WE WORK</h6>
+              <h2 className={styles.mainTitle}>Our Proven 2D<br />Animation Workflow</h2>
+              <p className={styles.subText}>
+                Our 2D animation production follows a structured, milestone-driven process. Here is exactly what happens between the brief and the final file.
+              </p>
             </motion.div>
           </div>
 
           {/* Right Column - Accordion */}
           <div className="col-lg-6">
-            <div className={styles.accordionList}>
+            <motion.div
+              className={styles.accordionList}
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6 }}
+            >
               {accordionData.map((item) => (
                 <div
                   key={item.id}
@@ -133,12 +67,23 @@ const WhyInvestSection = () => {
                 >
                   <div
                     className={styles.accordionHeader}
-                    onClick={() => setActiveId(item.id)}
+                    onClick={() => setActiveId(item.id === activeId ? null : item.id)} // Toggle off if clicked again
                   >
-                    <div className={styles.iconCircle}>
-                      <Image src={item.icon} alt={item.title} width={108} height={108} className={styles.accIcon} />
+                    <div className={styles.headerLeft}>
+                      <div className={styles.iconCircle}>
+                        {/* Assuming the icons are in public/ folder. Update paths if needed */}
+                        <Image src={item.icon} alt={item.title} width={108} height={108} className={styles.accIcon} />
+                      </div>
+                      <h3 className={styles.accTitle}>{item.title}</h3>
                     </div>
-                    <h3 className={styles.accTitle}>{item.title}</h3>
+
+                    <div className={styles.chevronWrapper}>
+                      {activeId === item.id ? (
+                        <ChevronUp size={24} className={styles.chevron} />
+                      ) : (
+                        <ChevronDown size={24} className={styles.chevron} />
+                      )}
+                    </div>
                   </div>
 
                   <AnimatePresence>
@@ -152,19 +97,13 @@ const WhyInvestSection = () => {
                       >
                         <div className={styles.accordionBody}>
                           <p className={styles.accContent}>{item.content}</p>
-                          {item.hasButtons && (
-                            <div className={styles.accButtons}>
-                              <CTAButton type="link" href="/services" text="Learn More" className={styles.learnBtn} />
-                              <CTAButton type="link" variant="outline" href="/contact" text="Let's Talk" className={styles.talkBtn} />
-                            </div>
-                          )}
                         </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
                 </div>
               ))}
-            </div>
+            </motion.div>
           </div>
 
         </div>
