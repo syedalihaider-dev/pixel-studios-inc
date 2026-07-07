@@ -9,12 +9,12 @@ import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { name: 'HOME', path: '/' },
-  { name: 'ABOUT US', path: '/about' },
+  { name: 'ABOUT US', path: '/about-us' },
   { name: 'OUR SERVICES', path: '/services' },
   { name: 'PROCESS', path: '/process' },
   { name: 'OUR WORK', path: '/work' },
   { name: 'BLOGS', path: '/blogs' },
-  { name: 'CONTACT US', path: '/contact' },
+  { name: 'CONTACT US', path: '/contact-us' },
 ];
 
 const Header = () => {

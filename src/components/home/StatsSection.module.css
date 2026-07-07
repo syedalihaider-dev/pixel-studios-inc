@@ -1,5 +1,5 @@
 .statsSection {
-  background-color: var(--accent-color);
+  background: radial-gradient(30% 100% at 25% 50%, #6a1e77 0%, #19042d 100%);
   padding: 80px 0;
   position: relative;
   z-index: 2;

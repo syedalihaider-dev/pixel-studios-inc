@@ -10,9 +10,10 @@ import styles from './Footer.module.css';
 const Footer = () => {
   const quickLinks = [
     { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about-us' },
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Pricing', path: '/pricing' },
-    { name: 'Contact Us', path: '/contact' },
+    { name: 'Contact Us', path: '/contact-us' },
   ];
 
   const serviceLinks = [
