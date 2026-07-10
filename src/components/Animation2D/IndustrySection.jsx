@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import styles from "./IndustrySection.module.css";
-import CTAButton from "../common/CTAButton";
+import CTAButton from "../Common/CTAButton";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const industries = [
@@ -67,7 +67,7 @@ export default function IndustrySection() {
 
   return (
     <section className={styles.section}>
-      <motion.div 
+      <motion.div
         className={styles.topRow}
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export default function IndustrySection() {
         </div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className={styles.sliderWrapper}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -102,9 +102,9 @@ export default function IndustrySection() {
                 <h3 className={styles.cardTitle}>{industry.title}</h3>
                 <div className={styles.cardContent}>
                   <p className={styles.cardText}>{industry.text}</p>
-                  <CTAButton 
-                    text="Read More" 
-                    variant="filled" 
+                  <CTAButton
+                    text="Read More"
+                    variant="filled"
                     href={industry.link}
                     type="link"
                   />

@@ -7,17 +7,17 @@ import gsap from 'gsap';
 
 const slides = [
   {
-    title: "About Us",
-    description: "We are a team of passionate storytellers and visual artists dedicated to bringing ideas to life. With years of experience in the animation industry, we combine creativity, technology, and strategic thinking to deliver exceptional results for our clients."
+    title: "Professional 2D Animation Services in the USA",
+    description: "Why do most brands walk away from their 2D animation investment with a video their marketing team likes and their sales team never uses? Because most 2D animation studios are hired to produce something visually competent, and visual competence is not the same as commercial usefulness."
+  },
+  {
+    title: "Award-Winning Digital Agency For Global Brands",
+    description: "We craft digital experiences that engage audiences, elevate brands, and drive meaningful growth through innovative design and strategy."
   },
   {
     title: "Transform Your Vision Into Stunning Reality",
-    description: "We specialize in a comprehensive range of animation services tailored to meet diverse business needs. From engaging 2D explainers to immersive 3D visualizations and dynamic motion graphics, our team delivers high-quality results that elevate your brand message."
-  },
-  {
-    title: "What We Do",
-    description: "We use the latest animation technologies and creative techniques to produce visually stunning content that captures attention and communicates ideas effectively. Our process focuses on storytelling, creativity, and client collaboration to ensure every project exceeds expectations."
-  },
+    description: "Partner with industry experts to bring your ideas to life. From concept to launch, we deliver excellence at every step of the journey."
+  }
 ];
 
 const Banner = () => {

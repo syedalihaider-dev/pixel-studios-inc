@@ -1,15 +1,15 @@
-import Banner from "@/components/home/Banner";
-import StatsSection from "@/components/home/StatsSection";
-import ServicesSection from "@/components/home/ServicesSection";
-import WhyInvestSection from "@/components/home/WhyInvestSection";
-import AnimationPortfolio from "@/components/home/AnimationPortfolio";
-import WhyPartnerSection from "@/components/home/WhyPartnerSection";
-import GetQuoteSection from "@/components/home/GetQuoteSection";
-import ProcessSliderSection from "@/components/home/ProcessSliderSection";
-import TrustedClientsSection from "@/components/home/TrustedClientsSection";
-import IndustrySection from "@/components/home/IndustrySection";
-import TestimonialSection from "@/components/home/TestimonialSection";
-import FaqSection from "@/components/home/FaqSection";
+import Banner from "@/components/Home/Banner";
+import StatsSection from "@/components/Home/StatsSection";
+import ServicesSection from "@/components/Home/ServicesSection";
+import WhyInvestSection from "@/components/Home/WhyInvestSection";
+import AnimationPortfolio from "@/components/Home/AnimationPortfolio";
+import WhyPartnerSection from "@/components/Home/WhyPartnerSection";
+import GetQuoteSection from "@/components/Home/GetQuoteSection";
+import ProcessSliderSection from "@/components/Home/ProcessSliderSection";
+import TrustedClientsSection from "@/components/Home/TrustedClientsSection";
+import IndustrySection from "@/components/Home/IndustrySection";
+import TestimonialSection from "@/components/Home/TestimonialSection";
+import FaqSection from "@/components/Home/FaqSection";
 
 export default function Home() {
   return (

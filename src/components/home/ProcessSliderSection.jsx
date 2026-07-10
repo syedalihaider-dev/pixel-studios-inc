@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import styles from "./ProcessSliderSection.module.css";
-import CTAButton from "../common/CTAButton";
+import CTAButton from "../Common/CTAButton";
 
 const slides = [
   {

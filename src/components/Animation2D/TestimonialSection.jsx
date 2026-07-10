@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import styles from "./TestimonialSection.module.css";
-import CTAButton from "../common/CTAButton";
+import CTAButton from "../Common/CTAButton";
 import { ChevronLeft, ChevronRight, Play, Star, X } from "lucide-react";
 
 const testimonials = [

@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './GreatVideosSection.module.css';
-import CTAButton from '../common/CTAButton';
+import CTAButton from '../Common/CTAButton';
 
 const GreatVideosSection = () => {
   return (

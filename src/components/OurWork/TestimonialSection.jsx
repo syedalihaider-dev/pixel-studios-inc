@@ -186,7 +186,7 @@ export default function TestimonialSection() {
 
           <div className={styles.ctaRow}>
             <CTAButton text="GET STARTED" variant="filled" />
-            <CTAButton text="Let's Talk" variant="outline" />
+            <CTAButton text="Let's Talk" variant="outline" className={styles.customOutlineBtn} />
           </div>
         </motion.div>
       </div>

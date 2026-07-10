@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './ServicesSection.module.css';
-import CTAButton from '../common/CTAButton';
+import CTAButton from '../Common/CTAButton';
 
 const sliderItems = [
   {

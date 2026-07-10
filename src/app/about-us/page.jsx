@@ -1,13 +1,13 @@
-import Banner from "@/components/about/Banner";
-import MissionSection from "@/components/about/MissionSection";
-import TeamStandoutSection from "@/components/about/TeamStandoutSection";
-import HowWeWorkSection from "@/components/about/HowWeWorkSection";
-import TrustedClientsSection from "@/components/2d-animation/TrustedClientsSection";
-import IndustrySection from "@/components/2d-animation/IndustrySection";
-import TestimonialSection from "@/components/2d-animation/TestimonialSection";
-import FaqSection from "@/components/2d-animation/FaqSection";
+import Banner from "@/components/About/Banner";
+import MissionSection from "@/components/About/MissionSection";
+import TeamStandoutSection from "@/components/About/TeamStandoutSection";
+import HowWeWorkSection from "@/components/About/HowWeWorkSection";
+import TrustedClientsSection from "@/components/Animation2D/TrustedClientsSection";
+import IndustrySection from "@/components/Animation2D/IndustrySection";
+import TestimonialSection from "@/components/Animation2D/TestimonialSection";
+import FaqSection from "@/components/Animation2D/FaqSection";
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <main>
       <Banner />

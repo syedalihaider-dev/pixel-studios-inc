@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./GetQuoteSection.module.css";
 import Image from "next/image";
-import CTAButton from "../common/CTAButton";
+import CTAButton from "../Common/CTAButton";
 const features = [
   {
     id: 1,

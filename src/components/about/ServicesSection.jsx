@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import styles from './ServicesSection.module.css';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import CTAButton from '../common/CTAButton';
+import CTAButton from '../Common/CTAButton';
 import Image from 'next/image';
 
 const services = [

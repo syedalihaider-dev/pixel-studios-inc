@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Banner.module.css';
-import CTAButton from '../common/CTAButton';
-import PlayButton from '../common/PlayButton';
+import CTAButton from '../Common/CTAButton';
+import PlayButton from '../Common/PlayButton';
 import gsap from 'gsap';
 
 const slides = [

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import CTAButton from '../common/CTAButton';
+import CTAButton from '../Common/CTAButton';
 import styles from './HowWeWorkSection.module.css';
 
 const accordionData = [

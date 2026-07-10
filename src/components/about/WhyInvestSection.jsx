@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './WhyInvestSection.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import CTAButton from '../common/CTAButton';
+import CTAButton from '../Common/CTAButton';
 
 const accordionData = [
   {

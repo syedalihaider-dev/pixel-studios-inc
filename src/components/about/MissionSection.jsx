@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import CTAButton from '../common/CTAButton';
+import CTAButton from '../Common/CTAButton';
 import styles from './MissionSection.module.css';
 
 const MissionSection = () => {
