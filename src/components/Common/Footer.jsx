@@ -9,27 +9,32 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about-us' },
-    { name: 'Our Work', path: '/our-work' },
-    { name: 'Pricing', path: '/pricing' },
-    { name: 'Contact Us', path: '/contact-us' },
+    { name: 'HOME', path: '/' },
+    { name: 'ABOUT US', path: '/about-us' },
+    { name: 'OUR SERVICES', path: '/#' },
+    { name: 'CASE STUDY', path: '/#' },
+    { name: 'BLOGS', path: '/#' },
+    { name: 'PRESS RELEASE', path: '/#' },
+    { name: 'LOCATION', path: '/#' },
+    { name: 'INDUSTRIES', path: '/#' },
+    { name: 'OUR WORK', path: '/our-work' },
+    { name: 'CONTACT US', path: '/#' },
   ];
 
   const serviceLinks = [
     { name: '2D Animation', path: '/services/2d-animation' },
-    { name: 'Video Editing', path: '/services/video-editing' },
-    { name: '3D Animation', path: '/services/3d-animation' },
-    { name: 'Logo Animation', path: '/services/logo-animation' },
-    { name: 'AI-Assisted Animations', path: '/services/ai-assisted-animations' },
-    { name: 'Infographics', path: '/services/infographics' },
-    { name: 'Whiteboard Animation', path: '/services/whiteboard-animation' },
-    { name: 'Architectural Visualization', path: '/services/architectural-visualization' },
-    { name: 'Legal Animation', path: '/services/legal-animation' },
-    { name: 'Hybrid & Cel Animation', path: '/services/hybrid-cel-animation' },
-    { name: 'Motion Graphics', path: '/services/motion-graphics' },
-    { name: 'CGI & VFX', path: '/services/cgi-vfx' },
-    { name: '2D & 3D Explainer Videos', path: '/services/explainer-videos' },
+    { name: 'Video Editing', path: '/#' },
+    { name: '3D Animation', path: '/#' },
+    { name: 'Logo Animation', path: '/#' },
+    { name: 'AI-Assisted Animations', path: '/#' },
+    { name: 'Infographics', path: '/#' },
+    { name: 'Whiteboard Animation', path: '/#' },
+    { name: 'Architectural Visualization', path: '/#' },
+    { name: 'Legal Animation', path: '/#' },
+    { name: 'Hybrid & Cel Animation', path: '/#' },
+    { name: 'Motion Graphics', path: '/#' },
+    { name: 'CGI & VFX', path: '/#' },
+    { name: '2D & 3D Explainer Videos', path: '/#' },
   ];
 
   return (

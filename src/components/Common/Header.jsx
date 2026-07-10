@@ -10,11 +10,14 @@ import { usePathname } from 'next/navigation';
 const navLinks = [
   { name: 'HOME', path: '/' },
   { name: 'ABOUT US', path: '/about-us' },
-  { name: 'OUR SERVICES', path: '/services' },
-  { name: 'PROCESS', path: '/process' },
+  { name: 'OUR SERVICES', path: '/#' },
+  { name: 'CASE STUDY', path: '/#' },
+  { name: 'BLOGS', path: '/#' },
+  { name: 'PRESS RELEASE', path: '/#' },
+  { name: 'LOCATION', path: '/#' },
+  { name: 'INDUSTRIES', path: '/#' },
   { name: 'OUR WORK', path: '/our-work' },
-  { name: 'BLOGS', path: '/blogs' },
-  { name: 'CONTACT US', path: '/contact-us' },
+  { name: 'CONTACT US', path: '/#' },
 ];
 
 const Header = () => {
@@ -32,7 +35,7 @@ const Header = () => {
 
   return (
     <header className={styles.headerContainer}>
-      <div className="container">
+      <div className="container-fluid">
         <div className={`${styles.headerInner} ${scrolled ? styles.scrolled : ''}`}>
           {/* Logo */}
           <Link href="/" className={styles.logo}>
@@ -84,7 +87,7 @@ const Header = () => {
             </Link>
           ))}
           <div className="mt-4">
-            <CTAButton type="link" href="/get-started" text="GET STARTED" />
+            <CTAButton type="link" href="#" text="GET STARTED" />
           </div>
         </nav>
       </div>
