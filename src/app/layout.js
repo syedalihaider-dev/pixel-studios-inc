@@ -1,8 +1,8 @@
 import { Inter, Lexend } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
-import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
+import Header from "../components/Common/Header";
+import Footer from "../components/Common/Footer";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
