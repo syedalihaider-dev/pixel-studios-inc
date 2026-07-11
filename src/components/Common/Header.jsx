@@ -11,7 +11,7 @@ const navLinks = [
   { name: 'HOME', path: '/' },
   { name: 'ABOUT US', path: '/about-us' },
   { name: 'OUR SERVICES', path: '/#' },
-  { name: 'CASE STUDY', path: '/#' },
+  { name: 'CASE STUDY', path: '/case-study' },
   { name: 'BLOGS', path: '/#' },
   { name: 'PRESS RELEASE', path: '/#' },
   { name: 'LOCATION', path: '/#' },
