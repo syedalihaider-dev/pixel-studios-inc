@@ -1,0 +1,95 @@
+.section {
+  padding: 80px 0;
+  background: radial-gradient(63.46% 96.32% at 50% 50%, #FFFFFF 0%, #FFDEFD 100%);
+  overflow: hidden;
+}
+
+.subHeading {
+  font-size: 25px;
+  line-height: 40px;
+  color: #CB09A4;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.mainHeading {
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 110px;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(90.99deg, #19042D 38.72%, #CB09A4 116.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.topParagraph {
+  font-size: 18px;
+  color: var(--accent-color);
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.modelCard {
+  background: linear-gradient(207.54deg, #DDB5F0 1.11%, #E8E0E9 45.87%);
+  border: 1px solid rgba(200, 9, 164, 0.2);
+  border-radius: 18px;
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+}
+
+.modelCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(200, 9, 164, 0.15);
+  border-color: rgba(200, 9, 164, 0.5);
+}
+
+.iconWrapper {
+  width: 61px;
+  height: 61px;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.cardTitle {
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.cardParagraph {
+  font-size: 16px;
+  color: var(--accent-color);
+  line-height: 1.6;
+  flex: 1;
+  max-height: 350px;
+}
+
+@media (max-width: 1199px) {
+  .mainHeading { font-size: 80px; line-height: 90px; }
+  .modelCard { padding: 30px; }
+}
+
+@media (max-width: 991px) {
+  .mainHeading { font-size: 60px; line-height: 70px; }
+}
+
+@media (max-width: 768px) {
+  .mainHeading { font-size: 45px; line-height: 55px; }
+  .topParagraph { font-size: 18px; }
+}

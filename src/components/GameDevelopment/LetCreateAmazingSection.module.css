@@ -1,0 +1,142 @@
+.section {
+  padding: 80px 0 0;
+  background: radial-gradient(60.57% 91.94% at 69.22% 43%, #c53add66 0%, #19042d 100%);
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.bgTextWrapper {
+  text-align: end;
+  position: absolute;
+  bottom: -40px;
+  right: -50px;
+  z-index: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bgText {
+  font-weight: 500;
+  font-size: 255.714px;
+  line-height: 230px;
+  leading-trim: both;
+  text-edge: cap;
+  text-transform: uppercase;
+  opacity: 0.2;
+  -webkit-text-stroke: 1px #FFFFFF;
+  color: transparent;
+  font-family: inherit;
+  white-space: nowrap;
+  font-family: var(--font-heading);
+}
+
+.mainHeading {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.mainParagraph {
+  font-size: 22px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  max-width: 90%;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 15px;
+}
+
+.callNowBtn {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.callNowBtn img {
+  filter: invert(21%) sepia(74%) saturate(4646%) hue-rotate(299deg) brightness(85%) contrast(110%) !important;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 725px;
+  z-index: -1;
+}
+
+.imageBgShape {
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  background: linear-gradient(47.52deg, #320B47 44.42%, #77066C 84.41%);
+  border-radius: 50%;
+  right: -130px;
+  top: 20px;
+  z-index: -1;
+}
+
+.mainImage {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1199px) {
+  .bgText {
+    font-size: 150px;
+    line-height: 140px;
+  }
+  .imageBgShape {
+    width: 450px;
+    height: 450px;
+    top: 150px;
+  }
+  .imageWrapper {
+    height: 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mainHeading {
+    font-size: 50px;
+  }
+  .imageWrapper {
+    height: auto;
+    margin-top: 50px;
+  }
+  .imageBgShape {
+    width: 350px;
+    height: 350px;
+    right: auto;
+    top: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 40px;
+  }
+  .mainParagraph {
+    font-size: 18px;
+  }
+  .bgText {
+    font-size: 80px;
+    line-height: 70px;
+  }
+  .buttonRow {
+    flex-direction: column;
+  }
+  .imageBgShape {
+    width: 250px;
+    height: 250px;
+  }
+}
