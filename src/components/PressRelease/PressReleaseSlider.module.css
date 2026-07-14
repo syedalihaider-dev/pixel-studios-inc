@@ -1,0 +1,175 @@
+.section {
+  padding: 80px 0;
+  background-color: #17002b; /* same as cards section */
+  color: #fff;
+}
+
+/* Top Content */
+.topContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.mainHeading {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: var(--font-heading, inherit);
+}
+
+.mainPara {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Slider Section */
+.sliderWrapper {
+  position: relative;
+}
+
+.mySwiper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.slideInner {
+  height: 500px;
+}
+
+.slideTextContent {
+  padding: 25px 50px 25px 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slideHeading {
+  font-size: 50px;
+  font-weight: var(--font-400);
+  margin-bottom: 20px;
+  line-height: 60px;
+  font-family: var(--font-heading, inherit);
+}
+
+.slidePara {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: var(--font-300);
+  margin-bottom: 25px;
+  color: var(--light-color);
+}
+
+.slideImageWrapper {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sliderCtaButton{
+  width: fit-content;
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 6s ease;
+}
+
+.slideInner:hover .slideImage {
+  transform: scale(1.05); /* Hover effect on slider image */
+}
+
+/* Controls */
+.customControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.playPauseBtn {
+  background-color: #2B2B2B;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.playPauseBtn:hover {
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.rightControls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navBtn {
+  background-color: #2B2B2B;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navBtn:hover {
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.fractionPagination {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .slideInner {
+    height: auto;
+    min-height: 500px;
+  }
+  .slideHeading {
+    font-size: 36px;
+  }
+  .mainHeading {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 60px 0;
+  }
+  .mainHeading {
+    font-size: 40px;
+  }
+  .mainPara, .slidePara {
+    font-size: 18px;
+  }
+  .slideHeading {
+    font-size: 28px;
+  }
+  .slideTextContent {
+    padding: 30px;
+  }
+}

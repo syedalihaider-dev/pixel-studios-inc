@@ -1,0 +1,104 @@
+.section {
+  padding: 40px 0;
+  background: radial-gradient(63.46% 96.32% at 50% 50%, #FFFFFF 0%, #FFDEFD 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.section::before,
+.section::after{
+  content: "";
+  width: 838px;
+  height: 838px;
+  background: linear-gradient(180deg, #FC00A0 0%, #CB12ED 100%);
+  opacity: 0.3;
+  filter: blur(255.306px);
+  position: absolute;
+  z-index: -1;
+}
+
+.section::before{
+  left: -400px;
+  top: -400px;
+}
+
+.section::after{
+  right: -400px;
+  bottom: -400px;
+}
+
+.quoteRow {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 20px 0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.quoteRow:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.headshot {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quoteRow:hover .headshot {
+  transform: scale(1.03);
+}
+
+.textContent {
+  padding-left: 20px;
+}
+
+.quoteText {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -0.64px;
+  background: linear-gradient(90deg, #19042D 0%, #7C076F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.authorName {
+  font-size: 25px;
+  font-weight: 300;
+  color: var(--accent-color);
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .textContent {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .quoteText {
+    font-size: 30px;
+  }
+  .authorName {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .section {
+    padding: 60px 0;
+  }
+  .quoteText {
+    font-size: 24px;
+  }
+  .authorName {
+    font-size: 20px;
+  }
+}

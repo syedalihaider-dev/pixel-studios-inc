@@ -1,0 +1,188 @@
+.section {
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.section::before,
+.section::after{
+  content: "";
+  width: 838px;
+  height: 838px;
+  background: linear-gradient(180deg, #FC00A0 0%, #CB12ED 100%);
+  opacity: 0.3;
+  filter: blur(255.306px);
+  position: absolute;
+  z-index: -1;
+}
+
+.section::before{
+  right: 0;
+  top: 0;
+}
+
+.section::after{
+  left: 0;
+  bottom: 0;
+}
+
+.cardInner {
+  position: relative;
+  height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cardInner.bgPurple {
+  background-color: #3b115e;
+}
+
+.cardInner.bgWhite {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.cardInner.bgImage {
+  background-color: #2b0b4a;
+}
+
+.fullImgBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.fullImgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.7) 100%);
+  z-index: 2;
+  transition: opacity 0.6s ease;
+}
+
+.cardInner:hover .fullImgOverlay {
+  opacity: 0;
+}
+
+.bottomImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.contentTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  z-index: 3;
+}
+
+.subHeading {
+  font-size: 18px;
+  font-weight: var(--font-400);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.heading {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: var(--font-400);
+  font-family: var(--font-heading);
+}
+
+.hoverContent {
+  position: absolute;
+  top: 60%;
+  right: -100%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 25px;
+  font-size: 16px;
+  z-index: 3;
+  transition: right 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.hoverContent p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Hover Button (Bottom CTA) */
+.hoverButton {
+  position: absolute;
+  bottom: -100px; /* Slide in from bottom */
+  left: 30px;
+  z-index: 3;
+  transition: bottom 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.bgWhite .ctaBtn {
+  background-color: #3b115e;
+  color: #fff;
+}
+.bgWhite .ctaBtn:hover {
+  background-color: #2b0b4a;
+  color: #fff;
+}
+
+
+/* === HOVER EFFECTS === */
+
+/* 1. Right paragraph slides in */
+.cardInner:hover .hoverContent {
+  right: 0;
+  opacity: 1;
+}
+
+/* 2. Bottom button slides in */
+.cardInner:hover .hoverButton {
+  bottom: 40px;
+}
+
+/* 3. For bottom-image cards: image slides out to the left */
+.cardInner:hover .bottomImg {
+  transform: translateX(-100%);
+}
+
+/* 4. For full-image cards: image slides down 90deg */
+.cardInner:hover .fullImgBg {
+  transform: translateY(100%);
+}

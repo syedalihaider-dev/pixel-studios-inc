@@ -123,7 +123,7 @@ const navData = [
     ]
   },
   { name: 'BLOGS', path: '#' },
-  { name: 'PRESS RELEASE', path: '#' },
+  { name: 'PRESS RELEASE', path: '/press-release' },
   {
     name: 'LOCATION',
     path: '/location',
