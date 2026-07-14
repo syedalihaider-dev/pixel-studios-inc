@@ -23,10 +23,11 @@ export default function PressReleaseCareer() {
     offset: ["start start", "end end"]
   });
 
-  // Image animations
-  // Desktop: Shrinks to ~45%, Height ~70vh
-  // Mobile: Shrinks to ~90%, Height ~40vh, moves to top
-  const imgWidth = useTransform(scrollYProgress, [0, 0.4], ["100%", isMobile ? "90%" : "45%"]);
+  // Image takes 100% width initially, shrinks to 50%
+  const imgWidth = useTransform(scrollYProgress, [0, 0.4], ["100%", isMobile ? "100%" : "50%"]);
+  // Text container takes 0% width initially, grows to 50%
+  const textWidth = useTransform(scrollYProgress, [0, 0.4], ["0%", isMobile ? "100%" : "50%"]);
+  
   const imgHeight = useTransform(scrollYProgress, [0, 0.4], ["100vh", isMobile ? "40vh" : "70vh"]);
   const imgRadius = useTransform(scrollYProgress, [0, 0.4], ["0px", "20px"]);
 
@@ -63,9 +64,8 @@ export default function PressReleaseCareer() {
           <motion.div
             className={styles.textContainer}
             style={{
-              flex: 1,
-              minWidth: isMobile ? '90%' : '45%',
-              paddingLeft: isMobile ? '0' : '5%',
+              width: textWidth,
+              overflow: 'hidden', // hides text while width is small
               paddingTop: isMobile ? '30px' : '0'
             }}
           >
@@ -75,7 +75,9 @@ export default function PressReleaseCareer() {
                 opacity: textOpacity,
                 y: textY,
                 display: 'flex',
-                flexDirection: 'column'
+                flexDirection: 'column',
+                minWidth: isMobile ? '100%' : '50vw', // prevents squishing
+                paddingLeft: isMobile ? '0' : '5vw'
               }}
             >
               <h2 className={styles.heading}>

@@ -1,6 +1,6 @@
 .section {
   padding: 80px 0;
-  background-color: #17002b; /* Matching dark purple */
+  background: radial-gradient(100% 100% at 100% 50%, #6a1e7778 0%, #19042d 100%);
   color: #fff;
   overflow: hidden; /* Prevent horizontal scroll from slider */
 }

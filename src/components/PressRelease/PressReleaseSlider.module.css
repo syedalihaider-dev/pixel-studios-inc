@@ -1,7 +1,7 @@
 .section {
   padding: 80px 0;
-  background-color: #17002b; /* same as cards section */
   color: #fff;
+  overflow: hidden;
 }
 
 /* Top Content */
