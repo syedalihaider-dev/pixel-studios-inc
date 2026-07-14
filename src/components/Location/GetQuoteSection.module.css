@@ -1,6 +1,5 @@
 .section {
-  padding: 80px 0 80px;
-  background: radial-gradient(100% 100% at 100%, #6a1e7778 0%, #19042d 100%);
+  padding: 80px 0;
 }
 
 .box {

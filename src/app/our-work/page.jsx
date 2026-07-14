@@ -18,9 +18,7 @@ export default function OurWork() {
         <PortfolioShowcase />
         <TestimonialSection />
       </div>
-      <div style={{ backgroundImage: "radial-gradient(60.57% 91.94% at 69.22% 43%, #C53ADD 0%, #19042D 100%)" }}>
-        <GetQuoteSection />
-      </div>
+      <GetQuoteSection />
       <TestimonialsSlider />
       <GreatVideosSection />
       <TrustedClientsSection />

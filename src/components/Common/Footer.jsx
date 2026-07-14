@@ -15,7 +15,7 @@ const Footer = () => {
     { name: 'CASE STUDY', path: '/case-study' },
     { name: 'BLOGS', path: '/#' },
     { name: 'PRESS RELEASE', path: '/#' },
-    { name: 'LOCATION', path: '/#' },
+    { name: 'LOCATION', path: '/location' },
     { name: 'INDUSTRIES', path: '/#' },
     { name: 'OUR WORK', path: '/our-work' },
     { name: 'CONTACT US', path: '/#' },
