@@ -5,6 +5,8 @@ import Image from "next/image";
 import styles from "./TestimonialSection.module.css";
 import CTAButton from "../Common/CTAButton";
 import { ChevronLeft, ChevronRight, Play, Star, X } from "lucide-react";
+import Link from 'next/link';
+
 
 const testimonials = [
   {
@@ -93,7 +95,7 @@ export default function TestimonialSection() {
 
           <div className="col-lg-6">
             <div className={styles.rightCol}>
-              <a href="#" className={styles.badge}>
+              <Link href="#" className={styles.badge}>
                 <Image
                   width={200}
                   height={65}
@@ -102,8 +104,8 @@ export default function TestimonialSection() {
                   className={styles.badgeLogo}
                 />
                 <div className={styles.ratingRow}>5.0/5.0 {renderStars()}</div>
-              </a>
-              <a href="#" className={styles.badge}>
+              </Link>
+              <Link href="#" className={styles.badge}>
                 <Image
                   width={200}
                   height={65}
@@ -112,8 +114,8 @@ export default function TestimonialSection() {
                   className={styles.badgeLogo}
                 />
                 <div className={styles.ratingRow}>4.9/5.0 {renderStars()}</div>
-              </a>
-              <a href="#" className={styles.badge}>
+              </Link>
+              <Link href="#" className={styles.badge}>
                 <Image
                   width={200}
                   height={65}
@@ -122,7 +124,7 @@ export default function TestimonialSection() {
                   className={styles.badgeLogo}
                 />
                 <div className={styles.ratingRow}>4.6/5.0 {renderStars()}</div>
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>

@@ -179,7 +179,7 @@ const navData = [
     ]
   },
   { name: 'OUR WORK', path: '/our-work' },
-  { name: 'CONTACT US', path: '#' },
+  { name: 'CONTACT US', path: '/contact-us' },
 ];
 
 const dropdownVariants = {

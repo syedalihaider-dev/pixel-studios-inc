@@ -14,11 +14,11 @@ const Footer = () => {
     { name: 'OUR SERVICES', path: '/#' },
     { name: 'CASE STUDY', path: '/case-study' },
     { name: 'BLOGS', path: '/#' },
-    { name: 'PRESS RELEASE', path: '/#' },
+    { name: 'PRESS RELEASE', path: '/press-release' },
     { name: 'LOCATION', path: '/location' },
     { name: 'INDUSTRIES', path: '/#' },
     { name: 'OUR WORK', path: '/our-work' },
-    { name: 'CONTACT US', path: '/#' },
+    { name: 'CONTACT US', path: '/contact-us' },
   ];
 
   const serviceLinks = [

@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import styles from './TopRatedProjectsSection.module.css';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+
 
 const projects = [
   {
@@ -56,7 +58,7 @@ const TopRatedProjectsSection = () => {
                 onClick={() => setActiveId(project.id)}
               >
                 <div className={`${styles.cardContent} ${isActive ? styles.activeContent : ''}`}>
-                  <img src={project.logo} alt="Project Logo" className={styles.logo} />
+                  <Image src={project.logo} alt="Project Logo" className={styles.logo} width={500} height={500} />
                   <p className={styles.cardText}>{project.text}</p>
                 </div>
               </div>

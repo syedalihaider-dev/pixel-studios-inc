@@ -115,7 +115,7 @@ const WhyInvestSection = () => {
                   transition={{ duration: 0.5, delay: 0.3 + (idx * 0.2) }}
                   viewport={{ once: true }}
                 >
-                  <img src={box.icon} alt="Icon" className={styles.boxIcon} />
+                  <Image src={box.icon} alt="Icon" className={styles.boxIcon} width={500} height={500} />
                   <div className={styles.boxValue}>{box.value}</div>
                   <div className={styles.boxText}>{box.text}</div>
                 </motion.div>

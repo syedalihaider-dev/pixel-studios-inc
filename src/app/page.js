@@ -11,6 +11,11 @@ import IndustrySection from "@/components/Home/IndustrySection";
 import TestimonialSection from "@/components/Home/TestimonialSection";
 import FaqSection from "@/components/Home/FaqSection";
 
+export const metadata = {
+  title: "Home - Pixel Studios Inc",
+  description: "Welcome to Pixel Studios Inc. We are an award-winning digital agency.",
+};
+
 export default function Home() {
   return (
     <main>

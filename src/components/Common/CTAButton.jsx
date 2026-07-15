@@ -2,6 +2,8 @@
 import React from 'react';
 import styles from './CTAButton.module.css';
 import { MessageSquare, Phone, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClick, className = '' }) => {
   const handleClick = (e) => {
@@ -24,7 +26,7 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
     switch (type) {
       case 'chat': return <MessageSquare size={18} className={styles.icon} />;
       case 'phone': return <Phone size={18} className={styles.icon} />;
-      default: return <img src="/button-arrow.png" alt="arrow" width="24" height="24" className={styles.icon} />;
+      default: return <Image src="/button-arrow.png" alt="arrow" width={24} height={24} className={styles.icon} />;
     }
   };
 
@@ -32,9 +34,9 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
 
   if (type === 'link') {
     return (
-      <a href={href} className={buttonClass} onClick={handleClick}>
+      <Link href={href} className={buttonClass} onClick={handleClick}>
         {text} {getIcon()}
-      </a>
+      </Link>
     );
   }
 

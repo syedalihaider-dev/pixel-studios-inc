@@ -116,7 +116,7 @@ export default function WhyPartnerSection() {
             >
               <div className={styles.iconWrapper}>
                 {/* Fallback to simple img tag to avoid Next Image sizing complexities here if needed, but Next Image is better */}
-                <img src={card.icon} alt={card.title} className={styles.iconImage} />
+                <Image src={card.icon} alt={card.title} className={styles.iconImage} width={500} height={500} />
               </div>
               <h3 className={styles.cardTitle}>{card.title}</h3>
               <p className={styles.cardText}>{card.text}</p>

@@ -2,6 +2,9 @@
 import React from 'react';
 import styles from './PressReleaseCards.module.css';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+
 
 const cardsData = [
   {
@@ -120,7 +123,7 @@ export default function PressReleaseCards() {
 
                 {/* Bottom Image */}
                 {card.type === 'bottom-image' && card.image && (
-                  <img src={card.image} alt={card.heading} className={styles.bottomImg} />
+                  <Image src={card.image} alt={card.heading} className={styles.bottomImg} width={500} height={500} />
                 )}
 
                 {/* Top Content (Heading & Subheading) */}
@@ -138,7 +141,7 @@ export default function PressReleaseCards() {
 
                 {/* Hover Button (Bottom CTA) */}
                 <div className={styles.hoverButton}>
-                  <a href="#" className={styles.ctaBtn}>Read More</a>
+                  <Link href="#" className={styles.ctaBtn}>Read More</Link>
                 </div>
 
               </div>

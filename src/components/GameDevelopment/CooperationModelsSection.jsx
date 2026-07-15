@@ -2,6 +2,8 @@
 import React from 'react';
 import styles from './CooperationModelsSection.module.css';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+
 
 const CooperationModelsSection = () => {
   const cards = [
@@ -57,12 +59,11 @@ const CooperationModelsSection = () => {
               <div className={styles.modelCard}>
                 <div className={styles.iconWrapper}>
                   {/* User can place their actual 61x61 image or SVG here */}
-                  <img
-                    src={card.icon}
+                  <Image src={card.icon}
                     alt={card.title}
                     width={61}
                     height={61}
-                  />
+                  width={500} height={500} />
                 </div>
                 <h3 className={styles.cardTitle}>{card.title}</h3>
                 <p className={`scroll_block ${styles.cardParagraph}`}>

@@ -7,6 +7,12 @@ import IndustrySection from "@/components/Animation2D/IndustrySection";
 import TestimonialSection from "@/components/Animation2D/TestimonialSection";
 import FaqSection from "@/components/Animation2D/FaqSection";
 
+
+export const metadata = {
+  title: "About Us - Pixel Studios Inc",
+  description: "Welcome to Pixel Studios Inc About Us page. We are an award-winning digital agency.",
+};
+
 export default function AboutUs() {
   return (
     <main>

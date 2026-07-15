@@ -11,6 +11,12 @@ import GreatVideosSection from "@/components/GameDevelopment/GreatVideosSection"
 import TestimonialSection from "@/components/GameDevelopment/TestimonialSection";
 import FaqSection from "@/components/GameDevelopment/FaqSection";
 
+
+export const metadata = {
+  title: "Game Development - Pixel Studios Inc",
+  description: "Welcome to Pixel Studios Inc Game Development page. We are an award-winning digital agency.",
+};
+
 export default function GameDevelopment() {
   return (
     <main>

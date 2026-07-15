@@ -3,6 +3,12 @@ import TrustedClientsSection from "@/components/Animation2D/TrustedClientsSectio
 import LocationListSection from "@/components/Location/LocationListSection";
 import TestimonialSection from "@/components/Animation2D/TestimonialSection";
 
+
+export const metadata = {
+  title: "Location - Pixel Studios Inc",
+  description: "Welcome to Pixel Studios Inc Location page. We are an award-winning digital agency.",
+};
+
 export default function Location() {
   return (
     <main>

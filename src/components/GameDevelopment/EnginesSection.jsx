@@ -2,6 +2,8 @@
 import React from 'react';
 import styles from './EnginesSection.module.css';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+
 
 const EnginesSection = () => {
   return (
@@ -33,7 +35,7 @@ const EnginesSection = () => {
           >
             <div className={styles.engineCard}>
               <div className={styles.cardHeader}>
-                <img src="/game-development/unreal-engine.png" alt="Unreal Engine" width="73" height="83" className={styles.cardIcon} />
+                <Image src="/game-development/unreal-engine.png" alt="Unreal Engine" width={73} height={83} className={styles.cardIcon} />
                 <h3 className={styles.cardTitle}>Unreal Engine</h3>
               </div>
               <p className={`scroll_block ${styles.cardParagraph}`}>
@@ -51,7 +53,7 @@ const EnginesSection = () => {
           >
             <div className={styles.engineCard}>
               <div className={styles.cardHeader}>
-                <img src="/game-development/unity.png" alt="Unity" width="80" height="83" className={styles.cardIcon} />
+                <Image src="/game-development/unity.png" alt="Unity" width={80} height={83} className={styles.cardIcon} />
                 <h3 className={styles.cardTitle}>Unity</h3>
               </div>
               <p className={`scroll_block ${styles.cardParagraph}`}>

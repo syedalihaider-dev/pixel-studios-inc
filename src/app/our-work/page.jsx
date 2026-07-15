@@ -9,6 +9,12 @@ import TestimonialSection from "@/components/OurWork/TestimonialSection";
 import PortfolioShowcase from "@/components/OurWork/PortfolioShowcase";
 import FaqSection from "@/components/OurWork/FaqSection";
 
+
+export const metadata = {
+  title: "Our Work - Pixel Studios Inc",
+  description: "Welcome to Pixel Studios Inc Our Work page. We are an award-winning digital agency.",
+};
+
 export default function OurWork() {
   return (
     <main>

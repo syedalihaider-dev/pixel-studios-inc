@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import styles from "./IndustrySection.module.css";
 import CTAButton from "../Common/CTAButton";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from 'next/image';
+
 
 const industries = [
   {
@@ -97,7 +99,7 @@ export default function IndustrySection() {
         <div className={styles.sliderTrack} ref={sliderRef}>
           {industries.map((industry) => (
             <div key={industry.id} className={styles.slideCard}>
-              <img src={industry.image} alt={industry.title} className={styles.cardImg} />
+              <Image src={industry.image} alt={industry.title} className={styles.cardImg} width={500} height={500} />
               <div className={styles.cardOverlay}>
                 <h3 className={styles.cardTitle}>{industry.title}</h3>
                 <div className={styles.cardContent}>

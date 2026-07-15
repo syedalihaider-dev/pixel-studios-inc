@@ -13,6 +13,12 @@ import GreatVideosSection from "@/components/Animation2D/GreatVideosSection";
 import TestimonialSection from "@/components/Animation2D/TestimonialSection";
 import FaqSection from "@/components/Animation2D/FaqSection";
 
+
+export const metadata = {
+  title: "2d Animation - Pixel Studios Inc",
+  description: "Welcome to Pixel Studios Inc 2d Animation page. We are an award-winning digital agency.",
+};
+
 export default function TwoDAnimation() {
   return (
     <main>

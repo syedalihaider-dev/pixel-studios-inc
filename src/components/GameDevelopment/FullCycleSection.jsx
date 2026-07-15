@@ -4,6 +4,8 @@ import styles from './FullCycleSection.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import CTAButton from '../Common/CTAButton';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+
 
 const tabsData = [
   {
@@ -111,12 +113,11 @@ const FullCycleSection = () => {
               className="row align-items-center"
             >
               <div className="col-lg-6 mb-4 mb-lg-0">
-                 <img 
-                   src={activeTabData.image} 
+                 <Image src={activeTabData.image} 
                    alt={activeTabData.title} 
                    className={styles.contentImage} 
-                   width="774" 
-                   height="471" 
+                   width={774} 
+                   height={471} 
                  />
               </div>
               <div className="col-lg-6">

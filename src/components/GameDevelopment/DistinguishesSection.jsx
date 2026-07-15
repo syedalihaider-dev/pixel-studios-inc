@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import styles from './DistinguishesSection.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import CTAButton from '../Common/CTAButton';
+import Image from 'next/image';
+
 
 const stepsData = [
   {
@@ -92,7 +94,7 @@ const DistinguishesSection = () => {
                     </AnimatePresence>
                   </div>
                   <div className={styles.stepArrow}>
-                    <img src="/game-development/linear-arrow.png" width="30" height="30" alt="Arrow" />
+                    <Image src="/game-development/linear-arrow.png" width={30} height={30} alt="Arrow" />
                   </div>
                 </motion.div>
               );
