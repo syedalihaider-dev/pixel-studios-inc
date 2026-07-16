@@ -59,11 +59,11 @@ export default function WhyPartnerSection() {
   };
 
   const cardVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 150, 
+    hidden: {
+      opacity: 0,
+      y: 150,
       scale: 0.8,
-      rotate: 0 
+      rotate: 0
     },
     visible: (custom) => ({
       opacity: 1,
@@ -81,8 +81,8 @@ export default function WhyPartnerSection() {
 
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
-        <motion.h2 
+      <div className="container">
+        <motion.h2
           className={styles.heading}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -92,7 +92,7 @@ export default function WhyPartnerSection() {
           Why Pixels Studios Is the Animation Partner Brands Come Back to Year After Year
         </motion.h2>
 
-        <motion.div 
+        <motion.div
           className={styles.cardsWrapper}
           variants={containerVariants}
           initial="hidden"
@@ -105,10 +105,10 @@ export default function WhyPartnerSection() {
               className={styles.card}
               custom={card}
               variants={cardVariants}
-              whileHover={isMobile ? {} : { 
-                scale: 1.05, 
-                rotate: 0, 
-                y: -10, 
+              whileHover={isMobile ? {} : {
+                scale: 1.05,
+                rotate: 0,
+                y: -10,
                 zIndex: 10,
                 boxShadow: "0px 20px 40px rgba(203, 9, 164, 0.4)",
                 transition: { duration: 0.3, ease: "easeOut" }
@@ -119,7 +119,7 @@ export default function WhyPartnerSection() {
                 <Image src={card.icon} alt={card.title} className={styles.iconImage} width={500} height={500} />
               </div>
               <h3 className={styles.cardTitle}>{card.title}</h3>
-              <p className={styles.cardText}>{card.text}</p>
+              <p className={`${styles.cardText} scroll_block`}>{card.text}</p>
             </motion.div>
           ))}
         </motion.div>

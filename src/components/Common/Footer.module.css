@@ -133,10 +133,6 @@
   gap: 20px;
 }
 
-.copyrightArea p {
-  margin: 0;
-}
-
 .paymentMethods {
   max-width: 500px;
   height: auto;
@@ -160,10 +156,17 @@
   gap: 10px;
 }
 
+.copyrightArea p,
 .bottomLinks a {
-  color: #c9c5d1;
+  font-weight: var(--font-400);
+  font-size: var(--font-size-sm);
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: var(--light-color);
+  opacity: 0.5;
   text-decoration: none;
   transition: color 0.3s ease;
+  margin: 0;
 }
 
 .bottomLinks a:hover {

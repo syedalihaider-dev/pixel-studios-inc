@@ -53,7 +53,7 @@ const ServicesSection = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <h6 className={styles.subtitle}>WHAT WE DO</h6>
+          <h6 className="subtitle">WHAT WE DO</h6>
           <h2 className={styles.title}>OUR SERVICES</h2>
           <p className={styles.description}>High impact animation services that bring your ideas to life and make your brand unforgettable.</p>
         </motion.div>
@@ -110,7 +110,7 @@ const ServicesSection = () => {
                   height={205}
                 />
                 <div className={styles.ctaText}>
-                  <div className={styles.ctaSubtitle}>Ready to bring your ideas to life</div>
+                  <p className={styles.ctaSubtitle}>Ready to bring your ideas to life</p>
                   <h3 className={styles.ctaTitle}>Let's create something<br />amazing together!</h3>
                   <div>
                     <CTAButton type="link" href="/book-meeting" text="Book a Meeting" />

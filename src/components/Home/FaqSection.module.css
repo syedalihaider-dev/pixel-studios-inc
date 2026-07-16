@@ -8,9 +8,8 @@
 }
 
 .heading {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 85px;
+  font-weight: var(--font-500);
+  font-size: 100px;
   line-height: 125px;
   text-align: center;
   letter-spacing: -0.08em;
@@ -19,8 +18,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; /* Fallback for browsers that don't support text-fill-color */
-  margin-bottom: 60px;
+  color: transparent;
+  margin-bottom: 40px;
 }
 
 .faqContainer {
@@ -49,7 +48,9 @@
 
 .question {
   font-size: 30px;
-  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  font-weight: var(--font-500);
   color: var(--accent-color);
   margin: 0;
   padding-right: 20px;

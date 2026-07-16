@@ -26,9 +26,9 @@
     /* Typography */
     --font-base: var(--font-inter);
     --font-heading: var(--font-lexend);
-    --font-size-base: 16px;
-    --font-size-lg: 50px;
-    --font-size-sm: 14px;
+    --font-size-base: 21.95px;
+    --font-size-lg: 70px;
+    --font-size-sm: 16px;
 
     /* Font Weight */
     --font-100: 100;
@@ -138,11 +138,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: var(--font-size-lg);
     font-weight: var(--font-500);
+    letter-spacing: -0.02em;
 }
 
 h2 {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-light);
+    font-size: 50px;
+    line-height: 62px;
+    letter-spacing: -0.02em;
+    font-weight: var(--font-400);
 }
 
 h3 {
@@ -168,7 +171,7 @@ h6 {
 
 p {
     font-size: var(--font-size-base);
-    font-weight: var(--font-500);
+    font-weight: var(--font-400);
 }
 
 .primary-text {
@@ -215,4 +218,26 @@ p {
 
 .break_line {
     display: block;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1644px;
+}
+
+.subtitle{
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-weight: var(--font-500);
+    font-size: 25px; 
+    line-height: 31px;
+    leading-trim: both;
+    text-edge: cap;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    margin: 0;
 }

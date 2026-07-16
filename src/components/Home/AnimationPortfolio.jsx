@@ -43,8 +43,8 @@ export default function AnimationPortfolio() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentVideo, setCurrentVideo] = useState(null);
 
-  const filteredItems = activeTab === "VIEW ALL" 
-    ? portfolioItems 
+  const filteredItems = activeTab === "VIEW ALL"
+    ? portfolioItems
     : portfolioItems.filter(item => item.category === activeTab);
 
   const openModal = (item) => {
@@ -59,7 +59,7 @@ export default function AnimationPortfolio() {
 
   return (
     <section className={styles.section}>
-      <h3 className={styles.subHeading}>OUR WORK SPEAKS</h3>
+      <p className="subtitle">OUR WORK SPEAKS</p>
       <h2 className={styles.heading}>ANIMATION PORTFOLIO</h2>
       <p className={styles.description}>
         We create powerful visual stories that engage, inspire and deliver real results.
@@ -112,14 +112,14 @@ export default function AnimationPortfolio() {
 
       <AnimatePresence>
         {isModalOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className={styles.modalOverlay}
             onClick={closeModal}
           >
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.5, opacity: 0 }}
@@ -131,10 +131,10 @@ export default function AnimationPortfolio() {
                 <X size={30} />
               </button>
               <div style={{ width: "100%", height: "100%", background: "#000" }}>
-                <iframe 
-                  src="https://player.vimeo.com/video/146022717?autoplay=1&color=CB09A4&title=0&byline=0&portrait=0" 
+                <iframe
+                  src="https://player.vimeo.com/video/146022717?autoplay=1&color=CB09A4&title=0&byline=0&portrait=0"
                   style={{ width: "100%", height: "100%", border: "none" }}
-                  allow="autoplay; fullscreen; picture-in-picture" 
+                  allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
                   title="Animation Portfolio Video"
                 ></iframe>

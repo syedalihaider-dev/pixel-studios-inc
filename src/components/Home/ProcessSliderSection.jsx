@@ -138,7 +138,7 @@ export default function ProcessSliderSection() {
 
                   <div className={styles.btnGroup}>
                     <CTAButton text="Learn More" variant="filled" />
-                    <CTAButton text="Let's Talk" variant="outline" />
+                    <CTAButton text="Let's Talk" variant="outline" className={styles.btn} />
                   </div>
                 </div>
               </motion.div>

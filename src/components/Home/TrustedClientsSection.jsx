@@ -28,16 +28,22 @@ export default function TrustedClientsSection() {
   return (
     <section className={styles.section}>
       <motion.div
-        className={styles.container}
+        className="container"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className={styles.heading}>CLIENTS</h2>
-        <p className={styles.text}>
-          Our animation services have earned the trust of leading global brands, delivering impactful results that drive success worldwide.
-        </p>
+        <div className="row align-items-center">
+          <div className="col-sm-12 col-md-6">
+            <h2 className={styles.heading}>CLIENTS</h2>
+          </div>
+          <div className="col-sm-12 col-md-6">
+            <p className={styles.text}>
+              Our animation services have earned the trust of leading global brands, delivering impactful results that drive success worldwide.
+            </p>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div

@@ -1,47 +1,54 @@
 .section {
-  padding: 100px 0;
+  padding: 80px 0;
   color: white;
-  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
-}
+/* .section::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(60% 91% at 69% 43%, #C53ADD 0%, #19042D 100%);
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
 
 .heading {
-  font-size: 50px;
-  font-weight: 500;
+  text-align: center;
   margin: 0 auto 80px auto;
+  width: 1200px;
 }
 
 .cardsWrapper {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   padding-bottom: 50px;
 }
 
 .card {
-  background: linear-gradient(180deg, #EAD7F1 0%, #F5F0F6 100%);
-  border-radius: 20px;
+  background: linear-gradient(207.54deg, #DDB5F0 1.11%, #E8E0E9 45.87%);
+  border: 1px solid rgba(200, 9, 164, 0.2);
+  border-radius: 18px;
   padding: 40px 30px;
   width: 100%;
-  max-width: 300px;
+  max-width: 309px;
+  height: 394px;
   text-align: left;
   color: #333;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   transform-origin: center bottom;
   position: relative;
-  /* Add perspective for 3D effect if needed, but framer-motion will handle transform */
 }
 
 .iconImage {
-  width: 61px; /* Adjust according to visual, container is 61px */
+  width: 61px;
   height: auto;
   object-fit: contain;
   margin-bottom: 25px;
@@ -50,26 +57,24 @@
 .cardTitle {
   font-size: 25px;
   line-height: 30px;
-  font-weight: 500;
-  color: #19042D;
+  letter-spacing: -0.02em;
+  font-weight: var(--font-400);
+  color: var(--accent-color);
   margin-bottom: 15px;
 }
 
 .cardText {
-  color: #16081F;
+  height: 100px;
+  font-size: var(--font-size-sm);
+  line-height: 25px;
+  color: var(--accent-color);
 }
 
 @media (max-width: 1024px) {
-  .heading {
-    font-size: 40px;
-  }
+  
 }
 
 @media (max-width: 768px) {
-  .heading {
-    font-size: 32px;
-    margin-bottom: 50px;
-  }
   .cardsWrapper {
     flex-direction: column;
     align-items: center;

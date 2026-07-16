@@ -105,8 +105,14 @@ const Banner = () => {
                     className={`${styles.slide} ${index === activeSlide ? styles.active : ''}`}
                     style={{ position: index === activeSlide ? 'relative' : 'absolute' }}
                   >
-                    <h1 className={styles.heading}>{slide.title}</h1>
-                    <p className={styles.description}>{slide.description}</p>
+                    {index === 0 ? (
+                      <h1 className={styles.heading}>{slide.title}</h1>
+                    ) : (
+                      <h2 className={styles.heading}>{slide.title}</h2>
+                    )}
+                    <p className={`${styles.description} ${styles.scroll_block}`}>
+                      {slide.description}
+                    </p>
                   </div>
                 ))}
               </div>

@@ -10,15 +10,14 @@
 }
 
 .headerInner {
-  background: rgba(25, 25, 25, 0.7);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  border-radius: 100px; /* Pill shape */
-  padding: 10px 20px;
+  border-radius: 20px; /* Pill shape */
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
-  border: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
   pointer-events: auto; /* Re-enable pointer events for the actual header */
 }
@@ -30,7 +29,7 @@
 }
 
 .logo {
-  width: 160px;
+  width: 149px;
   height: auto;
   display: flex;
   align-items: center;
@@ -68,7 +67,7 @@
   color: #fff;
   font-family: var(--font-base), sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0 15px;

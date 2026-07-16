@@ -63,7 +63,7 @@ const CooperationModelsSection = () => {
                     alt={card.title}
                     width={61}
                     height={61}
-                  width={500} height={500} />
+                  />
                 </div>
                 <h3 className={styles.cardTitle}>{card.title}</h3>
                 <p className={`scroll_block ${styles.cardParagraph}`}>

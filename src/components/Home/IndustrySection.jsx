@@ -69,25 +69,27 @@ export default function IndustrySection() {
 
   return (
     <section className={styles.section}>
-      <motion.div
-        className={styles.topRow}
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-      >
-        <h2 className={styles.heading}>
-          We’ve delivered results for companies in every industry.
-        </h2>
-        <div className={styles.arrows}>
-          <button className={styles.arrowBtn} onClick={scrollLeft} aria-label="Previous slide">
-            <ChevronLeft size={24} />
-          </button>
-          <button className={styles.arrowBtn} onClick={scrollRight} aria-label="Next slide">
-            <ChevronRight size={24} />
-          </button>
-        </div>
-      </motion.div>
+      <div className="container">
+        <motion.div
+          className={styles.topRow}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className={styles.heading}>
+            We’ve delivered results for companies in every industry.
+          </h2>
+          <div className={styles.arrows}>
+            <button className={styles.arrowBtn} onClick={scrollLeft} aria-label="Previous slide">
+              <ChevronLeft size={24} />
+            </button>
+            <button className={styles.arrowBtn} onClick={scrollRight} aria-label="Next slide">
+              <ChevronRight size={24} />
+            </button>
+          </div>
+        </motion.div>
+      </div>
 
       <motion.div
         className={styles.sliderWrapper}

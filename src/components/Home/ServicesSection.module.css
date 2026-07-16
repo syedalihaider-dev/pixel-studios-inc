@@ -1,5 +1,5 @@
 .servicesSection {
-  padding: 80px 40px;
+  padding: 80px 35px;
   background: radial-gradient(63.46% 96.32% at 50% 50%, #FFFFFF 0%, #FFDEFD 100%);
 }
 
@@ -124,8 +124,7 @@
 
 /* CTA Card */
 .ctaCard {
-  /* background: linear-gradient(135deg, #220B3B 0%, #461476 100%); */
-  background: radial-gradient(42% 95% at 80% 10%, #c53add 0%, #19042d 100%);
+  background: var(--accent-color);
   border-radius: 12px;
   padding: 50px 80px 50px 50px;
   display: flex;
@@ -135,6 +134,20 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ctaCard::after{
+  content: "";
+  width: 362px;
+  height: 362px;
+  background: var(--primary-color);
+  opacity: 0.8;
+  filter: blur(102.295px);
+  position: absolute;
+  top: -100px;
+  right: 40px;
+  z-index: -1;
 }
 
 .ctaLeft {
@@ -151,25 +164,32 @@
 }
 
 .ctaSubtitle {
-  color: #a491ba;
-  font-size: 13px;
-  margin-bottom: 5px;
+  color: var(--light-color);
+  opacity: 60%;
+  font-size: 20px;
+  font-weight: var(--font-400);
+  margin-bottom: 0;
 }
 
 .ctaTitle {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  font-family: var(--font-heading), sans-serif;
-  line-height: 1.2;
+  font-weight: var(--font-400);
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #FFFFFF 0%, #D58EEF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 10px 0 30px;
 }
 
 .ctaRight {
-  z-index: 2;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .ctaRight img {
