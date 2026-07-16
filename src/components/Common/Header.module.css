@@ -54,7 +54,6 @@
   display: flex;
   align-items: center;
   height: 100%;
-  position: relative;
 }
 
 .navItem {
@@ -112,15 +111,14 @@
 /* Mega Menu Dropdown */
 .megaMenu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 5px);
   left: 0;
-  margin-top: 15px;
+  width: 100%;
   background: rgba(25, 25, 25, 0.95);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  padding: 30px;
-  width: 100%; /* Spans the width of navLinksWrapper */
+  padding: 40px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   z-index: 100;
   cursor: default;
@@ -130,14 +128,13 @@
 .smallDropdown {
   position: absolute;
   top: 100%;
-  left: 0;
-  margin-top: 15px;
+  left: 15px;
   background: rgba(25, 25, 25, 0.95);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 15px 0;
-  min-width: 200px;
+  min-width: 220px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   z-index: 100;
 }

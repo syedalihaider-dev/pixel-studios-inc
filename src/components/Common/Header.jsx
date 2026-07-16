@@ -105,51 +105,8 @@ const navData = [
     ]
   },
   {
-    name: 'CASE STUDY',
-    path: '/case-study',
-    isMegaMenu: true,
-    megaMenuLayout: 'grid',
-    items: [
-      { name: 'Tech Startup Launch', path: '#' },
-      { name: 'Fintech Rebranding', path: '#' },
-      { name: 'Healthcare App', path: '#' },
-      { name: 'E-commerce Redesign', path: '#' },
-      { name: 'Real Estate Portal', path: '#' },
-      { name: 'Education Platform', path: '#' },
-      { name: 'Gaming Community', path: '#' },
-      { name: 'SaaS Dashboard', path: '#' },
-      { name: 'Logistics System', path: '#' },
-      { name: 'Travel Booking', path: '#' }
-    ]
-  },
-  { name: 'BLOGS', path: '#' },
-  { name: 'PRESS RELEASE', path: '/press-release' },
-  {
-    name: 'LOCATION',
-    path: '/location',
-    isMegaMenu: true,
-    megaMenuLayout: 'grid',
-    items: [
-      { name: 'New York', path: '#' },
-      { name: 'London', path: '#' },
-      { name: 'Dubai', path: '#' },
-      { name: 'Sydney', path: '#' },
-      { name: 'Toronto', path: '#' },
-      { name: 'Los Angeles', path: '#' },
-      { name: 'Chicago', path: '#' },
-      { name: 'Paris', path: '#' },
-      { name: 'Berlin', path: '#' },
-      { name: 'Tokyo', path: '#' },
-      { name: 'Singapore', path: '#' },
-      { name: 'Hong Kong', path: '#' },
-      { name: 'Mumbai', path: '#' },
-      { name: 'San Francisco', path: '#' },
-      { name: 'Miami', path: '#' }
-    ]
-  },
-  {
     name: 'INDUSTRIES',
-    path: '#',
+    path: '/industries',
     isMegaMenu: true,
     megaMenuLayout: 'grid',
     items: [
@@ -178,8 +135,24 @@ const navData = [
       { name: 'Technology', path: '#' },
     ]
   },
-  { name: 'OUR WORK', path: '/our-work' },
-  { name: 'CONTACT US', path: '/contact-us' },
+  {
+    name: 'INSIGHTS',
+    path: '/#',
+    isDropdown: true,
+    items: [
+      { name: 'BLOG', path: '#' },
+      { name: 'PRESS RELEASE', path: '/press-release' },
+    ]
+  },
+  {
+    name: 'OUR WORK',
+    path: '/#',
+    isDropdown: true,
+    items: [
+      { name: 'PORTFOLIO', path: '/our-work' },
+      { name: 'CASE STUDIES', path: '/case-study' },
+    ]
+  }
 ];
 
 const dropdownVariants = {
@@ -260,7 +233,7 @@ const Header = () => {
 
   return (
     <header className={styles.headerContainer} onMouseLeave={handleMouseLeave}>
-      <div className="container-fluid">
+      <div className="container">
         <motion.div
           className={`${styles.headerInner} ${scrolled ? styles.scrolled : ''}`}
           initial={{ y: -100 }}
@@ -305,6 +278,28 @@ const Header = () => {
                     >
                       {link.name}
                     </Link>
+                  )}
+
+                  {link.isDropdown && (
+                    <AnimatePresence>
+                      {activeDropdown === link.name && (
+                        <motion.div
+                          key={`${link.name}-dropdown`}
+                          className={styles.smallDropdown}
+                          variants={dropdownVariants}
+                          initial="hidden"
+                          animate="visible"
+                          exit="exit"
+                          onMouseEnter={() => handleMouseEnter(link.name)}
+                        >
+                          {link.items.map((item, itemIdx) => (
+                            <Link key={itemIdx} href={item.path} className={styles.smallDropdownItem}>
+                              {item.name}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   )}
                 </div>
               ))}
