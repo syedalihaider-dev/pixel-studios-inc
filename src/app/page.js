@@ -1,13 +1,14 @@
 import Banner from "@/components/Home/Banner";
 import StatsSection from "@/components/Home/StatsSection";
+import MissionSection from "@/components/Home/MissionSection";
 import ServicesSection from "@/components/Home/ServicesSection";
-import TrustedClientsSection from "@/components/Home/TrustedClientsSection";
 import AnimationPortfolio from "@/components/Home/AnimationPortfolio";
 import WhyInvestSection from "@/components/Home/WhyInvestSection";
 import WhyPartnerSection from "@/components/Home/WhyPartnerSection";
 import GetQuoteSection from "@/components/Home/GetQuoteSection";
 import ProcessSliderSection from "@/components/Home/ProcessSliderSection";
 import IndustrySection from "@/components/Home/IndustrySection";
+import TrustedClientsSection from "@/components/Home/TrustedClientsSection";
 import TestimonialSection from "@/components/Home/TestimonialSection";
 import FaqSection from "@/components/Home/FaqSection";
 
@@ -21,13 +22,14 @@ export default function Home() {
     <main>
       <Banner />
       <StatsSection />
+      <MissionSection />
       <ServicesSection />
-      <TrustedClientsSection />
-      <AnimationPortfolio />
       <WhyInvestSection />
+      <AnimationPortfolio />
       <WhyPartnerSection />
       <GetQuoteSection />
       <ProcessSliderSection />
+      <TrustedClientsSection />
       <IndustrySection />
       <TestimonialSection />
       <FaqSection />

@@ -10,35 +10,35 @@ const accordionData = [
     id: 1,
     icon: '/increase.png',
     title: 'Landing page conversion',
-    content: 'rates increase by up to 80% when a high-quality explainer video is present on the page.',
+    content: 'Landing page conversion rates increase by up to 80% when a high-quality explainer video is present on the page.',
     hasButtons: true
   },
   {
     id: 2,
     icon: '/email-campaign.png',
     title: 'Email campaigns with video',
-    content: 'can see a significant boost in click-through rates, leading to higher engagement and more conversions.',
+    content: 'Email campaigns with video thumbnails generate 3x higher click-through rates than text-only alternatives.',
     hasButtons: true
   },
   {
     id: 3,
     icon: '/consumers.png',
     title: '68% of consumers say',
-    content: 'they would rather watch a short video to learn about a new product or service than read text.',
+    content: '68% of consumers say they prefer learning about a product or service through a short animated video over any written format.',
     hasButtons: true
   },
   {
     id: 4,
     icon: '/brand-security.png',
     title: 'Brands that publish consistent',
-    content: 'video content see much stronger brand recall and overall customer loyalty.',
+    content: 'Brands that publish consistent animated video content see significantly higher organic dwell time, which directly improves search ranking.',
     hasButtons: true
   },
   {
     id: 5,
     icon: '/linked.png',
     title: 'Video generates more shares',
-    content: 'than text and images combined on social media platforms.',
+    content: 'Video generates more shares and engagement than text and image posts combined across every major social platform.',
     hasButtons: true
   }
 ];
@@ -81,7 +81,7 @@ const WhyInvestSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className={styles.mainTitle}>Brands That Invest in Professional<br />Video Animation Services Go Further</h2>
+          <h2 className={styles.mainTitle}>Brands That Invest in Professional Video <br /> Animation Services Go Further</h2>
           <p className={styles.subText}>The data on video animation in marketing is not ambiguous anymore.</p>
         </motion.div>
 

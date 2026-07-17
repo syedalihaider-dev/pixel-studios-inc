@@ -8,19 +8,19 @@ import CTAButton from '../Common/CTAButton';
 import Image from 'next/image';
 
 const services = [
-  { id: '2d-animation', title: '2D Animation', icon: '/icons/2d-animation.png' },
-  { id: '3d-animation', title: '3D Animation', icon: '/icons/3d-animation.png' },
-  { id: 'ai-assisted', title: 'AI-Assisted Animations', icon: '/icons/ai-assisted-animations.png' },
-  { id: 'whiteboard', title: 'Whiteboard Animation', icon: '/icons/whiteboard-animation.png' },
-  { id: 'legal-animation', title: 'Legal Animation', icon: '/icons/legal-animation.png' },
-  { id: 'motion-graphics', title: 'Motion Graphics', icon: '/icons/motion-graphics.png' },
-  { id: 'explainer', title: '2D & 3D Explainer Videos', icon: '/icons/explainer-videos.png' },
-  { id: 'video-editing', title: 'Video Editing', icon: '/icons/video-editing.png' },
-  { id: 'logo-animation', title: 'Logo Animation', icon: '/icons/logo-animation.png' },
-  { id: 'infographics', title: 'Infographics', icon: '/icons/infographics.png' },
-  { id: 'architectural', title: 'Architectural Visualization', icon: '/icons/architectural-visualization.png' },
-  { id: 'hybrid-cel', title: 'Hybrid & Cel Animation', icon: '/icons/hybrid-and-cel-animation.png' },
-  { id: 'cgi-vfx', title: 'CGI & VFX', icon: '/icons/cgi-and-vfx.png' }
+  { id: '2d-animation', title: '2D Animation', icon: '/icons/2d-animation.png', desc: 'Our 2D team works across a wide range of 2D Animation visual styles and production approaches, matching the aesthetic to the brand rather than applying a single default look across every client.' },
+  { id: '3d-animation', title: '3D Animation', icon: '/icons/3d-animation.png', desc: 'Our 3D Animation pipeline covers modeling, rigging, lighting, and rendering entirely in-house. We produce 3D product animation, architectural visualization, character animation, and cinematic sequences for brands that need visual content at that level of production quality.' },
+  { id: 'ai-assisted', title: 'AI-Assisted Animations', icon: '/icons/ai-assisted-animations.png', desc: 'Our AI-assisted animation services accelerate asset creation, visual iteration, and style exploration without reducing the creative quality of the output. For clients with high-volume needs or tight production windows, AI-assisted production opens options that traditional timelines cannot support.' },
+  { id: 'whiteboard', title: 'Whiteboard Animation', icon: '/icons/whiteboard-animation.png', desc: 'Our whiteboard animation video services combine tight scriptwriting, professional voiceover, and clean illustration to produce content that consistently performs for training, education, sales enablement, and compliance-related communication.' },
+  { id: 'legal-animation', title: 'Legal Animation', icon: '/icons/legal-animation.png', desc: 'We produce demonstrative animations, accident reconstruction videos, procedural explainers for litigation support, and legal explainer content for public-facing legal education. Accuracy is the starting point in this category, not the goal.' },
+  { id: 'motion-graphics', title: 'Motion Graphics', icon: '/icons/motion-graphics.png', desc: 'Motion graphics services cover the space where branding and animation overlap. Our motion design team works in After Effects and Cinema 4D to produce platform-ready motion assets that reinforce brand identity across every digital channel.' },
+  { id: 'explainer', title: '2D & 3D Explainer Videos', icon: '/icons/explainer-videos.png', desc: 'Explainer video animation services remain the single most requested format in our studio for a reason that never changes: they work. A 90-second explainer video built around genuine audience insight can reduce support ticket volume, increase trial sign-up rates, cut onboarding drop-off, and give your sales team a shareable asset.' },
+  { id: 'video-editing', title: 'Video Editing', icon: '/icons/video-editing.png', desc: 'Raw footage becomes content only through a skilled edit. Our video editing team handles color grading, sound mixing, graphics overlays, b-roll integration, pacing, and platform-specific formatting for footage captured by your team or produced by ours. Every edit is built around the same standard as our original productions.' },
+  { id: 'logo-animation', title: 'Logo Animation', icon: '/icons/logo-animation.png', desc: 'A static logo on a video intro signals that no one cared enough to finish the job. An animated logo intro signals the opposite. We produce logo animations in multiple output formats for use across video, web, presentations, and digital advertising. Short versions for social, longer versions for branded films, and looping versions.' },
+  { id: 'infographics', title: 'Infographics', icon: '/icons/infographics.png', desc: 'Animated infographics are how data earns its right to exist in a content strategy. We build animated infographic content for annual reports, investor presentations, social media series, educational platforms, and campaign support material. The goal is always the same: make the data interesting enough that people finish it.' },
+  { id: 'architectural', title: 'Architectural Visualization', icon: '/icons/architectural-visualization.png', desc: 'Unbuilt properties deserve better than static renders. Our 3D architectural visualization service produces walkthrough animations, exterior fly-throughs, and interior visualization content that gives developers, investors, and buyers something genuinely compelling to respond to before ground has been broken.' },
+  { id: 'hybrid-cel', title: 'Hybrid & Cel Animation', icon: '/icons/hybrid-and-cel-animation.png', desc: 'Cel animation aesthetics, brought into a modern production context with the consistency and finish of digital tools. Frame-by-frame character movement, expressive illustration, and a handcrafted visual quality that no fully digital style can replicate. This format works powerfully for brand storytelling, entertainment-adjacent content, and campaigns that need a visual identity distinct from everything else in their category.' },
+  { id: 'cgi-vfx', title: 'CGI & VFX', icon: '/icons/cgi-and-vfx.png', desc: 'Broadcast-quality visual effects and CGI compositing for product commercials, brand films, and entertainment content. Our VFX team handles the integration of CG elements with live footage, environmental and atmospheric effects, title sequences, and product visualization compositing for brands whose content lives in premium placements.' }
 ];
 
 const containerVariants = {
@@ -54,8 +54,8 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h6 className="subtitle">WHAT WE DO</h6>
-          <h2 className={styles.title}>OUR SERVICES</h2>
-          <p className={styles.description}>High impact animation services that bring your ideas to life and make your brand unforgettable.</p>
+          <h2 className={styles.title}>Explore the Full Range of Pixel Studio Animation Services</h2>
+          <p className={styles.description}>Product demos, explainer videos, character animation, CGI or game animation, our animation services cover everything from 2D to 3D video animation services</p>
         </motion.div>
 
         {/* Grid */}
@@ -89,7 +89,9 @@ const ServicesSection = () => {
                   </div>
                   <div className={styles.textWrapper}>
                     <h3 className={styles.cardTitle}>{service.title}</h3>
-                    <p className={styles.cardDesc}>Our premium animation services include 2D explainers, 3D immersive visualizations,</p>
+                    <p className={styles.cardDesc}>
+                      {service.desc}
+                    </p>
                   </div>
                   <Link href={`/services/${service.id}`} className={styles.arrowBtn}>
                     <ArrowRight size={25} className={styles.icon} />
@@ -110,8 +112,8 @@ const ServicesSection = () => {
                   height={205}
                 />
                 <div className={styles.ctaText}>
-                  <p className={styles.ctaSubtitle}>Ready to bring your ideas to life</p>
-                  <h3 className={styles.ctaTitle}>Let's create something<br />amazing together!</h3>
+                  <p className={styles.ctaSubtitle}>Picking an animation company feels riskier?</p>
+                  <h3 className={styles.ctaTitle}>Trusted Animation Company for 2D & 3D Animation Services That Fit Your Brand & Your Goals</h3>
                   <div>
                     <CTAButton type="link" href="/book-meeting" text="Book a Meeting" />
                   </div>

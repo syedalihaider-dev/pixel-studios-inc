@@ -9,15 +9,15 @@ import gsap from 'gsap';
 const slides = [
   {
     title: "Professional Video Animation Company - High Impact Animation Services",
-    description: "Our premium animation services include 2D explainers, 3D immersive visualizations, whiteboard animations, and motion graphics designed to convert attention into action."
+    description: "Why do so many brands invest in animation and see almost no return? Because most animation studios are hired to make something that looks good, and looking good is not a business outcome. Your competitors have slick videos too. The ones winning with video are the ones whose content was built around what their audience actually needed to understand to take the next step. That is the gap Pixels Studios Inc. was built to close. Our premium animation services include 2D explainers, 3D immersive visualizations, whiteboard animations, and motion graphics designed to convert attention into action."
   },
   {
-    title: "Award-Winning Digital Agency For Global Brands",
-    description: "We craft digital experiences that engage audiences, elevate brands, and drive meaningful growth through innovative design and strategy."
+    title: "Your Go-To Animation Studio for Animation Services",
+    description: "At Pixels Studios Inc., we operate differently. We ask what the video is supposed to accomplish before we touch the timeline. We build around your funnel, your audience's psychology, and the specific moment in the customer journey where the video will live. Our animation services run the full creative and production spectrum. Concept development, scriptwriting, character design, storyboarding, full animation, voiceover direction, sound design, and final delivery."
   },
   {
-    title: "Transform Your Vision Into Stunning Reality",
-    description: "Partner with industry experts to bring your ideas to life. From concept to launch, we deliver excellence at every step of the journey."
+    title: "A Trusted Animation Company for 2D & 3D Animation Services That Fit Your Brand & Your Goals",
+    description: "Don’t worry, Our team 2D & 3D animation services in the USA always begin with a genuine discovery process. We learn about your product, your audience, your brand voice, your market positioning, and precisely what you want a viewer to think, feel, or do after watching the video."
   }
 ];
 
@@ -111,7 +111,7 @@ const Banner = () => {
                     ) : (
                       <h2 className={styles.heading}>{slide.title}</h2>
                     )}
-                    <p className={`${styles.description} ${styles.scroll_block}`}>
+                    <p className={`${styles.description} scroll_block`}>
                       {slide.description}
                     </p>
                   </div>
@@ -123,11 +123,11 @@ const Banner = () => {
                 <CTAButton type="popup" variant="outline" text="Let's Talk" />
               </div>
               <div className="mt-5 banner-reveal">
-                <Image 
-                  src="/trust-badges.png" 
-                  width={536} 
-                  height={62} 
-                  alt="Trust Badges" 
+                <Image
+                  src="/trust-badges.png"
+                  width={536}
+                  height={62}
+                  alt="Trust Badges"
                   style={{ maxWidth: '100%', height: 'auto' }}
                 />
               </div>

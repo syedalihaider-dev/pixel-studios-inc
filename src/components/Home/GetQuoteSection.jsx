@@ -7,21 +7,22 @@ import CTAButton from "../Common/CTAButton";
 const features = [
   {
     id: 1,
+    icon: "/icons/user-box.png",
+    title: "Expert Consultation",
+    text: "Get advice from animation experts"
+
+  },
+  {
+    id: 2,
     icon: "/icons/calender-box.png",
     title: "Quick Response",
     text: "We reply within 24 hours"
   },
   {
-    id: 2,
+    id: 3,
     icon: "/icons/security-box.png",
     title: "100% Confidential",
     text: "Your information is secure with us"
-  },
-  {
-    id: 3,
-    icon: "/icons/user-box.png",
-    title: "Expert Consultation",
-    text: "Get advice from animation experts"
   }
 ];
 
@@ -79,8 +80,7 @@ export default function GetQuoteSection() {
             {/* Left Column */}
             <motion.div className={styles.leftCol} variants={itemVariants}>
               <h2 className={styles.heading}>
-                Book a meeting with a member of our team to learn more and
-                <span className={styles.highlight}> get a quote</span> today!
+                Book a Meeting with a member and make it your Successful Project.
               </h2>
 
               <div className={styles.featureList}>

@@ -19,6 +19,12 @@
 
 .heading {
   text-align: center;
+  margin: 0 auto 15px auto;
+  width: 1200px;
+}
+
+.description{
+  text-align: center;
   margin: 0 auto 80px auto;
   width: 1200px;
 }

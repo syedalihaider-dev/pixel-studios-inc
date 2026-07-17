@@ -57,7 +57,7 @@ const StatsSection = () => {
               <h2 className={styles.heading}>
                 A Trusted Animation<br />
                 Company for 2D & 3D<br />
-                Animation Services.
+                Animation Services
               </h2>
             </motion.div>
           </div>

@@ -27,8 +27,9 @@
   padding: 0 20px;
 }
 
-.heading {
-  max-width: 910px;
+.heading,
+.description {
+  max-width: 1200px;
 }
 
 .arrows {
