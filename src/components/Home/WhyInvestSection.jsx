@@ -151,7 +151,7 @@ const WhyInvestSection = () => {
                         className={styles.accordionBodyWrapper}
                       >
                         <div className={styles.accordionBody}>
-                          <p className={styles.accContent}>{item.content}</p>
+                          <p className={`${styles.accContent} scroll_block`}>{item.content}</p>
                           {item.hasButtons && (
                             <div className={styles.accButtons}>
                               <CTAButton type="link" href="/services" text="Learn More" className={styles.learnBtn} />

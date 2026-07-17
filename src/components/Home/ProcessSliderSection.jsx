@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import styles from "./ProcessSliderSection.module.css";
 import CTAButton from "../Common/CTAButton";
 
@@ -63,7 +64,7 @@ export default function ProcessSliderSection() {
             paginate(1);
             return 0;
           }
-          return prev + (100 / (5000 / 50)); // 5 seconds duration
+          return prev + (100 / (5000 / 50));
         });
       }, 50);
     }
@@ -134,7 +135,7 @@ export default function ProcessSliderSection() {
                 <div className={styles.rightCol}>
                   <div className={styles.stepCircle}>{slides[activeIndex].step}</div>
                   <h3 className={styles.slideTitle}>{slides[activeIndex].title}</h3>
-                  <p className={styles.slideText}>{slides[activeIndex].text}</p>
+                  <p className={`${styles.slideText} scroll_block`}>{slides[activeIndex].text}</p>
 
                   <div className={styles.btnGroup}>
                     <CTAButton text="Learn More" variant="filled" />
@@ -146,7 +147,7 @@ export default function ProcessSliderSection() {
           </div>
 
           <div className={styles.controls}>
-            {slides.map((_, index) => (
+            {/* {slides.map((_, index) => (
               <div
                 key={index}
                 className={styles.dotContainer}
@@ -160,7 +161,23 @@ export default function ProcessSliderSection() {
                   }}
                 />
               </div>
-            ))}
+            ))} */}
+            <div className={styles.arrowContainer}>
+              <button
+                className={styles.arrow}
+                onClick={() => paginate(-1)}
+                aria-label="Previous"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              <button
+                className={styles.arrow}
+                onClick={() => paginate(1)}
+                aria-label="Next"
+              >
+                <ChevronRight size={24} />
+              </button>
+            </div>
           </div>
         </div>
       </div>

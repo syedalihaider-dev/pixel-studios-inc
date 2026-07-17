@@ -1,6 +1,7 @@
 .section {
   padding: 80px 0;
   color: #fff;
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
@@ -130,11 +131,12 @@
 }
 
 .cardText {
+  height: 120px;
   font-size: var(--font-size-sm);
   color: var(--light-color);
   font-weight: var(--font-400);
   line-height: 24px;
-  margin: 10px 0 25px 0;
+  margin: 10px 0 20px 0;
   text-align: left;
 }
 

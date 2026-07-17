@@ -2,6 +2,8 @@
   padding: 80px 0;
   overflow: hidden;
   background: radial-gradient(63.46% 96.32% at 50% 50%, #FFFFFF 0%, #FFDEFD 100%);
+  position: relative;
+  z-index: 1;
 }
 
 .mainHeading {
@@ -82,11 +84,12 @@
 }
 
 .slideText {
+  height: 60px;
   font-size: 18px;
   font-weight: var(--font-400);
   line-height: 30px;
   color: var(--accent-color);
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .btnGroup {
@@ -138,6 +141,32 @@
   border-radius: 2px;
 }
 
+.arrowContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color, #19042D);
+  background-color: transparent;
+  color: var(--accent-color, #19042D);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: var(--primary-color, #CB09A4);
+  color: #fff;
+  border-color: var(--primary-color, #CB09A4);
+}
+
 @media (max-width: 1024px) {
   .slideWrapper {
     flex-direction: column;
@@ -171,5 +200,13 @@
   }
   .dotContainer {
     width: 40px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .mainHeading {
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 20px;
   }
 }

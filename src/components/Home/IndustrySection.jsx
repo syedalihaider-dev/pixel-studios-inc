@@ -105,7 +105,7 @@ export default function IndustrySection() {
               <div className={styles.cardOverlay}>
                 <h3 className={styles.cardTitle}>{industry.title}</h3>
                 <div className={styles.cardContent}>
-                  <p className={styles.cardText}>{industry.text}</p>
+                  <p className={`${styles.cardText} scroll_block`}>{industry.text}</p>
                   <CTAButton
                     text="Read More"
                     variant="filled"

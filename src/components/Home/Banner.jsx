@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Banner.module.css';
 import CTAButton from '../Common/CTAButton';
+import Image from 'next/image';
 import PlayButton from '../Common/PlayButton';
 import gsap from 'gsap';
 
@@ -120,6 +121,15 @@ const Banner = () => {
               <div className={`mt-5 ${styles.actionRow} banner-reveal`}>
                 <CTAButton type="link" text="Learn More" href="/services" />
                 <CTAButton type="popup" variant="outline" text="Let's Talk" />
+              </div>
+              <div className="mt-5 banner-reveal">
+                <Image 
+                  src="/trust-badges.png" 
+                  width={536} 
+                  height={62} 
+                  alt="Trust Badges" 
+                  style={{ maxWidth: '100%', height: 'auto' }}
+                />
               </div>
             </div>
           </div>

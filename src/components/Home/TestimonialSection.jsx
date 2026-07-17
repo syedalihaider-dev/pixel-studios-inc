@@ -95,7 +95,14 @@ export default function TestimonialSection() {
 
           <div className="col-lg-6">
             <div className={styles.rightCol}>
-              <Link href="#" className={styles.badge}>
+              <Image 
+                src="/trust-badges.png" 
+                width={536} 
+                height={62} 
+                alt="Trust Badges" 
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
+              {/* <Link href="#" className={styles.badge}>
                 <Image
                   width={200}
                   height={65}
@@ -124,7 +131,7 @@ export default function TestimonialSection() {
                   className={styles.badgeLogo}
                 />
                 <div className={styles.ratingRow}>4.6/5.0 {renderStars()}</div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </motion.div>

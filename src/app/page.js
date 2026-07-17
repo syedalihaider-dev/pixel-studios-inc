@@ -12,8 +12,8 @@ import TestimonialSection from "@/components/Home/TestimonialSection";
 import FaqSection from "@/components/Home/FaqSection";
 
 export const metadata = {
-  title: "Home - Pixel Studios Inc",
-  description: "Welcome to Pixel Studios Inc. We are an award-winning digital agency.",
+  title: "Award-Winning Professional Video Animation Company",
+  description: "Need video animation services that convert browsers into buyers? Pixels Studios Inc builds custom 2D & 3D animation for brands across the USA. Get a free quote",
 };
 
 export default function Home() {

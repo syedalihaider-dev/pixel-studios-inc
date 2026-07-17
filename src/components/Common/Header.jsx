@@ -193,6 +193,71 @@ const accordionVariants = {
   }
 };
 
+const MobileAccordionItem = ({ item, level = 0, setMobileMenuOpen }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const hasDropdownItems = item.items && item.items.length > 0;
+  const hasSections = item.sections && item.sections.length > 0;
+  const hasColumns = item.columns && item.columns.length > 0;
+  const isDirectDropdown = item.isDropdown || item.isMegaMenu;
+  const hasChildren = hasDropdownItems || hasSections || hasColumns || isDirectDropdown;
+
+  if (!hasChildren) {
+    return (
+      <Link
+        href={item.path || item.headingPath || '#'}
+        className={styles.mobileSubItem}
+        style={{ paddingLeft: level > 1 ? `${(level - 1) * 15}px` : '0' }}
+        onClick={() => setMobileMenuOpen(false)}
+      >
+        {item.name || item.heading}
+      </Link>
+    );
+  }
+
+  return (
+    <div className={level === 0 ? styles.mobileNavItem : ''}>
+      <button
+        className={level === 0 ? styles.mobileNavLink : styles.mobileNestedNavLink}
+        style={{ paddingLeft: level > 0 ? `${level * 15}px` : '0' }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {item.name || item.heading}
+        <ChevronDown size={level === 0 ? 20 : 16} className={`${styles.chevron} ${isOpen ? styles.open : ''}`} />
+      </button>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            variants={accordionVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className={styles.mobileAccordionContent}
+            style={{ paddingLeft: level === 0 ? '10px' : '0' }}
+          >
+            {hasColumns && item.columns.map((col, idx) => (
+              <div key={idx}>
+                {col.sections && col.sections.map((sec, sIdx) => (
+                  <MobileAccordionItem key={sIdx} item={sec} level={level + 1} setMobileMenuOpen={setMobileMenuOpen} />
+                ))}
+              </div>
+            ))}
+
+            {hasSections && !hasColumns && item.sections.map((sec, idx) => (
+              <MobileAccordionItem key={idx} item={sec} level={level + 1} setMobileMenuOpen={setMobileMenuOpen} />
+            ))}
+
+            {hasDropdownItems && item.items.map((subItem, idx) => (
+              <MobileAccordionItem key={idx} item={subItem} level={level + 1} setMobileMenuOpen={setMobileMenuOpen} />
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -391,81 +456,8 @@ const Header = () => {
               <X size={36} />
             </button>
             <nav className={styles.offcanvasNav}>
-              {navData.map((link) => (
-                <div key={link.name} className={styles.mobileNavItem}>
-                  {link.isMegaMenu || link.isDropdown ? (
-                    <>
-                      <button
-                        className={`${styles.mobileNavLink} ${pathname === link.path && link.path !== '#' ? styles.active : ''}`}
-                        onClick={() => toggleAccordion(link.name)}
-                      >
-                        {link.name}
-                        <ChevronDown size={20} className={`${styles.chevron} ${mobileAccordion === link.name ? styles.open : ''}`} />
-                      </button>
-
-                      <AnimatePresence>
-                        {mobileAccordion === link.name && (
-                          <motion.div
-                            variants={accordionVariants}
-                            initial="hidden"
-                            animate="visible"
-                            exit="hidden"
-                            className={styles.mobileAccordionContent}
-                          >
-                            {/* Mobile Services */}
-                            {link.megaMenuLayout === 'services' && link.columns.map((col, colIdx) => (
-                              <div key={`m-col-${colIdx}`}>
-                                {col.sections.map((sec, secIdx) => (
-                                  <div key={`m-sec-${secIdx}`}>
-                                    <div className={styles.mobileSubHeading}>
-                                      {sec.headingPath ? (
-                                        <Link href={sec.headingPath} style={{ color: 'inherit', textDecoration: 'none' }} onClick={() => setMobileMenuOpen(false)}>
-                                          {sec.heading}
-                                        </Link>
-                                      ) : (
-                                        sec.heading
-                                      )}
-                                    </div>
-                                    {sec.items.map((item, itemIdx) => (
-                                      <Link
-                                        key={`m-item-${itemIdx}`}
-                                        href={item.path}
-                                        className={styles.mobileSubItem}
-                                        onClick={() => setMobileMenuOpen(false)}
-                                      >
-                                        {item.name}
-                                      </Link>
-                                    ))}
-                                  </div>
-                                ))}
-                              </div>
-                            ))}
-
-                            {/* Mobile Grid/Industries/Locations/Case Studies */}
-                            {link.megaMenuLayout === 'grid' && link.items.map((item, itemIdx) => (
-                              <Link
-                                key={`m-grid-${itemIdx}`}
-                                href={item.path}
-                                className={styles.mobileSubItem}
-                                onClick={() => setMobileMenuOpen(false)}
-                              >
-                                {item.name}
-                              </Link>
-                            ))}
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </>
-                  ) : (
-                    <Link
-                      href={link.path}
-                      className={`${styles.mobileNavLink} ${pathname === link.path ? styles.active : ''}`}
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {link.name}
-                    </Link>
-                  )}
-                </div>
+              {navData.map((link, idx) => (
+                <MobileAccordionItem key={idx} item={link} level={0} setMobileMenuOpen={setMobileMenuOpen} />
               ))}
               <div className="mt-5 mb-4">
                 <CTAButton type="link" href="/get-started" text="GET STARTED" />
