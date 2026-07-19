@@ -1,4 +1,4 @@
-.section {
+.industrySection {
   padding: 80px 0;
   color: #fff;
   overflow: hidden;
@@ -6,11 +6,11 @@
   z-index: 1;
 }
 
-.section::after{
+.industrySection::after {
   content: "";
   width: 100%;
   height: 100%;
-  background: radial-gradient(60.57% 91.94% at 69.22% 43%, #C53ADD 0%, #19042D 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(60.57% 91.94% at 69.22% 43%, #C53ADD 0%, #19042D 100%);
   opacity: 0.3;
   filter: blur(255.306px);
   position: absolute;
@@ -88,7 +88,7 @@
   scroll-snap-align: start;
   flex-shrink: 0;
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .cardImg {
@@ -104,7 +104,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -141,13 +141,12 @@
   text-align: left;
 }
 
-/* Hover effects */
 .slideCard:hover .cardImg {
   transform: scale(1.1);
 }
 
 .slideCard:hover .cardOverlay {
-  background: rgba(18, 3, 34, 0.85); /* Solid dark purple overlay on hover */
+  background: rgba(18, 3, 34, 0.85);
 }
 
 .slideCard:hover .cardTitle {
@@ -160,34 +159,139 @@
   transform: translateY(0);
 }
 
-@media (max-width: 992px) {
-  .heading {
-    font-size: 38px;
+@media (max-width: 1399px) {
+  .industrySection {
+    padding: 60px 0;
+  }
+
+  .topRow {
+    margin: 0 auto 30px auto;
+    padding: 0 20px;
+  }
+
+  .heading,
+  .description {
+    max-width: 980px;
+  }
+
+  .slideCard {
+    min-width: 300px;
+    height: 400px;
+  }
+
+  .cardOverlay {
+    padding: 30px 20px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .cardText {
+    height: 120px;
+    line-height: 24px;
+    margin: 10px 0 20px 0;
+  }
+
+  .slideCard:hover .cardContent {
+    max-height: 250px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
+  .industrySection {
+    padding: 40px 0;
+  }
+
   .topRow {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+    margin: 0 auto 25px auto;
+    padding: 0 20px;
   }
-  .heading {
-    font-size: 32px;
+
+  .heading,
+  .description {
+    max-width: 750px;
   }
+
   .slideCard {
     min-width: 280px;
     height: 380px;
   }
-}
 
+  .cardOverlay {
+    padding: 25px 15px;
+  }
 
-@media (max-width: 1600px) {
-  .description, .slideCard {
-    max-width: 100%;
-    height: auto;
+  .cardTitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .cardText {
+    height: 120px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+  }
+
+  .slideCard:hover .cardContent {
+    max-height: 250px;
   }
 }
 
+@media (max-width: 991px) {
+  .topRow {
+    flex-direction: column;
+    margin: 0 auto 25px auto;
+    padding: 0 20px;
+    gap: 20px;
+  }
 
+  .heading,
+  .description {
+    max-width: 100%;
+  }
 
+  .slideCard {
+    min-width: 260px;
+    height: 360px;
+  }
+
+  .cardOverlay {
+    padding: 25px 15px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .cardText {
+    height: 120px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+  }
+
+  .slideCard:hover .cardContent {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .topRow {
+    flex-direction: column;
+    margin: 0 auto 25px auto;
+    padding: 0 ;
+    gap: 0px;
+  }
+
+  .heading,
+  .description {
+    max-width: 100%;
+  }
+
+  .slideCard {
+    min-width: 260px;
+    height: 360px;
+  }
+}

@@ -1,4 +1,4 @@
-.section {
+.testimonialSection {
   padding: 0 0 80px;
   color: #fff;
   overflow: hidden;
@@ -69,7 +69,7 @@
   scroll-snap-align: start;
   flex-shrink: 0;
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .slideImg {
@@ -147,7 +147,7 @@
   height: 50px;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -179,7 +179,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
   z-index: 9999;
   display: flex;
@@ -200,7 +200,7 @@
   background: #000;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 .closeBtn {
@@ -222,28 +222,146 @@
   color: var(--primary-color, #CB09A4);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1399px) {
+  .testimonialSection {
+    padding: 0 0 60px;
+  }
+
   .slideCard {
-    min-width: 350px;
-    height: 250px;
+    min-width: 400px;
+    height: 265px;
+  }
+
+  .clientName {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .clientRole {
+    font-size: 16px;
+  }
+
+  .playBtn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .controlsRow {
+    margin-top: 30px;
+  }
+
+  .arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ctaRow {
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .modalWrapper {
+    max-width: 900px;
+  }
+
+  .modalContent {
+    aspect-ratio: 16/9;
   }
 }
 
-@media (max-width: 768px) {
-  .heading { font-size: 36px; }
-  .rightCol { gap: 20px; }
-  .slideCard { min-width: 280px; height: 200px; }
-  .ctaRow { flex-direction: column; }
-  .ctaRow > * { width: 100%; justify-content: center; }
-}
+@media (max-width: 1199px) {
+  .testimonialSection {
+    padding: 0 0 40px;
+  }
 
+  .slideCard {
+    border-radius: 10px;
+    min-width: 290px;
+    height: 190px;
+  }
 
-@media (max-width: 1600px) {
-  .slideCard, .modalWrapper, .slideCard {
-    max-width: 100%;
-    height: auto;
+  .slideOverlay {
+    padding: 15px;
+  }
+
+  .clientName {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .playBtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .controlsRow {
+    margin-top: 25px;
+  }
+
+  .arrow {
+    width: 45px;
+    height: 45px;
+  }
+
+  .ctaRow {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .modalWrapper {
+    max-width: 900px;
   }
 }
 
+@media (max-width: 991px) {
+  .slideCard {
+    min-width: 280px;
+    height: 185px;
+  }
 
+  .slideOverlay {
+    padding: 15px;
+  }
 
+  .playBtn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .controlsRow {
+    margin-top: 20px;
+  }
+
+  .arrow {
+    width: 45px;
+    height: 45px;
+  }
+
+  .modalWrapper {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .slideCard {
+    min-width: 280px;
+    height: 185px;
+  }
+
+  .slideCard {
+    min-width: 280px;
+    height: 185px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slideCard {
+    min-width: 280px;
+    height: 185px;
+  }
+
+  .slideCard {
+    min-width: 280px;
+    height: 185px;
+  }
+}

@@ -58,7 +58,7 @@ export default function AnimationPortfolio() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.animationPortfolio}>
       <p className="subtitle">OUR WORK SPEAKS</p>
       <h2 className={styles.heading}>ANIMATION PORTFOLIO</h2>
       <p className={styles.description}>

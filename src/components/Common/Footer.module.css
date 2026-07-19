@@ -27,7 +27,7 @@
   display: inline-block;
 }
 
-.logoLink img{
+.logoLink img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -54,24 +54,30 @@
   color: transparent;
 }
 
-.linkList, .servicesList, .contactList {
+.linkList,
+.servicesList,
+.contactList {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.linkList li, .servicesList li, .contactList li {
+.linkList li,
+.servicesList li,
+.contactList li {
   margin-bottom: 15px;
 }
 
-.linkList a, .servicesList a {
+.linkList a,
+.servicesList a {
   font-size: 16px;
   color: #c9c5d1;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.linkList a:hover, .servicesList a:hover {
+.linkList a:hover,
+.servicesList a:hover {
   color: #FFFFFF;
 }
 
@@ -138,7 +144,7 @@
   height: auto;
 }
 
-.paymentMethods img{
+.paymentMethods img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -219,18 +225,22 @@
   .footerGrid {
     grid-template-columns: 1fr 1fr;
   }
+
   .servicesList {
     column-count: 2;
   }
+
   .bottomBar {
     flex-direction: column;
     gap: 20px;
     text-align: center;
   }
+
   .copyrightArea {
     flex-direction: column;
     gap: 10px;
   }
+
   .divider {
     display: none;
   }
@@ -241,9 +251,11 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
   .servicesList {
     column-count: 1;
   }
+
   .marqueeText {
     font-size: 100px;
     line-height: 120px;
@@ -252,23 +264,43 @@
 
 @media (max-width: 575px) {
   .footerContainer {
-    padding: 50px 0 0 0;
+    padding: 40px 0 0 0;
   }
+
+  .footerGrid {
+    margin-bottom: 40px;
+  }
+
   .heading {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
     margin-bottom: 20px;
   }
+
+  .linkList li,
+  .servicesList li,
+  .contactList li {
+    margin-bottom: 10px;
+  }
+
   .marqueeText {
     font-size: 60px;
     line-height: 80px;
   }
+
   .bottomLinks {
-    flex-direction: column;
     gap: 5px;
   }
-  .copyrightArea p, .bottomLinks a {
+
+  .copyrightArea p,
+  .bottomLinks a {
+
     line-height: 24px;
+  }
+
+  .linkList a,
+  .servicesList a {
+    font-size: 14px;
   }
 }
 
@@ -276,13 +308,5 @@
   .marqueeText {
     font-size: 40px;
     line-height: 60px;
-  }
-}
-
-
-@media (max-width: 1600px) {
-  .paymentMethods {
-    max-width: 100%;
-    height: auto;
   }
 }

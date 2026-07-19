@@ -73,8 +73,6 @@ const WhyInvestSection = () => {
   return (
     <section className={styles.investSection}>
       <div className="container">
-
-        {/* Header */}
         <motion.div
           className={styles.header}
           initial={{ opacity: 0, y: 30 }}
@@ -85,9 +83,8 @@ const WhyInvestSection = () => {
           <p className={styles.subText}>The data on video animation in marketing is not ambiguous anymore.</p>
         </motion.div>
 
-        <div className="row align-items-center mt-5 pt-4">
+        <div className="row align-items-center mt-5">
 
-          {/* Left Column - Rocket */}
           <div className="col-lg-6 position-relative d-flex justify-content-center align-items-center mb-5 mb-lg-0">
             <motion.div
               className={styles.rocketWrapper}
@@ -105,7 +102,6 @@ const WhyInvestSection = () => {
                 priority
               />
 
-              {/* Floating Boxes */}
               {floatingBoxes.map((box, idx) => (
                 <motion.div
                   key={box.id}
@@ -123,7 +119,6 @@ const WhyInvestSection = () => {
             </motion.div>
           </div>
 
-          {/* Right Column - Accordion */}
           <div className="col-lg-6">
             <div className={styles.accordionList}>
               {accordionData.map((item) => (
@@ -154,8 +149,8 @@ const WhyInvestSection = () => {
                           <p className={`${styles.accContent} scroll_block`}>{item.content}</p>
                           {item.hasButtons && (
                             <div className={styles.accButtons}>
-                              <CTAButton type="link" href="/services" text="Learn More" className={styles.learnBtn} />
-                              <CTAButton type="link" variant="outline" href="/contact" text="Let's Talk" className={styles.talkBtn} />
+                              <CTAButton type="link" href="#" text="Learn More" className={styles.learnBtn} />
+                              <CTAButton type="link" variant="outline" href="#" text="Let's Talk" className={styles.talkBtn} />
                             </div>
                           )}
                         </div>

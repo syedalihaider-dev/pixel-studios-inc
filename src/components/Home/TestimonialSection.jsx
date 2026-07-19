@@ -76,7 +76,7 @@ export default function TestimonialSection() {
   );
 
   return (
-    <section className={styles.section}>
+    <section className={styles.testimonialSection}>
       <div className="container">
         {/* Header Row */}
         <motion.div

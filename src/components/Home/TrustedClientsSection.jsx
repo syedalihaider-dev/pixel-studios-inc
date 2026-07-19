@@ -26,7 +26,7 @@ const bottomRowClients = allClients.slice(7, 14);
 
 export default function TrustedClientsSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.trustedClientsSection}>
       <motion.div
         className="container"
         initial={{ opacity: 0, y: 30 }}

@@ -80,7 +80,7 @@ export default function WhyPartnerSection() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.whyPartnerSection}>
       <div className="container">
         <motion.h2
           className={styles.heading}

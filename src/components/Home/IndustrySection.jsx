@@ -138,7 +138,7 @@ export default function IndustrySection() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.industrySection}>
       <div className="container">
         <motion.div
           className={styles.topRow}

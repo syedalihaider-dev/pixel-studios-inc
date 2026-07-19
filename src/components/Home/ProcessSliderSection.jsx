@@ -96,7 +96,7 @@ export default function ProcessSliderSection() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.processSliderSection}>
       <div className="container">
         <motion.h2
           className={styles.mainHeading}
