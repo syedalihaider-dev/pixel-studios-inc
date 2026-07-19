@@ -324,6 +324,9 @@
 }
 
 @media (max-width: 1399px) {
+  .headerInner {
+    padding: 10px;
+  }
   .navLink {
     font-size: 14px;
   }
@@ -338,3 +341,16 @@
     display: block;
   }
 }
+
+/* Auto-injected responsive grid */
+@media (max-width: 991px) {
+  .servicesGrid, .industriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .servicesGrid, .industriesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

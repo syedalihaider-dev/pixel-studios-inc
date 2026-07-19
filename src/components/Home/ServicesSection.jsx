@@ -89,7 +89,7 @@ const ServicesSection = () => {
                   </div>
                   <div className={styles.textWrapper}>
                     <h3 className={styles.cardTitle}>{service.title}</h3>
-                    <p className={styles.cardDesc}>
+                    <p className={`${styles.cardDesc} scroll_block`}>
                       {service.desc}
                     </p>
                   </div>
@@ -110,12 +110,13 @@ const ServicesSection = () => {
                   alt="Calendar"
                   width={205}
                   height={205}
+                  className={styles.calender}
                 />
                 <div className={styles.ctaText}>
                   <p className={styles.ctaSubtitle}>Picking an animation company feels riskier?</p>
                   <h3 className={styles.ctaTitle}>Trusted Animation Company for 2D & 3D Animation Services That Fit Your Brand & Your Goals</h3>
                   <div>
-                    <CTAButton type="link" href="/book-meeting" text="Book a Meeting" />
+                    <CTAButton type="link" href="/#" text="Book a Meeting" />
                   </div>
                 </div>
               </div>

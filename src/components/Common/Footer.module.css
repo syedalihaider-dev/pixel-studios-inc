@@ -239,6 +239,7 @@
 @media (max-width: 768px) {
   .footerGrid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
   .servicesList {
     column-count: 1;
@@ -246,5 +247,42 @@
   .marqueeText {
     font-size: 100px;
     line-height: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footerContainer {
+    padding: 50px 0 0 0;
+  }
+  .heading {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .marqueeText {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .bottomLinks {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .copyrightArea p, .bottomLinks a {
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .marqueeText {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+
+@media (max-width: 1600px) {
+  .paymentMethods {
+    max-width: 100%;
+    height: auto;
   }
 }

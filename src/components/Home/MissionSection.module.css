@@ -49,12 +49,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .heading {
   color: var(--light-color);
-  font-weight: var(--font-400);
   margin-bottom: 30px;
 }
 
@@ -70,17 +69,55 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 991px) {
-  .contentWrapper {
-    padding-left: 0;
-    margin-top: 40px;
-  }
-  
+@media (max-width: 1600px) {
   .heading {
-    font-size: 36px;
+    margin-bottom: 15px;
   }
-  
+
   .description {
-    font-size: 20px;
+    height: 135px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .missionSection {
+    padding: 60px 0;
+  }
+
+  .description {
+    height: 120px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .missionSection {
+    padding: 40px 0;
+  }
+
+  .description {
+    height: 105px;
+  }
+
+  .buttonsWrapper {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .description {
+    height: 85px;
+  }
+}
+
+@media (max-width: 767px) {
+  .description {
+    height: 115px;
+  }
+}
+
+@media (max-width: 575px) {
+  .description {
+    height: 170px;
   }
 }

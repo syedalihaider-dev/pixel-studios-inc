@@ -229,3 +229,14 @@
     display: none; /* Hide floating boxes on very small screens to avoid clutter */
   }
 }
+
+
+@media (max-width: 1600px) {
+  .rocketWrapper {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+

@@ -118,11 +118,11 @@ const Banner = () => {
                 ))}
               </div>
 
-              <div className={`mt-5 ${styles.actionRow} banner-reveal`}>
+              <div className={`${styles.actionRow} banner-reveal`}>
                 <CTAButton type="link" text="Learn More" href="/services" />
                 <CTAButton type="popup" variant="outline" text="Let's Talk" />
               </div>
-              <div className="mt-5 banner-reveal">
+              <div className={`${styles.trustBadges} banner-reveal`}>
                 <Image
                   src="/trust-badges.png"
                   width={536}
@@ -137,9 +137,7 @@ const Banner = () => {
       </div>
 
       <div className={styles.progressContainer}>
-        <div className="mb-5 pb-5">
-          <PlayButton text="SHOW REEL" />
-        </div>
+        <PlayButton text="SHOW REEL" />
 
         {slides.map((_, index) => (
           <div key={index} className={styles.progressSegment}>

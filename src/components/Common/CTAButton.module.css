@@ -9,7 +9,7 @@
   color: #ffffff;
   font-family: var(--font-base), sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -37,12 +37,10 @@
   left: -100%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: skewX(-25deg);
   transition: all 0.75s ease;
   z-index: -1;
@@ -81,4 +79,22 @@
 
 .ctaButton:hover .icon {
   transform: translateX(4px);
+}
+
+@media (max-width: 1600px) {
+  .ctaButton {
+    padding: 14px 32px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .ctaButton {
+    padding: 14px 32px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .ctaButton {
+    padding: 10px 15px;
+  }
 }

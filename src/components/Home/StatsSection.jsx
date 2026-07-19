@@ -11,7 +11,6 @@ const statsData = [
   { end: 95, suffix: '%', label: 'On-Time\nDelivery' },
 ];
 
-// Framer motion variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -47,7 +46,7 @@ const StatsSection = () => {
         <div className="row align-items-center">
 
           {/* Left Heading */}
-          <div className="col-lg-5 mb-4 mb-lg-0">
+          <div className="col-md-6 col-lg-5 mb-4 mb-lg-0">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -55,15 +54,15 @@ const StatsSection = () => {
               variants={textVariants}
             >
               <h2 className={styles.heading}>
-                A Trusted Animation<br />
-                Company for 2D & 3D<br />
+                A Trusted Animation <br />
+                Company for 2D & 3D <br />
                 Animation Services
               </h2>
             </motion.div>
           </div>
 
           {/* Right Stats Grid */}
-          <div className="col-lg-7">
+          <div className="col-md-6 col-lg-7">
             <motion.div
               className="row g-3"
               variants={containerVariants}
@@ -72,7 +71,7 @@ const StatsSection = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               {statsData.map((stat, index) => (
-                <div key={index} className="col-6 col-md-3">
+                <div key={index} className="col-6 col-md-6 col-lg-3">
                   <motion.div variants={itemVariants} className={styles.statCard}>
                     <h3 className={styles.numberContainer}>
                       <CountUp

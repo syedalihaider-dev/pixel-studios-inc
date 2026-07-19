@@ -217,7 +217,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: rgba(0,0,0,0.9);
   display: flex;
@@ -310,3 +310,27 @@
     max-width: 1593px;
   }
 }
+
+
+@media (max-width: 1600px) {
+  .description, .tabsContainer, .modalContent, .tabsContainer {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Auto-injected responsive grid */
+@media (max-width: 991px) {
+  .grid, .grid, .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .grid, .grid, .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
