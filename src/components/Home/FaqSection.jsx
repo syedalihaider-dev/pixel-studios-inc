@@ -1,15 +1,11 @@
 "use client";
-
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Plus, X } from "lucide-react";
-import styles from "./FaqSection.module.css";
+import React from "react";
+import GlobalFaqSection from "../Common/FaqSection";
 
 const faqs = [
   {
     question: "Can you help with custom animations for my specific business?",
-    answer:
-      "Yes. We strictly create custom animations tailored to your business. We avoid pre-built templates entirely, ensuring every video is genuinely specific to your brand, audience, and unique goals.",
+    answer: "Yes. We strictly create custom animations tailored to your business. We avoid pre-built templates entirely, ensuring every video is genuinely specific to your brand, audience, and unique goals.",
   },
   {
     question: "What makes your animation company different from the hundreds of others?",
@@ -57,74 +53,11 @@ const faqs = [
   },
 ];
 
-const FaqSection = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
+export default function FaqSection() {
   return (
-    <section className={styles.faqSection}>
-      <motion.div
-        className="container"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8 }}
-      >
-        <h2 className={styles.heading}>Video Animation Services, Answered With Authority</h2>
-
-        <div className={styles.faqContainer}>
-          {faqs.map((faq, index) => {
-            const isActive = activeIndex === index;
-
-            return (
-              <motion.div
-                key={index}
-                className={`${styles.faqItem} ${isActive ? styles.active : ""}`}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                onClick={() => toggleAccordion(index)}
-              >
-                <div className={styles.faqHeader}>
-                  <h3 className={styles.question}>{faq.question}</h3>
-                  <motion.div
-                    className={styles.iconContainer}
-                    initial={false}
-                    animate={{ rotate: isActive ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {isActive ? (
-                      <X className={styles.icon} />
-                    ) : (
-                      <Plus className={styles.icon} />
-                    )}
-                  </motion.div>
-                </div>
-
-                <AnimatePresence>
-                  {isActive && (
-                    <motion.div
-                      className={styles.answerContainer}
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.4, ease: "easeInOut" }}
-                    >
-                      <p className={styles.answer}>{faq.answer}</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            );
-          })}
-        </div>
-      </motion.div>
-    </section>
+    <GlobalFaqSection
+      heading="Video Animation Services, Answered With Authority"
+      faqs={faqs}
+    />
   );
-};
-
-export default FaqSection;
+}

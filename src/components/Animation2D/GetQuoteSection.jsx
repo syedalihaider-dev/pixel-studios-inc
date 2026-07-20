@@ -55,7 +55,7 @@ export default function GetQuoteSection() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.getQuoteSection}>
       <div className="container">
         <div className={styles.wrapper}>
           <motion.div

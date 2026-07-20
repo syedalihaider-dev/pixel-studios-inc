@@ -226,7 +226,7 @@ p {
 .subtitle {
     color: var(--primary-color);
     font-family: var(--font-heading);
-    font-weight: var(--font-500);
+    font-weight: var(--font-400);
     font-size: 25px;
     line-height: 31px;
     leading-trim: both;

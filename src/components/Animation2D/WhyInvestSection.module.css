@@ -7,31 +7,21 @@
   z-index: 1;
 }
 
-.subtitle {
-  color: var(--primary-color);
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  font-weight: 400;
-  font-size: 25px;
-  letter-spacing: -0.08em;
+.workflowSection :global(.subtitle) {
+  color: var(--light-color);
 }
 
 .mainTitle {
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: 400;
-  margin-bottom: 25px;
-  letter-spacing: -0.02em;
+  color: var(--light-color);
 }
 
 .subText {
   width: 580px;
-  color: #fff;
+  color: var(--light-color);
   font-weight: 400;
   font-size: 20px;
 }
 
-/* Right Column - Accordion */
 .accordionList {
   display: flex;
   flex-direction: column;
@@ -72,6 +62,7 @@
   justify-content: center;
   margin-right: 25px;
   transition: all 0.3s ease;
+  display: none;
 }
 
 .accordionItem.active .iconCircle {
@@ -113,15 +104,19 @@
 .accordionBody {
   padding-top: 5px;
   padding-bottom: 10px;
-  padding-left: 130px;
 }
 
 .accContent {
+  height: 120px;
   font-size: 20px;
   font-weight: 300;
   color: #fff;
   line-height: 30px;
   margin: 0;
+}
+
+.btnWrapper{
+  margin-top: 25px;
 }
 
 @media (max-width: 991px) {

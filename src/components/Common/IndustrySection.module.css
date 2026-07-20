@@ -19,6 +19,15 @@
   z-index: -1;
 }
 
+.industrySection.gradientBg {
+  padding: 100px 0;
+  background: radial-gradient(60.57% 91.94% at 69.22% 43%, #6a1e77 0%, #19042d 100%);
+}
+
+.industrySection.gradientBg::after {
+  display: none;
+}
+
 .topRow {
   display: flex;
   justify-content: space-between;
@@ -163,6 +172,10 @@
   .industrySection {
     padding: 60px 0;
   }
+  
+  .industrySection.gradientBg {
+    padding: 60px 0;
+  }
 
   .topRow {
     margin: 0 auto 30px auto;
@@ -201,6 +214,10 @@
 
 @media (max-width: 1199px) {
   .industrySection {
+    padding: 40px 0;
+  }
+  
+  .industrySection.gradientBg {
     padding: 40px 0;
   }
 

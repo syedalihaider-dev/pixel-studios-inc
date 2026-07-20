@@ -4,6 +4,11 @@
   overflow: hidden;
 }
 
+.testimonialSection.gradientBg {
+  background: radial-gradient(100% 100% at 100% 50%, #6a1e7778 0%, #19042d 100%);
+  padding: 80px 0;
+}
+
 .rightCol {
   display: flex;
   gap: 15px;
@@ -227,6 +232,10 @@
     padding: 0 0 60px;
   }
 
+  .testimonialSection.gradientBg {
+    padding: 60px 0;
+  }
+
   .slideCard {
     min-width: 400px;
     height: 265px;
@@ -272,6 +281,10 @@
 @media (max-width: 1199px) {
   .testimonialSection {
     padding: 0 0 40px;
+  }
+
+  .testimonialSection.gradientBg {
+    padding: 40px 0;
   }
 
   .slideCard {
@@ -347,19 +360,9 @@
     min-width: 280px;
     height: 185px;
   }
-
-  .slideCard {
-    min-width: 280px;
-    height: 185px;
-  }
 }
 
 @media (max-width: 575px) {
-  .slideCard {
-    min-width: 280px;
-    height: 185px;
-  }
-
   .slideCard {
     min-width: 280px;
     height: 185px;
