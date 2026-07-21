@@ -75,7 +75,7 @@ export default function TestimonialSection({
                 />
               ) : (
                 <>
-                  <Link href="#" className={styles.badge}>
+                  {/* <Link href="#" className={styles.badge}>
                     <Image width={200} height={65} src="/google-logo.png" alt="Google" className={styles.badgeLogo} />
                     <div className={styles.ratingRow}>5.0/5.0 {renderStars()}</div>
                   </Link>
@@ -86,7 +86,14 @@ export default function TestimonialSection({
                   <Link href="#" className={styles.badge}>
                     <Image width={200} height={65} src="/trustpilot-logo.png" alt="Trustpilot" className={styles.badgeLogo} />
                     <div className={styles.ratingRow}>4.6/5.0 {renderStars()}</div>
-                  </Link>
+                  </Link> */}
+                  <Image
+                    src="/trust-badges.png"
+                    width={536}
+                    height={62}
+                    alt="Trust Badges"
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                  />
                 </>
               )}
             </div>

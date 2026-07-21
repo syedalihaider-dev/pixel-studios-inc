@@ -46,7 +46,7 @@ const navData = [
         sections: [
           {
             heading: '3D Animation Services',
-            headingPath: '#',
+            headingPath: '/3d-animation',
             items: [
               { name: '3D Product Animation', path: '#' },
               { name: '3D Product Modeling', path: '#' },

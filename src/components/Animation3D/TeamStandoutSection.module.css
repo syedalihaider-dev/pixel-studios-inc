@@ -12,6 +12,15 @@
   margin-right: auto;
 }
 
+.subHeading {
+  color: #CB09A4;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
 .mainHeading {
   font-size: 50px;
   font-weight: 800;
@@ -88,7 +97,6 @@
 .featureIconImageWrapper {
   width: 64px;
   height: auto;
-  display: none;
 }
 
 .featureIconImageWrapper img {

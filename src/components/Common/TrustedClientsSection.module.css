@@ -16,15 +16,11 @@
   margin-bottom: 40px;
 }
 
-.lightVariant .container {
-  /* if we want to override layout, but user said use Home's responsive layout */
-}
-
 .heading {
   color: var(--light-color);
   font-weight: var(--font-400);
-  font-size: 100px;
-  line-height: 125px;
+  font-size: 80px;
+  line-height: 90px;
   letter-spacing: -0.08em;
   text-transform: uppercase;
 }
@@ -123,6 +119,13 @@
   to { transform: translateX(0); }
 }
 
+@media (max-width: 1600px) {
+  .heading {
+    font-size: 70px;
+    line-height: 80px;
+  }
+}
+
 @media (max-width: 1399px) {
   .trustedClientsSection {
     padding: 60px 0;
@@ -134,8 +137,8 @@
   }
 
   .heading {
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 60px;
+    line-height: 70px;
   }
 
   .text {
@@ -160,8 +163,8 @@
   }
 
   .heading {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 45px;
+    line-height: 55px;
   }
 
   .text {
@@ -176,8 +179,8 @@
 
 @media (max-width: 991px) {
   .heading {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 45px;
   }
 }
 
