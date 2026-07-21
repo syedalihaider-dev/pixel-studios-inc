@@ -22,8 +22,8 @@ const allClients = [
 export default function TrustedClientsSection() {
   return (
     <GlobalTrustedClientsSection
-      heading="CLIENTS"
-      text="Our animation services have earned the trust of leading global brands, delivering impactful results that drive success worldwide."
+      heading="Get a Custom Project Estimate"
+      text="Submit your brief and receive a transparent, itemized estimate within 48 hours. No hidden costs. No vague ranges."
       clients={allClients}
       variant="light"
     />

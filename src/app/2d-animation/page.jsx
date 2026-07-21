@@ -5,7 +5,7 @@ import WhyPartnerSection from "@/components/Animation2D/WhyPartnerSection";
 import WhyInvestSection from "@/components/Animation2D/WhyInvestSection";
 import AnimationPortfolio from "@/components/Animation2D/AnimationPortfolio";
 import CostSection from "@/components/Animation2D/CostSection";
-import GetQuoteSection from "@/components/Animation2D/GetQuoteSection";
+// import GetQuoteSection from "@/components/Animation2D/GetQuoteSection";
 import TestimonialsSlider from "@/components/Animation2D/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Animation2D/TrustedClientsSection";
 import IndustrySection from "@/components/Animation2D/IndustrySection";
@@ -28,10 +28,9 @@ export default function TwoDAnimation() {
       <WhyPartnerSection />
       <WhyInvestSection />
       <AnimationPortfolio />
-      <div style={{ backgroundImage: "radial-gradient(60.57% 91.94% at 69.22% 43%, #C53ADD 0%, #19042D 100%)" }}>
-        <CostSection />
-        <GetQuoteSection />
-      </div>
+      {/* <div style={{ backgroundImage: "radial-gradient(60.57% 91.94% at 69.22% 43%, #C53ADD 0%, #19042D 100%)" }}></div> */}
+      <CostSection />
+      {/* <GetQuoteSection /> */}
       <TestimonialsSlider />
       <GreatVideosSection />
       <TestimonialSection />

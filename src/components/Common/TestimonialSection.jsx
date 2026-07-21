@@ -34,9 +34,9 @@ export default function TestimonialSection({
 
   const scroll = (direction) => {
     if (sliderRef.current) {
-      const scrollAmount = direction === "left" ? -445 : 445; // 420px card + 25px gap
+      const scrollAmount = direction === "left" ? -445 : 445;
       sliderRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      setTimeout(checkScroll, 350); // check after smooth scroll
+      setTimeout(checkScroll, 350);
     }
   };
 
@@ -51,7 +51,6 @@ export default function TestimonialSection({
   return (
     <section className={`${styles.testimonialSection} ${variant === 'gradient' ? styles.gradientBg : ''}`}>
       <div className="container">
-        {/* Header Row */}
         <motion.div
           className="row mb-5 align-items-center"
           initial={{ opacity: 0, y: 30 }}

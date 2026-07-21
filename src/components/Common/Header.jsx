@@ -21,7 +21,7 @@ const navData = [
         sections: [
           {
             heading: '2D Animation Services',
-            headingPath: '/services/2d-animation',
+            headingPath: '/2d-animation',
             items: [
               { name: 'Explainer Video Production', path: '#' },
               { name: 'Motion Graphics Services', path: '#' },
@@ -137,7 +137,7 @@ const navData = [
   },
   {
     name: 'INSIGHTS',
-    path: '/#',
+    path: '#',
     isDropdown: true,
     items: [
       { name: 'BLOG', path: '#' },
@@ -146,7 +146,7 @@ const navData = [
   },
   {
     name: 'OUR WORK',
-    path: '/#',
+    path: '#',
     isDropdown: true,
     items: [
       { name: 'PORTFOLIO', path: '/our-work' },

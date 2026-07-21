@@ -36,8 +36,8 @@ const testimonials = [
 export default function TestimonialSection() {
   return (
     <GlobalTestimonialSection
-      heading="Let’s Hear What Our Clients Are Saying"
-      subText="Our clients include some of the world’s most renowned brands, entrusting us with their animation needs to elevate their messages."
+      heading="Request a Free Consultation"
+      subText="30 minutes. No obligation. A detailed proposal with scope, timeline, and investment within 48 hours of the call."
       testimonials={testimonials}
       variant="gradient"
     />

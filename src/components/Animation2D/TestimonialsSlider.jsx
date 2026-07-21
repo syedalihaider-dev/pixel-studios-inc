@@ -7,39 +7,39 @@ import styles from './TestimonialsSlider.module.css';
 const testimonialsData = [
   {
     id: 1,
-    name: "EMILY JEFF",
+    name: "Suzane Blake",
     role: "Chief Visionary Officer, B2B SaaS Platform",
-    content: "Our 2D animation portfolio covers explainer videos, whiteboard animations, social media content, cel animation, corporate training series, and promotional campaigns across healthcare, SaaS, finance, education, retail, and more.",
+    content: "We had worked with two 2D animation companies before Pixels Studios. Both produced technically correct videos that moved zero metrics. Pixels Studios spent three discovery sessions with us before writing a word. The 2D explainer video went live on our homepage and primary landing page. Within 60 days, free trial sign-up rate was up 38%, and every sales rep was sending it as a pre-call primer.",
     image: "/testi-client-01.png"
   },
   {
     id: 2,
-    name: "CARLOS SAMUEL",
+    name: "Carlos Samuel",
     role: "Project Manager, Financial Services Firm",
-    content: "We needed 2D animated training content for a compliance program with a completion rate problem. The whiteboard animation series Pixels Studios built has an 89% completion rate in our LMS versus 44% for the written equivalent. That number was cited in the board report that approved a full-year animation content budget",
+    content: "We needed 2D animated training content for a compliance program with a completion rate problem. The whiteboard animation series Pixels Studios built has an 89% completion rate in our LMS versus 44% for the written equivalent. That number was cited in the board report that approved a full-year animation content budget.",
     image: "/testi-client-02.png"
   },
   {
     id: 3,
-    name: "EMILY JEFF",
+    name: "Skylar Benedict",
     role: "Chief Marketing Officer, Enterprise SaaS Company",
     content: "Our product takes most salespeople 15 minutes to explain. After the Pixels Studios 2D animated explainer went live, our sales team used it as a pre-call primer, and our demo-to-close time dropped measurably in the first full quarter. 87 seconds of video changed our sales cycle.",
     image: "/testi-client-03.png"
   },
-  {
-    id: 4,
-    name: "SARAH JENKINS",
-    role: "Director of Marketing, EdTech Inc",
-    content: "The educational animations provided by Pixels Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
-    image: "/testi-client-01.png"
-  },
-  {
-    id: 5,
-    name: "MARK ZIMMERMAN",
-    role: "Founder, HealthApp",
-    content: "An absolute pleasure to work with. They took our complex medical concepts and turned them into beautifully animated, easy-to-understand videos that our users love.",
-    image: "/testi-client-02.png"
-  }
+  // {
+  //   id: 4,
+  //   name: "SARAH JENKINS",
+  //   role: "Director of Marketing, EdTech Inc",
+  //   content: "The educational animations provided by Pixels Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
+  //   image: "/testi-client-01.png"
+  // },
+  // {
+  //   id: 5,
+  //   name: "MARK ZIMMERMAN",
+  //   role: "Founder, HealthApp",
+  //   content: "An absolute pleasure to work with. They took our complex medical concepts and turned them into beautifully animated, easy-to-understand videos that our users love.",
+  //   image: "/testi-client-02.png"
+  // }
 ];
 
 const TestimonialsSlider = () => {
@@ -63,7 +63,7 @@ const TestimonialsSlider = () => {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.testimonialsSlider}>
       <motion.div
         className="container-fluid"
         initial={{ opacity: 0, y: 50 }}
@@ -71,7 +71,8 @@ const TestimonialsSlider = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className={styles.mainTitle}>TESTIMONIALS</h2>
+        <h2 className={styles.mainTitle}>Testimonials and Portfolio</h2>
+        <h3 className={styles.subHeading}>Client Feedback Written</h3>
 
         <div
           className={styles.sliderWrapper}
@@ -103,7 +104,6 @@ const TestimonialsSlider = () => {
                   }}
                 >
                   <div className={styles.avatarWrapper}>
-                    {/* Fallback to simple img if next/image throws error on missing src */}
                     <Image
                       src={t.image}
                       alt={t.name}
@@ -115,7 +115,7 @@ const TestimonialsSlider = () => {
                   </div>
                   <h4 className={styles.name}>{t.name}</h4>
                   <p className={styles.role}>{t.role}</p>
-                  <p className={styles.content}>{t.content}</p>
+                  <p className={`${styles.content} scroll_block`}>{t.content}</p>
                 </motion.div>
               );
             })}

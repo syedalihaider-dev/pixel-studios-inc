@@ -6,8 +6,8 @@ export default function AnimationPortfolio() {
   return (
     <GlobalAnimationPortfolio
       subtitle="OUR WORK SPEAKS"
-      heading="ANIMATION PORTFOLIO"
-      description="We create powerful visual stories that engage, inspire and deliver real results."
+      heading="PORTFOLIO"
+      description="Our 2D animation portfolio covers explainer videos, whiteboard animations, social media content, cel animation, corporate training series, and promotional campaigns across healthcare, SaaS, finance, education, retail, and more."
       variant="gradient"
     />
   );

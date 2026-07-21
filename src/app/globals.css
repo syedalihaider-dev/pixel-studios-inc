@@ -250,6 +250,16 @@ p {
     .container-xxl {
         max-width: 1320px;
     }
+
+    h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 
 @media screen and (max-width:1399px) {
@@ -264,7 +274,7 @@ p {
     }
 
     h3 {
-        font-size: 36px;
+        font-size: 35px;
         line-height: 42px;
     }
 
@@ -291,6 +301,11 @@ p {
     .container-xxl {
         max-width: 1180px;
     }
+
+    .subtitle {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 @media screen and (max-width:1199px) {
@@ -301,18 +316,18 @@ p {
     }
 
     h2 {
-        font-size: 35px;
-        line-height: 45px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     h3 {
-        font-size: 36px;
-        line-height: 42px;
+        font-size: 25px;
+        line-height: 35px;
     }
 
     h4 {
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     h5 {
@@ -333,6 +348,11 @@ p {
     .container-xxl {
         max-width: 960px;
     }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -341,13 +361,13 @@ p {
     }
 
     h2 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 25px;
+        line-height: 35px;
     }
 
     h3 {
-        font-size: 30px;
-        line-height: 38px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     h4 {
@@ -368,6 +388,12 @@ p {
     .container-xxl {
         max-width: 720px;
     }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -382,8 +408,8 @@ p {
     }
 
     h3 {
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     h4 {
@@ -418,8 +444,8 @@ p {
     }
 
     h3 {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     h4 {
