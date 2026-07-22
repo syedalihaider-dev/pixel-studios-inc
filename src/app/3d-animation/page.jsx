@@ -4,7 +4,7 @@ import ServicesSection from "@/components/Animation3D/ServicesSection";
 import HowWeWorkSection from "@/components/Animation3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/Animation3D/WhyInvestSection";
 import AnimationPortfolio from "@/components/Animation3D/AnimationPortfolio";
-import TeamStandoutSection from "@/components/About/TeamStandoutSection";
+import TeamStandoutSection from "@/components/Animation3D/TeamStandoutSection";
 import CostSection from "@/components/Animation3D/CostSection";
 import TestimonialsSlider from "@/components/Animation3D/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Animation3D/TrustedClientsSection";

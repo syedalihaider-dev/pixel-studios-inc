@@ -7,26 +7,38 @@ import styles from './TeamStandoutSection.module.css';
 const features = [
   {
     id: 1,
-    title: 'Result-Oriented',
-    description: "For our company, the only indicator of the project's success is achieving the goals and objectives set by the client. Thanks to high-quality project management and a team of IT talent, we deliver our work as quickly and efficiently as possible.",
+    title: 'Clear Visual Storytelling',
+    description: "Amateur whiteboard animation looks like it was produced in a web browser. Professional whiteboard animation tells a visual story — where the sequence of drawings, the pacing of the voiceover, and the logical structure of the script work together as a unified communication system. That integration is the difference between content that informs and content that converts.",
     icon: '/icons/result-oriented.png'
   },
   {
     id: 2,
-    title: 'Flexible',
-    description: "Our team already numbers 3,500+ highly qualified IT professionals. It allows us to quickly adapt to our clients' needs. We provide rapid team ramp-up and can easily scale up or down depending on the project's changing conditions.",
+    title: 'Higher Viewer Retention',
+    description: "Professionally produced whiteboard animation holds more viewers for longer because every element of the production is optimized for sustained attention — script pacing, visual complexity calibration, voiceover energy, and transition rhythm. Viewer retention is not a metric that improves by accident.",
     icon: '/icons/flexible.png'
   },
   {
     id: 3,
-    title: 'Transparent',
-    description: "Our cooperation with clients is always open and honest. We ensure regular communication, an established daily reporting system, and tracking tools according to the client's preferences. Thus, our clients can control all possible aspects of projects.",
+    title: 'Cost-Effective Video Production',
+    description: "Whiteboard animation delivers a higher value-per-dollar than most other animated formats because it does not require complex character rigs, environment design, or 3D rendering. The production investment goes into the two things that actually drive results: a well-built script and professional illustration. That is where we focus.",
     icon: '/icons/transparent.png'
   },
   {
     id: 4,
-    title: 'Experienced',
-    description: "Innowise has established well-managed processes to deliver software development services. They are based on the best examples of IT outsourcing and can be easily aligned to the specifics of customers and their projects.",
+    title: 'Stronger Brand Communication',
+    description: "A whiteboard animation video with a consistent visual identity — custom illustrations, brand color accents, a voiceover that matches your brand tone — does not just communicate information. It communicates professionalism. Every video we produce is a brand asset, not just a content deliverable.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Better Learning Outcomes',
+    description: "Training programs that use whiteboard animation consistently report higher assessment scores, higher completion rates, and lower re-training frequency than programs built on traditional presentation formats. We build our educational whiteboard animations around the learning science, not around what is easiest to produce.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Create Engaging Customer Experiences',
+    description: "Real estate visualization and consumer product showcases give buyers a richer product experience than static pages allow, directly feeding purchase confidence.",
     icon: '/icons/experienced.png'
   }
 ];
@@ -51,10 +63,10 @@ const TeamStandoutSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <h5 className={styles.subHeading}>WHAT MAKES</h5>
-          <h2 className={styles.mainHeading}>OUR TEAM <span>STAND OUT</span></h2>
+          <p className="subtitle">WHAT MAKES</p>
+          <h2 className={styles.mainHeading}>Benefits of Professional <span>Whiteboard Animation</span></h2>
           <p className={styles.headerDesc}>
-            Full-cycle game development means we own the entire pipeline, from the first concept sketch to the day the build goes live on the platform.
+            The gap between a whiteboard animation video that gets watched and one that gets results comes down to production quality. These are the advantages that professional production delivers over template-based or in-house alternatives.
           </p>
         </motion.div>
 

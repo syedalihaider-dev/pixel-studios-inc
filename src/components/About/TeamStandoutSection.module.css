@@ -84,7 +84,7 @@
 .featureIconImageWrapper {
   width: 64px;
   height: auto;
-  display: none;
+  /* display: none; */
 }
 
 .featureIconImageWrapper img {

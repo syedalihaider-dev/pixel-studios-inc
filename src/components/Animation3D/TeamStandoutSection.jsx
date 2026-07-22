@@ -7,26 +7,38 @@ import styles from './TeamStandoutSection.module.css';
 const features = [
   {
     id: 1,
-    title: 'Result-Oriented',
-    description: "For our company, the only indicator of the project's success is achieving the goals and objectives set by the client. Thanks to high-quality project management and a team of IT talent, we deliver our work as quickly and efficiently as possible.",
+    title: 'Visualize Products Before Production',
+    description: "Show investors and buyers exactly how a product looks and works before manufacturing begins. 3D product visualization removes risk from early-stage sales conversations.",
     icon: '/icons/result-oriented.png'
   },
   {
     id: 2,
-    title: 'Flexible',
-    description: "Our team already numbers 3,500+ highly qualified IT professionals. It allows us to quickly adapt to our clients' needs. We provide rapid team ramp-up and can easily scale up or down depending on the project's changing conditions.",
+    title: 'Simplify Complex Concepts',
+    description: "Scientific visualization, technical animation, and machinery visualization make the invisible visible. If text cannot explain it, 3D animation usually can.",
     icon: '/icons/flexible.png'
   },
   {
     id: 3,
-    title: 'Transparent',
-    description: "Our cooperation with clients is always open and honest. We ensure regular communication, an established daily reporting system, and tracking tools according to the client's preferences. Thus, our clients can control all possible aspects of projects.",
+    title: 'Improve Marketing Performance',
+    description: "3D marketing videos and CGI animation services consistently outperform static creative in click-through rate, engagement, and conversion across paid and organic channels.",
     icon: '/icons/transparent.png'
   },
   {
     id: 4,
-    title: 'Experienced',
-    description: "Innowise has established well-managed processes to deliver software development services. They are based on the best examples of IT outsourcing and can be easily aligned to the specifics of customers and their projects.",
+    title: 'Strengthen Sales Presentations',
+    description: "Platform demonstrations built in 3D give sales teams a shared visual reference that reduces ambiguity and objection volume in technical conversations.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Support Technical Communication',
+    description: "Engineering teams and technical buyers respond to accuracy. Our 3D animation production services produce technically precise content that survives expert review.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Create Engaging Customer Experiences',
+    description: "Real estate visualization and consumer product showcases give buyers a richer product experience than static pages allow, directly feeding purchase confidence.",
     icon: '/icons/experienced.png'
   }
 ];
@@ -51,10 +63,10 @@ const TeamStandoutSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <h5 className={styles.subHeading}>WHAT MAKES</h5>
-          <h2 className={styles.mainHeading}>OUR TEAM <span>STAND OUT</span></h2>
+          <p className="subtitle">WHAT MAKES</p>
+          <h2 className={styles.mainHeading}>What <span>3D Animation</span> Can Help You Achieve?</h2>
           <p className={styles.headerDesc}>
-            Full-cycle game development means we own the entire pipeline, from the first concept sketch to the day the build goes live on the platform.
+            The right 3D animation services for businesses close the gap between what your audience understands and what they need to understand to act.
           </p>
         </motion.div>
 

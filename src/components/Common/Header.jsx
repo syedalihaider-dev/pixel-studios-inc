@@ -25,7 +25,7 @@ const navData = [
             items: [
               { name: 'Explainer Video Production', path: '#' },
               { name: 'Motion Graphics Services', path: '#' },
-              { name: 'Whiteboard Animation', path: '#' },
+              { name: 'Whiteboard Animation', path: '/whiteboard-animation' },
               { name: 'Social Media Animation', path: '#' },
               { name: 'Educational Video Production', path: '#' },
               { name: 'Animated Commercials', path: '#' },
