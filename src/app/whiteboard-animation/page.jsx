@@ -8,9 +8,8 @@ import TeamStandoutSection from "@/components/WhiteboardAnimation/TeamStandoutSe
 import WonderingSection from "@/components/WhiteboardAnimation/WonderingSection";
 import CooperationModelsSection from "@/components/WhiteboardAnimation/CooperationModelsSection";
 import TestimonialsSlider from "@/components/WhiteboardAnimation/TestimonialsSlider";
-import TrustedClientsSection from "@/components/WhiteboardAnimation/TrustedClientsSection";
+import TechnologySection from "@/components/WhiteboardAnimation/TechnologySection";
 import IndustrySection from "@/components/WhiteboardAnimation/IndustrySection";
-import GreatVideosSection from "@/components/WhiteboardAnimation/GreatVideosSection";
 import TestimonialSection from "@/components/WhiteboardAnimation/TestimonialSection";
 import FaqSection from "@/components/WhiteboardAnimation/FaqSection";
 
@@ -20,7 +19,7 @@ export const metadata = {
   description: "Professional whiteboard animation services for explainer videos, training, and marketing. Pixels Studios Inc. delivers clear, compelling whiteboard animation videos built to educate and convert.",
 };
 
-export default function ThreeDAnimation() {
+export default function WhiteboardAnimation() {
   return (
     <main>
       <Banner />
@@ -33,9 +32,8 @@ export default function ThreeDAnimation() {
       <WhyInvestSection />
       <CooperationModelsSection />
       <TestimonialsSlider />
-      <GreatVideosSection />
+      <TechnologySection />
       <TestimonialSection />
-      <TrustedClientsSection />
       <IndustrySection />
       <FaqSection />
     </main>

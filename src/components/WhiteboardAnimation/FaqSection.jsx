@@ -4,52 +4,52 @@ import GlobalFaqSection from "../Common/FaqSection";
 
 const faqs = [
   {
-    question: "How much does a custom 3D animation project cost?",
-    answer: "A 30 to 60-second 3D product animation starts in the $3,500 to $8,000 range. Complex character animation and cinematic productions range from $10,000 to $30,000 or more. Itemized quotes within 48 hours of a discovery call.",
+    question: "What are whiteboard animation services?",
+    answer: "Whiteboard animation services cover the full production of videos in which content is drawn on screen as a voiceover narrates. The format is used for explainer videos, training programs, marketing content, and customer education. A complete whiteboard animation service includes scriptwriting, storyboarding, illustration, animation, voiceover recording, sound design, and final delivery.",
   },
   {
-    question: "How long does it take to create a 3D animated video?",
-    answer: "A standard 60-second 3D product animation runs four to six weeks from brief sign-off. Cinematic productions with character animation and VFX typically require six to twelve weeks. Rush timelines are available.",
+    question: "How much does a whiteboard animation video cost?",
+    answer: "Whiteboard animation video pricing varies based on video length, illustration complexity, number of revision rounds, and whether voiceover talent and music licensing are included. Most professional whiteboard animation projects fall between $2,000 and $8,000 for a 60-90 second video. We provide custom quotes based on your specific scope — contact us to discuss your project.",
   },
   {
-    question: "Is 3D animation worth it for startups and small businesses?",
-    answer: "Yes, when the brief justifies it. If your product has physical form or structural complexity that 2D cannot communicate effectively, professional 3D animation services are one of the most efficient communication investments available.",
+    question: "How long does a whiteboard animation project take?",
+    answer: "A standard 60-90 second whiteboard animation video runs three to five weeks from brief sign-off to final delivery. Discovery and scripting: 5-7 days. Storyboard and illustration: 5-7 days. Animation and voiceover: 7-10 days. Review and final delivery: 3-5 days. Expedited timelines are available for qualifying projects.",
   },
   {
-    question: "Can 3D animation help increase customer engagement and conversions?",
-    answer: "Consistently. Product pages with 3D animated content see higher dwell time and improved conversion versus static alternatives because 3D animation answers product questions visually before a prospect has to ask them.",
+    question: "Do you provide script writing?",
+    answer: "Yes. Professional scriptwriting is included in every Pixels Studios whiteboard animation project. We do not produce animation from client-provided scripts unless the client specifically requests it and the script has been reviewed and approved by our team. The script is too important to the outcome to be treated as a pre-production formality.",
   },
   {
-    question: "How many revisions are included in a typical animation project?",
-    answer: "Two full revision rounds in standard packages. Additional rounds available and priced clearly upfront. All revision terms are documented before production begins.",
+    question: "Do you provide professional voiceovers?",
+    answer: "Yes. Voiceover is included in our standard whiteboard animation service. We work with professional voice talent across a range of styles, accents, and delivery registers. You will have the opportunity to review talent options before recording begins.",
   },
   {
-    question: "How do I choose the right 3D animation company?",
-    answer: "Look for a portfolio range across industries, a discovery process that precedes the quote, and verifiable client results. The right 3D animation agency asks what the video needs to accomplish before deciding what it should look like.",
+    question: "What industries benefit from whiteboard animation?",
+    answer: "Whiteboard animation performs across industries where complex information needs to be communicated clearly. Healthcare, SaaS and technology, financial servicWhiteboard animation performs across industries where complex information needs to be communicated clearly. Healthcare, SaaS and technology, financial services, education, legal, real estate, e-commerce, and non-profit organizations all use whiteboard animation regularly for training, marketing, and customer education purposes.es, education, legal, real estate, e-commerce, and non-profit organizations all use whiteboard animation regularly for training, marketing, and customer education purposes.",
   },
   {
-    question: "When should I use 3D animation for product demos?",
-    answer: "When the product has a physical form that benefits from dimensional rendering, when internal mechanisms cannot be shown through photography, or when brand positioning demands photorealistic quality.",
+    question: "Can whiteboard videos improve learning retention?",
+    answer: "Yes. The whiteboard format is one of the most retention-efficient video formats available because it sequences information progressively and creates an active cognitive engagement loop. Learners follow the construction of an idea rather than watching a completed visual, which produces measurably higher retention.",
   },
   {
-    question: "Do you offer character design and animation for storytelling projects?",
-    answer: "Yes. Full character animation, including modeling, rigging, facial animation, and performance direction across stylized and photorealistic aesthetics for brand storytelling, gaming, and educational content.",
+    question: "Can you animate existing content?",
+    answer: "Yes. We regularly work with clients who have existing scripts, slide decks, or e-learning modules that need to be rebuilt as whiteboard animation videos. We review the existing content, identify what should be preserved, what should be restructured, and what should be cut, and produce the animation accordingly.",
   },
   {
-    question: "Can 3D animation explain complex products and technical concepts?",
-    answer: "It is one of the most effective formats for exactly that problem. 3D animation shows internal components that cannot be photographed and demonstrates engineering precision with clarity that no other format matches.",
+    question: "What file formats do you deliver?",
+    answer: "Final whiteboard animation videos are delivered in MP4 (H.264) as standard, with additional formats available on request — including MOV, WebM, and platform-specific exports for YouTube, LinkedIn, LMS platforms, and internal portals. Resolution options include 1080p and 4K. Source files are included in most project scopes.",
   },
   {
-    question: "Are 3D modeling and rendering included in your production process?",
-    answer: "Yes. Modeling, texturing, rigging, lighting, and rendering are all standard components of our 3D animation production services, managed entirely in-house.",
+    question: "How many revisions are included?",
+    answer: "Our standard whiteboard animation projects include structured revision rounds at the script stage, the storyboard stage, and the final animation stage. The number of revision rounds is confirmed in your project scope. We do not cap the number of notes per round — a revision round means all of your feedback for that stage, addressed together.",
   },
   {
-    question: "What makes your 3D animation company different from other agencies?",
-    answer: "We start with the business objective, not the visual brief. That changes the quality of output in measurable ways: fewer revision cycles, higher client retention, and content that performs in the market.",
+    question: "Do you create custom illustrations?",
+    answer: "Yes. Every illustration in a Pixels Studios whiteboard animation is created custom for your project. We do not use pre-built illustration libraries or template packs.",
   },
   {
-    question: "How do I get started with a custom 3D animation project?",
-    answer: "Book a 30-minute discovery call. A detailed proposal with scope, timeline, and investment follows within 48 hours. No obligation.",
+    question: "Who owns the final video?",
+    answer: "You do. Upon final delivery and payment, full ownership of the final rendered video transfers to you. Source file ownership terms are detailed in your project agreement.",
   },
 ];
 

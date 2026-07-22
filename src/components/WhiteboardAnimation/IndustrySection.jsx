@@ -5,59 +5,52 @@ import GlobalIndustrySection from "../Common/IndustrySection";
 const industries = [
   {
     id: 1,
-    title: "Healthcare and Life Sciences",
+    title: "SaaS & Technology",
     image: "/industry/01.png",
-    text: "Medical animation, pharmaceutical explainer videos, surgical animation, and healthcare animation for patient education, clinical training, and pharmaceutical product marketing are built to regulatory accuracy standards.",
+    text: "Product walkthroughs, onboarding sequences, and feature education for software platforms where users need to understand your product quickly — before they decide it is too complicated and leave.",
     link: "/industry/retail"
   },
   {
     id: 2,
-    title: "Manufacturing and Industrial",
+    title: "Healthcare & Medical",
     image: "/industry/02.png",
-    text: "Industrial safety training, machinery visualization, and assembly process animation for environments where clarity and accuracy affect safety outcomes directly.",
+    text: "Patient education, clinical training, and compliance content are produced to the accuracy and regulatory standards healthcare audiences require. We understand the difference between simplifying complex information and misrepresenting it. ",
     link: "/industry/professional-services"
   },
   {
     id: 3,
-    title: "Engineering and Technology",
+    title: "Education & E-Learning",
     image: "/industry/03.png",
-    text: "Technical animation, software visualization, and platform demonstrations for technology companies communicating product capability to non-technical buyers without losing technical credibility.",
+    text: "Curriculum content, course modules, and institutional explainers are built around genuine learning outcomes. From K-12 to university-level and professional certification, we produce whiteboard animations that learners actually finish.",
     link: "/industry/software-tech"
   },
   {
     id: 4,
-    title: "Architecture and Real Estate",
+    title: "Finance & Fintech",
     image: "/industry/04.png",
-    text: "Architectural rendering, architectural visualization, and property walkthroughs for developers and investors presenting projects ahead of completion.",
+    text: "Complex financial products, regulatory disclosures, and investment concepts are explained in a format that builds understanding without sacrificing accuracy. Clear enough for a general audience, precise enough for a compliance review.",
     link: "/industry/medical-biotech"
   },
   {
     id: 5,
-    title: "Consumer Products",
+    title: "Real Estate",
     image: "/industry/05.png",
-    text: "3D commercial animation, product launch visuals, and animated product demo videos for consumer brands where visual quality determines first-impression trust.",
+    text: "Property walkthroughs, investment explainers, mortgage process videos, and market education content for agencies, developers, and proptech platforms communicating with buyers who are making the largest purchase of their lives.",
     link: "/industry/education"
   },
   {
     id: 6,
-    title: "Education and Training",
+    title: "E-Commerce",
     image: "/industry/06.png",
-    text: "Learning animations, instructional videos, and employee onboarding content for corporate training programs that need to hold attention and improve retention rates.",
+    text: "Product education, unboxing explainers, and post-purchase onboarding content that reduces returns, increases repeat purchases, and gives buyers the confidence to complete checkout on products that require some explanation.",
     link: "/industry/real-estate"
   }
   ,
   {
     id: 7,
-    title: "Entertainment and Media",
+    title: "Startups & Enterprises",
     image: "/industry/06.png",
-    text: "Cinematic trailers, gaming animations, and in-game cutscenes for entertainment brands producing content for PC games, console games, and mobile games.",
-    link: "/industry/real-estate"
-  },
-  {
-    id: 8,
-    title: "Automotive and Transportation",
-    image: "/industry/06.png",
-    text: "Photorealistic rendering of vehicles and components for automotive marketing and engineering review, where visual realism is the primary trust signal.",
+    text: "Whether you are explaining a new category to early adopters or rolling out a process change across a global organization, whiteboard animation scales from a single launch video to a full content program. ",
     link: "/industry/real-estate"
   }
 ];
@@ -65,8 +58,8 @@ const industries = [
 export default function IndustrySection() {
   return (
     <GlobalIndustrySection
-      heading="Industries We Have Served with 3D Animation"
-      description="Our 3D animation services for businesses have been applied across every sector below, with production approaches specific to each industry's standards."
+      heading="Whiteboard Animation Solutions for Every Industry"
+      description="The same whiteboard animation video that works for a healthcare compliance program will not work for a SaaS product demo. We have built genuine expertise across the categories below, which means we understand those differences from the first briefing call."
       industries={industries}
       variant="gradient"
     />

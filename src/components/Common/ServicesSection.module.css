@@ -12,8 +12,8 @@
 .title {
   font-style: normal;
   font-weight: 500;
-  font-size: 80px;
-  line-height: 100px;
+  font-size: 60px;
+  line-height: 70px;
   leading-trim: both;
   text-edge: cap;
   text-align: center;
@@ -182,15 +182,15 @@
   .title {
     width: 1100px;
     margin: 0 auto;
-    font-size: 70px;
-    line-height: 80px;
+    font-size: 45px;
+    line-height: 55px;
   }
 
   .description {
-    width: 980px;
+    width: 1100px;
     margin: 0 auto;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   .paginationWrapper {
@@ -224,9 +224,9 @@
   }
 
   .title {
-    width: 850px;
-    font-size: 60px;
-    line-height: 70px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .description {
@@ -261,13 +261,12 @@
   }
 
   .title {
-    width: 700px;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 45px;
   }
 
   .description {
-    width: 600px;
+    width: 100%;
     font-size: 14px;
     line-height: 22px;
   }
@@ -293,15 +292,16 @@
 }
 
 @media (max-width: 991px) {
-  .servicesSection{
+  .servicesSection {
     text-align: center;
   }
+
   .headingWrapper {
     margin-bottom: 20px;
   }
 
   .title {
-    width: 400px;
+    width: 100%;
     font-size: 25px;
     line-height: 35px;
   }
@@ -327,7 +327,7 @@
     margin-top: 25px;
   }
 
-  .bottomControls{
+  .bottomControls {
     margin-top: 25px;
   }
 }

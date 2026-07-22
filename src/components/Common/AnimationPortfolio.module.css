@@ -6,8 +6,8 @@
 }
 
 .heading {
-  font-size: 100px;
-  line-height: 125px;
+  font-size: 60px;
+  line-height: 70px;
   leading-trim: both;
   text-edge: cap;
   letter-spacing: -0.08em;
@@ -20,6 +20,7 @@
 }
 
 .description {
+  width: 1200px;
   color: var(--accent-color);
   margin: 0 auto 30px;
 }
@@ -249,8 +250,8 @@
   }
 
   .heading {
-    font-size: 80px;
-    line-height: 95px;
+    font-size: 45px;
+    line-height: 55px;
   }
 
   .description {
@@ -323,11 +324,12 @@
   }
 
   .heading {
-    font-size: 70px;
-    line-height: 80px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .description {
+    width: 900px;
     margin: 0 auto 15px;
   }
 
@@ -387,12 +389,13 @@
   }
 
   .heading {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 45px;
     margin: 0;
   }
 
   .description {
+    width: 700px;
     margin: 0 auto 20px;
   }
 
@@ -449,8 +452,12 @@
 
 @media (max-width: 991px) {
   .heading {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .description {
+    width: 600px;
   }
 
   .tab {
@@ -514,7 +521,10 @@
   .heading {
     font-size: 25px;
     line-height: 35px;
-    margin-bottom: 5px;
+  }
+
+  .description {
+    width: 500px;
   }
 
   .tab {
@@ -549,6 +559,10 @@
 }
 
 @media (max-width: 575px) {
+  .description {
+    width: 100%;
+  }
+
   .grid {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 10px;

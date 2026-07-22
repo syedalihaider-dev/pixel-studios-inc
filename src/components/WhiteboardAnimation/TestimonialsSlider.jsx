@@ -7,39 +7,25 @@ import styles from './TestimonialsSlider.module.css';
 const testimonialsData = [
   {
     id: 1,
-    name: "Dr. William Smith",
-    role: "President and Founder, Medical Technology Company",
-    content: "We needed a 3D animation company that could handle medical device visualization to clinical accuracy standards on a tight timeline. Pixels Studios delivered a photorealistic surgical animation that our clinical team approved without structural corrections. Two of our investors cited the animation specifically in their decision to proceed.",
+    name: "Melissa Duncan",
+    role: "Whiteboard Animation for Product Launches",
+    content: "We were three weeks away from launching a product that required us to explain a multi-step compliance workflow to an audience of mid-level operations managers — people with no patience for animated brand storytelling and every reason to close a video after 30 seconds. The Pixels Studios team wrote a script that began with the exact problem our users were already experiencing and visually built the solution in under two minutes. Watch time on the launch video hit 78%. Our previous product video had averaged 34%.",
     image: "/testi-client-01.png"
   },
   {
     id: 2,
-    name: "Kay Diaz",
-    role: "CEO, Industrial Manufacturing Brand",
-    content: "Our product is a precision component that photography has never captured well enough. The 3D product animation Pixels Studios produced showed every internal mechanism in motion with a clarity we had never achieved. Our sales team uses it in every customer presentation, and it is now our most-used commercial asset.",
+    name: "Clara Wiliam",
+    role: "Whiteboard Animation for Employee Training",
+    content: "Our new-hire onboarding process had a completion issue. The existing training materials were comprehensive and almost entirely unused. We brought Pixels Studios in to rebuild three core modules as whiteboard animation videos. Completion rates went from under 40% to 91% in the first cohort. More importantly, new hires stopped asking the questions the training was supposed to answer.",
     image: "/testi-client-02.png"
   },
   {
     id: 3,
-    name: "SARAH JENKINS",
-    role: "Director of Marketing, EdTech Inc",
-    content: "The educational animations provided by Pixels Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
+    name: "Brian Bowman",
+    role: "Whiteboard Animation for Customer Education",
+    content: "Our customer success team was spending 60% of their call time explaining the same three features to every new account. We commissioned two whiteboard explainer videos from Pixels Studios and embedded them in the onboarding flow. In ninety days, the average number of support contacts per new account dropped by more than half. The videos paid for themselves in the first month.",
     image: "/testi-client-03.png"
-  },
-  // {
-  //   id: 4,
-  //   name: "SARAH JENKINS",
-  //   role: "Director of Marketing, EdTech Inc",
-  //   content: "The educational animations provided by Pixels Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
-  //   image: "/testi-client-01.png"
-  // },
-  // {
-  //   id: 5,
-  //   name: "MARK ZIMMERMAN",
-  //   role: "Founder, HealthApp",
-  //   content: "An absolute pleasure to work with. They took our complex medical concepts and turned them into beautifully animated, easy-to-understand videos that our users love.",
-  //   image: "/testi-client-02.png"
-  // }
+  }
 ];
 
 const TestimonialsSlider = () => {
@@ -71,7 +57,7 @@ const TestimonialsSlider = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className={styles.mainTitle}>Testimonials and Portfolio</h2>
+        <h2 className={styles.mainTitle}>Whiteboard Animation for Product Launches</h2>
         <h3 className={styles.subHeading}>Client Feedback Written</h3>
 
         <div

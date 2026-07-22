@@ -6,8 +6,8 @@
 
 .mainTitle {
   font-weight: var(--font-500);
-  font-size: 100px;
-  line-height: 110px;
+  font-size: 60px;
+  line-height: 70px;
   leading-trim: both;
   text-edge: cap;
   text-align: center;

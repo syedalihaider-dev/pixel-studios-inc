@@ -9,8 +9,8 @@
 
 .mainTitle {
   font-weight: var(--font-500);
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 60px;
+  line-height: 70px;
   text-align: center;
   letter-spacing: -0.08em;
   text-transform: uppercase;
@@ -23,8 +23,8 @@
 }
 
 .description {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 30px;
   color: var(--accent-color);
   max-width: 1200px;
   margin: 0 auto 50px;
@@ -37,7 +37,7 @@
 }
 
 .industryItem {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
   font-family: var(--font-lexend);
   color: #19042d6e;
@@ -48,11 +48,12 @@
   padding: 10px 0;
   transition: all 0.3s ease;
   width: 100%;
-  max-width: 350px;
+  max-width: 420px;
   border-bottom: 1px solid rgba(25, 4, 45, 0.08);
 }
 
-.industryItem:hover, .industryItem.active {
+.industryItem:hover,
+.industryItem.active {
   color: var(--primary-color);
   border-bottom-color: var(--primary-color);
 }
@@ -65,7 +66,8 @@
   align-items: center;
 }
 
-.industryItem.active .arrowIcon, .industryItem:hover .arrowIcon {
+.industryItem.active .arrowIcon,
+.industryItem:hover .arrowIcon {
   opacity: 1;
   transform: translateX(0);
 }
@@ -77,16 +79,16 @@
 
 .contentIntro {
   font-size: 20px;
-  line-height: 1.6;
-  color: #333;
+  line-height: 30px;
+  color: var(--accent-color);
   margin-bottom: 30px;
-  font-weight: 400;
+  font-weight: var(--font-400);
 }
 
 .contentTitle {
-  font-size: 36px;
-  font-weight: 500;
-  color: #CB09A4;
+  font-size: 35px;
+  font-weight: var(--font-500);
+  color: var(--primary-color);
   margin-bottom: 25px;
 }
 
@@ -121,14 +123,37 @@
   margin-top: 40px;
 }
 
-/* Responsive Media Queries */
 @media (max-width: 1600px) {
   .mainTitle {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
   }
+
+  .description {
+    max-width: 1100px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
   .bulletText {
+    font-size: 16px;
+  }
+
+  .industryItem {
+    font-size: 23px;
+  }
+
+  .contentTitle {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .contentIntro {
     font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
   }
 }
 
@@ -136,16 +161,44 @@
   .wonderingSection {
     padding: 60px 0;
   }
+
   .mainTitle {
-    font-size: 52px;
-    line-height: 62px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 50px;
   }
+
+  .description {
+    max-width: 900px;
+    margin: 0 auto 30px;
+  }
+
   .industryItem {
-    font-size: 22px;
+    font-size: 20px;
   }
+
+  .arrowIcon,
+  .tickIcon {
+    width: 25px;
+  }
+
+  .arrowIcon img,
+  .tickIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   .contentTitle {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .contentIntro {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .bulletList {
+    gap: 10px;
   }
 }
 
@@ -153,20 +206,25 @@
   .wonderingSection {
     padding: 50px 0;
   }
+
   .mainTitle {
     font-size: 42px;
     line-height: 52px;
   }
+
   .industryItem {
     font-size: 20px;
     max-width: 100%;
   }
+
   .rightContent {
     padding-left: 20px;
   }
+
   .contentIntro {
-    font-size: 18px;
+    font-size: 14px;
   }
+
   .bulletText {
     font-size: 16px;
   }
@@ -176,20 +234,24 @@
   .wonderingSection {
     padding: 40px 0;
   }
+
   .mainTitle {
     font-size: 34px;
     line-height: 42px;
   }
+
   .description {
     font-size: 16px;
     margin-bottom: 30px;
   }
+
   .industryList {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 30px;
   }
+
   .industryItem {
     font-size: 15px;
     padding: 8px 18px;
@@ -198,26 +260,32 @@
     border: 1px solid rgba(25, 4, 45, 0.15);
     max-width: fit-content;
   }
-  .industryItem.active, .industryItem:hover {
+
+  .industryItem.active,
+  .industryItem:hover {
     background: var(--primary-color);
     color: #fff;
     border-color: var(--primary-color);
   }
+
   .arrowIcon {
     display: none;
   }
+
   .rightContent {
     padding-left: 0;
     margin-top: 10px;
   }
+
   .contentTitle {
     font-size: 26px;
     margin-bottom: 15px;
   }
+
   .contentIntro {
-    font-size: 16px;
     margin-bottom: 20px;
   }
+
   .actions {
     margin-top: 30px;
   }
@@ -227,24 +295,30 @@
   .wonderingSection {
     padding: 35px 0;
   }
+
   .mainTitle {
     font-size: 26px;
     line-height: 34px;
   }
+
   .description {
     font-size: 14px;
     line-height: 1.5;
   }
+
   .industryItem {
     font-size: 14px;
     padding: 6px 14px;
   }
+
   .contentTitle {
     font-size: 22px;
   }
+
   .bulletText {
     font-size: 14px;
   }
+
   .tickIcon img {
     width: 22px;
     height: 22px;
