@@ -129,10 +129,6 @@
     font-size: 25px;
     line-height: 35px;
   }
-  
-  .gradientBg .heading {
-    text-align: center;
-  }
 
   .label {
     font-size: 14px;
@@ -140,6 +136,10 @@
 }
 
 @media (max-width: 767px) {
+  .heading {
+    text-align: center;
+  }
+  
   .heading br {
     display: none;
   }

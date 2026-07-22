@@ -196,35 +196,64 @@ const accordionVariants = {
 const MobileAccordionItem = ({ item, level = 0, setMobileMenuOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const title = item.name || item.heading;
+  const targetPath = item.path || item.headingPath || '#';
+  const hasValidPath = targetPath && targetPath !== '#';
+
   const hasDropdownItems = item.items && item.items.length > 0;
   const hasSections = item.sections && item.sections.length > 0;
   const hasColumns = item.columns && item.columns.length > 0;
   const isDirectDropdown = item.isDropdown || item.isMegaMenu;
   const hasChildren = hasDropdownItems || hasSections || hasColumns || isDirectDropdown;
 
+  const indentStyle = { paddingLeft: level > 0 ? `${level * 15}px` : '0' };
+
   if (!hasChildren) {
     return (
       <Link
-        href={item.path || item.headingPath || '#'}
-        className={styles.mobileSubItem}
-        style={{ paddingLeft: level > 1 ? `${(level - 1) * 15}px` : '0' }}
+        href={targetPath}
+        className={level === 0 ? styles.mobileNavLink : styles.mobileSubItem}
+        style={indentStyle}
         onClick={() => setMobileMenuOpen(false)}
       >
-        {item.name || item.heading}
+        {title}
       </Link>
     );
   }
 
   return (
     <div className={level === 0 ? styles.mobileNavItem : ''}>
-      <button
-        className={level === 0 ? styles.mobileNavLink : styles.mobileNestedNavLink}
-        style={{ paddingLeft: level > 0 ? `${level * 15}px` : '0' }}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {item.name || item.heading}
-        <ChevronDown size={level === 0 ? 20 : 16} className={`${styles.chevron} ${isOpen ? styles.open : ''}`} />
-      </button>
+      <div className={level === 0 ? styles.mobileNavRow : styles.mobileSubNavRow} style={indentStyle}>
+        {hasValidPath ? (
+          <Link
+            href={targetPath}
+            className={level === 0 ? styles.mobileNavLinkText : styles.mobileSubLinkText}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            {title}
+          </Link>
+        ) : (
+          <button
+            type="button"
+            className={level === 0 ? styles.mobileNavLinkText : styles.mobileSubLinkText}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {title}
+          </button>
+        )}
+
+        <button
+          type="button"
+          className={styles.chevronBtn}
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Submenu"
+        >
+          <ChevronDown
+            size={level === 0 ? 20 : 16}
+            className={`${styles.chevron} ${isOpen ? styles.open : ''}`}
+          />
+        </button>
+      </div>
 
       <AnimatePresence>
         {isOpen && (
@@ -234,7 +263,6 @@ const MobileAccordionItem = ({ item, level = 0, setMobileMenuOpen }) => {
             animate="visible"
             exit="hidden"
             className={styles.mobileAccordionContent}
-            style={{ paddingLeft: level === 0 ? '10px' : '0' }}
           >
             {hasColumns && item.columns.map((col, idx) => (
               <div key={idx}>

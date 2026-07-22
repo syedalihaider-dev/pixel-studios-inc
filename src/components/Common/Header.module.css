@@ -253,15 +253,31 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.mobileNavRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.mobileSubNavRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 6px 0;
+}
+
 .mobileNavLink {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
+  padding: 16px 0;
   color: #fff;
   font-family: var(--font-base), sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   text-decoration: none;
   background: none;
@@ -270,57 +286,67 @@
   text-transform: uppercase;
 }
 
-.mobileNavLink:hover,
-.mobileNavLink.active {
-  color: var(--primary-color);
-}
-
-.mobileNestedNavLink {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 12px 0;
+.mobileNavLinkText {
   color: #fff;
   font-family: var(--font-base), sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  opacity: 0.9;
+  font-size: 17px;
+  font-weight: 600;
   text-decoration: none;
   background: none;
   border: none;
   text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
-.mobileNestedNavLink:hover,
-.mobileNestedNavLink.active {
+.mobileNavLinkText:hover,
+.mobileNavLink:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.mobileSubLinkText,
+.mobileSubItem {
+  color: #ccc;
+  font-family: var(--font-base), sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  display: block;
+  padding: 6px 0;
+}
+
+.mobileSubLinkText:hover,
+.mobileSubItem:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.chevronBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.chevronBtn:hover {
   color: var(--primary-color);
 }
 
 .mobileAccordionContent {
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   padding-left: 10px;
-}
-
-.mobileSubHeading {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  margin: 15px 0 10px;
-  opacity: 0.8;
-}
-
-.mobileSubItem {
-  display: block;
-  padding: 8px 0;
-  color: #aaa;
-  text-decoration: none;
-  font-size: 15px;
-  transition: color 0.2s;
-}
-
-.mobileSubItem:hover {
-  color: var(--primary-color);
 }
 
 @media (max-width: 1399px) {

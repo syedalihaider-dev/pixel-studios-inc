@@ -57,7 +57,7 @@ const HowWeWorkSection = () => {
   return (
     <section className={styles.howWeWorkSection}>
       <div className="container">
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-lg-6">
             <motion.div
               className={styles.leftContent}

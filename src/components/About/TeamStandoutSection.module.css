@@ -6,28 +6,24 @@
 
 .sectionHeader {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .mainHeading {
-  font-size: 50px;
-  font-weight: 800;
-  color: #19042D;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  color: var(--accent-color);
+  margin: 0;
 }
 
 .mainHeading span {
-  color: #CB09A4;
+  color: var(--primary-color);
 }
 
 .headerDesc {
-  font-size: 18px;
-  color: #495057;
-  line-height: 1.6;
+  color: var(--accent-color);
+  margin: 20px 0 0;
 }
 
 .stickyColumn {
@@ -40,7 +36,7 @@
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .videoWrapper video {
@@ -66,7 +62,7 @@
 
 .progressFill {
   width: 100%;
-  background-color: #CB09A4;
+  background-color: var(--primary-color);
   transform-origin: top;
 }
 
@@ -99,31 +95,124 @@
 
 .featureTitle {
   font-size: 45px;
-  font-weight: 500;
+  font-weight: var(--font-500);
   color: var(--accent-color);
   margin-bottom: 0;
 }
 
 .featureDesc {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: var(--font-400);
   color: var(--accent-color);
   line-height: 30px;
   margin: 0;
 }
 
-@media (max-width: 991px) {
-  .stickyColumn {
-    position: relative;
-    top: 0;
-    margin-top: 40px;
+@media (max-width: 1600px) {
+  .sectionHeader {
+    margin-bottom: 40px;
+    max-width: 1010px;
   }
-  
+
+  .headerDesc {
+    margin: 10px 0 0;
+  }
+
+  .stickyColumn {
+    top: 150px;
+  }
+
+  .featuresListContainer {
+    padding-left: 20px;
+  }
+
   .featureItem {
     margin-bottom: 40px;
   }
-  
-  .mainHeading {
-    font-size: 36px;
+
+  .featureIcon {
+    margin-bottom: 10px;
+  }
+
+  .featureTitle {
+    font-size: 30px;
+  }
+
+  .featureDesc {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .standoutSection {
+    padding: 60px 0;
+  }
+
+  .sectionHeader {
+    max-width: 810px;
+  }
+
+  .featureItem {
+    margin-bottom: 30px;
+  }
+
+  .featureTitle {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .featureDesc {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .standoutSection {
+    padding: 40px 0;
+  }
+
+  .sectionHeader {
+    max-width: 610px;
+    margin-bottom: 30px;
+  }
+
+  .featureItem {
+    margin-bottom: 25px;
+  }
+
+  .featureTitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .featureDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .sectionHeader {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .stickyColumn {
+    position: relative;
+    top: 0;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .featuresListContainer {
+    padding-left: 10px;
+  }
+
+  .featureTitle {
+    font-size: 18px;
+    line-height: 26px;
   }
 }

@@ -293,6 +293,9 @@
 }
 
 @media (max-width: 991px) {
+  .servicesSection{
+    text-align: center;
+  }
   .headingWrapper {
     margin-bottom: 20px;
   }
@@ -320,6 +323,11 @@
   .videoWrapper {
     max-width: 400px;
     height: 225px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .bottomControls{
     margin-top: 25px;
   }
 }
@@ -339,6 +347,5 @@
   .videoWrapper {
     max-width: 280px;
     height: 160px;
-    margin: 0 auto 0 auto;
   }
 }
