@@ -6,8 +6,8 @@
 
 .mainHeading {
   font-weight: var(--font-500);
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 70px;
+  line-height: 80px;
   leading-trim: both;
   text-edge: cap;
   text-align: center;
@@ -81,7 +81,6 @@
   margin-bottom: 0;
 }
 
-/* Circle Navigation Buttons at Bottom */
 .navigationWrapper {
   display: flex;
   justify-content: center;
@@ -125,11 +124,40 @@
   transform: scale(1.2);
 }
 
-/* Responsive Media Queries */
 @media (max-width: 1600px) {
   .mainHeading {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .topParagraph {
+    max-width: 1100px;
+    margin: 10px auto 30px;
+  }
+
+  .modelCard {
+    padding: 30px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .cardParagraph {
+    font-size: 16px;
+    line-height: 25px;
+    height: 200px;
+  }
+
+  .navigationWrapper {
+    margin-top: 30px;
+  }
+
+  .navBtn {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -137,81 +165,133 @@
   .cooperationModelsSection {
     padding: 60px 0;
   }
+
   .mainHeading {
-    font-size: 52px;
-    line-height: 62px;
+    font-size: 40px;
+    line-height: 50px;
   }
+
+  .topParagraph {
+    max-width: 750px;
+    margin: 0px auto 25px;
+  }
+
   .modelCard {
-    padding: 32px;
+    padding: 25px;
   }
+
   .cardTitle {
-    font-size: 22px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .cardParagraph {
+    font-size: 16px;
+    line-height: 25px;
+    height: 200px;
+  }
+
+  .navigationWrapper {
+    margin-top: 25px;
+  }
+
+  .navBtn {
+    width: 45px;
+    height: 45px;
   }
 }
 
 @media (max-width: 1199px) {
   .cooperationModelsSection {
-    padding: 50px 0;
+    padding: 40px 0;
   }
+
   .mainHeading {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 35px;
+    line-height: 45px;
   }
+
   .topParagraph {
-    font-size: 16px;
+    max-width: 650px;
   }
+
   .modelCard {
-    padding: 28px;
+    padding: 25px;
   }
+
   .cardTitle {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 28px;
   }
+
   .cardParagraph {
-    font-size: 15px;
-    line-height: 23px;
+    font-size: 14px;
+    line-height: 22px;
+    height: 160px;
+  }
+
+  .navigationWrapper {
+    margin-top: 25px;
+    gap: 10px;
+  }
+
+  .navBtn {
+    width: 40px;
+    height: 40px;
   }
 }
 
 @media (max-width: 991px) {
-  .cooperationModelsSection {
-    padding: 40px 0;
-  }
   .mainHeading {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 25px;
+    line-height: 35px;
   }
+
   .topParagraph {
-    font-size: 15px;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
   }
-  .navigationWrapper {
-    margin-top: 25px;
+
+  .modelCard {
+    padding: 20px;
   }
+
+  .cardTitle {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .cardParagraph {
+    height: 160px;
+  }
+
   .navBtn {
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .topParagraph {
+    max-width: 100%;
+  }
+
+  .modelCard {
+    padding: 20px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cardParagraph {
+    height: 155px;
   }
 }
 
 @media (max-width: 575px) {
-  .cooperationModelsSection {
-    padding: 35px 0;
-  }
-  .mainHeading {
-    font-size: 26px;
-    line-height: 34px;
-  }
-  .topParagraph {
-    font-size: 14px;
-  }
-  .modelCard {
-    padding: 24px;
-  }
-  .cardTitle {
-    font-size: 19px;
-  }
   .cardParagraph {
-    font-size: 14px;
-    line-height: 22px;
+    height: 180px;
   }
 }

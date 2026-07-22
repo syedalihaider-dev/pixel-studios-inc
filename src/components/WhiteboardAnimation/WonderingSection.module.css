@@ -204,57 +204,75 @@
 
 @media (max-width: 1199px) {
   .wonderingSection {
-    padding: 50px 0;
-  }
-
-  .mainTitle {
-    font-size: 42px;
-    line-height: 52px;
-  }
-
-  .industryItem {
-    font-size: 20px;
-    max-width: 100%;
-  }
-
-  .rightContent {
-    padding-left: 20px;
-  }
-
-  .contentIntro {
-    font-size: 14px;
-  }
-
-  .bulletText {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 991px) {
-  .wonderingSection {
     padding: 40px 0;
   }
 
   .mainTitle {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 35px;
+    line-height: 45px;
   }
 
   .description {
-    font-size: 16px;
-    margin-bottom: 30px;
+    max-width: 800px;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 auto 30px;
+  }
+
+  .industryItem {
+    width: 100%;
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .arrowIcon,
+  .tickIcon {
+    width: 20px;
+  }
+
+  .rightContent {
+    padding-left: 10px;
+  }
+
+  .contentTitle {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .contentIntro {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .bulletList {
+    gap: 10px;
+  }
+
+  .bulletText {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mainTitle {
+    font-size: 25px;
+    line-height: 35px;
   }
 
   .industryList {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .industryItem {
-    font-size: 15px;
-    padding: 8px 18px;
+    font-size: 16px;
+    padding: 8px 15px;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(25, 4, 45, 0.15);
@@ -272,55 +290,31 @@
     display: none;
   }
 
+  .actions {
+    margin-top: 15px;
+  }
+
   .rightContent {
     padding-left: 0;
-    margin-top: 10px;
-  }
-
-  .contentTitle {
-    font-size: 26px;
-    margin-bottom: 15px;
-  }
-
-  .contentIntro {
-    margin-bottom: 20px;
-  }
-
-  .actions {
     margin-top: 30px;
   }
 }
 
 @media (max-width: 575px) {
-  .wonderingSection {
-    padding: 35px 0;
-  }
-
-  .mainTitle {
-    font-size: 26px;
-    line-height: 34px;
-  }
-
-  .description {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
   .industryItem {
-    font-size: 14px;
-    padding: 6px 14px;
+    padding: 5px 10px;
   }
 
   .contentTitle {
-    font-size: 22px;
+    font-size: 16px;
   }
 
-  .bulletText {
-    font-size: 14px;
+  .bulletItem {
+    gap: 5px;
   }
 
   .tickIcon img {
-    width: 22px;
-    height: 22px;
+    width: 15px;
+    height: 15px;
   }
 }
