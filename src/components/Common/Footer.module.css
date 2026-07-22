@@ -226,6 +226,12 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .linkList a,
+  .servicesList a,
+  .contactList li {
+    font-size: 14px;
+  }
+
   .servicesList {
     column-count: 2;
   }
