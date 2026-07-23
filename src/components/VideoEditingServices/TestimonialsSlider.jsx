@@ -7,23 +7,23 @@ import styles from './TestimonialsSlider.module.css';
 const testimonialsData = [
   {
     id: 1,
-    name: "Melissa Duncan",
-    role: "Whiteboard Animation for Product Launches",
-    content: "We were three weeks away from launching a product that required us to explain a multi-step compliance workflow to an audience of mid-level operations managers — people with no patience for animated brand storytelling and every reason to close a video after 30 seconds. The Pixels Studios team wrote a script that began with the exact problem our users were already experiencing and visually built the solution in under two minutes. Watch time on the launch video hit 78%. Our previous product video had averaged 34%.",
+    name: "Patricia Lively",
+    role: "Chief Visionary Officer, B2B Technology Brand",
+    content: "We had been editing our own video content in-house for two years. The footage was good but the edits were holding it back. We brought Pixels Studios in for a three-month retainer covering all YouTube and social media video editing. Our YouTube watch time increased by 62% in the first quarter and our social media completion rates went significantly above industry average. The footage did not change. The editing did.",
     image: "/testi-client-01.png"
   },
   {
     id: 2,
-    name: "Clara Wiliam",
-    role: "Whiteboard Animation for Employee Training",
-    content: "Our new-hire onboarding process had a completion issue. The existing training materials were comprehensive and almost entirely unused. We brought Pixels Studios in to rebuild three core modules as whiteboard animation videos. Completion rates went from under 40% to 91% in the first cohort. More importantly, new hires stopped asking the questions the training was supposed to answer.",
+    name: "Russell Whitmore",
+    role: "Chief Marketing Officer, E-Commerce Brand",
+    content: "We briefed Pixels Studios on a 12-piece promotional video campaign with a four-week turnaround across multiple platforms. Every asset delivered on time, to platform specifications, at production quality our internal team could not have matched in that timeline. Our campaign click-through rate was 2.8x our previous best. Professional video editing services are not a production cost. They are a marketing investment with a measurable return.",
     image: "/testi-client-02.png"
   },
   {
     id: 3,
-    name: "Brian Bowman",
-    role: "Whiteboard Animation for Customer Education",
-    content: "Our customer success team was spending 60% of their call time explaining the same three features to every new account. We commissioned two whiteboard explainer videos from Pixels Studios and embedded them in the onboarding flow. In ninety days, the average number of support contacts per new account dropped by more than half. The videos paid for themselves in the first month.",
+    name: "Juliana Patrick",
+    role: "Independent Creator and Entrepreneur",
+    content: "I was spending 12 hours a week editing my YouTube channel and podcast. I brought Pixels Studios in for both. Turnaround is two to three business days per episode, the quality is better than what I produced myself, and I now spend those 12 hours creating more content. The channel grew 40% in subscribers after I made the switch. I should have outsourced this a year earlier. ",
     image: "/testi-client-03.png"
   }
 ];
@@ -57,7 +57,7 @@ const TestimonialsSlider = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className={styles.mainTitle}>Whiteboard Animation for Product Launches</h2>
+        <h2 className={styles.mainTitle}>Client Success Stories</h2>
         <h3 className={styles.subHeading}>Client Feedback Written</h3>
 
         <div

@@ -10,51 +10,45 @@ const accordionData = [
   {
     id: 1,
     icon: '/discovery.png',
-    title: 'Discovery & Strategy',
-    content: 'Before a single frame is storyboarded, we run a genuine discovery session. We learn about your audience — not as a demographic profile, but as a group of specific people with specific knowledge gaps, specific objections, and a specific decision or behavior you need them to take after watching the video. That understanding drives every creative decision that follows.',
+    title: 'Project Discovery',
+    content: 'Brief, audience, platform requirements, brand standards, and delivery timeline established before touching the footage. Every post production decision that follows is traceable to something confirmed here.',
   },
   {
     id: 2,
     icon: '/storyboarding.png',
-    title: 'Script Writing',
-    content: 'The script is the foundation of any whiteboard animation video that actually works. We write scripts that are structured for clarity, paced for the format, and built around a clear narrative arc that leaves your viewer knowing exactly what to do next. Scripts go through collaborative review before anything is drawn — because changing the script costs hours, and changing the animation costs days.',
+    title: 'Footage Review and Organization',
+    content: 'All footage logged, reviewed, and organized before the edit begins. Usable material identified, technical issues flagged, and the asset library built before the timeline opens.',
   },
   {
     id: 3,
     icon: '/animation.png',
-    title: 'Storyboarding',
-    content: "The storyboard is where the script becomes a visual plan. Every scene is sketched and sequenced to confirm that the visual logic supports the verbal logic, that transitions are intuitive, and that the pacing will hold the viewer's attention across the full runtime.You review and approve the storyboard before production begins.",
+    title: 'Editing and Story Development',
+    content: "Rough cut assembled around the brief: scene selection, sequence logic, pacing, and story structure. This is where the performance of the final video is built and where we invest most of our editorial attention.",
   },
   {
     id: 4,
     icon: '/animation.png',
-    title: 'Illustration Development',
-    content: 'Our illustrators create every visual element custom for your project. Characters, icons, environments, diagrams, and data visualizations are drawn to match your brand and to serve the specific explanatory purpose of each scene. We do not pull from stock libraries — the illustrations are built for this script, this audience, and this message.',
+    title: 'Motion Graphics and Effects',
+    content: 'Branded motion graphics, titles, lower thirds, and VFX integrated after the picture cut is locked. Graphics serve the story rather than being added decoratively after the fact.',
   },
   {
     id: 5,
     icon: '/animation.png',
-    title: 'Animation Production',
-    content: 'With illustrations complete and approved, the animation team brings the sequence to life. Timing, draw-on pacing, element reveals, and motion are calibrated against the voiceover track to ensure the visual and audio experience is synchronized and intentional. This phase runs in parallel with voiceover recording, where project timelines allow.',
+    title: 'Audio Enhancement',
+    content: 'Full audio treatment: dialogue cleanup, noise reduction, music placement, sound design, and final mix to the loudness specifications of every delivery platform.',
   },
   {
     id: 6,
     icon: '/animation.png',
-    title: 'Voiceover & Sound Design',
-    content: 'Professional voiceover direction is included in every Pixels Studios whiteboard animation project. We work with a vetted roster of voice talent and select based on your audience profile, your brand tone, and the energy the script calls for. Sound design — including background music and audio mixing — is completed in-house and delivered with the final video.',
+    title: 'Client Feedback and Revisions',
+    content: 'Draft submitted for your structured revision round. Every note documented and confirmed before changes are made. We ask, confirm, and fix the right thing rather than guessing at ambiguous feedback.',
   },
   {
     id: 7,
     icon: '/animation.png',
-    title: 'Review & Revisions',
-    content: 'The first full draft is delivered for your structured revision round. Your project manager documents every note, confirms interpretation before changes are made, and returns a revised version that addresses every point. We do not guess at what feedback means. We ask, confirm, and act.',
-  },
-  {
-    id: 8,
-    icon: '/animation.png',
     title: 'Final Delivery',
-    content: 'Final delivery includes your whiteboard animation video in every format and resolution required for every platform where it will live. Source files are included in most project scopes. Your project is not complete until you are ready to deploy it.',
-  },
+    content: 'Final files exported in every format specified at kickoff. Platform technical specifications confirmed. Source project files available in most project scopes. ',
+  }
 ];
 
 const WhyInvestSection = () => {
@@ -73,9 +67,9 @@ const WhyInvestSection = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="subtitle">HOW WE WORK</p>
-              <h2 className={styles.mainTitle}>Our Whiteboard Animation <br />Production Process</h2>
+              <h2 className={styles.mainTitle}>Our Video Editing Process</h2>
               <p className={styles.subText}>
-                Every whiteboard animation video we produce follows the same disciplined production process. There are no shortcuts, no freelance handoffs, and no phases where your project loses its strategic thread.
+                Every video editing project follows a structured process from footage receipt to final delivery.
               </p>
             </motion.div>
           </div>
