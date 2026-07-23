@@ -23,6 +23,7 @@ const navData = [
             heading: '2D Animation Services',
             headingPath: '/2d-animation',
             items: [
+              { name: 'Animated Explainer Video', path: '/animated-explainer-video' },
               { name: 'Explainer Video Production', path: '#' },
               { name: 'Motion Graphics Services', path: '#' },
               { name: 'Whiteboard Animation', path: '/whiteboard-animation' },
