@@ -57,7 +57,7 @@ const TeamStandoutSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <p className="subtitle">WHAT MAKES</p>
+          <p className="subtitle">WHAT MAKES US</p>
           <h2 className={styles.mainHeading}>Benefits of Professional <span>Video Editing</span></h2>
           <p className={styles.headerDesc}>
             What professional video editing services produce for a brand's content performance that template or amateur editing cannot replicate.
