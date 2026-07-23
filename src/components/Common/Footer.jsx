@@ -24,17 +24,17 @@ const Footer = () => {
   const serviceLinks = [
     { name: '2D Animation', path: '/2d-animation' },
     { name: '3D Animation', path: '/3d-animation' },
-    { name: 'Video Editing', path: '#' },
-    { name: 'Logo Animation', path: '#' },
-    { name: 'AI-Assisted Animations', path: '#' },
-    { name: 'Infographics', path: '#' },
-    { name: 'Whiteboard Animation', path: '#' },
-    { name: 'Architectural Visualization', path: '#' },
-    { name: 'Legal Animation', path: '#' },
-    { name: 'Hybrid & Cel Animation', path: '#' },
-    { name: 'Motion Graphics', path: '#' },
-    { name: 'CGI & VFX', path: '#' },
-    { name: '2D & 3D Explainer Videos', path: '#' },
+    // { name: 'Video Editing', path: '#' },
+    { name: 'Logo Animation', path: '/logo-animation' },
+    // { name: 'AI-Assisted Animations', path: '#' },
+    // { name: 'Infographics', path: '#' },
+    { name: 'Whiteboard Animation', path: '/whiteboard-animation' },
+    // { name: 'Architectural Visualization', path: '#' },
+    // { name: 'Legal Animation', path: '#' },
+    // { name: 'Hybrid & Cel Animation', path: '#' },
+    { name: 'Motion Graphics', path: '/motion-graphics-services' },
+    // { name: 'CGI & VFX', path: '#' },
+    // { name: '2D & 3D Explainer Videos', path: '#' },
   ];
 
   return (
