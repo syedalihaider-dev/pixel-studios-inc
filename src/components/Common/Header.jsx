@@ -83,7 +83,8 @@ const navData = [
         sections: [
           {
             heading: 'Video Editing Services',
-            items: [] // No items listed in reference for this one specifically, but structure exists
+            headingPath: '/video-editing-services',
+            items: []
           },
           {
             heading: 'Game Development & Animation',
