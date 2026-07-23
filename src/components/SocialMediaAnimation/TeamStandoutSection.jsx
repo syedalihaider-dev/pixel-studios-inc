@@ -7,34 +7,52 @@ import styles from './TeamStandoutSection.module.css';
 const features = [
   {
     id: 1,
-    title: 'Higher Audience Retention',
-    description: "Content edited to hold attention at specific drop-off points outperforms unoptimized footage on every platform metric: watch time, completion rate, and algorithmic distribution. The edit is where retention is built.",
+    title: 'Motion Graphics Animation',
+    description: "Social media motion graphics for branded content, data visualization, and campaign announcements. Clean, brand-consistent motion design that performs across platforms without per-platform adaptation.",
     icon: '/icons/result-oriented.png'
   },
   {
     id: 2,
-    title: 'Better Brand Storytelling',
-    description: "The edit is where the story is constructed. A professional video editing team assembles raw material into a narrative sequence that carries the brand message from the hook to the call to action without losing the viewer at the transitions.",
+    title: '2D Animated Videos',
+    description: "Character-driven and illustrated 2D animated social media content for brand storytelling, product promotion, and audience education. The most versatile format in social media video animation.",
     icon: '/icons/flexible.png'
   },
   {
     id: 3,
-    title: 'Increased Engagement',
-    description: "Well-edited video generates higher engagement across every platform because it respects the viewer's time. Tight cuts, clean audio, and purposeful graphic integration produce content audiences finish watching and choose to interact with.",
+    title: 'Product Promotion Animations',
+    description: "Animated product promotion videos that showcase features, benefits, and offers in the format and duration each platform performs best with.",
     icon: '/icons/transparent.png'
   },
   {
     id: 4,
-    title: 'Improved Conversion Rates',
-    description: "Video edited with a conversion objective in mind performs measurably better on landing pages and in paid campaigns. Pacing, graphic placement, and call-to-action timing all influence whether a viewer acts or exits.",
+    title: 'Brand Awareness Videos',
+    description: "Brand animation services that build recognition and visual consistency across a brand's social presence. Animated brand content where the identity is recognizable before the logo appears.",
     icon: '/icons/experienced.png'
   },
   {
     id: 5,
-    title: 'Consistent Brand Presentation',
-    description: "Professional video editing services apply consistent color grading, audio treatment, and graphic standards across every piece of content a brand publishes, building recognition and signaling production investment at every audience touchpoint.",
+    title: 'Event Promotion Videos',
+    description: "Animated social media videos for event announcements, countdowns, and post-event recaps built to generate registrations and attendance.",
     icon: '/icons/experienced.png'
-  }
+  },
+  {
+    id: 6,
+    title: 'Explainer Animations for Social Media',
+    description: "Short-form animated explainer content adapted for 30 to 60-second social media distribution. The explainer video logic applied to the social media format constraint.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 7,
+    title: 'Animated Infographics',
+    description: "Data and statistics animated into shareable social content. Animated infographics outperform static data graphics in shares and saves because motion holds attention long enough for the information to register.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 8,
+    title: 'Kinetic Typography Videos',
+    description: "Text-led animated social content where the words carry the motion and emphasis. Effective for quote content, brand statements, and animations that communicate without a voiceover.",
+    icon: '/icons/flexible.png'
+  },
 ];
 
 const TeamStandoutSection = () => {
@@ -57,10 +75,10 @@ const TeamStandoutSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <p className="subtitle">WHAT MAKES US</p>
-          <h2 className={styles.mainHeading}>Benefits of Professional <span>Video Editing</span></h2>
+          <p className="subtitle">Social Media Animation Services</p>
+          <h2 className={styles.mainHeading}>Types of <span>Social Media Animations</span> We Create</h2>
           <p className={styles.headerDesc}>
-            What professional video editing services produce for a brand's content performance that template or amateur editing cannot replicate.
+            Our social media animation production covers every animated content type a brand needs for a complete social content calendar.
           </p>
         </motion.div>
 

@@ -10,44 +10,44 @@ const accordionData = [
   {
     id: 1,
     icon: '/discovery.png',
-    title: 'Project Discovery',
-    content: 'Brief, audience, platform requirements, brand standards, and delivery timeline established before touching the footage. Every post production decision that follows is traceable to something confirmed here.',
+    title: 'Content Strategy and Planning',
+    content: 'Platform, objective, audience, and campaign context established before concept development. Algorithm signals and platform-specific requirements built into the brief at this stage.',
   },
   {
     id: 2,
     icon: '/storyboarding.png',
-    title: 'Footage Review and Organization',
-    content: 'All footage logged, reviewed, and organized before the edit begins. Usable material identified, technical issues flagged, and the asset library built before the timeline opens.',
+    title: 'Script and Concept Development',
+    content: 'Script written for the duration and the platform. A 15-second TikTok animation and a 60-second LinkedIn explainer are different communication problems and are treated as such.',
   },
   {
     id: 3,
     icon: '/animation.png',
-    title: 'Editing and Story Development',
-    content: "Rough cut assembled around the brief: scene selection, sequence logic, pacing, and story structure. This is where the performance of the final video is built and where we invest most of our editorial attention.",
+    title: 'Storyboarding',
+    content: "Every scene mapped before animation. Visual structure, text placement, hook timing, and call-to-action positioning planned and approved at storyboard stage.",
   },
   {
     id: 4,
     icon: '/animation.png',
-    title: 'Motion Graphics and Effects',
-    content: 'Branded motion graphics, titles, lower thirds, and VFX integrated after the picture cut is locked. Graphics serve the story rather than being added decoratively after the fact.',
+    title: 'Design and Illustration',
+    content: 'Visual style, brand color application, and typographic treatment established and approved before production. Platform-specific visual density requirements addressed at design stage.',
   },
   {
     id: 5,
     icon: '/animation.png',
-    title: 'Audio Enhancement',
-    content: 'Full audio treatment: dialogue cleanup, noise reduction, music placement, sound design, and final mix to the loudness specifications of every delivery platform.',
+    title: 'Animation Production',
+    content: 'Full social media animation production in-house. Platform-specific aspect ratios, motion pacing, and on-screen text timing built into production from the start.',
   },
   {
     id: 6,
     icon: '/animation.png',
-    title: 'Client Feedback and Revisions',
-    content: 'Draft submitted for your structured revision round. Every note documented and confirmed before changes are made. We ask, confirm, and fix the right thing rather than guessing at ambiguous feedback.',
+    title: 'Sound Design and Music',
+    content: 'Sound design and music mixed for both with-audio and without-audio viewing. Visual communication structured to work for the majority of social video watched without sound.',
   },
   {
     id: 7,
     icon: '/animation.png',
-    title: 'Final Delivery',
-    content: 'Final files exported in every format specified at kickoff. Platform technical specifications confirmed. Source project files available in most project scopes. ',
+    title: 'Delivery and Optimization',
+    content: 'Final files in every platform format specified at kickoff. File size, codec, aspect ratio, and caption requirements confirmed before delivery.',
   }
 ];
 
@@ -67,9 +67,9 @@ const WhyInvestSection = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="subtitle">HOW WE WORK</p>
-              <h2 className={styles.mainTitle}>Our Video Editing Process</h2>
+              <h2 className={styles.mainTitle}>Our Social Media Animation Production Process</h2>
               <p className={styles.subText}>
-                Every video editing project follows a structured process from footage receipt to final delivery.
+                Every social media animation production follows a structured process from platform brief to optimized final delivery.
               </p>
             </motion.div>
           </div>

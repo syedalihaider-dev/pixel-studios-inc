@@ -34,16 +34,6 @@ const accordionData = [
     id: 6,
     title: '6 X (Twitter) Video Content',
     content: "Short-form animated content for X with the compression and visual clarity the platform's feed requires.Motion graphics and kinetic typography for the format."
-  },
-  {
-    id: 7,
-    title: '7 Subtitle and Caption Creation',
-    content: 'Accurate, frame-timed subtitle creation and caption services for accessibility compliance, social media silent-viewing optimization, and multilingual distribution. Not auto-generated and unchecked.'
-  },
-  {
-    id: 8,
-    title: '8 Multi-Platform Export Optimization',
-    content: "Final delivery in every format, resolution, aspect ratio, and codec specified at kickoff. YouTube, Instagram, TikTok, LinkedIn, broadcast, and web formats produced to each platform's specifications."
   }
 ];
 

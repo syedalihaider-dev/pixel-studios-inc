@@ -17,38 +17,32 @@ const CooperationModelsSection = () => {
     {
       id: 1,
       icon: "/game-development/outstaffing.png",
-      title: "Experienced Video Editors",
-      text: "Our video editing team has worked across corporate, marketing, social media, e-learning, healthcare, and entertainment content with cross-industry post production experience that reduces briefing overhead on every new project."
+      title: "Platform-Specific Video Creation",
+      text: "We do not produce one animation and resize it. Every production is built for the platform it will live on: native formats, platform-calibrated pacing, and technical specifications confirmed before production begins."
     },
     {
       id: 2,
       icon: "/game-development/dedicated-team.png",
-      title: "Fast Turnaround Times",
-      text: "Most standard video editing projects complete in three to seven business days from footage delivery and brief sign-off. Rush delivery available. Quality protected within compressed timelines."
+      title: "Custom Animation Solutions",
+      text: "Every social media animation production starts from your brief, your brand, and your campaign objective. No template libraries. Custom animated social media videos built specifically for your audience."
     },
     {
       id: 3,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Dedicated Project Managers",
-      text: "One project manager from brief to delivery on every project. One point of contact. Every milestone dated. Every revision round structured and documented."
+      title: "Experienced Creative Team",
+      text: "Our social media animation agency has produced content for brands across e-commerce, SaaS, healthcare, financial services, and consumer retail. Experience that reduces the learning curve on every new brief."
     },
     {
       id: 4,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Scalable Editing Support",
-      text: "From a single campaign video to an ongoing video editing agency partnership managing a full content calendar, we scale the team and workflow to the volume and frequency you need."
+      title: "Fast Turnaround Times",
+      text: "Most social media animations complete in one to three weeks from brief sign-off. Rush production available. We protect quality within compressed timelines rather than sacrificing it."
     },
     {
       id: 5,
       icon: "/game-development/managed-outsourcing.png",
-      title: "High-Quality Production Standards",
-      text: "Broadcast-standard color grading, professional audio mixing, and platform-specific export quality on every delivery. Not a premium tier. The baseline."
-    },
-    {
-      id: 6,
-      icon: "/game-development/managed-outsourcing.png",
-      title: "Flexible Engagement Models",
-      text: "Project-based video editing services for one-off campaigns. Retainer-based online video editing services for brands and creators with ongoing production needs. Both options priced transparently."
+      title: "Multiple Revision Rounds",
+      text: "Two full revision rounds standard in every production. Additional rounds available and priced upfront. All revision terms documented before production begins."
     }
   ];
 
@@ -64,9 +58,9 @@ const CooperationModelsSection = () => {
         <div className="row justify-content-center text-center mb-4">
           <div className="col-12 col-lg-12">
             <p className="subtitle">Quality. Speed. Reliability</p>
-            <h2 className={styles.mainHeading}>Why Choose Our Video Editing Company?</h2>
+            <h2 className={styles.mainHeading}>Why Choose Our Social Media Animation Company?</h2>
             <p className={styles.topParagraph}>
-              What specifically distinguishes Pixels Studios as a professional video editing agency.
+              What specifically distinguishes our professional social media animation agency from the alternatives.
             </p>
           </div>
         </div>

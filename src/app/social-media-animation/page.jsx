@@ -6,6 +6,8 @@ import WhyInvestSection from "@/components/SocialMediaAnimation/WhyInvestSection
 import AnimationPortfolio from "@/components/SocialMediaAnimation/AnimationPortfolio";
 import GreatVideosSection from "@/components/SocialMediaAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/SocialMediaAnimation/TeamStandoutSection";
+import WonderingSection from "@/components/SocialMediaAnimation/WonderingSection";
+import CostSection from "@/components/SocialMediaAnimation/CostSection";
 import CooperationModelsSection from "@/components/SocialMediaAnimation/CooperationModelsSection";
 import TestimonialsSlider from "@/components/SocialMediaAnimation/TestimonialsSlider";
 import TechnologySection from "@/components/SocialMediaAnimation/TechnologySection";
@@ -28,11 +30,11 @@ export default function SocialMediaAnimationPage() {
       <AnimationPortfolio />
       <HowWeWorkSection />
       <TeamStandoutSection />
+      <WonderingSection />
       <WhyInvestSection />
+      <CostSection />
       <CooperationModelsSection />
-      <TestimonialsSlider />
       <IndustrySection />
-      <TechnologySection />
       <TestimonialSection />
       <FaqSection />
     </main>

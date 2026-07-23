@@ -5,52 +5,52 @@ import GlobalIndustrySection from "../Common/IndustrySection";
 const industries = [
   {
     id: 1,
-    title: "SaaS & Technology",
+    title: "E-Commerce Brands",
     image: "/industry/01.png",
-    text: "Product demo editing, feature announcements, and thought leadership series with pacing and graphic treatment calibrated for technical B2B audiences.",
+    text: "Product promotion animations and animated social media ads for e-commerce brands. Built to drive click-through to product pages and reduce paid acquisition cost.",
     link: "/industry/retail"
   },
   {
     id: 2,
-    title: "Healthcare & Medical",
+    title: "SaaS Companies",
     image: "/industry/02.png",
-    text: "Patient education videos, medical device content, and clinical training material edited to the accuracy and sensitivity standards healthcare audiences and regulatory environments require.",
+    text: "Feature announcements and short-form explainer content for SaaS brands building social presence. LinkedIn animated video services and Instagram animation for B2B audiences.",
     link: "/industry/professional-services"
   },
   {
     id: 3,
-    title: "Finance and FinTech",
+    title: "Healthcare Organizations",
     image: "/industry/03.png",
-    text: "Financial product videos, brand communications, and regulatory explainer content for finance audiences that do not accept imprecision in production or message.",
+    text: "Patient education content and health awareness campaigns produced to the accuracy and sensitivity standards the industry requires for public-facing social content.",
     link: "/industry/software-tech"
   },
   {
     id: 4,
-    title: "E-Commerce and Retail",
+    title: "Real Estate Businesses",
     image: "/industry/04.png",
-    text: "Product video editing, promotional campaign content, and brand storytelling where visual quality at the first frame determines whether a product page converts.",
+    text: "Property launch content and development marketing for real estate brands. Animated social media videos that give buyers a compelling first look before they commit to a viewing.",
     link: "/industry/medical-biotech"
   },
   {
     id: 5,
-    title: "Education and E-Learning",
+    title: "Financial Services",
     image: "/industry/05.png",
-    text: "Course content editing, instructional video post production, and educational series finishing for platforms producing video-based learning at scale.",
+    text: "Financial product explanation and brand animation for financial services companies producing social media video for professional audiences that expect accuracy and clarity.",
     link: "/industry/education"
   },
   {
     id: 6,
-    title: "Real Estate",
+    title: "Education and E-Learning",
     image: "/industry/06.png",
-    text: "Property video editing, virtual tour post production, and development marketing content that performs before a buyer sets foot through the door.",
+    text: "Course launch content and short-form educational animation for education brands driving enrollment through social channels.",
     link: "/industry/real-estate"
   }
   ,
   {
     id: 7,
-    title: "Startups & Enterprises",
+    title: "Startups and Technology Companies",
     image: "/industry/06.png",
-    text: "Pitch video editing for investor confidence and full video post production services for enterprises managing high-volume branded content across multiple departments.",
+    text: "Social media animation for startups building category awareness. First-impression content produced to communicate clearly before the brand reputation develops independently. ",
     link: "/industry/real-estate"
   }
 ];
@@ -58,8 +58,8 @@ const industries = [
 export default function IndustrySection() {
   return (
     <GlobalIndustrySection
-      heading="Video Editing Solutions for Every Industry"
-      description="Our professional video editing services apply specific post production approaches to each industry's audience, content standards, and platform context."
+      heading="Social Media Animation Services for Industries"
+      description="Our social media animation services for businesses are applied across every sector with production approaches specific to each platform context."
       industries={industries}
       variant="gradient"
     />
