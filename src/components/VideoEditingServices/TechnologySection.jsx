@@ -17,32 +17,32 @@ const CooperationModelsSection = () => {
     {
       id: 1,
       icon: "/game-development/outstaffing.png",
-      title: "VideoScribe",
-      text: "The industry-standard whiteboard animation platform for producing clean, hand-drawn animation at scale. We use VideoScribe for projects where the classic draw-on aesthetic is the priority and production timelines are tight without compromising quality."
+      title: "Adobe Premiere Pro",
+      text: "Primary editing tool for corporate video editing, marketing video editing, social media content, and multi-camera event production across the majority of our projects."
     },
     {
       id: 2,
       icon: "/game-development/dedicated-team.png",
       title: "Adobe After Effects",
-      text: "This is ur primary tool for complex motion, custom animation sequences, and whiteboard-style content that requires frame-level precision. After Effects gives us full control over timing, layering, and visual effects that standard whiteboard platforms cannot achieve."
+      text: "Motion graphics, visual effects, title sequences, and graphic overlays for video content requiring branded animation elements integrated into the edit."
     },
     {
       id: 3,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Adobe Illustrator",
-      text: "Every custom illustration in a Pixels Studios whiteboard animation begins in Illustrator. Vector artwork built here scales perfectly across every resolution and platform, and integrates cleanly into After Effects and VideoScribe production pipelines without quality loss."
+      title: "DaVinci Resolve",
+      text: "Professional color correction and color grading for productions requiring cinema-grade finishing and broadcast color compliance."
     },
     {
       id: 4,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Vyond",
-      text: "Used for whiteboard and mixed-style animation projects that require character movement, scene transitions, and richer visual environments alongside the hand-drawn aesthetic. Vyond is particularly effective for training and e-learning content with recurring characters."
+      title: "Final Cut Pro",
+      text: "Used for YouTube video editing, podcast video editing, and creator projects where Final Cut's native media management and export performance fit the workflow."
     },
     {
       id: 5,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Toon Boom",
-      text: "Industry-leading animation software used for whiteboard projects requiring sophisticated character rigging, fluid movement, and broadcast-quality output. When a project demands animation that goes beyond the standard whiteboard format, Toon Boom is where we work."
+      title: "Adobe Audition",
+      text: "Dialogue editing, noise reduction, audio restoration, and final mixing for projects requiring dedicated audio post production beyond in-timeline treatment."
     }
   ];
 
@@ -58,9 +58,9 @@ const CooperationModelsSection = () => {
         <div className="row justify-content-center text-center mb-4">
           <div className="col-12 col-lg-12">
             <p className="subtitle">Software & Technology</p>
-            <h2 className={styles.mainHeading}>Whiteboard Animation Software & Technology</h2>
+            <h2 className={styles.mainHeading}>Video Editing Software and Technology</h2>
             <p className={styles.topParagraph}>
-              Professional results come from using the right tool for the right job. We work across the industry's leading whiteboard animation and illustration platforms, selecting the best fit based on your project's visual requirements and delivery specs.
+              Our video editing studio works in the industry-standard tools that professional video editors and post production facilities rely on.
             </p>
           </div>
         </div>

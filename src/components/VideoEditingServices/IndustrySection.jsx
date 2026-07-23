@@ -7,42 +7,42 @@ const industries = [
     id: 1,
     title: "SaaS & Technology",
     image: "/industry/01.png",
-    text: "Product walkthroughs, onboarding sequences, and feature education for software platforms where users need to understand your product quickly — before they decide it is too complicated and leave.",
+    text: "Product demo editing, feature announcements, and thought leadership series with pacing and graphic treatment calibrated for technical B2B audiences.",
     link: "/industry/retail"
   },
   {
     id: 2,
     title: "Healthcare & Medical",
     image: "/industry/02.png",
-    text: "Patient education, clinical training, and compliance content are produced to the accuracy and regulatory standards healthcare audiences require. We understand the difference between simplifying complex information and misrepresenting it. ",
+    text: "Patient education videos, medical device content, and clinical training material edited to the accuracy and sensitivity standards healthcare audiences and regulatory environments require.",
     link: "/industry/professional-services"
   },
   {
     id: 3,
-    title: "Education & E-Learning",
+    title: "Finance and FinTech",
     image: "/industry/03.png",
-    text: "Curriculum content, course modules, and institutional explainers are built around genuine learning outcomes. From K-12 to university-level and professional certification, we produce whiteboard animations that learners actually finish.",
+    text: "Financial product videos, brand communications, and regulatory explainer content for finance audiences that do not accept imprecision in production or message.",
     link: "/industry/software-tech"
   },
   {
     id: 4,
-    title: "Finance & Fintech",
+    title: "E-Commerce and Retail",
     image: "/industry/04.png",
-    text: "Complex financial products, regulatory disclosures, and investment concepts are explained in a format that builds understanding without sacrificing accuracy. Clear enough for a general audience, precise enough for a compliance review.",
+    text: "Product video editing, promotional campaign content, and brand storytelling where visual quality at the first frame determines whether a product page converts.",
     link: "/industry/medical-biotech"
   },
   {
     id: 5,
-    title: "Real Estate",
+    title: "Education and E-Learning",
     image: "/industry/05.png",
-    text: "Property walkthroughs, investment explainers, mortgage process videos, and market education content for agencies, developers, and proptech platforms communicating with buyers who are making the largest purchase of their lives.",
+    text: "Course content editing, instructional video post production, and educational series finishing for platforms producing video-based learning at scale.",
     link: "/industry/education"
   },
   {
     id: 6,
-    title: "E-Commerce",
+    title: "Real Estate",
     image: "/industry/06.png",
-    text: "Product education, unboxing explainers, and post-purchase onboarding content that reduces returns, increases repeat purchases, and gives buyers the confidence to complete checkout on products that require some explanation.",
+    text: "Property video editing, virtual tour post production, and development marketing content that performs before a buyer sets foot through the door.",
     link: "/industry/real-estate"
   }
   ,
@@ -50,7 +50,7 @@ const industries = [
     id: 7,
     title: "Startups & Enterprises",
     image: "/industry/06.png",
-    text: "Whether you are explaining a new category to early adopters or rolling out a process change across a global organization, whiteboard animation scales from a single launch video to a full content program. ",
+    text: "Pitch video editing for investor confidence and full video post production services for enterprises managing high-volume branded content across multiple departments.",
     link: "/industry/real-estate"
   }
 ];
@@ -58,8 +58,8 @@ const industries = [
 export default function IndustrySection() {
   return (
     <GlobalIndustrySection
-      heading="Whiteboard Animation Solutions for Every Industry"
-      description="The same whiteboard animation video that works for a healthcare compliance program will not work for a SaaS product demo. We have built genuine expertise across the categories below, which means we understand those differences from the first briefing call."
+      heading="Video Editing Solutions for Every Industry"
+      description="Our professional video editing services apply specific post production approaches to each industry's audience, content standards, and platform context."
       industries={industries}
       variant="gradient"
     />

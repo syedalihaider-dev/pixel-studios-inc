@@ -4,52 +4,52 @@ import GlobalFaqSection from "../Common/FaqSection";
 
 const faqs = [
   {
-    question: "What are whiteboard animation services?",
-    answer: "Whiteboard animation services cover the full production of videos in which content is drawn on screen as a voiceover narrates. The format is used for explainer videos, training programs, marketing content, and customer education. A complete whiteboard animation service includes scriptwriting, storyboarding, illustration, animation, voiceover recording, sound design, and final delivery.",
+    question: "What are video editing services?",
+    answer: "Video editing services cover all post production work required to turn raw footage into finished content: cutting, sequencing, color grading, audio mixing, motion graphics, caption creation, and platform export. Professional video editing services apply editorial judgment and technical expertise to produce content that performs in its distribution environment.",
   },
   {
-    question: "How much does a whiteboard animation video cost?",
-    answer: "Whiteboard animation video pricing varies based on video length, illustration complexity, number of revision rounds, and whether voiceover talent and music licensing are included. Most professional whiteboard animation projects fall between $2,000 and $8,000 for a 60-90 second video. We provide custom quotes based on your specific scope — contact us to discuss your project.",
+    question: "How much does video editing cost?",
+    answer: "A professionally edited 60 to 90-second marketing video typically starts in the $300 to $800 range. Corporate video editing with motion graphics, color grading, and multi-camera assembly runs $800 to $2,500 or more. Ongoing retainer-based video editing services are priced by volume and frequency. Itemized quotes within 48 hours of a discovery call.",
   },
   {
-    question: "How long does a whiteboard animation project take?",
-    answer: "A standard 60-90 second whiteboard animation video runs three to five weeks from brief sign-off to final delivery. Discovery and scripting: 5-7 days. Storyboard and illustration: 5-7 days. Animation and voiceover: 7-10 days. Review and final delivery: 3-5 days. Expedited timelines are available for qualifying projects.",
+    question: "How long does professional video editing take?",
+    answer: "Most standard video editing projects complete in three to seven business days from footage delivery and brief sign-off. Complex multi-camera productions and projects requiring extensive motion graphics take longer. Every project receives a specific delivery date at kickoff, not a range.",
   },
   {
-    question: "Do you provide script writing?",
-    answer: "Yes. Professional scriptwriting is included in every Pixels Studios whiteboard animation project. We do not produce animation from client-provided scripts unless the client specifically requests it and the script has been reviewed and approved by our team. The script is too important to the outcome to be treated as a pre-production formality.",
+    question: "Can you edit videos for YouTube?",
+    answer: "Yes. YouTube video editing services are among our most requested formats. We handle long-form content, YouTube Shorts editing, chapter marker setup, thumbnail frame selection, and export to YouTube's technical specifications, as well as short-form cuts for social media distribution.",
   },
   {
-    question: "Do you provide professional voiceovers?",
-    answer: "Yes. Voiceover is included in our standard whiteboard animation service. We work with professional voice talent across a range of styles, accents, and delivery registers. You will have the opportunity to review talent options before recording begins.",
+    question: "Do you provide subtitles and captions?",
+    answer: "Yes. Accurate, frame-timed subtitle creation and caption services are included in standard packages. We produce properly formatted captions rather than auto-generated transcripts, available in multiple languages for multilingual distribution.",
   },
   {
-    question: "What industries benefit from whiteboard animation?",
-    answer: "Whiteboard animation performs across industries where complex information needs to be communicated clearly. Healthcare, SaaS and technology, financial servicWhiteboard animation performs across industries where complex information needs to be communicated clearly. Healthcare, SaaS and technology, financial services, education, legal, real estate, e-commerce, and non-profit organizations all use whiteboard animation regularly for training, marketing, and customer education purposes.es, education, legal, real estate, e-commerce, and non-profit organizations all use whiteboard animation regularly for training, marketing, and customer education purposes.",
-  },
-  {
-    question: "Can whiteboard videos improve learning retention?",
-    answer: "Yes. The whiteboard format is one of the most retention-efficient video formats available because it sequences information progressively and creates an active cognitive engagement loop. Learners follow the construction of an idea rather than watching a completed visual, which produces measurably higher retention.",
-  },
-  {
-    question: "Can you animate existing content?",
-    answer: "Yes. We regularly work with clients who have existing scripts, slide decks, or e-learning modules that need to be rebuilt as whiteboard animation videos. We review the existing content, identify what should be preserved, what should be restructured, and what should be cut, and produce the animation accordingly.",
+    question: "Can you add motion graphics to videos?",
+    answer: "Yes. Motion graphics integration is a standard component of our professional video editing services. Branded lower thirds, title sequences, call-to-action overlays, and animated graphic elements produced in After Effects and integrated into the edit.",
   },
   {
     question: "What file formats do you deliver?",
-    answer: "Final whiteboard animation videos are delivered in MP4 (H.264) as standard, with additional formats available on request — including MOV, WebM, and platform-specific exports for YouTube, LinkedIn, LMS platforms, and internal portals. Resolution options include 1080p and 4K. Source files are included in most project scopes.",
+    answer: "Standard delivery includes MP4 in multiple resolutions, MOV for broadcast and post production handoffs, and platform-specific exports for YouTube, Instagram, TikTok, LinkedIn, and Facebook. All formats confirmed at project kickoff.",
+  },
+  {
+    question: "Do you edit short-form videos for social media?",
+    answer: "Yes. Short form video editing is one of our most active service areas: TikTok video editing, Instagram reel editing, YouTube Shorts editing, and LinkedIn video. Platform-native formats, aspect ratios, and caption treatment built in from the start.",
+  },
+  {
+    question: "Can you improve audio quality?",
+    answer: "Yes. Audio enhancement is included in our video post production services: dialogue cleanup, noise reduction, level normalization, and final mixing to broadcast and platform loudness standards without losing the natural quality of the original recording.",
   },
   {
     question: "How many revisions are included?",
-    answer: "Our standard whiteboard animation projects include structured revision rounds at the script stage, the storyboard stage, and the final animation stage. The number of revision rounds is confirmed in your project scope. We do not cap the number of notes per round — a revision round means all of your feedback for that stage, addressed together.",
+    answer: "Two full revision rounds standard in every video editing project. Additional rounds available and priced upfront. All revision terms documented before production begins.",
   },
   {
-    question: "Do you create custom illustrations?",
-    answer: "Yes. Every illustration in a Pixels Studios whiteboard animation is created custom for your project. We do not use pre-built illustration libraries or template packs.",
+    question: "Do you sign NDAs?",
+    answer: "Yes. We sign NDAs for clients requiring confidentiality before sharing footage, brand assets, or proprietary content. Standard for corporate video editing clients, enterprise brands, and projects involving pre-release footage or internal communications.",
   },
   {
-    question: "Who owns the final video?",
-    answer: "You do. Upon final delivery and payment, full ownership of the final rendered video transfers to you. Source file ownership terms are detailed in your project agreement.",
+    question: "Can you handle ongoing video editing projects?",
+    answer: "Yes. Our online video editing services are available on a retainer basis for brands and creators with ongoing needs. Retainer agreements cover weekly or monthly editing volumes with agreed turnaround times, dedicated editors, and priority scheduling. ",
   },
 ];
 
