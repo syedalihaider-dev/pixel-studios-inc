@@ -4,7 +4,7 @@ import ServicesSection from "@/components/VideoEditingServices/ServicesSection";
 import HowWeWorkSection from "@/components/VideoEditingServices/HowWeWorkSection";
 import WhyInvestSection from "@/components/VideoEditingServices/WhyInvestSection";
 import AnimationPortfolio from "@/components/VideoEditingServices/AnimationPortfolio";
-import GreatVideosSection from "@/components/AnimatedExplainerVideo/GreatVideosSection";
+import GreatVideosSection from "@/components/VideoEditingServices/GreatVideosSection";
 import TeamStandoutSection from "@/components/VideoEditingServices/TeamStandoutSection";
 import CooperationModelsSection from "@/components/VideoEditingServices/CooperationModelsSection";
 import TestimonialsSlider from "@/components/VideoEditingServices/TestimonialsSlider";

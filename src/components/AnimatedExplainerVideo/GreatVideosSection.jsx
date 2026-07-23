@@ -5,11 +5,11 @@ import GlobalGreatVideosSection from '../Common/GreatVideosSection';
 const GreatVideosSection = () => {
   const title = (
     <>
-      Discuss Your <span>Video Editing</span> Requirements
+      Get Started With <span>Animated Explainer Video</span> Services
     </>
   );
 
-  const text = "Tell us your footage volume, platform targets, brand standards, and timeline. We will tell you what approach we would take and what a realistic turnaround and investment looks like.";
+  const text = "Book a discovery call, and we will show you the difference that makes.";
 
   return <GlobalGreatVideosSection title={title} text={text} />;
 };

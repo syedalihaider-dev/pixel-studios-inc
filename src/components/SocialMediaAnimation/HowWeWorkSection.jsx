@@ -7,33 +7,33 @@ import styles from './HowWeWorkSection.module.css';
 const accordionData = [
   {
     id: 1,
-    title: '1 Video Trimming and Sequencing',
-    content: "Strategic assembly of footage into a narrative sequence that serves the brief and the audience's attention profile.Cutting decisions are made based on story logic, not on what was easiest to shoot."
+    title: '1 Instagram Animations',
+    content: "Feed posts, reels, and stories in every Instagram format. Captions, aspect ratios, and hook timing calibrated for the platform's visual environment and engagement signals."
   },
   {
     id: 2,
-    title: '2 Motion Graphics Integration',
-    content: 'On-brand motion graphics, animated titles, lower thirds, and call-to-action overlays produced in After Effects and integrated into the edit at the appropriate stage.'
+    title: '2 Facebook Animations',
+    content: "Organic and paid Facebook video animation optimized for the watch-time and engagement metrics that drive Facebook's distribution algorithm."
   },
   {
     id: 3,
-    title: '3 Color Correction and Color Grading',
-    content: 'Technical color correction to establish accuracy, followed by color grading to establish emotional tone. Footage matched across cameras, exposure corrected, and grade applied to fit the brand and the distribution environment.'
+    title: '3 TikTok Animations',
+    content: 'TikTok animation video production built from the first frame for a platform where the hook determines everything. Native vertical format with on-screen text for silent-viewing audiences.'
   },
   {
     id: 4,
-    title: '4 Audio Enhancement',
-    content: 'Dialogue cleanup, noise reduction, level normalization, and acoustic treatment for location recordings and voiceover tracks to meet broadcast and platform loudness standards.'
+    title: '4 LinkedIn Video Animations',
+    content: "LinkedIn animated video services for B2B brands. Professional register, measured pacing, and visual tone matched to the platform's audience expectations."
   },
   {
     id: 5,
-    title: '5 Sound Design and Mixing',
-    content: 'Sound design, music selection, and full audio mixing for branded video content. Final audio produced to the loudness and dynamic range specifications of every platform in the delivery package.'
+    title: '5 YouTube Animations',
+    content: 'Full-length YouTube animated content and YouTube Shorts animation for brands building channel presence, product education, and search-optimized video content.'
   },
   {
     id: 6,
-    title: '6 Visual Effects',
-    content: 'VFX compositing, screen replacements, environmental effects, and graphic overlays applied with the production discipline of broadcast-standard video post production services.'
+    title: '6 X (Twitter) Video Content',
+    content: "Short-form animated content for X with the compression and visual clarity the platform's feed requires.Motion graphics and kinetic typography for the format."
   },
   {
     id: 7,
@@ -66,9 +66,9 @@ const HowWeWorkSection = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <h2 className={styles.heading}>What's Included in Our Video Editing Services?</h2>
+              <h2 className={styles.heading}>Social Media Animation Solutions for Every Platform</h2>
               <p className={styles.description}>
-                Our video post production services cover every technical element that turns raw footage into finished, platform-ready content.
+                Every platform has its own algorithm, audience behavior, and technical requirements. We build natively for all of them.
               </p>
               <div className={styles.buttonsWrapper}>
                 <CTAButton type="button" text="Let's Talk" />

@@ -12,7 +12,7 @@ const statsData = [
 const StatsSection = () => {
   return (
     <GlobalStatsSection
-      heading="A Trusted Animation Company For Video Editing Services"
+      heading="A Trusted Animation Company For Social Media Animation"
       statsData={statsData}
       variant="gradient"
     />

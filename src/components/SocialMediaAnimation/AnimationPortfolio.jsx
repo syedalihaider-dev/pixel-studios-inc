@@ -6,8 +6,8 @@ export default function AnimationPortfolio() {
   return (
     <GlobalAnimationPortfolio
       subtitle="Our Work"
-      heading="Video Editing Portfolio"
-      description="Our video editing portfolio covers marketing campaigns, corporate content, YouTube series, social media campaigns, and product demonstrations across more than 12 industries."
+      heading="Social Media Animation Portfolio"
+      description="Our portfolio covers Instagram reels, TikTok campaigns, LinkedIn product content, Facebook ads, and YouTube Shorts across e-commerce, SaaS, healthcare, and consumer brands."
       variant="gradient"
     />
   );

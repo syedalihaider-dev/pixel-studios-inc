@@ -1,33 +1,32 @@
-import Banner from "@/components/VideoEditingServices/Banner";
-import StatsSection from "@/components/VideoEditingServices/StatsSection";
-import ServicesSection from "@/components/VideoEditingServices/ServicesSection";
-import HowWeWorkSection from "@/components/VideoEditingServices/HowWeWorkSection";
-import WhyInvestSection from "@/components/VideoEditingServices/WhyInvestSection";
-import AnimationPortfolio from "@/components/VideoEditingServices/AnimationPortfolio";
-import GreatVideosSection from "@/components/AnimatedExplainerVideo/GreatVideosSection";
-import TeamStandoutSection from "@/components/VideoEditingServices/TeamStandoutSection";
-import CooperationModelsSection from "@/components/VideoEditingServices/CooperationModelsSection";
-import TestimonialsSlider from "@/components/VideoEditingServices/TestimonialsSlider";
-import TechnologySection from "@/components/VideoEditingServices/TechnologySection";
-import IndustrySection from "@/components/VideoEditingServices/IndustrySection";
-import TestimonialSection from "@/components/VideoEditingServices/TestimonialSection";
-import FaqSection from "@/components/VideoEditingServices/FaqSection";
-
+import Banner from "@/components/SocialMediaAnimation/Banner";
+import StatsSection from "@/components/SocialMediaAnimation/StatsSection";
+import ServicesSection from "@/components/SocialMediaAnimation/ServicesSection";
+import HowWeWorkSection from "@/components/SocialMediaAnimation/HowWeWorkSection";
+import WhyInvestSection from "@/components/SocialMediaAnimation/WhyInvestSection";
+import AnimationPortfolio from "@/components/SocialMediaAnimation/AnimationPortfolio";
+import GreatVideosSection from "@/components/SocialMediaAnimation/GreatVideosSection";
+import TeamStandoutSection from "@/components/SocialMediaAnimation/TeamStandoutSection";
+import CooperationModelsSection from "@/components/SocialMediaAnimation/CooperationModelsSection";
+import TestimonialsSlider from "@/components/SocialMediaAnimation/TestimonialsSlider";
+import TechnologySection from "@/components/SocialMediaAnimation/TechnologySection";
+import IndustrySection from "@/components/SocialMediaAnimation/IndustrySection";
+import TestimonialSection from "@/components/SocialMediaAnimation/TestimonialSection";
+import FaqSection from "@/components/SocialMediaAnimation/FaqSection";
 
 export const metadata = {
-  title: "Professional Video Editing Services for Brands & Businesses | Pixels Studios",
-  description: "Need professional video editing services that make your footage perform? Pixels Studios delivers custom video post production for brands and creators. Get a quote today.",
+  title: "Social Media Animation Services | Pixels Studios Inc.",
+  description: "Need social media animation services that stop the scroll? Pixels Studios creates custom animated social media videos for every platform. Get a free quote today.",
 };
 
-export default function VideoEditingServices() {
+export default function SocialMediaAnimationPage() {
   return (
     <main>
       <Banner />
       <StatsSection />
       <ServicesSection />
-      <HowWeWorkSection />
-      <AnimationPortfolio />
       <GreatVideosSection />
+      <AnimationPortfolio />
+      <HowWeWorkSection />
       <TeamStandoutSection />
       <WhyInvestSection />
       <CooperationModelsSection />

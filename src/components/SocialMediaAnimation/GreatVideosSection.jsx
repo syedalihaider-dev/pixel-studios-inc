@@ -5,11 +5,11 @@ import GlobalGreatVideosSection from '../Common/GreatVideosSection';
 const GreatVideosSection = () => {
   const title = (
     <>
-      Bring Your <span>Ideas</span> to Life with Professional <span>2D Animation Services</span>
+      Get Started With Professional <span>Social Media Animation Services</span>
     </>
   );
 
-  const text = "Whether you're launching a product, explaining a service, or strengthening your brand, our 2D animation studio creates visually compelling videos tailored to your goals. We combine strategic storytelling, creative design, and smooth animation to deliver content that captures attention and leaves a lasting impression.";
+  const text = "Most brands are publishing social media content that performs at a fraction of what well-produced animated content achieves. Book a discovery call and we will show you what is possible for your platforms, your audience, and your campaign objectives.";
 
   return <GlobalGreatVideosSection title={title} text={text} />;
 };
