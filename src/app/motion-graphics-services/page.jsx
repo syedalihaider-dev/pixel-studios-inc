@@ -6,7 +6,6 @@ import WhyInvestSection from "@/components/MotionGraphics/WhyInvestSection";
 import AnimationPortfolio from "@/components/MotionGraphics/AnimationPortfolio";
 import GreatVideosSection from "@/components/MotionGraphics/GreatVideosSection";
 import TeamStandoutSection from "@/components/MotionGraphics/TeamStandoutSection";
-import WonderingSection from "@/components/MotionGraphics/WonderingSection";
 import CooperationModelsSection from "@/components/MotionGraphics/CooperationModelsSection";
 import TestimonialsSlider from "@/components/MotionGraphics/TestimonialsSlider";
 import TechnologySection from "@/components/MotionGraphics/TechnologySection";
