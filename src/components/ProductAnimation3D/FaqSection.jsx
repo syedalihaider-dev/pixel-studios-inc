@@ -4,47 +4,47 @@ import GlobalFaqSection from "../Common/FaqSection";
 
 const faqs = [
   {
-    question: "How much does trailer animation cost?",
-    answer: "A professionally produced 30 to 60-second trailer typically starts in the $2,000 to $5,000 range for motion graphics-based production. Trailers with custom 3D elements, character animation, or extensive visual effects range from $6,000 to $15,000 or more. Itemized quotes within 48 hours of a discovery call.",
+    question: "What Are 3D Product Animation Services?",
+    answer: "3D product animation services cover the creation of animated, photorealistic video content showing a product's features, function, and design for marketing, sales, and educational use.",
   },
   {
-    question: "How long does movie trailer production take?",
-    answer: "Most movie trailer production completes in two to four weeks from brief sign-off. Trailers requiring custom animated sequences or extensive visual effects take longer. Rush timelines are available for release-date-critical projects.",
+    question: "How Much Does 3D Product Animation Cost?",
+    answer: "A standard 30 to 60-second 3D product animation typically starts at $2,500 to $6,000, depending on complexity. Itemized quotes within 48 hours of a discovery call.",
   },
   {
-    question: "Can you create a trailer for my game?",
-    answer: "Yes. Game trailer production and game trailer animation are core services. We produce cinematic reveal trailers, gameplay announcement trailers, and launch trailers for PC, console, and mobile titles.",
+    question: "How Long Does a Product Animation Project Take?",
+    answer: "Most 3D product animation projects are completed in three to five weeks from brief sign-off, depending on modeling and rendering complexity.",
   },
   {
-    question: "What is included in trailer production services?",
-    answer: "Our trailer production services include creative brief development, concept development, scriptwriting, storyboarding, motion graphics and animation production, sound design and music integration, and final delivery in every format specified at kickoff.",
+    question: "Can You Animate Existing CAD Models?",
+    answer: "Yes. CAD to product animation conversion is a core part of our 3D product animation process for industrial and technical clients.",
   },
   {
-    question: "Do you provide scriptwriting and storyboarding?",
-    answer: "Yes. Scriptwriting and storyboarding are standard stages in our trailer production process. Both are developed around the hook identified in discovery and approved before animation production begins.",
+    question: "Are Product Animations Effective for eCommerce?",
+    answer: "Yes. eCommerce product animation consistently improves conversion rates and reduces return rates compared to relying on static imagery alone.",
   },
   {
-    question: "What makes a successful promotional trailer?",
-    answer: "A successful promotional trailer identifies a single compelling hook and structures the entire sequence to deliver that hook at the right moment. The most common mistake in trailer production is trying to communicate everything rather than building toward one moment that makes the audience want more.",
+    question: "Do You Provide Scriptwriting and Storyboarding?",
+    answer: "Yes. Scriptwriting and storyboarding are standard stages in our 3D product animation workflow before any modeling begins.",
   },
   {
-    question: "Can trailer videos be used for social media marketing?",
-    answer: "Yes. Trailer-style content performs strongly on social media because the structure is built for engagement and completion. We produce platform-specific cuts of trailer content for social distribution alongside the primary deliverable.",
+    question: "Can You Showcase Internal Product Components?",
+    answer: "Yes. Product assembly animation and cutaway sequences clearly show internal components and mechanisms for technical and training audiences.",
   },
   {
-    question: "What is the difference between a teaser trailer and a full trailer?",
-    answer: "A teaser trailer is short, typically 15 to 30 seconds, and designed to create awareness and curiosity without revealing significant content. A full trailer, typically 60 to 120 seconds, develops a more complete narrative arc and reveals more of the content while still withholding the resolution. Both serve different stages of a campaign timeline.",
+    question: "What File Formats Will I Receive?",
+    answer: "Standard delivery includes MP4 in multiple resolutions, with platform-specific exports for web, social, and broadcast use as specified at kickoff.",
   },
   {
-    question: "Do you provide voiceovers and sound design?",
-    answer: "Yes. Professional voiceover casting and full sound design, including score selection or composition, are included in our trailer production services. Sound design is where much of a trailer's emotional impact is built.",
+    question: "Who Owns the Final Animation Assets?",
+    answer: "Full ownership of the final 3D product animation assets transfers to you upon final payment, without restriction or ongoing licensing fees.",
   }
 ];
 
 export default function FaqSection() {
   return (
     <GlobalFaqSection
-      heading="Frequently Asked Questions"
+      heading="Frequently Asked Questions About 3D Product Animation Services"
       faqs={faqs}
     />
   );

@@ -8,8 +8,6 @@ import AnimationPortfolio from "@/components/TrailerAnimation/AnimationPortfolio
 import GreatVideosSection from "@/components/TrailerAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/TrailerAnimation/TeamStandoutSection";
 import CooperationModelsSection from "@/components/TrailerAnimation/CooperationModelsSection";
-import TestimonialsSlider from "@/components/TrailerAnimation/TestimonialsSlider";
-import TechnologySection from "@/components/TrailerAnimation/TechnologySection";
 import SoftwareSection from "@/components/TrailerAnimation/SoftwareSection";
 import IndustrySection from "@/components/TrailerAnimation/IndustrySection";
 import TestimonialSection from "@/components/TrailerAnimation/TestimonialSection";

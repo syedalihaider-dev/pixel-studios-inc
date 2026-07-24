@@ -8,6 +8,7 @@ import AnimationPortfolio from "@/components/ProductAnimation3D/AnimationPortfol
 import GreatVideosSection from "@/components/ProductAnimation3D/GreatVideosSection";
 import TeamStandoutSection from "@/components/ProductAnimation3D/TeamStandoutSection";
 import CooperationModelsSection from "@/components/ProductAnimation3D/CooperationModelsSection";
+import WonderingSection from "@/components/ProductAnimation3D/WonderingSection";
 import SoftwareSection from "@/components/ProductAnimation3D/SoftwareSection";
 import IndustrySection from "@/components/ProductAnimation3D/IndustrySection";
 import TestimonialSection from "@/components/ProductAnimation3D/TestimonialSection";
@@ -29,10 +30,10 @@ export default function TitlesAndProductAnimation3D() {
       <TeamStandoutSection />
       <AnimationPortfolio />
       <HowWeWorkSection />
-      <CooperationModelsSection />
-      <SoftwareSection />
-      <WhyInvestSection />
       <GreatVideosSection />
+      <CooperationModelsSection />
+      <WhyInvestSection />
+      <WonderingSection />
       <IndustrySection />
       <TestimonialSection />
       <FaqSection />

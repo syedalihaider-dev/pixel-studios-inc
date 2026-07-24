@@ -9,58 +9,62 @@ import CTAButton from '@/components/Common/CTAButton';
 
 const industriesData = [
   {
-    name: "Explainer Videos",
-    intro: "Designed to close the gap between what your audience currently understands and what they need to understand to act. Ideal for new products, unfamiliar concepts, and any message where confusion is costing you conversions.",
+    name: "Product Complexity",
+    intro: "A single static product costs less to animate than a multi-component assembly with moving parts and internal mechanisms.",
     points: [
-      "Simplifying complex SaaS workflows and API ecosystems into easy-to-digest visual stories.",
-      "Explaining novel technology platforms to non-technical stakeholders and potential buyers.",
-      "Reducing customer bounce rates by answering core value propositions within the first 30 seconds.",
-      "Converting abstract business models into clear step-by-step visual journeys."
+      "Single product vs multi-part assembly",
+      "Simple product vs complex mechanism",
+      "No animation vs high-detail animation",
+      "2D illustration vs photorealistic 3D",
     ]
   },
   {
-    name: "Educational Videos",
-    intro: "Structured around genuine learning outcomes rather than content volume. We build educational whiteboard videos that sequence information the way the brain encodes it, each one building on the last.",
+    name: "Animation Duration",
+    intro: "A 15-second product loop costs less than a 90-second narrative-driven product explainer with multiple scenes and camera setups.",
     points: [
-      "Transforming dense academic and technical curriculum into engaging progressive modules.",
-      "Improving student and learner retention rates through synchronized visual drawing and audio.",
-      "Developing SCORM-compliant e-learning assets for university and K-12 educational platforms."
+      "15-second product turntable/loop",
+      "30-second feature highlight",
+      "60-second product overview",
+      "90-second comprehensive explainer"
     ]
   },
   {
-    name: "Training Videos",
-    intro: "Compliance training, process documentation, systems onboarding, and skills development content built for completion and retention. We produce training whiteboard videos that employees actually watch and remember after the session ends.",
+    name: "Modeling Requirements",
+    intro: "Existing CAD data reduces 3D product modeling and animation costs compared to building accurate geometry from scratch.",
     points: [
-      "Standardizing employee onboarding workflows across multi-location enterprise organizations.",
-      "Increasing workplace safety compliance rates with step-by-step procedural animations.",
-      "Replacing static presentation decks with high-retention interactive training videos."
+      "CAD model provided vs model built from reference photos",
+      "2D line drawings vs 3D mesh modeling",
+      "High-polygon detail vs optimized game-ready geometry"
     ]
   },
   {
-    name: "Product Demonstrations",
-    intro: "Feature walkthroughs, use-case illustrations, and capability showcases that show your product in action rather than describe it in abstract terms. Built for buyers who need to see it to believe it before they will purchase.",
+    name: "Visual Effects Requirements",
+    intro: "Particle effects, fluid simulation, or environmental effects add to the overall production scope beyond standard product rendering.",
     points: [
-      "Highlighting core software features, integrations, and user dashboard capabilities.",
-      "Visualizing hardware mechanics and internal component operations with precision.",
-      "Equipping sales teams with powerful visual demos that overcome technical buyer objections."
+      "Particle effects (smoke, fire, water, sparks)",
+      "Fluid and liquid simulation",
+      "Environmental interaction (wind, rain, dust)",
+      "Abstract data visualization overlays"
     ]
   },
   {
-    name: "Sales & Marketing Videos",
-    intro: "Funnel-aware whiteboard animation built to move the viewer from awareness to intent. Hook structure, persuasive narrative, and a clear call to action — edited for the platform and the specific stage of the buyer journey.",
+    name: "Output Resolution",
+    intro: "4K and broadcast-spec delivery requires more rendering time than standard web resolution output, affecting both cost and timeline.",
     points: [
-      "Boosting paid ad click-through rates across LinkedIn, YouTube, and Meta ad campaigns.",
-      "Increasing landing page conversion rates by capturing immediate visitor interest.",
-      "Structuring high-impact video pitches for sales proposals and investor presentations."
+      "1080p (Full HD) web delivery",
+      "2K resolution for professional presentations",
+      "4K for high-end product showcases",
+      "Broadcast 4K (UHD-1 / Rec. 709)",
     ]
   },
   {
-    name: "Internal Communication Videos",
-    intro: "Policy announcements, organizational updates, change management communications, and leadership messaging are produced to the same standard as your external content. Because your employees deserve communication that respects their attention, too.",
+    name: "Delivery Timeline",
+    intro: "Rush 3D product animation pricing reflects compressed production schedules and the resource reallocation required to meet them.",
     points: [
-      "Communicating major corporate change initiatives and strategic shifts with clarity.",
-      "Delivering executive updates and company-wide policy updates that drive alignment.",
-      "Fostering company culture and values through engaging visual storytelling."
+      "Standard 10-15 business days for simple products",
+      "Complex 3D animations: 3-6 weeks",
+      "Custom builds and simulations: 6-12 weeks",
+      "No rush fees for early-stage planning and asset preparation"
     ]
   }
 ];
@@ -81,10 +85,10 @@ export default function WonderingSection() {
           transition={{ duration: 0.6 }}
         >
           <div className="col-12 text-center">
-            <h4 className="subtitle">Wondering how well</h4>
-            <h2 className={styles.mainTitle}>Types of Whiteboard Animation Videos</h2>
+            <p className="subtitle">Pricing Guide</p>
+            <h2 className={styles.mainTitle}>3D Product Animation Pricing and Budget Considerations</h2>
             <p className={styles.description}>
-              Whiteboard animation is not a single format — it is a production approach that adapts to the communication objective. These are the most common video types we produce and the specific purpose each one serves.
+              3D product animation cost is driven by complexity, duration, and visual requirements, and we provide itemized quotes rather than flat-rate packages so you understand exactly what drives the investment.
             </p>
           </div>
         </motion.div>
@@ -130,7 +134,7 @@ export default function WonderingSection() {
                 >
                   <p className={styles.contentIntro}>{activeData.intro}</p>
 
-                  <h3 className={styles.contentTitle}>Example of our work</h3>
+                  <h3 className={styles.contentTitle}>Key Pricing Factors</h3>
 
                   <div className={styles.bulletList}>
                     {activeData.points.map((point, idx) => (

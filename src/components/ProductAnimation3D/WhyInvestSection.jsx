@@ -10,57 +10,51 @@ const accordionData = [
   {
     id: 1,
     icon: '/discovery.png',
-    title: 'Discovery and Creative Brief',
-    content: 'We establish the audience, the objective, the tone, and the single most compelling element of the content the trailer is built around. The brief identifies the hook before any creative work begins.',
+    title: 'Product Discovery and Research',
+    content: 'We identify the buyer objection or question that the animation needs to resolve before any modeling begins, since that answer shapes every creative decision downstream.',
   },
   {
     id: 2,
     icon: '/storyboarding.png',
     title: 'Concept Development',
-    content: 'Visual direction, tone, and structural approach were developed and presented for approval. Multiple concept directions where the brief warrants exploring different emotional registers.',
+    content: 'Visual direction and narrative structure are developed around the discovery findings and approved upfront before any production resources are committed.',
   },
   {
     id: 3,
     icon: '/animation.png',
-    title: 'Script Writing and Messaging',
-    content: "Trailer scripts and messaging sequences were built around the hook identified in discovery. Every line and visual beat earns its place in the structure.",
+    title: 'Storyboarding and Visual Planning',
+    content: "Every camera angle and reveal sequence is mapped before 3D product modeling and animation production begins, locking in the narrative before the build.",
   },
   {
     id: 4,
     icon: '/animation.png',
-    title: 'Storyboarding',
-    content: 'Every shot and transition was mapped before production. Pacing, reveal timing, and the structure of anticipation are all planned and approved at the storyboard stage.',
+    title: '3D Modeling and Asset Creation',
+    content: 'Precise 3D product modeling and animation assets are built from CAD data or reference imagery in-house, with no third-party asset libraries.',
   },
   {
     id: 5,
     icon: '/animation.png',
-    title: 'Visual Design and Motion Graphics',
-    content: 'Title treatments, motion graphics elements, and visual style were developed and approved. Typography, color, and graphic language are established before animation production begins.',
+    title: 'Materials, Lighting, and Texturing',
+    content: 'PBR materials, lighting setups, and texturing establish the photorealistic quality of the final render and the emotional tone of the piece.',
   },
   {
     id: 6,
     icon: '/animation.png',
-    title: 'Trailer Animation Production',
-    content: 'Full trailer animation production in-house. Motion graphics, title sequences, and any animated elements were produced according to the approved storyboard and visual direction.',
+    title: 'Animation Production',
+    content: 'Camera movement and product motion are animated to the approved storyboard and narrative structure with deliberate pacing throughout.',
   },
   {
     id: 7,
     icon: '/animation.png',
-    title: 'Sound Design and Music Integration',
-    content: 'Sound design and music integration are where trailers earn their emotional impact. Score selection, sound effects, and mix timing are built around the reveal structure established in the storyboard.',
+    title: 'Rendering and Post-Production',
+    content: 'Final rendering, compositing, and color grading bring the animation to its finished visual quality, matched against the original brief.',
   },
   {
     id: 8,
     icon: '/animation.png',
-    title: 'Rendering and Quality Assurance',
-    content: 'Final render passes and structured internal quality review. Pacing, sync, and visual quality were checked against the brief before client review.',
-  },
-  {
-    id: 9,
-    icon: '/animation.png',
-    title: 'Final Revisions and Delivery',
-    content: 'Structured revision round with documented feedback. Final delivery in every format and resolution specified at kickoff, including broadcast and platform-specific exports.',
-  },
+    title: 'Final Delivery and Optimization',
+    content: 'Files are delivered in every platform format specified at kickoff, optimized for each distribution channel without quality compromise.',
+  }
 ];
 
 const WhyInvestSection = () => {
@@ -78,10 +72,10 @@ const WhyInvestSection = () => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6 }}
             >
-              <p className="subtitle">HOW WE WORK</p>
-              <h2 className={styles.mainTitle}>Our Trailer Production Process</h2>
+              <p className="subtitle">THE PROCESS</p>
+              <h2 className={styles.mainTitle}>Our Strategic 3D Product Animation Workflow</h2>
               <p className={styles.subText}>
-                Every trailer follows a structured production process from creative brief to final delivery.
+                We approach every product animation as a marketing asset first and an animation project second. The workflow is designed to deliver clarity, alignment, and predictable milestones before any rendering begins.
               </p>
             </motion.div>
           </div>

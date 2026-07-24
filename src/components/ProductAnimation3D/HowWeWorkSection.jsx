@@ -7,28 +7,33 @@ import styles from './HowWeWorkSection.module.css';
 const accordionData = [
   {
     id: 1,
-    title: '1 Build Anticipation Before Launch',
-    content: "A trailer's primary function is to create a gap between what the audience knows and what they want to know. Professional trailer animation services build that gap deliberately, using structure and pacing to make the audience want the resolution that only the full release can provide."
+    title: '1 Showcase Features with Clarity',
+    content: "3D product motion graphics isolate features that are difficult to see or explain in static photography, giving each feature its own moment of focus."
   },
   {
     id: 2,
-    title: '2 Increase Audience Engagement',
-    content: 'Trailers produced with cinematic pacing and sound design generate significantly higher engagement and share rates than simple highlight compilations. The structure is what makes a trailer worth sharing, not just the content within it.'
+    title: '2 Increase Buyer Confidence',
+    content: 'Photorealistic product animation reduces the uncertainty that causes shoppers to abandon a purchase decision at the final stage of consideration.'
   },
   {
     id: 3,
-    title: '3 Strengthen Brand Recognition',
-    content: "Consistent title sequence animation and trailer production style across a brand's content builds recognition that compounds.A recognizable trailer style becomes a brand asset in its own right."
+    title: '3 Drive Higher Conversion Rates',
+    content: "Product pages with 3D product commercials convert at higher rates than pages relying on static images alone, particularly for considered purchases."
   },
   {
     id: 4,
-    title: '4 Improve Marketing Performance',
-    content: 'Promotional trailer videos consistently outperform standard promotional video formats in click-through rate and completion rate because the trailer structure is specifically engineered to hold attention to the end.'
+    title: '4 Simplify Complex Products',
+    content: 'Mechanical product animation makes complex assemblies understandable to non-technical buyers in seconds rather than paragraphs of specification text.'
   },
   {
     id: 5,
-    title: '5 Drive More Views and Conversions',
-    content: 'A well-produced trailer drives views to the full content and conversions on the underlying offer because it creates a specific reason to follow through rather than a general awareness of the option.'
+    title: '5 Reduce Traditional Production Costs',
+    content: '3D product content creation eliminates the recurring cost of physical photoshoots for every new angle, color variant, or seasonal update.'
+  },
+  {
+    id: 6,
+    title: '6 Accelerate Product Launches',
+    content: 'Animation production can begin from CAD data before physical samples exist, shortening the launch timeline by weeks in many categories.'
   }
 ];
 
@@ -51,9 +56,9 @@ const HowWeWorkSection = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <h2 className={styles.heading}>Why Invest in Professional Trailer Animation Services?</h2>
+              <h2 className={styles.heading}>Business Benefits of 3D Product Animation</h2>
               <p className={styles.description}>
-                Motion graphics services help brands capture attention, communicate complex ideas quickly, and drive measurable business results. Done right, motion design is one of the highest-performing assets a brand can own.
+                3D product animation helps brands communicate clearly, showcase complex products dynamically, and stand out in crowded digital spaces. When precision meets storytelling, 3D animation becomes one of your most versatile marketing assets.
               </p>
               <div className={styles.buttonsWrapper}>
                 <CTAButton type="button" text="Let's Talk" />

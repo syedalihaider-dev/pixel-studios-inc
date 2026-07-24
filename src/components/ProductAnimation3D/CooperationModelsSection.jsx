@@ -17,38 +17,38 @@ const CooperationModelsSection = () => {
     {
       id: 1,
       icon: "/game-development/outstaffing.png",
-      title: "Experienced Trailer Production Specialists",
-      text: "Our trailer animation studio has produced trailer content for film, gaming, and brand marketing clients. The format expertise is specific, not adapted from general video production experience."
+      title: "Product-Focused Animation Expertise",
+      text: "Our product animation experts specialize specifically in product communication, not general-purpose animation applied to a product brief."
     },
     {
       id: 2,
       icon: "/game-development/dedicated-team.png",
-      title: "Custom Creative Concepts",
-      text: "Every trailer begins with original concept development built around your specific content. No template trailer structures or stock reveal sequences applied regardless of fit."
+      title: "Tailored Creative Solutions",
+      text: "Every custom product animation starts from your specific buyer objection, not a template animation style applied regardless of category."
     },
     {
       id: 3,
       icon: "/game-development/managed-outsourcing.png",
-      title: "High-End Motion Graphics",
-      text: "Broadcast-quality motion graphics and title sequence animation produced to the visual standard that premium entertainment and brand content requires."
+      title: "Industry-Specific Experience",
+      text: "Our team has produced product animation across consumer, industrial, medical, and automotive categories, each with different accuracy and tone requirements."
     },
     {
       id: 4,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Dedicated Project Management",
-      text: "One project manager from brief to delivery. Every milestone is dated. Every revision round is structured and documented before production begins."
+      title: "Premium Visual Quality",
+      text: "High-end product animation rendered to broadcast-quality standards regardless of the distribution platform, from a product page to a trade show screen."
     },
     {
       id: 5,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Fast Turnaround Times",
-      text: "Most trailer projects are completed in two to four weeks from a brief sign-off, depending on complexity. Rush production available for launch-critical timelines."
+      title: "Reliable Project Delivery",
+      text: "Documented timelines and milestone schedules keep every 3D product animation process on track with dates communicated, not estimated."
     },
     {
       id: 6,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Collaborative Revision Process",
-      text: "Structured revision rounds where every note is documented and confirmed before changes are made. No guessing at ambiguous feedback on a format where pacing nuance matters enormously."
+      title: "Dedicated Communication",
+      text: "One project manager owns every product animation project from discovery through final delivery as a single point of accountability."
     }
   ];
 
@@ -63,10 +63,10 @@ const CooperationModelsSection = () => {
       >
         <div className="row justify-content-center text-center mb-4">
           <div className="col-12 col-lg-12">
-            <p className="subtitle">Why Choose Our</p>
-            <h2 className={styles.mainHeading}>Why Choose Our Trailer Animation Company?</h2>
+            <p className="subtitle">why choose us</p>
+            <h2 className={styles.mainHeading}>Why Brands Trust Our 3D Product Animation Company?</h2>
             <p className={styles.topParagraph}>
-              With proven results across multiple entertainment verticals, our approach is built to escalate your project’s impact.
+              From global brands to fast-scaling startups, our 3D product animation services consistently deliver measurable impact. Here is why teams partner with us for their most critical product content.
             </p>
           </div>
         </div>
