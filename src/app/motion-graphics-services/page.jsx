@@ -1,40 +1,43 @@
-import Banner from "@/components/WhiteboardAnimation/Banner";
-import StatsSection from "@/components/WhiteboardAnimation/StatsSection";
-import ServicesSection from "@/components/WhiteboardAnimation/ServicesSection";
-import HowWeWorkSection from "@/components/WhiteboardAnimation/HowWeWorkSection";
-import WhyInvestSection from "@/components/WhiteboardAnimation/WhyInvestSection";
-import AnimationPortfolio from "@/components/WhiteboardAnimation/AnimationPortfolio";
-import TeamStandoutSection from "@/components/WhiteboardAnimation/TeamStandoutSection";
-import WonderingSection from "@/components/WhiteboardAnimation/WonderingSection";
-import CooperationModelsSection from "@/components/WhiteboardAnimation/CooperationModelsSection";
-import TestimonialsSlider from "@/components/WhiteboardAnimation/TestimonialsSlider";
-import TechnologySection from "@/components/WhiteboardAnimation/TechnologySection";
-import IndustrySection from "@/components/WhiteboardAnimation/IndustrySection";
-import TestimonialSection from "@/components/WhiteboardAnimation/TestimonialSection";
-import FaqSection from "@/components/WhiteboardAnimation/FaqSection";
+import Banner from "@/components/MotionGraphics/Banner";
+import StatsSection from "@/components/MotionGraphics/StatsSection";
+import ServicesSection from "@/components/MotionGraphics/ServicesSection";
+import HowWeWorkSection from "@/components/MotionGraphics/HowWeWorkSection";
+import WhyInvestSection from "@/components/MotionGraphics/WhyInvestSection";
+import AnimationPortfolio from "@/components/MotionGraphics/AnimationPortfolio";
+import GreatVideosSection from "@/components/MotionGraphics/GreatVideosSection";
+import TeamStandoutSection from "@/components/MotionGraphics/TeamStandoutSection";
+import WonderingSection from "@/components/MotionGraphics/WonderingSection";
+import CooperationModelsSection from "@/components/MotionGraphics/CooperationModelsSection";
+import TestimonialsSlider from "@/components/MotionGraphics/TestimonialsSlider";
+import TechnologySection from "@/components/MotionGraphics/TechnologySection";
+import SoftwareSection from "@/components/MotionGraphics/SoftwareSection";
+import IndustrySection from "@/components/MotionGraphics/IndustrySection";
+import TestimonialSection from "@/components/MotionGraphics/TestimonialSection";
+import FaqSection from "@/components/MotionGraphics/FaqSection";
 
 
 export const metadata = {
-  title: "Whiteboard Animation Services | Pixels Studios Inc.",
-  description: "Professional whiteboard animation services for explainer videos, training, and marketing. Pixels Studios Inc. delivers clear, compelling whiteboard animation videos built to educate and convert.",
+  title: "Motion Graphics Services for Brands & Campaigns | Pixels Studios",
+  description: "Need professional motion graphics services in the USA? Pixels Studios delivers brand, product, and campaign motion graphics that convert. Get your free quote today.",
 };
 
-export default function WhiteboardAnimation() {
+export default function MotionGraphics() {
   return (
     <main>
       <Banner />
       <StatsSection />
       <ServicesSection />
-      <HowWeWorkSection />
-      <AnimationPortfolio />
       <TeamStandoutSection />
-      <WonderingSection />
-      <WhyInvestSection />
+      <HowWeWorkSection />
       <CooperationModelsSection />
-      <TestimonialsSlider />
+      <AnimationPortfolio />
+      <GreatVideosSection />
+      <WhyInvestSection />
       <TechnologySection />
-      <TestimonialSection />
+      <SoftwareSection />
+      <TestimonialsSlider />
       <IndustrySection />
+      <TestimonialSection />
       <FaqSection />
     </main>
   );
