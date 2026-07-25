@@ -51,11 +51,11 @@ const navData = [
             items: [
               { name: '3D Product Animation', path: '/3d-product-animation' },
               { name: '3D Modeling', path: '/3d-modeling-services' },
+              { name: '3D Industrial Animation', path: '/3d-industrial-animation' },
               // { name: 'Character Animation', path: '#' },
               // { name: '3D Character Design', path: '#' },
               // { name: '3D Environment Design', path: '#' },
               // { name: '3D Illustration Services', path: '#' },
-              // { name: 'Industrial Animation', path: '#' },
               // { name: 'Technical Animation', path: '#' },
               // { name: 'Manufacturing Animation', path: '#' },
               // { name: 'Medical Animation', path: '#' },
