@@ -9,7 +9,6 @@ import GreatVideosSection from "@/components/ProductAnimation3D/GreatVideosSecti
 import TeamStandoutSection from "@/components/ProductAnimation3D/TeamStandoutSection";
 import CooperationModelsSection from "@/components/ProductAnimation3D/CooperationModelsSection";
 import WonderingSection from "@/components/ProductAnimation3D/WonderingSection";
-import SoftwareSection from "@/components/ProductAnimation3D/SoftwareSection";
 import IndustrySection from "@/components/ProductAnimation3D/IndustrySection";
 import TestimonialSection from "@/components/ProductAnimation3D/TestimonialSection";
 import FaqSection from "@/components/ProductAnimation3D/FaqSection";

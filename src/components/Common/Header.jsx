@@ -50,7 +50,7 @@ const navData = [
             headingPath: '/3d-animation',
             items: [
               { name: '3D Product Animation', path: '/3d-product-animation' },
-              { name: '3D Product Modeling', path: '/3d-product-modeling' },
+              { name: '3D Modeling', path: '/3d-modeling-services' },
               // { name: 'Character Animation', path: '#' },
               // { name: '3D Character Design', path: '#' },
               // { name: '3D Environment Design', path: '#' },
