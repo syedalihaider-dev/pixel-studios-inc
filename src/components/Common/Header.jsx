@@ -71,7 +71,7 @@ const navData = [
           {
             heading: 'Video Production Services',
             items: [
-              // { name: 'Corporate Video Production', path: '#' },
+              { name: 'Corporate Video Animation', path: '/corporate-video-animation' },
               // { name: 'Product Demo Videos', path: '#' },
               // { name: 'Live Action Video Production', path: '#' },
               // { name: 'Training Video Production', path: '#' },
