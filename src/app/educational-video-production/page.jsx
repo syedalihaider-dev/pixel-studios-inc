@@ -2,6 +2,7 @@ import Banner from "@/components/LegalGraphics/Banner";
 import CostSection from "@/components/LegalGraphics/CostSection";
 import StatsSection from "@/components/LegalGraphics/StatsSection";
 import ServicesSection from "@/components/LegalGraphics/ServicesSection";
+import HowWeWorkSection from "@/components/LegalGraphics/HowWeWorkSection";
 import SupportSection from "@/components/LegalGraphics/SupportSection";
 import WhyInvestSection from "@/components/LegalGraphics/WhyInvestSection";
 import AnimationPortfolio from "@/components/LegalGraphics/AnimationPortfolio";
@@ -32,6 +33,7 @@ export default function LegalGraphicsPage() {
       <SupportSection />
       <TeamStandoutSection />
       <WhyInvestSection />
+      <HowWeWorkSection />
       <CooperationModelsSection />
       <WonderingSection />
       <TechnologySection />

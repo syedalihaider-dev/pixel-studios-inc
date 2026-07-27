@@ -4,10 +4,6 @@ import GlobalFaqSection from "../Common/FaqSection";
 
 const faqs = [
   {
-    question: "What Information Is Needed to Create Legal Graphics Animation?",
-    answer: "Police reports, medical records, witness statements, expert reports, surveillance footage, site photographs and measurements, and engineering documents. The completeness of the discovery materials determines the accuracy of the reconstruction.",
-  },
-  {
     question: "Common mistakes in legal demonstrative evidence?",
     answer: "Depicting events as established when they are actually disputed. Every element produced at Pixels Studios is traceable to a specific evidence basis, and we document that basis as part of every delivery.",
   },

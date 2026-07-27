@@ -28,7 +28,7 @@ const navData = [
               { name: 'Motion Graphics Services', path: '/motion-graphics-services' },
               { name: 'Whiteboard Animation', path: '/whiteboard-animation' },
               { name: 'Social Media Animation', path: '/social-media-animation' },
-              // { name: 'Educational Video Production', path: '/educational-video-production' },
+              { name: 'Educational Video Production', path: '/educational-video-production' },
               // { name: 'Animated Commercials', path: '#' },
               // { name: 'Cartoon Animation', path: '#' },
               { name: 'Logo Animation', path: '/logo-animation' },
