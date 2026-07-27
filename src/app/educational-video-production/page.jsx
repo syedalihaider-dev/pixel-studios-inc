@@ -1,43 +1,41 @@
-import Banner from "@/components/LegalGraphics/Banner";
-import CostSection from "@/components/LegalGraphics/CostSection";
-import StatsSection from "@/components/LegalGraphics/StatsSection";
-import ServicesSection from "@/components/LegalGraphics/ServicesSection";
-import HowWeWorkSection from "@/components/LegalGraphics/HowWeWorkSection";
-import SupportSection from "@/components/LegalGraphics/SupportSection";
-import WhyInvestSection from "@/components/LegalGraphics/WhyInvestSection";
-import AnimationPortfolio from "@/components/LegalGraphics/AnimationPortfolio";
-import GreatVideosSection from "@/components/LegalGraphics/GreatVideosSection";
-import TeamStandoutSection from "@/components/LegalGraphics/TeamStandoutSection";
-import CooperationModelsSection from "@/components/LegalGraphics/CooperationModelsSection";
-import WonderingSection from "@/components/LegalGraphics/WonderingSection";
-import TechnologySection from "@/components/LegalGraphics/TechnologySection";
-import SoftwareSection from "@/components/LegalGraphics/SoftwareSection";
-import TestimonialSection from "@/components/LegalGraphics/TestimonialSection";
-import FaqSection from "@/components/LegalGraphics/FaqSection";
+import Banner from "@/components/EducationalVideoProduction/Banner";
+import CostSection from "@/components/EducationalVideoProduction/CostSection";
+import StatsSection from "@/components/EducationalVideoProduction/StatsSection";
+import ServicesSection from "@/components/EducationalVideoProduction/ServicesSection";
+import HowWeWorkSection from "@/components/EducationalVideoProduction/HowWeWorkSection";
+import SupportSection from "@/components/EducationalVideoProduction/SupportSection";
+import WhyInvestSection from "@/components/EducationalVideoProduction/WhyInvestSection";
+import IndustrySection from "@/components/EducationalVideoProduction/IndustrySection";
+import AnimationPortfolio from "@/components/EducationalVideoProduction/AnimationPortfolio";
+import GreatVideosSection from "@/components/EducationalVideoProduction/GreatVideosSection";
+import TeamStandoutSection from "@/components/EducationalVideoProduction/TeamStandoutSection";
+import CooperationModelsSection from "@/components/EducationalVideoProduction/CooperationModelsSection";
+import WonderingSection from "@/components/EducationalVideoProduction/WonderingSection";
+import TechnologySection from "@/components/EducationalVideoProduction/TechnologySection";
+import SoftwareSection from "@/components/EducationalVideoProduction/SoftwareSection";
+import TestimonialSection from "@/components/EducationalVideoProduction/TestimonialSection";
+import FaqSection from "@/components/EducationalVideoProduction/FaqSection";
 
 
 export const metadata = {
-  title: "Legal Graphics Animation Services for Litigation, Trial & Courtroom | Pixels Studios",
-  description: "Need courtroom animation that holds up to judicial scrutiny? Pixels Studios builds accident reconstruction, medical legal animation, and trial demonstratives. Get a quote.",
+  title: "Educational Video Production Services | Improve Learning and Knowledge Retention | Pixels Studios",
+  description: "Need educational video production services that learners actually finish? Pixels Studios builds e-learning, training, and corporate learning videos that improve outcomes. Get a quote.",
 };
 
-export default function LegalGraphicsPage() {
+export default function EducationalVideoProductionPage() {
   return (
     <main>
       <Banner />
-      <CostSection />
       <StatsSection />
       <ServicesSection />
       <AnimationPortfolio />
       <GreatVideosSection />
-      <SupportSection />
       <TeamStandoutSection />
-      <WhyInvestSection />
       <HowWeWorkSection />
+      <IndustrySection />
+      <WhyInvestSection />
       <CooperationModelsSection />
       <WonderingSection />
-      <TechnologySection />
-      <SoftwareSection />
       <TestimonialSection />
       <FaqSection />
     </main>

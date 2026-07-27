@@ -17,26 +17,50 @@ const CooperationModelsSection = () => {
     {
       id: 1,
       icon: "/game-development/outstaffing.png",
-      title: "Static Legal Graphics",
-      text: "Diagrams, maps, medical illustrations, and timeline exhibits as static images. Used for information that does not require motion and for courtrooms where video presentation is unavailable."
+      title: "Instructional Design Expertise",
+      text: "We approach educational video production as an instructional design problem first and a production problem second. The structure of the learning experience is as important as the quality of the video that delivers it."
     },
     {
       id: 2,
       icon: "/game-development/dedicated-team.png",
-      title: "Animated Demonstratives",
-      text: "Animation depicting event sequences and mechanisms in motion. More effective than static graphics for causation evidence where the sequence of events is at issue."
+      title: "Learning-Focused Storytelling",
+      text: "Narrative and story structure are applied to educational content in a way that serves comprehension rather than entertainment. The two can coexist. Most educational video production does not attempt it."
     },
     {
       id: 3,
       icon: "/game-development/managed-outsourcing.png",
-      title: "Interactive Trial Presentations",
-      text: "Attorney-controlled presentations allowing real-time navigation of exhibits during testimony."
+      title: "Custom Educational Content",
+      text: "Every educational video is produced for the specific learning objective, the specific audience, and the specific context in which it will be used. Template training videos applied regardless of fit are the reason most training programs report high completion and low behavior change."
     },
     {
       id: 4,
       icon: "/game-development/managed-outsourcing.png",
-      title: "When Each Option Works Best",
-      text: "Static graphics for complex data requiring extended viewing. Animation for event sequences and mechanisms. Interactive presentations for complex multi-exhibit trials requiring attorney pacing control."
+      title: "High-Quality Production Standards",
+      text: "Broadcast-quality production on educational content. The learner's willingness to engage with training is partly determined by the signal the production quality sends about whether the organization values their time."
+    },
+    {
+      id: 5,
+      icon: "/game-development/managed-outsourcing.png",
+      title: "Scalable Learning Solutions",
+      text: "From a single compliance training video to a full corporate learning library, we scale production capacity to the organization's content development needs."
+    },
+    {
+      id: 6,
+      icon: "/game-development/managed-outsourcing.png",
+      title: "Collaborative Development Process",
+      text: "Subject matter expert collaboration is built into every stage of the production. The content accuracy review is not a final-stage checkbox. It is a production stage."
+    },
+    {
+      id: 7,
+      icon: "/game-development/managed-outsourcing.png",
+      title: "Reliable Delivery Timelines",
+      text: "Educational video production deadlines are real deadlines. Course launches, onboarding cycles, and compliance training windows do not move because the video is late."
+    },
+    {
+      id: 8,
+      icon: "/game-development/managed-outsourcing.png",
+      title: "Dedicated Project Support",
+      text: "One project manager from brief to LMS integration. One point of contact is responsible for every stage of the production."
     }
   ];
 
@@ -51,19 +75,18 @@ const CooperationModelsSection = () => {
       >
         <div className="row justify-content-center text-center mb-4">
           <div className="col-12 col-lg-12">
-            <p className="subtitle">COMPARE LEGAL</p>
+            <p className="subtitle">WHY CHOOSE US</p>
 
             <h2 className={styles.mainHeading}>
-              Legal Graphics vs Legal Animation: What's the Difference?
+              Why Choose Our Educational Video Production Company?
             </h2>
 
             <p className={styles.topParagraph}>
-              Different legal visualization formats serve different courtroom purposes. Static graphics, animation, and interactive presentations each provide unique advantages depending on the complexity of the evidence and how attorneys need to present their case.
+              We combine instructional design, educational storytelling, subject matter collaboration, and broadcast-quality production to create learning videos that improve understanding, engagement, and measurable training outcomes.
             </p>
           </div>
         </div>
 
-        {/* Swiper Slider */}
         <Swiper
           onSwiper={setSwiperRef}
           modules={[Navigation, Autoplay]}
@@ -89,7 +112,9 @@ const CooperationModelsSection = () => {
                     height={61}
                   />
                 </div>
+
                 <h3 className={styles.cardTitle}>{card.title}</h3>
+
                 <p className={`${styles.cardParagraph} scroll_block`}>
                   {card.text}
                 </p>
@@ -98,7 +123,6 @@ const CooperationModelsSection = () => {
           ))}
         </Swiper>
 
-        {/* Bottom Circle Navigation Buttons */}
         <div className={styles.navigationWrapper}>
           <button
             type="button"
@@ -108,6 +132,7 @@ const CooperationModelsSection = () => {
           >
             <ArrowLeft size={22} className={styles.navIcon} />
           </button>
+
           <button
             type="button"
             className={styles.navBtn}

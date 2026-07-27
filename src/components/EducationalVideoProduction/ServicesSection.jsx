@@ -5,72 +5,72 @@ import GlobalServicesSection from '../Common/ServicesSection';
 const sliderItems = [
   {
     id: 1,
-    title: "Accident Reconstruction Animation",
+    title: "Employee Training Videos",
     description:
-      "Accident reconstruction built from police reports, witness statements, traffic data, surveillance footage, and engineering analysis. Accurate to the expert witness standard that courtroom admissibility requires.",
+      "Employee training video production for onboarding, skills development, and process training. Built around the behavior the training is designed to change, not the information the department needs to have communicated.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 2,
-    title: "Medical Legal Animation",
+    title: "E-Learning Videos",
     description:
-      "Medical legal animation visualizing injuries, surgical procedures, and biological mechanisms connecting a plaintiff's medical record to the damages claimed. Reviewed against clinical documentation and expert opinion.",
+      "E-learning video production for digital learning platforms, LMS integration, and self-paced course content. SCORM-compatible deliverables for organizations managing learning completion and assessment data.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 3,
-    title: "Personal Injury Case Animation",
+    title: "Corporate Learning Videos",
     description:
-      "How the injury occurred, the nature and extent of the physical damage, and the mechanism of harm presented visually for juries evaluating causation and damages.",
+      "Corporate learning video production for organizations building internal knowledge bases, leadership development programs, and cross-functional training libraries.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 4,
-    title: "Product Liability Animation",
+    title: "Educational Animation Videos",
     description:
-      "Product defect and failure mechanism animation showing how a product failed and how that failure caused the injury, in terms a non-engineer can evaluate.",
+      "Educational animation services for concepts that text and static diagrams cannot communicate effectively. Abstract processes made concrete. Complex sequences made followable. Invisible mechanisms made visible.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 5,
-    title: "Construction Accident Animation",
+    title: "Academic and Classroom Videos",
     description:
-      "Site fall, equipment failure, and structural collapse case animation with precise 3D reconstruction of the incident environment.",
+      "Academic video content for curriculum supplementation, flipped classroom delivery, and distance learning programs at K-12 and higher education levels.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 6,
-    title: "Workplace Injury Animation",
+    title: "Compliance Training Videos",
     description:
-      "Industrial accident and occupational injury animation for workers' compensation and employer liability litigation.",
+      "Compliance training video production that employees engage with rather than click through. The regulatory requirement is not the creative brief. The behavior change the regulation is designed to produce.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 7,
-    title: "Criminal Case Visualization",
+    title: "Product Training Videos",
     description:
-      "Crime scene reconstruction and event sequence animation for defense and prosecution teams in criminal litigation.",
+      "Product training video production for customer education, sales enablement, and technical training content that reduces support burden by answering questions before they are asked.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 8,
-    title: "Forensic Animation",
+    title: "Instructional Videos",
     description:
-      "Forensic animation for ballistics, bloodstain pattern, fire origin, and structural failure analysis visualized in three dimensions from physical evidence.",
+      "Instructional video production for step-by-step process guidance, procedural training, and how-to content that replaces the manual nobody reads.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 9,
-    title: "Trial Presentation Graphics",
+    title: "Microlearning Videos",
     description:
-      "Static and animated trial presentation graphics for courtroom display: timelines, diagrams, medical illustrations, and engineering schematics presented clearly at trial pace.",
+      "Short-form microlearning video content targeting single concepts or skills in under five minutes. Built for the attention profile of working adults who do not have a training day. They have a training gap between meetings.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 10,
-    title: "Interactive Legal Demonstratives",
+    title: "LMS Training Content",
     description:
-      "Attorney-controlled interactive courtroom demonstratives for real-time zoom, pause, and evidence navigation during testimony.",
+      "LMS-ready video production for platforms including TalentLMS, Docebo, Cornerstone, and custom LMS environments. File format, metadata, and SCORM packaging handled according to the platform's specifications.",
     videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   }
 ];
@@ -78,8 +78,8 @@ const sliderItems = [
 const ServicesSection = () => {
   return (
     <GlobalServicesSection
-      title="Our Legal Graphics Animation Services"
-      description="Our courtroom animation services cover every demonstrative evidence format litigation requires."
+      title="Educational Video Production Services for Every Learning Objective"
+      description="Our educational video production covers every format a training and learning program requires."
       sliderItems={sliderItems}
     />
   );

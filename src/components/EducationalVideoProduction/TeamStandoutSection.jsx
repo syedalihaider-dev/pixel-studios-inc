@@ -7,44 +7,58 @@ import styles from './TeamStandoutSection.module.css';
 const features = [
   {
     id: 1,
-    title: "Explain Complex Events Clearly",
+    title: "Employee Onboarding",
     description:
-      "A 30-second accident reconstruction animation communicates spatial relationships, vehicle speeds, and event timing with a precision that twenty minutes of expert testimony cannot match in a juror's mental model.",
+      "Video onboarding content that delivers the same quality of first-week experience to every new hire, regardless of their manager's communication style or availability.",
     icon: "/icons/result-oriented.png"
   },
   {
     id: 2,
-    title: "Strengthen Expert Testimony",
+    title: "Workforce Training",
     description:
-      "The expert explains the analysis. The animation shows what it looks like in the specific facts of the case. How do legal animations support expert witnesses? By providing the visual reference the expert can speak to directly rather than describing abstractly.",
+      "Ongoing workforce training content for skills development, role transitions, and the continuous learning that organizations competing in fast-moving markets actually require.",
     icon: "/icons/flexible.png"
   },
   {
     id: 3,
-    title: "Improve Jury Understanding",
+    title: "Compliance and Safety Training",
     description:
-      "Jurors evaluate cases on what they understand. Legal animation increases the depth of understanding, which improves the quality of the verdict.",
+      "Compliance and safety training video production that regulators accept and employees actually watch. The two requirements are not automatically in conflict.",
     icon: "/icons/transparent.png"
   },
   {
     id: 4,
-    title: "Visualize Technical Evidence",
+    title: "Customer Education",
     description:
-      "Engineering analysis, biomechanical opinion, and medical testimony exist in precise but abstract forms. Animation makes the abstraction concrete at the level of visual understanding.",
+      "Customer education video content that reduces churn by ensuring customers understand the product deeply enough to get the value they paid for.",
     icon: "/icons/experienced.png"
   },
   {
     id: 5,
-    title: "Present Timelines and Sequences Accurately",
+    title: "Product Knowledge Training",
     description:
-      "Trial presentation graphics allow attorneys to present precise event timelines with correct spatial and temporal relationships that verbal testimony approximates.",
+      "Product knowledge training for sales teams, customer service teams, and channel partners who represent the product without having built it.",
     icon: "/icons/experienced.png"
   },
   {
     id: 6,
-    title: "Increase Engagement During Trial Presentations",
+    title: "Academic Learning",
     description:
-      "Jurors pay attention to animation. The visual format sustains engagement through complex technical testimony that verbal description alone cannot hold.",
+      "Curriculum-aligned academic video content that supplements instruction, supports learners who missed a concept in class, and provides the alternative explanation that a different learning style requires.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 7,
+    title: "Online Course Development",
+    description:
+      "Online course video production for content creators, consultants, and educators building digital course libraries on platforms including Teachable, Thinkific, and proprietary LMS environments.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 8,
+    title: "Internal Knowledge Sharing",
+    description:
+      "Internal knowledge transfer video content that captures institutional knowledge from subject matter experts and makes it accessible across the organization without requiring the expert to be present.",
     icon: "/icons/experienced.png"
   }
 ];
@@ -69,14 +83,14 @@ const TeamStandoutSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <p className="subtitle">WHY USE</p>
+          <p className="subtitle">HOW ORGANIZATIONS USE</p>
 
           <h2 className={styles.mainHeading}>
-            Why Do Attorneys Use <span>Legal Animation in Court?</span>
+            How Organizations Use <span>Educational Video Production Services?</span>
           </h2>
 
           <p className={styles.headerDesc}>
-            Legal animation transforms complex evidence into clear visual narratives that judges and juries can understand. It strengthens courtroom presentations by making technical, medical, and engineering concepts easier to follow while preserving factual accuracy.
+            Educational video production supports onboarding, workforce training, compliance, customer education, academic learning, and knowledge sharing by delivering engaging content tailored to every learning objective.
           </p>
         </motion.div>
 
@@ -86,6 +100,7 @@ const TeamStandoutSection = () => {
               <div className={styles.progressTrack}>
                 <motion.div className={styles.progressFill} style={{ height: lineHeight }} />
               </div>
+
               <div className={styles.featuresList}>
                 {features.map((feature, index) => (
                   <motion.div
@@ -103,15 +118,26 @@ const TeamStandoutSection = () => {
                           alt={feature.title}
                           width={64}
                           height={64}
-                          style={{ objectFit: 'contain' }}
+                          style={{ objectFit: "contain" }}
                           onError={(e) => {
-                            e.target.style.display = 'none';
+                            e.target.style.display = "none";
                           }}
                         />
-                        {!feature.icon && <div style={{ width: 64, height: 64, backgroundColor: 'rgba(0,0,0,0.1)', borderRadius: '8px' }}></div>}
+                        {!feature.icon && (
+                          <div
+                            style={{
+                              width: 64,
+                              height: 64,
+                              backgroundColor: "rgba(0,0,0,0.1)",
+                              borderRadius: "8px"
+                            }}
+                          ></div>
+                        )}
                       </div>
+
                       <h3 className={styles.featureTitle}>{feature.title}</h3>
                     </div>
+
                     <p className={styles.featureDesc}>{feature.description}</p>
                   </motion.div>
                 ))}

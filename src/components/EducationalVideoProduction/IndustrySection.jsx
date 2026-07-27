@@ -5,52 +5,58 @@ import GlobalIndustrySection from "../Common/IndustrySection";
 const industries = [
   {
     id: 1,
-    title: "SaaS & Technology",
+    title: "Animated Educational Videos",
     image: "/industry/01.png",
-    text: "Product walkthroughs, feature announcements, and onboarding animations for software companies at every stage of growth. We know which motion graphics assets move which metrics at which funnel stage.",
+    text: "Animation for concepts, processes, and mechanisms that physical demonstration cannot show.",
     link: "/industry/retail"
   },
   {
     id: 2,
-    title: "Healthcare & Medical",
+    title: "Whiteboard Educational Videos",
     image: "/industry/02.png",
-    text: "Patient education, device explanation, and healthcare marketing content built to the accuracy and sensitivity standards the industry demands for public-facing motion graphics.",
+    text: "Progressive visual explanation for complex sequential content and conceptual frameworks.",
     link: "/industry/professional-services"
   },
   {
     id: 3,
-    title: "Education & E-Learning",
+    title: "Motion Graphics Learning Videos",
     image: "/industry/03.png",
-    text: "Curriculum animation and instructional motion graphics are designed around learning outcomes rather than visual novelty. Built for LMS platforms and standalone distribution alike.",
+    text: "Data visualization and process diagrams in motion for training content that requires quantitative clarity.",
     link: "/industry/software-tech"
   },
   {
     id: 4,
-    title: "Finance & Fintech",
+    title: "Instructor-Led Training Videos",
     image: "/industry/04.png",
-    text: "Investment product explanation, regulatory communication, and financial literacy content for audiences that do not accept ambiguity in either the message or the visual presentation.",
+    text: "On-camera presenter content for training programs that benefit from direct human instruction delivery.",
     link: "/industry/medical-biotech"
   },
   {
     id: 5,
-    title: "Real Estate and Construction",
+    title: "Interactive Learning Videos",
     image: "/industry/05.png",
-    text: "Architectural walkthroughs and property launch motion graphics that give investors and buyers something compelling to respond to before the building exists.",
+    text: "Branching scenario and decision-point video for training contexts where the learner needs to practice judgment, not just receive information.",
     link: "/industry/education"
   },
   {
     id: 6,
-    title: "E-Commerce and Retail",
+    title: "Screen Recording Tutorials",
     image: "/industry/06.png",
-    text: "Product launch animations and brand awareness motion graphics for consumer brands competing in high-noise retail environments where the first frame determines whether the ad gets skipped.",
+    text: "Software and platform training videos with annotated screen capture for technology onboarding and digital skills development.",
     link: "/industry/real-estate"
-  }
-  ,
+  },
   {
     id: 7,
-    title: "Startups and Emerging Brands",
+    title: "Scenario-Based Training Videos",
     image: "/industry/06.png",
-    text: "First-impression content for brands that need to communicate clearly and confidently before their reputation does it for them. Motion graphics that position early-stage companies credibly within their category from the first campaign.",
+    text: "Realistic scenario videos for customer service training, sales training, and compliance training where the skill is demonstrated in a real-world context rather than described in the abstract.",
+    link: "/industry/real-estate"
+  },
+  {
+    id: 8,
+    title: "Blended Learning Content",
+    image: "/industry/06.png",
+    text: "Video components designed to integrate with live instruction, workbooks, and assessment tools in a complete blended learning program.",
     link: "/industry/real-estate"
   }
 ];
@@ -58,8 +64,8 @@ const industries = [
 export default function IndustrySection() {
   return (
     <GlobalIndustrySection
-      heading="Motion Graphics Solutions for Every Industry"
-      description="Motion graphics work differently in every vertical. The pacing, language, and visual register that perform for a FinTech product launch are not what works for healthcare compliance training. We have built production experience across all of the following."
+      heading="Educational Video Formats We Produce"
+      description="Our educational video production covers every major learning format, from animated explainers and whiteboard videos to interactive training, instructor-led sessions, software tutorials, and blended learning content."
       industries={industries}
       variant="gradient"
     />

@@ -9,53 +9,73 @@ import CTAButton from '@/components/Common/CTAButton';
 
 const industriesData = [
   {
-    name: "Personal Injury & Medical Malpractice",
+    name: "Learning Content Complexity",
     intro:
-      "Personal injury law firms and medical malpractice attorneys rely on clear, medically accurate visuals to explain how injuries occur and how treatment impacts the body. Demonstratives often include injury mechanism animations, surgical walkthroughs, and timelines that connect negligence to outcome in a way juries can easily understand.",
+      "A single-concept microlearning video costs less than a multi-module compliance training series. The instructional design investment scales with the complexity of the learning objective.",
     points: [
-      "Visualizing injury mechanisms, surgical procedures, and medical conditions with accurate demonstrations.",
-      "Creating timelines that connect negligence, injury events, treatment, and outcomes clearly.",
-      "Helping juries understand complex medical evidence through easy-to-follow visual storytelling."
+      "Instructional design requirements increase as learning objectives become more complex.",
+      "Multi-module training programs require greater planning and production effort.",
+      "Production scope is determined by educational outcomes rather than video length alone."
     ]
   },
   {
-    name: "Product Liability",
+    name: "Video Length",
     intro:
-      "Product liability lawyers need precise, technical storytelling to show how and why a product failed. We create detailed animations that break down design flaws, manufacturing defects, and failure sequences, helping establish causation and liability in complex cases.",
+      "Longer training videos require more scripting, more animation production, and more voiceover time. Most effective microlearning videos run three to five minutes. Module-level e-learning videos run eight to fifteen minutes.",
     points: [
-      "Breaking down product defects and failure mechanisms through detailed visual reconstruction.",
-      "Demonstrating how design flaws or manufacturing issues contributed to an incident.",
-      "Presenting complex engineering evidence in a format juries can easily evaluate."
+      "Short microlearning videos typically run between three and five minutes.",
+      "E-learning modules generally range from eight to fifteen minutes.",
+      "Longer videos require additional scripting, editing, narration, and production resources."
     ]
   },
   {
-    name: "Insurance Defense",
+    name: "Animation and Visual Style",
     intro:
-      "Insurance defense firms require balanced, evidence driven visuals that support expert testimony and challenge opposing claims. Demonstratives focus on accident reconstruction, alternative scenarios, and damage analysis to provide clarity and reinforce defence strategies.",
+      "Animated educational videos cost more than screen recording tutorials. The appropriate format is determined by the learning objective, not the production budget.",
     points: [
-      "Creating accident reconstructions based on available evidence and expert analysis.",
-      "Visualizing alternative scenarios and evaluating different case interpretations.",
-      "Supporting defense strategies with clear and factual courtroom presentations."
+      "Animation requires additional design and production time.",
+      "Screen recording tutorials provide a more cost-effective option for software training.",
+      "Visual style should always support the intended learning outcome."
     ]
   },
   {
-    name: "Criminal Defense",
+    name: "Instructional Design Requirements",
     intro:
-      "Criminal defense attorneys use visual reconstructions to present timelines, scene layouts, and alternative interpretations of events. These demonstratives simplify complex evidence, support witness accounts, and help create reasonable doubt through clear, factual presentation.",
+      "Projects requiring learning needs analysis, curriculum design, and assessment development alongside video production cost more than projects where the learning structure already exists.",
     points: [
-      "Reconstructing crime scenes, timelines, and sequences of events visually.",
-      "Supporting witness testimony with accurate scene layouts and evidence presentation.",
-      "Helping juries understand alternative interpretations through factual visualization."
+      "Learning needs analysis adds strategic planning to the project.",
+      "Curriculum and assessment development increase instructional scope.",
+      "Existing course structures reduce overall production complexity."
     ]
   },
   {
-    name: "Civil & Corporate Litigation",
+    name: "Voiceover and Localization",
     intro:
-      "Civil litigation firms and corporate legal teams need polished, persuasive visuals for high stakes disputes. From contract breakdowns to large scale incident reconstructions, we develop graphics and animations that communicate complex information with clarity and credibility in courtrooms and arbitration settings.",
+      "Professional voiceover, music, and translation for multilingual training content are standard service components priced transparently at the quote stage.",
     points: [
-      "Visualizing complex disputes, contracts, and business-related evidence clearly.",
-      "Creating professional courtroom graphics for trials and arbitration proceedings.",
-      "Communicating large-scale incidents through accurate and persuasive animations."
+      "Professional narration improves learning effectiveness.",
+      "Localization supports multilingual learners.",
+      "Voiceover, music, and translation costs are included transparently in project quotes."
+    ]
+  },
+  {
+    name: "Interactive Learning Features",
+    intro:
+      "SCORM-compatible branching scenarios and decision-point video add production scope beyond standard linear video delivery.",
+    points: [
+      "Interactive scenarios increase learner engagement.",
+      "SCORM compatibility supports LMS integration.",
+      "Branching content requires additional scripting and development."
+    ]
+  },
+  {
+    name: "Production Timeline",
+    intro:
+      "Standard educational video productions are complete in four to six weeks. Rush delivery is available for training programs with fixed launch dates.",
+    points: [
+      "Typical production schedules range from four to six weeks.",
+      "Rush delivery is available for urgent training launches.",
+      "Timelines vary depending on project complexity and review cycles."
     ]
   }
 ];
@@ -76,18 +96,14 @@ export default function WonderingSection() {
           transition={{ duration: 0.6 }}
         >
           <div className="col-12 text-center">
-            <p className="subtitle">INDUSTRIES WE SERVE</p>
+            <p className="subtitle">PRICING</p>
 
             <h2 className={styles.mainTitle}>
-              Industries and Legal Practice Areas We Serve
+              Educational Video Production Pricing and Cost Factors
             </h2>
 
             <p className={styles.description}>
-              Personal injury law firms, medical malpractice attorneys, product liability
-              lawyers, insurance defense firms, criminal defense attorneys, civil litigation
-              firms, and corporate legal teams rely on our legal visualization services.
-              Each practice area has specific demonstrative requirements that we understand
-              and approach individually.
+              Educational video production cost is determined by content complexity, production format, and delivery requirements.
             </p>
           </div>
         </motion.div>
@@ -104,13 +120,19 @@ export default function WonderingSection() {
               {industriesData.map((item, index) => (
                 <div
                   key={index}
-                  className={`${styles.industryItem} ${index === activeIndex ? styles.active : ''}`}
+                  className={`${styles.industryItem} ${index === activeIndex ? styles.active : ""
+                    }`}
                   onMouseEnter={() => setActiveIndex(index)}
                   onClick={() => setActiveIndex(index)}
                 >
                   <span>{item.name}</span>
                   <div className={styles.arrowIcon}>
-                    <Image src="/icons/arrow.png" alt="Arrow" width={38} height={30} />
+                    <Image
+                      src="/icons/arrow.png"
+                      alt="Arrow"
+                      width={38}
+                      height={30}
+                    />
                   </div>
                 </div>
               ))}
@@ -133,13 +155,18 @@ export default function WonderingSection() {
                 >
                   <p className={styles.contentIntro}>{activeData.intro}</p>
 
-                  <h3 className={styles.contentTitle}>Example of our work</h3>
+                  <h3 className={styles.contentTitle}>Key Cost Factors</h3>
 
                   <div className={styles.bulletList}>
                     {activeData.points.map((point, idx) => (
                       <div key={idx} className={styles.bulletItem}>
                         <div className={styles.tickIcon}>
-                          <Image src="/icons/tick.png" alt="Tick" width={29} height={29} />
+                          <Image
+                            src="/icons/tick.png"
+                            alt="Tick"
+                            width={29}
+                            height={29}
+                          />
                         </div>
                         <p className={styles.bulletText}>{point}</p>
                       </div>

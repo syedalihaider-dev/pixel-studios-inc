@@ -6,8 +6,8 @@ export default function AnimationPortfolio() {
   return (
     <GlobalAnimationPortfolio
       subtitle="OUR WORK SPEAKS"
-      heading="Legal Graphics Animation Portfolio"
-      description="Our work includes accident reconstruction, medical animations, product liability demonstratives, and trial presentation graphics, with selected examples available under NDA."
+      heading="Explore Our Educational Video Portfolio"
+      description="Our work includes employee training videos, LMS-ready e-learning content, educational animations across key industries, and corporate learning case studies focused on outcomes and impact."
       variant="gradient"
     />
   );

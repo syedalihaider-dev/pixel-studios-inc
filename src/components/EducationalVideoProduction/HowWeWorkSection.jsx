@@ -7,28 +7,43 @@ import styles from './HowWeWorkSection.module.css';
 const accordionData = [
   {
     id: 1,
-    title: '1 Stronger Visual Storytelling',
-    content: 'Professional motion graphic design gives brands full control over the sequence and emphasis of every piece of information they present. No static format offers that level of control.'
+    title: '1 Improve Knowledge Retention',
+    content: 'Learners retain information presented through video at significantly higher rates than information delivered through text-only materials. The combination of audio narration and synchronized visual explanation creates a dual-channel encoding that text cannot produce.'
   },
   {
     id: 2,
-    title: '2 Consistent Brand Communication',
-    content: 'Motion graphics built within a defined brand system create a consistent visual language across every campaign, channel, and platform a brand publishes to.'
+    title: '2 Simplify Complex Topics',
+    content: 'Animation and visual explanation translate abstract concepts into concrete visual representations. A concept that requires three paragraphs of text to describe imprecisely can be demonstrated in thirty seconds of animation precisely.'
   },
   {
     id: 3,
-    title: '3 Better Social Media Performance',
-    content: 'Animated content outperforms static posts on every platform that measures watch time and engagement as ranking signals for organic distribution.'
+    title: '3 Increase Learner Engagement',
+    content: 'Video engagement rates are higher than document completion rates across every learning context measured. Learners who engage completely. Learners who complete have the opportunity to learn.'
   },
   {
     id: 4,
-    title: '4 Increased Viewer Retention',
-    content: 'Viewers complete motion graphics videos at higher rates than most other content formats. High completion rates improve organic reach and multiply the return on each production investment.'
+    title: '4 Support Self-Paced Learning',
+    content: 'Video allows learners to pause, rewind, and rewatch the section that did not land the first time. A live trainer cannot be paused. A document does not know which paragraph the reader skipped.'
   },
   {
     id: 5,
-    title: '5 Greater Marketing ROI',
-    content: 'One well-produced motion graphics asset can be repurposed across landing pages, email, social, and advertising. The per-impression cost drops with every additional use across the campaign lifecycle.'
+    title: '5 Deliver Consistent Training',
+    content: 'A well-produced training video delivers the same quality of instruction to every learner in every location at any time. Live delivery varies with the trainer. Video does not.'
+  },
+  {
+    id: 6,
+    title: '6 Reduce Training Costs',
+    content: 'A training video produced once can be used indefinitely across an unlimited number of learners. The per-learner cost of video-based training drops with every additional person who watches it.'
+  },
+  {
+    id: 7,
+    title: '7 Improve Learning Accessibility',
+    content: 'Video content with captions and audio description is accessible to learners with hearing and visual impairments, and to learners engaging with content in their second language.'
+  },
+  {
+    id: 8,
+    title: '8 Scale Training Across Teams',
+    content: 'A global organization cannot put every employee in the same training room. Video-based corporate training videos scale to any organization size without proportionally increasing delivery cost.'
   }
 ];
 
@@ -51,13 +66,22 @@ const HowWeWorkSection = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <h2 className={styles.heading}>What Information Is Needed to Create Legal Graphics Animation?</h2>
+              <h2 className={styles.heading}>
+                Why Educational Videos Are More Effective Than Traditional Learning Materials?
+              </h2>
+
               <p className={styles.description}>
-                Police reports, medical records, witness statements, expert reports, surveillance footage, site photographs and measurements, and engineering documents. The completeness of the discovery materials determines the accuracy of the reconstruction.
+                Educational videos improve retention, simplify complex topics, increase learner engagement, support self-paced learning, deliver consistent training, reduce costs, improve accessibility, and make learning easier to scale across organizations.
               </p>
+
               <div className={styles.buttonsWrapper}>
                 <CTAButton type="button" text="Let's Talk" />
-                <CTAButton type="link" href="tel:+1-443-487-0213" text="Call Now" variant="outline" />
+                <CTAButton
+                  type="link"
+                  href="tel:+1-443-487-0213"
+                  text="Call Now"
+                  variant="outline"
+                />
               </div>
             </motion.div>
           </div>
@@ -73,7 +97,11 @@ const HowWeWorkSection = () => {
                     className={styles.accordionItem}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
+                    transition={{
+                      duration: 0.6,
+                      ease: "easeOut",
+                      delay: index * 0.1
+                    }}
                     viewport={{ once: true, margin: "-50px" }}
                   >
                     <button
