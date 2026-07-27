@@ -28,7 +28,7 @@ const navData = [
               { name: 'Motion Graphics Services', path: '/motion-graphics-services' },
               { name: 'Whiteboard Animation', path: '/whiteboard-animation' },
               { name: 'Social Media Animation', path: '/social-media-animation' },
-              // { name: 'Educational Video Production', path: '#' },
+              // { name: 'Educational Video Production', path: '/educational-video-production' },
               // { name: 'Animated Commercials', path: '#' },
               // { name: 'Cartoon Animation', path: '#' },
               { name: 'Logo Animation', path: '/logo-animation' },
@@ -58,8 +58,8 @@ const navData = [
               // { name: '3D Illustration Services', path: '#' },
               // { name: 'Technical Animation', path: '#' },
               // { name: 'Manufacturing Animation', path: '#' },
-              // { name: 'Medical Animation', path: '#' },
-              // { name: 'Legal Graphics Animation', path: '#' },
+              { name: 'Medical Animation', path: '/medical-animation' },
+              { name: 'Legal Graphics Animation', path: '/legal-graphics-animation' },
               // { name: 'Architectural Rendering', path: '#' },
               // { name: 'Photorealistic Rendering', path: '#' },
             ]
@@ -101,6 +101,7 @@ const navData = [
           },
           {
             heading: 'AI Animation Services',
+            headingPath: '/ai-animation',
             items: []
           }
         ]
