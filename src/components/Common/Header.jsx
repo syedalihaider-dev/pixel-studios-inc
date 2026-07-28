@@ -32,7 +32,7 @@ const navData = [
               { name: 'Animated Commercials', path: '/animated-commercials-services' },
               // { name: 'Cartoon Animation', path: '#' },
               { name: 'Logo Animation', path: '/logo-animation' },
-              // { name: 'Cel Animation', path: '#' },
+              { name: 'Hybrid & Cel Animation', path: '/hybrid-and-cel-animation' },
             ]
           },
           {
@@ -90,7 +90,7 @@ const navData = [
             heading: 'Game Development & Animation',
             headingPath: '/game-development',
             items: [
-              // { name: 'Game Animation', path: '#' },
+              { name: 'Game Animation', path: '/game-animation' },
               { name: 'Titles & Trailer Animation', path: '/titles-and-trailer-animation' },
               { name: 'Game Trailer', path: '/game-trailer' },
               // { name: '3D Game Models', path: '#' },
