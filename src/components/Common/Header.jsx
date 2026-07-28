@@ -29,7 +29,7 @@ const navData = [
               { name: 'Whiteboard Animation', path: '/whiteboard-animation' },
               { name: 'Social Media Animation', path: '/social-media-animation' },
               { name: 'Educational Video Production', path: '/educational-video-production' },
-              // { name: 'Animated Commercials', path: '#' },
+              { name: 'Animated Commercials', path: '/animated-commercials-services' },
               // { name: 'Cartoon Animation', path: '#' },
               { name: 'Logo Animation', path: '/logo-animation' },
               // { name: 'Cel Animation', path: '#' },
@@ -92,7 +92,7 @@ const navData = [
             items: [
               // { name: 'Game Animation', path: '#' },
               { name: 'Titles & Trailer Animation', path: '/titles-and-trailer-animation' },
-              // { name: 'Game Trailer Production', path: '#' },
+              { name: 'Game Trailer', path: '/game-trailer' },
               // { name: '3D Game Models', path: '#' },
               // { name: 'Character Design', path: '#' },
               // { name: 'Environment Design', path: '#' },
