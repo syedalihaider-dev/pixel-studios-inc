@@ -136,7 +136,7 @@ const navData = [
       // { name: 'Medical', path: '#' },
       // { name: 'Non-Profits', path: '#' },
       // { name: 'Real Estate', path: '#' },
-      // { name: 'Technology', path: '#' },
+      { name: 'Technology Animation', path: '/technology-animation' },
     ]
   },
   {
