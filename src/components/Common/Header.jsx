@@ -35,12 +35,12 @@ const navData = [
               { name: 'Hybrid & Cel Animation', path: '/hybrid-and-cel-animation' },
             ]
           },
-          {
-            heading: 'Product Visualization Services',
-            items: [
-              // { name: 'CGI Product Visualization', path: '#' }
-            ]
-          }
+          // {
+          //   heading: 'Product Visualization Services',
+          //   items: [
+          //     // { name: 'CGI Product Visualization', path: '#' }
+          //   ]
+          // }
         ]
       },
       {
@@ -110,11 +110,11 @@ const navData = [
   },
   {
     name: 'INDUSTRIES',
-    path: '/industries',
+    path: '#',
     isMegaMenu: true,
     megaMenuLayout: 'grid',
     items: [
-      // { name: 'BioTech Animation', path: '#' },
+      { name: 'BioTech Animation', path: '/biotech-animation' },
       // { name: 'Video Production', path: '#' },
       // { name: 'Game Design', path: '#' },
       // { name: 'Logistics Animation', path: '#' },
