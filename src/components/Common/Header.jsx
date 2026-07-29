@@ -131,7 +131,7 @@ const navData = [
       { name: 'Finance Animation', path: '/finance-animation' },
       { name: 'Gaming Animation', path: '/gaming-animation' },
       { name: 'Government Animation', path: '/government-animation' },
-      // { name: 'Healthcare', path: '#' },
+      { name: 'Healthcare Animation', path: '/healthcare-animation' },
       // { name: 'Manufacturing', path: '#' },
       // { name: 'Medical', path: '#' },
       // { name: 'Non-Profits', path: '#' },
