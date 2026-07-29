@@ -115,7 +115,7 @@ const navData = [
     megaMenuLayout: 'grid',
     items: [
       { name: 'BioTech Animation', path: '/biotech-animation' },
-      // { name: 'Video Production', path: '#' },
+      { name: 'Ecommerce Video Production', path: '/ecommerce-video-production' },
       // { name: 'Game Design', path: '#' },
       // { name: 'Logistics Animation', path: '#' },
       // { name: 'Real Estate Animation', path: '#' },
