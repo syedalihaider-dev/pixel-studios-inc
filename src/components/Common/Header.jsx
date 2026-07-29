@@ -117,7 +117,7 @@ const navData = [
       { name: 'BioTech Animation', path: '/biotech-animation' },
       { name: 'Ecommerce Video Production', path: '/ecommerce-video-production' },
       // { name: 'Game Design', path: '#' },
-      // { name: 'Logistics Animation', path: '#' },
+      { name: 'Logistics Animation', path: '/logistics-animation' },
       { name: 'Real Estate Animation', path: '/real-estate-animation' },
       { name: 'Saas Explainer Videos', path: '/saas-explainer-videos' },
       // { name: 'Insurance Animation', path: '#' },
