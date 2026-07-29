@@ -120,7 +120,7 @@ const navData = [
       { name: 'Logistics Animation', path: '/logistics-animation' },
       { name: 'Real Estate Animation', path: '/real-estate-animation' },
       { name: 'Saas Explainer Videos', path: '/saas-explainer-videos' },
-      // { name: 'Insurance Animation', path: '#' },
+      { name: 'Insurance Animation', path: '/insurance-animation' },
       // { name: 'Automotive', path: '#' },
       // { name: 'Advertising', path: '#' },
       // { name: 'Architecture', path: '#' },
