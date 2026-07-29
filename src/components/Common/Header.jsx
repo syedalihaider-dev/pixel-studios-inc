@@ -126,7 +126,7 @@ const navData = [
       { name: 'Architecture Animation', path: '/architecture-animation' },
       { name: 'Education Animation', path: '/education-animation' },
       { name: 'Enterprise Animation', path: '/enterprise-animation' },
-      // { name: 'Entertainment', path: '#' },
+      { name: 'Entertainment Animation', path: '/entertainment-animation' },
       { name: 'Fintech Animation', path: '/fintech-animation' },
       // { name: 'Finance Animation', path: '/finance-animation' },
       // { name: 'Gaming', path: '#' },
