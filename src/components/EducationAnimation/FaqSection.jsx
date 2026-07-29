@@ -4,104 +4,94 @@ import GlobalFaqSection from "../Common/FaqSection";
 
 const faqs = [
   {
-    question: "How Much Does an Educational Animation Service Cost?",
+    question: "How Does the Production Process Work When Multiple Stakeholders Need to Review and Approve?",
     answer:
-      "Educational animation cost depends on style, length, and complexity, particularly whether the project needs custom characters or data visualization. Most projects are scoped after an initial discovery call.",
+      "We build a review structure into the project plan from the start, with defined checkpoints at script, storyboard, and final animation stages, so every stakeholder group reviews at the right time rather than all at once.",
   },
   {
-    question: "What's the Ideal Length for an Educational Animation Video?",
+    question: "Can an Enterprise Animation Studio Work Within Our Existing Brand Guidelines?",
     answer:
-      "Most educational content performs best between two and five minutes, long enough to cover a concept fully but short enough to hold attention, especially for younger audiences.",
+      "Yes. We work directly from your brand guidelines and style guide, and can also help formalize a motion design system if one does not already exist for video content.",
   },
   {
-    question: "What's the Difference Between 2D, 3D, and Whiteboard Animation for Educational Content?",
+    question: "Do Animation Studios Sign NDAs and Handle Project Data Securely?",
     answer:
-      "2D animation suits most concept explanations and is cost-effective, 3D adds depth for spatial or scientific topics, and whiteboard animation works well for sequential, step-by-step processes.",
+      "Yes. NDAs are standard on enterprise projects, and we follow secure file handling practices for any confidential product, financial, or organizational information shared during production.",
   },
   {
-    question: "How Long Does Animation Production Take?",
+    question: "What Pricing Models Are Available for Enterprise Clients Needing Multiple Videos?",
     answer:
-      "Most educational animation projects take three to six weeks from discovery to delivery, depending on length and complexity.",
+      "Retainer and volume-based pricing are both available for enterprise clients with ongoing or recurring animation needs, typically offering better per-video value than one-off projects.",
   },
   {
-    question: "What Is the Meaning of Animator in Education?",
+    question: "Can You Produce Animated Content in Multiple Languages for Global Teams?",
     answer:
-      "In an educational context, an animator is the artist who builds the visual and motion elements that bring a lesson or concept to life on screen, working alongside instructional designers and subject matter experts.",
+      "Yes. Multilingual animated video production is common for enterprise clients, with voiceover, subtitles, and on-screen text localized for each target market.",
   },
   {
-    question: "What Does an Animator Do for Kids' Content Specifically?",
+    question: "Should an Enterprise Team Hire an Outside Studio or Build In-House Capability?",
     answer:
-      "For children's educational content, animators focus on character appeal, simplified visual language, and pacing suited to shorter attention spans, while still keeping the underlying concept accurate.",
+      "It depends on volume and cadence. Teams with occasional or highly variable needs typically get more value from an outside partner, while teams producing very high volumes of similar content may benefit from a hybrid model.",
   },
   {
-    question: "How Do You Optimize an Educational Animation Video for YouTube Specifically?",
+    question: "What Does the RFP or Vendor Selection Process Typically Look Like?",
     answer:
-      "We consider thumbnail-friendly framing, a strong hook in the first few seconds, and pacing that supports watch time, all while keeping the educational content clear and accurate.",
+      "Most enterprise clients request a portfolio review, a scoped proposal against specific project requirements, and a reference check before moving forward, and we are glad to support each of those steps directly.",
   },
   {
-    question: "Do You Provide Captions, Subtitles, or Multilingual Voiceovers for Accessibility?",
+    question: "Who Owns the Animation Assets After a Campaign Runs Across Multiple Channels?",
     answer:
-      "Yes. Captions, subtitles, and multilingual voiceover options are available to support accessibility and reach broader audiences.",
+      "You own your final deliverables and can reuse them across internal and external channels for as long as they remain relevant to your organization.",
   },
   {
-    question: "Can Educational Animations Be Integrated Into an LMS or Made SCORM-Compliant?",
+    question: "Can You Build a Reusable Brand Motion System for Our Organization?",
     answer:
-      "Yes. We can package deliverables to be SCORM-compliant and compatible with most common learning management systems.",
+      "Yes. For clients producing recurring content, we can develop a broader brand motion system covering colors, typography, and animation style, so future videos stay consistent even across different project teams.",
   },
   {
-    question: "How Many Revisions Are Included, and Who Owns the Final Video?",
+    question: "How Do You Handle Projects That Span Multiple Business Units With Different Sub-Brands?",
     answer:
-      "Most projects include two to three revision rounds, and you own the final deliverables once the project is complete.",
+      "We build a shared visual framework that flexes for each sub-brand's specific identity while staying recognizably part of the parent organization, which keeps everything coherent without forcing every unit into an identical look.",
   },
   {
-    question: "Can Educational Animation Include Assessment or Quiz Elements?",
+    question: "Can Enterprise Animation Support Both Internal Training and External Marketing From One Engagement?",
     answer:
-      "Yes. For interactive eLearning projects we can build embedded questions or checkpoints, depending on your LMS capabilities and instructional design requirements.",
+      "Yes. Many enterprise clients use the same production partnership for both internal and external content, since the underlying process for stakeholder review and brand governance applies equally to each.",
   },
   {
-    question: "Do You Work With Instructional Designers or Subject Matter Experts on Our Team?",
+    question: "Do You Provide a Dedicated Account Manager for Ongoing Enterprise Relationships?",
     answer:
-      "Yes. Most projects involve close collaboration with your instructional designers or subject matter experts throughout script and storyboard development to keep content accurate and pedagogically sound.",
+      "Yes. Ongoing enterprise engagements are supported by a dedicated account manager who understands your organization's structure, brand guidelines, and review process, rather than starting fresh with every new request.",
   },
   {
-    question: "Can the Same Educational Animation Be Reused Across Multiple Courses or Cohorts?",
+    question: "Can You Support a Global Rollout Across Multiple Regional Offices Simultaneously?",
     answer:
-      "Yes. Once produced, an educational animation can be reused across multiple course sections, semesters, or training cohorts without additional production cost.",
+      "Yes. We regularly coordinate multilingual, multi-region rollouts, delivering localized versions of the same core content to different offices on a synchronized timeline.",
   },
   {
-    question: "Can You Produce a Series of Related Educational Animations for a Full Curriculum?",
+    question: "What Happens if Our Organization Restructures Mid-Project?",
     answer:
-      "Yes. Many schools and training teams commission a series covering multiple related topics under one consistent visual style, which is often more cost-effective than producing each video separately.",
+      "We stay flexible around organizational change, adjusting the review structure and stakeholder list as needed without restarting the entire project from scratch.",
   },
   {
-    question: "What Age Groups Can Educational Animation Be Designed For?",
+    question: "Can You Support Recurring Quarterly or Annual Content Needs on a Retainer?",
     answer:
-      "We create educational animation for every age group, from early childhood through adult professional training, adjusting the visual style, pacing, and language to match the intended audience.",
+      "Yes. A retainer arrangement works well for organizations with predictable, recurring content needs, giving you priority scheduling and typically better per-project pricing than one-off engagements.",
   },
   {
-    question: "Can You Adapt an Existing Curriculum Into Animated Content, or Do We Need a New Script?",
+    question: "Do You Provide Templates or Motion Graphics Kits Our Internal Team Can Reuse?",
     answer:
-      "We can adapt your existing curriculum into an animation script, saving time while keeping the content aligned with what your learners already study.",
+      "Yes. For clients with internal editing capability, we can provide motion graphics templates and brand kits that your team can adapt for smaller, lower-stakes internal updates between full productions.",
   },
   {
-    question: "Do You Offer Different Visual Styles for Different Subjects, Like Science Versus History?",
+    question: "How Do You Handle Confidential Financial or Strategic Information During a Project?",
     answer:
-      "Yes. We tailor the visual style to each subject, from technical diagram-driven science animations to character-led storytelling for history and social studies.",
+      "We work under an NDA whenever confidential financial, strategic, or organizational information is shared, with secure file handling practices in place throughout production.",
   },
   {
-    question: "Can Educational Animation Be Updated if Curriculum Standards Change?",
+    question: "Can You Support a Rebrand That Requires Updating Existing Video Assets?",
     answer:
-      "Yes. Where possible, we update only the affected scenes rather than rebuilding the entire animation, making curriculum revisions faster and more cost-effective.",
-  },
-  {
-    question: "Do You Offer Package Pricing for Schools or Districts Producing Multiple Videos?",
-    answer:
-      "Yes. Schools and districts producing multiple videos typically receive better per-video pricing, and we can provide a custom package during the discovery stage.",
-  },
-  {
-    question: "Can Educational Animation Be Produced in a Series With a Consistent Host Character?",
-    answer:
-      "Yes. A recurring host or guide character is a popular approach for course series, creating familiarity and continuity across multiple lessons or training modules.",
+      "Yes. Where existing animation assets can be updated to reflect a new brand identity rather than rebuilt from scratch, we assess that option first to save time and budget.",
   },
 ];
 

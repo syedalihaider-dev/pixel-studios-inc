@@ -15,26 +15,30 @@ const CostSection = () => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6 }}
             >
-              <p className="subtitle">Education Animation</p>
+              <p className="subtitle">Enterprise Animation</p>
 
               <h2 className={styles.title}>
-                Why Animation Matters in the Education Industry?
+                Why Animation Matters in the Enterprise Industry?
               </h2>
 
               <h3 className={styles.innerTitle}>
-                The Challenge: Attention and Retention Are Both Working Against You
+                The Challenge: Consistency at Scale Is Hard to Maintain
               </h3>
 
               <p className={styles.description}>
-                What makes educational content so hard to deliver effectively?
-                Attention spans are short, and abstract or highly technical
-                concepts are difficult to explain through text or static slides
-                alone. Educators and training teams need content that supports
-                different learning styles, while LMS platforms and YouTube demand
-                more engaging formats than written material can provide. Content
-                also needs to remain accessible across languages and abilities,
-                yet many organizations continue relying on outdated resources
-                because producing new material takes too much time and budget.
+                Large organizations run video projects across multiple
+                departments, regions, and brand sub-lines at once, and keeping
+                all of that visually consistent is a real operational challenge.
+                Stakeholder approval chains are longer, legal and compliance
+                review adds time to every project, and content often needs to be
+                localized for multiple markets and languages. Internal teams
+                frequently lack the production bandwidth to keep up with demand
+                from HR, marketing, product, and leadership simultaneously, and
+                a patchwork of vendors used across departments tends to produce
+                inconsistent quality and messaging that undercuts a unified
+                brand. Over time, that inconsistency becomes visible to
+                employees and customers alike, making the organization feel less
+                coordinated than it actually is.
               </p>
             </motion.div>
           </div>
@@ -68,19 +72,23 @@ const CostSection = () => {
           <div className={styles.divider}></div>
 
           <h3 className={styles.innerTitle}>
-            The Benefit: Concepts That Stick Because They Were Seen, Not Just Read
+            The Benefit: One Consistent System Across Every Team
           </h3>
 
           <p className={styles.bottomText}>
-            What changes when a lesson becomes something learners watch rather
-            than read? Animation improves comprehension and retention,
-            particularly for spatial, sequential, and process-based concepts
-            that are difficult to explain with text alone. Whiteboard animation
-            for schools and educational animation videos consistently improve
-            engagement, completion, and knowledge recall. Schools, universities,
-            and training teams gain content that performs equally well in the
-            classroom, inside an LMS, or on YouTube, extending the value of a
-            single production across multiple courses and audiences.
+            Enterprise animation services solve that by giving large
+            organizations a single, reliable production partner who understands
+            how to work within complex approval structures. A corporate
+            animation studio that has built processes for multi-stakeholder
+            review, brand governance, and multilingual delivery can produce
+            content faster and more consistently than juggling multiple smaller
+            vendors. Companies using enterprise animation studio partnerships
+            report stronger brand consistency across departments, faster
+            turnaround on recurring content needs, and a single point of
+            accountability instead of managing several disconnected production
+            relationships. That consolidation also tends to reduce total
+            production cost once every department's spend is considered
+            together.
           </p>
 
           <div className={styles.divider}></div>

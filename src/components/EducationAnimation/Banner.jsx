@@ -4,8 +4,8 @@ import GlobalBanner from '../Common/Banner';
 
 const slides = [
   {
-    title: "Education Animation That Actually Gets Retained",
-    description: "Why do so many students forget a lesson within a week of learning it? Because reading and lecture alone are not how most people retain complex information. Our education animation service turns lessons, training modules, and difficult concepts into video that learners actually remember, built for schools, edtech platforms, and training teams alike. Every project is built around your actual curriculum and learning objectives, not a generic template, so the finished video supports the specific outcome your course or program is measuring."
+    title: "Enterprise Animation Built for Scale",
+    description: "Large organizations do not need one video. They need a system that produces consistent, on-brand video across dozens of teams, markets, and stakeholders without losing quality along the way. Our enterprise animation services are built for exactly that kind of scale, from internal communications to global training rollouts. Every engagement is built around your actual approval structure and brand governance, not a one-off creative project, so the same standard holds whether a video comes from HR, marketing, or the executive team."
   }
 ];
 

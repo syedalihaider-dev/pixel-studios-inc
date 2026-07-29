@@ -12,42 +12,42 @@ const accordionData = [
     icon: "/discovery.png",
     title: "Discovery",
     content:
-      "We review your organizational structure, stakeholders, and goals to scope a process that fits how your teams actually approve work.",
+      "We review your product, compliance requirements, and audience to scope the right animation approach.",
   },
   {
     id: 2,
     icon: "/storyboarding.png",
     title: "Script & Concept",
     content:
-      "A script and visual concept are developed and routed through your review structure before design begins, so approvals happen at the right stage.",
+      "A script and visual concept are developed around your core mechanism and reviewed for accuracy before design begins.",
   },
   {
     id: 3,
     icon: "/animation.png",
     title: "Storyboard",
     content:
-      "Every scene is planned and approved before animation begins, with sign-off built in at the right stakeholder level for each department involved.",
+      "Every scene is planned and approved before animation starts, so pacing and messaging are locked in early.",
   },
   {
     id: 4,
     icon: "/animation.png",
     title: "Design",
     content:
-      "Visual assets are built to match your brand guidelines precisely, with governance in mind for reuse across departments and future projects.",
+      "UI, data visuals, and brand elements are built to match your actual product and design system.",
   },
   {
     id: 5,
     icon: "/animation.png",
     title: "Animation",
     content:
-      "Full production, refined through your feedback rounds and coordinated across every reviewing stakeholder without slowing the schedule.",
+      "Full production, refined through your feedback rounds until every scene communicates clearly.",
   },
   {
     id: 6,
     icon: "/animation.png",
     title: "Review & Delivery",
     content:
-      "Final review and delivery in every format and language your organization requires, ready for immediate deployment.",
+      "Final review and delivery in every format your website, app stores, and investor materials require.",
   },
 ];
 
@@ -69,13 +69,11 @@ const WhyInvestSection = () => {
               <p className="subtitle">HOW WE WORK</p>
 
               <h2 className={styles.mainTitle}>
-                Our Enterprise <br />Animation Process
+                Our Fintech <br />Animation Process
               </h2>
 
               <p className={styles.subText}>
-                Enterprise work moves through more approval layers than a typical
-                project, so our process is built to keep that structure
-                predictable rather than a source of delay.
+                Financial products carry real compliance weight, so our process builds accuracy checks into every stage rather than treating them as a final review. Here is how a typical project runs.
               </p>
             </motion.div>
           </div>

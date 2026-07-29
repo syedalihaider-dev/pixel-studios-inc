@@ -7,14 +7,19 @@ import styles from './WhyChooseSection.module.css';
 
 const features = [
   {
-    title: "Internal Comms",
-    text: "Leadership updates, organizational change announcements, and internal campaigns built to reach large, distributed workforces consistently, regardless of location or department.",
+    title: "Payments",
+    text: "Payment flow animations that show how transactions move securely from initiation to settlement.",
     icon: "/industry/services-icon-01.png",
   },
   {
-    title: "Onboarding",
-    text: "Scalable onboarding video content that gives every new hire the same clear introduction, regardless of location or department, reducing the burden on individual managers and HR teams.",
+    title: "Security",
+    text: "Security and fraud protection animations that build user confidence in how their data and funds are protected.",
     icon: "/industry/services-icon-02.png",
+  },
+  {
+    title: "Investor Pitches",
+    text: "Fundraising-focused animation that explains the business model and technical edge to potential investors.",
+    icon: "/industry/services-icon-03.png",
   },
 ];
 
@@ -49,11 +54,11 @@ export default function WhyChooseSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className={styles.title}>
-            Common Enterprise Animation Projects
+            Common Fintech Animation Projects
           </h2>
 
           <p className={styles.subtitle}>
-            Across large organizations, two recurring project types account for most enterprise animation work, each reaching a different internal audience with a different production cadence.
+            Across payments platforms, lenders, and crypto products, three project types come up most often, each tied to a specific point of friction in the user or investor journey.
           </p>
         </motion.div>
 

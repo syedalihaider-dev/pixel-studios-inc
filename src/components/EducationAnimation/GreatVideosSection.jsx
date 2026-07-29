@@ -5,12 +5,12 @@ import GlobalGreatVideosSection from '../Common/GreatVideosSection';
 const GreatVideosSection = () => {
   const title = (
     <>
-      Let's Discuss Your <span>Education Animation</span> Project
+      Let's Discuss Your <span>Enterprise Animation</span> Project
     </>
   );
 
   const text =
-    "If your lesson or training content deserves better retention than a slide deck delivers, talk to our team. We will scope the education animation your course, training program, or awareness campaign needs, built around how your audience actually learns and remembers. Whether you need a single lesson, a complete course series, or ongoing educational content, we create animation that improves understanding, supports long-term retention, and fits the platforms your learners already use. The first conversation is free, and it helps identify the best approach for your learning objectives, audience, and delivery format.";
+    "Talk to our team about your organization, your stakeholders, and your production needs, and we will build the enterprise animation partnership that keeps every department consistent, on brand, and moving at the pace your business actually requires, from the first internal update to your next global campaign.";
 
   return <GlobalGreatVideosSection title={title} text={text} />;
 };

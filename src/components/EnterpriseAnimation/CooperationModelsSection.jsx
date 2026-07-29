@@ -18,25 +18,25 @@ const CooperationModelsSection = () => {
       id: 1,
       icon: "/game-development/outstaffing.png",
       title: "Industry Experience",
-      text: "An enterprise animation company experienced with large organizations, multi-stakeholder approval chains, and multilingual production requirements across industries."
+      text: "A fintech animation company with experience across payments, lending, crypto, and RegTech, fluent in both the technology and the compliance environment around it."
     },
     {
       id: 2,
       icon: "/game-development/dedicated-team.png",
       title: "Custom Solutions",
-      text: "Every project starts from your actual brand and organizational structure, never a generic template applied regardless of client."
+      text: "Every video starts from your actual product and brand, never a generic template."
     },
     {
       id: 3,
       icon: "/game-development/managed-outsourcing.png",
       title: "Fast Turnaround",
-      text: "Timelines built to match enterprise deadlines, even with multiple review cycles and departments involved."
+      text: "Timelines built around your launch dates and fundraising deadlines."
     },
     {
       id: 4,
       icon: "/game-development/managed-outsourcing.png",
       title: "Dedicated Team",
-      text: "One point of contact manages the relationship, coordinating across your departments and stakeholders so nothing falls through the cracks."
+      text: "One point of contact manages the project from concept through delivery."
     }
   ];
 
@@ -51,14 +51,12 @@ const CooperationModelsSection = () => {
       >
         <div className="row justify-content-center text-center mb-4">
           <div className="col-12 col-lg-12">
-            <p className="subtitle">WHY PIXEL STUDIOS</p>
-
             <h2 className={styles.mainHeading}>
-              Why Choose Pixel Studios
+              Why Choose Pixel Studios?
             </h2>
 
             <p className={styles.topParagraph}>
-              Plenty of studios can make one good video. Fewer can do it consistently across dozens of stakeholders and departments. Here is how we handle that difference.
+              Explaining fintech well means understanding both the technology and the regulation around it. Here is what our fintech animation company brings to that balance.
             </p>
           </div>
         </div>
