@@ -132,7 +132,7 @@ const navData = [
       { name: 'Gaming Animation', path: '/gaming-animation' },
       { name: 'Government Animation', path: '/government-animation' },
       { name: 'Healthcare Animation', path: '/healthcare-animation' },
-      // { name: 'Manufacturing', path: '#' },
+      { name: 'Manufacturing Animation', path: '/manufacturing-animation' },
       // { name: 'Medical', path: '#' },
       { name: 'Non-Profit Animation', path: '/nonprofit-animation' },
       // { name: 'Real Estate', path: '#' },
