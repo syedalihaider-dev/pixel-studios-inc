@@ -5,7 +5,7 @@
   z-index: 1;
 }
 
-.missionSection::before{
+.missionSection::before {
   content: "";
   width: 838px;
   height: 838px;
@@ -49,21 +49,19 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .heading {
-  font-size: 45px;
   color: var(--light-color);
-  font-weight: 400;
-  margin-bottom: 30px;
+  font-weight: var(--font-400);
+  margin: 0;
 }
 
 .description {
-  font-size: 25px;
   color: var(--light-color);
-  margin-bottom: 40px;
-  font-weight: 400;
+  margin: 25px 0 30px;
+  font-weight: var(--font-400);
 }
 
 .buttonsWrapper {
@@ -72,17 +70,14 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 1199px) {
+  .missionSection {
+    padding: 40px 0;
+  }
+}
+
 @media (max-width: 991px) {
-  .contentWrapper {
-    padding-left: 0;
-    margin-top: 40px;
-  }
-  
-  .heading {
-    font-size: 36px;
-  }
-  
   .description {
-    font-size: 20px;
+    margin: 10px 0 20px;
   }
 }

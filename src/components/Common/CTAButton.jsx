@@ -8,9 +8,25 @@ import Link from 'next/link';
 const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClick, className = '' }) => {
   const handleClick = (e) => {
     const isPopupTrigger = text && (
-      text.toLowerCase().includes('get started') || 
+      text.toLowerCase().includes('get started') ||
       text.toLowerCase().includes('learn more')
     );
+
+    const isChatTrigger = text && (
+      text.toLowerCase().includes('live chat') ||
+      text.toLowerCase().includes("let's talk") ||
+      text.toLowerCase().includes("let’s talk") ||
+      text.toLowerCase().includes("chat")
+    );
+
+    if (isChatTrigger || type === 'chat') {
+      e.preventDefault();
+      if (typeof window !== 'undefined' && typeof window.toggleChat === 'function') {
+        window.toggleChat();
+      }
+      if (onClick) onClick(e);
+      return;
+    }
 
     if (isPopupTrigger || type === 'popup') {
       e.preventDefault();
@@ -22,10 +38,6 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
     }
 
     if (onClick) onClick(e);
-    if (type === 'chat') {
-      e.preventDefault();
-      console.log('Open Chat Popup');
-    }
     if (type === 'phone') {
       e.preventDefault();
       window.location.href = 'tel:+1234567890'; // Placeholder

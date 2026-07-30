@@ -8,25 +8,25 @@ const features = [
   {
     id: 1,
     title: 'Result-Oriented',
-    description: "For our company, the only indicator of the project's success is achieving the goals and objectives set by the client. Thanks to high-quality project management and a team of IT talent, we deliver our work as quickly and efficiently as possible.",
+    description: "We focus on outcomes, not just output. Every animation is built to drive engagement, leads, and conversions.",
     icon: '/icons/result-oriented.png'
   },
   {
     id: 2,
     title: 'Flexible',
-    description: "Our team already numbers 3,500+ highly qualified IT professionals. It allows us to quickly adapt to our clients' needs. We provide rapid team ramp-up and can easily scale up or down depending on the project's changing conditions.",
+    description: "We adapt to your needs, timelines, and goals. Quick iterations and smooth collaboration keep projects moving forward.",
     icon: '/icons/flexible.png'
   },
   {
     id: 3,
     title: 'Transparent',
-    description: "Our cooperation with clients is always open and honest. We ensure regular communication, an established daily reporting system, and tracking tools according to the client's preferences. Thus, our clients can control all possible aspects of projects.",
+    description: "Clear communication at every stage of the process. No hidden steps, just honest updates and aligned expectations.",
     icon: '/icons/transparent.png'
   },
   {
     id: 4,
     title: 'Experienced',
-    description: "Innowise has established well-managed processes to deliver software development services. They are based on the best examples of IT outsourcing and can be easily aligned to the specifics of customers and their projects.",
+    description: "A team with proven expertise across multiple industries. We know what works and how to make your content stand out.",
     icon: '/icons/experienced.png'
   }
 ];
@@ -51,10 +51,10 @@ const TeamStandoutSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <h5 className={styles.subHeading}>WHAT MAKES</h5>
-          <h2 className={styles.mainHeading}>OUR TEAM <span>STAND OUT</span></h2>
+          <p className="subtitle">What Makes</p>
+          <h2 className={styles.mainHeading}>Pixel Studio Different?</h2>
           <p className={styles.headerDesc}>
-            Full-cycle game development means we own the entire pipeline, from the first concept sketch to the day the build goes live on the platform.
+            Every project is tailored to your brand and your goals, with a sharp focus on results. If it doesn’t engage, convert, or make an impact, it doesn’t leave our studio.
           </p>
         </motion.div>
 

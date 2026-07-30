@@ -7,38 +7,37 @@ import styles from './HowWeWorkSection.module.css';
 const accordionData = [
   {
     id: 1,
-    title: '1 Team Structure',
-    content: 'Implementing a predictable operational cadence offers clear benefits to your business. It enforces decision-making stability (removing reliance on emotional crisis management) and establishes a clear system of accountability. It also creates transparent information flows so teams are empowered to act without waiting for leadership direction.'
+    title: '1 Discovery',
+    content: 'We understand your goals, audience, and message.'
   },
   {
     id: 2,
-    title: '2 Operating Rhythm',
-    content: 'Implementing a predictable operational cadence offers clear benefits to your business. It enforces decision-making stability (removing reliance on emotional crisis management) and establishes a clear system of accountability. It also creates transparent information flows so teams are empowered to act without waiting for leadership direction.'
+    title: '2 Strategy',
+    content: 'We map out the concept and direction that will perform.'
   },
   {
     id: 3,
-    title: '3 Standards',
-    content: 'We adhere to the highest industry standards for code quality, design fidelity, and operational security to ensure your product is robust and reliable.'
+    title: '3 Script & Storyboard',
+    content: 'We turn ideas into a clear narrative and visual flow.'
   },
   {
     id: 4,
-    title: '4 Modes Of Engagement',
-    content: 'Whether you need a dedicated team, team extension, or project-based delivery, we offer flexible engagement models tailored to your specific needs and constraints.'
+    title: '4 Design',
+    content: 'We create the visual style aligned with your brand.'
   },
   {
     id: 5,
-    title: '5 Proof',
-    content: 'Our portfolio of successful projects and long-term client relationships serves as the best proof of our capability to deliver exceptional results.'
+    title: '5 Animation',
+    content: 'We bring everything to life with smooth, engaging motion.'
   },
   {
     id: 6,
-    title: '6 Fit',
-    content: 'We ensure a strong cultural and technical fit before starting any project, ensuring smooth communication and aligned goals throughout the development lifecycle.'
+    title: '6 Delivery & Revisions',
+    content: 'We refine, finalize, and deliver a polished end product.'
   }
 ];
 
 const HowWeWorkSection = () => {
-  // Start with the second item open to match the design provided
   const [openIndex, setOpenIndex] = useState(1);
 
   const toggleAccordion = (index) => {
@@ -59,7 +58,7 @@ const HowWeWorkSection = () => {
             >
               <h2 className={styles.heading}>How We Work</h2>
               <p className={styles.description}>
-                We will always search for the best way to give our clients a great experience. We will continue to learn about every industry, in order to offer innovative, high quality products with premium value.
+                We keep the process simple, fast, and focused on results. From the first conversation to final delivery, every step is designed to ensure clarity, speed, and high-quality output without unnecessary delays or confusion.
               </p>
               <div className={styles.buttonsWrapper}>
                 <CTAButton type="button" text="Let's Talk" />

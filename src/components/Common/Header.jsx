@@ -144,7 +144,7 @@ const navData = [
     path: '#',
     isDropdown: true,
     items: [
-      { name: 'BLOG', path: '#' },
+      // { name: 'BLOG', path: '#' },
       { name: 'PRESS RELEASE', path: '/press-release' },
     ]
   },
@@ -154,7 +154,7 @@ const navData = [
     isDropdown: true,
     items: [
       { name: 'PORTFOLIO', path: '/our-work' },
-      { name: 'CASE STUDIES', path: '/case-study' },
+      // { name: 'CASE STUDIES', path: '/case-study' },
     ]
   }
 ];

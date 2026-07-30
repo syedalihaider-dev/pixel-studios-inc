@@ -47,23 +47,39 @@ const ContactFormSection = () => {
               Interested in making a video with us?
             </motion.h2>
 
-            <motion.form variants={fadeInUp} onSubmit={handleSubmit} className={styles.formWrapper}>
+            <motion.form 
+              variants={fadeInUp} 
+              onSubmit={(e) => {
+                e.preventDefault();
+                const data = new FormData(e.currentTarget);
+                import('../../utils/formSubmit').then(({ submitLead }) => {
+                  submitLead({
+                    name: data.get('name'),
+                    phone: data.get('phone'),
+                    email: data.get('email'),
+                    msg: `Ref URL: ${data.get('video_ref') || ''}. Industry: ${data.get('industry') || ''}. Quantity: ${data.get('quantity') || ''}. Budget: ${data.get('budget') || ''}. Video Type: ${data.get('video_type') || ''}. Hear About: ${data.get('hear_about') || ''}. Message: ${data.get('message') || ''}`,
+                    Form_name: 'Contact Page Form'
+                  });
+                });
+              }} 
+              className={styles.formWrapper}
+            >
               <div className="row g-4">
                 <div className="col-md-6">
-                  <input type="text" className={styles.formInput} placeholder="Enter Your Full Name *" required />
+                  <input type="text" name="name" className={styles.formInput} placeholder="Enter Your Full Name *" required />
                 </div>
                 <div className="col-md-6">
-                  <input type="tel" className={styles.formInput} placeholder="Mobile Number *" required />
+                  <input type="tel" name="phone" className={styles.formInput} placeholder="Mobile Number *" required />
                 </div>
                 <div className="col-md-6">
-                  <input type="email" className={styles.formInput} placeholder="Email *" required />
+                  <input type="email" name="email" className={styles.formInput} placeholder="Email *" required />
                 </div>
                 <div className="col-md-6">
-                  <input type="url" className={styles.formInput} placeholder="Enter Video Refrence URL Here" />
+                  <input type="url" name="video_ref" className={styles.formInput} placeholder="Enter Video Refrence URL Here" />
                 </div>
 
                 <div className="col-md-6">
-                  <select className={styles.formSelect}>
+                  <select name="industry" className={styles.formSelect}>
                     <option value="">Industry</option>
                     <option value="tech">Technology</option>
                     <option value="health">Healthcare</option>
@@ -73,7 +89,7 @@ const ContactFormSection = () => {
                   </select>
                 </div>
                 <div className="col-md-6">
-                  <select className={styles.formSelect}>
+                  <select name="quantity" className={styles.formSelect}>
                     <option value="">Quantity of Videos</option>
                     <option value="1">1</option>
                     <option value="2-3">2-3</option>
@@ -81,7 +97,7 @@ const ContactFormSection = () => {
                   </select>
                 </div>
                 <div className="col-md-6">
-                  <select className={styles.formSelect}>
+                  <select name="budget" className={styles.formSelect}>
                     <option value="">Budget</option>
                     <option value="<5k">&lt; $5,000</option>
                     <option value="5k-10k">$5,000 - $10,000</option>
@@ -89,7 +105,7 @@ const ContactFormSection = () => {
                   </select>
                 </div>
                 <div className="col-md-6">
-                  <select className={styles.formSelect}>
+                  <select name="video_type" className={styles.formSelect}>
                     <option value="">Video Type</option>
                     <option value="2d">2D Animation</option>
                     <option value="3d">3D Animation</option>
@@ -101,14 +117,15 @@ const ContactFormSection = () => {
 
               <div className="row mt-2">
                 <div className="col-12">
-                  <textarea className={styles.formTextarea} placeholder="Tell us more about your project" />
+                  <textarea name="message" className={styles.formTextarea} placeholder="Tell us more about your project" />
                 </div>
               </div>
 
               <div className="row mt-2">
                 <div className="col-12">
-                  <select className={styles.formSelect} style={{ width: '100%' }}>
-                    <option value="">Google Search</option>
+                  <select name="hear_about" className={styles.formSelect} style={{ width: '100%' }}>
+                    <option value="">How Did You Hear About Us?</option>
+                    <option value="Google Search">Google Search</option>
                     <option value="social">Social Media</option>
                     <option value="friend">Friend / Referral</option>
                     <option value="other">Other</option>
@@ -117,7 +134,7 @@ const ContactFormSection = () => {
               </div>
 
               <div className={styles.fileUploadWrapper}>
-                <span className={styles.fileUploadLabel}>How Did You Hear About Us?</span>
+                <span className={styles.fileUploadLabel}>Upload Reference File</span>
                 <div className={styles.dropZone} onClick={() => document.getElementById('fileUpload').click()}>
                   <span className={styles.dropText}>Drop files here or</span>
                   <button type="button" className={styles.selectFilesBtn}>Select Files ➔</button>
@@ -150,9 +167,9 @@ const ContactFormSection = () => {
             variants={staggerContainer}
           >
             <motion.div variants={fadeInUp} className={styles.topBox}>
-              <h2 className={styles.topBoxHeading}>Explainly works with all types of companies.</h2>
+              <h2 className={styles.topBoxHeading}>They Didn’t Shy Away! So Shouldn’t You!</h2>
               <p className={styles.topBoxPara}>
-                From startups and non-profits to industry leaders like Uber, Amazon, HubSpot, and Google. But no matter the client, we strategically tailor our approach to support your specific needs to produce compelling videos.
+                They didn’t wait, overthink, or hold back. They moved and won. The only difference between them and you is taking that first step.
               </p>
 
               <div className={styles.logosGrid}>

@@ -37,12 +37,10 @@ const MissionSection = () => {
               viewport={{ once: true, margin: "-100px" }}
               className={styles.contentWrapper}
             >
-              <h2 className={styles.heading}>
-                Our mission is to help our clients uncover the essence of their brand story to drive sales, influence decisions, and promote understanding.
-              </h2>
+              <h2 className={styles.heading}>Crafting Stories Through Animation</h2>
 
               <p className={styles.description}>
-                We will always search for the best way to give our clients a great experience. We will continue to learn about every industry, in order to offer innovative, high quality products with premium value.
+                By combining creative storytelling with a results-driven approach, we help brands stand out, communicate clearly, and connect with their audience in a meaningful way.
               </p>
 
               <div className={styles.buttonsWrapper}>

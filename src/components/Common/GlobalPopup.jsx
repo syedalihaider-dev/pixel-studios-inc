@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './GlobalPopup.module.css';
 import { User, Phone, Mail, Send, X, Check } from 'lucide-react';
 import CTAButton from './CTAButton';
+import { submitLead } from '../../utils/formSubmit';
 
 const GlobalPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,23 +50,13 @@ const GlobalPopup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate API call
-    console.log('Form Submitted:', formData);
-    setIsSubmitted(true);
-
-    // Clear form
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      description: ''
+    submitLead({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      msg: formData.description,
+      Form_name: 'Global Popup Form'
     });
-
-    // Close after success view
-    setTimeout(() => {
-      setIsOpen(false);
-      setIsSubmitted(false);
-    }, 2500);
   };
 
   if (!isOpen) return null;

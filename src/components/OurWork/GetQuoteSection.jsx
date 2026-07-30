@@ -107,15 +107,28 @@ export default function GetQuoteSection() {
               <div className={styles.formBox}>
                 <h3 className={styles.formTitle}>GET QUOTE</h3>
 
-                <form onSubmit={(e) => e.preventDefault()}>
+                <form 
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const data = new FormData(e.currentTarget);
+                    import('../../utils/formSubmit').then(({ submitLead }) => {
+                      submitLead({
+                        name: data.get('name'),
+                        email: data.get('email'),
+                        phone: data.get('phone'),
+                        Form_name: 'Get Quote Form (Our Work)'
+                      });
+                    });
+                  }}
+                >
                   <div className={styles.inputGroup}>
-                    <input type="text" placeholder="Full Name" className={styles.input} required />
+                    <input type="text" name="name" placeholder="Full Name" className={styles.input} required />
                   </div>
                   <div className={styles.inputGroup}>
-                    <input type="email" placeholder="Company Email Address" className={styles.input} required />
+                    <input type="email" name="email" placeholder="Company Email Address" className={styles.input} required />
                   </div>
                   <div className={styles.inputGroup}>
-                    <input type="tel" placeholder="Mobile Number" className={styles.input} required />
+                    <input type="tel" name="phone" placeholder="Mobile Number" className={styles.input} required />
                   </div>
 
                   <div className={styles.checkboxGroup}>
