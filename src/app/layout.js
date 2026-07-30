@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "../components/Common/Header";
 import Footer from "../components/Common/Footer";
+import GlobalPopup from "../components/Common/GlobalPopup";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <GlobalPopup />
       </body>
     </html>
   );

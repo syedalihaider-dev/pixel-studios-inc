@@ -7,11 +7,21 @@ import Link from 'next/link';
 
 const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClick, className = '' }) => {
   const handleClick = (e) => {
-    if (onClick) onClick(e);
-    if (type === 'popup') {
+    const isPopupTrigger = text && (
+      text.toLowerCase().includes('get started') || 
+      text.toLowerCase().includes('learn more')
+    );
+
+    if (isPopupTrigger || type === 'popup') {
       e.preventDefault();
-      console.log('Open Popup Modal');
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('open-global-popup'));
+      }
+      if (onClick) onClick(e);
+      return;
     }
+
+    if (onClick) onClick(e);
     if (type === 'chat') {
       e.preventDefault();
       console.log('Open Chat Popup');
