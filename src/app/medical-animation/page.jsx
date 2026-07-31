@@ -4,7 +4,7 @@ import ServicesSection from "@/components/MedicalAnimation/ServicesSection";
 import CostSection from "@/components/MedicalAnimation/CostSection"
 import HowWeWorkSection from "@/components/MedicalAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/MedicalAnimation/WhyInvestSection";
-import AnimationPortfolio from "@/components/MedicalAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/MedicalAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/MedicalAnimation/TeamStandoutSection";
 import CooperationModelsSection from "@/components/MedicalAnimation/CooperationModelsSection";
@@ -26,7 +26,7 @@ export default function MedicalAnimationPage() {
       <StatsSection />
       <CostSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <HowWeWorkSection />
       <CooperationModelsSection />
       <WhyInvestSection />

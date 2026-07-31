@@ -3,7 +3,7 @@ import StatsSection from "@/components/SocialMediaAnimation/StatsSection";
 import ServicesSection from "@/components/SocialMediaAnimation/ServicesSection";
 import HowWeWorkSection from "@/components/SocialMediaAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/SocialMediaAnimation/WhyInvestSection";
-import AnimationPortfolio from "@/components/SocialMediaAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/SocialMediaAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/SocialMediaAnimation/TeamStandoutSection";
 import WonderingSection from "@/components/SocialMediaAnimation/WonderingSection";
@@ -25,7 +25,7 @@ export default function SocialMediaAnimationPage() {
       <StatsSection />
       <ServicesSection />
       <GreatVideosSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <HowWeWorkSection />
       <TeamStandoutSection />
       <WonderingSection />

@@ -2,7 +2,6 @@ import Banner from "@/components/Home/Banner";
 import StatsSection from "@/components/Home/StatsSection";
 import MissionSection from "@/components/Home/MissionSection";
 import ServicesSection from "@/components/Home/ServicesSection";
-// import AnimationPortfolio from "@/components/Home/AnimationPortfolio";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import WhyInvestSection from "@/components/Home/WhyInvestSection";
 import WhyPartnerSection from "@/components/Home/WhyPartnerSection";
@@ -26,7 +25,6 @@ export default function Home() {
       <MissionSection />
       <ServicesSection />
       <WhyInvestSection />
-      {/* <AnimationPortfolio /> */}
       <PortfolioShowcase />
       <WhyPartnerSection />
       <GetQuoteSection />

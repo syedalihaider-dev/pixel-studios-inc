@@ -4,7 +4,7 @@ import ServicesSection from "@/components/ProductAnimation3D/ServicesSection";
 import CostSection from "@/components/ProductAnimation3D/CostSection"
 import HowWeWorkSection from "@/components/ProductAnimation3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/ProductAnimation3D/WhyInvestSection";
-import AnimationPortfolio from "@/components/ProductAnimation3D/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/ProductAnimation3D/GreatVideosSection";
 import TeamStandoutSection from "@/components/ProductAnimation3D/TeamStandoutSection";
 import CooperationModelsSection from "@/components/ProductAnimation3D/CooperationModelsSection";
@@ -27,7 +27,7 @@ export default function TitlesAndProductAnimation3D() {
       <CostSection />
       <ServicesSection />
       <TeamStandoutSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <HowWeWorkSection />
       <GreatVideosSection />
       <CooperationModelsSection />

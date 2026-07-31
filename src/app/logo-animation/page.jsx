@@ -5,7 +5,7 @@ import HowWeWorkSection from "@/components/LogoAnimation/HowWeWorkSection";
 import BenefitsSection from "@/components/LogoAnimation/BenefitsSection";
 import WhyInvestSection from "@/components/LogoAnimation/WhyInvestSection";
 import WhyChooseSection from "@/components/LogoAnimation/WhyChooseSection";
-import AnimationPortfolio from "@/components/LogoAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/LogoAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/LogoAnimation/TeamStandoutSection";
 import CooperationModelsSection from "@/components/LogoAnimation/CooperationModelsSection";
@@ -25,7 +25,7 @@ export default function LogoAnimation() {
       <StatsSection />
       <ServicesSection />
       <TeamStandoutSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <HowWeWorkSection />
       <BenefitsSection />

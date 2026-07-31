@@ -3,7 +3,7 @@ import CostSection from "@/components/GameTrailer/CostSection";
 import StatsSection from "@/components/GameTrailer/StatsSection";
 import ServicesSection from "@/components/GameTrailer/ServicesSection";
 import WhyInvestSection from "@/components/GameTrailer/WhyInvestSection";
-import AnimationPortfolio from "@/components/GameTrailer/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/GameTrailer/GreatVideosSection";
 import TeamStandoutSection from "@/components/GameTrailer/TeamStandoutSection";
 import TestimonialsSlider from "@/components/GameTrailer/TestimonialsSlider";
@@ -23,7 +23,7 @@ export default function GameTrailerPage() {
       <Banner />
       <StatsSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <CostSection />
       <TestimonialsSlider />

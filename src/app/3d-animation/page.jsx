@@ -3,7 +3,7 @@ import StatsSection from "@/components/Animation3D/StatsSection";
 import ServicesSection from "@/components/Animation3D/ServicesSection";
 import HowWeWorkSection from "@/components/Animation3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/Animation3D/WhyInvestSection";
-import AnimationPortfolio from "@/components/Animation3D/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import TeamStandoutSection from "@/components/Animation3D/TeamStandoutSection";
 import CostSection from "@/components/Animation3D/CostSection";
 import TestimonialsSlider from "@/components/Animation3D/TestimonialsSlider";
@@ -26,7 +26,7 @@ export default function ThreeDAnimation() {
       <StatsSection />
       <ServicesSection />
       <HowWeWorkSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <TeamStandoutSection />
       <CostSection />
       <WhyInvestSection />

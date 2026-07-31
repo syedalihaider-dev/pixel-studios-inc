@@ -2,7 +2,7 @@ import Banner from "@/components/CharacterAnimation/Banner";
 import StatsSection from "@/components/CharacterAnimation/StatsSection";
 import ServicesSection from "@/components/CharacterAnimation/ServicesSection";
 import WhyInvestSection from "@/components/CharacterAnimation/WhyInvestSection";
-import AnimationPortfolio from "@/components/CharacterAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/CharacterAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/CharacterAnimation/TeamStandoutSection";
 import HowWeWorkSection from "@/components/CharacterAnimation/HowWeWorkSection";
@@ -27,7 +27,7 @@ export default function CharacterAnimationPage() {
       <Banner />
       <StatsSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <TeamStandoutSection />
       <HowWeWorkSection />

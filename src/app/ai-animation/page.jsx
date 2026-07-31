@@ -6,7 +6,7 @@ import HowWeWorkSection from "@/components/AnimationAI/HowWeWorkSection";
 import WhyInvestSection from "@/components/AnimationAI/WhyInvestSection";
 import StepProcessSection from "@/components/AnimationAI/StepProcessSection";
 import TestimonialsSlider from "@/components/AnimationAI/TestimonialsSlider";
-import AnimationPortfolio from "@/components/AnimationAI/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/AnimationAI/GreatVideosSection";
 import IndustrySection from "@/components/AnimationAI/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
@@ -25,7 +25,7 @@ export default function AnimationAIPage() {
       <StatsSection />
       <CostSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <HowWeWorkSection />
       <WhyInvestSection />

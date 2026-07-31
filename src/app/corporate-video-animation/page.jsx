@@ -4,7 +4,7 @@ import ServicesSection from "@/components/CorporateVideoAnimation/ServicesSectio
 import CostSection from "@/components/CorporateVideoAnimation/CostSection"
 import HowWeWorkSection from "@/components/CorporateVideoAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/CorporateVideoAnimation/WhyInvestSection";
-import AnimationPortfolio from "@/components/CorporateVideoAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/CorporateVideoAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/CorporateVideoAnimation/TeamStandoutSection";
 import CooperationModelsSection from "@/components/CorporateVideoAnimation/CooperationModelsSection";
@@ -26,7 +26,7 @@ export default function CorporateVideoAnimationPage() {
       <StatsSection />
       <CostSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <HowWeWorkSection />
       <CooperationModelsSection />
       <WhyInvestSection />

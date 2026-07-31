@@ -3,7 +3,7 @@ import CostSection from "@/components/AnimatedCommercials/CostSection";
 import StatsSection from "@/components/AnimatedCommercials/StatsSection";
 import ServicesSection from "@/components/AnimatedCommercials/ServicesSection";
 import WhyInvestSection from "@/components/AnimatedCommercials/WhyInvestSection";
-import AnimationPortfolio from "@/components/AnimatedCommercials/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/AnimatedCommercials/GreatVideosSection";
 import TeamStandoutSection from "@/components/AnimatedCommercials/TeamStandoutSection";
 import HowWeWorkSection from "@/components/AnimatedCommercials/HowWeWorkSection";
@@ -26,7 +26,7 @@ export default function AnimatedCommercialsPage() {
       <CostSection />
       <StatsSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <TeamStandoutSection />
       <HowWeWorkSection />

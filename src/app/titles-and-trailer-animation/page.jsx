@@ -4,7 +4,7 @@ import ServicesSection from "@/components/TrailerAnimation/ServicesSection";
 import CostSection from "@/components/TrailerAnimation/CostSection"
 import HowWeWorkSection from "@/components/TrailerAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/TrailerAnimation/WhyInvestSection";
-import AnimationPortfolio from "@/components/TrailerAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/TrailerAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/TrailerAnimation/TeamStandoutSection";
 import CooperationModelsSection from "@/components/TrailerAnimation/CooperationModelsSection";
@@ -27,7 +27,7 @@ export default function TitlesAndTrailerAnimation() {
       <ServicesSection />
       <TeamStandoutSection />
       <CostSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <HowWeWorkSection />
       <CooperationModelsSection />
       <SoftwareSection />

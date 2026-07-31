@@ -4,7 +4,7 @@ import StatsSection from "@/components/LegalGraphics/StatsSection";
 import ServicesSection from "@/components/LegalGraphics/ServicesSection";
 import SupportSection from "@/components/LegalGraphics/SupportSection";
 import WhyInvestSection from "@/components/LegalGraphics/WhyInvestSection";
-import AnimationPortfolio from "@/components/LegalGraphics/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/LegalGraphics/GreatVideosSection";
 import TeamStandoutSection from "@/components/LegalGraphics/TeamStandoutSection";
 import CooperationModelsSection from "@/components/LegalGraphics/CooperationModelsSection";
@@ -27,7 +27,7 @@ export default function LegalGraphicsPage() {
       <CostSection />
       <StatsSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <SupportSection />
       <TeamStandoutSection />

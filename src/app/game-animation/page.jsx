@@ -11,7 +11,7 @@ import WonderingSection from "@/components/GameAnimation/WonderingSection";
 import ProjectsSection from "@/components/GameAnimation/ProjectsSection";
 import WhyInvestSection from "@/components/GameAnimation/WhyInvestSection";
 import AnimationServicesSection from "@/components/GameAnimation/AnimationServicesSection";
-import AnimationPortfolio from "@/components/GameAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import HowWeWorkSection from "@/components/GameAnimation/HowWeWorkSection";
 import CooperationModelsSection from "@/components/GameAnimation/CooperationModelsSection";
 import ProjectCostSection from "@/components/GameAnimation/ProjectCostSection";
@@ -42,7 +42,7 @@ export default function GameAnimationPage() {
       <WonderingSection />
       <ProjectsSection />
       <AnimationServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <ProjectCostSection />
       <TestimonialSection />
       <FaqSection />

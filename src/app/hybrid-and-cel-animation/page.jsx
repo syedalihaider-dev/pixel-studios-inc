@@ -2,7 +2,7 @@ import Banner from "@/components/HybridAnimation/Banner";
 import StatsSection from "@/components/HybridAnimation/StatsSection";
 import CostSection from "@/components/HybridAnimation/CostSection";
 import ServicesSection from "@/components/HybridAnimation/ServicesSection";
-import AnimationPortfolio from "@/components/HybridAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/HybridAnimation/GreatVideosSection";
 import TeamStandoutSection from "@/components/HybridAnimation/TeamStandoutSection";
 import CooperationModelsSection from "@/components/HybridAnimation/CooperationModelsSection";
@@ -27,7 +27,7 @@ export default function HybridAnimationPage() {
       <StatsSection />
       <CostSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <TeamStandoutSection />
       <CooperationModelsSection />

@@ -3,7 +3,7 @@ import StatsSection from "@/components/VideoEditingServices/StatsSection";
 import ServicesSection from "@/components/VideoEditingServices/ServicesSection";
 import HowWeWorkSection from "@/components/VideoEditingServices/HowWeWorkSection";
 import WhyInvestSection from "@/components/VideoEditingServices/WhyInvestSection";
-import AnimationPortfolio from "@/components/VideoEditingServices/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/VideoEditingServices/GreatVideosSection";
 import TeamStandoutSection from "@/components/VideoEditingServices/TeamStandoutSection";
 import CooperationModelsSection from "@/components/VideoEditingServices/CooperationModelsSection";
@@ -26,7 +26,7 @@ export default function VideoEditingServices() {
       <StatsSection />
       <ServicesSection />
       <HowWeWorkSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <TeamStandoutSection />
       <WhyInvestSection />

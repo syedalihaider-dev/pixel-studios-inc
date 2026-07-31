@@ -4,7 +4,7 @@ import ServicesSection from "@/components/Modeling3D/ServicesSection";
 import CostSection from "@/components/Modeling3D/CostSection"
 import HowWeWorkSection from "@/components/Modeling3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/Modeling3D/WhyInvestSection";
-import AnimationPortfolio from "@/components/Modeling3D/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/Modeling3D/GreatVideosSection";
 import TeamStandoutSection from "@/components/Modeling3D/TeamStandoutSection";
 import CooperationModelsSection from "@/components/Modeling3D/CooperationModelsSection";
@@ -26,7 +26,7 @@ export default function Modeling3DPage() {
       <StatsSection />
       <CostSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <HowWeWorkSection />
       <CooperationModelsSection />
       <WhyInvestSection />

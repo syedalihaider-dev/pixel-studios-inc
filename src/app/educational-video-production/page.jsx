@@ -6,7 +6,7 @@ import HowWeWorkSection from "@/components/EducationalVideoProduction/HowWeWorkS
 import SupportSection from "@/components/EducationalVideoProduction/SupportSection";
 import WhyInvestSection from "@/components/EducationalVideoProduction/WhyInvestSection";
 import IndustrySection from "@/components/EducationalVideoProduction/IndustrySection";
-import AnimationPortfolio from "@/components/EducationalVideoProduction/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/EducationalVideoProduction/GreatVideosSection";
 import TeamStandoutSection from "@/components/EducationalVideoProduction/TeamStandoutSection";
 import CooperationModelsSection from "@/components/EducationalVideoProduction/CooperationModelsSection";
@@ -26,7 +26,7 @@ export default function EducationalVideoProductionPage() {
       <Banner />
       <StatsSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <TeamStandoutSection />
       <HowWeWorkSection />

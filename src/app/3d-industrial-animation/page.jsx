@@ -4,7 +4,7 @@ import ServicesSection from "@/components/IndustrialAnimation3D/ServicesSection"
 import CostSection from "@/components/IndustrialAnimation3D/CostSection"
 import HowWeWorkSection from "@/components/IndustrialAnimation3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/IndustrialAnimation3D/WhyInvestSection";
-import AnimationPortfolio from "@/components/IndustrialAnimation3D/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/IndustrialAnimation3D/GreatVideosSection";
 import TeamStandoutSection from "@/components/IndustrialAnimation3D/TeamStandoutSection";
 import CooperationModelsSection from "@/components/IndustrialAnimation3D/CooperationModelsSection";
@@ -26,7 +26,7 @@ export default function IndustrialAnimation3DPage() {
       <StatsSection />
       <CostSection />
       <ServicesSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <HowWeWorkSection />
       <CooperationModelsSection />
       <WhyInvestSection />
