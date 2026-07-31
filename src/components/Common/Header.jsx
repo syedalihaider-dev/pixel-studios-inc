@@ -88,7 +88,7 @@ const navData = [
           },
           {
             heading: 'Game Development & Animation',
-            headingPath: '/game-development',
+            headingPath: '#',
             items: [
               { name: 'Game Animation', path: '/game-animation' },
               { name: 'Titles & Trailer Animation', path: '/titles-and-trailer-animation' },

@@ -101,17 +101,14 @@ const Footer = () => {
               </li>
             </ul>
             <div className={styles.socialLinks}>
-              <a href={brandInfo.socials.linkedin} target="_blank" rel="noopener noreferrer">
-                <Image src="/icons/linkedin-icon.png" alt="LinkedIn" width={20} height={20} />
-              </a>
               <a href={brandInfo.socials.facebook} target="_blank" rel="noopener noreferrer">
                 <Image src="/icons/facebook-icon.png" alt="Facebook" width={20} height={20} />
               </a>
               <a href={brandInfo.socials.instagram} target="_blank" rel="noopener noreferrer">
                 <Image src="/icons/instagram-icon.png" alt="Instagram" width={20} height={20} />
               </a>
-              <a href={brandInfo.socials.instagram} target="_blank" rel="noopener noreferrer">
-                <Image src="/icons/instagram-icon.png" alt="Instagram" width={20} height={20} />
+              <a href={brandInfo.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                <Image src="/icons/linkedin-icon.png" alt="LinkedIn" width={20} height={20} />
               </a>
             </div>
           </div>

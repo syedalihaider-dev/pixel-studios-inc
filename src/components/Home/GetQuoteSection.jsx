@@ -107,7 +107,7 @@ export default function GetQuoteSection() {
               <div className={styles.formBox}>
                 <h3 className={styles.formTitle}>GET QUOTE</h3>
 
-                <form 
+                <form
                   onSubmit={(e) => {
                     e.preventDefault();
                     const data = new FormData(e.currentTarget);
@@ -134,7 +134,7 @@ export default function GetQuoteSection() {
                   <div className={styles.checkboxGroup}>
                     <input type="checkbox" id="terms" className={styles.checkbox} required />
                     <label htmlFor="terms" className={styles.checkboxText}>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                      I agree to be contacted by Pixel Studio regarding my project and service requirements.
                     </label>
                   </div>
 
