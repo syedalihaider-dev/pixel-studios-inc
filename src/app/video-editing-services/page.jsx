@@ -10,7 +10,7 @@ import CooperationModelsSection from "@/components/VideoEditingServices/Cooperat
 import TestimonialsSlider from "@/components/VideoEditingServices/TestimonialsSlider";
 import TechnologySection from "@/components/VideoEditingServices/TechnologySection";
 import IndustrySection from "@/components/VideoEditingServices/IndustrySection";
-import TestimonialSection from "@/components/VideoEditingServices/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/VideoEditingServices/FaqSection";
 
 

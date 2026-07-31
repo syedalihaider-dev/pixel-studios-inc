@@ -8,7 +8,7 @@ import TopRatedProjectsSection from "@/components/GameDevelopment/TopRatedProjec
 import CooperationModelsSection from "@/components/GameDevelopment/CooperationModelsSection";
 import TrustedClientsSection from "@/components/GameDevelopment/TrustedClientsSection";
 import GreatVideosSection from "@/components/GameDevelopment/GreatVideosSection";
-import TestimonialSection from "@/components/GameDevelopment/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/GameDevelopment/FaqSection";
 
 

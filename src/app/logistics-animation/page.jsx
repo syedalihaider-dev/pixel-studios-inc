@@ -4,7 +4,7 @@ import ServicesSection from "@/components/LogisticsAnimation/ServicesSection";
 import WhyChooseSection from "@/components/LogisticsAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/LogisticsAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/LogisticsAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/LogisticsAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/LogisticsAnimation/GreatVideosSection";
 import FaqSection from "@/components/LogisticsAnimation/FaqSection";
 

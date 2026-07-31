@@ -10,7 +10,7 @@ import TeamStandoutSection from "@/components/Modeling3D/TeamStandoutSection";
 import CooperationModelsSection from "@/components/Modeling3D/CooperationModelsSection";
 import TechnologySection from "@/components/Modeling3D/TechnologySection";
 import IndustrySection from "@/components/Modeling3D/IndustrySection";
-import TestimonialSection from "@/components/Modeling3D/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/Modeling3D/FaqSection";
 
 

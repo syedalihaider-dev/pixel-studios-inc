@@ -1,7 +1,7 @@
 import Banner from "@/components/CaseStudy/Banner";
 import TrustedClientsSection from "@/components/CaseStudy/TrustedClientsSection";
 import IndustrySection from "@/components/CaseStudy/IndustrySection";
-import TestimonialSection from "@/components/CaseStudy/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FeaturedProjects from "@/components/CaseStudy/FeaturedProjects";
 import { Metadata } from "next";
 

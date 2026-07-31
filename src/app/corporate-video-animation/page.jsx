@@ -10,7 +10,7 @@ import TeamStandoutSection from "@/components/CorporateVideoAnimation/TeamStando
 import CooperationModelsSection from "@/components/CorporateVideoAnimation/CooperationModelsSection";
 import TechnologySection from "@/components/CorporateVideoAnimation/TechnologySection";
 import IndustrySection from "@/components/CorporateVideoAnimation/IndustrySection";
-import TestimonialSection from "@/components/CorporateVideoAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/CorporateVideoAnimation/FaqSection";
 
 

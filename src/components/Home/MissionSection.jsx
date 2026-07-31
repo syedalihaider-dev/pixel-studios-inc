@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import CTAButton from '../Common/CTAButton';
 import styles from './MissionSection.module.css';
@@ -19,7 +18,7 @@ const MissionSection = () => {
               className={styles.imageWrapper}
             >
               <video
-                src="/videos/home.webm"
+                src="https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/AJyq3rw7hW6eHXecdSS8PF8/2D_02.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw"
                 autoPlay
                 loop
                 muted

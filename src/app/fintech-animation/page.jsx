@@ -4,7 +4,7 @@ import ServicesSection from "@/components/FintechAnimation/ServicesSection";
 import WhyChooseSection from "@/components/FintechAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/FintechAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/FintechAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/FintechAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/FintechAnimation/GreatVideosSection";
 import FaqSection from "@/components/FintechAnimation/FaqSection";
 

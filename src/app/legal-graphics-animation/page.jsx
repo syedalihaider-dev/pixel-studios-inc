@@ -11,7 +11,7 @@ import CooperationModelsSection from "@/components/LegalGraphics/CooperationMode
 import WonderingSection from "@/components/LegalGraphics/WonderingSection";
 import TechnologySection from "@/components/LegalGraphics/TechnologySection";
 import SoftwareSection from "@/components/LegalGraphics/SoftwareSection";
-import TestimonialSection from "@/components/LegalGraphics/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/LegalGraphics/FaqSection";
 
 

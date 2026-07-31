@@ -12,7 +12,7 @@ import WonderingSection from "@/components/CharacterAnimation/WonderingSection";
 import BenefitsSection from "@/components/CharacterAnimation/BenefitsSection";
 import CharacterWhyChooseSection from "@/components/CharacterAnimation/CharacterWhyChooseSection";
 import AnimationPricingSection from "@/components/CharacterAnimation/AnimationPricingSection";
-import TestimonialSection from "@/components/CharacterAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/CharacterAnimation/FaqSection";
 
 

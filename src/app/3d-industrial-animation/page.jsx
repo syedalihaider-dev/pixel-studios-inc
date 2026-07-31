@@ -10,7 +10,7 @@ import TeamStandoutSection from "@/components/IndustrialAnimation3D/TeamStandout
 import CooperationModelsSection from "@/components/IndustrialAnimation3D/CooperationModelsSection";
 import TechnologySection from "@/components/IndustrialAnimation3D/TechnologySection";
 import IndustrySection from "@/components/IndustrialAnimation3D/IndustrySection";
-import TestimonialSection from "@/components/IndustrialAnimation3D/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/IndustrialAnimation3D/FaqSection";
 
 

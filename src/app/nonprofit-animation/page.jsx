@@ -4,7 +4,7 @@ import ServicesSection from "@/components/NonProfitAnimation/ServicesSection";
 import WhyChooseSection from "@/components/NonProfitAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/NonProfitAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/NonProfitAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/NonProfitAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/NonProfitAnimation/GreatVideosSection";
 import FaqSection from "@/components/NonProfitAnimation/FaqSection";
 

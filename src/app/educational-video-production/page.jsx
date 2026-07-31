@@ -11,9 +11,7 @@ import GreatVideosSection from "@/components/EducationalVideoProduction/GreatVid
 import TeamStandoutSection from "@/components/EducationalVideoProduction/TeamStandoutSection";
 import CooperationModelsSection from "@/components/EducationalVideoProduction/CooperationModelsSection";
 import WonderingSection from "@/components/EducationalVideoProduction/WonderingSection";
-import TechnologySection from "@/components/EducationalVideoProduction/TechnologySection";
-import SoftwareSection from "@/components/EducationalVideoProduction/SoftwareSection";
-import TestimonialSection from "@/components/EducationalVideoProduction/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/EducationalVideoProduction/FaqSection";
 
 

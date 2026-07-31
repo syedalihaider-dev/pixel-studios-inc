@@ -11,7 +11,7 @@ import TestimonialsSlider from "@/components/MotionGraphics/TestimonialsSlider";
 import TechnologySection from "@/components/MotionGraphics/TechnologySection";
 import SoftwareSection from "@/components/MotionGraphics/SoftwareSection";
 import IndustrySection from "@/components/MotionGraphics/IndustrySection";
-import TestimonialSection from "@/components/MotionGraphics/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/MotionGraphics/FaqSection";
 
 

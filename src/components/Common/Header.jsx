@@ -139,15 +139,15 @@ const navData = [
       { name: 'Technology Animation', path: '/technology-animation' },
     ]
   },
-  {
-    name: 'INSIGHTS',
-    path: '#',
-    isDropdown: true,
-    items: [
-      // { name: 'BLOG', path: '#' },
-      { name: 'PRESS RELEASE', path: '/press-release' },
-    ]
-  },
+  // {
+  //   name: 'INSIGHTS',
+  //   path: '#',
+  //   isDropdown: true,
+  //   items: [
+  //     // { name: 'BLOG', path: '#' },
+  //     { name: 'PRESS RELEASE', path: '/press-release' },
+  //   ]
+  // },
   {
     name: 'OUR WORK',
     path: '#',
@@ -156,7 +156,8 @@ const navData = [
       { name: 'PORTFOLIO', path: '/our-work' },
       // { name: 'CASE STUDIES', path: '/case-study' },
     ]
-  }
+  },
+  { name: 'CONTACT US', path: '/contact-us' },
 ];
 
 const dropdownVariants = {

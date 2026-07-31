@@ -84,7 +84,7 @@ const Banner = () => {
     <section className={styles.bannerSection}>
       <div className={styles.overlay}></div>
       <video
-        src="/videos/home.webm"
+        src="https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/APr1MwnvxgJidhjKrvVy3t8/2D_01.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw"
         autoPlay
         loop
         muted

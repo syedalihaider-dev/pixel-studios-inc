@@ -5,31 +5,38 @@ import GlobalTestimonialSection from "../Common/TestimonialSection";
 const testimonials = [
   {
     id: 1,
-    name: "Amele",
-    role: "SVP, Head of Marketing",
-    image: "/client-men-01.png",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4"
+    name: "Sarah",
+    role: "Founder of Trendscape",
+    image: "https://img.youtube.com/vi/h5GIeQy4NNs/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/h5GIeQy4NNs?autoplay=1"
   },
   {
     id: 2,
-    name: "Sarah",
-    role: "Director of Operations",
-    image: "/client-women-01.png",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4"
+    name: "Frank Mooney",
+    role: "CEO of Exogen Matrix",
+    image: "https://img.youtube.com/vi/JArjcxkPDzI/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/JArjcxkPDzI?autoplay=1"
   },
   {
     id: 3,
-    name: "Michael",
-    role: "CEO & Founder",
-    image: "/client-men-02.png",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4"
+    name: "Wilson Pope",
+    role: "Producer at Stargaze Productions",
+    image: "https://img.youtube.com/vi/kbctprXL7FQ/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/kbctprXL7FQ?autoplay=1"
   },
   {
     id: 4,
-    name: "David",
-    role: "Product Manager",
-    image: "/client-men-01.png",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4"
+    name: "Emily",
+    role: "Director of Bright Minds Academy",
+    image: "https://img.youtube.com/vi/beFbdiO-rnk/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/beFbdiO-rnk?autoplay=1"
+  },
+  {
+    id: 5,
+    name: "Dr Bradley Hickman",
+    role: "Healthcare Specialist",
+    image: "https://img.youtube.com/vi/oRmQqf1_Wjo/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/oRmQqf1_Wjo?autoplay=1"
   }
 ];
 

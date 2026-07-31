@@ -4,7 +4,7 @@ import ServicesSection from "@/components/EducationAnimation/ServicesSection";
 import WhyChooseSection from "@/components/EducationAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/EducationAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/EducationAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/EducationAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/EducationAnimation/GreatVideosSection";
 import FaqSection from "@/components/EducationAnimation/FaqSection";
 

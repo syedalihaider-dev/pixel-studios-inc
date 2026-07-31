@@ -5,7 +5,7 @@ import PressReleaseSlider from "@/components/PressRelease/PressReleaseSlider";
 import PressReleaseAwards from "@/components/PressRelease/PressReleaseAwards";
 import PressReleaseCareer from "@/components/PressRelease/PressReleaseCareer";
 import PressReleaseNews from "@/components/PressRelease/PressReleaseNews";
-import TestimonialSection from "@/components/Animation2D/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 
 
 export const metadata = {

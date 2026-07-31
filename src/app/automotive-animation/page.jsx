@@ -4,7 +4,7 @@ import ServicesSection from "@/components/AutomotiveAnimation/ServicesSection";
 import WhyChooseSection from "@/components/AutomotiveAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/AutomotiveAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/AutomotiveAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/AutomotiveAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/AutomotiveAnimation/GreatVideosSection";
 import FaqSection from "@/components/AutomotiveAnimation/FaqSection";
 

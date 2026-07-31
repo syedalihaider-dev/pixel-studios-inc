@@ -10,7 +10,7 @@ import HowWeWorkSection from "@/components/AnimatedCommercials/HowWeWorkSection"
 import CooperationModelsSection from "@/components/AnimatedCommercials/CooperationModelsSection";
 import WonderingSection from "@/components/AnimatedCommercials/WonderingSection";
 import IndustrySection from "@/components/AnimatedCommercials/IndustrySection";
-import TestimonialSection from "@/components/AnimatedCommercials/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/AnimatedCommercials/FaqSection";
 
 

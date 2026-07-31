@@ -94,6 +94,16 @@
   line-height: 1.4;
 }
 
+.contactList a {
+  color: #c9c5d1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactList a:hover {
+  color: #FFFFFF;
+}
+
 .contactIcon {
   color: #c9c5d1;
   flex-shrink: 0;

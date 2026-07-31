@@ -10,7 +10,7 @@ import CooperationModelsSection from "@/components/WhiteboardAnimation/Cooperati
 import TestimonialsSlider from "@/components/WhiteboardAnimation/TestimonialsSlider";
 import TechnologySection from "@/components/WhiteboardAnimation/TechnologySection";
 import IndustrySection from "@/components/WhiteboardAnimation/IndustrySection";
-import TestimonialSection from "@/components/WhiteboardAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/WhiteboardAnimation/FaqSection";
 
 

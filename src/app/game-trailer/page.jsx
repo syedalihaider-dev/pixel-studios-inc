@@ -8,7 +8,7 @@ import GreatVideosSection from "@/components/GameTrailer/GreatVideosSection";
 import TeamStandoutSection from "@/components/GameTrailer/TeamStandoutSection";
 import TestimonialsSlider from "@/components/GameTrailer/TestimonialsSlider";
 import WhyPartnerSection from "@/components/GameTrailer/WhyPartnerSection";
-import TestimonialSection from "@/components/GameTrailer/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/GameTrailer/FaqSection";
 
 

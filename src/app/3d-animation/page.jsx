@@ -10,7 +10,7 @@ import TestimonialsSlider from "@/components/Animation3D/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Animation3D/TrustedClientsSection";
 import IndustrySection from "@/components/Animation3D/IndustrySection";
 import GreatVideosSection from "@/components/Animation3D/GreatVideosSection";
-import TestimonialSection from "@/components/Animation3D/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/Animation3D/FaqSection";
 
 

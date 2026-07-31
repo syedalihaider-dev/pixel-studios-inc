@@ -4,7 +4,7 @@ import ServicesSection from "@/components/EcommerceVideo/ServicesSection";
 import WhyChooseSection from "@/components/EcommerceVideo/WhyChooseSection";
 import WhyInvestSection from "@/components/EcommerceVideo/WhyInvestSection";
 import CooperationModelsSection from "@/components/EcommerceVideo/CooperationModelsSection";
-import TestimonialSection from "@/components/EcommerceVideo/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/EcommerceVideo/GreatVideosSection";
 import FaqSection from "@/components/EcommerceVideo/FaqSection";
 

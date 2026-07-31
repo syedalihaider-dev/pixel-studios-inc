@@ -9,7 +9,7 @@ import TestimonialsSlider from "@/components/AnimationAI/TestimonialsSlider";
 import AnimationPortfolio from "@/components/AnimationAI/AnimationPortfolio";
 import GreatVideosSection from "@/components/AnimationAI/GreatVideosSection";
 import IndustrySection from "@/components/AnimationAI/IndustrySection";
-import TestimonialSection from "@/components/AnimationAI/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/AnimationAI/FaqSection";
 
 

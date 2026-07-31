@@ -5,12 +5,49 @@ import Image from "next/image";
 import styles from "./TestimonialSection.module.css";
 import CTAButton from "./CTAButton";
 import { ChevronLeft, ChevronRight, Play, Star, X } from "lucide-react";
-import Link from 'next/link';
+
+const defaultTestimonials = [
+  {
+    id: 1,
+    name: "Sarah",
+    role: "Founder of Trendscape",
+    image: "https://img.youtube.com/vi/h5GIeQy4NNs/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/h5GIeQy4NNs?autoplay=1"
+  },
+  {
+    id: 2,
+    name: "Frank Mooney",
+    role: "CEO of Exogen Matrix",
+    image: "https://img.youtube.com/vi/JArjcxkPDzI/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/JArjcxkPDzI?autoplay=1"
+  },
+  {
+    id: 3,
+    name: "Wilson Pope",
+    role: "Producer at Stargaze Productions",
+    image: "https://img.youtube.com/vi/kbctprXL7FQ/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/kbctprXL7FQ?autoplay=1"
+  },
+  {
+    id: 4,
+    name: "Emily",
+    role: "Director of Bright Minds Academy",
+    image: "https://img.youtube.com/vi/beFbdiO-rnk/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/beFbdiO-rnk?autoplay=1"
+  },
+  {
+    id: 5,
+    name: "Dr Bradley Hickman",
+    role: "Healthcare Specialist",
+    image: "https://img.youtube.com/vi/oRmQqf1_Wjo/hqdefault.jpg",
+    video: "https://www.youtube.com/embed/oRmQqf1_Wjo?autoplay=1"
+  }
+];
 
 export default function TestimonialSection({
   heading = "Let’s Hear What Our Clients Are Saying",
   subText = "Our clients include some of the world’s most renowned brands, entrusting us with their animation needs to elevate their messages.",
-  testimonials = [],
+  testimonials = defaultTestimonials,
   variant = "default"
 }) {
   const sliderRef = useRef(null);
@@ -114,12 +151,11 @@ export default function TestimonialSection({
           >
             {testimonials.map((item) => (
               <div key={item.id} className={styles.slideCard}>
-                <Image
-                  width={520}
-                  height={344}
+                <img
                   src={item.image}
                   alt={item.name}
                   className={styles.slideImg}
+                  loading="lazy"
                 />
                 <div className={styles.slideOverlay}>
                   <div className={styles.clientInfo}>
@@ -189,12 +225,22 @@ export default function TestimonialSection({
                 <X size={20} /> Close
               </button>
               <div className={styles.modalContent}>
-                <video
-                  src={activeVideo}
-                  controls
-                  autoPlay
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
+                {activeVideo.includes("youtube.com") || activeVideo.includes("youtu.be") ? (
+                  <iframe
+                    src={activeVideo}
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    style={{ width: '100%', height: '100%', border: 'none' }}
+                  ></iframe>
+                ) : (
+                  <video
+                    src={activeVideo}
+                    controls
+                    autoPlay
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                )}
               </div>
             </motion.div>
           </motion.div>

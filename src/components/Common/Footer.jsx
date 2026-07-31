@@ -7,6 +7,8 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import styles from './Footer.module.css';
 
+import { brandInfo } from '@/constants/brandInfo';
+
 const Footer = () => {
   const quickLinks = [
     { name: 'HOME', path: '/' },
@@ -14,7 +16,7 @@ const Footer = () => {
     // { name: 'OUR SERVICES', path: '/#' },
     // { name: 'CASE STUDY', path: '/case-study' },
     { name: 'BLOGS', path: '/#' },
-    { name: 'PRESS RELEASE', path: '/press-release' },
+    // { name: 'PRESS RELEASE', path: '/press-release' },
     // { name: 'LOCATION', path: '/location' },
     // { name: 'INDUSTRIES', path: '/industries' },
     { name: 'OUR WORK', path: '/our-work' },
@@ -87,30 +89,30 @@ const Footer = () => {
             <ul className={styles.contactList}>
               <li>
                 <Phone className={styles.contactIcon} size={18} />
-                <span>+1-443-487-0213</span>
+                <a href={brandInfo.phone.href}>{brandInfo.phone.display}</a>
               </li>
               <li>
                 <Mail className={styles.contactIcon} size={18} />
-                <span>info@pixelstudiosinc.com</span>
+                <a href={brandInfo.email.href}>{brandInfo.email.display}</a>
               </li>
               <li className={styles.locationItem}>
                 <MapPin className={styles.contactIcon} size={18} />
-                <span>Pierrepont Plaza, 12th Floor, Brooklyn, NY 11201, United States</span>
+                <span>{brandInfo.address.display}</span>
               </li>
             </ul>
             <div className={styles.socialLinks}>
-              <Link href="#">
-                <Image src="/icons/linkedin -icon.png" alt="LinkedIn" width={20} height={20} />
-              </Link>
-              <Link href="#">
-                <Image src="/icons/youtube-icon.png" alt="YouTube" width={20} height={20} />
-              </Link>
-              <Link href="#">
-                <Image src="/icons/vimeo-icon.png" alt="Vimeo" width={20} height={20} />
-              </Link>
-              <Link href="#">
+              <a href={brandInfo.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                <Image src="/icons/linkedin-icon.png" alt="LinkedIn" width={20} height={20} />
+              </a>
+              <a href={brandInfo.socials.facebook} target="_blank" rel="noopener noreferrer">
+                <Image src="/icons/facebook-icon.png" alt="Facebook" width={20} height={20} />
+              </a>
+              <a href={brandInfo.socials.instagram} target="_blank" rel="noopener noreferrer">
                 <Image src="/icons/instagram-icon.png" alt="Instagram" width={20} height={20} />
-              </Link>
+              </a>
+              <a href={brandInfo.socials.instagram} target="_blank" rel="noopener noreferrer">
+                <Image src="/icons/instagram-icon.png" alt="Instagram" width={20} height={20} />
+              </a>
             </div>
           </div>
         </div>

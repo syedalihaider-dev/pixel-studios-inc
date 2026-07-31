@@ -4,7 +4,7 @@ import ServicesSection from "@/components/AdvertisingAnimation/ServicesSection";
 import WhyChooseSection from "@/components/AdvertisingAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/AdvertisingAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/AdvertisingAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/AdvertisingAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/AdvertisingAnimation/GreatVideosSection";
 import FaqSection from "@/components/AdvertisingAnimation/FaqSection";
 

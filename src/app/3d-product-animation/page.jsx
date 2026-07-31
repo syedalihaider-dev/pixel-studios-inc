@@ -10,7 +10,7 @@ import TeamStandoutSection from "@/components/ProductAnimation3D/TeamStandoutSec
 import CooperationModelsSection from "@/components/ProductAnimation3D/CooperationModelsSection";
 import WonderingSection from "@/components/ProductAnimation3D/WonderingSection";
 import IndustrySection from "@/components/ProductAnimation3D/IndustrySection";
-import TestimonialSection from "@/components/ProductAnimation3D/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/ProductAnimation3D/FaqSection";
 
 

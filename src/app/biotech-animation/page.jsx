@@ -4,7 +4,7 @@ import ServicesSection from "@/components/BiotechAnimation/ServicesSection";
 import WhyChooseSection from "@/components/BiotechAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/BiotechAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/BiotechAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/BiotechAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/BiotechAnimation/GreatVideosSection";
 import FaqSection from "@/components/BiotechAnimation/FaqSection";
 

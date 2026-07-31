@@ -4,7 +4,7 @@ import ServicesSection from "@/components/InsuranceAnimation/ServicesSection";
 import WhyChooseSection from "@/components/InsuranceAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/InsuranceAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/InsuranceAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/InsuranceAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/InsuranceAnimation/GreatVideosSection";
 import FaqSection from "@/components/InsuranceAnimation/FaqSection";
 

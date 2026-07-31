@@ -9,7 +9,7 @@ import TeamStandoutSection from "@/components/AnimatedExplainerVideo/TeamStandou
 import WhyChooseSection from "@/components/AnimatedExplainerVideo/WhyChooseSection";
 import PricingSection from "@/components/AnimatedExplainerVideo/PricingSection";
 import IndustrySection from "@/components/AnimatedExplainerVideo/IndustrySection";
-import TestimonialSection from "@/components/AnimatedExplainerVideo/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/AnimatedExplainerVideo/FaqSection";
 
 

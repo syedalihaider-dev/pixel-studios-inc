@@ -12,7 +12,7 @@ import TestimonialsSlider from "@/components/Industries/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Industries/TrustedClientsSection";
 import IndustrySection from "@/components/Industries/IndustrySection";
 import GreatVideosSection from "@/components/Industries/GreatVideosSection";
-import TestimonialSection from "@/components/Industries/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/Industries/FaqSection";
 
 export const metadata = {

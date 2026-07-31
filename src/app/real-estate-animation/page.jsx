@@ -4,7 +4,7 @@ import ServicesSection from "@/components/RealEstate/ServicesSection";
 import WhyChooseSection from "@/components/RealEstate/WhyChooseSection";
 import WhyInvestSection from "@/components/RealEstate/WhyInvestSection";
 import CooperationModelsSection from "@/components/RealEstate/CooperationModelsSection";
-import TestimonialSection from "@/components/RealEstate/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/RealEstate/GreatVideosSection";
 import FaqSection from "@/components/RealEstate/FaqSection";
 

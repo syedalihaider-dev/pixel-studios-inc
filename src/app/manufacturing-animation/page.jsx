@@ -4,7 +4,7 @@ import ServicesSection from "@/components/ManufacturingAnimation/ServicesSection
 import WhyChooseSection from "@/components/ManufacturingAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/ManufacturingAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/ManufacturingAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/ManufacturingAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/ManufacturingAnimation/GreatVideosSection";
 import FaqSection from "@/components/ManufacturingAnimation/FaqSection";
 

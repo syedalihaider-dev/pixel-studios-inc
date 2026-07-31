@@ -4,7 +4,7 @@ import ServicesSection from "@/components/GamingAnimation/ServicesSection";
 import WhyChooseSection from "@/components/GamingAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/GamingAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/GamingAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/GamingAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/GamingAnimation/GreatVideosSection";
 import FaqSection from "@/components/GamingAnimation/FaqSection";
 

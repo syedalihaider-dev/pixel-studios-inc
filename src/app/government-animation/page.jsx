@@ -4,7 +4,7 @@ import ServicesSection from "@/components/GovernmentAnimation/ServicesSection";
 import WhyChooseSection from "@/components/GovernmentAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/GovernmentAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/GovernmentAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/GovernmentAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/GovernmentAnimation/GreatVideosSection";
 import FaqSection from "@/components/GovernmentAnimation/FaqSection";
 

@@ -5,7 +5,16 @@ import { MessageSquare, Phone, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { brandInfo } from '@/constants/brandInfo';
+
 const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClick, className = '' }) => {
+  let finalHref = href;
+  if (href && (href.startsWith('tel:') || href.includes('443-487-0213'))) {
+    finalHref = brandInfo.phone.href;
+  } else if (href && (href.startsWith('mailto:') || href.includes('info@pixelstudiosinc.com'))) {
+    finalHref = brandInfo.email.href;
+  }
+
   const handleClick = (e) => {
     const isPopupTrigger = text && (
       text.toLowerCase().includes('get started') ||
@@ -40,7 +49,7 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
     if (onClick) onClick(e);
     if (type === 'phone') {
       e.preventDefault();
-      window.location.href = 'tel:+1234567890'; // Placeholder
+      window.location.href = brandInfo.phone.href;
     }
   };
 
@@ -55,8 +64,16 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
   const buttonClass = `${styles.ctaButton} ${variant === 'outline' ? styles.outline : ''} ${className}`;
 
   if (type === 'link') {
+    // For tel: and mailto:, use regular anchor tag to avoid Next.js router issues
+    if (finalHref.startsWith('tel:') || finalHref.startsWith('mailto:')) {
+      return (
+        <a href={finalHref} className={buttonClass} onClick={handleClick}>
+          {text} {getIcon()}
+        </a>
+      );
+    }
     return (
-      <Link href={href} className={buttonClass} onClick={handleClick}>
+      <Link href={finalHref} className={buttonClass} onClick={handleClick}>
         {text} {getIcon()}
       </Link>
     );

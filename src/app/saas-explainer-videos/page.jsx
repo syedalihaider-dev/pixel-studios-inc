@@ -4,7 +4,7 @@ import ServicesSection from "@/components/SaasExplainerVideo/ServicesSection";
 import WhyChooseSection from "@/components/SaasExplainerVideo/WhyChooseSection";
 import WhyInvestSection from "@/components/SaasExplainerVideo/WhyInvestSection";
 import CooperationModelsSection from "@/components/SaasExplainerVideo/CooperationModelsSection";
-import TestimonialSection from "@/components/SaasExplainerVideo/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/SaasExplainerVideo/GreatVideosSection";
 import FaqSection from "@/components/SaasExplainerVideo/FaqSection";
 

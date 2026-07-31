@@ -10,7 +10,7 @@ import TeamStandoutSection from "@/components/MedicalAnimation/TeamStandoutSecti
 import CooperationModelsSection from "@/components/MedicalAnimation/CooperationModelsSection";
 import TechnologySection from "@/components/MedicalAnimation/TechnologySection";
 import IndustrySection from "@/components/MedicalAnimation/IndustrySection";
-import TestimonialSection from "@/components/MedicalAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/MedicalAnimation/FaqSection";
 
 

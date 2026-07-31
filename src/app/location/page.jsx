@@ -1,7 +1,7 @@
 import Banner from "@/components/Location/Banner";
 import TrustedClientsSection from "@/components/Animation2D/TrustedClientsSection";
 import LocationListSection from "@/components/Location/LocationListSection";
-import TestimonialSection from "@/components/Animation2D/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 
 
 export const metadata = {

@@ -4,7 +4,7 @@ import ServicesSection from "@/components/ArchitectureAnimation/ServicesSection"
 import WhyChooseSection from "@/components/ArchitectureAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/ArchitectureAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/ArchitectureAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/ArchitectureAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/ArchitectureAnimation/GreatVideosSection";
 import FaqSection from "@/components/ArchitectureAnimation/FaqSection";
 

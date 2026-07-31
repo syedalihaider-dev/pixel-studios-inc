@@ -10,7 +10,7 @@ import TeamStandoutSection from "@/components/TrailerAnimation/TeamStandoutSecti
 import CooperationModelsSection from "@/components/TrailerAnimation/CooperationModelsSection";
 import SoftwareSection from "@/components/TrailerAnimation/SoftwareSection";
 import IndustrySection from "@/components/TrailerAnimation/IndustrySection";
-import TestimonialSection from "@/components/TrailerAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/TrailerAnimation/FaqSection";
 
 

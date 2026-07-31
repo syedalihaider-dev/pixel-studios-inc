@@ -4,7 +4,7 @@ import ServicesSection from "@/components/FinanceAnimation/ServicesSection";
 import WhyChooseSection from "@/components/FinanceAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/FinanceAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/FinanceAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/FinanceAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/FinanceAnimation/GreatVideosSection";
 import FaqSection from "@/components/FinanceAnimation/FaqSection";
 

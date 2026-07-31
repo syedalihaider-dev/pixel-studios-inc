@@ -4,7 +4,7 @@ import ServicesSection from "@/components/TechnologyAnimation/ServicesSection";
 import WhyChooseSection from "@/components/TechnologyAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/TechnologyAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/TechnologyAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/TechnologyAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/TechnologyAnimation/GreatVideosSection";
 import FaqSection from "@/components/TechnologyAnimation/FaqSection";
 

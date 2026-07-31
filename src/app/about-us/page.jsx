@@ -3,7 +3,7 @@ import MissionSection from "@/components/About/MissionSection";
 import TeamStandoutSection from "@/components/About/TeamStandoutSection";
 import HowWeWorkSection from "@/components/About/HowWeWorkSection";
 import TrustedClientsSection from "@/components/About/TrustedClientsSection";
-import TestimonialSection from "@/components/About/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/About/FaqSection";
 
 

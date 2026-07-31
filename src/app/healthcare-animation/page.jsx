@@ -4,7 +4,7 @@ import ServicesSection from "@/components/HealthcareAnimation/ServicesSection";
 import WhyChooseSection from "@/components/HealthcareAnimation/WhyChooseSection";
 import WhyInvestSection from "@/components/HealthcareAnimation/WhyInvestSection";
 import CooperationModelsSection from "@/components/HealthcareAnimation/CooperationModelsSection";
-import TestimonialSection from "@/components/HealthcareAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import GreatVideosSection from "@/components/HealthcareAnimation/GreatVideosSection";
 import FaqSection from "@/components/HealthcareAnimation/FaqSection";
 

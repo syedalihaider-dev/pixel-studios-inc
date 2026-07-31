@@ -11,17 +11,11 @@ import WonderingSection from "@/components/GameAnimation/WonderingSection";
 import ProjectsSection from "@/components/GameAnimation/ProjectsSection";
 import WhyInvestSection from "@/components/GameAnimation/WhyInvestSection";
 import AnimationServicesSection from "@/components/GameAnimation/AnimationServicesSection";
-import ServicesSection from "@/components/GameAnimation/ServicesSection";
 import AnimationPortfolio from "@/components/GameAnimation/AnimationPortfolio";
-import TeamStandoutSection from "@/components/GameAnimation/TeamStandoutSection";
 import HowWeWorkSection from "@/components/GameAnimation/HowWeWorkSection";
 import CooperationModelsSection from "@/components/GameAnimation/CooperationModelsSection";
 import ProjectCostSection from "@/components/GameAnimation/ProjectCostSection";
-import RiggingSection from "@/components/GameAnimation/RiggingSection";
-import BenefitsSection from "@/components/GameAnimation/BenefitsSection";
-import CharacterWhyChooseSection from "@/components/GameAnimation/CharacterWhyChooseSection";
-import AnimationPricingSection from "@/components/GameAnimation/AnimationPricingSection";
-import TestimonialSection from "@/components/GameAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/GameAnimation/FaqSection";
 
 
@@ -50,12 +44,6 @@ export default function GameAnimationPage() {
       <AnimationServicesSection />
       <AnimationPortfolio />
       <ProjectCostSection />
-      {/* <ServicesSection />
-      <TeamStandoutSection />
-      <RiggingSection />
-      <BenefitsSection />
-      <CharacterWhyChooseSection />
-      <AnimationPricingSection /> */}
       <TestimonialSection />
       <FaqSection />
     </main>

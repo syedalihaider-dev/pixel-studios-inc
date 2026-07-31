@@ -9,10 +9,8 @@ import TeamStandoutSection from "@/components/SocialMediaAnimation/TeamStandoutS
 import WonderingSection from "@/components/SocialMediaAnimation/WonderingSection";
 import CostSection from "@/components/SocialMediaAnimation/CostSection";
 import CooperationModelsSection from "@/components/SocialMediaAnimation/CooperationModelsSection";
-import TestimonialsSlider from "@/components/SocialMediaAnimation/TestimonialsSlider";
-import TechnologySection from "@/components/SocialMediaAnimation/TechnologySection";
 import IndustrySection from "@/components/SocialMediaAnimation/IndustrySection";
-import TestimonialSection from "@/components/SocialMediaAnimation/TestimonialSection";
+import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/SocialMediaAnimation/FaqSection";
 
 export const metadata = {
