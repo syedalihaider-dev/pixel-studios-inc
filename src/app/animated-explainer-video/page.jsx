@@ -4,7 +4,7 @@ import ServicesSection from "@/components/AnimatedExplainerVideo/ServicesSection
 import HowWeWorkSection from "@/components/AnimatedExplainerVideo/HowWeWorkSection";
 import WhyInvestSection from "@/components/AnimatedExplainerVideo/WhyInvestSection";
 import GreatVideosSection from "@/components/AnimatedExplainerVideo/GreatVideosSection";
-import AnimationPortfolio from "@/components/AnimatedExplainerVideo/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import TeamStandoutSection from "@/components/AnimatedExplainerVideo/TeamStandoutSection";
 import WhyChooseSection from "@/components/AnimatedExplainerVideo/WhyChooseSection";
 import PricingSection from "@/components/AnimatedExplainerVideo/PricingSection";
@@ -25,7 +25,7 @@ export default function AnimatedExplainerVideo() {
       <StatsSection />
       <ServicesSection />
       <HowWeWorkSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <WhyInvestSection />
       <GreatVideosSection />
       <TeamStandoutSection />

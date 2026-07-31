@@ -3,7 +3,7 @@ import StatsSection from "@/components/MotionGraphics/StatsSection";
 import ServicesSection from "@/components/MotionGraphics/ServicesSection";
 import HowWeWorkSection from "@/components/MotionGraphics/HowWeWorkSection";
 import WhyInvestSection from "@/components/MotionGraphics/WhyInvestSection";
-import AnimationPortfolio from "@/components/MotionGraphics/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/MotionGraphics/GreatVideosSection";
 import TeamStandoutSection from "@/components/MotionGraphics/TeamStandoutSection";
 import CooperationModelsSection from "@/components/MotionGraphics/CooperationModelsSection";
@@ -29,7 +29,7 @@ export default function MotionGraphics() {
       <TeamStandoutSection />
       <HowWeWorkSection />
       <CooperationModelsSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <GreatVideosSection />
       <WhyInvestSection />
       <TechnologySection />

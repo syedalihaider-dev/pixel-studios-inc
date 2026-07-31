@@ -112,12 +112,12 @@ const TeamStandoutSection = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
-                <video
-                  src="/videos/home.webm"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                <iframe
+                  src="https://player.vimeo.com/video/1064480723?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+                  title="Animated Explainer Video"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
                 />
               </motion.div>
             </div>

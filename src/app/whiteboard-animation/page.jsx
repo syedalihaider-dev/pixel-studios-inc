@@ -3,7 +3,7 @@ import StatsSection from "@/components/WhiteboardAnimation/StatsSection";
 import ServicesSection from "@/components/WhiteboardAnimation/ServicesSection";
 import HowWeWorkSection from "@/components/WhiteboardAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/WhiteboardAnimation/WhyInvestSection";
-import AnimationPortfolio from "@/components/WhiteboardAnimation/AnimationPortfolio";
+import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import TeamStandoutSection from "@/components/WhiteboardAnimation/TeamStandoutSection";
 import WonderingSection from "@/components/WhiteboardAnimation/WonderingSection";
 import CooperationModelsSection from "@/components/WhiteboardAnimation/CooperationModelsSection";
@@ -26,7 +26,7 @@ export default function WhiteboardAnimation() {
       <StatsSection />
       <ServicesSection />
       <HowWeWorkSection />
-      <AnimationPortfolio />
+      <PortfolioShowcase />
       <TeamStandoutSection />
       <WonderingSection />
       <WhyInvestSection />

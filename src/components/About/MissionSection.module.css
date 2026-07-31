@@ -5,7 +5,7 @@
   z-index: 1;
 }
 
-.missionSection::before {
+/* .missionSection::before{
   content: "";
   width: 838px;
   height: 838px;
@@ -16,7 +16,7 @@
   left: 0;
   top: 0;
   z-index: -1;
-}
+} */
 
 .imageWrapper {
   width: 100%;
@@ -54,14 +54,13 @@
 
 .heading {
   color: var(--light-color);
-  font-weight: var(--font-400);
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .description {
+  height: 170px;
   color: var(--light-color);
-  margin: 25px 0 30px;
-  font-weight: var(--font-400);
+  margin-bottom: 30px;
 }
 
 .buttonsWrapper {
@@ -70,14 +69,55 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 1600px) {
+  .heading {
+    margin-bottom: 15px;
+  }
+
+  .description {
+    height: 135px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .missionSection {
+    padding: 60px 0;
+  }
+
+  .description {
+    height: 120px;
+  }
+}
+
 @media (max-width: 1199px) {
   .missionSection {
     padding: 40px 0;
+  }
+
+  .description {
+    height: 105px;
+  }
+
+  .buttonsWrapper {
+    gap: 10px;
   }
 }
 
 @media (max-width: 991px) {
   .description {
-    margin: 10px 0 20px;
+    height: 85px;
+  }
+}
+
+@media (max-width: 767px) {
+  .description {
+    height: 115px;
+  }
+}
+
+@media (max-width: 575px) {
+  .description {
+    height: 170px;
   }
 }
