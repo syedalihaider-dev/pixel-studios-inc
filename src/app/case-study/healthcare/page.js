@@ -5,7 +5,7 @@ import HealthcareHighlight from '@/components/CaseStudy/Healthcare/HealthcareHig
 import HealthcareDealing from '@/components/CaseStudy/Healthcare/HealthcareDealing';
 import HealthcareProductExplainer from '@/components/CaseStudy/Healthcare/HealthcareProductExplainer';
 import HealthcareCluttered from '@/components/CaseStudy/Healthcare/HealthcareCluttered';
-import GetQuoteSection from '@/components/CaseStudy/Healthcare/GetQuoteSection';
+import GetQuoteSection from "@/components/Common/GetQuoteSection";
 import FaqSection from '@/components/CaseStudy/Healthcare/FaqSection';
 
 export const metadata = {

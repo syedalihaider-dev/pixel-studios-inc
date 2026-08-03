@@ -21,17 +21,17 @@ const navData = [
         sections: [
           {
             heading: '2D Animation Services',
-            headingPath: '/2d-animation',
+            headingPath: '/2d-animation-services',
             items: [
               { name: 'Animated Explainer Video', path: '/animated-explainer-video' },
               // { name: 'Explainer Video Production', path: '#' },
               { name: 'Motion Graphics Services', path: '/motion-graphics-services' },
-              { name: 'Whiteboard Animation', path: '/whiteboard-animation' },
+              { name: 'Whiteboard Animation', path: '/whiteboard-animation-services' },
               { name: 'Social Media Animation', path: '/social-media-animation' },
               { name: 'Educational Video Production', path: '/educational-video-production' },
               { name: 'Animated Commercials', path: '/animated-commercials-services' },
               // { name: 'Cartoon Animation', path: '#' },
-              { name: 'Logo Animation', path: '/logo-animation' },
+              { name: 'Logo Animation', path: '/logo-animation-services' },
               { name: 'Hybrid & Cel Animation', path: '/hybrid-and-cel-animation' },
             ]
           },

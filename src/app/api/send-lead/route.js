@@ -48,6 +48,18 @@ export async function POST(request) {
     if (interest !== 'not fill by user') htmlContent += `<p><strong>Interest:</strong> ${interest}</p>`;
     if (ftype !== 'Form fill buy user verified') htmlContent += `<p><strong>Form Type:</strong> ${ftype}</p>`;
 
+    // Dynamically include any other properties passed in the request body to ensure all fields are captured
+    const mappedKeys = [
+      'name', 'email', 'phone', 'msg', 'service', 'package', 'interest', 'ftype',
+      'ip2loc_ip', 'ip2loc_country', 'ip2loc_region', 'ip2loc_city', 'pageurl', 'Form_name',
+      'n', 'e', 'p', 'm', 's', 'pa', 'i'
+    ];
+    for (const [key, value] of Object.entries(data)) {
+      if (!mappedKeys.includes(key) && value) {
+        htmlContent += `<p><strong>${key}:</strong> ${value}</p>`;
+      }
+    }
+
     // Recipients list
     const recipients = [
       // 'zain@iceanimations.com',
@@ -58,7 +70,7 @@ export async function POST(request) {
 
     // Send Mail
     await transporter.sendMail({
-      from: '"Pixel Studios Inc | Website Lead" <leads@pixelstudiosincleads.xyz>',
+      from: '"Pixel Studios Inc | Website Lead" <no-reply@pixelstudiosinc.com>',
       to: recipients.join(', '),
       subject: `New Website Lead - ${Form_name}`,
       html: htmlContent,

@@ -24,13 +24,13 @@ const Footer = () => {
   ];
 
   const serviceLinks = [
-    { name: '2D Animation', path: '/2d-animation' },
-    { name: '3D Animation', path: '/3d-animation' },
+    { name: '2D Animation', path: '/2d-animation-services' },
+    { name: '3D Animation', path: '/3d-animation-services' },
     // { name: 'Video Editing', path: '#' },
-    { name: 'Logo Animation', path: '/logo-animation' },
+    { name: 'Logo Animation', path: '/logo-animation-services' },
     // { name: 'AI-Assisted Animations', path: '#' },
     // { name: 'Infographics', path: '#' },
-    { name: 'Whiteboard Animation', path: '/whiteboard-animation' },
+    { name: 'Whiteboard Animation', path: '/whiteboard-animation-services' },
     // { name: 'Architectural Visualization', path: '#' },
     // { name: 'Legal Animation', path: '#' },
     // { name: 'Hybrid & Cel Animation', path: '#' },
@@ -138,8 +138,8 @@ const Footer = () => {
           animate={{ x: [0, "-50%"] }}
           transition={{ repeat: Infinity, ease: "linear", duration: 30 }}
         >
-          <h1 className={styles.marqueeText}>PIXEL STUDIOS INC. PIXEL STUDIOS INC. PIXEL STUDIOS INC. PIXEL STUDIOS INC. </h1>
-          <h1 className={styles.marqueeText}>PIXEL STUDIOS INC. PIXEL STUDIOS INC. PIXEL STUDIOS INC. PIXEL STUDIOS INC. </h1>
+          <p className={styles.marqueeText}>PIXEL STUDIOS INC. PIXEL STUDIOS INC. PIXEL STUDIOS INC. PIXEL STUDIOS INC. </p>
+          <p className={styles.marqueeText}>PIXEL STUDIOS INC. PIXEL STUDIOS INC. PIXEL STUDIOS INC. PIXEL STUDIOS INC. </p>
         </motion.div>
       </div>
     </footer>

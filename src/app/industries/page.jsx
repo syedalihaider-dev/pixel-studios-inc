@@ -7,7 +7,7 @@ import WhyPartnerSection from "@/components/Industries/WhyPartnerSection";
 import WhyInvestSection from "@/components/Industries/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import CostSection from "@/components/Industries/CostSection";
-import GetQuoteSection from "@/components/Industries/GetQuoteSection";
+import GetQuoteSection from "@/components/Common/GetQuoteSection";
 import TestimonialsSlider from "@/components/Industries/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Industries/TrustedClientsSection";
 import IndustrySection from "@/components/Industries/IndustrySection";

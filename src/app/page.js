@@ -5,7 +5,7 @@ import ServicesSection from "@/components/Home/ServicesSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import WhyInvestSection from "@/components/Home/WhyInvestSection";
 import WhyPartnerSection from "@/components/Home/WhyPartnerSection";
-import GetQuoteSection from "@/components/Home/GetQuoteSection";
+import GetQuoteSection from "@/components/Common/GetQuoteSection";
 import ProcessSliderSection from "@/components/Home/ProcessSliderSection";
 import IndustrySection from "@/components/Home/IndustrySection";
 import TrustedClientsSection from "@/components/Home/TrustedClientsSection";

@@ -1,6 +1,6 @@
 import Banner from "@/components/OurWork/Banner";
 import StatsSection from "@/components/OurWork/StatsSection";
-import GetQuoteSection from "@/components/OurWork/GetQuoteSection";
+import GetQuoteSection from "@/components/Common/GetQuoteSection";
 import TestimonialsSlider from "@/components/OurWork/TestimonialsSlider";
 import TrustedClientsSection from "@/components/OurWork/TrustedClientsSection";
 import IndustrySection from "@/components/OurWork/IndustrySection";
