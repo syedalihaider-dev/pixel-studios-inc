@@ -25,7 +25,7 @@ const navData = [
             items: [
               { name: 'Animated Explainer Video', path: '/animated-explainer-video' },
               // { name: 'Explainer Video Production', path: '#' },
-              { name: 'Motion Graphics Services', path: '/motion-graphics-services' },
+              { name: 'Motion Graphics', path: '/motion-graphics' },
               { name: 'Whiteboard Animation', path: '/whiteboard-animation-services' },
               { name: 'Social Media Animation', path: '/social-media-animation' },
               { name: 'Educational Video Production', path: '/educational-video-production' },
@@ -47,7 +47,7 @@ const navData = [
         sections: [
           {
             heading: '3D Animation Services',
-            headingPath: '/3d-animation',
+            headingPath: '/3d-animation-services',
             items: [
               { name: '3D Product Animation', path: '/3d-product-animation' },
               { name: '3D Modeling', path: '/3d-modeling-services' },
