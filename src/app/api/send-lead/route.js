@@ -46,7 +46,6 @@ export async function POST(request) {
     if (service !== 'not fill by user') htmlContent += `<p><strong>Service:</strong> ${service}</p>`;
     if (pkg !== 'not fill by user') htmlContent += `<p><strong>Package:</strong> ${pkg}</p>`;
     if (interest !== 'not fill by user') htmlContent += `<p><strong>Interest:</strong> ${interest}</p>`;
-    if (ftype !== 'Form fill buy user verified') htmlContent += `<p><strong>Form Type:</strong> ${ftype}</p>`;
 
     // Dynamically include any other properties passed in the request body to ensure all fields are captured
     const mappedKeys = [
