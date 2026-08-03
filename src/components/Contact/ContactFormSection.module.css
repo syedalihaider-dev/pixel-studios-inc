@@ -16,6 +16,7 @@
   background: linear-gradient(180deg, #FC00A0 0%, #CB12ED 100%);
   opacity: 0.3;
   filter: blur(255.306px);
+  z-index: -1;
 }
 
 .formSection::after {
@@ -28,14 +29,11 @@
   background: linear-gradient(180deg, #FC00A0 0%, #CB12ED 100%);
   opacity: 0.3;
   filter: blur(255.306px);
+  z-index: -1;
 }
 
-
 .mainHeading {
-  font-size: 60px;
-  font-weight: var(--font-400);
   margin-bottom: 30px;
-  line-height: 70px;
 }
 
 .formWrapper {

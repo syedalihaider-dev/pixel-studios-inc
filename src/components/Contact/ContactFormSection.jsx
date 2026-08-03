@@ -57,7 +57,13 @@ const ContactFormSection = () => {
                     name: data.get('name'),
                     phone: data.get('phone'),
                     email: data.get('email'),
-                    msg: `Ref URL: ${data.get('video_ref') || ''}. Industry: ${data.get('industry') || ''}. Quantity: ${data.get('quantity') || ''}. Budget: ${data.get('budget') || ''}. Video Type: ${data.get('video_type') || ''}. Hear About: ${data.get('hear_about') || ''}. Message: ${data.get('message') || ''}`,
+                    "Ref URL": data.get('video_ref'),
+                    "Industry": data.get('industry'),
+                    "Quantity": data.get('quantity'),
+                    "Budget": data.get('budget'),
+                    "Video Type": data.get('video_type'),
+                    "Hear About": data.get('hear_about'),
+                    msg: data.get('message'),
                     Form_name: 'Contact Page Form'
                   });
                 });
@@ -133,7 +139,7 @@ const ContactFormSection = () => {
                 </div>
               </div>
 
-              <div className={styles.fileUploadWrapper}>
+              {/* <div className={styles.fileUploadWrapper}>
                 <span className={styles.fileUploadLabel}>Upload Reference File</span>
                 <div className={styles.dropZone} onClick={() => document.getElementById('fileUpload').click()}>
                   <span className={styles.dropText}>Drop files here or</span>
@@ -143,7 +149,7 @@ const ContactFormSection = () => {
                 <div className={styles.fileInfo}>
                   Accepted file types: jpg, png, pdf, doc, docx, Max. file size: 15 MB, Max. files: 1.
                 </div>
-              </div>
+              </div> */}
 
               <div className={styles.checkboxWrapper}>
                 <input type="checkbox" id="agreement" required />
