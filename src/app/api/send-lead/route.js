@@ -33,21 +33,17 @@ export async function POST(request) {
 
     // Construct HTML Email Content
     let htmlContent = '';
+    
+    // 1. Core form fields
     htmlContent += `<p><strong>Name:</strong> ${name}</p>`;
     htmlContent += `<p><strong>Email:</strong> ${email}</p>`;
     htmlContent += `<p><strong>Phone:</strong> ${phone}</p>`;
     htmlContent += `<p><strong>Message:</strong> ${msg}</p>`;
-    htmlContent += `<p><strong>IpAddress:</strong> ${ip}</p>`;
-    htmlContent += `<p><strong>Country:</strong> ${cn}</p>`;
-    htmlContent += `<p><strong>State:</strong> ${re}</p>`;
-    htmlContent += `<p><strong>City:</strong> ${ci}</p>`;
-    htmlContent += `<p><strong>Url:</strong> ${url}</p>`;
-    htmlContent += `<p><strong>Form Name:</strong> ${Form_name}</p>`;
     if (service !== 'not fill by user') htmlContent += `<p><strong>Service:</strong> ${service}</p>`;
     if (pkg !== 'not fill by user') htmlContent += `<p><strong>Package:</strong> ${pkg}</p>`;
     if (interest !== 'not fill by user') htmlContent += `<p><strong>Interest:</strong> ${interest}</p>`;
 
-    // Dynamically include any other properties passed in the request body to ensure all fields are captured
+    // 2. Dynamically include any other properties passed in the request body to ensure all fields are captured
     const mappedKeys = [
       'name', 'email', 'phone', 'msg', 'service', 'package', 'interest', 'ftype',
       'ip2loc_ip', 'ip2loc_country', 'ip2loc_region', 'ip2loc_city', 'pageurl', 'Form_name',
@@ -58,6 +54,15 @@ export async function POST(request) {
         htmlContent += `<p><strong>${key}:</strong> ${value}</p>`;
       }
     }
+
+    // 3. User Geolocation & Form Metadata (at the very end)
+    htmlContent += `<hr />`;
+    htmlContent += `<p><strong>IpAddress:</strong> ${ip}</p>`;
+    htmlContent += `<p><strong>Country:</strong> ${cn}</p>`;
+    htmlContent += `<p><strong>State:</strong> ${re}</p>`;
+    htmlContent += `<p><strong>City:</strong> ${ci}</p>`;
+    htmlContent += `<p><strong>Url:</strong> ${url}</p>`;
+    htmlContent += `<p><strong>Form Name:</strong> ${Form_name}</p>`;
 
     // Recipients list
     const recipients = [
