@@ -16,8 +16,8 @@ import FaqSection from "@/components/LegalGraphics/FaqSection";
 
 
 export const metadata = {
-  title: "Legal Graphics Animation Services for Litigation, Trial & Courtroom | Pixels Studios",
-  description: "Need courtroom animation that holds up to judicial scrutiny? Pixels Studios builds accident reconstruction, medical legal animation, and trial demonstratives. Get a quote.",
+  title: "Legal Graphics Animation Services for Litigation, Trial & Courtroom | Pixel Studios",
+  description: "Need courtroom animation that holds up to judicial scrutiny? Pixel Studios builds accident reconstruction, medical legal animation, and trial demonstratives. Get a quote.",
 };
 
 export default function LegalGraphicsPage() {
@@ -25,7 +25,7 @@ export default function LegalGraphicsPage() {
     <main>
       <Banner
         title="Legal Graphics Animation Services for Courtroom Demonstratives"
-        description="How do legal animations help judges and juries understand evidence? By showing rather than describing. An accident reconstruction animation places the viewer at the intersection. A medical legal animation shows exactly how the injury occurred at the anatomical level the clinical record documents. A forensic animation demonstrates the event timeline with the precision witness testimony cannot reliably provide. Pixels Studios Inc. provides legal graphics animation services for litigation firms, personal injury attorneys, insurance defense teams, and corporate legal departments across the USA."
+        description="How do legal animations help judges and juries understand evidence? By showing rather than describing. An accident reconstruction animation places the viewer at the intersection. A medical legal animation shows exactly how the injury occurred at the anatomical level the clinical record documents. A forensic animation demonstrates the event timeline with the precision witness testimony cannot reliably provide. Pixel Studios Inc. provides legal graphics animation services for litigation firms, personal injury attorneys, insurance defense teams, and corporate legal departments across the USA."
         video="/videos/home.webm"
         showPlayButton={true}
       />

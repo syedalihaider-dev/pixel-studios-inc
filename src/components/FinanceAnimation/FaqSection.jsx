@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Which Company Creates Animated Videos for Financial Services?",
     answer:
-      "Pixels Studios produces finance animation for banks, investment firms, and fintech companies, working within the compliance and accuracy standards financial services content requires.",
+      "Pixel Studios produces finance animation for banks, investment firms, and fintech companies, working within the compliance and accuracy standards financial services content requires.",
   },
   {
     question: "How Long Does It Take to Produce a Financial Animation?",

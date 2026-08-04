@@ -44,7 +44,7 @@ const faqs = [
     answer: "It clearly visualizes software workflows, internal device mechanics, or abstract concepts. Animation bridges the gap between your complex product and your audience’s immediate understanding.",
   },
   {
-    question: "What is the process for starting a project with Pixels Studios?",
+    question: "What is the process for starting a project with Pixel Studios?",
     answer: "Simply book a free 30-minute discovery call to discuss your goals. Within 48 hours, we will provide a detailed, no-obligation proposal outlining the scope, timeline, and investment.",
   },
   {

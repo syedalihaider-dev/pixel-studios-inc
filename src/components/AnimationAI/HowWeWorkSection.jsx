@@ -57,7 +57,7 @@ const HowWeWorkSection = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <h2 className={styles.heading}>
-                Why Choose Pixels Studios for AI-Powered Animation?
+                Why Choose Pixel Studios for AI-Powered Animation?
               </h2>
 
               <p className={styles.description}>

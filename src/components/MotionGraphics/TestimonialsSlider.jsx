@@ -9,7 +9,7 @@ const testimonialsData = [
     id: 1,
     name: "Jeffery Carter",
     role: "Chief Marketing Officer, SaaS Platform",
-    content: "We needed a product launch motion graphics package across six formats in four weeks. Pixels Studios delivered every format on time and on brand. Our launch campaign generated 3x our average engagement rate in the first 72 hours. The creative quality was better than what our internal team could have managed under that timeline, and the strategy behind it was the reason it performed.",
+    content: "We needed a product launch motion graphics package across six formats in four weeks. Pixel Studios delivered every format on time and on brand. Our launch campaign generated 3x our average engagement rate in the first 72 hours. The creative quality was better than what our internal team could have managed under that timeline, and the strategy behind it was the reason it performed.",
     image: "/testi-client-01.png"
   },
   {

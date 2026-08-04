@@ -66,7 +66,7 @@ const HowWeWorkSection = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <h2 className={styles.heading}>Why Pixels Studios Is a Top 3D Animation Company?</h2>
+              <h2 className={styles.heading}>Why Pixel Studios Is a Top 3D Animation Company?</h2>
               <p className={styles.description}>
                 Our 97% client retention rate is built on eight specific commitments that every project is held to.
               </p>

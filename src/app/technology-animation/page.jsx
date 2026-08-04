@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/TechnologyAnimation/GreatVideosSect
 import FaqSection from "@/components/TechnologyAnimation/FaqSection";
 
 export const metadata = {
-  title: "Technology Animation Services | Pixels Studios",
-  description: "Pixels Studios' technology animation services turn software, AI, and hardware products into clear video for product launches and marketing.",
+  title: "Technology Animation Services | Pixel Studios",
+  description: "Pixel Studios' technology animation services turn software, AI, and hardware products into clear video for product launches and marketing.",
 };
 
 export default function TechnologyAnimationPage() {

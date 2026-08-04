@@ -9,21 +9,21 @@ const testimonialsData = [
     id: 1,
     name: "Melissa Duncan",
     role: "Whiteboard Animation for Product Launches",
-    content: "We were three weeks away from launching a product that required us to explain a multi-step compliance workflow to an audience of mid-level operations managers — people with no patience for animated brand storytelling and every reason to close a video after 30 seconds. The Pixels Studios team wrote a script that began with the exact problem our users were already experiencing and visually built the solution in under two minutes. Watch time on the launch video hit 78%. Our previous product video had averaged 34%.",
+    content: "We were three weeks away from launching a product that required us to explain a multi-step compliance workflow to an audience of mid-level operations managers — people with no patience for animated brand storytelling and every reason to close a video after 30 seconds. The Pixel Studios team wrote a script that began with the exact problem our users were already experiencing and visually built the solution in under two minutes. Watch time on the launch video hit 78%. Our previous product video had averaged 34%.",
     image: "/testi-client-01.png"
   },
   {
     id: 2,
     name: "Clara Wiliam",
     role: "Whiteboard Animation for Employee Training",
-    content: "Our new-hire onboarding process had a completion issue. The existing training materials were comprehensive and almost entirely unused. We brought Pixels Studios in to rebuild three core modules as whiteboard animation videos. Completion rates went from under 40% to 91% in the first cohort. More importantly, new hires stopped asking the questions the training was supposed to answer.",
+    content: "Our new-hire onboarding process had a completion issue. The existing training materials were comprehensive and almost entirely unused. We brought Pixel Studios in to rebuild three core modules as whiteboard animation videos. Completion rates went from under 40% to 91% in the first cohort. More importantly, new hires stopped asking the questions the training was supposed to answer.",
     image: "/testi-client-02.png"
   },
   {
     id: 3,
     name: "Brian Bowman",
     role: "Whiteboard Animation for Customer Education",
-    content: "Our customer success team was spending 60% of their call time explaining the same three features to every new account. We commissioned two whiteboard explainer videos from Pixels Studios and embedded them in the onboarding flow. In ninety days, the average number of support contacts per new account dropped by more than half. The videos paid for themselves in the first month.",
+    content: "Our customer success team was spending 60% of their call time explaining the same three features to every new account. We commissioned two whiteboard explainer videos from Pixel Studios and embedded them in the onboarding flow. In ninety days, the average number of support contacts per new account dropped by more than half. The videos paid for themselves in the first month.",
     image: "/testi-client-03.png"
   }
 ];

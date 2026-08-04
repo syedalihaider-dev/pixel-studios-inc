@@ -47,7 +47,7 @@ const DistinguishesSection = () => {
       >
         <div className="row justify-content-center text-center mb-5">
           <div className="col-12 col-lg-12">
-            <h4 className={styles.subHeading}>WHAT MAKES PIXELS STUDIOS A LEADING GAME</h4>
+            <h4 className={styles.subHeading}>WHAT MAKES Pixel STUDIOS A LEADING GAME</h4>
             <h2 className={styles.mainHeading}>DEVELOPMENT STUDIO?</h2>
             <p className={styles.topParagraph}>
               There are hundreds of game development companies competing for the same projects. Most of them have a showreel. Fewer of them have a methodology. Here is what specifically distinguishes how we work.

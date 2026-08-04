@@ -66,7 +66,7 @@ const CooperationModelsSection = () => {
             <p className="subtitle">Quality. Speed. Reliability</p>
             <h2 className={styles.mainHeading}>Why Choose Our Video Editing Company?</h2>
             <p className={styles.topParagraph}>
-              What specifically distinguishes Pixels Studios as a professional video editing agency.
+              What specifically distinguishes Pixel Studios as a professional video editing agency.
             </p>
           </div>
         </div>

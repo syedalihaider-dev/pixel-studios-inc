@@ -14,8 +14,8 @@ import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/SocialMediaAnimation/FaqSection";
 
 export const metadata = {
-  title: "Social Media Animation Services | Pixels Studios Inc.",
-  description: "Need social media animation services that stop the scroll? Pixels Studios creates custom animated social media videos for every platform. Get a free quote today.",
+  title: "Social Media Animation Services | Pixel Studios Inc.",
+  description: "Need social media animation services that stop the scroll? Pixel Studios creates custom animated social media videos for every platform. Get a free quote today.",
 };
 
 export default function SocialMediaAnimationPage() {
@@ -23,7 +23,7 @@ export default function SocialMediaAnimationPage() {
     <main>
       <Banner
         title="Social Media Animation Services"
-        description="At Pixels Studios Inc., our social media animation services are built around one reality: your audience owes your content nothing. Every second of watch time has to be earned. We produce animation for social media that is engineered for the environment it actually lives in: the right format, the right hook, the right pacing, and a message clear enough to land even with the sound off. Our social media animation production covers every major platform for brands, e-commerce stores, SaaS companies, and agencies across the USA."
+        description="At Pixel Studios Inc., our social media animation services are built around one reality: your audience owes your content nothing. Every second of watch time has to be earned. We produce animation for social media that is engineered for the environment it actually lives in: the right format, the right hook, the right pacing, and a message clear enough to land even with the sound off. Our social media animation production covers every major platform for brands, e-commerce stores, SaaS companies, and agencies across the USA."
         video="/videos/home.webm"
         showPlayButton={true}
       />

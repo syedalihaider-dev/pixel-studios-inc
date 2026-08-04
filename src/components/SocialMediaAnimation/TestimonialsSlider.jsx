@@ -9,21 +9,21 @@ const testimonialsData = [
     id: 1,
     name: "Patricia Lively",
     role: "Chief Visionary Officer, B2B Technology Brand",
-    content: "We had been editing our own video content in-house for two years. The footage was good but the edits were holding it back. We brought Pixels Studios in for a three-month retainer covering all YouTube and social media video editing. Our YouTube watch time increased by 62% in the first quarter and our social media completion rates went significantly above industry average. The footage did not change. The editing did.",
+    content: "We had been editing our own video content in-house for two years. The footage was good but the edits were holding it back. We brought Pixel Studios in for a three-month retainer covering all YouTube and social media video editing. Our YouTube watch time increased by 62% in the first quarter and our social media completion rates went significantly above industry average. The footage did not change. The editing did.",
     image: "/testi-client-01.png"
   },
   {
     id: 2,
     name: "Russell Whitmore",
     role: "Chief Marketing Officer, E-Commerce Brand",
-    content: "We briefed Pixels Studios on a 12-piece promotional video campaign with a four-week turnaround across multiple platforms. Every asset delivered on time, to platform specifications, at production quality our internal team could not have matched in that timeline. Our campaign click-through rate was 2.8x our previous best. Professional video editing services are not a production cost. They are a marketing investment with a measurable return.",
+    content: "We briefed Pixel Studios on a 12-piece promotional video campaign with a four-week turnaround across multiple platforms. Every asset delivered on time, to platform specifications, at production quality our internal team could not have matched in that timeline. Our campaign click-through rate was 2.8x our previous best. Professional video editing services are not a production cost. They are a marketing investment with a measurable return.",
     image: "/testi-client-02.png"
   },
   {
     id: 3,
     name: "Juliana Patrick",
     role: "Independent Creator and Entrepreneur",
-    content: "I was spending 12 hours a week editing my YouTube channel and podcast. I brought Pixels Studios in for both. Turnaround is two to three business days per episode, the quality is better than what I produced myself, and I now spend those 12 hours creating more content. The channel grew 40% in subscribers after I made the switch. I should have outsourced this a year earlier. ",
+    content: "I was spending 12 hours a week editing my YouTube channel and podcast. I brought Pixel Studios in for both. Turnaround is two to three business days per episode, the quality is better than what I produced myself, and I now spend those 12 hours creating more content. The channel grew 40% in subscribers after I made the switch. I should have outsourced this a year earlier. ",
     image: "/testi-client-03.png"
   }
 ];

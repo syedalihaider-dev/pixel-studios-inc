@@ -15,8 +15,8 @@ import FaqSection from "@/components/CorporateVideoAnimation/FaqSection";
 
 
 export const metadata = {
-  title: "Corporate Video Animation Services for Businesses | Pixels Studios",
-  description: "Need corporate video animation services that actually drive business results? Pixels Studios builds custom animated corporate videos for brands across the USA. Get a quote.",
+  title: "Corporate Video Animation Services for Businesses | Pixel Studios",
+  description: "Need corporate video animation services that actually drive business results? Pixel Studios builds custom animated corporate videos for brands across the USA. Get a quote.",
 };
 
 export default function CorporateVideoAnimationPage() {
@@ -24,7 +24,7 @@ export default function CorporateVideoAnimationPage() {
     <main>
       <Banner
         title="Corporate Video Animation Services for Businesses"
-        description="At Pixels Studios Inc., our corporate video animation services are built around that second question first. We produce video animation for business that is designed to move a specific audience toward a specific action, whether that is a lead submission, a training module completion, an investment decision, or a purchase. Every animated corporate video we deliver starts from the business objective, not from the storyboard."
+        description="At Pixel Studios Inc., our corporate video animation services are built around that second question first. We produce video animation for business that is designed to move a specific audience toward a specific action, whether that is a lead submission, a training module completion, an investment decision, or a purchase. Every animated corporate video we deliver starts from the business objective, not from the storyboard."
         video="/videos/home.webm"
         showPlayButton={true}
       />

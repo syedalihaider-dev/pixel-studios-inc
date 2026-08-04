@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "Common mistakes in legal demonstrative evidence?",
-    answer: "Depicting events as established when they are actually disputed. Every element produced at Pixels Studios is traceable to a specific evidence basis, and we document that basis as part of every delivery.",
+    answer: "Depicting events as established when they are actually disputed. Every element produced at Pixel Studios is traceable to a specific evidence basis, and we document that basis as part of every delivery.",
   },
   {
     question: "Are legal animations admissible in court?",

@@ -14,16 +14,16 @@ import FaqSection from "@/components/Animation2D/FaqSection";
 
 
 export const metadata = {
-  title: "2d Animation - Pixel Studios Inc",
-  description: "Welcome to Pixel Studios Inc 2d Animation page. We are an award-winning digital agency.",
+  title: "Creative 2D Animation Services in the USA | Pixel Studios Inc.",
+  description: "Looking for high-quality 2D animations services for your business? Pixel Studios offers comprehensive 2D animation production services at a competitive price.",
 };
 
 export default function TwoDAnimation() {
   return (
     <main>
       <Banner
-        title="Professional 2D Animation Services in the USA"
-        description="Most brands invest in 2D animation and get a video their marketing team likes but sales never uses. That is because most 2D animation studios focus on visuals, not results. The brands that win use 2D animated videos built around a clear audience, problem, and decision. At Pixels Studios Inc., our professional 2D animation services start with your business goal. As a dedicated 2D animation studio, we create custom 2D animated videos for brands across the USA built to perform."
+        title="Creative 2D Animation Services in the USA | Pixel Studios Inc"
+        description="Looking for high-quality 2D animations services for your business? Pixel Studios offers comprehensive 2D animation production services at a competitive price."
         video="/videos/home.webm"
         showPlayButton={true}
       />

@@ -15,8 +15,8 @@ import FaqSection from "@/components/ProductAnimation3D/FaqSection";
 
 
 export const metadata = {
-  title: "Conversion-Focused 3D Product Animation Services | Pixels Studios",
-  description: "Need 3D product animation services that drive conversions? Pixels Studios builds custom product animations for eCommerce, industrial, and consumer brands.",
+  title: "Conversion-Focused 3D Product Animation Services | Pixel Studios",
+  description: "Need 3D product animation services that drive conversions? Pixel Studios builds custom product animations for eCommerce, industrial, and consumer brands.",
 };
 
 export default function TitlesAndProductAnimation3D() {
@@ -24,7 +24,7 @@ export default function TitlesAndProductAnimation3D() {
     <main>
       <Banner
         title="Conversion-Focused 3D Product Animation Services"
-        description="Pixels Studios Inc. builds 3D product animation services around the specific objection or question your audience needs resolved before they buy. We are a dedicated 3D product animation company producing product launch animation, eCommerce product animation, and industrial product animation for brands across the USA, and every animation is built to move a buyer closer to a decision, not just look good in a portfolio reel. Whether you need to hire product animators for a single hero asset or outsource product animation services across a full catalog, the strategy comes before the render."
+        description="Pixel Studios Inc. builds 3D product animation services around the specific objection or question your audience needs resolved before they buy. We are a dedicated 3D product animation company producing product launch animation, eCommerce product animation, and industrial product animation for brands across the USA, and every animation is built to move a buyer closer to a decision, not just look good in a portfolio reel. Whether you need to hire product animators for a single hero asset or outsource product animation services across a full catalog, the strategy comes before the render."
         video="/videos/home.webm"
         showPlayButton={true}
       />

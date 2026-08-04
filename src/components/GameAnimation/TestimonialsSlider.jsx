@@ -10,7 +10,7 @@ const testimonialsData = [
     name: "Jeffery Menendez",
     role: "Game Studio Marketing Director",
     content:
-      "We gave Pixels Studios our announcement brief with a six-week window and a creative direction that we were not confident we could execute ourselves. They delivered a cinematic reveal that our community cited as the single piece of content that made them commit to wishlisting. The Steam wishlist count doubled in the 48 hours after the reveal trailer dropped. That is not analytics. That is the trailer working.",
+      "We gave Pixel Studios our announcement brief with a six-week window and a creative direction that we were not confident we could execute ourselves. They delivered a cinematic reveal that our community cited as the single piece of content that made them commit to wishlisting. The Steam wishlist count doubled in the 48 hours after the reveal trailer dropped. That is not analytics. That is the trailer working.",
     image: "/testi-client-01.png"
   },
   {
@@ -18,7 +18,7 @@ const testimonialsData = [
     name: "Hazel Martinez",
     role: "Mobile Game Publisher",
     content:
-      "We had launched two previous mobile games with trailers produced in-house. Neither converted in the app store at a rate that justified the media spend. Pixels Studios rebuilt our creative approach from the brief up. The third game launched with its trailer, and our cost per install dropped by 44% in the first campaign month. The creative was different. The results were different.",
+      "We had launched two previous mobile games with trailers produced in-house. Neither converted in the app store at a rate that justified the media spend. Pixel Studios rebuilt our creative approach from the brief up. The third game launched with its trailer, and our cost per install dropped by 44% in the first campaign month. The creative was different. The results were different.",
     image: "/testi-client-02.png"
   },
   {
@@ -26,7 +26,7 @@ const testimonialsData = [
     name: "Stephanie Brown",
     role: "Game Production Manager",
     content:
-      "Our game had six weeks between gold master and launch. We needed a launch trailer, a Steam store video, a 30-second paid social cut, and a 15-second YouTube pre-roll cut. All from the same brief. Pixels Studios delivered every format on time, to spec, and at a visual quality we could not have achieved internally on that timeline.",
+      "Our game had six weeks between gold master and launch. We needed a launch trailer, a Steam store video, a 30-second paid social cut, and a 15-second YouTube pre-roll cut. All from the same brief. Pixel Studios delivered every format on time, to spec, and at a visual quality we could not have achieved internally on that timeline.",
     image: "/testi-client-03.png"
   },
   {
@@ -34,7 +34,7 @@ const testimonialsData = [
     name: "Cassie Smith",
     role: "Founder, Indie Game Studio",
     content:
-      "Our Kickstarter campaign exceeded its funding goal by 312%. The trailer was the primary cited factor in backer feedback. Pixels Studios asked us what we wanted the backer to believe about the game after watching the trailer. Nobody had asked us that question before. The answer to that question was the trailer.",
+      "Our Kickstarter campaign exceeded its funding goal by 312%. The trailer was the primary cited factor in backer feedback. Pixel Studios asked us what we wanted the backer to believe about the game after watching the trailer. Nobody had asked us that question before. The answer to that question was the trailer.",
     image: "/testi-client-01.png"
   },
   {
@@ -42,7 +42,7 @@ const testimonialsData = [
     name: "Vesper Doe",
     role: "User Acquisition Lead, Mobile Games",
     content:
-      "We tested our existing trailer against the Pixels Studios version in parallel app store A/B tests. Their version produced 2.7x the install rate at the same cost per impression. The brief was the same. The approach to answering the brief was completely different.",
+      "We tested our existing trailer against the Pixel Studios version in parallel app store A/B tests. Their version produced 2.7x the install rate at the same cost per impression. The brief was the same. The approach to answering the brief was completely different.",
     image: "/testi-client-02.png"
   }
 ];

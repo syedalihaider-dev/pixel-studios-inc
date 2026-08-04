@@ -31,7 +31,7 @@ const cardsData = [
     id: 4,
     icon: "/ruling-conversion.png",
     title: "A Collaborative Revision Process",
-    text: "Revision rounds at bad agencies feel like battles. You submit notes, and the next draft comes back looking almost identical to the first version. At Pixels Studios, every revision round is structured: we document your feedback, confirm our interpretation of each note before acting on it, and return a draft that addresses every point. Our clients have told us more than once that our revision process alone was worth the switch from their previous agency.",
+    text: "Revision rounds at bad agencies feel like battles. You submit notes, and the next draft comes back looking almost identical to the first version. At Pixel Studios, every revision round is structured: we document your feedback, confirm our interpretation of each note before acting on it, and return a draft that addresses every point. Our clients have told us more than once that our revision process alone was worth the switch from their previous agency.",
     rotate: 7,
     yOffset: 30
   }
@@ -40,7 +40,7 @@ const cardsData = [
 export default function WhyPartnerSection() {
   return (
     <GlobalWhyPartnerSection
-      heading="Why Pixels Studios Is the Animation Partner Brands Come Back to Year After Year"
+      heading="Why Pixel Studios Is the Animation Partner Brands Come Back to Year After Year"
       description="Don’t worry, Our team 2D & 3D animation services in the USA always begin with a genuine discovery process. We learn about your product, your audience, your brand voice, your market positioning, and precisely what you want a viewer to think, feel, or do after watching the video."
       cardsData={cardsData}
       variant="default"

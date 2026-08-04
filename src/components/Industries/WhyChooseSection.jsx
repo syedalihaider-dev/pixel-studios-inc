@@ -78,13 +78,13 @@ export default function WhyChooseSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className={styles.title}>Why Choose Pixels Studios as Your 2D<br />Animation Service Provider?</h2>
+          <h2 className={styles.title}>Why Choose Pixel Studios as Your 2D<br />Animation Service Provider?</h2>
           <p className={styles.subtitle}>
             Choosing a 2D animation company is a trust decision. You are handing over your brief, your budget, and a deadline with downstream consequences.
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="row g-4"
           variants={containerVariants}
           initial="hidden"

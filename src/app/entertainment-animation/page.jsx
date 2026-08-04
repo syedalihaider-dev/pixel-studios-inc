@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/EntertainmentAnimation/GreatVideosS
 import FaqSection from "@/components/EntertainmentAnimation/FaqSection";
 
 export const metadata = {
-  title: "Entertainment Animation Service | Pixels Studios",
-  description: "Pixels Studios' entertainment animation service delivers trailers, music videos, and character content built for studios, labels, and creators.",
+  title: "Entertainment Animation Service | Pixel Studios",
+  description: "Pixel Studios' entertainment animation service delivers trailers, music videos, and character content built for studios, labels, and creators.",
 };
 
 export default function EntertainmentAnimationPage() {

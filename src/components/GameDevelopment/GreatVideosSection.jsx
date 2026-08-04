@@ -21,7 +21,7 @@ const GreatVideosSection = () => {
                 We make <span>great<br />videos</span>, just for you.
               </h2>
               <p className={styles.text}>
-                In a world of remixes, custom created videos are a breath of fresh air. You know that video is the future of marketing. What you might not know is that Pixels Studios helps make the video production process easier than ever before. If you have an idea for a video, we can do it.
+                In a world of remixes, custom created videos are a breath of fresh air. You know that video is the future of marketing. What you might not know is that Pixel Studios helps make the video production process easier than ever before. If you have an idea for a video, we can do it.
               </p>
             </div>
             <div className="col-lg-3 text-lg-end mt-4 mt-lg-0">

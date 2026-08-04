@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/GovernmentAnimation/GreatVideosSect
 import FaqSection from "@/components/GovernmentAnimation/FaqSection";
 
 export const metadata = {
-  title: "Government Animation Services | Pixels Studios",
-  description: "Pixels Studios' government animation services deliver public awareness, training, and explainer videos built for agencies at every level.",
+  title: "Government Animation Services | Pixel Studios",
+  description: "Pixel Studios' government animation services deliver public awareness, training, and explainer videos built for agencies at every level.",
 };
 
 export default function GovernmentAnimationPage() {

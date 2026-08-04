@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Do you provide script writing?",
-    answer: "Yes. Professional scriptwriting is included in every Pixels Studios whiteboard animation project. We do not produce animation from client-provided scripts unless the client specifically requests it and the script has been reviewed and approved by our team. The script is too important to the outcome to be treated as a pre-production formality.",
+    answer: "Yes. Professional scriptwriting is included in every Pixel Studios whiteboard animation project. We do not produce animation from client-provided scripts unless the client specifically requests it and the script has been reviewed and approved by our team. The script is too important to the outcome to be treated as a pre-production formality.",
   },
   {
     question: "Do you provide professional voiceovers?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "Do you create custom illustrations?",
-    answer: "Yes. Every illustration in a Pixels Studios whiteboard animation is created custom for your project. We do not use pre-built illustration libraries or template packs.",
+    answer: "Yes. Every illustration in a Pixel Studios whiteboard animation is created custom for your project. We do not use pre-built illustration libraries or template packs.",
   },
   {
     question: "Who owns the final video?",

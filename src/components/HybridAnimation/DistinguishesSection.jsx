@@ -65,7 +65,7 @@ const DistinguishesSection = () => {
       >
         <div className="row justify-content-center text-center mb-5">
           <div className="col-12 col-lg-12">
-            <p className="subtitle">WHAT MAKES PIXELS STUDIOS A LEADING GAME</p>
+            <p className="subtitle">WHAT MAKES Pixel STUDIOS A LEADING GAME</p>
             <h2 className={styles.mainHeading}>Character Animation Services for Games</h2>
             <p className={styles.topParagraph}>
               We animate characters across the spectrum of game genres. Not every game needs photorealistic animation. Not every game benefits from motion capture. The right style serves the gameplay, the IP, and the target platform.

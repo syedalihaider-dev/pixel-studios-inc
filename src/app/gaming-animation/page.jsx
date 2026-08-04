@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/GamingAnimation/GreatVideosSection"
 import FaqSection from "@/components/GamingAnimation/FaqSection";
 
 export const metadata = {
-  title: "Game Animation Services | Pixels Studios",
-  description: "Pixels Studios' game animation services deliver character, environment, and cinematic animation for developers and publishers of every scale.",
+  title: "Game Animation Services | Pixel Studios",
+  description: "Pixel Studios' game animation services deliver character, environment, and cinematic animation for developers and publishers of every scale.",
 };
 
 export default function GamingAnimationPage() {

@@ -9,21 +9,21 @@ const testimonialsData = [
     id: 1,
     name: "Jules Kenneth",
     role: "Chief Visionary Officer, Technology Brand",
-    content: "We launched a rebranded identity and needed logo animation that could carry the new brand across every video asset we produce. Pixels Studios developed three concept directions in the first week. The one we chose has been used across more than 40 pieces of video content since launch. Every stakeholder who has seen it, including our board and agency partners, has commented on the production quality unprompted.",
+    content: "We launched a rebranded identity and needed logo animation that could carry the new brand across every video asset we produce. Pixel Studios developed three concept directions in the first week. The one we chose has been used across more than 40 pieces of video content since launch. Every stakeholder who has seen it, including our board and agency partners, has commented on the production quality unprompted.",
     image: "/testi-client-01.png"
   },
   {
     id: 2,
     name: "Sophie Daniel",
     role: "Chief Marketing Officer, SaaS Platform",
-    content: "We needed a logo animation for a product launch across Instagram, LinkedIn, and YouTube simultaneously. Pixels Studios produced a master animation and three platform-specific versions without us managing separate briefs for each. The LinkedIn version alone drove a 40% increase in video completion rate compared to our previous non-animated content.",
+    content: "We needed a logo animation for a product launch across Instagram, LinkedIn, and YouTube simultaneously. Pixel Studios produced a master animation and three platform-specific versions without us managing separate briefs for each. The LinkedIn version alone drove a 40% increase in video completion rate compared to our previous non-animated content.",
     image: "/testi-client-02.png"
   },
   {
     id: 3,
     name: "Benjamin Tyler",
     role: "Co-Founder, Mobile App Company",
-    content: "Our app had been live for two years without a professional logo animation for the onboarding sequence. Pixels Studios produced a minimal 3D logo reveal optimized for small screen sizes. It became the opening of our entire onboarding flow and we received direct user feedback mentioning the app's polished feel, specifically referencing the intro.",
+    content: "Our app had been live for two years without a professional logo animation for the onboarding sequence. Pixel Studios produced a minimal 3D logo reveal optimized for small screen sizes. It became the opening of our entire onboarding flow and we received direct user feedback mentioning the app's polished feel, specifically referencing the intro.",
     image: "/testi-client-03.png"
   }
 ];

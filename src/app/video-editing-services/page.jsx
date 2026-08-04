@@ -15,8 +15,8 @@ import FaqSection from "@/components/VideoEditingServices/FaqSection";
 
 
 export const metadata = {
-  title: "Professional Video Editing Services for Brands & Businesses | Pixels Studios",
-  description: "Need professional video editing services that make your footage perform? Pixels Studios delivers custom video post production for brands and creators. Get a quote today.",
+  title: "Professional Video Editing Services for Brands & Businesses | Pixel Studios",
+  description: "Need professional video editing services that make your footage perform? Pixel Studios delivers custom video post production for brands and creators. Get a quote today.",
 };
 
 export default function VideoEditingServices() {
@@ -24,7 +24,7 @@ export default function VideoEditingServices() {
     <main>
       <Banner
         title="Professional Video Editing Services for Brands, Creators, and Businesses"
-        description="At Pixels Studios Inc., our professional video editing services exist to close the gap between footage that was captured and content that performs. We are a dedicated video editing studio serving brands, content creators, marketing teams, and agencies across the USA with video post production services that treat the edit as a creative and strategic discipline, not a technical formality."
+        description="At Pixel Studios Inc., our professional video editing services exist to close the gap between footage that was captured and content that performs. We are a dedicated video editing studio serving brands, content creators, marketing teams, and agencies across the USA with video post production services that treat the edit as a creative and strategic discipline, not a technical formality."
         video="/videos/home.webm"
         showPlayButton={true}
       />

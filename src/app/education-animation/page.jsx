@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/EducationAnimation/GreatVideosSecti
 import FaqSection from "@/components/EducationAnimation/FaqSection";
 
 export const metadata = {
-  title: "Education Animation Service | Pixels Studios",
-  description: "Pixels Studios' education animation service turns lessons, training, and complex topics into engaging video that students and learners retain.",
+  title: "Education Animation Service | Pixel Studios",
+  description: "Pixel Studios' education animation service turns lessons, training, and complex topics into engaging video that students and learners retain.",
 };
 
 export default function EducationAnimationPage() {

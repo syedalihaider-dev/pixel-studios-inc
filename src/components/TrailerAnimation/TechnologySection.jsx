@@ -66,7 +66,7 @@ const CooperationModelsSection = () => {
             <p className="subtitle">Why Choose</p>
             <h2 className={styles.mainHeading}>Why Choose Our Motion Graphics Company?</h2>
             <p className={styles.topParagraph}>
-              We focus on clear communication, steady progress, and deliverables you can actually use. Pixels Studios works best with clients who value clarity and consistency over quick, flashy results.
+              We focus on clear communication, steady progress, and deliverables you can actually use. Pixel Studios works best with clients who value clarity and consistency over quick, flashy results.
             </p>
           </div>
         </div>

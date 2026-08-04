@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/NonProfitAnimation/GreatVideosSecti
 import FaqSection from "@/components/NonProfitAnimation/FaqSection";
 
 export const metadata = {
-  title: "Non-Profit Animation Services | Pixels Studios",
-  description: "Pixels Studios' non-profit animation services turn missions and campaigns into video that moves donors, volunteers, and communities to act.",
+  title: "Non-Profit Animation Services | Pixel Studios",
+  description: "Pixel Studios' non-profit animation services turn missions and campaigns into video that moves donors, volunteers, and communities to act.",
 };
 
 export default function NonProfitAnimationPage() {

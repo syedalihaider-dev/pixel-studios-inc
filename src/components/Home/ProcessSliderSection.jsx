@@ -104,7 +104,7 @@ export default function ProcessSliderSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          How a Video Animation Gets Built at Pixels Studios, From Brief to Final Frame
+          How a Video Animation Gets Built at Pixel Studios, From Brief to Final Frame
         </motion.h2>
         <p className={styles.description}>Every studio describes its process as smooth. Here is ours in detail so you can judge it yourself.</p>
 

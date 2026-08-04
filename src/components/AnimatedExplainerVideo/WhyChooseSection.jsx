@@ -53,7 +53,7 @@ const HowWeWorkSection = () => {
             >
               <h2 className={styles.heading}>Why Choose Our Animated Explainer Video Company?</h2>
               <p className={styles.description}>
-                There is no shortage of animated explainer video makers. Here is what specifically distinguishes Pixels Studios from the category.
+                There is no shortage of animated explainer video makers. Here is what specifically distinguishes Pixel Studios from the category.
               </p>
               <div className={styles.buttonsWrapper}>
                 <CTAButton type="button" text="Let's Talk" />

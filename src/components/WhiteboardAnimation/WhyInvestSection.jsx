@@ -41,7 +41,7 @@ const accordionData = [
     id: 6,
     icon: '/animation.png',
     title: 'Voiceover & Sound Design',
-    content: 'Professional voiceover direction is included in every Pixels Studios whiteboard animation project. We work with a vetted roster of voice talent and select based on your audience profile, your brand tone, and the energy the script calls for. Sound design — including background music and audio mixing — is completed in-house and delivered with the final video.',
+    content: 'Professional voiceover direction is included in every Pixel Studios whiteboard animation project. We work with a vetted roster of voice talent and select based on your audience profile, your brand tone, and the energy the script calls for. Sound design — including background music and audio mixing — is completed in-house and delivered with the final video.',
   },
   {
     id: 7,

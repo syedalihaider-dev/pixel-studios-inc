@@ -18,7 +18,7 @@ const CooperationModelsSection = () => {
       id: 1,
       icon: "/game-development/outstaffing.png",
       title: "Experienced Whiteboard Animators",
-      text: "Every whiteboard animation at Pixels Studios is produced by a team that has spent years specifically in the whiteboard format — not generalist animators who rotate between styles depending on the brief. Whiteboard animation has its own visual grammar, its own pacing logic, and its own approach to information sequencing. That expertise is not interchangeable with 2D character animation or motion graphics experience."
+      text: "Every whiteboard animation at Pixel Studios is produced by a team that has spent years specifically in the whiteboard format — not generalist animators who rotate between styles depending on the brief. Whiteboard animation has its own visual grammar, its own pacing logic, and its own approach to information sequencing. That expertise is not interchangeable with 2D character animation or motion graphics experience."
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const CooperationModelsSection = () => {
       id: 3,
       icon: "/game-development/managed-outsourcing.png",
       title: "Custom Illustrations",
-      text: "Every visual element in a Pixels Studios whiteboard animation is drawn for your project. We do not use template packs or stock icon libraries. Custom illustration means your video has a visual identity that is specific to your brand and your message — and it means the illustrations actually explain what they are supposed to explain, rather than approximating it."
+      text: "Every visual element in a Pixel Studios whiteboard animation is drawn for your project. We do not use template packs or stock icon libraries. Custom illustration means your video has a visual identity that is specific to your brand and your message — and it means the illustrations actually explain what they are supposed to explain, rather than approximating it."
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ const CooperationModelsSection = () => {
       id: 6,
       icon: "/game-development/managed-outsourcing.png",
       title: "Dedicated Project Management",
-      text: "Every Pixels Studios project has a dedicated project manager who owns the timeline, owns the communication, and owns the outcome. You will not be passed between departments or left waiting for status updates. One point of contact, start to finish."
+      text: "Every Pixel Studios project has a dedicated project manager who owns the timeline, owns the communication, and owns the outcome. You will not be passed between departments or left waiting for status updates. One point of contact, start to finish."
     }
   ];
 
@@ -66,7 +66,7 @@ const CooperationModelsSection = () => {
             <p className="subtitle">Why Choose Our</p>
             <h2 className={styles.mainHeading}>Whiteboard Animation Company?</h2>
             <p className={styles.topParagraph}>
-              Choosing the right whiteboard animation company determines whether your video gets watched, understood, and acted on — or archived. Here is what makes Pixels Studios the whiteboard animation studio brands and organizations return to.
+              Choosing the right whiteboard animation company determines whether your video gets watched, understood, and acted on — or archived. Here is what makes Pixel Studios the whiteboard animation studio brands and organizations return to.
             </p>
           </div>
         </div>

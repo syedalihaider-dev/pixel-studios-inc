@@ -15,8 +15,8 @@ import FaqSection from "@/components/IndustrialAnimation3D/FaqSection";
 
 
 export const metadata = {
-  title: "3D Industrial Animation Services for Modern Industries | Pixels Studios",
-  description: "Need 3D industrial animation services that engineers actually trust? Pixels Studios builds technically accurate animation for manufacturing and industrial brands.",
+  title: "3D Industrial Animation Services for Modern Industries | Pixel Studios",
+  description: "Need 3D industrial animation services that engineers actually trust? Pixel Studios builds technically accurate animation for manufacturing and industrial brands.",
 };
 
 export default function IndustrialAnimation3DPage() {

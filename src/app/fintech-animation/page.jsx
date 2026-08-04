@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/FintechAnimation/GreatVideosSection
 import FaqSection from "@/components/FintechAnimation/FaqSection";
 
 export const metadata = {
-  title: "Fintech Animation Service | Pixels Studios",
-  description: "Pixels Studios' fintech animation service turns complex financial products, data, and compliance into clear video for users, investors, and regulators.",
+  title: "Fintech Animation Service | Pixel Studios",
+  description: "Pixel Studios' fintech animation service turns complex financial products, data, and compliance into clear video for users, investors, and regulators.",
 };
 
 export default function FintechAnimationPage() {

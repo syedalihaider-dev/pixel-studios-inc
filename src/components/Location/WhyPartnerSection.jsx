@@ -59,11 +59,11 @@ export default function WhyPartnerSection() {
   };
 
   const cardVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 150, 
+    hidden: {
+      opacity: 0,
+      y: 150,
       scale: 0.8,
-      rotate: 0 
+      rotate: 0
     },
     visible: (custom) => ({
       opacity: 1,
@@ -82,17 +82,17 @@ export default function WhyPartnerSection() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <motion.h2 
+        <motion.h2
           className={styles.heading}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Why Pixels Studios Is the Animation Partner Brands Come Back to Year After Year
+          Why Pixel Studios Is the Animation Partner Brands Come Back to Year After Year
         </motion.h2>
 
-        <motion.div 
+        <motion.div
           className={styles.cardsWrapper}
           variants={containerVariants}
           initial="hidden"
@@ -105,10 +105,10 @@ export default function WhyPartnerSection() {
               className={styles.card}
               custom={card}
               variants={cardVariants}
-              whileHover={isMobile ? {} : { 
-                scale: 1.05, 
-                rotate: 0, 
-                y: -10, 
+              whileHover={isMobile ? {} : {
+                scale: 1.05,
+                rotate: 0,
+                y: -10,
                 zIndex: 10,
                 boxShadow: "0px 20px 40px rgba(203, 9, 164, 0.4)",
                 transition: { duration: 0.3, ease: "easeOut" }

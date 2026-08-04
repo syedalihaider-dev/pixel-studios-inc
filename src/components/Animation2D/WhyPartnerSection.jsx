@@ -40,8 +40,8 @@ const cardsData = [
 export default function WhyPartnerSection() {
   return (
     <GlobalWhyPartnerSection
-      heading="Why Choose Pixels Studios as Your 2D Animation Service Provider?"
-      description="Choosing a 2D animation company is a trust decision. You are handing over your brief, your budget, and a deadline with downstream consequences. Here is what makes Pixels Studios the right choice."
+      heading="Why Choose Pixel Studios as Your 2D Animation Service Provider?"
+      description="Choosing a 2D animation company is a trust decision. You are handing over your brief, your budget, and a deadline with downstream consequences. Here is what makes Pixel Studios the right choice."
       cardsData={cardsData}
       variant="gradient"
     />

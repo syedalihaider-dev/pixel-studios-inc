@@ -50,7 +50,7 @@ const CostSection = () => {
         >
           <div className={styles.divider}></div>
           <p className={styles.bottomText}>
-            Pixels Studios approaches animated advertising services differently: the hook is brief one, and everything else is built around holding the attention the opening frame has already earned.
+            Pixel Studios approaches animated advertising services differently: the hook is brief one, and everything else is built around holding the attention the opening frame has already earned.
           </p>
           <div className={styles.divider}></div>
         </motion.div>

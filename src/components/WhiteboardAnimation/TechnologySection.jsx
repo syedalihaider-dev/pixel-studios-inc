@@ -30,7 +30,7 @@ const CooperationModelsSection = () => {
       id: 3,
       icon: "/game-development/managed-outsourcing.png",
       title: "Adobe Illustrator",
-      text: "Every custom illustration in a Pixels Studios whiteboard animation begins in Illustrator. Vector artwork built here scales perfectly across every resolution and platform, and integrates cleanly into After Effects and VideoScribe production pipelines without quality loss."
+      text: "Every custom illustration in a Pixel Studios whiteboard animation begins in Illustrator. Vector artwork built here scales perfectly across every resolution and platform, and integrates cleanly into After Effects and VideoScribe production pipelines without quality loss."
     },
     {
       id: 4,

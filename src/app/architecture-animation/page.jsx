@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/ArchitectureAnimation/GreatVideosSe
 import FaqSection from "@/components/ArchitectureAnimation/FaqSection";
 
 export const metadata = {
-  title: "Architecture Animation Service | Pixels Studios",
-  description: "Pixels Studios' architecture animation service turns architectural drawings into photorealistic renderings, walkthroughs, and CGI presentations.",
+  title: "Architecture Animation Service | Pixel Studios",
+  description: "Pixel Studios' architecture animation service turns architectural drawings into photorealistic renderings, walkthroughs, and CGI presentations.",
 };
 
 export default function ArchitectureAnimationPage() {

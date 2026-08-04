@@ -66,9 +66,10 @@ export async function POST(request) {
 
     // Recipients list
     const recipients = [
-      // 'zain@iceanimations.com',
-      // 'ppc@iceanimations.com',
-      // 'ppc.cd@letusproceed.com',
+      'zain@iceanimations.com',
+      'ppc@iceanimations.com',
+      'saif.ahmed@iceanimations.com',
+      'hussam.khan@iceanimations.com',
       'ali.haider@canvasdigital.net'
     ];
 

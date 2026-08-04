@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/ManufacturingAnimation/GreatVideosS
 import FaqSection from "@/components/ManufacturingAnimation/FaqSection";
 
 export const metadata = {
-  title: "Manufacturing Animation Services | Pixels Studios",
-  description: "Pixels Studios' manufacturing animation services turn production processes, machinery, and safety training into clear, accurate video content.",
+  title: "Manufacturing Animation Services | Pixel Studios",
+  description: "Pixel Studios' manufacturing animation services turn production processes, machinery, and safety training into clear, accurate video content.",
 };
 
 export default function ManufacturingAnimationPage() {

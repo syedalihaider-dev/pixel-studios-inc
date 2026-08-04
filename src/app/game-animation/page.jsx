@@ -20,8 +20,8 @@ import FaqSection from "@/components/GameAnimation/FaqSection";
 
 
 export const metadata = {
-  title: "Professional Game Animation Services for Engaging Gameplay | Pixels Studios",
-  description: "Need game animation services that make players feel the weight of every move? Pixels Studios delivers 2D and 3D game animation for Unity, Unreal, and any engine.",
+  title: "Professional Game Animation Services for Engaging Gameplay | Pixel Studios",
+  description: "Need game animation services that make players feel the weight of every move? Pixel Studios delivers 2D and 3D game animation for Unity, Unreal, and any engine.",
 };
 
 export default function GameAnimationPage() {
@@ -29,7 +29,7 @@ export default function GameAnimationPage() {
     <main>
       <Banner
         title="Professional Game Animation Services for Engaging Gameplay Experiences."
-        description="Pixels Studios produces game animation services built around the end state: animation that performs correctly in the engine, transitions cleanly between states, and communicates the character"
+        description="Pixel Studios produces game animation services built around the end state: animation that performs correctly in the engine, transitions cleanly between states, and communicates the character"
         video="/videos/home.webm"
         showPlayButton={true}
       />

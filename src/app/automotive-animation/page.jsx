@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/AutomotiveAnimation/GreatVideosSect
 import FaqSection from "@/components/AutomotiveAnimation/FaqSection";
 
 export const metadata = {
-  title: "Automotive Animation Services | Pixels Studios",
-  description: "Pixels Studios' automotive animation services deliver 3D vehicle, technical, and commercial animation for launches, engineering, and marketing.",
+  title: "Automotive Animation Services | Pixel Studios",
+  description: "Pixel Studios' automotive animation services deliver 3D vehicle, technical, and commercial animation for launches, engineering, and marketing.",
 };
 
 export default function AutomotiveAnimationPage() {

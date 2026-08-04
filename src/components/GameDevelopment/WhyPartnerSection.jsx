@@ -89,7 +89,7 @@ export default function WhyPartnerSection() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Why Pixels Studios Is the Animation Partner Brands Come Back to Year After Year
+          Why Pixel Studios Is the Animation Partner Brands Come Back to Year After Year
         </motion.h2>
 
         <motion.div

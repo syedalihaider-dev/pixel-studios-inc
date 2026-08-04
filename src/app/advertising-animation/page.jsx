@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/AdvertisingAnimation/GreatVideosSec
 import FaqSection from "@/components/AdvertisingAnimation/FaqSection";
 
 export const metadata = {
-  title: "Advertising Animation Services | Pixels Studios",
-  description: "Pixels Studios' advertising animation services deliver commercial, social, and motion graphics video built to stop the scroll and drive results.",
+  title: "Advertising Animation Services | Pixel Studios",
+  description: "Pixel Studios' advertising animation services deliver commercial, social, and motion graphics video built to stop the scroll and drive results.",
 };
 
 export default function AdvertisingAnimationPage() {

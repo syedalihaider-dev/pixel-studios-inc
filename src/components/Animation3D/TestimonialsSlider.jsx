@@ -9,28 +9,28 @@ const testimonialsData = [
     id: 1,
     name: "Dr. William Smith",
     role: "President and Founder, Medical Technology Company",
-    content: "We needed a 3D animation company that could handle medical device visualization to clinical accuracy standards on a tight timeline. Pixels Studios delivered a photorealistic surgical animation that our clinical team approved without structural corrections. Two of our investors cited the animation specifically in their decision to proceed.",
+    content: "We needed a 3D animation company that could handle medical device visualization to clinical accuracy standards on a tight timeline. Pixel Studios delivered a photorealistic surgical animation that our clinical team approved without structural corrections. Two of our investors cited the animation specifically in their decision to proceed.",
     image: "/testi-client-01.png"
   },
   {
     id: 2,
     name: "Kay Diaz",
     role: "CEO, Industrial Manufacturing Brand",
-    content: "Our product is a precision component that photography has never captured well enough. The 3D product animation Pixels Studios produced showed every internal mechanism in motion with a clarity we had never achieved. Our sales team uses it in every customer presentation, and it is now our most-used commercial asset.",
+    content: "Our product is a precision component that photography has never captured well enough. The 3D product animation Pixel Studios produced showed every internal mechanism in motion with a clarity we had never achieved. Our sales team uses it in every customer presentation, and it is now our most-used commercial asset.",
     image: "/testi-client-02.png"
   },
   {
     id: 3,
     name: "SARAH JENKINS",
     role: "Director of Marketing, EdTech Inc",
-    content: "The educational animations provided by Pixels Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
+    content: "The educational animations provided by Pixel Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
     image: "/testi-client-03.png"
   },
   // {
   //   id: 4,
   //   name: "SARAH JENKINS",
   //   role: "Director of Marketing, EdTech Inc",
-  //   content: "The educational animations provided by Pixels Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
+  //   content: "The educational animations provided by Pixel Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
   //   image: "/testi-client-01.png"
   // },
   // {

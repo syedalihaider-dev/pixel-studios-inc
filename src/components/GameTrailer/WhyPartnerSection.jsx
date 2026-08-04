@@ -16,7 +16,7 @@ const CostSection = () => {
                             transition={{ duration: 0.6 }}
                         >
                             <p className="subtitle">Why Choose Us</p>
-                            <h2 className={styles.title}>Why Choose Pixels Studios for Game Trailer Production?</h2>
+                            <h2 className={styles.title}>Why Choose Pixel Studios for Game Trailer Production?</h2>
                             <p className={styles.description}>
                                 Because we start with the brief that most trailer studios skip. Who is the viewer, and what does the trailer need to change about what they think, feel, or plan to do? That question has a specific answer for every game and every moment in its commercial lifecycle. The trailer that answers it correctly generates wishlists, purchases, and the organic sharing that no media budget can replicate. The trailer that does not answer it correctly is an expensive video that documents the features of a game the viewer has already decided not to buy.
                             </p>

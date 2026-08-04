@@ -18,7 +18,7 @@ const CostSection = () => {
               <p className="subtitle">COLLABORATIVE APPROACH</p>
               <h2 className={styles.title}>Create Stunning Visual Content with AI Animation Services</h2>
               <p className={styles.description}>
-                The brands that will win with AI animation are not the ones that hand a brief to a generative tool and publish the output. They are the ones who use AI to accelerate a production process that is still being directed by people who know what great animation looks like, why it works, and how to push the AI output to the level the brief actually requires. That is the service Pixels Studios offers.
+                The brands that will win with AI animation are not the ones that hand a brief to a generative tool and publish the output. They are the ones who use AI to accelerate a production process that is still being directed by people who know what great animation looks like, why it works, and how to push the AI output to the level the brief actually requires. That is the service Pixel Studios offers.
               </p>
             </motion.div>
           </div>

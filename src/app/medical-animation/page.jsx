@@ -15,8 +15,8 @@ import FaqSection from "@/components/MedicalAnimation/FaqSection";
 
 
 export const metadata = {
-  title: "Medical Animation Services for Healthcare & Life Sciences | Pixels Studios",
-  description: "Need medical animation services that pass clinical review? Pixels Studios builds 3D medical animations for pharma, medical devices, and healthcare education. Get a quote.",
+  title: "Medical Animation Services for Healthcare & Life Sciences | Pixel Studios",
+  description: "Need medical animation services that pass clinical review? Pixel Studios builds 3D medical animations for pharma, medical devices, and healthcare education. Get a quote.",
 };
 
 export default function MedicalAnimationPage() {

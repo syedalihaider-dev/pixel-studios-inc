@@ -15,7 +15,7 @@ import FaqSection from "@/components/Animation3D/FaqSection";
 
 
 export const metadata = {
-  title: "Premium 3D Animation Services Studio in USA | Pixels Studios",
+  title: "Premium 3D Animation Services Studio in USA | Pixel Studios",
   description: "Premium 3D Animation Services in USA. Get high-quality, affordable 3D animations that engage audiences, boost conversions, and grow your brand.",
 };
 
@@ -24,7 +24,7 @@ export default function ThreeDAnimation() {
     <main>
       <Banner
         title="Premium 3D Animation Services in the USA"
-        description="At Pixels Studios Inc., our professional 3D animation services remove that uncertainty.  We translate products, concepts, and processes into photorealistic, high-definition 3D video animation services that show audiences exactly what they need to see to act. As a full-service 3D animation studio working with brands across the USA, every production starts with your business objective. Whether you need 3D product animation for a launch, cinematic visuals for an investor pitch, or medical animation for a clinical audience, our 3D animators build every frame with purpose."
+        description="At Pixel Studios Inc., our professional 3D animation services remove that uncertainty.  We translate products, concepts, and processes into photorealistic, high-definition 3D video animation services that show audiences exactly what they need to see to act. As a full-service 3D animation studio working with brands across the USA, every production starts with your business objective. Whether you need 3D product animation for a launch, cinematic visuals for an investor pitch, or medical animation for a clinical audience, our 3D animators build every frame with purpose."
         video="/videos/home.webm"
         showPlayButton={true}
       />

@@ -14,8 +14,8 @@ import FaqSection from "@/components/AnimationAI/FaqSection";
 
 
 export const metadata = {
-  title: "AI Animation Services for Smart, Scalable Storytelling | Pixels Studios",
-  description: "AI animation services that combine the speed of AI with the creative control your brand actually needs. Pixels Studios delivers AI-powered animation without the uncanny valley. Get a quote.",
+  title: "AI Animation Services for Smart, Scalable Storytelling | Pixel Studios",
+  description: "AI animation services that combine the speed of AI with the creative control your brand actually needs. Pixel Studios delivers AI-powered animation without the uncanny valley. Get a quote.",
 };
 
 export default function AnimationAIPage() {
@@ -23,7 +23,7 @@ export default function AnimationAIPage() {
     <main>
       <Banner
         title="AI Animation Services for Smart, Scalable Storytelling"
-        description="At Pixels Studios Inc., our AI animation services combine the production velocity that AI tools now make possible with the creative direction, quality control, and strategic thinking that AI cannot replace. The result is an animation that is faster than traditional production and better than unmanaged AI output. Both things at once."
+        description="At Pixel Studios Inc., our AI animation services combine the production velocity that AI tools now make possible with the creative direction, quality control, and strategic thinking that AI cannot replace. The result is an animation that is faster than traditional production and better than unmanaged AI output. Both things at once."
         video="/videos/home.webm"
         showPlayButton={true}
       />

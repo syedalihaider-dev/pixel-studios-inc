@@ -15,8 +15,8 @@ import FaqSection from "@/components/WhiteboardAnimation/FaqSection";
 
 
 export const metadata = {
-  title: "Whiteboard Animation Services | Pixels Studios Inc.",
-  description: "Professional whiteboard animation services for explainer videos, training, and marketing. Pixels Studios Inc. delivers clear, compelling whiteboard animation videos built to educate and convert.",
+  title: "Whiteboard Animation Services | Pixel Studios Inc.",
+  description: "Professional whiteboard animation services for explainer videos, training, and marketing. Pixel Studios Inc. delivers clear, compelling whiteboard animation videos built to educate and convert.",
 };
 
 export default function WhiteboardAnimation() {
@@ -24,7 +24,7 @@ export default function WhiteboardAnimation() {
     <main>
       <Banner
         title="Whiteboard Animation Services for Branding, Training, & Marketing"
-        description="Most animated videos are forgotten within 48 hours. Whiteboard animation videos are not, because the format does something other styles cannot: it removes every visual distraction and makes the viewer watch the idea being built in real time. That sustained attention is not an accident. It is the format working exactly as intended.  At Pixels Studios Inc., our professional whiteboard animation services are built around one objective: keeping your audience watching long enough to understand, believe, and act."
+        description="Most animated videos are forgotten within 48 hours. Whiteboard animation videos are not, because the format does something other styles cannot: it removes every visual distraction and makes the viewer watch the idea being built in real time. That sustained attention is not an accident. It is the format working exactly as intended.  At Pixel Studios Inc., our professional whiteboard animation services are built around one objective: keeping your audience watching long enough to understand, believe, and act."
         video="/videos/home.webm"
         showPlayButton={true}
       />

@@ -14,8 +14,8 @@ import TechnologySection from "@/components/LogoAnimation/TechnologySection";
 import FaqSection from "@/components/LogoAnimation/FaqSection";
 
 export const metadata = {
-  title: "Logo Animation Services That Bring Your Brand to Life | Pixels Studios",
-  description: "Looking for professional logo animation services in the USA? Pixels Studios creates custom 2D and 3D logo animations for every brand. Get your free quote today.",
+  title: "Logo Animation Services That Bring Your Brand to Life | Pixel Studios",
+  description: "Looking for professional logo animation services in the USA? Pixel Studios creates custom 2D and 3D logo animations for every brand. Get your free quote today.",
 };
 
 export default function LogoAnimation() {
@@ -23,7 +23,7 @@ export default function LogoAnimation() {
     <main>
       <Banner
         title="Logo Animation Services That Bring Your Brand to Life"
-        description="At Pixels Studios Inc., our logo animation services are built around that philosophy. We create custom logo animation that turns a static mark into a living piece of brand communication, from clean 2D logo animation for digital environments to cinematic 3D logo animation for broadcast-quality productions. We are the logo animation company brands across the USA come to when they want a brand intro that earns attention rather than borrows it."
+        description="At Pixel Studios Inc., our logo animation services are built around that philosophy. We create custom logo animation that turns a static mark into a living piece of brand communication, from clean 2D logo animation for digital environments to cinematic 3D logo animation for broadcast-quality productions. We are the logo animation company brands across the USA come to when they want a brand intro that earns attention rather than borrows it."
         video="/videos/home.webm"
         showPlayButton={true}
       />

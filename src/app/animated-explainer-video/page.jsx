@@ -14,8 +14,8 @@ import FaqSection from "@/components/AnimatedExplainerVideo/FaqSection";
 
 
 export const metadata = {
-  title: "Animated Explainer Video Services | Pixels Studios Inc.",
-  description: "Looking for animated explainer video services that convert? Pixels Studios builds custom explainer videos for businesses across the USA.",
+  title: "Animated Explainer Video Services | Pixel Studios Inc.",
+  description: "Looking for animated explainer video services that convert? Pixel Studios builds custom explainer videos for businesses across the USA.",
 };
 
 export default function AnimatedExplainerVideo() {
@@ -23,7 +23,7 @@ export default function AnimatedExplainerVideo() {
     <main>
       <Banner
         title="Animated Explainer Video Services"
-        description="At Pixels Studios Inc., our animated explainer video services are built from the audience"
+        description="At Pixel Studios Inc., our animated explainer video services are built from the audience"
         video="/videos/home.webm"
         showPlayButton={true}
       />

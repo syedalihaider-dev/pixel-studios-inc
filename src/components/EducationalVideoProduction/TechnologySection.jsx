@@ -66,7 +66,7 @@ const CooperationModelsSection = () => {
             <p className="subtitle">WHY CHOOSE US</p>
 
             <h2 className={styles.mainHeading}>
-              Why Choose Pixels Studios for Legal Graphics Animation?
+              Why Choose Pixel Studios for Legal Graphics Animation?
             </h2>
 
             <p className={styles.topParagraph}>

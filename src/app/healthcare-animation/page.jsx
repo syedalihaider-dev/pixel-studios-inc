@@ -9,8 +9,8 @@ import GreatVideosSection from "@/components/HealthcareAnimation/GreatVideosSect
 import FaqSection from "@/components/HealthcareAnimation/FaqSection";
 
 export const metadata = {
-  title: "Healthcare Animation Services | Pixels Studios",
-  description: "Pixels Studios' healthcare animation services deliver medically accurate 3D animation, patient education, and device training videos.",
+  title: "Healthcare Animation Services | Pixel Studios",
+  description: "Pixel Studios' healthcare animation services deliver medically accurate 3D animation, patient education, and device training videos.",
 };
 
 export default function HealthcareAnimationPage() {

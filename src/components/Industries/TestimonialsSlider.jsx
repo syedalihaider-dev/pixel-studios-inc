@@ -16,21 +16,21 @@ const testimonialsData = [
     id: 2,
     name: "CARLOS SAMUEL",
     role: "Project Manager, Financial Services Firm",
-    content: "We needed 2D animated training content for a compliance program with a completion rate problem. The whiteboard animation series Pixels Studios built has an 89% completion rate in our LMS versus 44% for the written equivalent. That number was cited in the board report that approved a full-year animation content budget",
+    content: "We needed 2D animated training content for a compliance program with a completion rate problem. The whiteboard animation series Pixel Studios built has an 89% completion rate in our LMS versus 44% for the written equivalent. That number was cited in the board report that approved a full-year animation content budget",
     image: "/testi-client-02.png"
   },
   {
     id: 3,
     name: "EMILY JEFF",
     role: "Chief Marketing Officer, Enterprise SaaS Company",
-    content: "Our product takes most salespeople 15 minutes to explain. After the Pixels Studios 2D animated explainer went live, our sales team used it as a pre-call primer, and our demo-to-close time dropped measurably in the first full quarter. 87 seconds of video changed our sales cycle.",
+    content: "Our product takes most salespeople 15 minutes to explain. After the Pixel Studios 2D animated explainer went live, our sales team used it as a pre-call primer, and our demo-to-close time dropped measurably in the first full quarter. 87 seconds of video changed our sales cycle.",
     image: "/testi-client-03.png"
   },
   {
     id: 4,
     name: "SARAH JENKINS",
     role: "Director of Marketing, EdTech Inc",
-    content: "The educational animations provided by Pixels Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
+    content: "The educational animations provided by Pixel Studios completely transformed how our students interact with our platform. Engagement has skyrocketed and the visual storytelling is top-notch.",
     image: "/testi-client-01.png"
   },
   {

@@ -66,7 +66,7 @@ const TeamStandoutSection = () => {
           <p className="subtitle">HOW WE WORK</p>
           <h2 className={styles.mainHeading}>Why Choose Our Corporate <span>Animation</span> Company?</h2>
           <p className={styles.headerDesc}>
-            Most corporate animation companies deliver a video. We deliver a communication outcome. Every project at Pixels Studios begins with what the video needs to accomplish — not with what it should look like. That distinction is why our clients come back, and why the videos we produce continue performing long after delivery.
+            Most corporate animation companies deliver a video. We deliver a communication outcome. Every project at Pixel Studios begins with what the video needs to accomplish — not with what it should look like. That distinction is why our clients come back, and why the videos we produce continue performing long after delivery.
           </p>
         </motion.div>
 

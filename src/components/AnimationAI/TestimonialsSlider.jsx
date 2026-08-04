@@ -9,14 +9,14 @@ const testimonialsData = [
     id: 1,
     name: "Stud Harrington",
     // role: "Chief Marketing Officer, SaaS Platform",
-    content: "We had been producing social media animation on a two-week turnaround for a biweekly content calendar. The volume was sustainable, but the quality ceiling was low. Pixels Studios proposed an AI-assisted pipeline that maintained our brand standards and cut the turnaround to five days. We are now producing at twice the volume with better creative consistency than we had at the lower volume. The AI did not replace the quality. It made the quality scalable.",
+    content: "We had been producing social media animation on a two-week turnaround for a biweekly content calendar. The volume was sustainable, but the quality ceiling was low. Pixel Studios proposed an AI-assisted pipeline that maintained our brand standards and cut the turnaround to five days. We are now producing at twice the volume with better creative consistency than we had at the lower volume. The AI did not replace the quality. It made the quality scalable.",
     image: "/testi-client-01.png"
   },
   {
     id: 2,
     name: "Austin James",
     // role: "Chief Visionary Officer, Consumer Brand",
-    content: "We needed a cinematic trailer for a game announcement on a timeline that traditional production could not hit. Pixels Studios used AI-assisted visual generation with expert compositing and delivered a trailer that our community responded to as a full production. The comments about the animation quality were positive. Nobody asked if it was AI. That is the right outcome.",
+    content: "We needed a cinematic trailer for a game announcement on a timeline that traditional production could not hit. Pixel Studios used AI-assisted visual generation with expert compositing and delivered a trailer that our community responded to as a full production. The comments about the animation quality were positive. Nobody asked if it was AI. That is the right outcome.",
     image: "/testi-client-02.png"
   },
   {

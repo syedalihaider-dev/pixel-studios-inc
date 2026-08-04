@@ -17,8 +17,8 @@ import FaqSection from "@/components/CharacterAnimation/FaqSection";
 
 
 export const metadata = {
-  title: "Professional Character Animation Services | Pixels Studios",
-  description: "Need character animation that makes audiences feel something? Pixels Studios delivers 2D and 3D character animation for games, film, marketing, and corporate content.",
+  title: "Professional Character Animation Services | Pixel Studios",
+  description: "Need character animation that makes audiences feel something? Pixel Studios delivers 2D and 3D character animation for games, film, marketing, and corporate content.",
 };
 
 export default function CharacterAnimationPage() {
@@ -26,7 +26,7 @@ export default function CharacterAnimationPage() {
     <main>
       <Banner
         title="Professional Character Animation Services"
-        description="A character animation that is technically correct but emotionally empty is one of the most expensive production failures in animated content. It is expensive because it passes every quality checklist, ships on time, and then fails the only test that matters: the audience either connects with the character or they do not. The connection is not produced by correct timing and clean splines. It is produced by the weight, the intention, and the small imperfections of motion that make an animated character feel like it is making decisions rather than executing a motion path. At Pixels Studios Inc., our character animation services are built around that distinction. We produce animations that audiences believe."
+        description="A character animation that is technically correct but emotionally empty is one of the most expensive production failures in animated content. It is expensive because it passes every quality checklist, ships on time, and then fails the only test that matters: the audience either connects with the character or they do not. The connection is not produced by correct timing and clean splines. It is produced by the weight, the intention, and the small imperfections of motion that make an animated character feel like it is making decisions rather than executing a motion path. At Pixel Studios Inc., our character animation services are built around that distinction. We produce animations that audiences believe."
         video="/videos/home.webm"
         showPlayButton={true}
       />
