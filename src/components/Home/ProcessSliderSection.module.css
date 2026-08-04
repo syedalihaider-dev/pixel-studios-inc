@@ -92,7 +92,7 @@
 }
 
 .slideText {
-  height: 90px;
+  /* height: 90px; */
   font-size: 18px;
   font-weight: var(--font-400);
   line-height: 30px;
@@ -105,6 +105,7 @@
   gap: 20px;
   align-items: center;
   flex-wrap: wrap;
+  display: none;
 }
 
 .btnGroup .btn {
@@ -204,9 +205,6 @@
   }
 
   .slideText {
-    height: 90px;
-    font-size: 18px;
-    line-height: 28px;
     margin-bottom: 20px;
   }
 
@@ -247,10 +245,8 @@
   }
 
   .slideText {
-    height: 90px;
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 20px;
   }
 
   .btnGroup {

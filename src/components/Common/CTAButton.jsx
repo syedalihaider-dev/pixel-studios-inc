@@ -20,6 +20,7 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
       text.toLowerCase().includes('get started') ||
       text.toLowerCase().includes('learn more') ||
       text.toLowerCase().includes('get a quote') ||
+      text.toLowerCase().includes('book a meeting') ||
       text.toLowerCase().includes('get quote')
     );
 

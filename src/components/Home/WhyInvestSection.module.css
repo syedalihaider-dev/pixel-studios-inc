@@ -171,6 +171,7 @@
 .accButtons {
   display: flex;
   gap: 15px;
+  display: none;
 }
 
 @media (max-width: 1600px) {

@@ -189,7 +189,10 @@ const ServicesSection = () => {
                   <p className={styles.ctaSubtitle}>Picking an animation company feels riskier?</p>
                   <h3 className={styles.ctaTitle}>Trusted Animation Company for 2D & 3D Animation Services That Fit Your Brand & Your Goals</h3>
                   <div>
-                    <CTAButton type="link" href="/#" text="Book a Meeting" />
+                    <CTAButton
+                      type="popup"
+                      text="Book a Meeting"
+                    />
                   </div>
                 </div>
               </div>

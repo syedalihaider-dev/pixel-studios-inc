@@ -107,7 +107,7 @@ export default function GetQuoteSection() {
               <div className={styles.formBox}>
                 <h3 className={styles.formTitle}>GET QUOTE</h3>
 
-                <form 
+                <form
                   onSubmit={(e) => {
                     e.preventDefault();
                     const data = new FormData(e.currentTarget);

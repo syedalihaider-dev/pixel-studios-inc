@@ -98,10 +98,10 @@ const Banner = ({
   useEffect(() => {
     let src = video || bgVideo;
     if (src === "/videos/home.webm" || src === "/videos/home.mp4") {
-      const is3d = window.location.pathname.toLowerCase().includes('3d') || 
-                   window.location.pathname.toLowerCase().includes('modeling') ||
-                   window.location.pathname.toLowerCase().includes('industrial');
-      
+      const is3d = window.location.pathname.toLowerCase().includes('3d') ||
+        window.location.pathname.toLowerCase().includes('modeling') ||
+        window.location.pathname.toLowerCase().includes('industrial');
+
       if (is3d) {
         src = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/AG0FLYKtoOt3hfVuq2BFJRY/3D.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw";
       } else {
@@ -143,7 +143,7 @@ const Banner = ({
         <div className={`row h-100 align-items-center ${centered ? 'justify-content-center' : ''}`}>
           <div className={centered ? "col-lg-10" : "col-lg-11"}>
             <div className={`${styles.contentCol} ${centered ? styles.centered : ''} banner-reveal`}>
-              
+
               {breadcrumbs && (
                 <div className={styles.breadcrumbs}>
                   {breadcrumbs}
