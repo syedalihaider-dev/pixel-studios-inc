@@ -1,4 +1,4 @@
-import Banner from "@/components/Animation2D/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/Animation2D/StatsSection";
 import ServicesSection from "@/components/Animation2D/ServicesSection";
 import WhyPartnerSection from "@/components/Animation2D/WhyPartnerSection";
@@ -21,7 +21,12 @@ export const metadata = {
 export default function TwoDAnimation() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Professional 2D Animation Services in the USA"
+        description="Most brands invest in 2D animation and get a video their marketing team likes but sales never uses. That is because most 2D animation studios focus on visuals, not results. The brands that win use 2D animated videos built around a clear audience, problem, and decision. At Pixels Studios Inc., our professional 2D animation services start with your business goal. As a dedicated 2D animation studio, we create custom 2D animated videos for brands across the USA built to perform."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <ServicesSection />
       <WhyPartnerSection />

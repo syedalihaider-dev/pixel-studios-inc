@@ -1,4 +1,4 @@
-import Banner from "@/components/TrailerAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/TrailerAnimation/StatsSection";
 import ServicesSection from "@/components/TrailerAnimation/ServicesSection";
 import CostSection from "@/components/TrailerAnimation/CostSection"
@@ -22,7 +22,12 @@ export const metadata = {
 export default function TitlesAndTrailerAnimation() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Professional Trailer Animation Services Games and Films"
+        description="At Pixels Studios Inc., our professional trailer animation services are built around that argument-first approach. We are a dedicated trailer animation company producing movie trailer production, game trailer production, and brand trailer content for clients across the USA, and every trailer video production we deliver is structured to build anticipation, not just summarize what already exists."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <ServicesSection />
       <TeamStandoutSection />

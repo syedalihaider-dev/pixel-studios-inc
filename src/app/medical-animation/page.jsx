@@ -1,4 +1,4 @@
-import Banner from "@/components/MedicalAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/MedicalAnimation/StatsSection";
 import ServicesSection from "@/components/MedicalAnimation/ServicesSection";
 import CostSection from "@/components/MedicalAnimation/CostSection"
@@ -22,7 +22,12 @@ export const metadata = {
 export default function MedicalAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Medical Animation Services for Healthcare Education and Product Marketing"
+        description="We are a dedicated medical animation studio producing 3D medical animation services for pharmaceutical companies, medical device manufacturers, healthcare systems, and life sciences organizations across the USA. Every medical animation video we deliver has been through a structured medical review process before it reaches a physician, a patient, or a regulatory body."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <CostSection />
       <ServicesSection />

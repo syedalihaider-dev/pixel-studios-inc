@@ -1,4 +1,4 @@
-import Banner from "@/components/BiotechAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/BiotechAnimation/CostSection";
 import ServicesSection from "@/components/BiotechAnimation/ServicesSection";
 import WhyChooseSection from "@/components/BiotechAnimation/WhyChooseSection";
@@ -16,7 +16,12 @@ export const metadata = {
 export default function BiotechAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Biotech Animation That Makes Complex Science Fundable"
+        description="Pixels Studios Inc. builds every biotechnology animation around accuracy first and polish second, because in this category the order matters. A beautiful animation that misrepresents the science costs you more credibility than having no visual at all. Whether you are preparing a Series A pitch, an IRB submission, or a physician education campaign, the goal stays the same: give your audience a clear, correct picture of the science in the shortest possible time."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <CostSection />
       <ServicesSection />
       <WhyChooseSection />

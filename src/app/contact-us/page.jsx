@@ -1,4 +1,4 @@
-import Banner from "@/components/Contact/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import ContactFormSection from "@/components/Contact/ContactFormSection";
 import { Metadata } from "next";
 
@@ -11,7 +11,12 @@ export const metadata = {
 export default function ContactUsPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Contact Pixel Studios"
+        description="We’ll understand your idea, walk you through the process, and show you exactly how we can bring it to life. No long forms, no back and forth just a quick conversation to get things moving. "
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <div style={{ background: "radial-gradient(60.57% 91.94% at 69.22% 43%, #19042D 0%, #19042D 100%)" }}>
         <ContactFormSection />
       </div>

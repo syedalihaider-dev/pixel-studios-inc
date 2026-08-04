@@ -1,4 +1,4 @@
-import Banner from "@/components/GovernmentAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/GovernmentAnimation/CostSection";
 import ServicesSection from "@/components/GovernmentAnimation/ServicesSection";
 import WhyChooseSection from "@/components/GovernmentAnimation/WhyChooseSection";
@@ -16,7 +16,12 @@ export const metadata = {
 export default function GovernmentAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Government Animation Citizens Actually Understand"
+        description="Public communication only works if the public actually understands it. Our government animation services turn policy, procedure, and public safety information into video that citizens and staff can follow, built for agencies that need accuracy, accessibility, and a defensible production process. Every project is built to move through your agency"
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <CostSection />
       <ServicesSection />
       <WhyChooseSection />

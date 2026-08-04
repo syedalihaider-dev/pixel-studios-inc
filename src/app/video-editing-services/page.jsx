@@ -1,4 +1,4 @@
-import Banner from "@/components/VideoEditingServices/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/VideoEditingServices/StatsSection";
 import ServicesSection from "@/components/VideoEditingServices/ServicesSection";
 import HowWeWorkSection from "@/components/VideoEditingServices/HowWeWorkSection";
@@ -22,7 +22,12 @@ export const metadata = {
 export default function VideoEditingServices() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Professional Video Editing Services for Brands, Creators, and Businesses"
+        description="At Pixels Studios Inc., our professional video editing services exist to close the gap between footage that was captured and content that performs. We are a dedicated video editing studio serving brands, content creators, marketing teams, and agencies across the USA with video post production services that treat the edit as a creative and strategic discipline, not a technical formality."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <ServicesSection />
       <HowWeWorkSection />

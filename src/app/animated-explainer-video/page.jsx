@@ -1,4 +1,4 @@
-import Banner from "@/components/AnimatedExplainerVideo/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/AnimatedExplainerVideo/StatsSection";
 import ServicesSection from "@/components/AnimatedExplainerVideo/ServicesSection";
 import HowWeWorkSection from "@/components/AnimatedExplainerVideo/HowWeWorkSection";
@@ -21,7 +21,12 @@ export const metadata = {
 export default function AnimatedExplainerVideo() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Animated Explainer Video Services"
+        description="At Pixels Studios Inc., our animated explainer video services are built from the audience"
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <ServicesSection />
       <HowWeWorkSection />

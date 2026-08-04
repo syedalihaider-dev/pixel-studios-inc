@@ -3,23 +3,30 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Banner.module.css';
 import Image from 'next/image';
 import gsap from 'gsap';
-import PlayButton from './PlayButton';
-import CTAButton from './CTAButton';
+import PlayButton from '../PlayButton';
+import CTAButton from '../CTAButton';
 
 const Banner = ({
-  slides = [],
+  title,
+  description,
+  video,
   bgVideo,
   bgImage,
+  slides = [],
   centered = false,
   showTrustBadges = false,
   showPlayButton = false,
-  actions = []
+  breadcrumbs = null,
 }) => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false);
   const slideDuration = 5; // seconds
   const slidesRef = useRef([]);
   const progressRefs = useRef([]);
-  const isSlider = slides.length > 1;
+
+  // Consolidate slides: support single title/description prop or slides array
+  const finalSlides = slides.length > 0 ? slides : (title ? [{ title, description }] : []);
+  const isSlider = finalSlides.length > 1;
 
   useEffect(() => {
     // Initial entrance animation
@@ -43,31 +50,35 @@ const Banner = ({
       gsap.set(progressRefs.current, { height: '0%' });
 
       const animateSlide = (index) => {
-        const nextIndex = (index + 1) % slides.length;
+        const nextIndex = (index + 1) % finalSlides.length;
 
         // Ensure previous slides are filled
         for (let i = 0; i < index; i++) {
-          gsap.set(progressRefs.current[i], { height: '100%' });
+          if (progressRefs.current[i]) {
+            gsap.set(progressRefs.current[i], { height: '100%' });
+          }
         }
 
         // Current slide progress
-        gsap.to(progressRefs.current[index], {
-          height: '100%',
-          duration: slideDuration,
-          ease: 'none',
-          onComplete: () => {
-            if (index === slides.length - 1) {
-              // Reset all for the next loop
-              gsap.set(progressRefs.current, { height: '0%' });
+        if (progressRefs.current[index]) {
+          gsap.to(progressRefs.current[index], {
+            height: '100%',
+            duration: slideDuration,
+            ease: 'none',
+            onComplete: () => {
+              if (index === finalSlides.length - 1) {
+                // Reset all for the next loop
+                gsap.set(progressRefs.current, { height: '0%' });
+              }
+              gsap.to(slidesRef.current[index], {
+                opacity: 0,
+                y: -20,
+                duration: 0.5,
+                onComplete: () => setActiveSlide(nextIndex)
+              });
             }
-            gsap.to(slidesRef.current[index], {
-              opacity: 0,
-              y: -20,
-              duration: 0.5,
-              onComplete: () => setActiveSlide(nextIndex)
-            });
-          }
-        });
+          });
+        }
 
         // Fade in current text
         gsap.fromTo(slidesRef.current[index],
@@ -80,13 +91,13 @@ const Banner = ({
     });
 
     return () => ctx.revert();
-  }, [activeSlide, isSlider, slides.length]);
+  }, [activeSlide, isSlider, finalSlides.length]);
 
   const [videoSrc, setVideoSrc] = useState('');
 
   useEffect(() => {
-    let src = bgVideo;
-    if (bgVideo === "/videos/home.webm" || bgVideo === "/videos/home.mp4") {
+    let src = video || bgVideo;
+    if (src === "/videos/home.webm" || src === "/videos/home.mp4") {
       const is3d = window.location.pathname.toLowerCase().includes('3d') || 
                    window.location.pathname.toLowerCase().includes('modeling') ||
                    window.location.pathname.toLowerCase().includes('industrial');
@@ -97,13 +108,25 @@ const Banner = ({
         src = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/APr1MwnvxgJidhjKrvVy3t8/2D_01.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw";
       }
     }
-    setVideoSrc(src);
-  }, [bgVideo]);
+    setVideoSrc(src || '');
+  }, [video, bgVideo]);
+
+  const isVimeo = videoSrc && (videoSrc.includes('vimeo.com') || videoSrc.includes('youtube.com') || videoSrc.includes('player.vimeo.com'));
 
   return (
     <section className={styles.bannerSection}>
       <div className={styles.overlay}></div>
-      {videoSrc ? (
+      {isVimeo ? (
+        <div className={styles.videoWrapper}>
+          <iframe
+            src={videoSrc}
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            className={styles.iframe}
+          ></iframe>
+        </div>
+      ) : videoSrc ? (
         <video
           src={videoSrc}
           autoPlay
@@ -120,9 +143,15 @@ const Banner = ({
         <div className={`row h-100 align-items-center ${centered ? 'justify-content-center' : ''}`}>
           <div className={centered ? "col-lg-10" : "col-lg-11"}>
             <div className={`${styles.contentCol} ${centered ? styles.centered : ''} banner-reveal`}>
+              
+              {breadcrumbs && (
+                <div className={styles.breadcrumbs}>
+                  {breadcrumbs}
+                </div>
+              )}
 
               <div className={styles.sliderContainer}>
-                {slides.map((slide, index) => (
+                {finalSlides.map((slide, index) => (
                   <div
                     key={index}
                     ref={el => slidesRef.current[index] = el}
@@ -141,19 +170,17 @@ const Banner = ({
                 ))}
               </div>
 
-              {actions && actions.length > 0 && (
-                <div className={`${styles.actionRow} ${centered ? 'justify-content-center mt-5' : ''} banner-reveal`}>
-                  {actions.map((action, idx) => (
-                    <CTAButton
-                      key={idx}
-                      type={action.type || 'link'}
-                      text={action.text}
-                      href={action.href}
-                      variant={action.variant}
-                    />
-                  ))}
-                </div>
-              )}
+              <div className={`${styles.actionRow} ${centered ? 'justify-content-center mt-5' : ''} banner-reveal`}>
+                <CTAButton
+                  type="popup"
+                  text="Get a Quote"
+                />
+                <CTAButton
+                  type="chat"
+                  text="Let's Talk"
+                  variant="outline"
+                />
+              </div>
 
               {showTrustBadges && (
                 <div className={`${styles.trustBadges} banner-reveal`}>
@@ -171,15 +198,15 @@ const Banner = ({
         </div>
       </div>
 
-      {isSlider && (
+      {(isSlider || showPlayButton) && (
         <div className={styles.progressContainer}>
           {showPlayButton && (
             <div className="mb-5 pb-5">
-              <PlayButton text="SHOW REEL" />
+              <PlayButton text="SHOW REEL" onClick={() => setIsVideoPopupOpen(true)} />
             </div>
           )}
 
-          {slides.map((_, index) => (
+          {isSlider && finalSlides.map((_, index) => (
             <div key={index} className={styles.progressSegment}>
               <div
                 ref={el => progressRefs.current[index] = el}
@@ -187,6 +214,31 @@ const Banner = ({
               ></div>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Video Popup Modal */}
+      {isVideoPopupOpen && (
+        <div className={styles.videoPopupModal} onClick={() => setIsVideoPopupOpen(false)}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+            <button className={styles.closeBtn} onClick={() => setIsVideoPopupOpen(false)}>×</button>
+            {isVimeo ? (
+              <iframe
+                src={videoSrc}
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                className={styles.popupIframe}
+              ></iframe>
+            ) : (
+              <video
+                src={videoSrc}
+                controls
+                autoPlay
+                className={styles.popupVideo}
+              />
+            )}
+          </div>
         </div>
       )}
     </section>

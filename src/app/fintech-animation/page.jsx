@@ -1,4 +1,4 @@
-import Banner from "@/components/FintechAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/FintechAnimation/CostSection";
 import ServicesSection from "@/components/FintechAnimation/ServicesSection";
 import WhyChooseSection from "@/components/FintechAnimation/WhyChooseSection";
@@ -16,7 +16,12 @@ export const metadata = {
 export default function FintechAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Fintech Animation That Builds Financial Trust"
+        description="Why do so many fintech products get built brilliantly and explained badly? Because financial concepts are abstract, regulated, and often invisible on screen. Our fintech animation service turns payments, data, and compliance into video that users, investors, and regulators actually understand, without losing the accuracy your industry demands."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <CostSection />
       <ServicesSection />
       <WhyChooseSection />

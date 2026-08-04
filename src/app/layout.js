@@ -20,8 +20,8 @@ export const metadata = {
   title: "Pixel Studios Inc",
   description: "Award-Winning Digital Agency",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   verification: {
     google: "BvO8shiuQFBpVIy-2A3iDrOD3pz3PExE1rg2rK32jtA",

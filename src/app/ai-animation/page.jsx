@@ -1,4 +1,4 @@
-import Banner from "@/components/AnimationAI/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/AnimationAI/StatsSection";
 import ServicesSection from "@/components/AnimationAI/ServicesSection";
 import CostSection from "@/components/AnimationAI/CostSection"
@@ -21,7 +21,12 @@ export const metadata = {
 export default function AnimationAIPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="AI Animation Services for Smart, Scalable Storytelling"
+        description="At Pixels Studios Inc., our AI animation services combine the production velocity that AI tools now make possible with the creative direction, quality control, and strategic thinking that AI cannot replace. The result is an animation that is faster than traditional production and better than unmanaged AI output. Both things at once."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <CostSection />
       <ServicesSection />

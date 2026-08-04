@@ -69,7 +69,7 @@ const WhyInvestSection = () => {
               <p className="subtitle">HOW WE WORK</p>
               <h2 className={styles.mainTitle}>Our Motion Graphics <br />Production Process</h2>
               <p className={styles.subText}>
-                Every whiteboard animation video we produce follows the same disciplined production process. There are no shortcuts, no freelance handoffs, and no phases where your project loses its strategic thread.
+                Every motion graphic video we produce follows the same disciplined production process. There are no shortcuts, no freelance handoffs, and no phases where your project loses its strategic thread.
               </p>
             </motion.div>
           </div>

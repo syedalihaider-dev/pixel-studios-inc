@@ -1,4 +1,4 @@
-import Banner from "@/components/NonProfitAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/NonProfitAnimation/CostSection";
 import ServicesSection from "@/components/NonProfitAnimation/ServicesSection";
 import WhyChooseSection from "@/components/NonProfitAnimation/WhyChooseSection";
@@ -16,7 +16,12 @@ export const metadata = {
 export default function NonProfitAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Non-Profit Animation That Moves People to Act"
+        description="A mission statement rarely moves a donor to give. A story does. Our non-profit animation services turn campaigns, missions, and impact stories into video built to reach donors, volunteers, and communities, scoped to fit the budget realities most non-profits actually work within. Every project is scoped around your actual funding, not a corporate production budget, so professional storytelling stays within reach regardless of your organization"
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <CostSection />
       <ServicesSection />
       <WhyChooseSection />

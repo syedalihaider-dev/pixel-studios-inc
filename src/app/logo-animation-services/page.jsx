@@ -1,4 +1,4 @@
-import Banner from "@/components/LogoAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/LogoAnimation/StatsSection";
 import ServicesSection from "@/components/LogoAnimation/ServicesSection";
 import HowWeWorkSection from "@/components/LogoAnimation/HowWeWorkSection";
@@ -21,7 +21,12 @@ export const metadata = {
 export default function LogoAnimation() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Logo Animation Services That Bring Your Brand to Life"
+        description="At Pixels Studios Inc., our logo animation services are built around that philosophy. We create custom logo animation that turns a static mark into a living piece of brand communication, from clean 2D logo animation for digital environments to cinematic 3D logo animation for broadcast-quality productions. We are the logo animation company brands across the USA come to when they want a brand intro that earns attention rather than borrows it."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <ServicesSection />
       <TeamStandoutSection />

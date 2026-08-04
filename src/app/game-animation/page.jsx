@@ -1,4 +1,4 @@
-import Banner from "@/components/GameAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/GameAnimation/StatsSection";
 import CostSection from "@/components/GameAnimation/CostSection";
 import FullCycleSection from "@/components/GameAnimation/FullCycleSection";
@@ -27,7 +27,12 @@ export const metadata = {
 export default function GameAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Professional Game Animation Services for Engaging Gameplay Experiences."
+        description="Pixels Studios produces game animation services built around the end state: animation that performs correctly in the engine, transitions cleanly between states, and communicates the character"
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <CostSection />
       <FullCycleSection />

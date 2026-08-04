@@ -1,5 +1,4 @@
 "use client";
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import styles from './ServicesSection.module.css';
 import { motion } from 'framer-motion';

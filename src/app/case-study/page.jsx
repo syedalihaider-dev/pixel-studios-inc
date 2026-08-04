@@ -1,4 +1,4 @@
-import Banner from "@/components/CaseStudy/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import TrustedClientsSection from "@/components/CaseStudy/TrustedClientsSection";
 import IndustrySection from "@/components/CaseStudy/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
@@ -14,7 +14,11 @@ export const metadata = {
 export default function CaseStudyPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Professional 2D Animation Services in the USA"
+        description="Why do most brands walk away from their 2D animation investment with a video their marketing team likes and their sales team never uses? Because most 2D animation studios are hired to produce something visually competent, and visual competence is not the same as commercial usefulness."
+        showPlayButton={true}
+      />
       <div style={{ background: "radial-gradient(60.57% 91.94% at 69.22% 43%, #19042D 0%, #19042D 100%)" }}>
         <FeaturedProjects />
         <TestimonialSection />

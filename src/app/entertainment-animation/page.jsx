@@ -1,4 +1,4 @@
-import Banner from "@/components/EntertainmentAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/EntertainmentAnimation/CostSection";
 import ServicesSection from "@/components/EntertainmentAnimation/ServicesSection";
 import WhyChooseSection from "@/components/EntertainmentAnimation/WhyChooseSection";
@@ -16,7 +16,12 @@ export const metadata = {
 export default function EntertainmentAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Entertainment Animation Built to Perform"
+        description="A trailer has seconds to earn a click, and a music video has to hold up next to everything else competing for the same audience. Our entertainment animation service builds trailers, shorts, and animated music videos designed for exactly that kind of pressure, where craft and speed both matter. Every project is built around your creative vision and your release timeline together, so a distinctive visual style never comes at the cost of hitting the date your marketing plan depends on."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <CostSection />
       <ServicesSection />
       <WhyChooseSection />

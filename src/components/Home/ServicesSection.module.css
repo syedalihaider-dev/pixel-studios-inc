@@ -4,6 +4,8 @@
 }
 
 .headingWrapper {
+  width: 1000px;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -15,10 +17,6 @@
 }
 
 .title {
-  font-weight: 500;
-  font-size: 100px;
-  line-height: 125px;
-  letter-spacing: -0.08em;
   text-transform: uppercase;
   background: linear-gradient(90.99deg, #19042D 38.72%, #CB09A4 116.31%);
   -webkit-background-clip: text;
@@ -217,12 +215,8 @@
   }
 
   .headingWrapper {
+    width: 900px;
     margin-bottom: 40px;
-  }
-
-  .title {
-    font-size: 80px;
-    line-height: 95px;
   }
 
   .card {
@@ -293,9 +287,8 @@
     padding: 60px 0;
   }
 
-  .title {
-    font-size: 70px;
-    line-height: 85px;
+  .headingWrapper {
+    width: 750px;
   }
 
   .card {
@@ -369,9 +362,9 @@
     padding: 40px 0;
   }
 
-  .title {
-    font-size: 40px;
-    line-height: 50px;
+  .headingWrapper {
+    width: 600px;
+    margin-bottom: 30px;
   }
 
   .card {
@@ -430,9 +423,8 @@
 }
 
 @media (max-width: 991px) {
-  .title {
-    font-size: 30px;
-    line-height: 40px;
+  .headingWrapper {
+    width: 500px;
   }
 
   .card {
@@ -451,13 +443,8 @@
 }
 
 @media (max-width: 767px) {
-  .title {
-    font-size: 25px;
-    line-height: 35px;
-  }
-
   .headingWrapper {
-    margin-bottom: 30px;
+    width: 500px;
   }
 
   .card {
@@ -513,6 +500,9 @@
 }
 
 @media (max-width: 575px) {
+  .headingWrapper {
+    width: 100%;
+  }
 
   .card {
     width: 296px;

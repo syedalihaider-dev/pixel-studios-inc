@@ -1,4 +1,4 @@
-import Banner from "@/components/HybridAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/HybridAnimation/StatsSection";
 import CostSection from "@/components/HybridAnimation/CostSection";
 import ServicesSection from "@/components/HybridAnimation/ServicesSection";
@@ -23,7 +23,12 @@ export const metadata = {
 export default function HybridAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Hybrid and Cel Animation Services for Unique and Expressive Visual Storytelling"
+        description="Cel animation and hybrid 2D/3D production are slower and more labor-intensive than puppet rigging, and that additional labor is exactly what produces the handcrafted visual texture that makes content look like it was made by artists rather than assembled from a template library. Pixels Studios Inc. produces hybrid and cel animation for brands and creators who understand that distinctiveness is a competitive advantage worth the additional production investment."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <CostSection />
       <ServicesSection />

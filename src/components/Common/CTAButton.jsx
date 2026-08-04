@@ -18,7 +18,9 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
   const handleClick = (e) => {
     const isPopupTrigger = text && (
       text.toLowerCase().includes('get started') ||
-      text.toLowerCase().includes('learn more')
+      text.toLowerCase().includes('learn more') ||
+      text.toLowerCase().includes('get a quote') ||
+      text.toLowerCase().includes('get quote')
     );
 
     const isChatTrigger = text && (

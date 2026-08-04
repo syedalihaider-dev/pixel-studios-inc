@@ -1,4 +1,4 @@
-import Banner from "@/components/About/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import MissionSection from "@/components/About/MissionSection";
 import TeamStandoutSection from "@/components/About/TeamStandoutSection";
 import HowWeWorkSection from "@/components/About/HowWeWorkSection";
@@ -15,7 +15,12 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="About Pixel Studios"
+        description="Pixel Studios is a creative video animation company dedicated to bringing ideas to life through powerful visual storytelling. We specialize in crafting high-quality animations that help brands communicate complex concepts with clarity, creativity, and impact."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <MissionSection />
       <TeamStandoutSection />
       <HowWeWorkSection />

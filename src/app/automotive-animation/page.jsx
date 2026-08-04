@@ -1,4 +1,4 @@
-import Banner from "@/components/AutomotiveAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/AutomotiveAnimation/CostSection";
 import ServicesSection from "@/components/AutomotiveAnimation/ServicesSection";
 import WhyChooseSection from "@/components/AutomotiveAnimation/WhyChooseSection";
@@ -16,7 +16,12 @@ export const metadata = {
 export default function AutomotiveAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Automotive Animation That Sells the Engineering"
+        description="Why is it so hard to show a car the way engineers actually see it? Because the systems that make a vehicle impressive, from suspension geometry to battery architecture, are hidden under the body panel. Our automotive animation services make that engineering visible, accurately and persuasively, for marketing, technical, and internal audiences alike. Every project starts from your CAD and engineering data, so the finished animation stays true to the actual vehicle, whether it is still confidential or already on the showroom floor."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <CostSection />
       <ServicesSection />
       <WhyChooseSection />

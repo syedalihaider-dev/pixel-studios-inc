@@ -1,4 +1,4 @@
-import Banner from "@/components/LegalGraphics/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/LegalGraphics/CostSection";
 import StatsSection from "@/components/LegalGraphics/StatsSection";
 import ServicesSection from "@/components/LegalGraphics/ServicesSection";
@@ -23,7 +23,12 @@ export const metadata = {
 export default function LegalGraphicsPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Legal Graphics Animation Services for Courtroom Demonstratives"
+        description="How do legal animations help judges and juries understand evidence? By showing rather than describing. An accident reconstruction animation places the viewer at the intersection. A medical legal animation shows exactly how the injury occurred at the anatomical level the clinical record documents. A forensic animation demonstrates the event timeline with the precision witness testimony cannot reliably provide. Pixels Studios Inc. provides legal graphics animation services for litigation firms, personal injury attorneys, insurance defense teams, and corporate legal departments across the USA."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <CostSection />
       <StatsSection />
       <ServicesSection />

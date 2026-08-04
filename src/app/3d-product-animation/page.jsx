@@ -1,4 +1,4 @@
-import Banner from "@/components/ProductAnimation3D/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/ProductAnimation3D/StatsSection";
 import ServicesSection from "@/components/ProductAnimation3D/ServicesSection";
 import CostSection from "@/components/ProductAnimation3D/CostSection"
@@ -22,7 +22,12 @@ export const metadata = {
 export default function TitlesAndProductAnimation3D() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Conversion-Focused 3D Product Animation Services"
+        description="Pixels Studios Inc. builds 3D product animation services around the specific objection or question your audience needs resolved before they buy. We are a dedicated 3D product animation company producing product launch animation, eCommerce product animation, and industrial product animation for brands across the USA, and every animation is built to move a buyer closer to a decision, not just look good in a portfolio reel. Whether you need to hire product animators for a single hero asset or outsource product animation services across a full catalog, the strategy comes before the render."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <CostSection />
       <ServicesSection />

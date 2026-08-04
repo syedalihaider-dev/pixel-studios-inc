@@ -8,7 +8,7 @@ const features = [
   {
     id: 1,
     title: 'Simplify Complex Messages',
-    description: "Animation sequences, timing, and visual emphasis guide the viewer through a complex idea in the order it needs to land, without requiring prior knowledge of the subject. Text cannot do that. Static images cannot do that. Motion graphics can.Amateur whiteboard animation looks like it was produced in a web browser. Professional whiteboard animation tells a visual story — where the sequence of drawings, the pacing of the voiceover, and the logical structure of the script work together as a unified communication system. That integration is the difference between content that informs and content that converts.",
+    description: "Animation sequences, timing, and visual emphasis guide the viewer through a complex idea in the order it needs to land, without requiring prior knowledge of the subject. Text cannot do that. Static images cannot do that. Motion graphics can.Amateur motion graphic looks like it was produced in a web browser. Professional motion graphic tells a visual story — where the sequence of drawings, the pacing of the voiceover, and the logical structure of the script work together as a unified communication system. That integration is the difference between content that informs and content that converts.",
     icon: '/icons/result-oriented.png'
   },
   {
@@ -60,7 +60,7 @@ const TeamStandoutSection = () => {
           <p className="subtitle">WHAT MAKES</p>
           <h2 className={styles.mainHeading}>Why Businesses Invest in <span>Motion Graphics?</span></h2>
           <p className={styles.headerDesc}>
-            The gap between a whiteboard animation video that gets watched and one that gets results comes down to production quality. These are the advantages that professional production delivers over template-based or in-house alternatives.
+            The gap between a motion graphic video that gets watched and one that gets results comes down to production quality. These are the advantages that professional production delivers over template-based or in-house alternatives.
           </p>
         </motion.div>
 

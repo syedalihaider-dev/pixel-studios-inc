@@ -1,4 +1,4 @@
-import Banner from "@/components/CorporateVideoAnimation/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/CorporateVideoAnimation/StatsSection";
 import ServicesSection from "@/components/CorporateVideoAnimation/ServicesSection";
 import CostSection from "@/components/CorporateVideoAnimation/CostSection"
@@ -22,7 +22,12 @@ export const metadata = {
 export default function CorporateVideoAnimationPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Corporate Video Animation Services for Businesses"
+        description="At Pixels Studios Inc., our corporate video animation services are built around that second question first. We produce video animation for business that is designed to move a specific audience toward a specific action, whether that is a lead submission, a training module completion, an investment decision, or a purchase. Every animated corporate video we deliver starts from the business objective, not from the storyboard."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <CostSection />
       <ServicesSection />

@@ -1,4 +1,4 @@
-import Banner from "@/components/GameTrailer/Banner";
+import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/GameTrailer/CostSection";
 import StatsSection from "@/components/GameTrailer/StatsSection";
 import ServicesSection from "@/components/GameTrailer/ServicesSection";
@@ -20,7 +20,12 @@ export const metadata = {
 export default function GameTrailerPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        title="Top-Tier Gaming Trailer Services to Ignite Your Launch"
+        description="Pixels Studios produces game trailer services built around the emotional argument the trailer needs to make, and then backwards into the footage, animation, and editing choices that deliver it. We produce cinematic game trailers, gameplay trailers, launch trailers, mobile game trailers, Steam videos, and the announcement content that creates anticipation before the game exists. Every trailer begins with a creative brief that asks what the viewer should feel at the end, not what the viewer should have seen."
+        video="/videos/home.webm"
+        showPlayButton={true}
+      />
       <StatsSection />
       <ServicesSection />
       <PortfolioShowcase />
