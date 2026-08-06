@@ -8,42 +8,42 @@ const industries = [
     title: "Healthcare and Life Sciences",
     image: "/industry/01.png",
     text: "Medical animation, pharmaceutical explainer videos, surgical animation, and healthcare animation for patient education, clinical training, and pharmaceutical product marketing are built to regulatory accuracy standards.",
-    link: "/industry/retail"
+    link: "#"
   },
   {
     id: 2,
     title: "Manufacturing and Industrial",
     image: "/industry/02.png",
     text: "Industrial safety training, machinery visualization, and assembly process animation for environments where clarity and accuracy affect safety outcomes directly.",
-    link: "/industry/professional-services"
+    link: "#"
   },
   {
     id: 3,
     title: "Engineering and Technology",
     image: "/industry/03.png",
     text: "Technical animation, software visualization, and platform demonstrations for technology companies communicating product capability to non-technical buyers without losing technical credibility.",
-    link: "/industry/software-tech"
+    link: "#"
   },
   {
     id: 4,
     title: "Architecture and Real Estate",
     image: "/industry/04.png",
     text: "Architectural rendering, architectural visualization, and property walkthroughs for developers and investors presenting projects ahead of completion.",
-    link: "/industry/medical-biotech"
+    link: "#"
   },
   {
     id: 5,
     title: "Consumer Products",
     image: "/industry/05.png",
     text: "3D commercial animation, product launch visuals, and animated product demo videos for consumer brands where visual quality determines first-impression trust.",
-    link: "/industry/education"
+    link: "#"
   },
   {
     id: 6,
     title: "Education and Training",
     image: "/industry/06.png",
     text: "Learning animations, instructional videos, and employee onboarding content for corporate training programs that need to hold attention and improve retention rates.",
-    link: "/industry/real-estate"
+    link: "#"
   }
   ,
   {
@@ -51,14 +51,14 @@ const industries = [
     title: "Entertainment and Media",
     image: "/industry/06.png",
     text: "Cinematic trailers, gaming animations, and in-game cutscenes for entertainment brands producing content for PC games, console games, and mobile games.",
-    link: "/industry/real-estate"
+    link: "#"
   },
   {
     id: 8,
     title: "Automotive and Transportation",
     image: "/industry/06.png",
     text: "Photorealistic rendering of vehicles and components for automotive marketing and engineering review, where visual realism is the primary trust signal.",
-    link: "/industry/real-estate"
+    link: "#"
   }
 ];
 

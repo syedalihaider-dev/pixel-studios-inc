@@ -126,11 +126,11 @@ const nextConfig = {
       },
 
       // Animation Studio Pages (302)
-      {
-        source: "/animation-studio-austin",
-        destination: "/",
-        permanent: false,
-      },
+      // {
+      //   source: "/animation-studio-austin",
+      //   destination: "/",
+      //   permanent: false,
+      // },
       {
         source: "/animation-studio-boston",
         destination: "/",

@@ -13,7 +13,7 @@ const industries = [
       "Optimized for YouTube creative requirements",
       "Strong hooks in the first five seconds"
     ],
-    link: "/industry/youtube-video-ads"
+    link: "#"
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const industries = [
       "Platform-specific aspect ratios",
       "Optimized for paid social campaigns"
     ],
-    link: "/industry/social-media-video-ads"
+    link: "#"
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const industries = [
       "Broadcast-ready delivery specifications",
       "Master and cut-down versions included"
     ],
-    link: "/industry/tv-commercials"
+    link: "#"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const industries = [
       "Streaming platform optimization",
       "Creative built for viewer engagement"
     ],
-    link: "/industry/ott-streaming-ads"
+    link: "#"
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const industries = [
       "Reduce bounce rate",
       "Increase visitor engagement & conversions"
     ],
-    link: "/industry/website-commercial-videos"
+    link: "#"
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ const industries = [
       "Built for e-commerce platforms",
       "Designed to increase purchase intent"
     ],
-    link: "/industry/ecommerce-product-ads"
+    link: "#"
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ const industries = [
       "Premium-quality animated creatives",
       "Optimized for paid advertising campaigns"
     ],
-    link: "/industry/paid-advertising-creatives"
+    link: "#"
   },
   {
     id: 8,
@@ -97,7 +97,7 @@ const industries = [
       "Limited-time promotional videos",
       "Creates urgency while protecting brand value"
     ],
-    link: "/industry/promotional-campaign-videos"
+    link: "#"
   }
 ];
 

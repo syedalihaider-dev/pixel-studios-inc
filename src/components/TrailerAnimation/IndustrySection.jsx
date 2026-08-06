@@ -8,42 +8,42 @@ const industries = [
     title: "Film and Entertainment",
     image: "/industry/01.png",
     text: "Movie trailer production and film title sequence design for independent films, branded entertainment, and content studios building audience anticipation for theatrical or streaming releases.",
-    link: "/industry/retail"
+    link: "#"
   },
   {
     id: 2,
     title: "Gaming and Esports",
     image: "/industry/02.png",
     text: "Game trailer production and game trailer animation for PC games, console games, mobile games, and esports events. Cinematic reveal trailers and gameplay announcement content.",
-    link: "/industry/professional-services"
+    link: "#"
   },
   {
     id: 3,
     title: "Technology and SaaS",
     image: "/industry/03.png",
     text: "Product launch trailer videos for SaaS feature releases and technology product announcements. Trailer-style content that creates a moment around what would otherwise be a standard release note.",
-    link: "/industry/software-tech"
+    link: "#"
   },
   {
     id: 4,
     title: "E-Commerce Brands",
     image: "/industry/04.png",
     text: "Promotional trailer videos for product launches and seasonal campaigns. Built to create urgency and anticipation for e-commerce brands competing for attention during high-volume shopping periods.",
-    link: "/industry/medical-biotech"
+    link: "#"
   },
   {
     id: 5,
     title: "Corporate Organizations",
     image: "/industry/05.png",
     text: "Corporate trailer videos for major announcements, brand relaunches, and organizational milestones that warrant more than a standard corporate communication format.",
-    link: "/industry/education"
+    link: "#"
   },
   {
     id: 6,
     title: "Events and Conferences",
     image: "/industry/06.png",
     text: "Event trailer animation for conferences, festivals, and brand events designed to drive registration and build anticipation in the lead-up to the event date.",
-    link: "/industry/real-estate"
+    link: "#"
   }
 ];
 

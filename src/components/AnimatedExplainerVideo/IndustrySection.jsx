@@ -8,42 +8,42 @@ const industries = [
     title: "Technology and SaaS",
     image: "/industry/01.png",
     text: "SaaS explainer videos, product walkthroughs, and feature announcements for software companies at every stage of growth.",
-    link: "/industry/retail"
+    link: "#"
   },
   {
     id: 2,
     title: "Healthcare & Medical",
     image: "/industry/02.png",
     text: "Patient education, medical device explanation, and pharmaceutical brand communication to clinical accuracy standards.",
-    link: "/industry/professional-services"
+    link: "#"
   },
   {
     id: 3,
     title: "Education & E-Learning",
     image: "/industry/03.png",
     text: "Curriculum explainer videos and instructional animated content built around learning outcomes for LMS and standalone platforms.",
-    link: "/industry/software-tech"
+    link: "#"
   },
   {
     id: 4,
     title: "Finance & Fintech",
     image: "/industry/04.png",
     text: "Investment product explanation and financial literacy content for audiences who need clarity, not simplification.",
-    link: "/industry/medical-biotech"
+    link: "#"
   },
   {
     id: 5,
     title: "Real Estate",
     image: "/industry/05.png",
     text: "Property explainer videos, development marketing, and investment communication for real estate brands and developers.",
-    link: "/industry/education"
+    link: "#"
   },
   {
     id: 6,
     title: "Manufacturing and Industrial",
     image: "/industry/06.png",
     text: "Technical process explanation, equipment walkthroughs, and safety communication for industrial and engineering audiences.",
-    link: "/industry/real-estate"
+    link: "#"
   }
   ,
   {
@@ -51,7 +51,7 @@ const industries = [
     title: "E-Commerce and Retail",
     image: "/industry/06.png",
     text: "Product explainer videos and promotional animated video services for consumer brands competing in high-attention retail environments.",
-    link: "/industry/real-estate"
+    link: "#"
   }
 ];
 
