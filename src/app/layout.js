@@ -5,6 +5,7 @@ import Header from "../components/Common/Header";
 import Footer from "../components/Common/Footer";
 import GlobalPopup from "../components/Common/GlobalPopup";
 import CanonicalLink from "../components/Common/CanonicalLink";
+import GlobalSchema from "../components/Schema/GlobalSchema";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
+        <GlobalSchema />
         <Header />
         {children}
         <Footer />

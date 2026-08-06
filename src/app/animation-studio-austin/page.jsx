@@ -208,6 +208,14 @@ const austinServicesData = [
 export const metadata = {
   title: "Animation Studio in Austin | Pixel Studios Inc",
   description: "Pixel Studios is a top-rated animation studio in Austin, TX.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function AnimationStudioAustinPage() {
