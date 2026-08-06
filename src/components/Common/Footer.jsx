@@ -1,5 +1,4 @@
 "use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -120,9 +119,9 @@ const Footer = () => {
             <p>© Copyright 2026 - Pixel studios inc.</p>
             <div className={styles.divider}></div>
             <div className={styles.bottomLinks}>
-              <Link href="/terms">Terms of Use</Link>
+              <Link href="/terms-and-conditions">Terms of Use</Link>
               <span className={styles.dot}>•</span>
-              <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </div>
           </div>
           <div className={styles.paymentMethods}>
