@@ -1,11 +1,11 @@
 import { Inter, Lexend } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
-import Header from "../components/Common/Header";
-import Footer from "../components/Common/Footer";
-import GlobalPopup from "../components/Common/GlobalPopup";
-import CanonicalLink from "../components/Common/CanonicalLink";
-import GlobalSchema from "../components/Schema/GlobalSchema";
+import Header from "@/components/Common/Header";
+import Footer from "@/components/Common/Footer";
+import GlobalPopup from "@/components/Common/GlobalPopup";
+import CanonicalLink from "@/components/Common/CanonicalLink";
+import GlobalSchema from "@/components/Schema/GlobalSchema";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -53,9 +53,13 @@ export default function RootLayout({ children }) {
         {/* End Google Tag Manager (noscript) */}
 
         <GlobalSchema />
+
         <Header />
+        
         {children}
+        
         <Footer />
+        
         <GlobalPopup />
 
         <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=239dfa05-01f6-4362-bfb9-4f75a7455e10" strategy="afterInteractive" />
