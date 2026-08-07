@@ -1,6 +1,6 @@
-import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
+import { brandInfo } from "@/constants/brandInfo";
 
 export const metadata = {
   title: "Privacy Policy - Pixel Studios Inc",
@@ -10,108 +10,81 @@ export const metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <main className={styles.pageWrapper}>
-      {/* Mini Banner */}
       <section className={styles.banner}>
         <div className="container">
           <h1 className={styles.title}>Privacy Policy</h1>
-          <p className={styles.subtitle}>
-            Last updated: August 6, 2026. Your privacy and trust are paramount to us.
-          </p>
+          <p className={styles.subtitle}>How Pixel Studios Inc collects, uses, and protects your information.</p>
         </div>
       </section>
 
-      {/* Main Content Area */}
       <section className={styles.contentSection}>
         <div className="container">
           <div className={styles.layout}>
-            {/* Sidebar Sticky Navigation */}
             <aside className={styles.sidebar}>
               <nav className={styles.nav}>
-                <a href="#introduction">1. Introduction</a>
-                <a href="#information-collection">2. Information Collection</a>
-                <a href="#use-of-information">3. Use of Information</a>
-                <a href="#cookies">4. Cookies & Trackers</a>
-                <a href="#data-protection">5. Data Protection</a>
-                <a href="#sharing">6. Sharing & Disclosing</a>
-                <a href="#your-rights">7. Your Privacy Rights</a>
+                <a href="#information">1. Information We Collect</a>
+                <a href="#use">2. How We Use Your Information</a>
+                <a href="#protection">3. How We Protect Information</a>
+                <a href="#cookies">4. Cookies</a>
+                <a href="#sharing">5. Sharing Your Information</a>
+                <a href="#gdpr">6. Your Rights Under GDPR</a>
+                <a href="#consent">7. Consent</a>
                 <a href="#contact">8. Contact Us</a>
               </nav>
             </aside>
 
-            {/* Document Content */}
             <article className={styles.article}>
-              <section id="introduction" className={styles.section}>
-                <h2>1. Introduction</h2>
-                <p>
-                  Welcome to Pixel Studios Inc ("we," "our," "us"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal info, please contact us at info@pixelstudiosinc.com.
-                </p>
-                <p>
-                  When you visit our website and use our services (including 2D/3D animation production, game development, and interactive design services), you trust us with your personal information. We take your privacy very seriously. In this privacy policy, we describe our privacy practices.
-                </p>
+              <section className={styles.section}>
+                <p>This Privacy Policy explains what information Pixel Studios Inc collects, why we collect it, and how we protect it. We collect only what&apos;s necessary to understand your project and stay in touch, and we never sell your personal information to third parties.</p>
               </section>
 
-              <section id="information-collection" className={styles.section}>
-                <h2>2. Information Collection</h2>
-                <p>
-                  We collect personal information that you voluntarily provide to us when expressing an interest in obtaining information about us or our products and services, when participating in activities on the website, or otherwise contacting us.
-                </p>
+              <section id="information" className={styles.section}>
+                <h2>1. Information We Collect</h2>
+                <p>When you submit an inquiry or request a quote through our website, we ask for basic contact details such as your name, email address, phone number, and country. We may also collect project details you choose to share, like references, briefs, or files relevant to your animation or video project.</p>
+              </section>
+
+              <section id="use" className={styles.section}>
+                <h2>2. How We Use Your Information</h2>
+                <p>We use your information to respond to inquiries, scope and manage your project, and communicate throughout production. We may also use it to:</p>
                 <ul>
-                  <li><strong>Personal Data:</strong> Name, email address, phone number, company name, and project specifications.</li>
-                  <li><strong>Usage Data:</strong> IP address, browser type, pages visited, access times, and referring websites.</li>
+                  <li>Improve our website and services based on client feedback.</li>
+                  <li>Share relevant updates, offers, or announcements, which you can opt out of at any time.</li>
+                  <li>Strengthen our customer support and project communication.</li>
                 </ul>
               </section>
 
-              <section id="use-of-information" className={styles.section}>
-                <h2>3. Use of Information</h2>
-                <p>
-                  We use personal information collected via our website for a variety of business purposes described below:
-                </p>
-                <ul>
-                  <li>To facilitate project discussions, client onboarding, and service delivery.</li>
-                  <li>To send you marketing and promotional communications (you can opt out at any time).</li>
-                  <li>To respond to user inquiries, offer customer support, and request feedback.</li>
-                  <li>To enforce our terms, conditions, and policies for business purposes.</li>
-                </ul>
+              <section id="protection" className={styles.section}>
+                <h2>3. How We Protect Your Information</h2>
+                <p>We use secure, encrypted connections (SSL) to protect any information submitted through our website, including payment-related details, so your data stays confidential in transit.</p>
               </section>
 
               <section id="cookies" className={styles.section}>
-                <h2>4. Cookies & Trackers</h2>
-                <p>
-                  We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific details about how we use such technologies and how you can refuse certain cookies are set out in our Cookie Policy. Most web browsers are set to accept cookies by default.
-                </p>
-              </section>
-
-              <section id="data-protection" className={styles.section}>
-                <h2>5. Data Protection</h2>
-                <p>
-                  We implement appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is 100% secure. Although we will do our best to protect your personal information, transmission of personal information to and from our website is at your own risk.
-                </p>
+                <h2>4. Cookies</h2>
+                <p>Our website uses cookies to support core site functionality and help us understand how visitors use our site. Cookies do not collect personally identifiable information beyond what you&apos;ve already provided to us directly.</p>
               </section>
 
               <section id="sharing" className={styles.section}>
-                <h2>6. Sharing & Disclosing</h2>
-                <p>
-                  We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We do not sell or rent your personal information to third parties.
-                </p>
+                <h2>5. Sharing Your Information</h2>
+                <p>We do not sell or trade your personal information. We may share information with trusted service providers who help us operate our website or deliver our services, provided they agree to keep that information confidential. Aggregated, non-identifying data may be used for marketing or analytics purposes.</p>
               </section>
 
-              <section id="your-rights" className={styles.section}>
-                <h2>7. Your Privacy Rights</h2>
-                <p>
-                  Depending on your location (e.g. EU/EEA, UK, California, or Texas), you may have certain rights under applicable data protection laws. These may include the right:
-                </p>
-                <ul>
-                  <li>To request access and obtain a copy of your personal information.</li>
-                  <li>To request rectification or erasure of your personal data.</li>
-                  <li>To restrict the processing of your personal information.</li>
-                  <li>To data portability (under GDPR/CCPA regulations).</li>
-                </ul>
+              <section id="gdpr" className={styles.section}>
+                <h2>6. Your Rights Under GDPR</h2>
+                <p>For clients in regions covered by the General Data Protection Regulation, we process personal data only with clear, informed consent, and never share it with outside parties beyond what&apos;s outlined in this policy. You have the right to access, correct, or request deletion of your data at any time.</p>
+              </section>
+
+              <section id="consent" className={styles.section}>
+                <h2>7. Consent</h2>
+                <p>By submitting your information through our website, you consent to it being processed as described in this policy. Where we request sensitive personal data, we&apos;ll always explain why it&apos;s needed and how it will be used. You may withdraw consent at any time by contacting us via phone or email.</p>
               </section>
 
               <section id="contact" className={styles.section}>
                 <h2>8. Contact Us</h2>
+                <p>If you have questions about this Privacy Policy or how your information is handled, reach out to our team any time.</p>
                 <p>
-                  If you have questions or comments about this policy, you may email us at <strong>info@pixelstudiosinc.com</strong> or contact us via our <Link href="/contact-us">Contact Us</Link> page.
+                  <a href={brandInfo.phone.href}>{brandInfo.phone.display}</a> | {" "}
+                  <a href={brandInfo.email.href}>{brandInfo.email.display}</a> | {" "}
+                  <Link href="/">https://www.pixelstudiosinc.com</Link>
                 </p>
               </section>
             </article>

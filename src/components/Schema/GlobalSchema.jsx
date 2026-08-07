@@ -1,6 +1,5 @@
 "use client";
 
-import Script from "next/script";
 import { usePathname } from "next/navigation";
 import { schemaRoutes } from "@/data/schema/routes";
 
@@ -12,12 +11,11 @@ export default function GlobalSchema() {
     if (!schema) return null;
 
     return (
-        <Script
+        <script
             id={`schema-${pathname}`}
             type="application/ld+json"
-            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
-                __html: JSON.stringify(schema),
+                __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
             }}
         />
     );

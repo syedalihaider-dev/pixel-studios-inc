@@ -1,15 +1,35 @@
-import {
-    homeSchema,
-    // aboutSchema,
-    // contactSchema,
+﻿import {
+  homeSchema,
+  threeDAnimationServicesSchema,
+  twoDAnimationServicesSchema,
+  whiteboardAnimationServicesSchema,
+  animatedExplainerVideoSchema,
+  videoEditingServicesSchema,
+  socialMediaAnimationSchema,
+  logoAnimationServicesSchema,
+  motionGraphicsSchema,
+  titlesAndTrailerAnimationSchema,
+  threeDProductAnimationSchema,
+  threeDModelingServicesSchema,
+  threeDIndustrialAnimationSchema,
+  corporateVideoAnimationSchema,
+  medicalAnimationSchema,
 } from "./index";
 
 export const schemaRoutes = {
-
-    "/": homeSchema,
-
-    // "/about-us": aboutSchema,
-
-    // "/contact-us": contactSchema,
-
+  "/": homeSchema,
+  "/3d-animation-services": threeDAnimationServicesSchema,
+  "/2d-animation-services": twoDAnimationServicesSchema,
+  "/whiteboard-animation-services": whiteboardAnimationServicesSchema,
+  "/animated-explainer-video": animatedExplainerVideoSchema,
+  "/video-editing-services": videoEditingServicesSchema,
+  "/social-media-animation": socialMediaAnimationSchema,
+  "/logo-animation-services": logoAnimationServicesSchema,
+  "/motion-graphics": motionGraphicsSchema,
+  "/titles-and-trailer-animation": titlesAndTrailerAnimationSchema,
+  "/3d-product-animation": threeDProductAnimationSchema,
+  "/3d-modeling-services": threeDModelingServicesSchema,
+  "/3d-industrial-animation": threeDIndustrialAnimationSchema,
+  "/corporate-video-animation": corporateVideoAnimationSchema,
+  "/medical-animation": medicalAnimationSchema,
 };
