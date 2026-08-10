@@ -139,15 +139,15 @@ const navData = [
       { name: 'Technology Animation', path: '/technology-animation' },
     ]
   },
-  // {
-  //   name: 'INSIGHTS',
-  //   path: '#',
-  //   isDropdown: true,
-  //   items: [
-  //     // { name: 'BLOG', path: '#' },
-  //     { name: 'PRESS RELEASE', path: '/press-release' },
-  //   ]
-  // },
+  {
+    name: 'INSIGHTS',
+    path: '#',
+    isDropdown: true,
+    items: [
+      { name: 'BLOG', path: '/blog' },
+      // { name: 'PRESS RELEASE', path: '/press-release' },
+    ]
+  },
   {
     name: 'OUR WORK',
     path: '#',

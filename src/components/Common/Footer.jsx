@@ -14,7 +14,7 @@ const Footer = () => {
     { name: 'ABOUT US', path: '/about-us' },
     // { name: 'OUR SERVICES', path: '/#' },
     // { name: 'CASE STUDY', path: '/case-study' },
-    { name: 'BLOGS', path: '/#' },
+    { name: 'BLOG', path: '/blog' },
     // { name: 'PRESS RELEASE', path: '/press-release' },
     // { name: 'LOCATION', path: '/location' },
     // { name: 'INDUSTRIES', path: '/industries' },

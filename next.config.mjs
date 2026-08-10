@@ -329,6 +329,22 @@ const nextConfig = {
       },
     ];
   },
+
+  // =========================
+  // WordPress Blog Reverse Proxy
+  // =========================
+  async rewrites() {
+    return [
+      {
+        source: "/blog",
+        destination: "https://blog.pixelstudiosinc.com/",
+      },
+      {
+        source: "/blog/:path*",
+        destination: "https://blog.pixelstudiosinc.com/:path*",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
