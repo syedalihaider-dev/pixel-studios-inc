@@ -1,4 +1,4 @@
-﻿import homeSchema from "./home";
+import homeSchema from "./home";
 import threeDAnimationServicesSchema from "./3d-animation-services";
 import twoDAnimationServicesSchema from "./2d-animation-services";
 import whiteboardAnimationServicesSchema from "./whiteboard-animation-services";
@@ -13,6 +13,9 @@ import threeDModelingServicesSchema from "./3d-modeling-services";
 import threeDIndustrialAnimationSchema from "./3d-industrial-animation";
 import corporateVideoAnimationSchema from "./corporate-video-animation";
 import medicalAnimationSchema from "./medical-animation";
+import aboutUsSchema from "./about-us";
+import contactUsSchema from "./contact-us";
+import ourWorkSchema from "./our-work";
 
 export {
   homeSchema,
@@ -30,4 +33,7 @@ export {
   threeDIndustrialAnimationSchema,
   corporateVideoAnimationSchema,
   medicalAnimationSchema,
+  aboutUsSchema,
+  contactUsSchema,
+  ourWorkSchema,
 };

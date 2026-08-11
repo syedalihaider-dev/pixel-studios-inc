@@ -1,4 +1,4 @@
-﻿import {
+import {
   homeSchema,
   threeDAnimationServicesSchema,
   twoDAnimationServicesSchema,
@@ -14,6 +14,9 @@
   threeDIndustrialAnimationSchema,
   corporateVideoAnimationSchema,
   medicalAnimationSchema,
+  aboutUsSchema,
+  contactUsSchema,
+  ourWorkSchema,
 } from "./index";
 
 export const schemaRoutes = {
@@ -32,4 +35,7 @@ export const schemaRoutes = {
   "/3d-industrial-animation": threeDIndustrialAnimationSchema,
   "/corporate-video-animation": corporateVideoAnimationSchema,
   "/medical-animation": medicalAnimationSchema,
+  "/about-us": aboutUsSchema,
+  "/contact-us": contactUsSchema,
+  "/our-work": ourWorkSchema,
 };

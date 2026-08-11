@@ -76,11 +76,11 @@ const schema = {
       "inLanguage": "en-US"
     },
     {
-      "@type": "WebPage",
-      "@id": "https://www.pixelstudiosinc.com/#webpage",
-      "url": "https://www.pixelstudiosinc.com/",
-      "name": "Professional Video Animation Company | Pixel Studios Inc.",
-      "description": "Pixel Studios Inc. provides professional 2D animation, 3D animation, motion graphics, explainer video, whiteboard animation, logo animation, AI animation, legal animation, and video editing services.",
+      "@type": "ContactPage",
+      "@id": "https://www.pixelstudiosinc.com/contact-us#webpage",
+      "url": "https://www.pixelstudiosinc.com/contact-us",
+      "name": "Contact Pixel Studios Inc.",
+      "description": "Contact Pixel Studios Inc. to discuss animation, video production, website design, digital marketing, logo design, and mobile app development requirements.",
       "isPartOf": {
         "@id": "https://www.pixelstudiosinc.com/#website"
       },
@@ -90,7 +90,28 @@ const schema = {
       "publisher": {
         "@id": "https://www.pixelstudiosinc.com/#organization"
       },
-      "inLanguage": "en-US"
+      "inLanguage": "en-US",
+      "breadcrumb": {
+        "@id": "https://www.pixelstudiosinc.com/contact-us#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.pixelstudiosinc.com/contact-us#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.pixelstudiosinc.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact Pixel Studios Inc.",
+          "item": "https://www.pixelstudiosinc.com/contact-us"
+        }
+      ]
     }
   ]
 };

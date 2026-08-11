@@ -76,11 +76,11 @@ const schema = {
       "inLanguage": "en-US"
     },
     {
-      "@type": "WebPage",
-      "@id": "https://www.pixelstudiosinc.com/#webpage",
-      "url": "https://www.pixelstudiosinc.com/",
-      "name": "Professional Video Animation Company | Pixel Studios Inc.",
-      "description": "Pixel Studios Inc. provides professional 2D animation, 3D animation, motion graphics, explainer video, whiteboard animation, logo animation, AI animation, legal animation, and video editing services.",
+      "@type": "AboutPage",
+      "@id": "https://www.pixelstudiosinc.com/about-us#webpage",
+      "url": "https://www.pixelstudiosinc.com/about-us",
+      "name": "About Pixel Studios Inc.",
+      "description": "Learn about Pixel Studios Inc., its creative approach, animation expertise, and commitment to helping brands communicate through digital experiences.",
       "isPartOf": {
         "@id": "https://www.pixelstudiosinc.com/#website"
       },
@@ -90,7 +90,28 @@ const schema = {
       "publisher": {
         "@id": "https://www.pixelstudiosinc.com/#organization"
       },
-      "inLanguage": "en-US"
+      "inLanguage": "en-US",
+      "breadcrumb": {
+        "@id": "https://www.pixelstudiosinc.com/about-us#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.pixelstudiosinc.com/about-us#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.pixelstudiosinc.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Pixel Studios Inc.",
+          "item": "https://www.pixelstudiosinc.com/about-us"
+        }
+      ]
     }
   ]
 };
