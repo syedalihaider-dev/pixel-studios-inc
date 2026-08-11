@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import styles from "./GetQuoteSection.module.css";
 import Image from "next/image";
 import CTAButton from "@/components/Common/CTAButton";
+import TrackingFields from "@/components/Common/TrackingFields";
 const features = [
   {
     id: 1,
@@ -108,6 +109,7 @@ export default function GetQuoteSection() {
                 <h3 className={styles.formTitle}>GET QUOTE</h3>
 
                 <form onSubmit={(e) => e.preventDefault()}>
+                  <TrackingFields />
                   <div className={styles.inputGroup}>
                     <input type="text" placeholder="Full Name" className={styles.input} required />
                   </div>

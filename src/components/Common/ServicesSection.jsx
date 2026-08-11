@@ -146,7 +146,7 @@ const ServicesSection = ({
                   transition={{ duration: 0.6 }}
                   className={styles.videoInner}
                 >
-                  <iframe
+                  <iframe loading="lazy"
                     src={sliderItems[activeIndex].videoSrc}
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"

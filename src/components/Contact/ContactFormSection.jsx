@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import CTAButton from '../Common/CTAButton';
+import TrackingFields from '../Common/TrackingFields';
 import styles from './ContactFormSection.module.css';
 
 const logos = [
@@ -70,6 +71,7 @@ const ContactFormSection = () => {
               }} 
               className={styles.formWrapper}
             >
+              <TrackingFields />
               <div className="row g-4">
                 <div className="col-md-6">
                   <input type="text" name="name" className={styles.formInput} placeholder="Enter Your Full Name *" required />
@@ -225,8 +227,8 @@ const ContactFormSection = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <button className={styles.closeModal} onClick={() => setModalOpen(false)}>×</button>
-              <iframe
-                src="https://player.vimeo.com/video/1064481379?autoplay=1"
+              <iframe loading="lazy"
+                src="https://player.vimeo.com/video/1064481379?dnt=1&autoplay=1"
                 className={styles.videoIframe}
                 allow="autoplay; fullscreen"
                 allowFullScreen

@@ -131,8 +131,8 @@ export default function AnimationPortfolio() {
                 <X size={30} />
               </button>
               <div style={{ width: "100%", height: "100%", background: "#000" }}>
-                <iframe 
-                  src="https://player.vimeo.com/video/146022717?autoplay=1&color=CB09A4&title=0&byline=0&portrait=0" 
+                <iframe loading="lazy" 
+                  src="https://player.vimeo.com/video/146022717?dnt=1&autoplay=1&color=CB09A4&title=0&byline=0&portrait=0" 
                   style={{ width: "100%", height: "100%", border: "none" }}
                   allow="autoplay; fullscreen; picture-in-picture" 
                   allowFullScreen

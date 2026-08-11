@@ -9,31 +9,31 @@ const sliderItems = [
     id: 1,
     title: "2D Animated Explainer Videos",
     description: "How long does it take your sales team to explain what your product does in a first call? A well-built 2D explainer video animation solves that permanently. We write scripts around the viewer's decision-making process, not your product feature list.",
-    videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 2,
     title: "2D Commercials",
     description: "Capture attention and drive conversions with high-quality 2D animated commercials tailored for TV, social media, and web campaigns. We blend compelling storytelling with vibrant visuals.",
-    videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
   },
   {
     id: 3,
     title: "Educational 2D Animation",
     description: "Simplify complex concepts into easy-to-understand educational videos. Perfect for e-learning platforms, training modules, and classroom materials that keep learners engaged.",
-    videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
   },
   {
     id: 4,
     title: "2D Character Animation",
     description: "Bring unique characters to life with our expert 2D character animation services. From mascots to narrative-driven protagonists, we ensure smooth and expressive movements.",
-    videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
   },
   {
     id: 5,
     title: "2D Motion Graphics",
     description: "Enhance your digital presence with sleek 2D motion graphics. Ideal for corporate presentations, UI/UX animations, and visually striking promotional content.",
-    videoSrc: "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
   }
 ];
 
@@ -177,7 +177,7 @@ const ServicesSection = () => {
                   className={styles.videoInner}
                 >
                   {/* Dynamic Video based on active index */}
-                  <iframe
+                  <iframe loading="lazy"
                     src={sliderItems[activeIndex].videoSrc}
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"

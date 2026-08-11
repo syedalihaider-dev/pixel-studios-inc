@@ -6,6 +6,7 @@ import Footer from "@/components/Common/Footer";
 import GlobalPopup from "@/components/Common/GlobalPopup";
 import CanonicalLink from "@/components/Common/CanonicalLink";
 import GlobalSchema from "@/components/Schema/GlobalSchema";
+import LeadTracker from "@/components/Common/LeadTracker";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -39,8 +40,20 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${lexend.variable}`}>
       <head>
         <CanonicalLink />
+        {/* Preconnect to Video Hosting CDNs for Performance */}
+        <link rel="preconnect" href="https://player.vimeo.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://vimeocdn.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://f.vimeocdn.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://i.vimeocdn.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.youtube.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://s.ytimg.com" crossOrigin="anonymous" />
+        
+        <link rel="dns-prefetch" href="https://player.vimeo.com" />
+        <link rel="dns-prefetch" href="https://vimeocdn.com" />
+        <link rel="dns-prefetch" href="https://www.youtube.com" />
       </head>
       <body>
+        <LeadTracker />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

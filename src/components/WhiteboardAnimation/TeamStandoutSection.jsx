@@ -118,7 +118,7 @@ const TeamStandoutSection = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
-                <iframe
+                <iframe loading="lazy"
                   src="https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
                   title="Whiteboard Animation Video"
                   frameBorder="0"

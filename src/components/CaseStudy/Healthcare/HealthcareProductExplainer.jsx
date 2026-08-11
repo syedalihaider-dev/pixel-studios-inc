@@ -91,7 +91,7 @@ export default function HealthcareProductExplainer() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
             >
-              <iframe
+              <iframe loading="lazy"
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/wKoZ-JiEsug?autoplay=1"

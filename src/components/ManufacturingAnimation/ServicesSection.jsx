@@ -9,7 +9,7 @@ const sliderItems = [
     description:
       "Full process animation showing how a production line, facility, or system operates from raw material to finished product, built for sales, training, and internal documentation across every department.",
     videoSrc:
-      "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const sliderItems = [
     description:
       "Exploded-view and mechanical animation revealing how machinery and equipment function internally, used for technical sales and engineering communication with prospects and partners.",
     videoSrc:
-      "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const sliderItems = [
     description:
       "Manufacturing safety training animation and procedural content that standardizes instruction across shifts, facilities, and new hires, regardless of location.",
     videoSrc:
-      "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const sliderItems = [
     description:
       "Photorealistic product manufacturing animation showing equipment and machinery from every angle, built directly from CAD data for precision down to the smallest component.",
     videoSrc:
-      "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   }
 ];
 

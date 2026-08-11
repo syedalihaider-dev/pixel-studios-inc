@@ -106,8 +106,8 @@ const TeamStandoutSection = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
-                <iframe
-                  src="https://player.vimeo.com/video/1201856415?autoplay=1&loop=1&muted=1&background=1"
+                <iframe loading="lazy"
+                  src="https://player.vimeo.com/video/1201856415?dnt=1&autoplay=1&loop=1&muted=1&background=1"
                   title="Pixel Studio Video"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"

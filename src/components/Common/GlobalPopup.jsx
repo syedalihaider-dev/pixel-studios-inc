@@ -4,6 +4,7 @@ import styles from './GlobalPopup.module.css';
 import { User, Phone, Mail, Send, X, Check } from 'lucide-react';
 import CTAButton from './CTAButton';
 import { submitLead } from '../../utils/formSubmit';
+import TrackingFields from './TrackingFields';
 
 const GlobalPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -102,6 +103,7 @@ const GlobalPopup = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className={styles.form}>
+                  <TrackingFields />
                   {/* Name Input */}
                   <div className={styles.inputGroup}>
                     <span className={styles.inputIcon}>

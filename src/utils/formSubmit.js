@@ -64,7 +64,24 @@ export const getGeoInfo = async () => {
 export const submitLead = async (formData) => {
   try {
     const geo = await getGeoInfo();
+
+    // Auto-fetch tracking information from localStorage and current URL
+    let tracking = {};
+    if (typeof window !== 'undefined') {
+      tracking = {
+        first_landing_url: localStorage.getItem('first_landing_url') || 'not fill by user',
+        lead_source: localStorage.getItem('lead_source') || 'Organic',
+        utm_source: localStorage.getItem('utm_source') || 'not fill by user',
+        utm_medium: localStorage.getItem('utm_medium') || 'not fill by user',
+        utm_campaign: localStorage.getItem('utm_campaign') || 'not fill by user',
+        gclid: localStorage.getItem('gclid') || 'not fill by user',
+        original_referrer: localStorage.getItem('original_referrer') || 'not fill by user',
+        form_submission_url: window.location.pathname || 'not fill by user'
+      };
+    }
+
     const payload = {
+      ...tracking,
       ...formData,
       ip2loc_ip: geo.ip,
       ip2loc_country: geo.country,

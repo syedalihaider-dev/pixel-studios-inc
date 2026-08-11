@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import styles from "./GetQuoteSection.module.css";
 import Image from "next/image";
 import CTAButton from "../Common/CTAButton";
+import TrackingFields from "./TrackingFields";
 const features = [
   {
     id: 1,
@@ -121,6 +122,7 @@ export default function GetQuoteSection() {
                     });
                   }}
                 >
+                  <TrackingFields />
                   <div className={styles.inputGroup}>
                     <input type="text" name="name" placeholder="Full Name" className={styles.input} required />
                   </div>

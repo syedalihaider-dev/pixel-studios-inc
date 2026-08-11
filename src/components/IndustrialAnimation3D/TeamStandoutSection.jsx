@@ -118,8 +118,8 @@ const TeamStandoutSection = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
-                <iframe
-                  src="https://player.vimeo.com/video/1065200259?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+                <iframe loading="lazy"
+                  src="https://player.vimeo.com/video/1065200259?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
                   title="Animated Explainer Video"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"

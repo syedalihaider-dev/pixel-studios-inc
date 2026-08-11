@@ -118,7 +118,7 @@ const Banner = ({
       <div className={styles.overlay}></div>
       {isVimeo ? (
         <div className={styles.videoWrapper}>
-          <iframe
+          <iframe loading="lazy"
             src={videoSrc}
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
@@ -223,7 +223,7 @@ const Banner = ({
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <button className={styles.closeBtn} onClick={() => setIsVideoPopupOpen(false)}>×</button>
             {isVimeo ? (
-              <iframe
+              <iframe loading="lazy"
                 src={videoSrc}
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"

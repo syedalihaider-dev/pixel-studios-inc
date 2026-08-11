@@ -9,7 +9,7 @@ const sliderItems = [
     description:
       "Emotionally resonant fundraising videos built for galas, campaigns, and giving days, designed to move an audience from awareness to action within a single sitting.",
     videoSrc:
-      "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const sliderItems = [
     description:
       "Clear explainer videos introducing a mission, program, or cause to new supporters who are not yet familiar with your work or how it makes an impact.",
     videoSrc:
-      "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const sliderItems = [
     description:
       "Campaign-ready awareness content built to reach a broad audience and build support for a cause or issue across every channel.",
     videoSrc:
-      "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const sliderItems = [
     description:
       "Data-driven motion graphics that make impact statistics and program outcomes easier to understand, share, and remember.",
     videoSrc:
-      "https://player.vimeo.com/video/1064481379?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   }
 ];
 

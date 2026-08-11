@@ -86,7 +86,7 @@ export default function HealthcareBanner() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
             >
-              <iframe
+              <iframe loading="lazy"
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
