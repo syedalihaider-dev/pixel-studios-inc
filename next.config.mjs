@@ -342,9 +342,9 @@ const nextConfig = {
     {
       source: "/blog/:path*",
       destination: "https://blog.pixelstudiosinc.com/:path*",
-      },
-    ];
-  },
+    },
+  ];
+},
 };
 
 export default nextConfig;
