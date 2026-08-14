@@ -80,9 +80,11 @@ export const submitLead = async (formData) => {
       };
     }
 
+    const { endpoint = '/api/send-lead', ...payloadData } = formData;
+
     const payload = {
       ...tracking,
-      ...formData,
+      ...payloadData,
       ip2loc_ip: geo.ip,
       ip2loc_country: geo.country,
       ip2loc_region: geo.region,
@@ -90,7 +92,7 @@ export const submitLead = async (formData) => {
       pageurl: typeof window !== 'undefined' ? window.location.href : 'not fill by user'
     };
 
-    const response = await fetch('/api/send-lead', {
+    const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import styles from './GlobalPopup.module.css';
 import { User, Phone, Mail, Send, X, Check } from 'lucide-react';
 import CTAButton from './CTAButton';
@@ -7,6 +8,12 @@ import { submitLead } from '../../utils/formSubmit';
 import TrackingFields from './TrackingFields';
 
 const GlobalPopup = () => {
+  const pathname = usePathname();
+
+  if (pathname && pathname.startsWith('/lp/')) {
+    return null;
+  }
+
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',

@@ -299,6 +299,10 @@ const Header = () => {
   const [mobileAccordion, setMobileAccordion] = useState(null);
   const pathname = usePathname();
 
+  if (pathname && pathname.startsWith('/lp/')) {
+    return null;
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);

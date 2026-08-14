@@ -4,11 +4,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 import styles from './Footer.module.css';
 
 import { brandInfo } from '@/constants/brandInfo';
 
 const Footer = () => {
+  const pathname = usePathname();
+
+  if (pathname && pathname.startsWith('/lp/')) {
+    return null;
+  }
+
   const quickLinks = [
     { name: 'HOME', path: '/' },
     { name: 'ABOUT US', path: '/about-us' },
