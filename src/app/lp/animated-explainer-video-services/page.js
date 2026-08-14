@@ -4,6 +4,17 @@ import React, { useState, useEffect } from "react";
 import { submitLead } from "@/utils/formSubmit";
 import { brandInfo } from "@/constants/brandInfo";
 
+export const metadata = {
+  title: "Animated Explainer Video Services for Businesses | Pixel Studios",
+  description:
+    "Pixel Studios creates custom animated explainer videos that simplify complex ideas, engage audiences, and help businesses drive more conversions. Get a quote.",
+
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function AnimatedExplainerVideosLP() {
   const phone = brandInfo.phone.display;
   const phoneHref = brandInfo.phone.href;
