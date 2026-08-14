@@ -1,144 +1,386 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
-    <loc>https://www.pixelstudiosinc.com/</loc>
+       <loc>https://www.pixelstudiosinc.com/</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/about-us</loc>
+       <loc>https://www.pixelstudiosinc.com/about-us</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.6000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/contact-us</loc>
+       <loc>https://www.pixelstudiosinc.com/contact-us</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.6000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/our-work</loc>
+       <loc>https://www.pixelstudiosinc.com/our-work</loc>
+       <lastmod>2026-07-14T17:08:41+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/2d-animation-services</loc>
+       <loc>https://www.pixelstudiosinc.com/2d-animation-services</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/3d-animation-services</loc>
+       <loc>https://www.pixelstudiosinc.com/3d-animation-services</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/motion-graphics</loc>
+       <loc>https://www.pixelstudiosinc.com/logo-animation-services</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/logo-animation-services</loc>
+       <loc>https://www.pixelstudiosinc.com/whiteboard-animation-services</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/video-editing-services</loc>
+       <loc>https://www.pixelstudiosinc.com/motion-graphics</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/whiteboard-animation-services</loc>
+       <loc>https://www.pixelstudiosinc.com/terms-and-conditions</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.6000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/animated-explainer-video</loc>
+       <loc>https://www.pixelstudiosinc.com/privacy-policy</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.6000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/social-media-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/ai-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/3d-product-modeling</loc>
+       <loc>https://www.pixelstudiosinc.com/legal-graphics-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/3d-product-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/animated-explainer-video</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/3d-industrial-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/video-editing-services</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/medical-animation-services</loc>
+       <loc>https://www.pixelstudiosinc.com/hybrid-and-cel-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+ 
+
+  <url>
+       <loc>https://www.pixelstudiosinc.com/social-media-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/animated-commercials</loc>
+       <loc>https://www.pixelstudiosinc.com/educational-video-production</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/educational-video-production</loc>
+       <loc>https://www.pixelstudiosinc.com/animated-commercials-services</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/hybrid-and-cel-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/3d-product-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/legal-graphics-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/3d-modeling-services</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/ai-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/3d-industrial-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/game-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/character-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/character-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/medical-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/game-trailer</loc>
+       <loc>https://www.pixelstudiosinc.com/corporate-video-animation</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+<url>
+    <loc>https://www.pixelstudiosinc.com/location</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-austin</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-boston</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-california</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-chicago</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-dallas</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-denver</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-dover</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-houston</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-los-angeles</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-nyc</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-san-francisco</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-seattle</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-toronto</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-dubai</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-uk</loc>
+    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9000</priority>
+</url>
+  <url>
+       <loc>https://www.pixelstudiosinc.com/blog</loc>
+       <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.7000</priority>
+  </url>
+<url>
+    <loc>https://www.pixelstudiosinc.com/blog/types-of-animation-for-business</loc>
+    <lastmod>2026-08-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/blog/in-house-vs-outsourcing-animation-studio</loc>
+    <lastmod>2026-08-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/blog/animated-video-length</loc>
+    <lastmod>2026-08-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7000</priority>
+</url>
+
+<url>
+    <loc>https://www.pixelstudiosinc.com/blog/how-to-write-an-animation-brief</loc>
+    <lastmod>2026-08-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7000</priority>
+</url>
+ <url>
+       <loc>https://www.pixelstudiosinc.com/blog/interesting-video-animation-topics</loc>
+       <lastmod>2026-08-12T16:29:16+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/architectural-rendering-services</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/top-10-video-blog-websites</loc>
+       <lastmod>2026-08-12T17:30:17+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6000</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/cartoon-animation-services</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/interesting-usage-of-colors-in-character-design-pixel-studios-inc</loc>
+       <lastmod>2026-08-12T20:25:11+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/photorealistic-rendering-services</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/top-vlogging-websites-you-should-know-about</loc>
+       <lastmod>2026-08-13T21:54:46+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6500</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/biotech-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/list-of-frames-in-animation</loc>
+       <lastmod>2026-08-12T22:22:55+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
+  </url>
+
+  <url>
+       <loc>https://www.pixelstudiosinc.com/blog/10-best-solid-drawing-animation-examples</loc>
+       <lastmod>2026-08-13T22:57:43+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6500</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/ecommerce-video-production</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/history-of-animation-the-first-3d-animation</loc>
+       <lastmod>2026-08-13T23:20:04+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/logistics-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/types-of-rotoscoping-you-should-know-about-pixel-studios-inc</loc>
+       <lastmod>2026-08-13T00:01:10+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/real-estate-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/fun-animation-ideas</loc>
+       <lastmod>2026-08-12T23:16:34+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/saas-explainer-videos</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/custom-vtuber-model-cost</loc>
+       <lastmod>2026-08-12T21:36:30+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/insurance-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/free-3d-animation-software-for-chromebook</loc>
+       <lastmod>2026-08-13T00:42:37+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/automotive-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/absolute-cinema-meme-explained</loc>
+       <lastmod>2026-08-12T19:55:37+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/advertising-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/the-complete-guide-to-3d-animation-services-for-modern-businesses</loc>
+       <lastmod>2026-07-31T19:06:55+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6400</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/architecture-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/education-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/enterprise-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/entertainment-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/fintech-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/finance-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/gaming-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/government-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/healthcare-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/manufacturing-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/nonprofit-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/technology-animation</loc>
+       <loc>https://www.pixelstudiosinc.com/blog/what-is-animation-a-complete-guide</loc>
+       <lastmod>2026-08-13T16:29:24+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.7000</priority>
   </url>
 </urlset>

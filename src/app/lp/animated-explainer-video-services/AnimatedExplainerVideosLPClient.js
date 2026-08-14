@@ -24,26 +24,26 @@ export default function AnimatedExplainerVideosLP() {
   const [popupForm, setPopupForm] = useState({ name: "", email: "", phone: "", msg: "" });
 
   const [activeProcessBox, setActiveProcessBox] = useState(0);
+  const [areStylesReady, setAreStylesReady] = useState(false);
 
   useEffect(() => {
-    const link1 = document.createElement("link");
-    link1.rel = "stylesheet";
-    link1.href = "/animated-explainer-videos/assets/css/m-style.css";
-    link1.id = "lp-m-style";
+    const stylesheetIds = ["lp-m-style", "lp-style", "lp-additional"];
+    const waitForStylesheet = (id) => new Promise((resolve) => {
+      const stylesheet = document.getElementById(id);
 
-    const link2 = document.createElement("link");
-    link2.rel = "stylesheet";
-    link2.href = "/animated-explainer-videos/assets/css/style.css";
-    link2.id = "lp-style";
+      if (!stylesheet || stylesheet.sheet) {
+        resolve();
+        return;
+      }
 
-    const link3 = document.createElement("link");
-    link3.rel = "stylesheet";
-    link3.href = "/animated-explainer-videos/assets/css/lp-additional.css";
-    link3.id = "lp-additional";
+      const finish = () => resolve();
+      stylesheet.addEventListener("load", finish, { once: true });
+      stylesheet.addEventListener("error", finish, { once: true });
+    });
 
-    document.head.appendChild(link1);
-    document.head.appendChild(link2);
-    document.head.appendChild(link3);
+    Promise.all(stylesheetIds.map(waitForStylesheet)).then(() => {
+      requestAnimationFrame(() => setAreStylesReady(true));
+    });
 
     const handleScroll = () => {
       setScrolled(window.scrollY >= 300);
@@ -179,6 +179,40 @@ export default function AnimatedExplainerVideosLP() {
   const currentPortfolio = portfolios[activePortfolioTab];
 
   return (
+    <>
+      {!areStylesReady && (
+        <div
+          role="status"
+          aria-label="Loading page"
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 2147483647,
+            display: "grid",
+            placeItems: "center",
+            background: "#19042D",
+            color: "#fff",
+            fontFamily: "Arial, sans-serif",
+          }}
+        >
+          <div style={{ display: "grid", justifyItems: "center", gap: "16px" }}>
+            <div
+              aria-hidden="true"
+              style={{
+                width: "44px",
+                height: "44px",
+                border: "4px solid rgba(255, 255, 255, 0.25)",
+                borderTopColor: "#CB09A4",
+                borderRadius: "50%",
+                animation: "lp-preloader-spin 0.8s linear infinite",
+              }}
+            />
+            <span style={{ fontSize: "14px", letterSpacing: "0.08em", textTransform: "uppercase" }}>Loading</span>
+          </div>
+          <style>{"@keyframes lp-preloader-spin { to { transform: rotate(360deg); } }"}</style>
+        </div>
+      )}
+      <div aria-hidden={!areStylesReady} style={!areStylesReady ? { visibility: "hidden" } : undefined}>
     <div className="app-container">
       <div className="main"></div>
 
@@ -941,5 +975,7 @@ export default function AnimatedExplainerVideosLP() {
         </div>
       )}
     </div>
+      </div>
+    </>
   );
 }

@@ -58,15 +58,6 @@ export async function POST(request) {
       }
     }
 
-    const first_landing_url = data.first_landing_url || 'not fill by user';
-    const lead_source = data.lead_source || 'Organic';
-    const utm_source = data.utm_source || 'not fill by user';
-    const utm_medium = data.utm_medium || 'not fill by user';
-    const utm_campaign = data.utm_campaign || 'not fill by user';
-    const gclid = data.gclid || 'not fill by user';
-    const original_referrer = data.original_referrer || 'not fill by user';
-    const form_submission_url = data.form_submission_url || 'not fill by user';
-
     htmlContent += `<hr />`;
     htmlContent += `<p><strong>IpAddress:</strong> ${ip}</p>`;
     htmlContent += `<p><strong>Country:</strong> ${cn}</p>`;
@@ -75,22 +66,11 @@ export async function POST(request) {
     htmlContent += `<p><strong>Url:</strong> ${url}</p>`;
     htmlContent += `<p><strong>Form Name:</strong> ${Form_name}</p>`;
 
-    htmlContent += `<hr />`;
-    htmlContent += `<h3>Traffic / PPC Tracking Details</h3>`;
-    htmlContent += `<p><strong>Lead Source:</strong> ${lead_source}</p>`;
-    htmlContent += `<p><strong>First Landing URL:</strong> ${first_landing_url}</p>`;
-    htmlContent += `<p><strong>Form Submission URL:</strong> ${form_submission_url}</p>`;
-    htmlContent += `<p><strong>UTM Source:</strong> ${utm_source}</p>`;
-    htmlContent += `<p><strong>UTM Medium:</strong> ${utm_medium}</p>`;
-    htmlContent += `<p><strong>UTM Campaign:</strong> ${utm_campaign}</p>`;
-    htmlContent += `<p><strong>GCLID:</strong> ${gclid}</p>`;
-    htmlContent += `<p><strong>Original Referrer:</strong> ${original_referrer}</p>`;
-
     // Recipients list for the LP
     const recipients = [
       'zain@iceanimations.com',
       'ppc@iceanimations.com',
-      'ppc.cd@letusproceed.com'
+      'aleehaiderbalti@gmail.com',
     ];
 
     await transporter.sendMail({

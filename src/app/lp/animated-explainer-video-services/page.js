@@ -11,5 +11,24 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <AnimatedExplainerVideosLPClient />;
+  return (
+    <>
+      <link
+        id="lp-m-style"
+        rel="stylesheet"
+        href="/animated-explainer-videos/assets/css/m-style.css"
+      />
+      <link
+        id="lp-style"
+        rel="stylesheet"
+        href="/animated-explainer-videos/assets/css/style.css"
+      />
+      <link
+        id="lp-additional"
+        rel="stylesheet"
+        href="/animated-explainer-videos/assets/css/lp-additional.css"
+      />
+      <AnimatedExplainerVideosLPClient />
+    </>
+  );
 }
