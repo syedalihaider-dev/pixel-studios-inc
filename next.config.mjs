@@ -13,6 +13,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/animation-services",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/website-design-development",
         destination: "/",
         permanent: true,
@@ -39,6 +44,11 @@ const nextConfig = {
       },
       {
         source: "/responsive-website-development",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/hire-ui-ux-designer",
         destination: "/",
         permanent: true,
       },
@@ -84,6 +94,11 @@ const nextConfig = {
       },
       {
         source: "/game-app-development",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/our-services",
         destination: "/",
         permanent: true,
       },
