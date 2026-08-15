@@ -10,10 +10,15 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const CooperationModelsSection = () => {
+const CooperationModelsSection = ({
+  eyebrow = "Business Benefits",
+  heading = "Benefits of Corporate Video Animation for Businesses",
+  description = "",
+  cards: cardsOverride,
+}) => {
   const [swiperRef, setSwiperRef] = useState(null);
 
-  const cards = [
+  const cards = cardsOverride || [
     {
       id: 1,
       icon: "/game-development/outstaffing.png",
@@ -63,9 +68,9 @@ const CooperationModelsSection = () => {
       >
         <div className="row justify-content-center text-center mb-4">
           <div className="col-12 col-lg-12">
-            <p className="subtitle">Business Benefits</p>
-            <h2 className={styles.mainHeading}>Benefits of Corporate Video Animation for Businesses</h2>
-            <p className={styles.topParagraph}></p>
+            <p className="subtitle">{eyebrow}</p>
+            <h2 className={styles.mainHeading}>{heading}</h2>
+            <p className={styles.topParagraph}>{description}</p>
           </div>
         </div>
 

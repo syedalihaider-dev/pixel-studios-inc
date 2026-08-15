@@ -4,7 +4,11 @@ import { motion } from 'framer-motion';
 import CTAButton from '../Common/CTAButton';
 import styles from './MissionSection.module.css';
 
-const MissionSection = () => {
+const MissionSection = ({
+  video = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/AJyq3rw7hW6eHXecdSS8PF8/2D_02.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw",
+  heading = "Breaking Charts With Our Video Animation Services For Everyone",
+  description = "From funded startups running their first SaaS product demo to established healthcare companies needing patient education content that meets compliance standards, the brands that come to us share one thing: they take their video seriously, and they need a video animation company that does the same.",
+}) => {
   return (
     <section className={styles.missionSection}>
       <div className="container">
@@ -18,7 +22,7 @@ const MissionSection = () => {
               className={styles.imageWrapper}
             >
               <video
-                src="https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/AJyq3rw7hW6eHXecdSS8PF8/2D_02.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw"
+                src={video}
                 autoPlay
                 loop
                 muted
@@ -37,10 +41,10 @@ const MissionSection = () => {
               className={styles.contentWrapper}
             >
               <h2 className={styles.heading}>
-                Breaking Charts With Our Video Animation Services For Everyone
+                {heading}
               </h2>
               <p className={`${styles.description} scroll_block`}>
-                From funded startups running their first SaaS product demo to established healthcare companies needing patient education content that meets compliance standards, the brands that come to us share one thing: they take their video seriously, and they need a video animation company that does the same.
+                {description}
               </p>
 
               <div className={styles.buttonsWrapper}>

@@ -1,15 +1,4 @@
-import Banner from "@/components/Common/Banner/Banner";
-import StatsSection from "@/components/Animation2D/StatsSection";
-import MissionSection from "@/components/Home/MissionSection";
-import FullCycleSection from "@/components/GameAnimation/FullCycleSection";
-import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-import WonderingSection from "@/components/LegalGraphics/WonderingSection";
-import LocationAccordionSection from "@/components/Common/LocationAccordionSection";
-import WhyInvestSection from "@/components/Animation2D/WhyInvestSection";
-import CooperationModelsSection from "@/components/CorporateVideoAnimation/CooperationModelsSection";
-import GreatVideosSection from "@/components/Animation2D/GreatVideosSection";
-import TestimonialSection from "@/components/Common/TestimonialSection";
-import FaqSection from "@/components/Animation2D/FaqSection";
+import LocationPageTemplate from "@/components/Common/LocationPageTemplate";
 import Link from "next/link";
 
 const austinServicesData = [
@@ -205,6 +194,54 @@ const austinServicesData = [
   }
 ];
 
+// Copy this object for another city page and replace only its copy/assets.
+const austinPageContent = {
+  banner: {
+    title: "Animation Studio in Austin - Pixel Studios Inc",
+    description: "Looking for high-quality 2D animations services for your business? Pixel Studios offers comprehensive 2D animation production services at a competitive price.",
+    video: "/videos/home.webm",
+    showPlayButton: true,
+  },
+  stats: {
+    heading: "A Trusted Animation Company for 2D & 3D Animation Services.",
+    statsData: [
+      { end: 500, suffix: "+", label: "Projects\nDelivered" },
+      { end: 97, suffix: "%", label: "Client Retention\nRate" },
+      { end: 12, suffix: "+", label: "Industries\nServed" },
+      { end: 95, suffix: "%", label: "On-Time\nDelivery" },
+    ],
+    variant: "gradient",
+  },
+  // Add city-specific copy, images and cards to these objects when duplicating this page.
+  mission: {},
+  fullCycle: {},
+  industries: {},
+  services: {
+    sectionTitle: "Austin Animation & Interactive Development Services",
+    items: austinServicesData,
+  },
+  workflow: {},
+  benefits: {},
+  greatVideos: {
+    title: <>Bring Your <span>Ideas</span> to Life with Professional <span>2D Animation Services</span></>,
+    text: "Whether you're launching a product, explaining a service, or strengthening your brand, our 2D animation studio creates visually compelling videos tailored to your goals. We combine strategic storytelling, creative design, and smooth animation to deliver content that captures attention and leaves a lasting impression.",
+  },
+  testimonials: {},
+  faq: {
+    heading: "Frequently Asked Questions",
+    faqs: [
+      { question: "How do I choose the best 2D animation company?", answer: "Look at portfolio range: genuine visual variety shows they adapt to briefs rather than applying one aesthetic to every client. Then, examine the process: do they describe their discovery approach specifically before the quote? Finally, look for verifiable client results with specific outcomes, not just testimonials describing a pleasant experience." },
+      { question: "What should I avoid when hiring a 2D animation studio?", answer: "Avoid studios that quote a price before understanding your project. Any 2D animation agency that gives you a rate before asking detailed questions about your audience and your business objective is pricing a generic production, not your specific one. Avoid studios that cannot show you named clients with verifiable outcomes. Avoid portfolios that show only one visual style regardless of industry." },
+      { question: "Can you follow my brand guidelines and visual identity?", answer: "Yes, and we treat your brand guidelines as the creative starting point. Your color palette, typography, illustration references, and tone of voice are all incorporated into the style frames before any animation begins. We produce branded 2D animated videos that fit your visual ecosystem rather than looking like they came from a different team." },
+      { question: "How do I choose the right animation style for my audience?", answer: "The right style depends on the audience, the objective, and the distribution context. Consumer audiences on social respond to expressive character animation and high visual energy. B2B and technical audiences respond to clean motion graphics and measured pacing. Healthcare audiences need accuracy above all. We work through these variables in discovery rather than leaving the style decision to trend or default." },
+      { question: "Is 2D animation enough for tech or B2B products, or do I need 3D to look premium?", answer: "2D animation is more than sufficient for the vast majority of tech and B2B use cases. What signals premium quality is the clarity of thinking and the craft of execution, neither of which is format-dependent. SaaS companies and enterprise brands producing the most effective animated content predominantly use 2D formats because the format excels at clear, efficient explanation. 3D is right when the product has a physical structure requiring dimensional rendering. Otherwise, a well-produced 2D video outperforms a mediocre 3D production in every metric that matters." },
+      { question: "How much does it cost for a 60 to 90-second 2D business animation?", answer: "A professionally produced 60 to 90-second 2D business animation from a reputable studio in the USA falls between $2,500 and $8,000, depending on creative complexity, number of characters, voiceover requirements, and production timeline. We provide an itemized, transparent quote based on your actual brief within 48 hours of a discovery call." },
+      { question: "How long does our production cycle typically take?", answer: "Most 60 to 90-second 2D animated videos are completed in three to five weeks from a brief sign-off. Discovery and scripting: five to seven days. Storyboard and design: five to seven days. Animation production: seven to ten days. Sound and final review: three to five days. Every project receives a milestone schedule with specific dates at kickoff, not a range with a disclaimer." },
+      { question: "What about the copyright of my animations once I pay for them?", answer: "Full copyright ownership transfers to you upon final payment. You own the right to use, distribute, modify, and publish the video in any format, on any platform, for any purpose without restriction. Our standard agreements confirm this in writing at project kickoff. Licensed music and stock sound assets are documented separately, so you have a complete picture of what you own outright and what is covered by a commercial license." },
+    ],
+  },
+};
+
 export const metadata = {
   title: "Animation Studio in Austin | Pixel Studios Inc",
   description: "Pixel Studios is a top-rated animation studio in Austin, TX.",
@@ -219,28 +256,5 @@ export const metadata = {
 };
 
 export default function AnimationStudioAustinPage() {
-  return (
-    <main>
-      <Banner
-        title="Animation Studio in Austin - Pixel Studios Inc"
-        description="Looking for high-quality 2D animations services for your business? Pixel Studios offers comprehensive 2D animation production services at a competitive price."
-        video="/videos/home.webm"
-        showPlayButton={true}
-      />
-      <StatsSection />
-      <MissionSection />
-      <FullCycleSection />
-      <PortfolioShowcase />
-      <WonderingSection />
-      <LocationAccordionSection
-        sectionTitle="Austin Animation & Interactive Development Services"
-        items={austinServicesData}
-      />
-      <WhyInvestSection />
-      <CooperationModelsSection />
-      <GreatVideosSection />
-      <TestimonialSection />
-      <FaqSection />
-    </main>
-  );
+  return <LocationPageTemplate content={austinPageContent} />;
 }

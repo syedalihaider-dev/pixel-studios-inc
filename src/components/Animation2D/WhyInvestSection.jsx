@@ -45,7 +45,12 @@ const accordionData = [
   },
 ];
 
-const WhyInvestSection = () => {
+const WhyInvestSection = ({
+  eyebrow = "HOW WE WORK",
+  heading = <>Our Proven 2D<br /> Animation Workflow</>,
+  description = "Our 2D animation production follows a structured, milestone-driven process. Here is exactly what happens between the brief and the final file.",
+  items = accordionData,
+}) => {
   const [activeId, setActiveId] = useState(1);
 
   return (
@@ -60,10 +65,10 @@ const WhyInvestSection = () => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6 }}
             >
-              <p className="subtitle">HOW WE WORK</p>
-              <h2 className={styles.mainTitle}>Our Proven 2D<br /> Animation Workflow</h2>
+              <p className="subtitle">{eyebrow}</p>
+              <h2 className={styles.mainTitle}>{heading}</h2>
               <p className={styles.subText}>
-                Our 2D animation production follows a structured, milestone-driven process. Here is exactly what happens between the brief and the final file.
+                {description}
               </p>
             </motion.div>
           </div>
@@ -76,7 +81,7 @@ const WhyInvestSection = () => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6 }}
             >
-              {accordionData.map((item) => (
+              {items.map((item) => (
                 <div
                   key={item.id}
                   className={`${styles.accordionItem} ${activeId === item.id ? styles.active : ''}`}

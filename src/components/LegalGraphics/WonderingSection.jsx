@@ -60,10 +60,16 @@ const industriesData = [
   }
 ];
 
-export default function WonderingSection() {
+export default function WonderingSection({
+  eyebrow = "INDUSTRIES WE SERVE",
+  heading = "Industries and Legal Practice Areas We Serve",
+  description = "Personal injury law firms, medical malpractice attorneys, product liability lawyers, insurance defense firms, criminal defense attorneys, civil litigation firms, and corporate legal teams rely on our legal visualization services. Each practice area has specific demonstrative requirements that we understand and approach individually.",
+  industries = industriesData,
+  contentTitle = "Example of our work",
+}) {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const activeData = industriesData[activeIndex];
+  const activeData = industries[activeIndex];
 
   return (
     <section className={styles.wonderingSection}>
@@ -76,18 +82,14 @@ export default function WonderingSection() {
           transition={{ duration: 0.6 }}
         >
           <div className="col-12 text-center">
-            <p className="subtitle">INDUSTRIES WE SERVE</p>
+            <p className="subtitle">{eyebrow}</p>
 
             <h2 className={styles.mainTitle}>
-              Industries and Legal Practice Areas We Serve
+              {heading}
             </h2>
 
             <p className={styles.description}>
-              Personal injury law firms, medical malpractice attorneys, product liability
-              lawyers, insurance defense firms, criminal defense attorneys, civil litigation
-              firms, and corporate legal teams rely on our legal visualization services.
-              Each practice area has specific demonstrative requirements that we understand
-              and approach individually.
+              {description}
             </p>
           </div>
         </motion.div>
@@ -101,7 +103,7 @@ export default function WonderingSection() {
         >
           <div className="col-lg-4 col-md-12">
             <div className={styles.industryList}>
-              {industriesData.map((item, index) => (
+              {industries.map((item, index) => (
                 <div
                   key={index}
                   className={`${styles.industryItem} ${index === activeIndex ? styles.active : ''}`}
@@ -133,7 +135,7 @@ export default function WonderingSection() {
                 >
                   <p className={styles.contentIntro}>{activeData.intro}</p>
 
-                  <h3 className={styles.contentTitle}>Example of our work</h3>
+                  <h3 className={styles.contentTitle}>{contentTitle}</h3>
 
                   <div className={styles.bulletList}>
                     {activeData.points.map((point, idx) => (

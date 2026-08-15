@@ -43,62 +43,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/responsive-website-development",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/hire-ui-ux-designer",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/digital-marketing-services",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/seo-services",
-        destination: "/",
-        permanent: true,
-      },
-      {
         source: "/social-media-marketing-services",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/mobile-app-development",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/android-app-development",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/augmented-reality-app-development",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/cross-platform-app-development",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/ios-app-development",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/game-app-development",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/our-services",
         destination: "/",
         permanent: true,
       },
@@ -149,11 +94,6 @@ const nextConfig = {
       // =========================
       // Animation Studio Pages (302)
       // =========================
-      // {
-      //   source: "/animation-studio-austin",
-      //   destination: "/",
-      //   permanent: false,
-      // },
       {
         source: "/animation-studio-boston",
         destination: "/",

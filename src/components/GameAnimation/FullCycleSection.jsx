@@ -106,8 +106,13 @@ const tabsData = [
   }
 ];
 
-const FullCycleSection = () => {
-  const [activeTab, setActiveTab] = useState(tabsData[0].id);
+const FullCycleSection = ({
+  eyebrow = "GAME ANIMATION SERVICES",
+  heading = "Game Animation Services We Provide",
+  description = "We create production-ready game animations across 2D, 3D, character, creature, cinematic, and interactive systems. Every animation is designed for gameplay performance, visual quality, and seamless integration into your target platform.",
+  tabs = tabsData,
+}) => {
+  const [activeTab, setActiveTab] = useState(tabs[0].id);
   const tabsContainerRef = useRef(null);
 
   const handleScroll = (direction) => {
@@ -120,7 +125,7 @@ const FullCycleSection = () => {
     }
   };
 
-  const activeTabData = tabsData.find(t => t.id === activeTab);
+  const activeTabData = tabs.find(t => t.id === activeTab);
 
   return (
     <section className={styles.section}>
@@ -133,14 +138,14 @@ const FullCycleSection = () => {
       >
         <div className="row text-center mb-5">
           <div className="col-12">
-            <p className="subtitle">GAME ANIMATION SERVICES</p>
+            <p className="subtitle">{eyebrow}</p>
 
             <h2 className={styles.mainHeading}>
-              Game Animation Services We Provide
+              {heading}
             </h2>
 
             <p className={styles.topParagraph}>
-              We create production-ready game animations across 2D, 3D, character, creature, cinematic, and interactive systems. Every animation is designed for gameplay performance, visual quality, and seamless integration into your target platform.
+              {description}
             </p>
           </div>
         </div>
@@ -151,7 +156,7 @@ const FullCycleSection = () => {
           </button>
 
           <div className={styles.tabsContainer} ref={tabsContainerRef}>
-            {tabsData.map((tab) => (
+            {tabs.map((tab) => (
               <div
                 key={tab.id}
                 className={`${styles.tabItem} ${activeTab === tab.id ? styles.activeTab : ''}`}
