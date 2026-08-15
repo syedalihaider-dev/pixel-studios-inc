@@ -30,6 +30,7 @@ export default function LocationPageTemplate({ content }) {
     services,
     workflow,
     benefits,
+    portfolio,
     greatVideos,
     testimonials,
     faq,
@@ -41,7 +42,7 @@ export default function LocationPageTemplate({ content }) {
       <StatsSection {...stats} />
       <MissionSection {...mission} />
       <FullCycleSection {...fullCycle} />
-      <PortfolioShowcase />
+      <PortfolioShowcase {...portfolio} />
       <WonderingSection {...industries} />
       <LocationAccordionSection {...services} />
       <WhyInvestSection {...workflow} />

@@ -60,11 +60,11 @@ const LocationAccordionSection = ({
         viewport={{ once: true, amount: 0.15 }}
         variants={containerVariants}
       >
-        {/* {sectionTitle && (
+        {sectionTitle && (
           <motion.h2 className={styles.sectionHeading} variants={itemVariants}>
             {sectionTitle}
           </motion.h2>
-        )} */}
+        )}
 
         <div className={styles.accordionContainer}>
           {items.map((item, index) => {

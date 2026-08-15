@@ -368,7 +368,10 @@ function PortfolioCard({ item, onClick }) {
   );
 }
 
-export default function PortfolioShowcase() {
+export default function PortfolioShowcase({
+  heading = "OUR LATEST PROJECTS",
+  description = "",
+}) {
   const [activeTab, setActiveTab] = useState("VIEW ALL");
   const [hoveredTab, setHoveredTab] = useState(null);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
@@ -428,8 +431,9 @@ export default function PortfolioShowcase() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          OUR LATEST PROJECTS
+          {heading}
         </motion.h2>
+        {description && <p className={styles.description}>{description}</p>}
 
         {/* Tabs Section */}
         <motion.div

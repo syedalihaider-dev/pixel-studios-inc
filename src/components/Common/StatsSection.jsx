@@ -34,6 +34,7 @@ const textVariants = {
 
 export default function StatsSection({
   heading,
+  description,
   statsData = [],
   variant = "default"
 }) {
@@ -58,6 +59,7 @@ export default function StatsSection({
                   </React.Fragment>
                 ))}
               </h2>
+              {description && <p>{description}</p>}
             </motion.div>
           </div>
 
