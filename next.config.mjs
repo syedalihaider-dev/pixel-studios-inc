@@ -5,6 +5,21 @@ const nextConfig = {
   async redirects() {
     return [
       // =========================
+      // Blog Subdomain Redirects (301)
+      // =========================
+      {
+        source: "/animation-service",
+        has: [
+          {
+            type: "host",
+            value: "blog.pixelstudiosinc.com",
+          },
+        ],
+        destination: "https://www.pixelstudiosinc.com/",
+        permanent: true,
+      },
+
+      // =========================
       // Home (301)
       // =========================
       {
@@ -270,6 +285,15 @@ const nextConfig = {
       },
 
       // =========================
+      // Contact (301)
+      // =========================
+      {
+        source: "/get-started",
+        destination: "/contact-us",
+        permanent: true,
+      },
+
+      // =========================
       // Contact (302)
       // =========================
       {
@@ -281,6 +305,15 @@ const nextConfig = {
         source: "/refund-form/",
         destination: "/contact-us",
         permanent: false,
+      },
+
+      // =========================
+      // LP Page Redirects (301)
+      // =========================
+      {
+        source: "/explainer-animated-videos/index",
+        destination: "/lp/animated-explainer-video-services",
+        permanent: true,
       },
     ];
   },

@@ -468,7 +468,7 @@ const Header = () => {
             </div>
 
             <div className="ms-3">
-              <CTAButton type="link" href="/get-started" text="GET STARTED" />
+              <CTAButton type="link" href="#" text="GET STARTED" />
             </div>
           </nav>
 
