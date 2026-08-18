@@ -110,72 +110,12 @@ const nextConfig = {
       // Animation Studio Pages (302)
       // =========================
       {
-        source: "/animation-studio-boston",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-california",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-chicago",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-dallas",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-denver",
-        destination: "/",
-        permanent: false,
-      },
-      {
         source: "/animation-studio-dover",
         destination: "/",
         permanent: false,
       },
       {
-        source: "/animation-studio-houston",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-los-angeles",
-        destination: "/",
-        permanent: false,
-      },
-      {
         source: "/animation-studio-nyc",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-san-francisco",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-seattle",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-toronto",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-dubai",
-        destination: "/",
-        permanent: false,
-      },
-      {
-        source: "/animation-studio-uk",
         destination: "/",
         permanent: false,
       },
