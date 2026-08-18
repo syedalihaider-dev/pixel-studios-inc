@@ -248,6 +248,30 @@ const nextConfig = {
       },
 
       // =========================
+      // Hire & Process Pages (302)
+      // =========================
+      {
+        source: "/process",
+        destination: "/",
+        permanent: false,
+      },
+      {
+        source: "/hire-vfx-artist",
+        destination: "/",
+        permanent: false,
+      },
+      {
+        source: "/hire-game-designer",
+        destination: "/",
+        permanent: false,
+      },
+      {
+        source: "/hire-2d-animator",
+        destination: "/2d-animation-services",
+        permanent: false,
+      },
+
+      // =========================
       // LP Page Redirects (301)
       // =========================
       {
