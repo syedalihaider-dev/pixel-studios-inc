@@ -223,6 +223,21 @@ const nextConfig = {
         destination: "/motion-graphics",
         permanent: true,
       },
+      {
+        source: "/services/architectural",
+        destination: "/architecture-animation",
+        permanent: true,
+      },
+      {
+        source: "/services/cgi-vfx",
+        destination: "/3d-animation-services",
+        permanent: true,
+      },
+      {
+        source: "/services/infographics",
+        destination: "/motion-graphics",
+        permanent: true,
+      },
 
       // =========================
       // Contact (301)
