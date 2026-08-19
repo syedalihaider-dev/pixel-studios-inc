@@ -16,7 +16,7 @@ export default function IndustrySection({
 
   const scrollLeft = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: -345, behavior: "smooth" }); // 320px + 25px gap
+      sliderRef.current.scrollBy({ left: -345, behavior: "smooth" });
     }
   };
 
@@ -74,7 +74,8 @@ export default function IndustrySection({
                     text="Read More"
                     variant="filled"
                     href={industry.link}
-                    type="link"
+                    type="link" 
+                    className={styles.ctaButton}
                   />
                 </div>
               </div>

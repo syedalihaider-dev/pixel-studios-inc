@@ -141,7 +141,7 @@
 }
 
 .cardContent button,
-.cardContent a {
+.ctaButton {
   display: none !important;
 }
 
