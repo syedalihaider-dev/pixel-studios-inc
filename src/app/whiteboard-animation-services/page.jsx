@@ -1,6 +1,6 @@
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/WhiteboardAnimation/StatsSection";
-import ServicesSection from "@/components/WhiteboardAnimation/ServicesSection";
+import ServicesSection from "@/components/Common/ServicesSection";
 import HowWeWorkSection from "@/components/WhiteboardAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/WhiteboardAnimation/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
@@ -9,9 +9,137 @@ import WonderingSection from "@/components/WhiteboardAnimation/WonderingSection"
 import CooperationModelsSection from "@/components/WhiteboardAnimation/CooperationModelsSection";
 import TestimonialsSlider from "@/components/WhiteboardAnimation/TestimonialsSlider";
 import TechnologySection from "@/components/WhiteboardAnimation/TechnologySection";
-import IndustrySection from "@/components/WhiteboardAnimation/IndustrySection";
+import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/WhiteboardAnimation/FaqSection";
+
+const industries = [
+  {
+    id: 1,
+    title: "SaaS & Technology",
+    image: "/industry/01.png",
+    text: "Product walkthroughs, onboarding sequences, and feature education for software platforms where users need to understand your product quickly — before they decide it is too complicated and leave.",
+    link: "#"
+  },
+  {
+    id: 2,
+    title: "Healthcare & Medical",
+    image: "/industry/02.png",
+    text: "Patient education, clinical training, and compliance content are produced to the accuracy and regulatory standards healthcare audiences require. We understand the difference between simplifying complex information and misrepresenting it. ",
+    link: "#"
+  },
+  {
+    id: 3,
+    title: "Education & E-Learning",
+    image: "/industry/03.png",
+    text: "Curriculum content, course modules, and institutional explainers are built around genuine learning outcomes. From K-12 to university-level and professional certification, we produce whiteboard animations that learners actually finish.",
+    link: "#"
+  },
+  {
+    id: 4,
+    title: "Finance & Fintech",
+    image: "/industry/04.png",
+    text: "Complex financial products, regulatory disclosures, and investment concepts are explained in a format that builds understanding without sacrificing accuracy. Clear enough for a general audience, precise enough for a compliance review.",
+    link: "#"
+  },
+  {
+    id: 5,
+    title: "Real Estate",
+    image: "/industry/05.png",
+    text: "Property walkthroughs, investment explainers, mortgage process videos, and market education content for agencies, developers, and proptech platforms communicating with buyers who are making the largest purchase of their lives.",
+    link: "#"
+  },
+  {
+    id: 6,
+    title: "E-Commerce",
+    image: "/industry/06.png",
+    text: "Product education, unboxing explainers, and post-purchase onboarding content that reduces returns, increases repeat purchases, and gives buyers the confidence to complete checkout on products that require some explanation.",
+    link: "#"
+  }
+  ,
+  {
+    id: 7,
+    title: "Startups & Enterprises",
+    image: "/industry/06.png",
+    text: "Whether you are explaining a new category to early adopters or rolling out a process change across a global organization, whiteboard animation scales from a single launch video to a full content program. ",
+    link: "#"
+  }
+];
+
+const sliderItems = [
+  {
+    id: 1,
+    title: "Whiteboard Explainer Videos",
+    description: "A whiteboard explainer video is the most efficient format for communicating a concept that your audience currently does not understand. We use this to your advantage. Every whiteboard explainer we produce is built on a script engineered for that specific audience, with a voiceover that matches their pace and a visual flow that mirrors how they actually process new information.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 2,
+    title: "Educational Whiteboard Animation",
+    description: "Training content that people click through to finish is not training. It is a compliance checkbox. Educational whiteboard animation works differently because learners follow the logic being drawn rather than watching a presenter read slides. We produce educational whiteboard animation for K-12 curriculum, university courses, corporate L&D programs, and professional certification content.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 3,
+    title: "Corporate Whiteboard Videos",
+    description: "Internal communication that goes unread and onboarding content that gets skipped costs organizations real money. Corporate whiteboard videos work for announcements, process documentation, policy explainers, change management communications, and executive messaging because the format commands attention without demanding a large production budget.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 4,
+    title: "Marketing & Promotional Whiteboard Videos",
+    description: "The attention economics of digital marketing have shifted. A well-built whiteboard animation video for marketing earns those five seconds because the visual construction draws the eye before the audience has decided whether to care. We produce whiteboard animation for product launches, lead generation campaigns, social media, and sales.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 5,
+    title: "Product Explainer Videos",
+    description: "Your product makes sense to you. It does not automatically make sense to someone encountering it for the first time. Product explainer videos translate features into outcomes, technical specifications into real-world benefits, and complex workflows into obvious logic. Our product explainer whiteboard animations are written for the buyer, not the builder.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 6,
+    title: "Training & E-Learning Videos",
+    description: "E-learning content has a retention problem. Slide decks narrated over screen recordings are not learning experiences — they are content endurance tests. Whiteboard animation is structurally better suited to learning because it sequences information the way the brain encodes it: one concept, then the next, visually connected. Our training and e-learning whiteboard videos are SCORM-compatible, LMS-ready, and aligned with the program's actual learning objectives.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 7,
+    title: "Healthcare Whiteboard Animation",
+    description: "Healthcare communication requires accuracy before anything else. Patient education, clinical training, public health awareness, and provider-facing content all carry compliance and standards that general-purpose animation studios do not understand. Our healthcare whiteboard animation team has produced content that meets the evidentiary and regulatory standards these audiences require, with terminology reviewed against clinical accuracy and visuals built to reinforce.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 8,
+    title: "SaaS Whiteboard Animation",
+    description: "SaaS onboarding is where user retention is won or lost. A new user who does not understand your product in the first session rarely returns. SaaS whiteboard animation for onboarding, feature education, and customer success content gives your users the conceptual scaffolding they need to get value from your product quickly. We have produced whiteboard animations for software platforms across project management, HR tech, fintech, cybersecurity, and marketing automation.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 9,
+    title: "AI Animation Services",
+    description: "AI-assisted 3D animation that reduces timelines without reducing quality. Used strategically to accelerate asset iteration and style exploration for high-volume or compressed-schedule productions.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 10,
+    title: "Architectural Rendering",
+    description: "Photorealistic architectural rendering, real estate visualization, and property walkthroughs for developers and architects presenting projects before completion.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 11,
+    title: "Cartoon Animation",
+    description: "Stylized 3D cartoon animation for brand storytelling, children's content, and educational series. Expressive, accessible, and distinct from the default digital-clean aesthetic.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  },
+  {
+    id: 12,
+    title: "Photorealistic Rendering",
+    description: "Hyperrealistic rendering that makes digital assets indistinguishable from photography. Used in product marketing, architectural visualization, and any context where visual realism determines audience trust.",
+    videoSrc: "https://www.youtube.com/embed/EmsrnGZTaIs?autoplay=1&mute=1&loop=1&playlist=EmsrnGZTaIs&controls=0&rel=0"
+  }
+];
 
 
 export const metadata = {
@@ -29,7 +157,11 @@ export default function WhiteboardAnimation() {
         showPlayButton={true}
       />
       <StatsSection />
-      <ServicesSection />
+      <ServicesSection 
+        title="Professional Whiteboard Animation Services"
+        description="Looking for Professional and Premium Whiteboard Animation Services? From product explainers and corporate training to healthcare education and SaaS onboarding, our professional whiteboard animation services are built for every use case where coherence, retention, and audience action are the goal. Here is what we bring to the table:"
+        sliderItems={sliderItems}
+      />
       <HowWeWorkSection />
       <PortfolioShowcase />
       <TeamStandoutSection />
@@ -39,7 +171,12 @@ export default function WhiteboardAnimation() {
       <TestimonialsSlider />
       <TechnologySection />
       <TestimonialSection />
-      <IndustrySection />
+      <IndustrySection 
+        heading="Whiteboard Animation Solutions for Every Industry"
+        description="The same whiteboard animation video that works for a healthcare compliance program will not work for a SaaS product demo. We have built genuine expertise across the categories below, which means we understand those differences from the first briefing call."
+        industries={industries}
+        variant="gradient"
+      />
       <FaqSection />
     </main>
   );

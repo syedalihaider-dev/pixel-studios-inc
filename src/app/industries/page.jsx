@@ -1,6 +1,6 @@
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/Industries/StatsSection";
-import ServicesSection from "@/components/Industries/ServicesSection";
+import ServicesSection from "@/components/Common/ServicesSection";
 import WhyChooseSection from "@/components/Industries/WhyChooseSection";
 import WonderingSection from "@/components/Industries/WonderingSection";
 import WhyPartnerSection from "@/components/Industries/WhyPartnerSection";
@@ -10,10 +10,88 @@ import CostSection from "@/components/Industries/CostSection";
 import GetQuoteSection from "@/components/Common/GetQuoteSection";
 import TestimonialsSlider from "@/components/Industries/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Industries/TrustedClientsSection";
-import IndustrySection from "@/components/Industries/IndustrySection";
+import IndustrySection from "@/components/Common/IndustrySection";
 import GreatVideosSection from "@/components/Industries/GreatVideosSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/Industries/FaqSection";
+
+const industries = [
+  {
+    id: 1,
+    title: "Retail & E-commerce",
+    image: "/industry/01.png",
+    text: "Boost sales and engage shoppers with stunning product animations and explainer videos tailored for e-commerce platforms.",
+    link: "#"
+  },
+  {
+    id: 2,
+    title: "Professional Services",
+    image: "/industry/02.png",
+    text: "Establish trust and clearly communicate complex value propositions with corporate animations designed for B2B success.",
+    link: "#"
+  },
+  {
+    id: 3,
+    title: "Software & Tech",
+    image: "/industry/03.png",
+    text: "Simplify software demos and highlight features effectively with dynamic SaaS animation and UI/UX motion graphics.",
+    link: "#"
+  },
+  {
+    id: 4,
+    title: "Medical & Biotech",
+    image: "/industry/04.png",
+    text: "Visualize complex biological processes and medical devices accurately with specialized 3D scientific animations.",
+    link: "#"
+  },
+  {
+    id: 5,
+    title: "Education",
+    image: "/industry/05.png",
+    text: "Enhance learning experiences and increase student retention with engaging educational animations and e-learning courses.",
+    link: "#"
+  },
+  {
+    id: 6,
+    title: "Real Estate",
+    image: "/industry/06.png",
+    text: "Showcase properties and architectural designs with immersive 3D walkthroughs and real estate visualization.",
+    link: "#"
+  }
+];
+
+const sliderItems = [
+  {
+    id: 1,
+    title: "2D Animated Explainer Videos",
+    description: "How long does it take your sales team to explain what your product does in a first call? A well-built 2D explainer video animation solves that permanently. We write scripts around the viewer's decision-making process, not your product feature list.",
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 2,
+    title: "2D Commercials",
+    description: "Capture attention and drive conversions with high-quality 2D animated commercials tailored for TV, social media, and web campaigns. We blend compelling storytelling with vibrant visuals.",
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
+  },
+  {
+    id: 3,
+    title: "Educational 2D Animation",
+    description: "Simplify complex concepts into easy-to-understand educational videos. Perfect for e-learning platforms, training modules, and classroom materials that keep learners engaged.",
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
+  },
+  {
+    id: 4,
+    title: "2D Character Animation",
+    description: "Bring unique characters to life with our expert 2D character animation services. From mascots to narrative-driven protagonists, we ensure smooth and expressive movements.",
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
+  },
+  {
+    id: 5,
+    title: "2D Motion Graphics",
+    description: "Enhance your digital presence with sleek 2D motion graphics. Ideal for corporate presentations, UI/UX animations, and visually striking promotional content.",
+    videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" // You can replace this with a different Vimeo ID
+  }
+];
 
 const bannerSlides = [
   {
@@ -42,7 +120,11 @@ export default function Industries() {
         slides={bannerSlides}
       />
       <StatsSection />
-      <ServicesSection />
+      <ServicesSection
+        title="Our Services"
+        description={null}
+        sliderItems={sliderItems}
+      />
       <WhyChooseSection />
       <WonderingSection />
       <WhyPartnerSection />
@@ -56,7 +138,11 @@ export default function Industries() {
       <GreatVideosSection />
       <TestimonialSection />
       <TrustedClientsSection />
-      <IndustrySection />
+      <IndustrySection 
+        heading="We've delivered results for companies in every industry."
+        industries={industries}
+        variant="gradient"
+      />
       <FaqSection />
     </main>
   );

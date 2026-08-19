@@ -125,9 +125,9 @@ const ServicesSection = ({
                     <h3 className={styles.slideTitle}>{sliderItems[activeIndex].title}</h3>
                     <p className={`${styles.slideDesc} scroll_block`}>{sliderItems[activeIndex].description}</p>
 
-                    <div className={styles.btnWrapper}>
+                    {/* <div className={styles.btnWrapper}>
                       <CTAButton text="Learn More" href="#" />
-                    </div>
+                    </div> */}
                   </motion.div>
                 </AnimatePresence>
               </div>

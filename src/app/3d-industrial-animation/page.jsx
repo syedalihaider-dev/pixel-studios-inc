@@ -1,6 +1,6 @@
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/IndustrialAnimation3D/StatsSection";
-import ServicesSection from "@/components/IndustrialAnimation3D/ServicesSection";
+import ServicesSection from "@/components/Common/ServicesSection";
 import CostSection from "@/components/IndustrialAnimation3D/CostSection"
 import HowWeWorkSection from "@/components/IndustrialAnimation3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/IndustrialAnimation3D/WhyInvestSection";
@@ -9,9 +9,125 @@ import GreatVideosSection from "@/components/IndustrialAnimation3D/GreatVideosSe
 import TeamStandoutSection from "@/components/IndustrialAnimation3D/TeamStandoutSection";
 import CooperationModelsSection from "@/components/IndustrialAnimation3D/CooperationModelsSection";
 import TechnologySection from "@/components/IndustrialAnimation3D/TechnologySection";
-import IndustrySection from "@/components/IndustrialAnimation3D/IndustrySection";
+import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/IndustrialAnimation3D/FaqSection";
+
+const industries = [
+  {
+    id: 1,
+    title: "Manufacturing",
+    image: "/industry/01.png",
+    text: "Manufacturing equipment animation and production line visualization for facilities seeking to train staff or market capability to new clients and partners.",
+    link: "#"
+  },
+  {
+    id: 2,
+    title: "Oil and Gas",
+    image: "/industry/02.png",
+    text: "Industrial system animation for pipeline operations, refinery processes, and extraction equipment built to strict technical accuracy and safety communication standards.",
+    link: "#"
+  },
+  {
+    id: 3,
+    title: "Renewable Energy",
+    image: "/industry/03.png",
+    text: "Industrial animation for turbine systems, solar installations, and energy storage technology is explained clearly to investors and regulatory bodies alike.",
+    link: "#"
+  },
+  {
+    id: 4,
+    title: "Construction and Infrastructure",
+    image: "/industry/04.png",
+    text: "Technical animation for heavy construction equipment, infrastructure projects, and large-scale mechanical systems used across public works and private development.",
+    link: "#"
+  },
+  {
+    id: 5,
+    title: "Automotive",
+    image: "/industry/05.png",
+    text: "Industrial animation for automotive manufacturing lines, robotics integration, and mechanical systems within high-volume production facilities.",
+    link: "#"
+  },
+  {
+    id: 6,
+    title: "Aerospace and Defense",
+    image: "/industry/06.png",
+    text: "Engineering animation services for aerospace mechanical systems and defense equipment built to exacting technical specifications and security requirements.",
+    link: "#"
+  },
+  {
+    id: 7,
+    title: "Mining and Heavy Equipment",
+    image: "/industry/06.png",
+    text: "Industrial machinery animation services for mining equipment and heavy machinery operating in extreme operational environments and remote locations.",
+    link: "#"
+  },
+  {
+    id: 8,
+    title: "Industrial Automation",
+    image: "/industry/06.png",
+    text: "Animation visualizing industrial automation systems, PLC systems, and SCADA systems integration across modern, increasingly automated production facilities.",
+    link: "#"
+  }
+];
+
+const sliderItems = [
+  {
+    id: 1,
+    title: "Industrial Process Animation",
+    description: "Industrial process animation visualizing multi-stage manufacturing or chemical processes end-to-end, built from engineering data rather than visual approximation. Every stage transition is timed to match the actual cycle time of the process being shown.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 2,
+    title: "Manufacturing Animation",
+    description: "Manufacturing animation showing production line sequences, equipment interaction, and material flow across a facility for training and marketing use. We model the actual layout of production facilities rather than a generic factory backdrop.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 3,
+    title: "Mechanical Animation",
+    description: "Mechanical engineering animation services depicting gear systems, hydraulics, and moving assemblies with technically accurate motion derived directly from CAD models. Mechanical systems are animated to their real tolerances, not an approximated range of motion.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 4,
+    title: "Product Assembly Animation",
+    description: "Product assembly animation sequencing component installation steps are clearly for training, technical documentation, and customer-facing demonstration. Sequencing follows the actual assembly order specified by your engineering teams.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 5,
+    title: "Industrial Equipment Animation",
+    description: "Industrial equipment demonstration videos showing machinery function and operating principles without requiring physical access to the equipment. Useful for export markets where shipping a demo unit is impractical.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 6,
+    title: "Safety Training Animation",
+    description: "Industrial safety training animation walks employees through hazard scenarios and correct procedures in a controlled, repeatable visual format. Scenarios can depict situations too dangerous to stage for live training footage.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 7,
+    title: "Plant and Facility Animation",
+    description: "Plant operation animation showing full facility layout, workflow, and system integration for stakeholder presentations and operational planning. Built from facility blueprints for dimensional accuracy across the full site.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 8,
+    title: "Engineering Simulation Animation",
+    description: "Engineering simulation animation visualizes stress analysis, thermal behavior, or fluid dynamics results from engineering simulations in an accessible visual format. Translates simulation data into a narrative that non-engineers can follow.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  },
+  {
+    id: 9,
+    title: "Technical Explainer Animations",
+    description: "Engineering explainer videos breaking down complex technical systems for non-technical stakeholders, investors, and customers who need the concept without the full engineering background.",
+    videoSrc: "https://player.vimeo.com/video/1200540842?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+  }
+];
 
 
 export const metadata = {
@@ -30,7 +146,11 @@ export default function IndustrialAnimation3DPage() {
       />
       <StatsSection />
       <CostSection />
-      <ServicesSection />
+      <ServicesSection 
+        title="Professional 3D Industrial Animation Services for Every Business Need"
+        description="Our industrial animation services cover the full range of technical communication needs across manufacturing, energy, and engineering sectors, all produced by a team that reads engineering drawings as fluently as it builds animation."
+        sliderItems={sliderItems}
+      />
       <PortfolioShowcase />
       <HowWeWorkSection />
       <CooperationModelsSection />
@@ -38,7 +158,12 @@ export default function IndustrialAnimation3DPage() {
       <TeamStandoutSection />
       <GreatVideosSection />
       <TechnologySection />
-      <IndustrySection />
+      <IndustrySection 
+        heading="Industry-Specific Industrial Animation Solutions"
+        description="Industrial animation requirements vary significantly by sector, and our team applies industry-specific technical standards and regulatory awareness to each of the following categories."
+        industries={industries}
+        variant="gradient"
+      />
       <TestimonialSection />
       <FaqSection />
     </main>
