@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/ProductAnimation3D/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -6,12 +11,61 @@ import HowWeWorkSection from "@/components/ProductAnimation3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/ProductAnimation3D/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/ProductAnimation3D/GreatVideosSection";
-import TeamStandoutSection from "@/components/ProductAnimation3D/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/ProductAnimation3D/CooperationModelsSection";
 import WonderingSection from "@/components/ProductAnimation3D/WonderingSection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/ProductAnimation3D/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Product Marketing Campaigns',
+    description: "3D marketing animation gives campaigns a visual asset that performs across every channel simultaneously, from paid social to email to the product page itself.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Product Launch Presentations',
+    description: "Product animation for sales presentations gives launch teams a consistent, polished asset for every pitch instead of relying on a slide deck and a verbal description.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'eCommerce Product Showcases',
+    description: "Product animation for eCommerce increases buyer confidence and reduces the ambiguity that drives returns, particularly for products with moving parts or assembly steps.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Trade Show and Exhibition Displays',
+    description: "Product animation for trade shows gives booth visitors a compelling reason to stop and engage rather than walking past another static display.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Sales Presentations',
+    description: "Product animation for sales teams replaces static decks with content that actually holds a prospect's attention through a full demo conversation.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Customer Education and Training',
+    description: "Product training animation reduces support burden by answering common usage questions visually before a customer ever opens a support ticket.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -151,7 +205,13 @@ export default function TitlesAndProductAnimation3D() {
         description="Our product animation services cover every format a brand needs across the customer journey, from first awareness through post-purchase education, all produced in-house by a team that specializes specifically in product communication."
         sliderItems={sliderItems}
       />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="HOW WE WORK"
+        title={<>How Businesses Leverage <span>3D Product Animation</span> Services?</>}
+        description="3D product animation is used across the entire product lifecycle — from early R&D concepts and marketing mockups to launch campaigns and post-sale support. Businesses that invest in 3D animation typically see faster comprehension, clearer communication, and stronger engagement than they achieve through static imagery or text-only specifications."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1201624680?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <PortfolioShowcase />
       <HowWeWorkSection />
       <GreatVideosSection />

@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/IndustrialAnimation3D/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -6,12 +11,61 @@ import HowWeWorkSection from "@/components/IndustrialAnimation3D/HowWeWorkSectio
 import WhyInvestSection from "@/components/IndustrialAnimation3D/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/IndustrialAnimation3D/GreatVideosSection";
-import TeamStandoutSection from "@/components/IndustrialAnimation3D/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/IndustrialAnimation3D/CooperationModelsSection";
 import TechnologySection from "@/components/IndustrialAnimation3D/TechnologySection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/IndustrialAnimation3D/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Industrial and Engineering Expertise',
+    description: "Our team includes artists experienced in reading CAD models and engineering drawings, not just generalist animators applying motion after the fact without technical context.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Accurate Technical Visualization',
+    description: "Every industrial animation is checked against the source engineering data, whether that originates from SolidWorks, AutoCAD, or Autodesk Inventor files.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Custom Animation Solutions',
+    description: "Every project starts from your specific equipment, process, and audience rather than a generic industrial animation template retrofitted to fit.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'High-End Visual Quality',
+    description: "Broadcast-quality rendering and lighting are applied to every industrial animation regardless of the technical complexity underneath the finished surface.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Dedicated Project Management',
+    description: "One project manager coordinates between your engineering teams and our production team throughout the entire project lifecycle.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Reliable Delivery Timelines',
+    description: "Documented production schedules keep technically complex industrial animation projects on track without sacrificing accuracy for speed at the final stage.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -155,7 +209,13 @@ export default function IndustrialAnimation3DPage() {
       <HowWeWorkSection />
       <CooperationModelsSection />
       <WhyInvestSection />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="HOW WE WORK"
+        title={<>Why Businesses Choose Our Industrial <span>Animation</span> Company?</>}
+        description="We combine engineering literacy with high-end visualization tools to create industrial animations that communicate clearly, validate technically, and engage audiences."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1065200259?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <GreatVideosSection />
       <TechnologySection />
       <IndustrySection 

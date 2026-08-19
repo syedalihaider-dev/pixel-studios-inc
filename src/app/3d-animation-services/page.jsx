@@ -1,10 +1,15 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/Animation3D/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
 import HowWeWorkSection from "@/components/Animation3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/Animation3D/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-import TeamStandoutSection from "@/components/Animation3D/TeamStandoutSection";
+;
 import CostSection from "@/components/Animation3D/CostSection";
 import TestimonialsSlider from "@/components/Animation3D/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Animation3D/TrustedClientsSection";
@@ -13,6 +18,55 @@ import GreatVideosSection from "@/components/Animation3D/GreatVideosSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/Animation3D/FaqSection";
 import Link from 'next/link';
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Visualize Products Before Production',
+    description: "Show investors and buyers exactly how a product looks and works before manufacturing begins. 3D product visualization removes risk from early-stage sales conversations.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Simplify Complex Concepts',
+    description: "Scientific visualization, technical animation, and machinery visualization make the invisible visible. If text cannot explain it, 3D animation usually can.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Improve Marketing Performance',
+    description: "3D marketing videos and CGI animation services consistently outperform static creative in click-through rate, engagement, and conversion across paid and organic channels.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Strengthen Sales Presentations',
+    description: "Platform demonstrations built in 3D give sales teams a shared visual reference that reduces ambiguity and objection volume in technical conversations.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Support Technical Communication',
+    description: "Engineering teams and technical buyers respond to accuracy. Our 3D animation production services produce technically precise content that survives expert review.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Create Engaging Customer Experiences',
+    description: "Real estate visualization and consumer product showcases give buyers a richer product experience than static pages allow, directly feeding purchase confidence.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -172,7 +226,13 @@ export default function ThreeDAnimation() {
       />
       <HowWeWorkSection />
       <PortfolioShowcase />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="WHAT MAKES"
+        title={<>What <span>3D Animation</span> Can Help You Achieve?</>}
+        description="The right 3D animation services for businesses close the gap between what your audience understands and what they need to understand to act."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1065180132?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <CostSection />
       <WhyInvestSection />
       <TestimonialsSlider />

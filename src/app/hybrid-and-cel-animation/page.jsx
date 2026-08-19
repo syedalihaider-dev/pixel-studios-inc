@@ -1,10 +1,15 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/HybridAnimation/StatsSection";
 import CostSection from "@/components/HybridAnimation/CostSection";
 import ServicesSection from "@/components/Common/ServicesSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/HybridAnimation/GreatVideosSection";
-import TeamStandoutSection from "@/components/HybridAnimation/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/HybridAnimation/CooperationModelsSection";
 import HowWeWorkSection from "@/components/HybridAnimation/HowWeWorkSection";
 import WonderingSection from "@/components/HybridAnimation/WonderingSection";
@@ -13,6 +18,54 @@ import AnimationServicesSection from "@/components/HybridAnimation/AnimationServ
 import ProjectCostSection from "@/components/HybridAnimation/ProjectCostSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/HybridAnimation/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: "What Is Cel Animation?",
+    description:
+      "Cel animation is the technique of drawing each frame individually, traditionally on transparent celluloid sheets photographed in sequence. The term now applies broadly to any frame-by-frame drawn animation, traditional or digital, that produces the specific visual character of hand-drawn motion.",
+    icon: "/icons/result-oriented.png"
+  },
+  {
+    id: 2,
+    title: "What Is Hybrid Animation?",
+    description:
+      "Hybrid animation combines two or more animation techniques, most commonly 2D and 3D, within a single production. The combination is used deliberately: each technique applied to the elements it renders most effectively.",
+    icon: "/icons/flexible.png"
+  },
+  {
+    id: 3,
+    title: "Traditional vs Digital Cel Animation",
+    description:
+      "Traditional cel animation is drawn and photographed on physical media. Digital cel animation replicates the same frame-by-frame drawing process in software. The visual result can be nearly indistinguishable. The production workflow and cost structure are different.",
+    icon: "/icons/transparent.png"
+  },
+  {
+    id: 4,
+    title: "Combining 2D and 3D Animation Techniques",
+    description:
+      "Successful hybrid production requires a consistent visual language between the 2D and 3D elements so the combination reads as an intentional style rather than a visible technical seam.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 5,
+    title: "Choosing the Right Animation Style for Your Project",
+    description:
+      "The technique is determined by the visual concept, the budget, and the production timeline, not by studio default. We recommend the approach that serves the specific creative brief.",
+    icon: "/icons/experienced.png"
+  }
+];
 
 const sliderItems = [
   {
@@ -97,7 +150,13 @@ export default function HybridAnimationPage() {
       />
       <PortfolioShowcase />
       <GreatVideosSection />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="HYBRID & CEL ANIMATION"
+        title={<>Understanding Hybrid and Cel Animation</>}
+        description="Hybrid and cel animation combine traditional artistic techniques with modern production workflows to create distinctive visual experiences. From hand-drawn frame-by-frame animation to carefully integrated 2D and 3D techniques, each approach is selected based on the creative direction, storytelling goals, and production requirements of the project."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1201625004?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <CooperationModelsSection />
       <HowWeWorkSection />
       <WonderingSection />

@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/CorporateVideoAnimation/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -6,12 +11,61 @@ import HowWeWorkSection from "@/components/CorporateVideoAnimation/HowWeWorkSect
 import WhyInvestSection from "@/components/CorporateVideoAnimation/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/CorporateVideoAnimation/GreatVideosSection";
-import TeamStandoutSection from "@/components/CorporateVideoAnimation/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/CorporateVideoAnimation/CooperationModelsSection";
 import TechnologySection from "@/components/CorporateVideoAnimation/TechnologySection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/CorporateVideoAnimation/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Experienced Corporate Video Specialists',
+    description: "Our team has produced corporate video animations across technology, finance, healthcare, and industrial sectors with cross-industry experience that reduces the briefing overhead.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Custom Animation Solutions',
+    description: "Every animated corporate video starts from your brief, your brand, and your business objective. No templates applied regardless of fit.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Industry-Specific Expertise',
+    description: "We understand the communication norms, audience psychology, and accuracy standards of every sector we serve.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Dedicated Project Management',
+    description: "One project manager from brief to delivery. Every milestone is dated. Every revision round is documented before production begins.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Fast Turnaround Times',
+    description: "Most corporate video animation productions are completed in three to five weeks from a brief sign-off, with rush options available.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Transparent Communication',
+    description: "Documented scope, milestone schedules, and proactive updates throughout every corporate animation video production.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -148,7 +202,13 @@ export default function CorporateVideoAnimationPage() {
       <HowWeWorkSection />
       <CooperationModelsSection />
       <WhyInvestSection />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="HOW WE WORK"
+        title={<>Why Choose Our Corporate <span>Animation</span> Company?</>}
+        description="Most corporate animation companies deliver a video. We deliver a communication outcome. Every project at Pixel Studios begins with what the video needs to accomplish — not with what it should look like. That distinction is why our clients come back, and why the videos we produce continue performing long after delivery."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1201854810?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <GreatVideosSection />
       <TechnologySection />
       <IndustrySection 

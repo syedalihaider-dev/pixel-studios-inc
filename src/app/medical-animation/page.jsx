@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/MedicalAnimation/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -6,12 +11,61 @@ import HowWeWorkSection from "@/components/MedicalAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/MedicalAnimation/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/MedicalAnimation/GreatVideosSection";
-import TeamStandoutSection from "@/components/MedicalAnimation/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/MedicalAnimation/CooperationModelsSection";
 import TechnologySection from "@/components/MedicalAnimation/TechnologySection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/MedicalAnimation/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Medical and Scientific Expertise',
+    description: "Our studio for medical animation works with scientific advisors and your internal medical teams rather than relying on animators interpreting clinical content alone.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Accurate Healthcare Visualizations',
+    description: "Every medical animation is reviewed against primary scientific literature and client-provided clinical data before final production.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Custom-Tailored Animation Solutions',
+    description: "Every 3D medical animation is built from your specific molecule, device, or procedure rather than a modified generic model.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Regulatory-Conscious Production',
+    description: "Our production process is structured to produce content that meets the evidentiary and accuracy standards of regulatory communication and promotional review.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Dedicated Project Management',
+    description: "One project manager coordinates between your medical, regulatory, and marketing teams throughout every medical animation production.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Reliable Delivery Timelines',
+    description: "Documented production schedules built around your medical review cycles so milestones align with internal approval timelines.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -155,7 +209,13 @@ export default function MedicalAnimationPage() {
       <HowWeWorkSection />
       <CooperationModelsSection />
       <WhyInvestSection />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="HOW WE WORK"
+        title={<>Why Healthcare Brands Trust Our Medical <span>Animation</span> Company?</>}
+        description="Most medical animation studios deliver a visual asset. We deliver clinical clarity. Our production process integrates rigorous scientific review cycles and collaborative oversight to ensure every frame meets the highest standards of scientific accuracy and regulatory compliance."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1201854908?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <GreatVideosSection />
       <TechnologySection />
       <IndustrySection 

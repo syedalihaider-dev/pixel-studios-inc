@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/TrailerAnimation/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -6,12 +11,112 @@ import HowWeWorkSection from "@/components/TrailerAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/TrailerAnimation/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/TrailerAnimation/GreatVideosSection";
-import TeamStandoutSection from "@/components/TrailerAnimation/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/TrailerAnimation/CooperationModelsSection";
-import SoftwareSection from "@/components/TrailerAnimation/SoftwareSection";
+
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/TrailerAnimation/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const softwareSectionFeatures = [
+  {
+    id: 1,
+    title: "Factors Affecting Project Cost",
+    description:
+      "Reconstruction complexity, number of expert review cycles, animation length, and production timeline.",
+    icon: "/icons/result-oriented.png"
+  },
+  {
+    id: 2,
+    title: "Complexity of the Case",
+    description:
+      "A single-vehicle accident reconstruction costs less than a multi-party commercial vehicle collision with conflicting expert opinions.",
+    icon: "/icons/flexible.png"
+  },
+  {
+    id: 3,
+    title: "Level of Detail Required",
+    description:
+      "A demonstrative showing general event sequence costs less than forensic animation with frame-accurate vehicle dynamics and sight line analysis precisely matched to engineering survey data.",
+    icon: "/icons/transparent.png"
+  },
+  {
+    id: 4,
+    title: "Animation Length",
+    description:
+      "A 90-second reconstruction costs less than a five-minute medical malpractice animation covering surgical procedure, injury mechanism, and long-term consequence.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 5,
+    title: "Expert Witness Collaboration",
+    description:
+      "Multi-expert review cycles with revision requirements at each review add to the production timeline and cost.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 6,
+    title: "Delivery Timeline",
+    description:
+      "Standard production runs four to eight weeks. Expedited production for cases approaching trial is available.",
+    icon: "/icons/experienced.png"
+  }
+];
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Opening Title Animation',
+    description: "Opening title animation that establishes tone before the content begins. Used for films, branded video series, YouTube channels, and corporate video content that needs a consistent opening identity.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Animated Title Sequences',
+    description: "Full animated title sequences combining typography, motion graphics, and visual effects. Used for film openings, series intros, and branded content that needs a memorable, repeatable opening identity.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Motion Graphics Titles',
+    description: "Motion graphics titles for corporate video, marketing content, and broadcast production. Clean, brand-consistent title treatments that integrate with the visual identity established elsewhere in the production.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Intro Animation Services',
+    description: "Video intro animation for YouTube channels, podcasts, and branded content series. Short, high-impact intro animation services that establish brand recognition in the first three seconds of every video.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Outro Animation Services',
+    description: "Outro animation services that close content with the same production quality as the opening. Calls to action, subscribe prompts, and brand sign-offs are integrated into a cohesive closing sequence.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Kinetic Typography Animation',
+    description: "Text-led kinetic typography animation where words carry the motion and emphasis. Effective for quote-driven trailers, brand statement videos, and title sequences where the message is the visual.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 7,
+    title: 'Broadcast Graphics and Film Titles',
+    description: "Broadcast title animation and film title sequence design produced to broadcast delivery specifications. Frame rate, resolution, and color space requirements are handled to professional broadcast standards.",
+    icon: '/icons/experienced.png'
+  },
+];
 
 const industries = [
   {
@@ -130,12 +235,24 @@ export default function TitlesAndTrailerAnimation() {
         description="Our trailer production company covers every trailer format across entertainment, gaming, and brand marketing."
         sliderItems={sliderItems}
       />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="WHAT MAKES"
+        title={<>Title Sequence Animation and <span>Motion Graphics Services</span></>}
+        description="A title sequence is the first thing an audience sees and the first signal of production quality they receive. Our title sequence animation services cover every format a brand, film, or broadcast production needs."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1200540933?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <CostSection />
       <PortfolioShowcase />
       <HowWeWorkSection />
       <CooperationModelsSection />
-      <SoftwareSection />
+            <TeamStandoutSection
+        subtitle="PRICING"
+        title={<>Cost of <span>Legal Graphics Animation Services</span></>}
+        description="Every legal graphics and animation project is quoted based on the evidence, complexity, and production requirements of the case. The following factors have the greatest impact on project scope, timeline, and overall cost."
+        features={softwareSectionFeatures}
+        
+      />
       <WhyInvestSection />
       <GreatVideosSection />
       <IndustrySection 

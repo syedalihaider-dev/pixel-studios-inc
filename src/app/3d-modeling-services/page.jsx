@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/Modeling3D/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -6,12 +11,61 @@ import HowWeWorkSection from "@/components/Modeling3D/HowWeWorkSection";
 import WhyInvestSection from "@/components/Modeling3D/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/Modeling3D/GreatVideosSection";
-import TeamStandoutSection from "@/components/Modeling3D/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/Modeling3D/CooperationModelsSection";
 import TechnologySection from "@/components/Modeling3D/TechnologySection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/Modeling3D/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Experienced 3D Artists',
+    description: "Our professional 3D artists have built assets across gaming, product, and architectural categories for years, with portfolios that demonstrate range rather than a single specialty.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Custom Modeling Solutions',
+    description: "Every 3D modeling project starts from your brief and your technical requirements, never a template asset retrofitted to fit your specification.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Industry-Specific Expertise',
+    description: "Our 3D modeling experts understand the technical standards specific to gaming, healthcare, and manufacturing clients alike, reducing the learning curve on every new brief.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Scalable Production Capacity',
+    description: "From a single hero asset to a full enterprise 3D modeling services library, we scale our team to your project volume without compromising turnaround.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Fast Turnaround Times',
+    description: "Most 3D modeling projects are completed in one to three weeks, depending on asset complexity and scope, with rush options available for tighter deadlines.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Transparent Communication',
+    description: "A dedicated project manager and a documented production schedule keep every 3D modeling project on track with no surprises at delivery.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -155,7 +209,13 @@ export default function Modeling3DPage() {
       <HowWeWorkSection />
       <CooperationModelsSection />
       <WhyInvestSection />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="HOW WE WORK"
+        title={<>Why Choose Our Expert <span>3D Modeling</span> Company?</>}
+        description="The right 3D modeling company preserves your creative intent while solving technical challenges like file size, naming conventions, and engine-ready topology. From there the models are polished, validated, and packaged so your team can drop them straight into the pipeline without friction."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1201624713?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <GreatVideosSection />
       <TechnologySection />
       <IndustrySection 

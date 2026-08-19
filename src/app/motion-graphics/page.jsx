@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/MotionGraphics/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -5,14 +10,102 @@ import HowWeWorkSection from "@/components/MotionGraphics/HowWeWorkSection";
 import WhyInvestSection from "@/components/MotionGraphics/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/MotionGraphics/GreatVideosSection";
-import TeamStandoutSection from "@/components/MotionGraphics/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/MotionGraphics/CooperationModelsSection";
 import TestimonialsSlider from "@/components/MotionGraphics/TestimonialsSlider";
 import TechnologySection from "@/components/MotionGraphics/TechnologySection";
-import SoftwareSection from "@/components/MotionGraphics/SoftwareSection";
+
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/MotionGraphics/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const softwareSectionFeatures = [
+  {
+    id: 1,
+    title: "Factors Affecting Project Cost",
+    description:
+      "Reconstruction complexity, number of expert review cycles, animation length, and production timeline.",
+    icon: "/icons/result-oriented.png"
+  },
+  {
+    id: 2,
+    title: "Complexity of the Case",
+    description:
+      "A single-vehicle accident reconstruction costs less than a multi-party commercial vehicle collision with conflicting expert opinions.",
+    icon: "/icons/flexible.png"
+  },
+  {
+    id: 3,
+    title: "Level of Detail Required",
+    description:
+      "A demonstrative showing general event sequence costs less than forensic animation with frame-accurate vehicle dynamics and sight line analysis precisely matched to engineering survey data.",
+    icon: "/icons/transparent.png"
+  },
+  {
+    id: 4,
+    title: "Animation Length",
+    description:
+      "A 90-second reconstruction costs less than a five-minute medical malpractice animation covering surgical procedure, injury mechanism, and long-term consequence.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 5,
+    title: "Expert Witness Collaboration",
+    description:
+      "Multi-expert review cycles with revision requirements at each review add to the production timeline and cost.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 6,
+    title: "Delivery Timeline",
+    description:
+      "Standard production runs four to eight weeks. Expedited production for cases approaching trial is available.",
+    icon: "/icons/experienced.png"
+  }
+];
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Simplify Complex Messages',
+    description: "Animation sequences, timing, and visual emphasis guide the viewer through a complex idea in the order it needs to land, without requiring prior knowledge of the subject. Text cannot do that. Static images cannot do that. Motion graphics can.Amateur motion graphic looks like it was produced in a web browser. Professional motion graphic tells a visual story — where the sequence of drawings, the pacing of the voiceover, and the logical structure of the script work together as a unified communication system. That integration is the difference between content that informs and content that converts.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Increase Audience Engagement',
+    description: "Animated content holds attention at significantly higher rates than static formats on every digital platform. That extra dwell time is the difference between a message received and one scrolled past without registering.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Improve Brand Recall',
+    description: "Motion combined with audio creates memory encoding that text alone cannot produce. Consistent motion graphic design builds a visual identity that the audience recognizes across platforms without needing to see the logo first.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Boost Marketing Campaign Performance',
+    description: "Motion graphics video production services consistently outperform static ad formats in click-through rate, engagement, and cost per acquisition. The performance differential compounds when the creative quality is high, and the strategy behind it is sound.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Drive Higher Conversion Rates',
+    description: "Landing pages with a motion graphics explainer video convert at higher rates than static pages. Motion answers the objections a prospect has before they go looking elsewhere, which keeps them moving toward the conversion point.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -139,14 +232,26 @@ export default function MotionGraphics() {
         description="Our motion graphics animation services cover every format a brand needs to communicate clearly across digital and broadcast environments."
         sliderItems={sliderItems}
       />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="WHAT MAKES"
+        title={<>Why Businesses Invest in <span>Motion Graphics?</span></>}
+        description="The gap between a motion graphic video that gets watched and one that gets results comes down to production quality. These are the advantages that professional production delivers over template-based or in-house alternatives."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1201856158?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <HowWeWorkSection />
       <CooperationModelsSection />
       <PortfolioShowcase />
       <GreatVideosSection />
       <WhyInvestSection />
       <TechnologySection />
-      <SoftwareSection />
+            <TeamStandoutSection
+        subtitle="PRICING"
+        title={<>Cost of <span>Legal Graphics Animation Services</span></>}
+        description="Every legal graphics and animation project is quoted based on the evidence, complexity, and production requirements of the case. The following factors have the greatest impact on project scope, timeline, and overall cost."
+        features={softwareSectionFeatures}
+        
+      />
       <TestimonialsSlider />
       <IndustrySection 
         heading="Motion Graphics Solutions for Every Industry"

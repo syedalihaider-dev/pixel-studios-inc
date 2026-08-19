@@ -1,10 +1,15 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/WhiteboardAnimation/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
 import HowWeWorkSection from "@/components/WhiteboardAnimation/HowWeWorkSection";
 import WhyInvestSection from "@/components/WhiteboardAnimation/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-import TeamStandoutSection from "@/components/WhiteboardAnimation/TeamStandoutSection";
+;
 import WonderingSection from "@/components/WhiteboardAnimation/WonderingSection";
 import CooperationModelsSection from "@/components/WhiteboardAnimation/CooperationModelsSection";
 import TestimonialsSlider from "@/components/WhiteboardAnimation/TestimonialsSlider";
@@ -12,6 +17,55 @@ import TechnologySection from "@/components/WhiteboardAnimation/TechnologySectio
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/WhiteboardAnimation/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Clear Visual Storytelling',
+    description: "Amateur whiteboard animation looks like it was produced in a web browser. Professional whiteboard animation tells a visual story — where the sequence of drawings, the pacing of the voiceover, and the logical structure of the script work together as a unified communication system. That integration is the difference between content that informs and content that converts.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Higher Viewer Retention',
+    description: "Professionally produced whiteboard animation holds more viewers for longer because every element of the production is optimized for sustained attention — script pacing, visual complexity calibration, voiceover energy, and transition rhythm. Viewer retention is not a metric that improves by accident.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Cost-Effective Video Production',
+    description: "Whiteboard animation delivers a higher value-per-dollar than most other animated formats because it does not require complex character rigs, environment design, or 3D rendering. The production investment goes into the two things that actually drive results: a well-built script and professional illustration. That is where we focus.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Stronger Brand Communication',
+    description: "A whiteboard animation video with a consistent visual identity — custom illustrations, brand color accents, a voiceover that matches your brand tone — does not just communicate information. It communicates professionalism. Every video we produce is a brand asset, not just a content deliverable.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Better Learning Outcomes',
+    description: "Training programs that use whiteboard animation consistently report higher assessment scores, higher completion rates, and lower re-training frequency than programs built on traditional presentation formats. We build our educational whiteboard animations around the learning science, not around what is easiest to produce.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Create Engaging Customer Experiences',
+    description: "Real estate visualization and consumer product showcases give buyers a richer product experience than static pages allow, directly feeding purchase confidence.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -164,7 +218,13 @@ export default function WhiteboardAnimation() {
       />
       <HowWeWorkSection />
       <PortfolioShowcase />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="WHAT MAKES"
+        title={<>Benefits of Professional <span>Whiteboard Animation</span></>}
+        description="The gap between a whiteboard animation video that gets watched and one that gets results comes down to production quality. These are the advantages that professional production delivers over template-based or in-house alternatives."
+        features={standoutFeatures}
+        
+      />
       <WonderingSection />
       <WhyInvestSection />
       <CooperationModelsSection />

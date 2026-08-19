@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/VideoEditingServices/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -5,13 +10,56 @@ import HowWeWorkSection from "@/components/VideoEditingServices/HowWeWorkSection
 import WhyInvestSection from "@/components/VideoEditingServices/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/VideoEditingServices/GreatVideosSection";
-import TeamStandoutSection from "@/components/VideoEditingServices/TeamStandoutSection";
+;
 import CooperationModelsSection from "@/components/VideoEditingServices/CooperationModelsSection";
 import TestimonialsSlider from "@/components/VideoEditingServices/TestimonialsSlider";
 import TechnologySection from "@/components/VideoEditingServices/TechnologySection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/VideoEditingServices/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Higher Audience Retention',
+    description: "Content edited to hold attention at specific drop-off points outperforms unoptimized footage on every platform metric: watch time, completion rate, and algorithmic distribution. The edit is where retention is built.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'Better Brand Storytelling',
+    description: "The edit is where the story is constructed. A professional video editing team assembles raw material into a narrative sequence that carries the brand message from the hook to the call to action without losing the viewer at the transitions.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Increased Engagement',
+    description: "Well-edited video generates higher engagement across every platform because it respects the viewer's time. Tight cuts, clean audio, and purposeful graphic integration produce content audiences finish watching and choose to interact with.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Improved Conversion Rates',
+    description: "Video edited with a conversion objective in mind performs measurably better on landing pages and in paid campaigns. Pacing, graphic placement, and call-to-action timing all influence whether a viewer acts or exits.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Consistent Brand Presentation',
+    description: "Professional video editing services apply consistent color grading, audio treatment, and graphic standards across every piece of content a brand publishes, building recognition and signaling production investment at every audience touchpoint.",
+    icon: '/icons/experienced.png'
+  }
+];
 
 const industries = [
   {
@@ -147,7 +195,13 @@ export default function VideoEditingServices() {
       <HowWeWorkSection />
       <PortfolioShowcase />
       <GreatVideosSection />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="WHAT MAKES"
+        title={<>Benefits of Professional <span>Video Editing</span></>}
+        description="What professional video editing services produce for a brand's content performance that template or amateur editing cannot replicate."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1064482488?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <WhyInvestSection />
       <CooperationModelsSection />
       <TestimonialsSlider />

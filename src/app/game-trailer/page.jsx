@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/GameTrailer/CostSection";
 import StatsSection from "@/components/GameTrailer/StatsSection";
@@ -5,11 +10,66 @@ import ServicesSection from "@/components/Common/ServicesSection";
 import WhyInvestSection from "@/components/GameTrailer/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/GameTrailer/GreatVideosSection";
-import TeamStandoutSection from "@/components/GameTrailer/TeamStandoutSection";
+;
 import TestimonialsSlider from "@/components/GameTrailer/TestimonialsSlider";
 import WhyPartnerSection from "@/components/GameTrailer/WhyPartnerSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/GameTrailer/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: "Cinematic Reveal",
+    description:
+      "The first public appearance of a game. Usually animation-led or heavily VFX-supported. The job is to create a world and an emotional stake in it before the viewer knows what the gameplay is.",
+    icon: "/icons/result-oriented.png"
+  },
+  {
+    id: 2,
+    title: "Gameplay Highlight",
+    description:
+      "Gameplay footage edited to the best session of the best player who ever played it, with sound design and score that make the mechanics feel as satisfying as the best moment of play.",
+    icon: "/icons/flexible.png"
+  },
+  {
+    id: 3,
+    title: "Announcement Teaser",
+    description:
+      "15 to 30 seconds. The only job is to create a question that the viewer needs the answer to. Teasers that over-explain have already failed.",
+    icon: "/icons/transparent.png"
+  },
+  {
+    id: 4,
+    title: "Story and Lore Trailers",
+    description:
+      "Narrative-focused trailers for games with a story the audience needs to care about before they evaluate the gameplay. Character, world, and stakes delivered without spoiling the resolution.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 5,
+    title: "Launch Trailers",
+    description:
+      "Release-day content for the audience that has been watching since the announcement. The launch trailer confirms the promise the announcement made. It does not need to be introduced. It needs to close.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 6,
+    title: "Mobile Game Trailers",
+    description:
+      "User acquisition-optimized video for app store pages, Meta campaigns, TikTok, and YouTube Shorts. Hook in the first two seconds. Conversion objective visible by the second five. Everything else is retention.",
+    icon: "/icons/experienced.png"
+  }
+];
 
 const sliderItems = [
   {
@@ -74,7 +134,13 @@ export default function GameTrailerPage() {
       <GreatVideosSection />
       <CostSection />
       <TestimonialsSlider />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="TRAILER TYPES"
+        title={<>Use Cases and <span>Trailer Types We Cover</span></>}
+        description="The trailer type is determined by the moment in the game's commercial lifecycle and the specific emotional job the trailer needs to do."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1200540905?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <WhyInvestSection />
       <WhyPartnerSection />
       <TestimonialSection />

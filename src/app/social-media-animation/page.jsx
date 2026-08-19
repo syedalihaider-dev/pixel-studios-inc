@@ -1,3 +1,8 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/SocialMediaAnimation/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -5,13 +10,74 @@ import HowWeWorkSection from "@/components/SocialMediaAnimation/HowWeWorkSection
 import WhyInvestSection from "@/components/SocialMediaAnimation/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/SocialMediaAnimation/GreatVideosSection";
-import TeamStandoutSection from "@/components/SocialMediaAnimation/TeamStandoutSection";
+;
 import WonderingSection from "@/components/SocialMediaAnimation/WonderingSection";
 import CostSection from "@/components/SocialMediaAnimation/CostSection";
 import CooperationModelsSection from "@/components/SocialMediaAnimation/CooperationModelsSection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/SocialMediaAnimation/FaqSection";
+
+
+
+
+
+
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: 'Motion Graphics Animation',
+    description: "Social media motion graphics for branded content, data visualization, and campaign announcements. Clean, brand-consistent motion design that performs across platforms without per-platform adaptation.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: '2D Animated Videos',
+    description: "Character-driven and illustrated 2D animated social media content for brand storytelling, product promotion, and audience education. The most versatile format in social media video animation.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Product Promotion Animations',
+    description: "Animated product promotion videos that showcase features, benefits, and offers in the format and duration each platform performs best with.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Brand Awareness Videos',
+    description: "Brand animation services that build recognition and visual consistency across a brand's social presence. Animated brand content where the identity is recognizable before the logo appears.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Event Promotion Videos',
+    description: "Animated social media videos for event announcements, countdowns, and post-event recaps built to generate registrations and attendance.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 6,
+    title: 'Explainer Animations for Social Media',
+    description: "Short-form animated explainer content adapted for 30 to 60-second social media distribution. The explainer video logic applied to the social media format constraint.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 7,
+    title: 'Animated Infographics',
+    description: "Data and statistics animated into shareable social content. Animated infographics outperform static data graphics in shares and saves because motion holds attention long enough for the information to register.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 8,
+    title: 'Kinetic Typography Videos',
+    description: "Text-led animated social content where the words carry the motion and emphasis. Effective for quote content, brand statements, and animations that communicate without a voiceover.",
+    icon: '/icons/flexible.png'
+  },
+];
 
 const industries = [
   {
@@ -140,7 +206,13 @@ export default function SocialMediaAnimationPage() {
       <GreatVideosSection />
       <PortfolioShowcase />
       <HowWeWorkSection />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="Social Media Animation Services"
+        title={<>Types of <span>Social Media Animations</span> We Create</>}
+        description="Our social media animation production covers every animated content type a brand needs for a complete social content calendar."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1201856415?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <WonderingSection />
       <WhyInvestSection />
       <CostSection />

@@ -1,19 +1,178 @@
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+
+
+
+
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/CharacterAnimation/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
 import WhyInvestSection from "@/components/CharacterAnimation/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/CharacterAnimation/GreatVideosSection";
-import TeamStandoutSection from "@/components/CharacterAnimation/TeamStandoutSection";
+;
 import HowWeWorkSection from "@/components/CharacterAnimation/HowWeWorkSection";
 import CooperationModelsSection from "@/components/CharacterAnimation/CooperationModelsSection";
-import RiggingSection from "@/components/CharacterAnimation/RiggingSection";
+
 import WonderingSection from "@/components/CharacterAnimation/WonderingSection";
-import BenefitsSection from "@/components/CharacterAnimation/BenefitsSection";
+
 import CharacterWhyChooseSection from "@/components/CharacterAnimation/CharacterWhyChooseSection";
 import AnimationPricingSection from "@/components/CharacterAnimation/AnimationPricingSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/CharacterAnimation/FaqSection";
+
+const benefitsSectionFeatures = [
+  {
+    id: 1,
+    title: 'Stronger Brand Recall',
+    description: "Motion combined with sound creates memory encoding that static visual elements cannot. A well-designed animated logo becomes recognizable to repeat viewers faster than a static equivalent seen the same number of times.",
+    icon: '/icons/result-oriented.png'
+  },
+  {
+    id: 2,
+    title: 'More Engaging Marketing Content',
+    description: "Every video that opens with a polished logo animation is more engaging from the first frame than one that begins with a static brand mark or no brand identification at all.",
+    icon: '/icons/flexible.png'
+  },
+  {
+    id: 3,
+    title: 'Consistent Visual Branding',
+    description: "A single logo animation production used consistently across all video content creates a uniform brand opening that functions as an audio-visual standard across every channel.",
+    icon: '/icons/transparent.png'
+  },
+  {
+    id: 4,
+    title: 'Professional Brand Presentation',
+    description: "Logo animation signals investment in brand presentation. Audiences, clients, and partners associate polished animated identity with organizational credibility and attention to detail.",
+    icon: '/icons/experienced.png'
+  },
+  {
+    id: 5,
+    title: 'Improved Audience Attention',
+    description: "Motion captures attention more reliably than static imagery. A logo animation at the start of a video secures viewer attention before the content begins.",
+    icon: '/icons/experienced.png'
+  }
+];
+
+
+
+
+
+
+
+const riggingSectionFeatures = [
+    {
+        id: 1,
+        title: "2D Character Rigging",
+        description:
+            "2D rigging for puppet animation in After Effects, Spine, and other 2D animation tools.",
+        icon: "/icons/result-oriented.png"
+    },
+    {
+        id: 2,
+        title: "3D Character Rigging",
+        description:
+            "3D rigging for Unity, Unreal, and custom engine pipelines with documented bone naming conventions.",
+        icon: "/icons/flexible.png"
+    },
+    {
+        id: 3,
+        title: "Facial Rig Setup",
+        description:
+            "Blend shape systems and facial rig configuration for dialogue and emotional performance animation.",
+        icon: "/icons/transparent.png"
+    },
+    {
+        id: 4,
+        title: "Skeleton and Bone Systems",
+        description:
+            "Skeleton design and weight painting for animation rigs that deform correctly rather than creating vertex artifacts at joint locations.",
+        icon: "/icons/experienced.png"
+    },
+    {
+        id: 5,
+        title: "Animation Optimization",
+        description:
+            "Animation optimization for performance-constrained platforms, including mobile and VR.",
+        icon: "/icons/experienced.png"
+    }
+];
+
+
+
+
+
+const standoutFeatures = [
+  {
+    id: 1,
+    title: "Idle Animations",
+    description:
+      "Subtle ambient motion communicating a character is present and alive between active player inputs.",
+    icon: "/icons/result-oriented.png"
+  },
+  {
+    id: 2,
+    title: "Walk Cycles",
+    description:
+      "Locomotion with weight, personality, and the gait specific to the character's physical build and emotional state.",
+    icon: "/icons/flexible.png"
+  },
+  {
+    id: 3,
+    title: "Run Cycles",
+    description:
+      "High-energy movement with body lean and secondary motion that communicates speed and the urgency of the character's purpose.",
+    icon: "/icons/transparent.png"
+  },
+  {
+    id: 4,
+    title: "Jump Animations",
+    description:
+      "Anticipation, airborne, and landing with squash and stretch calibrated to the character's physical weight.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 5,
+    title: "Combat Animations",
+    description:
+      "Attack, defense, and impact animation with anticipation and recovery phases that communicate consequence and power.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 6,
+    title: "Interaction Animations",
+    description:
+      "Character-environment interactions that feel physically connected to the geometry rather than approximated near it.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 7,
+    title: "Performance Animations",
+    description:
+      "Expressive character performance for narrative, emotional, and comedic moments.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 8,
+    title: "Facial Expressions",
+    description:
+      "Emotional state communication through facial motion, with the subtlety that makes an expression feel genuine.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 9,
+    title: "Dialogue Animation",
+    description:
+      "Full-body character performance synchronized with recorded dialogue. The body communicates the character's emotional state. The mouth communicates the words.",
+    icon: "/icons/experienced.png"
+  },
+  {
+    id: 10,
+    title: "Emotes and Reactions",
+    description:
+      "Short expressive animations for social contexts, games with player emotes, and characters that need to respond to events without dialogue.",
+    icon: "/icons/experienced.png"
+  }
+];
 
 const sliderItems = [
   {
@@ -111,13 +270,31 @@ export default function CharacterAnimationPage() {
       />
       <PortfolioShowcase />
       <GreatVideosSection />
-      <TeamStandoutSection />
+            <TeamStandoutSection
+        subtitle="CHARACTER ANIMATION"
+        title={<>Character Animation <span>Types We Create</span></>}
+        description="Character animation covers every movement a character performs, from subtle idle poses to full cinematic performances. Each animation type serves a specific gameplay, storytelling, or interactive purpose."
+        features={standoutFeatures}
+        videoSrc="https://player.vimeo.com/video/1201855044?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <HowWeWorkSection />
       <WonderingSection />
       <WhyInvestSection />
       <CooperationModelsSection />
-      <RiggingSection />
-      <BenefitsSection />
+            <TeamStandoutSection
+        subtitle="RIGGING & ANIMATION"
+        title={<>Character Rigging and <span>Animation Support</span></>}
+        description="Strong character animation begins with a reliable rig. We provide complete rigging and animation support, including 2D and 3D rig creation, facial rig setup, skeleton development, weight painting, and performance optimization to ensure characters move naturally across games, films, marketing content, and real-time engines."
+        features={riggingSectionFeatures}
+        videoSrc="https://player.vimeo.com/video/1201855043?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
+            <TeamStandoutSection
+        subtitle="TYPES OF"
+        title={<>Benefits of Professional <span>Logo Animation</span></>}
+        description="What professionally produced logo animation does for a brand that a static logo in a video frame cannot replicate."
+        features={benefitsSectionFeatures}
+        videoSrc="https://player.vimeo.com/video/1201854680?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+      />
       <CharacterWhyChooseSection />
       <AnimationPricingSection />
       <TestimonialSection />
