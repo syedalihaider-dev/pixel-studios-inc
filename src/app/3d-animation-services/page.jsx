@@ -12,48 +12,49 @@ import IndustrySection from "@/components/Common/IndustrySection";
 import GreatVideosSection from "@/components/Animation3D/GreatVideosSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/Animation3D/FaqSection";
+import Link from 'next/link';
 
 const industries = [
   {
     id: 1,
     title: "Healthcare and Life Sciences",
     image: "/industry/01.png",
-    text: "Medical animation, pharmaceutical explainer videos, surgical animation, and healthcare animation for patient education, clinical training, and pharmaceutical product marketing are built to regulatory accuracy standards.",
+    text: <>Medical animation, pharmaceutical explainer videos, surgical animation, and <Link href="/healthcare-animation">healthcare animation</Link> for patient education, clinical training, and pharmaceutical product marketing are built to regulatory accuracy standards.</>,
     link: "#"
   },
   {
     id: 2,
     title: "Manufacturing and Industrial",
     image: "/industry/02.png",
-    text: "Industrial safety training, machinery visualization, and assembly process animation for environments where clarity and accuracy affect safety outcomes directly.",
+    text: <>Industrial safety training, machinery visualization, and assembly process <Link href="/manufacturing-animation">Manufacturing animation</Link> for environments where clarity and accuracy affect safety outcomes directly.</>,
     link: "#"
   },
   {
     id: 3,
     title: "Engineering and Technology",
     image: "/industry/03.png",
-    text: "Technical animation, software visualization, and platform demonstrations for technology companies communicating product capability to non-technical buyers without losing technical credibility.",
+    text: <>Technical animation, software visualization, and platform demonstrations for technology companies through <Link href="/technology-animation">Technology Animation</Link> to communicate product capability to non-technical buyers without losing technical credibility.</>,
     link: "#"
   },
   {
     id: 4,
     title: "Architecture and Real Estate",
     image: "/industry/04.png",
-    text: "Architectural rendering, architectural visualization, and property walkthroughs for developers and investors presenting projects ahead of completion.",
+    text: <><Link href="/real-estate-animation">Real Estate Animation</Link> and architectural rendering, architectural visualization, and property walkthroughs for developers and investors presenting projects ahead of completion.</>,
     link: "#"
   },
   {
     id: 5,
     title: "Consumer Products",
     image: "/industry/05.png",
-    text: "3D commercial animation, product launch visuals, and animated product demo videos for consumer brands where visual quality determines first-impression trust.",
+    text: <>Our <Link href="/ecommerce-video-production">Ecommerce Video Animation</Link> can help you with 3D commercial animation, product launch visuals, and animated product demo videos for consumer brands where visual quality determines first-impression trust.</>,
     link: "#"
   },
   {
     id: 6,
     title: "Education and Training",
     image: "/industry/06.png",
-    text: "Learning animations, instructional videos, and employee onboarding content for corporate training programs that need to hold attention and improve retention rates.",
+    text: <>Student educations and <Link href="/education-animation">corporate learning animations</Link>, instructional videos and employee onboarding content for corporate training programs that need to hold attention and improve retention rates.</>,
     link: "#"
   }
   ,
@@ -61,14 +62,14 @@ const industries = [
     id: 7,
     title: "Entertainment and Media",
     image: "/industry/06.png",
-    text: "Cinematic trailers, gaming animations, and in-game cutscenes for entertainment brands producing content for PC games, console games, and mobile games.",
+    text: <><Link href="/entertainment-animation">Entertainment animation</Link> is not just for cartoons but it is a prominent factor in cinematic trailers, gaming animations, and in-game cutscenes for entertainment brands producing content for PC games, console games, and mobile games.</>,
     link: "#"
   },
   {
     id: 8,
     title: "Automotive and Transportation",
     image: "/industry/06.png",
-    text: "Photorealistic rendering of vehicles and components for automotive marketing and engineering review, where visual realism is the primary trust signal.",
+    text: <> <Link href="/automotive-animation">Photorealistic rendering of vehicles</Link> and components for automotive marketing and engineering review, where visual realism is the primary trust signal.</>,
     link: "#"
   }
 ];
@@ -77,55 +78,55 @@ const sliderItems = [
   {
     id: 1,
     title: "3D Product Animation",
-    description: "Showcase features and mechanisms with photorealistic clarity that photography cannot match. Used in product launches, e-commerce, trade shows, and enterprise sales, where animated product demo videos close the visualization gap.",
+    description: <>Showcase features and mechanisms with photorealistic clarity that photography cannot match. <Link href="/3d-product-animation">3D Product Animation Services</Link> used in product launches e-commerce, trade shows, and enterprise sales, where animated product demo videos close the visualization gap.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 2,
     title: "3D Product Modeling",
-    description: "Precision digital models built from CAD files or reference imagery. The foundation for every 3D commercial animation, product showcase video, and CGI product animation we produce.",
+    description: <>Precision digital models built from CAD files or reference <Link href="/3d-modeling-services">3D Product Modeling</Link> commercial animation, product showcase video, and CGI product animation we produce.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 3,
     title: "3D Industrial Animation",
-    description: "Complex machinery, manufacturing processes, and industrial safety training are explained through technically accurate animation. Reduces training costs and supports high-stakes sales presentations for industrial brands.",
+    description: <><Link href="/3d-industrial-animation">3D industrial animation services</Link> complex machinery, manufacturing processes, and industrial safety training are explained through technically accurate animation. Reduces training costs and supports high-stakes sales presentations for industrial brands.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 4,
     title: "Character Animation",
-    description: "Full 3D character animation services including character design, rigging, facial animation, and performance direction for brand storytelling, gaming animations, and educational content.",
+    description: <>Full <Link href="/character-animation">3D character animation services</Link> including character design, rigging, facial animation, and performance direction for brand storytelling, gaming animations, and educational content.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 5,
     title: "Medical Animation",
-    description: "Pharmaceutical animation, surgical animation, medical device walkthroughs, and healthcare animation built to clinical accuracy. Used in patient education, clinical training, and pharmaceutical product marketing globally.",
+    description: <><Link href="/medical-animation">Medical animation services</Link> is best for pharmaceutical animation, surgical animation, medical device walkthroughs, and healthcare animation built to clinical accuracy. Used in patient education, clinical training, and pharmaceutical product marketing globally.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 6,
     title: "Legal Graphics Animation",
-    description: "Demonstrative animations, accident reconstruction, and procedural explainers for litigation support. Accuracy is the entry requirement, and every legal animation we produce is reviewed for technical precision.",
+    description: <>Demonstrative animation, accident reconstruction, and procedural explainers for litigation support. Accuracy is the entry requirement, and every <Link href="/legal-graphics-animation">legal animation</Link> we produce is reviewed for technical precision.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 7,
     title: "Game Animation",
-    description: "In-game cutscenes, character animations, and assets for PC games, console games, and mobile games are produced to the visual fidelity that modern gaming audiences expect.",
+    description: <>Our <Link href="/game-animation">Game Animation services</Link> offer in-game cutscenes, character animations, and assets for PC games, console games, and mobile games are produced to the visual fidelity that modern gaming audiences expect.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 8,
     title: "Game Trailer",
-    description: "High-impact cinematic game trailers and promotional trailer production combining motion design, VFX, and cinematic animation for maximum first-impression impact.",
+    description: <><Link href="/game-trailer">High-impact cinematic game trailers</Link> and promotional trailer production combining motion design, VFX, and cinematic animation for maximum first-impression impact.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 9,
     title: "AI Animation Services",
-    description: "AI-assisted 3D animation that reduces timelines without reducing quality. Used strategically to accelerate asset iteration and style exploration for high-volume or compressed-schedule productions.",
+    description: <><Link href="/ai-animation">AI-assisted 3D animation services</Link> reduce timelines without reducing quality. Used strategically to accelerate asset iteration and style exploration for high-volume or compressed-schedule productions.</>,
     videoSrc: "https://player.vimeo.com/video/1065200259?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
@@ -164,7 +165,7 @@ export default function ThreeDAnimation() {
         showPlayButton={true}
       />
       <StatsSection />
-      <ServicesSection 
+      <ServicesSection
         title="From Idea to Delivery: Our Best 3D Animation Services"
         description="Our custom 3D animation services cover every format a brand, product team, or marketing department needs to communicate with precision."
         sliderItems={sliderItems}
@@ -178,7 +179,7 @@ export default function ThreeDAnimation() {
       <GreatVideosSection />
       <TestimonialSection />
       <TrustedClientsSection />
-      <IndustrySection 
+      <IndustrySection
         heading="Industries We Have Served with 3D Animation"
         description="Our 3D animation services for businesses have been applied across every sector below, with production approaches specific to each industry."
         industries={industries}
