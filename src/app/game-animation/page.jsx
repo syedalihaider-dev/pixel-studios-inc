@@ -21,51 +21,63 @@ import FaqSection from "@/components/Common/FaqSection";
 export const whyChooseSectionFeatures = [
   {
     id: 1,
-    title: 'Experienced Motion Designers',
-    description: "Our motion design team has produced logo animation for brands across consumer, corporate, entertainment, technology, and healthcare sectors with genuinely cross-industry experience.",
-    icon: '/icons/result-oriented.png'
+    title: "Idle Animations",
+    description: "Subtle ambient motion that communicates a character is alive and present when the player is not actively controlling them.",
+    icon: "/industry/services-icon-01.png",
   },
   {
     id: 2,
-    title: 'Custom Animation Concepts',
-    description: "Every project begins with original concept development. No stock motion paths or template effects. Custom logo animation built specifically for each brand.",
-    icon: '/icons/flexible.png'
+    title: "Walk Cycles",
+    description: "Locomotion cycles with correct weight shift, arm swing relationship, and the pace calibrated to the game's movement speed.",
+    icon: "/industry/services-icon-05.png",
   },
   {
     id: 3,
-    title: 'Fast Turnaround Times',
-    description: "Most logo animation projects complete in one to two weeks from brief sign-off. Rush production available for campaign launch windows.",
-    icon: '/icons/transparent.png'
+    title: "Run Cycles",
+    description: "High-energy locomotion with the secondary motion and body lean that communicates speed and momentum.",
+    icon: "/industry/services-icon-02.png",
   },
   {
     id: 4,
-    title: 'Dedicated Project Management',
-    description: "One project manager from brief to delivery. Every milestone is dated. Every update is proactive.",
-    icon: '/icons/experienced.png'
+    title: "Jump Animations",
+    description: "Anticipation, airborne, and landing phases, with the squash and stretch that make a jump feel physical rather than scripted.",
+    icon: "/industry/services-icon-06.png",
   },
   {
     id: 5,
-    title: 'High-Quality Motion Design',
-    description: "Professional logo animation produced to broadcast-quality standards regardless of the distribution platform. Quality is the baseline, not a premium tier.",
-    icon: '/icons/experienced.png'
+    title: "Attack Animations",
+    description: "Attack cycles with proper anticipation phases, contact frames, and recovery that give the player satisfaction feedback at the moment of impact.",
+    icon: "/industry/services-icon-03.png",
   },
   {
     id: 6,
-    title: 'Multiple Export Formats',
-    description: "Delivery in MP4, transparent-background MOV, GIF, and source files. Platform-specific exports for social, web, and broadcast included in standard packages.",
-    icon: '/icons/experienced.png'
+    title: "Death Animations",
+    description: "Character death animations that communicate finality through physical response rather than state-switched ragdoll.",
+    icon: "/industry/services-icon-08.png",
   },
   {
     id: 7,
-    title: 'Flexible Cooperation Models',
-    description: "Project-based, retainer, or dedicated team models. We adapt to your needs, timelines, and budget with transparent terms and no surprises.",
-    icon: '/icons/experienced.png'
+    title: "Interaction Animations",
+    description: "Object interaction animations with the physical accuracy that makes reaching for a door handle feel connected to the actual geometry.",
+    icon: "/industry/services-icon-04.png",
   },
   {
     id: 8,
-    title: 'Brand-Centric Animation Strategy',
-    description: "Every animation starts with your brand goals. We define the objective first, then select the right animation style to match your message and audience.",
-    icon: '/icons/experienced.png'
+    title: "Spell and Ability Animations",
+    description: "Ability animations with charge-up, release, and recovery phases that communicate the power and consequence of each ability.",
+    icon: "/industry/services-icon-07.png",
+  },
+  {
+    id: 9,
+    title: "Vehicle Animations",
+    description: "Vehicle animation, including suspension response, articulation, and the secondary motion that makes a vehicle feel like it has mass.",
+    icon: "/industry/services-icon-01.png",
+  },
+  {
+    id: 10,
+    title: "Weapon Animations",
+    description: "Weapon handling animation with the weight, recoil, and reload mechanics that make a weapon feel satisfying to use.",
+    icon: "/industry/services-icon-05.png",
   }
 ];
 
@@ -365,10 +377,9 @@ export default function GameAnimationPage() {
       <FullCycleSection />
       <TeamStandoutSection
         subtitle="Why Choose Us"
-        title={<>Why Choose Our <span>Logo Animation</span> Studio?</>}
-        description="We don't just animate logos; we craft memorable audio-visual experiences. Our team of skilled animators and designers specializes in transforming static brand marks into dynamic, engaging animations that leave a lasting impression."
+        title={<>Game <span>Animation</span> Types We Create</>}
+        description="Every animation type serves a specific gameplay function. Here is what we build and what each animation needs to achieve."
         features={whyChooseSectionFeatures}
-        videoSrc="https://player.vimeo.com/video/1201854680?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
       />
       <GameArtSection />
       <DistinguishesSection />
