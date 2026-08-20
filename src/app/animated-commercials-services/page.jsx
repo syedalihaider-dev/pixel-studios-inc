@@ -1,8 +1,3 @@
-import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
-
-
-
-
 import Banner from "@/components/Common/Banner/Banner";
 import CostSection from "@/components/AnimatedCommercials/CostSection";
 import StatsSection from "@/components/AnimatedCommercials/StatsSection";
@@ -10,23 +5,14 @@ import ServicesSection from "@/components/Common/ServicesSection";
 import WhyInvestSection from "@/components/AnimatedCommercials/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/AnimatedCommercials/GreatVideosSection";
-;
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
 import HowWeWorkSection from "@/components/AnimatedCommercials/HowWeWorkSection";
 import CooperationModelsSection from "@/components/AnimatedCommercials/CooperationModelsSection";
 import WonderingSection from "@/components/AnimatedCommercials/WonderingSection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/AnimatedCommercials/FaqSection";
-
-
-
-
-
-
-
-
-
-
+import Link from "next/link";
 
 const standoutFeatures = [
   {
@@ -205,42 +191,42 @@ const sliderItems = [
     id: 3,
     title: "Explainer Commercial Videos",
     description:
-      "Commercial animation that explains what a product does clearly enough that the viewer arrives at the landing page already understanding the value proposition. Less work for the landing page. More qualified traffic at the click.",
+      <><Link href="/animated-explainer-video">Animated explainer video</Link> that explains what a product does clearly enough that the viewer arrives at the landing page already understanding the proposition. Less work for the landing page and more qualified lead.</>,
     videoSrc: "https://player.vimeo.com/video/1201624848?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 4,
     title: "Character Animation Commercials",
     description:
-      "Character-driven commercials for brands whose audience responds to emotional narrative. The character is not a decoration. It is the device through which the commercial earns the viewer's attention long enough to deliver the message.",
+      <><Link href="/character-animation">Character-driven animation</Link> commercials for brands whose audience responds to emotional narrative. The character is not a decoration. It is the device through which the commercial earns the viewer's attention long enough to deliver the message.</>,
     videoSrc: "https://player.vimeo.com/video/1201624848?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 5,
     title: "2D Animated Commercials",
     description:
-      "2D animated commercials across every visual style from clean motion graphics to fully illustrated character animation. Produced at the frame rate and resolution the distribution platform requires.",
+      <>Commercials based on <Link href="/2d-animation-services">custom 2d animation services</Link> across every visual style from clean motion graphics to fully illustrated character animation. Produced at the frame rate and resolution the distribution platform requires.</>,
     videoSrc: "https://player.vimeo.com/video/1201624848?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 6,
     title: "3D Animated Commercials",
     description:
-      "3D animated commercials for products with physical form, technical complexity, or the kind of visual quality requirement that 2D cannot match for the specific brief.",
+      <>Commercials based on <Link href="/3d-animation-services">customized 3d animation</Link> for products with physical form, technical complexity, or the kind of visual quality requirement that 2D cannot match for the specific brief.</>,
     videoSrc: "https://player.vimeo.com/video/1201624848?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 7,
     title: "Motion Graphics Commercials",
     description:
-      "Motion graphics commercial animation for data-driven messages, product feature communication, and brand campaigns where the argument is the visual rather than the story.",
+      <><Link href="/motion-graphics">Motion graphics commercial animation</Link> for data-driven messages, product feature communication, and brand campaigns where the argument is the visual rather than the story.</>,
     videoSrc: "https://player.vimeo.com/video/1201624848?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 8,
     title: "Social Media Commercials",
     description:
-      "Social media commercial videos are built for the platform rather than adapted to it. Vertical formats, hooks in the first frame, and captions for the majority watching without sound. Produced to each platform's specific creative requirements.",
+      <><Link href="/social-media-animation">Social media commercial videos</Link> are built for the platform rather than adapted to it. Vertical formats, hooks in the first frame, and captions for the majority watching without sound. Produced to each platform's specific creative requirements.</>,
     videoSrc: "https://player.vimeo.com/video/1201624848?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
@@ -269,14 +255,14 @@ export default function AnimatedCommercialsPage() {
       />
       <CostSection />
       <StatsSection />
-      <ServicesSection 
+      <ServicesSection
         title="Animated Commercial Services for Every Marketing Goal"
         description="Our animated commercial production covers every format and objective a brand runs advertising toward."
         sliderItems={sliderItems}
       />
       <PortfolioShowcase />
       <GreatVideosSection />
-            <TeamStandoutSection
+      <TeamStandoutSection
         subtitle="HOW BUSINESSES USE"
         title={<>How Businesses Use <span>Animated Commercial Services?</span></>}
         description="Businesses use animated commercial services to launch products, build brand awareness, generate leads, acquire customers, promote apps, support digital advertising, increase social media engagement, and drive event marketing with compelling visual campaigns."
@@ -288,7 +274,7 @@ export default function AnimatedCommercialsPage() {
       <CooperationModelsSection />
       <WonderingSection />
       <TestimonialSection />
-      <IndustrySection 
+      <IndustrySection
         heading="Animated Commercial Formats We Create"
         description="Our animated commercial production services cover every major advertising format, from social media campaigns and YouTube ads to television commercials, streaming platforms, websites, and e-commerce promotions. Every commercial is created to meet the technical specifications and marketing objectives of its intended platform."
         industries={industries}
