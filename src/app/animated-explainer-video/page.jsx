@@ -1,16 +1,16 @@
 import Banner from "@/components/Common/Banner/Banner";
-import StatsSection from "@/components/AnimatedExplainerVideo/StatsSection";
+import StatsSection from "@/components/Common/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
-import HowWeWorkSection from "@/components/AnimatedExplainerVideo/HowWeWorkSection";
-import WhyInvestSection from "@/components/AnimatedExplainerVideo/WhyInvestSection";
-import GreatVideosSection from "@/components/AnimatedExplainerVideo/GreatVideosSection";
+import HowWeWorkSection from "@/components/Common/HowWeWorkSection";
+import WhyInvestSection from "@/components/Common/WhyInvestSection";
+import GreatVideosSection from "@/components/Common/GreatVideosSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
 import WhyChooseSection from "@/components/AnimatedExplainerVideo/WhyChooseSection";
 import PricingSection from "@/components/AnimatedExplainerVideo/PricingSection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
-import FaqSection from "@/components/AnimatedExplainerVideo/FaqSection";
+import FaqSection from "@/components/Common/FaqSection";
 import Link from "next/link";
 
 const standoutFeatures = [
@@ -157,6 +157,130 @@ const sliderItems = [
 ];
 
 
+
+const statsData = [
+  { end: 500, suffix: '+', label: 'Projects\nDelivered' },
+  { end: 97, suffix: '%', label: 'Client Retention\nRate' },
+  { end: 12, suffix: '+', label: 'Industries\nServed' },
+  { end: 95, suffix: '%', label: 'On-Time\nDelivery' },
+];
+
+const howWeWorkAccordionData = [
+  {
+    id: 1,
+    title: '1 Simplify Complex Concepts',
+    content: 'Animated explainer videos control the information sequence, the pacing, and the visual emphasis simultaneously. No other format does all three at once. That combination is why complex products become understandable in 90 seconds when they remain opaque after 10 minutes of reading.'
+  },
+  {
+    id: 2,
+    title: '2 Increase Audience Engagement',
+    content: 'Viewers complete well-produced business explainer videos at significantly higher rates than they read product pages or sit through demo calls. Higher completion rates mean more prospects who fully understand your product before the first sales conversation.'
+  },
+  {
+    id: 3,
+    title: '3 Improve Conversion Rates',
+    content: 'Landing pages with animated explainer videos convert at measurably higher rates than those without. The mechanism is simple: video reduces the cognitive friction between a visitor and a purchase decision by answering objections before they form.'
+  },
+  {
+    id: 4,
+    title: '4 Strengthen Brand Awareness',
+    content: 'A strong custom explainer video becomes a brand asset used across landing pages, email campaigns, social media, and sales presentations. Each deployment compounds recognition without additional production cost.'
+  },
+  {
+    id: 5,
+    title: '5 Boost Social Media Performance',
+    content: 'Promotional explainer videos shared on social generate higher engagement, more saves, and stronger organic reach than static content. Short-form cuts of explainer content are among the highest-performing organic assets in social media marketing.'
+  }
+];
+
+const whyInvestAccordionData = [
+  {
+    id: 1,
+    icon: '/discovery.png',
+    title: 'Discovery & Strategy',
+    content: 'We establish the audience, the objective, the competitive context, and the distribution channel before the script begins. Strategy is the first deliverable, not the last consideration.',
+  },
+  {
+    id: 2,
+    icon: '/storyboarding.png',
+    title: 'Script Writing',
+    content: "The script is the argument the animated explainer video makes, written in the sequence the audience needs to receive it. We write for the viewer's comprehension, not the client's preferred feature order.",
+  },
+  {
+    id: 3,
+    icon: '/animation.png',
+    title: 'Storyboarding',
+    content: "Every scene is mapped before animation begins. Visual hierarchy, scene transitions, and animation timing all approved here. Changes to the storyboard cost 30 minutes. Changes after animation cost two days.",
+  },
+  {
+    id: 4,
+    icon: '/animation.png',
+    title: 'Illustration and Design',
+    content: 'Character design, background style, color palette, and typographic treatment are developed and approved before production starts. You see the visual direction before a single frame is animated.',
+  },
+  {
+    id: 5,
+    icon: '/animation.png',
+    title: 'Animation Production',
+    content: 'Full 2D explainer animation or motion graphics explainer video production begins with the storyboard and approved assets as the foundation. In-house production with the same team that handled discovery.',
+  },
+  {
+    id: 6,
+    icon: '/animation.png',
+    title: 'Voiceover & Sound Design',
+    content: 'Professional voiceover matched to brand tone, music selected for emotional register, and sound design that adds depth without competing with the visual narrative.',
+  },
+  {
+    id: 7,
+    icon: '/animation.png',
+    title: 'Final Delivery',
+    content: 'Final files in every format and resolution specified at kickoff, plus source files in most project scopes. Post-delivery support for platform adaptation and short-form version cuts.',
+  },
+];
+
+const title = (
+    <>
+      Get Started With <span>Animated Explainer Video</span> Services
+    </>
+  );
+
+const text = "Book a discovery call, and we will show you the difference that makes.";
+
+const faqs = [
+  {
+    question: "How much does an animated explainer video cost?",
+    answer: "A professionally produced 60-second animated explainer video from a reputable animated explainer video company in the USA typically starts in the $2,500 to $5,000 range. Complex productions with custom character libraries and photorealistic styles run higher. We provide itemized quotes within 48 hours of a discovery call.",
+  },
+  {
+    question: "How long does it take to create an explainer video?",
+    answer: "Most 60 to 90-second animated explainer video productions are completed in three to five weeks from a brief sign-off. Rush timelines are available. Every project receives a milestone schedule with specific dates at kickoff.",
+  },
+  {
+    question: "Can you help write the script?",
+    answer: "Yes. Scriptwriting is a standard stage in our animated explainer video creation service. We write every script from scratch around your audience brief. You review and approve the script before any design or animation begins.",
+  },
+  {
+    question: "What is the ideal length for an explainer video?",
+    answer: "60 to 90 seconds for most business explainer videos. Long enough to build the argument and the call to action. Short enough to hold attention through the final frame. We determine the right length for your specific content during the discovery session.",
+  },
+  {
+    question: "Do you provide voiceover services?",
+    answer: "Yes. Professional voiceover is included in standard animated explainer video production packages. We match voice talent to the brand tone established in the brief. Multilingual versions and custom casting are available.",
+  },
+  {
+    question: "Which animation style is best for my business?",
+    answer: "The style that matches your audience, your brand identity, and your distribution context. 2D explainer animation works for most B2B and B2C use cases. Motion graphics explainer videos suit data-heavy or brand-consistency-driven briefs. We help every client make the right choice in discovery.",
+  },
+  {
+    question: "Can explainer videos improve conversions?",
+    answer: "Consistently. Landing pages with custom explainer videos convert at higher rates than pages without them. The mechanism is that explainer videos reduce cognitive friction: they answer objections before the viewer forms them, which keeps prospects moving toward the conversion point.",
+  },
+  {
+    question: "How many revisions are included?",
+    answer: "Two full revision rounds in standard packages. Additional rounds available and priced upfront. All revision terms are documented before production begins, so there are no surprises at the end.",
+  }
+];
+
 export const metadata = {
   title: "Animated Explainer Video Services | Pixel Studios Inc.",
   description: "Looking for animated explainer video services that convert? Pixel Studios builds custom explainer videos for businesses across the USA.",
@@ -171,16 +295,32 @@ export default function AnimatedExplainerVideo() {
         video="/videos/home.webm"
         showPlayButton={true}
       />
-      <StatsSection />
+      <StatsSection
+        heading="A Trusted Animation Company For Animated Explainer Videos"
+        statsData={statsData}
+        variant="gradient"
+      />
       <ServicesSection
         title="Our Animated Explainer Video Services"
         description="Our animated explainer video production covers every format and industry context. Here is the full range of business explainer videos we build."
         sliderItems={sliderItems}
       />
-      <HowWeWorkSection />
+      <HowWeWorkSection
+        heading="Why Do Businesses Invest in Animated Explainer Videos?"
+        description="The data behind animated explainer video investment is not soft or aspirational. Here is why the best animated explainer video companies keep growing."
+        accordionData={howWeWorkAccordionData}
+      />
       <PortfolioShowcase />
-      <WhyInvestSection />
-      <GreatVideosSection />
+      <WhyInvestSection
+        subtitle="HOW WE WORK"
+        title={<>Our Animated Explainer Video <br /> Production Process</>}
+        description="Our animated explainer video creation service follows a structured, milestone-driven process where nothing moves forward without approval at each stage."
+        accordionData={whyInvestAccordionData}
+      />
+      <GreatVideosSection
+        title={title}
+        text={text}
+      />
       <TeamStandoutSection
         subtitle="TYPES OF"
         title={<><span>Animated Explainer Video</span> Styles We Offer</>}
@@ -196,7 +336,10 @@ export default function AnimatedExplainerVideo() {
         industries={industries}
         variant="gradient"
       />
-      <FaqSection />
+      <FaqSection
+        heading="Frequently Asked Questions"
+        faqs={faqs}
+      />
     </main>
   );
 }

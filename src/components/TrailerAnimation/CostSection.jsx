@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import styles from './CostSection.module.css';
+import styles from '../Common/CooperationModelsSection.module.css';
 import { motion } from 'framer-motion';
 
 const CostSection = () => {

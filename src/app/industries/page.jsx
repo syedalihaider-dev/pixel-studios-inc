@@ -1,20 +1,20 @@
 import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
 import Banner from "@/components/Common/Banner/Banner";
-import StatsSection from "@/components/Industries/StatsSection";
+import StatsSection from "@/components/Common/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
 
-import WonderingSection from "@/components/Industries/WonderingSection";
+import WonderingSection from "@/components/Common/WonderingSection";
 import WhyPartnerSection from "@/components/Industries/WhyPartnerSection";
-import WhyInvestSection from "@/components/Industries/WhyInvestSection";
+import WhyInvestSection from "@/components/Common/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-import CostSection from "@/components/Industries/CostSection";
+import CostSection from "@/components/Common/CostSection";
 import GetQuoteSection from "@/components/Common/GetQuoteSection";
 import TestimonialsSlider from "@/components/Industries/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Industries/TrustedClientsSection";
 import IndustrySection from "@/components/Common/IndustrySection";
-import GreatVideosSection from "@/components/Industries/GreatVideosSection";
+import GreatVideosSection from "@/components/Common/GreatVideosSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
-import FaqSection from "@/components/Industries/FaqSection";
+import FaqSection from "@/components/Common/FaqSection";
 
 const whyChooseSectionFeatures = [
   {
@@ -160,6 +160,131 @@ const bannerSlides = [
   }
 ];
 
+
+const statsData = [
+  { end: 500, suffix: '+', label: 'Projects\nDelivered' },
+  { end: 97, suffix: '%', label: 'Client Retention\nRate' },
+  { end: 12, suffix: '+', label: 'Industries\nServed' },
+  { end: 95, suffix: '%', label: 'On-Time\nDelivery' },
+];
+
+const wonderingIndustriesData = [
+  {
+    name: "Banking",
+    intro: "We work with a diverse set of banking institutions, including universal banks, national banks, commercial banks and retail neo-banks. Our work encompasses operation enhancements and crafting innovative digital products.",
+    points: [
+      "Partnering with a leading fintech and payments company's ex-VP to develop an API-first, cloud-based digital banking platform (PaaS) for smaller North American financial institutions.",
+      "Crafting a crypto-friendly private banking ecosystem tailored for ultra high-net-worth individuals, offering exclusive lifestyle preferences alongside transaction services.",
+      "Developing a self-service BI report system for a prominent commercial bank in Vietnam, equipping staff with BI skills for data-driven decision-making.",
+      "Building a resilient data management system for a leading universal bank in Vietnam."
+    ]
+  },
+  {
+    name: "Insurance",
+    intro: "Empowering insurance companies with digital tools to streamline operations, enhance customer experience, and accelerate claim processing through modern technology solutions.",
+    points: [
+      "Revolutionizing claims processing with AI-driven document analysis and automated workflows for a top-tier European insurance provider.",
+      "Building a scalable policy management system that reduced time-to-market for new insurance products by 40%.",
+      "Implementing a comprehensive telematics solution for auto insurance, enabling usage-based pricing and risk assessment."
+    ]
+  },
+  {
+    name: "Market infrastructure",
+    intro: "Building resilient and scalable market infrastructure solutions that ensure secure, high-speed, and reliable financial transactions across global markets.",
+    points: [
+      "Developing a high-throughput trading engine capable of processing millions of transactions per second with microsecond latency.",
+      "Creating a robust clearing and settlement system for a major stock exchange, ensuring regulatory compliance and risk mitigation.",
+      "Designing a real-time market data distribution platform for institutional investors and algorithmic traders."
+    ]
+  },
+  {
+    name: "Asset management",
+    intro: "Transforming asset management with data-driven platforms that provide deep insights, automate portfolio management, and enhance client engagement.",
+    points: [
+      "Building a comprehensive portfolio management platform with real-time risk analytics and performance attribution.",
+      "Developing an automated robo-advisory solution for retail investors, featuring personalized investment strategies and goal-based planning.",
+      "Creating a secure client portal for high-net-worth individuals, offering transparent reporting and seamless communication."
+    ]
+  },
+  {
+    name: "Fintech",
+    intro: "Partnering with innovative fintech startups to build scalable, secure, and user-centric financial products that disrupt traditional banking and financial services.",
+    points: [
+      "Engineering a scalable peer-to-peer lending platform with automated credit scoring and risk assessment algorithms.",
+      "Developing a cross-border remittance solution that significantly reduced transaction costs and settlement times.",
+      "Building a comprehensive digital wallet with integrated payment gateways and loyalty programs for a rising fintech startup."
+    ]
+  },
+  {
+    name: "RWA tokenization",
+    intro: "Pioneering the tokenization of real-world assets, creating secure and compliant blockchain infrastructure to unlock liquidity and fractionalize ownership.",
+    points: [
+      "Creating a secure platform for tokenizing real estate assets, enabling fractional ownership and secondary market liquidity.",
+      "Developing a smart contract-based system for tokenizing and trading fine art and collectibles on the blockchain.",
+      "Building an enterprise-grade infrastructure for issuing and managing tokenized securities compliant with global regulations."
+    ]
+  }
+];
+
+const whyInvestAccordionData = [
+  {
+    id: 1,
+    icon: '/discovery.png', // Using existing icon name or place holder
+    title: 'Discovery and Conceptualization',
+    content: 'We establish the audience, the objective, the brand voice, the competitive context, and the distribution channels before any creative work begins.',
+  },
+  {
+    id: 2,
+    icon: '/storyboarding.png', // Using existing icon name or place holder
+    title: 'Storyboarding and Design',
+    content: 'Our team crafts a comprehensive storyboard and custom style frames to visualize the narrative and ensure it aligns with your brand identity before animation starts.',
+  },
+  {
+    id: 3,
+    icon: '/animation.png', // Using existing icon name or place holder
+    title: 'Animation Development',
+    content: 'We bring the designs to life using advanced 2D animation techniques, adding motion, sound design, and effects to create a compelling final product.',
+  }
+];
+
+const title = (<>
+We make <span>great<br />videos</span>, just for you.
+</>);
+
+const text = "In a world of remixes, custom created videos are a breath of fresh air. You know that video is the future of marketing. What you might not know is that Pixel Studios helps make the video production process easier than ever before. If you have an idea for a video, we can do it.";
+
+const faqs = [
+  {
+    question: "How much does an animation company cost?",
+    answer:
+      "The cost to hire an animation company can vary upon quality of animation, timeline of project, and expertise or brand name of the company. For a usual 30-second animated explainer video, the cost for production can be anywhere between $2500 and $5000. Whereas, if you opt for more detailed animation with custom characters, and professional artwork, the cost can easily go up to $7000 per minute of animation.",
+  },
+  {
+    question: "What types of video content do you produce?",
+    answer: "We produce various types of video content including explainer videos, promotional videos, corporate videos, training videos, and social media videos.",
+  },
+  {
+    question: "What is your video production process like?",
+    answer: "Our process typically includes discovery, scriptwriting, storyboarding, animation/production, voiceover, and final review with client revisions.",
+  },
+  {
+    question: "What type of video is right for our business?",
+    answer: "The right type of video depends on your specific goals. Explainer videos are great for products, while corporate videos are better for brand building.",
+  },
+  {
+    question: "What makes a good video marketing strategy?",
+    answer: "A good strategy focuses on your target audience, clear messaging, high-quality production, and effective distribution channels.",
+  },
+  {
+    question: "What briefing materials do I need to provide?",
+    answer: "We usually ask for your brand guidelines, key messaging, target audience details, and any specific ideas or references you have in mind.",
+  },
+  {
+    question: "Does Video Animation focus on corporate video production?",
+    answer: "Yes, we have extensive experience in creating professional corporate videos tailored to your company's identity and communication goals.",
+  },
+];
+
 export const metadata = {
   title: "Industries - Pixel Studios Inc",
   description: "Welcome to Pixel Studios Inc Industries page. We are an award-winning digital agency.",
@@ -171,7 +296,12 @@ export default function Industries() {
       <Banner
         slides={bannerSlides}
       />
-      <StatsSection />
+      <StatsSection
+        heading={<>A Trusted Animation<br />
+                Company for 2D & 3D<br />
+                Animation Services.</>}
+        statsData={statsData}
+      />
       <ServicesSection
         title="Our Services"
         description={null}
@@ -184,16 +314,31 @@ export default function Industries() {
         features={whyChooseSectionFeatures}
         videoSrc="https://player.vimeo.com/video/1201854680?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
       />
-      <WonderingSection />
+      <WonderingSection
+        title="We know your vertical?"
+        data={wonderingIndustriesData}
+      />
       <WhyPartnerSection />
-      <WhyInvestSection />
+      <WhyInvestSection
+        title={<>Our Proven 2D<br />Animation Workflow</>}
+        description="Our 2D animation production follows a structured, milestone-driven process. Here is exactly what happens between the brief and the final file."
+        accordionData={whyInvestAccordionData}
+      />
       <PortfolioShowcase />
       <div style={{ backgroundImage: "radial-gradient(60.57% 91.94% at 69.22% 43%, #C53ADD 0%, #19042D 100%)" }}>
-        <CostSection />
+        <CostSection
+        title={<>How Much Does 2D<br />Animation Cost?</>}
+        description="A professionally produced 60-second 2D animated video from a reputable 2D animation studio in the USA typically starts in the $2,500 to $4,500 range. This covers discovery, scripting, character design, storyboarding, animation, professional voiceover, sound design, and final delivery in the formats you need. More complex productions with custom character libraries and multiple unique environments fall in the $5,000 to $12,000 range."
+        videoSrc="https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+        bottomText="For multi-video content campaigns and ongoing retainers, we structure scaled pricing that reduces the per-video cost substantially. When character libraries and style systems are built once and deployed across multiple videos, the per-asset production cost drops considerably. We provide itemized, transparent quotes based on your actual brief within 48 hours of a discovery call."
+      />
         <GetQuoteSection />
       </div>
       <TestimonialsSlider />
-      <GreatVideosSection />
+      <GreatVideosSection
+        title={title}
+        text={text}
+      />
       <TestimonialSection />
       <TrustedClientsSection />
       <IndustrySection 
@@ -201,7 +346,10 @@ export default function Industries() {
         industries={industries}
         variant="gradient"
       />
-      <FaqSection />
+      <FaqSection
+        heading="FREQUENTLY ASKED QUESTION?"
+        faqs={faqs}
+      />
     </main>
   );
 }

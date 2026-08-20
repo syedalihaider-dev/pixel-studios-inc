@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import styles from './CooperationModelsSection.module.css';
+import styles from '../Common/CooperationModelsSection.module.css';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';

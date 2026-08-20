@@ -9,9 +9,9 @@ import TestimonialSection from "./TestimonialSection";
 import FaqSection from "./FaqSection";
 import MissionSection from "../Home/MissionSection";
 import FullCycleSection from "../GameAnimation/FullCycleSection";
-import WonderingSection from "../LegalGraphics/WonderingSection";
-import WhyInvestSection from "../Animation2D/WhyInvestSection";
-import CooperationModelsSection from "../CorporateVideoAnimation/CooperationModelsSection";
+import WonderingSection from "./WonderingSection";
+import WhyInvestSection from "./WhyInvestSection";
+import CooperationModelsSection from "./CooperationModelsSection";
 
 /**
  * Shared shell for city/location pages.

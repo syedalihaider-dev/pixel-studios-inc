@@ -32,7 +32,7 @@
   line-height: 60px;
 }
 
-.description {
+.subtitle {
   font-size: 20px;
   max-width: 1080px;
   margin: 0 auto;
@@ -103,7 +103,7 @@
   .title {
     font-size: 36px;
   }
-  .description {
+  .subtitle {
     font-size: 18px;
   }
   .cardTitle {

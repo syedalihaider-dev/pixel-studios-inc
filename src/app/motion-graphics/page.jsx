@@ -1,17 +1,17 @@
 import Banner from "@/components/Common/Banner/Banner";
-import StatsSection from "@/components/MotionGraphics/StatsSection";
+import StatsSection from "@/components/Common/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
-import HowWeWorkSection from "@/components/MotionGraphics/HowWeWorkSection";
-import WhyInvestSection from "@/components/MotionGraphics/WhyInvestSection";
+import HowWeWorkSection from "@/components/Common/HowWeWorkSection";
+import WhyInvestSection from "@/components/Common/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-import GreatVideosSection from "@/components/MotionGraphics/GreatVideosSection";
-import CooperationModelsSection from "@/components/MotionGraphics/CooperationModelsSection";
+import GreatVideosSection from "@/components/Common/GreatVideosSection";
+import CooperationModelsSection from "@/components/Common/CooperationModelsSection";
 import TestimonialsSlider from "@/components/MotionGraphics/TestimonialsSlider";
 import TechnologySection from "@/components/MotionGraphics/TechnologySection";
 import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
-import FaqSection from "@/components/MotionGraphics/FaqSection";
+import FaqSection from "@/components/Common/FaqSection";
 import Link from "next/link";
 
 const softwareSectionFeatures = [
@@ -197,6 +197,159 @@ const sliderItems = [
 ];
 
 
+
+const statsData = [
+  { end: 500, suffix: '+', label: 'Projects\nDelivered' },
+  { end: 97, suffix: '%', label: 'Client Retention\nRate' },
+  { end: 12, suffix: '+', label: 'Industries\nServed' },
+  { end: 95, suffix: '%', label: 'On-Time\nDelivery' },
+];
+
+const howWeWorkAccordionData = [
+  {
+    id: 1,
+    title: '1 Stronger Visual Storytelling',
+    content: 'Professional motion graphic design gives brands full control over the sequence and emphasis of every piece of information they present. No static format offers that level of control.'
+  },
+  {
+    id: 2,
+    title: '2 Consistent Brand Communication',
+    content: 'Motion graphics built within a defined brand system create a consistent visual language across every campaign, channel, and platform a brand publishes to.'
+  },
+  {
+    id: 3,
+    title: '3 Better Social Media Performance',
+    content: 'Animated content outperforms static posts on every platform that measures watch time and engagement as ranking signals for organic distribution.'
+  },
+  {
+    id: 4,
+    title: '4 Increased Viewer Retention',
+    content: 'Viewers complete motion graphics videos at higher rates than most other content formats. High completion rates improve organic reach and multiply the return on each production investment.'
+  },
+  {
+    id: 5,
+    title: '5 Greater Marketing ROI',
+    content: 'One well-produced motion graphics asset can be repurposed across landing pages, email, social, and advertising. The per-impression cost drops with every additional use across the campaign lifecycle.'
+  }
+];
+
+const whyInvestAccordionData = [
+  {
+    id: 1,
+    icon: '/discovery.png',
+    title: 'Discovery and Creative Strategy',
+    content: 'We establish what the motion graphic needs to accomplish, who watches it, and what they do next before a single keyframe exists. Strategy is the first production decision, not an afterthought.',
+  },
+  {
+    id: 2,
+    icon: '/storyboarding.png',
+    title: 'Script Development',
+    content: 'The script is the argument the animation makes, written in the sequence the audience needs to receive it, not in the order the client prefers to present their product..',
+  },
+  {
+    id: 3,
+    icon: '/animation.png',
+    title: 'Storyboarding and Visual Planning',
+    content: "Every scene is mapped before motion begins. Visual hierarchy, typography, animation style, and scene transitions are all approved before production starts.",
+  },
+  {
+    id: 4,
+    icon: '/animation.png',
+    title: 'Motion Design and Animation',
+    content: 'Our motion designers build every animation to the approved storyboard. Every timing and easing decision is traceable to the brief, not applied by default because it looked fine in the preview.',
+  },
+  {
+    id: 5,
+    icon: '/animation.png',
+    title: 'Voiceover and Sound Design',
+    content: 'Professional voiceover matched to brand tone, music selected for emotional register, and sound design that adds production depth without competing with the visual narrative.',
+  },
+  {
+    id: 6,
+    icon: '/animation.png',
+    title: 'Quality Assurance and Revisions',
+    content: 'Every production goes through a structured internal review before the client sees it. Audio-visual sync, brand accuracy, and export specs are all checked against the brief.',
+  },
+  {
+    id: 7,
+    icon: '/animation.png',
+    title: 'Final Delivery and Distribution Support',
+    content: 'Final files in every format specified at kickoff, source files were scoped, and post-delivery support for platform adaptation and multi-channel distribution.',
+  }
+];
+
+const title = (
+    <>
+      Ready to Create Engaging <span>Motion Graphics?</span>
+    </>
+  );
+
+const text = "Tell us what you are trying to accomplish. We will tell you whether motion graphics is the right format, what approach we would take, and what a realistic budget and timeline look like.";
+
+const cooperationModelsCards = [
+    {
+      id: 1,
+      icon: "/game-development/outstaffing.png",
+      title: "Motion Graphics vs 2D Animation",
+      text: "Motion graphics is the better choice when the objective is explanation, data presentation, or brand consistency across multiple short-form assets. 2D animation is better when character-driven storytelling and emotional narrative are central to the brief. Many of our productions combine both within a single campaign."
+    },
+    {
+      id: 2,
+      icon: "/game-development/dedicated-team.png",
+      title: "Motion Graphics vs 3D Animation",
+      text: "3D motion graphics services are right when the subject has physical depth or requires photorealistic rendering. For conceptual explanation, brand content, and data visualization, 2D motion graphics deliver equal or stronger results at a lower cost and a faster timeline."
+    },
+    {
+      id: 3,
+      icon: "/game-development/managed-outsourcing.png",
+      title: "When Motion Graphics Are the Right Choice",
+      text: "When the goal is clarity at speed, consistency across multiple formats, and a production timeline measured in weeks rather than months. Motion graphics are the most versatile format in the category because they are designed to be distributed everywhere, not watched once and forgotten."
+    }
+  ];
+
+const faqs = [
+  {
+    question: "How much does a motion graphics video cost?",
+    answer: "A professionally produced 30 to 60-second motion graphics video typically starts in the $1,500 to $4,000 range for standard 2D motion work. Productions with 3D motion graphics services, custom illustration, or broadcast-spec delivery run higher. Itemized quotes within 48 hours of a discovery call.",
+  },
+  {
+    question: "How long does it take to create a motion graphics video?",
+    answer: "Most 30 to 60-second productions are completed in two to four weeks from a brief sign-off. Multi-format campaign packages and longer productions take proportionally longer. Rush timelines are available and priced transparently.",
+  },
+  {
+    question: "Do you provide scripts and storyboards?",
+    answer: "Yes. Scriptwriting and storyboarding are standard stages in our motion graphics video production services. We do not begin animation until both are approved by the client.",
+  },
+  {
+    question: "Can you create motion graphics for social media marketing?",
+    answer: "Yes. Social media motion graphics are among our most requested formats. We produce platform-native content for TikTok, Instagram Reels, LinkedIn, and YouTube Shorts, built to each platform's technical and engagement requirements from the start.",
+  },
+  {
+    question: "What industries benefit most from motion graphics?",
+    answer: "Every industry requires complex ideas to be communicated clearly. SaaS, healthcare, finance, education, and e-commerce are our highest-volume sectors because all of them have products and services that text and photography cannot explain as efficiently as motion graphics can.",
+  },
+  {
+    question: "Do you offer voiceover and sound design services?",
+    answer: "Yes. Professional voiceover, music selection, and sound design are included in our standard motion graphics design services packages, matched to the brand tone established in the brief.",
+  },
+  {
+    question: "What software do you use for motion graphics production?",
+    answer: "Adobe After Effects is our primary tool. We also use Cinema 4D for 3D motion graphics services, Adobe Illustrator and Premiere Pro for asset creation and delivery, and Figma for UI-accurate interface animation.",
+  },
+  {
+    question: "How many revisions are included in a project?",
+    answer: "Two full revision rounds in standard packages. Additional rounds available and priced upfront. All revision terms are in writing before production begins.",
+  },
+  {
+    question: "Can motion graphics improve conversion rates?",
+    answer: "Consistently. Pages with motion graphics content convert at higher rates than static alternatives because motion graphics reduce the cognitive friction between a visitor and a purchase decision.",
+  },
+  {
+    question: "Do you provide source files after project completion?",
+    answer: "Yes. Source files are included in most project scopes. Exactly what is delivered is documented in the project proposal before production begins.",
+  }
+];
+
 export const metadata = {
   title: "Motion Graphics Services for Brands & Campaigns | Pixel Studios",
   description: "Need professional motion graphics services in the USA? Pixel Studios delivers brand, product, and campaign motion graphics that convert. Get your free quote today.",
@@ -211,7 +364,11 @@ export default function MotionGraphics() {
         video="/videos/home.webm"
         showPlayButton={true}
       />
-      <StatsSection />
+      <StatsSection
+        heading="A Trusted Animation Company for Motion Graphics Services"
+        statsData={statsData}
+        variant="gradient"
+      />
       <ServicesSection
         title="Professional Motion Graphics Services"
         description="Our motion graphics animation services cover every format a brand needs to communicate clearly across digital and broadcast environments."
@@ -224,11 +381,28 @@ export default function MotionGraphics() {
         features={standoutFeatures}
         videoSrc="https://player.vimeo.com/video/1201856158?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
       />
-      <HowWeWorkSection />
-      <CooperationModelsSection />
+      <HowWeWorkSection
+        heading="Benefits of Professional Motion Graphic Design"
+        description="Motion graphics services help brands capture attention, communicate complex ideas quickly, and drive measurable business results. Done right, motion design is one of the highest-performing assets a brand can own."
+        accordionData={howWeWorkAccordionData}
+      />
+      <CooperationModelsSection
+        subtitle="Why Choose Our"
+        title="Motion Graphics vs Traditional Animation"
+        description="The distinction matters because the wrong format choice wastes budget and underserves the audience it was meant to reach."
+        cards={cooperationModelsCards}
+      />
       <PortfolioShowcase />
-      <GreatVideosSection />
-      <WhyInvestSection />
+      <GreatVideosSection
+        title={title}
+        text={text}
+      />
+      <WhyInvestSection
+        subtitle="HOW WE WORK"
+        title={<>Our Motion Graphics <br />Production Process</>}
+        description="Every motion graphic video we produce follows the same disciplined production process. There are no shortcuts, no freelance handoffs, and no phases where your project loses its strategic thread."
+        accordionData={whyInvestAccordionData}
+      />
       <TechnologySection />
       <TeamStandoutSection
         subtitle="PRICING"
@@ -247,7 +421,10 @@ export default function MotionGraphics() {
         variant="gradient"
       />
       <TestimonialSection />
-      <FaqSection />
+      <FaqSection
+        heading="Frequently Asked Questions About Motion Graphics Services"
+        faqs={faqs}
+      />
     </main>
   );
 }

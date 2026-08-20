@@ -1,17 +1,17 @@
 import Banner from "@/components/Common/Banner/Banner";
-import CostSection from "@/components/AnimatedCommercials/CostSection";
-import StatsSection from "@/components/AnimatedCommercials/StatsSection";
+import CostSection from "@/components/Common/CostSection";
+import StatsSection from "@/components/Common/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
-import WhyInvestSection from "@/components/AnimatedCommercials/WhyInvestSection";
+import WhyInvestSection from "@/components/Common/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-import GreatVideosSection from "@/components/AnimatedCommercials/GreatVideosSection";
+import GreatVideosSection from "@/components/Common/GreatVideosSection";
 import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
-import HowWeWorkSection from "@/components/AnimatedCommercials/HowWeWorkSection";
-import CooperationModelsSection from "@/components/AnimatedCommercials/CooperationModelsSection";
-import WonderingSection from "@/components/AnimatedCommercials/WonderingSection";
+import HowWeWorkSection from "@/components/Common/HowWeWorkSection";
+import CooperationModelsSection from "@/components/Common/CooperationModelsSection";
+import WonderingSection from "@/components/Common/WonderingSection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
-import FaqSection from "@/components/AnimatedCommercials/FaqSection";
+import FaqSection from "@/components/Common/FaqSection";
 import Link from "next/link";
 
 const standoutFeatures = [
@@ -239,6 +239,291 @@ const sliderItems = [
 ];
 
 
+
+const statsData = [
+  { end: 500, suffix: '+', label: 'Projects\nDelivered' },
+  { end: 97, suffix: '%', label: 'Client Retention\nRate' },
+  { end: 12, suffix: '+', label: 'Industries\nServed' },
+  { end: 95, suffix: '%', label: 'On-Time\nDelivery' },
+];
+
+const whyInvestAccordionData = [
+  {
+    id: 1,
+    icon: '/discovery.png',
+    title: 'Discovery and Campaign Strategy',
+    content:
+      'Audience identification, conversion objective, media plan, and competitive context are established before a frame is conceived. The strategy brief precedes the creative brief.',
+  },
+  {
+    id: 2,
+    icon: '/storyboarding.png',
+    title: 'Creative Concept Development',
+    content:
+      'Multiple creative directions were developed against the strategy brief and presented for selection. The concept that earns the approval is the one that best serves the objective, not the one that is most visually impressive in isolation.',
+  },
+  {
+    id: 3,
+    icon: '/animation.png',
+    title: 'Scriptwriting and Messaging',
+    content:
+      'Commercial scripts written by people who understand the difference between a brand message and a conversion argument. Short copy. Specific hooks. Calls to action are placed where the audience is most prepared to act on them.',
+  },
+  {
+    id: 4,
+    icon: '/animation.png',
+    title: 'Storyboarding',
+    content:
+      'Every visual beat is mapped and approved before animation begins. Changes to the storyboard are inexpensive. Changes after the animation has begun are not.',
+  },
+  {
+    id: 5,
+    icon: '/animation.png',
+    title: 'Visual Design and Asset Creation',
+    content:
+      'Style frames, character design, and branded asset creation are approved before production. The visual direction is locked before production resources are committed.',
+  },
+  {
+    id: 6,
+    icon: '/animation.png',
+    title: 'Animation Production',
+    content:
+      'Commercial animation production in-house, by the team that developed the concept. No handoffs to animators who were not in the strategy session.',
+  },
+  {
+    id: 7,
+    icon: '/animation.png',
+    title: 'Voiceover and Sound Design',
+    content:
+      'Professional voiceover, music, and sound design mixed for broadcast-spec audio delivery and for the digital environments where most commercial content is consumed without full speaker volume.',
+  },
+  {
+    id: 8,
+    icon: '/animation.png',
+    title: 'Review and Optimization',
+    content:
+      'Structured revision round with documented feedback and confirmed interpretations before any changes are made. Then, a pre-delivery review against the original conversion objective.',
+  },
+  {
+    id: 9,
+    icon: '/animation.png',
+    title: 'Final Delivery',
+    content:
+      'Final files in every format the media plan requires. Platform-specific exports to technical specification. Source files were scoped into the project.',
+  }
+];
+
+const title = (
+  <>
+    Start Your Animated Commercial Project Today
+  </>
+);
+
+const text = "Most animated commercials that underperform were built around the wrong question. Tell us the conversion objective, the audience, and the media plan. We will tell you what the commercial needs to do to succeed, and then we will build it.";
+
+const howWeWorkAccordionData = [
+  {
+    id: 1,
+    title: '1 Capture Attention Faster',
+    content:
+      'Motion captures human attention involuntarily. Animated commercial content earns the viewer\'s focus before they have consciously decided to give it.'
+  },
+  {
+    id: 2,
+    title: '2 Increase Audience Retention',
+    content:
+      'Viewers complete animated commercial videos at higher rates than live-action equivalents because animation sustains visual interest through the full runtime without requiring the viewer to do interpretive work.'
+  },
+  {
+    id: 3,
+    title: '3 Simplify Complex Messages',
+    content:
+      'Animation controls the sequence and pacing of information delivery in a way that live-action cannot. A complex product or service can be explained in 30 seconds with animation that would take three minutes of live-action to communicate imprecisely.'
+  },
+  {
+    id: 4,
+    title: '4 Improve Brand Recall',
+    content:
+      'Animated brand identity elements, character design, and consistent visual style create memory encoding that static advertising cannot produce at an equivalent frequency.'
+  },
+  {
+    id: 5,
+    title: '5 Boost Conversion Rates',
+    content:
+      'Commercial animation built around a specific conversion objective converts at higher rates than awareness-only creative because the viewer arrives at the conversion point already primed to act.'
+  },
+  {
+    id: 6,
+    title: '6 Scale Across Multiple Platforms',
+    content:
+      'A single animated commercial production can be adapted for television, social media, digital pre-roll, and website use simultaneously, which amortizes the production cost across a full campaign.'
+  },
+  {
+    id: 7,
+    title: '7 Maximize Advertising ROI',
+    content:
+      'The combination of higher engagement rates, better retention, and improved conversion means animated commercial services deliver better return on advertising spend than most alternative creative formats.'
+  },
+  {
+    id: 8,
+    title: '8 Create Consistent Brand Messaging',
+    content:
+      'Animation allows complete control over every visual and audio element, which means the brand message is delivered consistently across every placement, every viewing context, and every device.'
+  }
+];
+
+const cooperationModelsCards = [
+  {
+    id: 1,
+    icon: "/game-development/outstaffing.png",
+    title: "Strategy-Driven Commercial Production",
+    text: "Every animated commercial we produce is traceable to a specific business objective. Not an aesthetic preference. Not a creative direction that felt right in the pitch. A conversion goal that was established before the first frame was drawn."
+  },
+  {
+    id: 2,
+    icon: "/game-development/dedicated-team.png",
+    title: "Experienced Animation Specialists",
+    text: "Our team has produced animated commercial content across product, brand, direct response, and broadcast categories. The experience is relevant to the brief, not just extensive on a resume."
+  },
+  {
+    id: 3,
+    icon: "/game-development/managed-outsourcing.png",
+    title: "Conversion-Focused Creative Approach",
+    text: "The hook structure, the pacing of the value proposition, the timing of the call to action: all of these are strategic decisions made with the conversion objective in front of us, not aesthetic decisions made because they looked good in the animatic."
+  },
+  {
+    id: 4,
+    icon: "/game-development/managed-outsourcing.png",
+    title: "Premium Visual Quality",
+    text: "Broadcast-quality production on every commercial we produce. Not as a premium tier. As the standard."
+  },
+  {
+    id: 5,
+    icon: "/game-development/managed-outsourcing.png",
+    title: "Custom Commercial Solutions",
+    text: "Every animated commercial brief is treated as a unique business problem that requires a specific solution. A template commercial animation applied regardless of context is what you get when you hire the wrong animated commercial production company."
+  },
+  {
+    id: 6,
+    icon: "/game-development/managed-outsourcing.png",
+    title: "Fast Turnaround Times",
+    text: "Most animated commercial productions are completed in three to six weeks from a brief sign-off, depending on complexity. Rush production available for campaign launch deadlines."
+  },
+  {
+    id: 7,
+    icon: "/game-development/managed-outsourcing.png",
+    title: "Dedicated Project Management",
+    text: "One project manager from strategy through delivery. Every milestone is dated. Every approval is documented. No surprises at the final delivery."
+  },
+  {
+    id: 8,
+    icon: "/game-development/managed-outsourcing.png",
+    title: "Proven Client Success",
+    text: "Our animated commercial production record is measured in client metrics, not internal awards. The commercial worked, or it did not, and we track the difference."
+  }
+];
+
+const wonderingIndustriesData = [
+  {
+    name: "Commercial Length",
+    intro:
+      "A 15-second digital ad and a 60-second broadcast commercial are not the same production. Script, storyboard, animation, and voiceover all scale with runtime.",
+    points: [
+      "15-second ads require less scripting and production than 60-second broadcast commercials.",
+      "Longer commercials increase storyboard, animation, editing, and review time.",
+      "Production investment scales directly with the final runtime of the commercial."
+    ]
+  },
+  {
+    name: "Animation Style",
+    intro:
+      "Motion graphics commercial animation costs less than fully illustrated character animation. 3D commercial animation with photorealistic rendering costs more than both.",
+    points: [
+      "Motion graphics provide the most cost-effective commercial animation solution.",
+      "Character animation requires custom illustration, rigging, and performance animation.",
+      "Photorealistic 3D animation involves advanced modeling, lighting, rendering, and compositing."
+    ]
+  },
+  {
+    name: "Creative Development Requirements",
+    intro:
+      "Projects requiring multiple concept directions and discovery-led strategy development cost more than projects where the creative brief arrives fully formed.",
+    points: [
+      "Brand discovery workshops increase strategic planning time.",
+      "Developing multiple creative concepts requires additional writing and visual exploration.",
+      "A finalized creative brief reduces production time and overall project cost."
+    ]
+  },
+  {
+    name: "Character Design Complexity",
+    intro:
+      "Custom character design and build for a character-driven commercial adds to the production scope beyond standard asset creation.",
+    points: [
+      "Original character concepts require illustration and visual development.",
+      "Custom rigging and animation increase production effort.",
+      "Detailed characters require additional animation and quality assurance time."
+    ]
+  },
+  {
+    name: "Voiceover and Audio Production",
+    intro:
+      "Professional voiceover talent, music licensing, and custom sound design are standard in our packages and priced transparently at the quote stage.",
+    points: [
+      "Professional voice actors improve commercial quality and audience trust.",
+      "Licensed music enhances the emotional impact of the commercial.",
+      "Custom sound design and final audio mixing ensure broadcast-ready quality."
+    ]
+  },
+  {
+    name: "Number of Deliverables",
+    intro:
+      "A campaign package producing the same commercial across six platform formats costs more than a single-format production. Multi-format campaigns are priced with package efficiencies applied.",
+    points: [
+      "Each platform requires different aspect ratios and export specifications.",
+      "Campaigns often include versions for TV, YouTube, Instagram, TikTok, LinkedIn, and websites.",
+      "Bundled multi-platform production offers better value than creating each version separately."
+    ]
+  },
+  {
+    name: "Production Timeline",
+    intro:
+      "Standard production timelines are priced at the standard rate. Rush timelines for campaign launch deadlines are available and priced honestly.",
+    points: [
+      "Standard production schedules provide the best value.",
+      "Rush projects require priority scheduling and additional production resources.",
+      "Expedited delivery is available for fixed product launches and campaign deadlines."
+    ]
+  }
+];
+
+const faqs = [
+  {
+    question: "What is an animated commercial?",
+    answer:
+      "An animated commercial is a paid advertising video produced using animation techniques, including 2D illustration, 3D rendering, or motion graphics rather than live-action footage. Animated commercials are used across digital platforms, social media, television, and streaming services.",
+  },
+  {
+    question: "How much does an animated commercial cost?",
+    answer:
+      "A 15-second social media animated commercial starts in the $2,000 to $4,000 range. A 30-second broadcast commercial with custom characters and multi-format delivery runs $8,000 to $20,000. Itemized quotes within 48 hours of a brief.",
+  },
+  {
+    question: "Who should use animated commercial services?",
+    answer:
+      "Any business running paid advertising that needs to communicate a product benefit, service value, or brand message faster than live-action footage can deliver it. Animation is particularly effective for product explanation, app promotion, and any category where the product itself is not visually compelling in its raw form.",
+  },
+  {
+    question: "What are the different types of animated commercials?",
+    answer:
+      "Product commercials, brand story commercials, character-driven commercials, motion graphics commercials, 2D animated commercials, and 3D animated commercials. The right type is determined by the audience, the objective, and the platform where the commercial will run.",
+  },
+  {
+    question: "Can I use the animated commercial across multiple platforms?",
+    answer:
+      "Yes. We produce multi-format delivery packages covering broadcast, digital, social media, and website use from a single production. The additional formats are more efficient to produce alongside the primary commercial than as separate commissions.",
+  }
+];
+
 export const metadata = {
   title: "Animated Commercial Services That Capture Attention & Drive Results | Pixel Studios ",
   description: "Need animated commercial services that convert, not just impress? Pixel Studios builds strategy-driven animated commercials for brands across the USA. Get a quote today.",
@@ -253,15 +538,28 @@ export default function AnimatedCommercialsPage() {
         video="/videos/home.webm"
         showPlayButton={true}
       />
-      <CostSection />
-      <StatsSection />
+      <CostSection
+        subtitle="Animated Commercials"
+        title="Turn Viewers into Customers with High-Impact Animated Commercials"
+        description="The average viewer decides on an ad in the first three seconds. Not at the logo reveal. Not at the product shot. In the first three seconds. Most animated commercial production does not begin with that constraint in mind. It begins with the full 30-second runtime and builds toward a hook rather than from one."
+        videoSrc="https://player.vimeo.com/video/1201624786?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+        bottomText="Pixel Studios approaches animated advertising services differently: the hook is brief one, and everything else is built around holding the attention the opening frame has already earned."
+      />
+      <StatsSection
+        heading="A Trusted Animation Company for Animated Commercial Services"
+        statsData={statsData}
+        variant="gradient"
+      />
       <ServicesSection
         title="Animated Commercial Services for Every Marketing Goal"
         description="Our animated commercial production covers every format and objective a brand runs advertising toward."
         sliderItems={sliderItems}
       />
       <PortfolioShowcase />
-      <GreatVideosSection />
+      <GreatVideosSection
+        title={title}
+        text={text}
+      />
       <TeamStandoutSection
         subtitle="HOW BUSINESSES USE"
         title={<>How Businesses Use <span>Animated Commercial Services?</span></>}
@@ -269,10 +567,33 @@ export default function AnimatedCommercialsPage() {
         features={standoutFeatures}
         videoSrc="https://player.vimeo.com/video/1201624746?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
       />
-      <HowWeWorkSection />
-      <WhyInvestSection />
-      <CooperationModelsSection />
-      <WonderingSection />
+      <HowWeWorkSection
+        heading="Why Animated Commercials Outperform Traditional Advertising?"
+        description="Animated commercials capture attention faster, improve audience
+                retention, simplify complex messages, strengthen brand recall,
+                increase conversions, scale across multiple platforms, maximize
+                advertising ROI, and deliver consistent brand messaging across
+                every campaign."
+        accordionData={howWeWorkAccordionData}
+      />
+      <WhyInvestSection
+        subtitle="HOW WE WORK"
+        title={<>Our Animated Commercial <br />Production Process</>}
+        description="Every animated commercial follows a structured production process, from campaign strategy and creative development to animation, optimization, and final delivery. Each stage is designed to maximize audience engagement and achieve the campaign's marketing objectives."
+        accordionData={whyInvestAccordionData}
+      />
+      <CooperationModelsSection
+        subtitle="WHY CHOOSE US"
+        title="Why Choose Our Animated Commercial Production Company?"
+        description="We combine strategic thinking, creative storytelling, and premium animation production to create commercials that improve brand awareness, engagement, and conversion performance."
+        cards={cooperationModelsCards}
+      />
+      <WonderingSection
+        subtitle="PRICING"
+        title="Animated Commercial Pricing and Cost Factors"
+        description="Animated commercial services cost is determined by the production scope, not by a flat-rate package. Here are the variables that drive the investment."
+        data={wonderingIndustriesData}
+      />
       <TestimonialSection />
       <IndustrySection
         heading="Animated Commercial Formats We Create"
@@ -280,7 +601,10 @@ export default function AnimatedCommercialsPage() {
         industries={industries}
         variant="gradient"
       />
-      <FaqSection />
+      <FaqSection
+        heading="Frequently Asked Questions About Animated Commercial Services"
+        faqs={faqs}
+      />
     </main>
   );
 }

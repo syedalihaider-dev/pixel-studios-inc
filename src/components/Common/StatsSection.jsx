@@ -52,12 +52,12 @@ export default function StatsSection({
               variants={textVariants}
             >
               <h2 className={styles.heading}>
-                {heading.split('\n').map((line, i) => (
+                {typeof heading === 'string' ? heading.split('\n').map((line, i) => (
                   <React.Fragment key={i}>
                     {line}
                     {i !== heading.split('\n').length - 1 && <br />}
                   </React.Fragment>
-                ))}
+                )) : heading}
               </h2>
               {description && <p>{description}</p>}
             </motion.div>
@@ -85,12 +85,12 @@ export default function StatsSection({
                       <span className={styles.symbol}>{stat.suffix}</span>
                     </h3>
                     <p className={styles.label}>
-                      {stat.label.split('\n').map((line, i) => (
+                      {typeof stat.label === 'string' ? stat.label.split('\n').map((line, i) => (
                         <React.Fragment key={i}>
                           {line}
                           {i !== stat.label.split('\n').length - 1 && <br />}
                         </React.Fragment>
-                      ))}
+                      )) : stat.label}
                     </p>
                   </motion.div>
                 </div>

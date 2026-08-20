@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CTAButton from '../Common/CTAButton';
-import styles from './HowWeWorkSection.module.css';
+import styles from '../Common/HowWeWorkSection.module.css';
 
 const accordionData = [
     {

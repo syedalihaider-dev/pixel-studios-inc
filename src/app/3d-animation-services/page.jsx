@@ -1,33 +1,18 @@
-import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
-
-
-
-
 import Banner from "@/components/Common/Banner/Banner";
-import StatsSection from "@/components/Animation3D/StatsSection";
+import StatsSection from "@/components/Common/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
-import HowWeWorkSection from "@/components/Animation3D/HowWeWorkSection";
-import WhyInvestSection from "@/components/Animation3D/WhyInvestSection";
+import HowWeWorkSection from "@/components/Common/HowWeWorkSection";
+import WhyInvestSection from "@/components/Common/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-;
-import CostSection from "@/components/Animation3D/CostSection";
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
+import CostSection from "@/components/Common/CostSection";
 import TestimonialsSlider from "@/components/Animation3D/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Animation3D/TrustedClientsSection";
 import IndustrySection from "@/components/Common/IndustrySection";
-import GreatVideosSection from "@/components/Animation3D/GreatVideosSection";
+import GreatVideosSection from "@/components/Common/GreatVideosSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
-import FaqSection from "@/components/Animation3D/FaqSection";
+import FaqSection from "@/components/Common/FaqSection";
 import Link from 'next/link';
-
-
-
-
-
-
-
-
-
-
 
 const standoutFeatures = [
   {
@@ -203,6 +188,165 @@ const sliderItems = [
   }
 ];
 
+const statsData = [
+  { end: 500, suffix: '+', label: 'Projects\nDelivered' },
+  { end: 97, suffix: '%', label: 'Client Retention\nRate' },
+  { end: 12, suffix: '+', label: 'Industries\nServed' },
+  { end: 95, suffix: '%', label: 'On-Time\nDelivery' },
+];
+
+const howWeWorkAccordionData = [
+  {
+    id: 1,
+    title: '1 Experienced 3D Artists and Animators',
+    content: 'Senior 3D animators and artists with cross-industry production experience across healthcare, industrial, consumer, gaming, and architectural sectors.'
+  },
+  {
+    id: 2,
+    title: '2 Specialized Industry Knowledge',
+    content: 'Production expertise specific to industries where technical accuracy is non-negotiable: medical, engineering, legal, and industrial.'
+  },
+  {
+    id: 3,
+    title: '3 Custom Animation Solutions',
+    content: 'Every brief starts from scratch. Your product, your audience, and your business objective determine the direction. No recycled templates.'
+  },
+  {
+    id: 4,
+    title: '4 Advanced Production Pipeline',
+    content: 'Full in-house 3D animation production pipeline: modeling, texturing, rigging, animation, lighting, rendering, and compositing with no outsourcing at critical stages.'
+  },
+  {
+    id: 5,
+    title: '5 High-End Visual Quality',
+    content: 'Photorealistic rendering and broadcast-standard compositing on every production. Visual quality is not a premium tier. It is the baseline.'
+  },
+  {
+    id: 6,
+    title: '6 Transparent Communication',
+    content: 'Documented scope, milestone schedule, and proactive project updates on every production. No black-box periods where clients wait without information.'
+  },
+  {
+    id: 7,
+    title: '7 Reliable Turnaround Times',
+    content: 'Timelines are commitments, not estimates. Project managers flag risks before they affect delivery.'
+  },
+  {
+    id: 8,
+    title: '8 Dedicated Project Management',
+    content: 'One project manager from brief to delivery. One point of contact. One person is accountable for every stage.'
+  }
+];
+
+const whyInvestAccordionData = [
+  {
+    id: 1,
+    icon: '/discovery.png',
+    title: 'Discovery and Project Planning',
+    content: 'Business objective, audience, visual direction, and production scope are established before any creative work begins.',
+  },
+  {
+    id: 2,
+    icon: '/storyboarding.png',
+    title: 'Concept Development',
+    content: 'Visual direction, mood boards, and style frames are developed and approved before production resources are committed.',
+  },
+  {
+    id: 3,
+    icon: '/animation.png',
+    title: 'Scriptwriting and Storyboarding',
+    content: 'Script and storyboard were developed together, so the narrative and visual sequence are designed as a single piece.',
+  },
+  {
+    id: 4,
+    icon: '/animation.png',
+    title: 'Asset Creation and Modeling',
+    content: 'All 3D models, environments, and props are built in-house to the detail level the scene and distribution context require.',
+  },
+  {
+    id: 5,
+    icon: '/animation.png',
+    title: 'Animation Production',
+    content: 'Characters, products, and cameras animated to the approved storyboard. Rigging, facial animation, and motion design were governed by the brief throughout.',
+  },
+  {
+    id: 6,
+    icon: '/animation.png',
+    title: 'Rendering and Visual Enhancement',
+    content: 'Lighting, shading, texturing, compositing, and VFX bring the scene to its final visual quality.',
+  },
+  {
+    id: 7,
+    icon: '/animation.png',
+    title: 'Review and Refinement',
+    content: 'Full draft submitted for structured client review. Every note is documented and confirmed before changes are made.',
+  },
+  {
+    id: 8,
+    icon: '/animation.png',
+    title: 'Final Delivery',
+    content: 'Final files in every format specified at kickoff. Source files are included in most scopes. Post-delivery support available for platform adaptation.',
+  },
+];
+
+const title = (
+  <>
+    Discuss Your <span>3D Animation</span> Project.
+  </>
+);
+
+const text = "Tell us your product, your audience, and what you need them to do after watching. We will tell you whether 3D animation is the right format and what approach we would take.";
+
+const faqs = [
+  {
+    question: "How much does a custom 3D animation project cost?",
+    answer: "A 30 to 60-second 3D product animation starts in the $3,500 to $8,000 range. Complex character animation and cinematic productions range from $10,000 to $30,000 or more. Itemized quotes within 48 hours of a discovery call.",
+  },
+  {
+    question: "How long does it take to create a 3D animated video?",
+    answer: "A standard 60-second 3D product animation runs four to six weeks from brief sign-off. Cinematic productions with character animation and VFX typically require six to twelve weeks. Rush timelines are available.",
+  },
+  {
+    question: "Is 3D animation worth it for startups and small businesses?",
+    answer: "Yes, when the brief justifies it. If your product has physical form or structural complexity that 2D cannot communicate effectively, professional 3D animation services are one of the most efficient communication investments available.",
+  },
+  {
+    question: "Can 3D animation help increase customer engagement and conversions?",
+    answer: "Consistently. Product pages with 3D animated content see higher dwell time and improved conversion versus static alternatives because 3D animation answers product questions visually before a prospect has to ask them.",
+  },
+  {
+    question: "How many revisions are included in a typical animation project?",
+    answer: "Two full revision rounds in standard packages. Additional rounds available and priced clearly upfront. All revision terms are documented before production begins.",
+  },
+  {
+    question: "How do I choose the right 3D animation company?",
+    answer: "Look for a portfolio range across industries, a discovery process that precedes the quote, and verifiable client results. The right 3D animation agency asks what the video needs to accomplish before deciding what it should look like.",
+  },
+  {
+    question: "When should I use 3D animation for product demos?",
+    answer: "When the product has a physical form that benefits from dimensional rendering, when internal mechanisms cannot be shown through photography, or when brand positioning demands photorealistic quality.",
+  },
+  {
+    question: "Do you offer character design and animation for storytelling projects?",
+    answer: "Yes. Full character animation, including modeling, rigging, facial animation, and performance direction across stylized and photorealistic aesthetics for brand storytelling, gaming, and educational content.",
+  },
+  {
+    question: "Can 3D animation explain complex products and technical concepts?",
+    answer: "It is one of the most effective formats for exactly that problem. 3D animation shows internal components that cannot be photographed and demonstrates engineering precision with clarity that no other format matches.",
+  },
+  {
+    question: "Are 3D modeling and rendering included in your production process?",
+    answer: "Yes. Modeling, texturing, rigging, lighting, and rendering are all standard components of our 3D animation production services, managed entirely in-house.",
+  },
+  {
+    question: "What makes your 3D animation company different from other agencies?",
+    answer: "We start with the business objective, not the visual brief. That changes the quality of output in measurable ways: fewer revision cycles, higher client retention, and content that performs in the market.",
+  },
+  {
+    question: "How do I get started with a custom 3D animation project?",
+    answer: "Book a 30-minute discovery call. A detailed proposal with scope, timeline, and investment follows within 48 hours. No obligation.",
+  },
+];
 
 export const metadata = {
   title: "Premium 3D Animation Services Studio in USA | Pixel Studios",
@@ -218,25 +362,47 @@ export default function ThreeDAnimation() {
         video="/videos/home.webm"
         showPlayButton={true}
       />
-      <StatsSection />
+      <StatsSection
+        heading="A Trusted Animation Company for 2D & 3D Animation Services."
+        statsData={statsData}
+        variant="gradient"
+      />
       <ServicesSection
         title="From Idea to Delivery: Our Best 3D Animation Services"
         description="Our custom 3D animation services cover every format a brand, product team, or marketing department needs to communicate with precision."
         sliderItems={sliderItems}
       />
-      <HowWeWorkSection />
+      <HowWeWorkSection
+        heading="Why Pixel Studios Is a Top 3D Animation Company?"
+        description="Our 97% client retention rate is built on eight specific commitments that every project is held to."
+        accordionData={howWeWorkAccordionData}
+      />
       <PortfolioShowcase />
-            <TeamStandoutSection
+      <TeamStandoutSection
         subtitle="WHAT MAKES"
         title={<>What <span>3D Animation</span> Can Help You Achieve?</>}
         description="The right 3D animation services for businesses close the gap between what your audience understands and what they need to understand to act."
         features={standoutFeatures}
         videoSrc="https://player.vimeo.com/video/1065180132?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
       />
-      <CostSection />
-      <WhyInvestSection />
+      <CostSection
+        subtitle="COLLABORATIVE APPROACH"
+        title={<>What Drives the Cost <br />of 3D Production?</>}
+        description="The cost of 3D production depends on the scope, complexity, and level of execution required to bring your vision to life. A simple rotating product model requires far fewer production hours than a fully animated cinematic sequence with characters and detailed environments. Duration also plays a major role, as a short 30-second showcase differs significantly from a multi-minute brand film, with each stage of production clearly itemized for full transparency."
+        videoSrc="https://player.vimeo.com/video/1065182530?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+        bottomText="The level of detail further impacts cost, with photorealistic rendering and physically accurate lighting demanding more time than stylized visuals. Additional elements like visual effects and professional sound design enhance depth and audience impact, and are quoted separately so you only invest in what the brief truly needs. Turnaround time is another key factor, with standard 60-second productions typically completed within four to six weeks, while expedited timelines are available with transparent pricing to maintain quality without compromise."
+      />
+      <WhyInvestSection
+        subtitle="HOW WE WORK"
+        title={<>Our 3D Animation <br />Production Process</>}
+        description="Every production follows a structured, milestone-driven process from brief to final file."
+        accordionData={whyInvestAccordionData}
+      />
       <TestimonialsSlider />
-      <GreatVideosSection />
+      <GreatVideosSection
+        title={title}
+        text={text}
+      />
       <TestimonialSection />
       <TrustedClientsSection />
       <IndustrySection
@@ -245,7 +411,10 @@ export default function ThreeDAnimation() {
         industries={industries}
         variant="gradient"
       />
-      <FaqSection />
+      <FaqSection
+        heading="Frequently Asked Questions"
+        faqs={faqs}
+      />
     </main>
   );
 }

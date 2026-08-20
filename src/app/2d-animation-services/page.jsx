@@ -1,16 +1,16 @@
 import Banner from "@/components/Common/Banner/Banner";
-import StatsSection from "@/components/Animation2D/StatsSection";
+import StatsSection from "@/components/Common/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
 import WhyPartnerSection from "@/components/Animation2D/WhyPartnerSection";
-import WhyInvestSection from "@/components/Animation2D/WhyInvestSection";
+import WhyInvestSection from "@/components/Common/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-import CostSection from "@/components/Animation2D/CostSection";
+import CostSection from "@/components/Common/CostSection";
 import TestimonialsSlider from "@/components/Animation2D/TestimonialsSlider";
 import TrustedClientsSection from "@/components/Animation2D/TrustedClientsSection";
 import IndustrySection from "@/components/Common/IndustrySection";
-import GreatVideosSection from "@/components/Animation2D/GreatVideosSection";
+import GreatVideosSection from "@/components/Common/GreatVideosSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
-import FaqSection from "@/components/Animation2D/FaqSection";
+import FaqSection from "@/components/Common/FaqSection";
 import Link from 'next/link';
 
 const industries = [
@@ -146,6 +146,94 @@ const sliderItems = [
   }
 ];
 
+const statsData = [
+  { end: 500, suffix: '+', label: 'Projects\nDelivered' },
+  { end: 97, suffix: '%', label: 'Client Retention\nRate' },
+  { end: 12, suffix: '+', label: 'Industries\nServed' },
+  { end: 95, suffix: '%', label: 'On-Time\nDelivery' },
+];
+
+const whyInvestAccordionData = [
+  {
+    id: 1,
+    icon: '/discovery.png',
+    title: 'Discovery and Conceptualization',
+    content: 'We establish the audience, the objective, the brand voice, the competitive context, and the distribution channels before any creative work begins. We write a creative brief specific enough to make real production decisions from. Vague briefs produce vague animated videos. We do not accept vague briefs.',
+  },
+  {
+    id: 2,
+    icon: '/storyboarding.png',
+    title: 'Storyboarding and Design',
+    content: 'Character design, background style, color palette, and visual direction are established and approved before a single frame is animated. A full storyboard maps every script beat to a specific visual. Changes at this stage take 30 minutes. Changes after animation begins take two days. We invest in this stage because the economics of thoroughness are straightforward.',
+  },
+  {
+    id: 3,
+    icon: '/animation.png',
+    title: 'Animation Development',
+    content: 'With the storyboard approved, production begins in full. Characters move, scenes transition, and text appears at the precise moment the voiceover reaches the corresponding line. Voiceover recording runs in parallel with early animation. The entire 2D animation production runs in-house on the same team that handled the storyboard stage.',
+  },
+  {
+    id: 4,
+    icon: '/animation.png',
+    title: 'Refinements and Sound Design',
+    content: 'Sound design is structural, not decorative. Background music sets the emotional register. Sound effects add weight to visual events. Final motion refinements and easing adjustments are applied here before the full draft is sent for client review. What gets produced at this stage is a fully finished video, not a rough cut.',
+  },
+  {
+    id: 5,
+    icon: '/animation.png',
+    title: 'Quality Assurance',
+    content: 'Before the draft reaches you, it goes through a structured internal review: audio-visual sync, brand accuracy against approved style frames, voiceover mix levels, and platform-specific export specifications. We catch production issues here so they do not arrive as client revision requests.',
+  },
+  {
+    id: 6,
+    icon: '/animation.png',
+    title: 'Final Draft Review and Delivery',
+    content: 'The final draft arrives with a structured revision process. Every note is documented and confirmed before changes are made. We do not guess at ambiguous feedback. Final delivery covers every format and resolution specified at kickoff, plus source files in most project scopes.',
+  },
+];
+
+const title = (
+  <>
+    Bring Your <span>Ideas</span> to Life with Professional <span>2D Animation Services</span>
+  </>
+);
+
+const text = "Whether you're launching a product, explaining a service, or strengthening your brand, our 2D animation studio creates visually compelling videos tailored to your goals. We combine strategic storytelling, creative design, and smooth animation to deliver content that captures attention and leaves a lasting impression.";
+
+const faqs = [
+  {
+    question: "How do I choose the best 2D animation company?",
+    answer: "Look at portfolio range: genuine visual variety shows they adapt to briefs rather than applying one aesthetic to every client. Then, examine the process: do they describe their discovery approach specifically before the quote? Finally, look for verifiable client results with specific outcomes, not just testimonials describing a pleasant experience.",
+  },
+  {
+    question: "What should I avoid when hiring a 2D animation studio?",
+    answer: "Avoid studios that quote a price before understanding your project. Any 2D animation agency that gives you a rate before asking detailed questions about your audience and your business objective is pricing a generic production, not your specific one. Avoid studios that cannot show you named clients with verifiable outcomes. Avoid portfolios that show only one visual style regardless of industry.",
+  },
+  {
+    question: "Can you follow my brand guidelines and visual identity?",
+    answer: "Yes, and we treat your brand guidelines as the creative starting point. Your color palette, typography, illustration references, and tone of voice are all incorporated into the style frames before any animation begins. We produce branded 2D animated videos that fit your visual ecosystem rather than looking like they came from a different team.",
+  },
+  {
+    question: "How do I choose the right animation style for my audience?",
+    answer: "The right style depends on the audience, the objective, and the distribution context. Consumer audiences on social respond to expressive character animation and high visual energy. B2B and technical audiences respond to clean motion graphics and measured pacing. Healthcare audiences need accuracy above all. We work through these variables in discovery rather than leaving the style decision to trend or default.",
+  },
+  {
+    question: "Is 2D animation enough for tech or B2B products, or do I need 3D to look premium?",
+    answer: "2D animation is more than sufficient for the vast majority of tech and B2B use cases. What signals premium quality is the clarity of thinking and the craft of execution, neither of which is format-dependent. SaaS companies and enterprise brands producing the most effective animated content predominantly use 2D formats because the format excels at clear, efficient explanation. 3D is right when the product has a physical structure requiring dimensional rendering. Otherwise, a well-produced 2D video outperforms a mediocre 3D production in every metric that matters.",
+  },
+  {
+    question: "How much does it cost for a 60 to 90-second 2D business animation?",
+    answer: "A professionally produced 60 to 90-second 2D business animation from a reputable studio in the USA falls between $2,500 and $8,000, depending on creative complexity, number of characters, voiceover requirements, and production timeline. We provide an itemized, transparent quote based on your actual brief within 48 hours of a discovery call.",
+  },
+  {
+    question: "How long does our production cycle typically take?",
+    answer: "Most 60 to 90-second 2D animated videos are completed in three to five weeks from a brief sign-off. Discovery and scripting: five to seven days. Storyboard and design: five to seven days. Animation production: seven to ten days. Sound and final review: three to five days. Every project receives a milestone schedule with specific dates at kickoff, not a range with a disclaimer.",
+  },
+  {
+    question: "What about the copyright of my animations once I pay for them?",
+    answer: "Full copyright ownership transfers to you upon final payment. You own the right to use, distribute, modify, and publish the video in any format, on any platform, for any purpose without restriction. Our standard agreements confirm this in writing at project kickoff. Licensed music and stock sound assets are documented separately, so you have a complete picture of what you own outright and what is covered by a commercial license.",
+  },
+];
 
 export const metadata = {
   title: "Creative 2D Animation Services in the USA | Pixel Studios Inc.",
@@ -161,18 +249,36 @@ export default function TwoDAnimation() {
         video="/videos/home.webm"
         showPlayButton={true}
       />
-      <StatsSection />
+      <StatsSection
+        heading="A Trusted Animation Company for 2D & 3D Animation Services."
+        statsData={statsData}
+        variant="gradient"
+      />
       <ServicesSection
         title="WHAT WE ARE OFFERING IN 2D ANIMATION SERVICES?"
         description="Our 2D animation company covers every production format a brand or marketing team needs. All work is produced entirely in-house by our dedicated animators, scriptwriters, character designers, and sound specialists."
         sliderItems={sliderItems}
       />
       <WhyPartnerSection />
-      <WhyInvestSection />
+      <WhyInvestSection
+        subtitle="HOW WE WORK"
+        title={<>Our Proven 2D<br /> Animation Workflow</>}
+        description="Our 2D animation production follows a structured, milestone-driven process. Here is exactly what happens between the brief and the final file."
+        accordionData={whyInvestAccordionData}
+      />
       <PortfolioShowcase />
-      <CostSection />
+      <CostSection
+        subtitle="COLLABORATIVE APPROACH"
+        title={<>How Much Does 2D<br />Animation Cost?</>}
+        description="A professionally produced 60-second 2D animated video from a reputable 2D animation studio in the USA typically starts in the $2,500 to $4,500 range. This covers discovery, scripting, character design, storyboarding, animation, professional voiceover, sound design, and final delivery in the formats you need. More complex productions with custom character libraries and multiple unique environments fall in the $5,000 to $12,000 range."
+        videoSrc="https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+        bottomText="For multi-video content campaigns and ongoing retainers, we structure scaled pricing that reduces the per-video cost substantially. When character libraries and style systems are built once and deployed across multiple videos, the per-asset production cost drops considerably. We provide itemized, transparent quotes based on your actual brief within 48 hours of a discovery call."
+      />
       <TestimonialsSlider />
-      <GreatVideosSection />
+      <GreatVideosSection
+        title={title}
+        text={text}
+      />
       <TestimonialSection />
       <TrustedClientsSection />
       <IndustrySection
@@ -181,7 +287,10 @@ export default function TwoDAnimation() {
         industries={industries}
         variant="gradient"
       />
-      <FaqSection />
+      <FaqSection
+        heading="Frequently Asked Questions"
+        faqs={faqs}
+      />
     </main>
   );
 }

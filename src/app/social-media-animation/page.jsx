@@ -1,17 +1,17 @@
 import Banner from "@/components/Common/Banner/Banner";
-import StatsSection from "@/components/SocialMediaAnimation/StatsSection";
+import StatsSection from "@/components/Common/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
-import HowWeWorkSection from "@/components/SocialMediaAnimation/HowWeWorkSection";
-import WhyInvestSection from "@/components/SocialMediaAnimation/WhyInvestSection";
+import HowWeWorkSection from "@/components/Common/HowWeWorkSection";
+import WhyInvestSection from "@/components/Common/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
-import GreatVideosSection from "@/components/SocialMediaAnimation/GreatVideosSection";
-import WonderingSection from "@/components/SocialMediaAnimation/WonderingSection";
-import CostSection from "@/components/SocialMediaAnimation/CostSection";
+import GreatVideosSection from "@/components/Common/GreatVideosSection";
+import WonderingSection from "@/components/Common/WonderingSection";
+import CostSection from "@/components/Common/CostSection";
 import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
-import CooperationModelsSection from "@/components/SocialMediaAnimation/CooperationModelsSection";
+import CooperationModelsSection from "@/components/Common/CooperationModelsSection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
-import FaqSection from "@/components/SocialMediaAnimation/FaqSection";
+import FaqSection from "@/components/Common/FaqSection";
 import Link from "next/link";
 
 const standoutFeatures = [
@@ -169,6 +169,216 @@ const sliderItems = [
   }
 ];
 
+
+const statsData = [
+  { end: 500, suffix: '+', label: 'Projects\nDelivered' },
+  { end: 97, suffix: '%', label: 'Client Retention\nRate' },
+  { end: 12, suffix: '+', label: 'Industries\nServed' },
+  { end: 95, suffix: '%', label: 'On-Time\nDelivery' },
+];
+
+const howWeWorkAccordionData = [
+  {
+    id: 1,
+    title: '1 Instagram Animations',
+    content: "Feed posts, reels, and stories in every Instagram format. Captions, aspect ratios, and hook timing calibrated for the platform's visual environment and engagement signals."
+  },
+  {
+    id: 2,
+    title: '2 Facebook Animations',
+    content: "Organic and paid Facebook video animation optimized for the watch-time and engagement metrics that drive Facebook's distribution algorithm."
+  },
+  {
+    id: 3,
+    title: '3 TikTok Animations',
+    content: 'TikTok animation video production built from the first frame for a platform where the hook determines everything. Native vertical format with on-screen text for silent-viewing audiences.'
+  },
+  {
+    id: 4,
+    title: '4 LinkedIn Video Animations',
+    content: "LinkedIn animated video services for B2B brands. Professional register, measured pacing, and visual tone matched to the platform's audience expectations."
+  },
+  {
+    id: 5,
+    title: '5 YouTube Animations',
+    content: 'Full-length YouTube animated content and YouTube Shorts animation for brands building channel presence, product education, and search-optimized video content.'
+  },
+  {
+    id: 6,
+    title: '6 X (Twitter) Video Content',
+    content: "Short-form animated content for X with the compression and visual clarity the platform's feed requires.Motion graphics and kinetic typography for the format."
+  }
+];
+
+const whyInvestAccordionData = [
+  {
+    id: 1,
+    icon: '/discovery.png',
+    title: 'Content Strategy and Planning',
+    content: 'Platform, objective, audience, and campaign context established before concept development. Algorithm signals and platform-specific requirements built into the brief at this stage.',
+  },
+  {
+    id: 2,
+    icon: '/storyboarding.png',
+    title: 'Script and Concept Development',
+    content: 'Script written for the duration and the platform. A 15-second TikTok animation and a 60-second LinkedIn explainer are different communication problems and are treated as such.',
+  },
+  {
+    id: 3,
+    icon: '/animation.png',
+    title: 'Storyboarding',
+    content: "Every scene mapped before animation. Visual structure, text placement, hook timing, and call-to-action positioning planned and approved at storyboard stage.",
+  },
+  {
+    id: 4,
+    icon: '/animation.png',
+    title: 'Design and Illustration',
+    content: 'Visual style, brand color application, and typographic treatment established and approved before production. Platform-specific visual density requirements addressed at design stage.',
+  },
+  {
+    id: 5,
+    icon: '/animation.png',
+    title: 'Animation Production',
+    content: 'Full social media animation production in-house. Platform-specific aspect ratios, motion pacing, and on-screen text timing built into production from the start.',
+  },
+  {
+    id: 6,
+    icon: '/animation.png',
+    title: 'Sound Design and Music',
+    content: 'Sound design and music mixed for both with-audio and without-audio viewing. Visual communication structured to work for the majority of social video watched without sound.',
+  },
+  {
+    id: 7,
+    icon: '/animation.png',
+    title: 'Delivery and Optimization',
+    content: 'Final files in every platform format specified at kickoff. File size, codec, aspect ratio, and caption requirements confirmed before delivery.',
+  }
+];
+
+const title = (
+    <>
+      Get Started With Professional <span>Social Media Animation Services</span>
+    </>
+  );
+
+const text = "Most brands are publishing social media content that performs at a fraction of what well-produced animated content achieves. Book a discovery call and we will show you what is possible for your platforms, your audience, and your campaign objectives.";
+
+const wonderingIndustriesData = [
+  {
+    name: "Increase Audience Engagement",
+    intro: "Animated social media videos generate higher engagement rates than static posts across every major platform. Higher engagement feeds algorithmic distribution and multiplies organic reach without increasing ad spend.",
+    points: [
+      "Grabbing attention within the first 3 seconds with scroll-stopping animation.",
+      "Explaining complex concepts with visual clarity that static text cannot match.",
+      "Reinforcing brand identity through consistent visual language and motion patterns."
+    ]
+  },
+  {
+    name: "Improve Ad Performance",
+    intro: "Animated social media ads consistently outperform static ad creative in click-through rate and cost per acquisition. Brands switching from static to animated ad creative routinely see CPAs drop without changing targeting or budget.",
+    points: [
+      "Cutting CPM by stopping scroll and lowering cost per thousand impressions.",
+      "Increasing ad-to-landing-page conversion rates with better-qualified traffic.",
+      "Reducing wasted ad spend from low-performing static assets."
+    ]
+  },
+  {
+    name: "Boost Brand Awareness",
+    intro: "Consistent social media animation production builds visual brand recognition. When animation style, color system, and motion language are consistent across every post, the brand becomes recognizable before the viewer reads a word.",
+    points: [
+      "Establishing a consistent visual identity across all social platforms.",
+      "Differentiating the brand from competitors who rely on generic stock visuals.",
+      "Building long-term brand recall through memorable animation patterns and characters."
+    ]
+  },
+  {
+    name: "Communicate Messages Faster",
+    intro: "A well-produced 15-second animated social media video communicates what a 300-word caption cannot: the offer, the brand, and the call to action simultaneously. Speed of communication is a competitive advantage in a feed where alternatives are one scroll away.",
+    points: [
+      "Delivering the full message in the first 3–5 seconds before the user scrolls.",
+      "Using visuals to convey complex narratives that would require long captions and explanation.",
+      "Ensuring brand and value proposition are recognized even with the sound off."
+    ]
+  },
+  {
+    name: "Increase Social Shares",
+    intro: "Animated content generates more shares and saves than static content across every platform that tracks these signals as distribution drivers. Shares extend organic reach without additional spend.",
+    points: [
+      "Increasing the velocity of content distribution through user sharing and reshares.",
+      "Reducing per-impression costs by leveraging organic amplification.",
+      "Building an owned audience that amplifies brand messaging at scale."
+    ]
+  }
+];
+
+const cooperationModelsCards = [
+    {
+      id: 1,
+      icon: "/game-development/outstaffing.png",
+      title: "Platform-Specific Video Creation",
+      text: "We do not produce one animation and resize it. Every production is built for the platform it will live on: native formats, platform-calibrated pacing, and technical specifications confirmed before production begins."
+    },
+    {
+      id: 2,
+      icon: "/game-development/dedicated-team.png",
+      title: "Custom Animation Solutions",
+      text: "Every social media animation production starts from your brief, your brand, and your campaign objective. No template libraries. Custom animated social media videos built specifically for your audience."
+    },
+    {
+      id: 3,
+      icon: "/game-development/managed-outsourcing.png",
+      title: "Experienced Creative Team",
+      text: "Our social media animation agency has produced content for brands across e-commerce, SaaS, healthcare, financial services, and consumer retail. Experience that reduces the learning curve on every new brief."
+    },
+    {
+      id: 4,
+      icon: "/game-development/managed-outsourcing.png",
+      title: "Fast Turnaround Times",
+      text: "Most social media animations complete in one to three weeks from brief sign-off. Rush production available. We protect quality within compressed timelines rather than sacrificing it."
+    },
+    {
+      id: 5,
+      icon: "/game-development/managed-outsourcing.png",
+      title: "Multiple Revision Rounds",
+      text: "Two full revision rounds standard in every production. Additional rounds available and priced upfront. All revision terms documented before production begins."
+    }
+  ];
+
+const faqs = [
+  {
+    question: "How much do social media animation services cost?",
+    answer: "A single 15 to 30-second social media motion graphics animation typically starts in the $500 to $1,500 range. More complex 2D animated social media content runs $1,500 to $4,000 per piece. Multi-platform campaign packages are priced by scope. Itemized quotes within 48 hours of a discovery call.",
+  },
+  {
+    question: "Which social media platforms support animated videos?",
+    answer: "All major platforms support animated video: Instagram, TikTok, Facebook, LinkedIn, YouTube, and X. Each has specific technical requirements for format, aspect ratio, duration, and file size. We build to each platform's actual specifications rather than adapting a single master file.",
+  },
+  {
+    question: "What is the ideal length for a social media animation?",
+    answer: "Platform-dependent. TikTok and Instagram Reels perform best at 15 to 30 seconds for awareness content. LinkedIn can sustain 30 to 90 seconds for B2B audiences. YouTube Shorts cap at 60 seconds. Duration is set based on the platform and the brief objective.",
+  },
+  {
+    question: "Can animated videos improve social media engagement?",
+    answer: "Consistently. Animated social media videos generate higher engagement rates than static posts across every platform that uses engagement as an organic distribution signal. Motion catches attention, and a well-built hook keeps the viewer watching long enough for the message to land.",
+  },
+  {
+    question: "Do you create animations for paid advertising campaigns?",
+    answer: "Yes. Animated social media ads are among our most requested formats. We produce paid advertising animation for Meta, TikTok, LinkedIn, and YouTube with creative structures built around click-through rate and conversion objectives.",
+  },
+  {
+    question: "Can you repurpose one animation for multiple platforms?",
+    answer: "Yes. We produce a master animation and adapt it into platform-specific versions with correct aspect ratios, durations, and technical specifications. Multi-platform packages are priced more efficiently than individual productions per platform.",
+  },
+  {
+    question: "How long does it take to create a social media animation?",
+    answer: "Most social media animations complete in one to three weeks from brief sign-off. Single 15 to 30-second animations with complete brand assets can complete in five to seven business days. Rush timelines are available.",
+  },
+  {
+    question: "Do you provide scripts and creative concepts?",
+    answer: "Yes. Script development and creative concepting are standard stages in our social media animation production process. Hook, message structure, and call-to-action sequence developed based on the platform and the campaign objective. Approved before any design or animation begins.",
+  }
+];
+
 export const metadata = {
   title: "Social Media Animation Services | Pixel Studios Inc.",
   description: "Need social media animation services that stop the scroll? Pixel Studios creates custom animated social media videos for every platform. Get a free quote today.",
@@ -183,15 +393,26 @@ export default function SocialMediaAnimationPage() {
         video="/videos/home.webm"
         showPlayButton={true}
       />
-      <StatsSection />
+      <StatsSection
+        heading="A Trusted Animation Company For Social Media Animation"
+        statsData={statsData}
+        variant="gradient"
+      />
       <ServicesSection
         title="Our Social Media Animation Services"
         description="Our custom social media animation company covers every format, every platform, and every campaign objective."
         sliderItems={sliderItems}
       />
-      <GreatVideosSection />
+      <GreatVideosSection
+        title={title}
+        text={text}
+      />
       <PortfolioShowcase />
-      <HowWeWorkSection />
+      <HowWeWorkSection
+        heading="Social Media Animation Solutions for Every Platform"
+        description="Every platform has its own algorithm, audience behavior, and technical requirements. We build natively for all of them."
+        accordionData={howWeWorkAccordionData}
+      />
       <TeamStandoutSection
         subtitle="Social Media Animation Services"
         title={<>Types of <span>Social Media Animations</span> We Create</>}
@@ -199,10 +420,31 @@ export default function SocialMediaAnimationPage() {
         features={standoutFeatures}
         videoSrc="https://player.vimeo.com/video/1201856415?dnt=1&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
       />
-      <WonderingSection />
-      <WhyInvestSection />
-      <CostSection />
-      <CooperationModelsSection />
+      <WonderingSection
+        subtitle="Benefits of Social Media Animations"
+        title="Why Do Brands Use Social Media Animation?"
+        description="The case for social media animation services is built on specific, measurable platform performance outcomes."
+        data={wonderingIndustriesData}
+      />
+      <WhyInvestSection
+        subtitle="HOW WE WORK"
+        title="Our Social Media Animation Production Process"
+        description="Every social media animation production follows a structured process from platform brief to optimized final delivery."
+        accordionData={whyInvestAccordionData}
+      />
+      <CostSection
+        subtitle="THE STRATEGIC DIFFERENCE"
+        title="Create Scroll-Stopping Social Media Animations That Drive Engagement"
+        description="The problem with most social media video content is not the quality of the animation. It is the absence of strategy behind it. A brand publishes a well-produced animated post, and it performs no better than the static graphic it replaced, because the video was not built around the audience's scroll behavior or the specific response the brand needed from the viewer."
+        videoSrc="https://player.vimeo.com/video/1201624785?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+        bottomText="Our social media animation production starts with the platform, the audience, and the objective before a storyboard is sketched. We build animated social media videos designed to stop the scroll in the first frame, communicate the core message in the first ten seconds, and drive a specific action before the video ends."
+      />
+      <CooperationModelsSection
+        subtitle="Quality. Speed. Reliability"
+        title="Why Choose Our Social Media Animation Company?"
+        description="What specifically distinguishes our professional social media animation agency from the alternatives."
+        cards={cooperationModelsCards}
+      />
       <IndustrySection
         heading="Social Media Animation Services for Industries"
         description="Our social media animation services for businesses are applied across every sector with production approaches specific to each platform context."
@@ -210,7 +452,10 @@ export default function SocialMediaAnimationPage() {
         variant="gradient"
       />
       <TestimonialSection />
-      <FaqSection />
+      <FaqSection
+        heading="Frequently Asked Questions"
+        faqs={faqs}
+      />
     </main>
   );
 }
