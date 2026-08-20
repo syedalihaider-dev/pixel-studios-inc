@@ -53,6 +53,13 @@
   transform: translateX(4px);
 }
 
+@media (max-width: 1399px) {
+  .ctaButton {
+    padding: 12px 25px;
+  }
+}
+
+
 @media (max-width: 1199px) {
   .ctaButton {
     padding: 12px 28px;

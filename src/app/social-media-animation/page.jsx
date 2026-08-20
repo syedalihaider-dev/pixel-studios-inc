@@ -1,8 +1,3 @@
-import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
-
-
-
-
 import Banner from "@/components/Common/Banner/Banner";
 import StatsSection from "@/components/SocialMediaAnimation/StatsSection";
 import ServicesSection from "@/components/Common/ServicesSection";
@@ -10,41 +5,32 @@ import HowWeWorkSection from "@/components/SocialMediaAnimation/HowWeWorkSection
 import WhyInvestSection from "@/components/SocialMediaAnimation/WhyInvestSection";
 import PortfolioShowcase from "@/components/Common/PortfolioShowcase";
 import GreatVideosSection from "@/components/SocialMediaAnimation/GreatVideosSection";
-;
 import WonderingSection from "@/components/SocialMediaAnimation/WonderingSection";
 import CostSection from "@/components/SocialMediaAnimation/CostSection";
+import TeamStandoutSection from "@/components/Common/TeamStandoutSection";
 import CooperationModelsSection from "@/components/SocialMediaAnimation/CooperationModelsSection";
 import IndustrySection from "@/components/Common/IndustrySection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/SocialMediaAnimation/FaqSection";
-
-
-
-
-
-
-
-
-
-
+import Link from "next/link";
 
 const standoutFeatures = [
   {
     id: 1,
     title: 'Motion Graphics Animation',
-    description: "Social media motion graphics for branded content, data visualization, and campaign announcements. Clean, brand-consistent motion design that performs across platforms without per-platform adaptation.",
+    description: <><Link href="/motion-graphics-animation">Custom Motion graphics services</Link> for social media’s branded content, data visualization, and campaign announcements. Clean, brand-consistent motion design that performs across platforms without per-platform adaptation.</>,
     icon: '/icons/result-oriented.png'
   },
   {
     id: 2,
     title: '2D Animated Videos',
-    description: "Character-driven and illustrated 2D animated social media content for brand storytelling, product promotion, and audience education. The most versatile format in social media video animation.",
+    description: <><Link href="/2d-animation-services">2D Animated services</Link> is by far the most illustrated and character-driven content social media campaign from brand storytelling, product promotion and audience education. The most versatile format in social media video animation.</>,
     icon: '/icons/flexible.png'
   },
   {
     id: 3,
     title: 'Product Promotion Animations',
-    description: "Animated product promotion videos that showcase features, benefits, and offers in the format and duration each platform performs best with.",
+    description: <><Link href="/3d-product-animation">3D Animated product promotion</Link> videos that showcase features, benefits, and offers in the format and duration each platform performs best with.</>,
     icon: '/icons/transparent.png'
   },
   {
@@ -62,7 +48,7 @@ const standoutFeatures = [
   {
     id: 6,
     title: 'Explainer Animations for Social Media',
-    description: "Short-form animated explainer content adapted for 30 to 60-second social media distribution. The explainer video logic applied to the social media format constraint.",
+    description: <>Short-form <Link href="/animated-explainer-video">animated explainer content</Link> adapted for 30 to 60-second social media distribution. The explainer video logic applied to the social media format constraint.</>,
     icon: '/icons/flexible.png'
   },
   {
@@ -84,42 +70,42 @@ const industries = [
     id: 1,
     title: "E-Commerce Brands",
     image: "/industry/01.png",
-    text: "Product promotion animations and animated social media ads for e-commerce brands. Built to drive click-through to product pages and reduce paid acquisition cost.",
+    text: <>Product promotion animations and animated social media ads for <Link href="/ecommerce-video-production">e-commerce video production</Link>. Built to drive click-through to product pages and reduce paid acquisition cost.</>,
     link: "#"
   },
   {
     id: 2,
     title: "SaaS Companies",
     image: "/industry/02.png",
-    text: "Feature announcements and short-form explainer content for SaaS brands building social presence. LinkedIn animated video services and Instagram animation for B2B audiences.",
+    text: <>Feature announcements and short-form <Link href="/saas-explainer-videos">animated explainer content for SaaS brands</Link> building social presence. LinkedIn animated video services and Instagram animation for B2B audiences.</>,
     link: "#"
   },
   {
     id: 3,
     title: "Healthcare Organizations",
     image: "/industry/03.png",
-    text: "Patient education content and health awareness campaigns produced to the accuracy and sensitivity standards the industry requires for public-facing social content.",
+    text: <><Link href="/healthcare-animation">Patient education content</Link> and health awareness campaigns produced to the accuracy and sensitivity standards the industry requires for public-facing social content. </>,
     link: "#"
   },
   {
     id: 4,
     title: "Real Estate Businesses",
     image: "/industry/04.png",
-    text: "Property launch content and development marketing for real estate brands. Animated social media videos that give buyers a compelling first look before they commit to a viewing.",
+    text: <><Link href="/real-estate-animation">Real Estate Property launch animation</Link> or constructional progress can be shown on social media with 2D and 3D Animation. Animated social media videos give buyers a compelling first look before they commit to a viewing. </>,
     link: "#"
   },
   {
     id: 5,
     title: "Financial Services",
     image: "/industry/05.png",
-    text: "Financial product explanation and brand animation for financial services companies producing social media video for professional audiences that expect accuracy and clarity.",
+    text: <>Financial product explanation and brand <Link href="/finance-animation">animation for financial services</Link> companies producing social media video for professional audiences that expect accuracy and clarity. </>,
     link: "#"
   },
   {
     id: 6,
     title: "Education and E-Learning",
     image: "/industry/06.png",
-    text: "Course launch content and short-form educational animation for education brands driving enrollment through social channels.",
+    text: <>Course launch content and <Link href="/education-animation">short-form educational animation</Link> for education brands driving enrollment through social channels. </>,
     link: "#"
   }
   ,
@@ -127,7 +113,7 @@ const industries = [
     id: 7,
     title: "Startups and Technology Companies",
     image: "/industry/06.png",
-    text: "Social media animation for startups building category awareness. First-impression content produced to communicate clearly before the brand reputation develops independently. ",
+    text: <>Social media <Link href="/technology-animation">animation for startups</Link> building category awareness. First-impression content produced to communicate clearly before the brand reputation develops independently.</>,
     link: "#"
   }
 ];
@@ -198,7 +184,7 @@ export default function SocialMediaAnimationPage() {
         showPlayButton={true}
       />
       <StatsSection />
-      <ServicesSection 
+      <ServicesSection
         title="Our Social Media Animation Services"
         description="Our custom social media animation company covers every format, every platform, and every campaign objective."
         sliderItems={sliderItems}
@@ -206,7 +192,7 @@ export default function SocialMediaAnimationPage() {
       <GreatVideosSection />
       <PortfolioShowcase />
       <HowWeWorkSection />
-            <TeamStandoutSection
+      <TeamStandoutSection
         subtitle="Social Media Animation Services"
         title={<>Types of <span>Social Media Animations</span> We Create</>}
         description="Our social media animation production covers every animated content type a brand needs for a complete social content calendar."
@@ -217,7 +203,7 @@ export default function SocialMediaAnimationPage() {
       <WhyInvestSection />
       <CostSection />
       <CooperationModelsSection />
-      <IndustrySection 
+      <IndustrySection
         heading="Social Media Animation Services for Industries"
         description="Our social media animation services for businesses are applied across every sector with production approaches specific to each platform context."
         industries={industries}

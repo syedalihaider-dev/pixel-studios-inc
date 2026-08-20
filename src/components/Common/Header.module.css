@@ -349,10 +349,17 @@
   padding-left: 10px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1600px) {
   .headerInner {
     padding: 10px;
   }
+  .navLink {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 1399px) {
   .navLink {
     font-size: 14px;
   }
