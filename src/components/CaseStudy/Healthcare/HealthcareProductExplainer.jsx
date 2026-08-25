@@ -7,7 +7,7 @@ import { Play, X } from 'lucide-react';
 import CTAButton from '@/components/Common/CTAButton';
 import styles from './HealthcareProductExplainer.module.css';
 
-export default function HealthcareProductExplainer() {
+export default function HealthcareProductExplainer({ content }) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
@@ -22,13 +22,10 @@ export default function HealthcareProductExplainer() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <h2 className={styles.mainHeading}>Product explainer</h2>
-                <p className={styles.para}>
-                  This 34-second video keeps it engaging with 2D animation and 3D elements. The video briefly describes how Loom's product elevates team collaborations. It starts by highlighting the problem of communication breakdown in the workplace and then presents Loom as the solution. The problem-solution structure always makes an impact.
-                </p>
+                <h2 className={styles.mainHeading}>{content.title}</h2>
+                <p className={styles.para}>{content.description}</p>
                 <div className={`d-flex gap-3 ${styles.buttonsWrapper}`}>
-                  <CTAButton text="Let's Talk" href="#" />
-                  <CTAButton text="Call Now" href="#" variant="outline" />
+                  {content.ctas.map((cta) => <CTAButton key={cta.text} text={cta.text} href={cta.href} variant={cta.variant} />)}
                 </div>
               </motion.div>
             </div>
@@ -45,8 +42,8 @@ export default function HealthcareProductExplainer() {
                 <div className={styles.thumbnailContainer}>
                   {/* YouTube thumbnail directly embedded */}
                   <Image
-                    src="https://img.youtube.com/vi/wKoZ-JiEsug/maxresdefault.jpg"
-                    alt="SaaS Explainer Video | Loom"
+                    src={content.thumbnail}
+                    alt={content.thumbnailAlt}
                     width={800}
                     height={450}
                     className={styles.thumbnailImage}
@@ -94,8 +91,8 @@ export default function HealthcareProductExplainer() {
               <iframe loading="lazy"
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/wKoZ-JiEsug?autoplay=1"
-                title="YouTube video player"
+                src={`${content.videoUrl}${content.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
+                title={content.videoTitle}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

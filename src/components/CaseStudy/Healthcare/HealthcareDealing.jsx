@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import CTAButton from '@/components/Common/CTAButton';
 import styles from './HealthcareDealing.module.css';
 
-export default function HealthcareDealing() {
+export default function HealthcareDealing({ content }) {
   return (
     <section className={styles.dealingSection}>
       <div className="container relative z-10">
@@ -20,8 +20,8 @@ export default function HealthcareDealing() {
               className={styles.imageContainer}
             >
               <Image
-                src="/case-study/healthcare/dealing-with-something-similar.png"
-                alt="Dealing with something similar"
+                src={content.image}
+                alt={content.imageAlt}
                 width={778}
                 height={511}
                 className={styles.dealingImage}
@@ -36,10 +36,10 @@ export default function HealthcareDealing() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h2 className={styles.mainHeading}>Dealing With<br />Something Similar?</h2>
-              <p className={styles.para}>For multi-video content campaigns and ongoing retainers, we structure scaled pricing that reduces the per-video cost substantially. When character libraries and style systems are built once and deployed across multiple videos, the per-asset production cost drops considerably. We provide itemized, transparent quotes.</p>
+              <h2 className={styles.mainHeading}>{content.title}</h2>
+              <p className={styles.para}>{content.description}</p>
               <div className="mt-4">
-                <CTAButton text="Let's Talk" href="#" />
+                <CTAButton text={content.cta.text} href={content.cta.href} />
               </div>
             </motion.div>
           </div>

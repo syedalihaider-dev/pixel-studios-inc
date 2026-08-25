@@ -7,7 +7,7 @@ import { Play, X } from 'lucide-react';
 import CTAButton from '@/components/Common/CTAButton';
 import styles from './HealthcareCluttered.module.css';
 
-export default function HealthcareCluttered() {
+export default function HealthcareCluttered({ content }) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
@@ -26,8 +26,8 @@ export default function HealthcareCluttered() {
               >
                 <div className={styles.thumbnailContainer}>
                   <Image 
-                    src="/case-study/healthcare/cluttered-website-weak-brand-identity.png"
-                    alt="Cluttered Website Video Thumbnail"
+                    src={content.thumbnail}
+                    alt={content.thumbnailAlt}
                     width={778}
                     height={511}
                     className={styles.thumbnailImage}
@@ -48,18 +48,13 @@ export default function HealthcareCluttered() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <h2 className={styles.mainHeading}>Cluttered Website, Weak Brand Identity</h2>
-                <p className={styles.para}>
-                  It lacked the functionality needed to sell class memberships online, making it difficult for customers to join. A clean, modern design and simplified customer journey were essential to better represent.
-                </p>
+                <h2 className={styles.mainHeading}>{content.title}</h2>
+                <p className={styles.para}>{content.description}</p>
                 <ul className={styles.list}>
-                  <li><strong>Redesign the website</strong> to reflect the brand's welcoming and inclusive</li>
-                  <li><strong>Implement a mobile-first approach</strong> to improve usability across devices</li>
-                  <li><strong>Integrate an online membership</strong> system for class subscriptions</li>
+                  {content.items.map((item) => <li key={item}><strong>{item}</strong></li>)}
                 </ul>
                 <div className={`d-flex gap-3 ${styles.buttonsWrapper}`}>
-                  <CTAButton text="Let's Talk" href="#" />
-                  <CTAButton text="Call Now" href="#" variant="outline" className={styles.primaryCallButton} />
+                  {content.ctas.map((cta) => <CTAButton key={cta.text} text={cta.text} href={cta.href} variant={cta.variant} className={cta.variant === 'outline' ? styles.primaryCallButton : undefined} />)}
                 </div>
               </motion.div>
             </div>
@@ -93,7 +88,7 @@ export default function HealthcareCluttered() {
                 autoPlay
                 className={styles.htmlVideo}
               >
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                <source src={content.videoUrl} type="video/mp4" />
                 Your browser does not support HTML video.
               </video>
             </motion.div>

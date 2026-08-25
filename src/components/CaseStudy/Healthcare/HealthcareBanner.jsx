@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Play, X } from 'lucide-react';
 import styles from './HealthcareBanner.module.css';
 
-export default function HealthcareBanner() {
+export default function HealthcareBanner({ content }) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
@@ -22,7 +22,7 @@ export default function HealthcareBanner() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                Case Study for: Prolific Studio | <br /> N-Seam Saver
+                {content.title}
               </motion.h1>
               <motion.p
                 className={styles.subPara}
@@ -31,7 +31,7 @@ export default function HealthcareBanner() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                Prolific Studio created a fun, upbeat 3D animated commercial for N-Seam Saver, blending humor and relatability with sleek product integration. The story follows a teen girl and her mom as they comically wrestle with a pair of shrunken jeans. Just when all hope seems lost, a superhero named Super Seam Saver bursts onto the scene with the ultimate solution: the N-Seam Saver Super Stretch Hangers. Through playful animation, smooth transitions, and exaggerated expressions, the spot highlights the product&apos;s benefit in a way that is entertaining and easy to remember.
+                {content.description}
               </motion.p>
             </div>
           </div>
@@ -48,8 +48,8 @@ export default function HealthcareBanner() {
               >
                 <div className={styles.thumbnailContainer}>
                   <Image
-                    src="/case-study/healthcare/banner-video-thumbnail.png"
-                    alt="Video Thumbnail"
+                    src={content.thumbnail}
+                    alt={content.thumbnailAlt}
                     width={1348}
                     height={683}
                     className={styles.thumbnailImage}
@@ -89,8 +89,8 @@ export default function HealthcareBanner() {
               <iframe loading="lazy"
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                title="Video player"
+                src={`${content.videoUrl}${content.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
+                title={content.videoTitle}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

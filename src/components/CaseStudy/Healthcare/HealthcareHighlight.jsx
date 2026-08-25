@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import CTAButton from '@/components/Common/CTAButton';
 import styles from './HealthcareHighlight.module.css';
 
-export default function HealthcareHighlight() {
+export default function HealthcareHighlight({ content }) {
   return (
     <section className={styles.highlightSection}>
       <div className="container relative z-10">
@@ -17,10 +17,10 @@ export default function HealthcareHighlight() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className={styles.mainHeading}>Highlighting customer perks with motion graphic videos</h2>
-              <p className={styles.para}>Handepay (part of Paypoint) is a merchant services company with thousands of customers nationwide. They're constantly innovating and bringing new features to their customers, but if the customer doesn't know it exists, they're not going to use it. And if they don't use the feature, they can't benefit from it.</p>
+              <h2 className={styles.mainHeading}>{content.title}</h2>
+              <p className={styles.para}>{content.description}</p>
               <div className="mt-5">
-                <CTAButton text="Motion Graphics" href="#" />
+                <CTAButton text={content.cta.text} href={content.cta.href} />
               </div>
             </motion.div>
           </div>
@@ -33,22 +33,12 @@ export default function HealthcareHighlight() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="col-6 mb-5">
-                <h4 className={styles.subTitle}>CLIENT</h4>
-                <p className={styles.subPara}>Handepay</p>
-              </div>
-              <div className="col-6 mb-5">
-                <h4 className={styles.subTitle}>RELEASE</h4>
-                <p className={styles.subPara}>Nov 2025</p>
-              </div>
-              <div className="col-6 mb-5">
-                <h4 className={styles.subTitle}>INDUSTRY</h4>
-                <p className={styles.subPara}>FinTech</p>
-              </div>
-              <div className="col-6 mb-5">
-                <h4 className={styles.subTitle}>WEBSITE</h4>
-                <p className={styles.subPara}>Visit website</p>
-              </div>
+              {content.meta.map((item) => (
+                <div className="col-6 mb-5" key={item.label}>
+                  <h4 className={styles.subTitle}>{item.label}</h4>
+                  <p className={styles.subPara}>{item.value}</p>
+                </div>
+              ))}
             </motion.div>
           </div>
         </div>

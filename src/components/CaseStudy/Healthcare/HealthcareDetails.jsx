@@ -4,21 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './HealthcareDetails.module.css';
 
-export default function HealthcareDetails() {
-  const details = [
-    {
-      title: "Project Objective",
-      description: "To promote N-Seam Saver hangers using an engaging 3D animated ad that entertains while clearly demonstrating the product's function and value."
-    },
-    {
-      title: "Our Streamlined Approach",
-      description: "We used a character driven narrative supported by stylized 3D animation, snappy timing and product focused visuals to balance entertainment with product clarity."
-    },
-    {
-      title: "Target Audience",
-      description: "Parents, teens and anyone frustrated by clothing shrinkage, especially consumers searching for simple and effective laundry or wardrobe solutions."
-    }
-  ];
+export default function HealthcareDetails({ details }) {
 
   return (
     <section className={styles.detailsSection}>
