@@ -6,7 +6,7 @@ export const caseStudies = [
   {
     slug: 'domuzeum-childrens-music-video-animation',
     seo: {
-      title: "Case Study for DoMuzeum | Children's Music Video Animations",
+      title: "Case Study for DoMuzeum | Children's Music Video Animation",
       description: "Pixel Studios Inc. created a fully animated, beat-synced children's music video for DoMuzeum, pairing an original song with bright character-driven 2D animation. Every visual choice, from character design to pacing, was engineered around one goal: getting young viewers to hit replay.",
     },
     hero: {
