@@ -12,41 +12,47 @@ import FaqSection from "@/components/Common/FaqSection";
 const whyChooseSectionFeatures = [
   {
     id: 1,
-    title: "Internal Comms",
-    description: "Leadership updates, organizational change announcements, and internal campaigns built to reach large, distributed workforces consistently, regardless of location or department.",
+    title: "Courses",
+    description: "Full course modules built for schools, universities, and online learning platforms, designed to fit within existing curriculum structures.",
     icon: "/industry/services-icon-01.png",
   },
   {
     id: 2,
-    title: "Onboarding",
-    description: "Scalable onboarding video content that gives every new hire the same clear introduction, regardless of location or department, reducing the burden on individual managers and HR teams.",
+    title: "Training",
+    description: "Corporate and institutional training animation covering onboarding, compliance, and skills development for new and existing employees.",
     icon: "/industry/services-icon-02.png",
-  }
+  },
+  {
+    id: 3,
+    title: "Awareness",
+    description: "Public awareness and educational campaigns built to inform broad audiences on important topics in an engaging, memorable format.",
+    icon: "/industry/services-icon-03.png",
+  },
 ];
 
 const sliderItems = [
   {
     id: 1,
-    title: "Corporate Videos",
-    description: "Polished corporate video content for leadership communications, company milestones, and external-facing brand storytelling, produced to a consistent standard across every business unit and region.",
+    title: "Whiteboard Animation",
+    description: "Hand-drawn style whiteboard animation that builds a concept step by step, ideal for explaining processes and building sequential understanding one idea at a time.",
     videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 2,
-    title: "Training Videos",
-    description: "Scalable training video content for onboarding, compliance, and skills development, built to be deployed across large, distributed teams without losing quality between locations.",
+    title: "Educational Videos",
+    description: "Fully animated educational videos combining narration, visuals, and pacing designed for classroom, online, and self-paced learning environments.",
     videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 3,
-    title: "Explainer Videos",
-    description: "Enterprise explainer video animations that clarify complex products, processes, or organizational changes for internal or external audiences, built to reduce repeated questions and confusion.",
+    title: "Motion Graphics",
+    description: "Data-driven and concept-driven motion graphics that make statistics, timelines, and abstract ideas easier to understand at a glance for students of any age.",
     videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
     id: 4,
-    title: "Motion Graphics",
-    description: "Data-driven motion graphics for reporting, internal dashboards, and executive presentations that need to communicate quickly and clearly to a busy leadership audience.",
+    title: "eLearning",
+    description: "Animation built specifically for eLearning platforms, including interactive elements and SCORM-compliant packaging where required by your LMS.",
     videoSrc: "https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   }
 ];
@@ -58,42 +64,42 @@ const whyInvestAccordionData = [
     icon: "/discovery.png",
     title: "Discovery",
     content:
-      "We review your organizational structure, stakeholders, and goals to scope a process that fits how your teams actually approve work.",
+      "We review your curriculum, audience, and learning goals to scope the right animation approach and format.",
   },
   {
     id: 2,
     icon: "/storyboarding.png",
     title: "Script & Concept",
     content:
-      "A script and visual concept are developed and routed through your review structure before design begins, so approvals happen at the right stage.",
+      "A script and visual concept are developed around the specific learning outcome the video needs to support, in plain language for the target audience.",
   },
   {
     id: 3,
     icon: "/animation.png",
     title: "Storyboard",
     content:
-      "Every scene is planned and approved before animation begins, with sign-off built in at the right stakeholder level for each department involved.",
+      "Every scene is planned and approved before animation begins, so pacing supports comprehension rather than working against it.",
   },
   {
     id: 4,
     icon: "/animation.png",
     title: "Design",
     content:
-      "Visual assets are built to match your brand guidelines precisely, with governance in mind for reuse across departments and future projects.",
+      "Visual assets and characters are built to match your brand and audience, from young learners to corporate teams.",
   },
   {
     id: 5,
     icon: "/animation.png",
     title: "Animation",
     content:
-      "Full production, refined through your feedback rounds and coordinated across every reviewing stakeholder without slowing the schedule.",
+      "Full production, refined through your feedback rounds until the content communicates clearly and holds attention.",
   },
   {
     id: 6,
     icon: "/animation.png",
     title: "Review & Delivery",
     content:
-      "Final review and delivery in every format and language your organization requires, ready for immediate deployment.",
+      "Final review and delivery in every format your platform requires, including LMS-compatible packaging where needed.",
   },
 ];
 
@@ -102,127 +108,137 @@ const cooperationModelsCards = [
       id: 1,
       icon: "/game-development/outstaffing.png",
       title: "Industry Experience",
-      text: "An enterprise animation company experienced with large organizations, multi-stakeholder approval chains, and multilingual production requirements across industries."
+      text: "An education animation service with work across schools, edtech platforms, and corporate training teams of varying scale."
     },
     {
       id: 2,
       icon: "/game-development/dedicated-team.png",
       title: "Custom Solutions",
-      text: "Every project starts from your actual brand and organizational structure, never a generic template applied regardless of client."
+      text: "Every video starts from your actual curriculum and audience, never a generic template repurposed for a different subject."
     },
     {
       id: 3,
       icon: "/game-development/managed-outsourcing.png",
       title: "Fast Turnaround",
-      text: "Timelines built to match enterprise deadlines, even with multiple review cycles and departments involved."
+      text: "Timelines built around semester schedules and training rollout dates, so content is ready when your term or program begins."
     },
     {
       id: 4,
       icon: "/game-development/managed-outsourcing.png",
       title: "Dedicated Team",
-      text: "One point of contact manages the relationship, coordinating across your departments and stakeholders so nothing falls through the cracks."
+      text: "One point of contact manages the project from concept through delivery, coordinating with your instructional designers."
     }
   ];
 
 const title = (
     <>
-      Let's Discuss Your <span>Enterprise Animation</span> Project
+      Let's Discuss Your <span>Education Animation</span> Project
     </>
   );
 
 const text =
-    "Talk to our team about your organization, your stakeholders, and your production needs, and we will build the enterprise animation partnership that keeps every department consistent, on brand, and moving at the pace your business actually requires, from the first internal update to your next global campaign.";
+    "If your lesson or training content deserves better retention than a slide deck delivers, talk to our team. We will scope the education animation your course, training program, or awareness campaign needs, built around how your audience actually learns and remembers. Whether you need a single lesson, a complete course series, or ongoing educational content, we create animation that improves understanding, supports long-term retention, and fits the platforms your learners already use. The first conversation is free, and it helps identify the best approach for your learning objectives, audience, and delivery format.";
 
 const faqs = [
   {
-    question: "How Does the Production Process Work When Multiple Stakeholders Need to Review and Approve?",
+    question: "How Much Does an Educational Animation Service Cost?",
     answer:
-      "We build a review structure into the project plan from the start, with defined checkpoints at script, storyboard, and final animation stages, so every stakeholder group reviews at the right time rather than all at once.",
+      "Educational animation cost depends on style, length, and complexity, particularly whether the project needs custom characters or data visualization. Most projects are scoped after an initial discovery call.",
   },
   {
-    question: "Can an Enterprise Animation Studio Work Within Our Existing Brand Guidelines?",
+    question: "What's the Ideal Length for an Educational Animation Video?",
     answer:
-      "Yes. We work directly from your brand guidelines and style guide, and can also help formalize a motion design system if one does not already exist for video content.",
+      "Most educational content performs best between two and five minutes, long enough to cover a concept fully but short enough to hold attention, especially for younger audiences.",
   },
   {
-    question: "Do Animation Studios Sign NDAs and Handle Project Data Securely?",
+    question: "What's the Difference Between 2D, 3D, and Whiteboard Animation for Educational Content?",
     answer:
-      "Yes. NDAs are standard on enterprise projects, and we follow secure file handling practices for any confidential product, financial, or organizational information shared during production.",
+      "2D animation suits most concept explanations and is cost-effective, 3D adds depth for spatial or scientific topics, and whiteboard animation works well for sequential, step-by-step processes.",
   },
   {
-    question: "What Pricing Models Are Available for Enterprise Clients Needing Multiple Videos?",
+    question: "How Long Does Animation Production Take?",
     answer:
-      "Retainer and volume-based pricing are both available for enterprise clients with ongoing or recurring animation needs, typically offering better per-video value than one-off projects.",
+      "Most educational animation projects take three to six weeks from discovery to delivery, depending on length and complexity.",
   },
   {
-    question: "Can You Produce Animated Content in Multiple Languages for Global Teams?",
+    question: "What Is the Meaning of Animator in Education?",
     answer:
-      "Yes. Multilingual animated video production is common for enterprise clients, with voiceover, subtitles, and on-screen text localized for each target market.",
+      "In an educational context, an animator is the artist who builds the visual and motion elements that bring a lesson or concept to life on screen, working alongside instructional designers and subject matter experts.",
   },
   {
-    question: "Should an Enterprise Team Hire an Outside Studio or Build In-House Capability?",
+    question: "What Does an Animator Do for Kids' Content Specifically?",
     answer:
-      "It depends on volume and cadence. Teams with occasional or highly variable needs typically get more value from an outside partner, while teams producing very high volumes of similar content may benefit from a hybrid model.",
+      "For children's educational content, animators focus on character appeal, simplified visual language, and pacing suited to shorter attention spans, while still keeping the underlying concept accurate.",
   },
   {
-    question: "What Does the RFP or Vendor Selection Process Typically Look Like?",
+    question: "How Do You Optimize an Educational Animation Video for YouTube Specifically?",
     answer:
-      "Most enterprise clients request a portfolio review, a scoped proposal against specific project requirements, and a reference check before moving forward, and we are glad to support each of those steps directly.",
+      "We consider thumbnail-friendly framing, a strong hook in the first few seconds, and pacing that supports watch time, all while keeping the educational content clear and accurate.",
   },
   {
-    question: "Who Owns the Animation Assets After a Campaign Runs Across Multiple Channels?",
+    question: "Do You Provide Captions, Subtitles, or Multilingual Voiceovers for Accessibility?",
     answer:
-      "You own your final deliverables and can reuse them across internal and external channels for as long as they remain relevant to your organization.",
+      "Yes. Captions, subtitles, and multilingual voiceover options are available to support accessibility and reach broader audiences.",
   },
   {
-    question: "Can You Build a Reusable Brand Motion System for Our Organization?",
+    question: "Can Educational Animations Be Integrated Into an LMS or Made SCORM-Compliant?",
     answer:
-      "Yes. For clients producing recurring content, we can develop a broader brand motion system covering colors, typography, and animation style, so future videos stay consistent even across different project teams.",
+      "Yes. We can package deliverables to be SCORM-compliant and compatible with most common learning management systems.",
   },
   {
-    question: "How Do You Handle Projects That Span Multiple Business Units With Different Sub-Brands?",
+    question: "How Many Revisions Are Included, and Who Owns the Final Video?",
     answer:
-      "We build a shared visual framework that flexes for each sub-brand's specific identity while staying recognizably part of the parent organization, which keeps everything coherent without forcing every unit into an identical look.",
+      "Most projects include two to three revision rounds, and you own the final deliverables once the project is complete.",
   },
   {
-    question: "Can Enterprise Animation Support Both Internal Training and External Marketing From One Engagement?",
+    question: "Can Educational Animation Include Assessment or Quiz Elements?",
     answer:
-      "Yes. Many enterprise clients use the same production partnership for both internal and external content, since the underlying process for stakeholder review and brand governance applies equally to each.",
+      "Yes. For interactive eLearning projects we can build embedded questions or checkpoints, depending on your LMS capabilities and instructional design requirements.",
   },
   {
-    question: "Do You Provide a Dedicated Account Manager for Ongoing Enterprise Relationships?",
+    question: "Do You Work With Instructional Designers or Subject Matter Experts on Our Team?",
     answer:
-      "Yes. Ongoing enterprise engagements are supported by a dedicated account manager who understands your organization's structure, brand guidelines, and review process, rather than starting fresh with every new request.",
+      "Yes. Most projects involve close collaboration with your instructional designers or subject matter experts throughout script and storyboard development to keep content accurate and pedagogically sound.",
   },
   {
-    question: "Can You Support a Global Rollout Across Multiple Regional Offices Simultaneously?",
+    question: "Can the Same Educational Animation Be Reused Across Multiple Courses or Cohorts?",
     answer:
-      "Yes. We regularly coordinate multilingual, multi-region rollouts, delivering localized versions of the same core content to different offices on a synchronized timeline.",
+      "Yes. Once produced, an educational animation can be reused across multiple course sections, semesters, or training cohorts without additional production cost.",
   },
   {
-    question: "What Happens if Our Organization Restructures Mid-Project?",
+    question: "Can You Produce a Series of Related Educational Animations for a Full Curriculum?",
     answer:
-      "We stay flexible around organizational change, adjusting the review structure and stakeholder list as needed without restarting the entire project from scratch.",
+      "Yes. Many schools and training teams commission a series covering multiple related topics under one consistent visual style, which is often more cost-effective than producing each video separately.",
   },
   {
-    question: "Can You Support Recurring Quarterly or Annual Content Needs on a Retainer?",
+    question: "What Age Groups Can Educational Animation Be Designed For?",
     answer:
-      "Yes. A retainer arrangement works well for organizations with predictable, recurring content needs, giving you priority scheduling and typically better per-project pricing than one-off engagements.",
+      "We create educational animation for every age group, from early childhood through adult professional training, adjusting the visual style, pacing, and language to match the intended audience.",
   },
   {
-    question: "Do You Provide Templates or Motion Graphics Kits Our Internal Team Can Reuse?",
+    question: "Can You Adapt an Existing Curriculum Into Animated Content, or Do We Need a New Script?",
     answer:
-      "Yes. For clients with internal editing capability, we can provide motion graphics templates and brand kits that your team can adapt for smaller, lower-stakes internal updates between full productions.",
+      "We can adapt your existing curriculum into an animation script, saving time while keeping the content aligned with what your learners already study.",
   },
   {
-    question: "How Do You Handle Confidential Financial or Strategic Information During a Project?",
+    question: "Do You Offer Different Visual Styles for Different Subjects, Like Science Versus History?",
     answer:
-      "We work under an NDA whenever confidential financial, strategic, or organizational information is shared, with secure file handling practices in place throughout production.",
+      "Yes. We tailor the visual style to each subject, from technical diagram-driven science animations to character-led storytelling for history and social studies.",
   },
   {
-    question: "Can You Support a Rebrand That Requires Updating Existing Video Assets?",
+    question: "Can Educational Animation Be Updated if Curriculum Standards Change?",
     answer:
-      "Yes. Where existing animation assets can be updated to reflect a new brand identity rather than rebuilt from scratch, we assess that option first to save time and budget.",
+      "Yes. Where possible, we update only the affected scenes rather than rebuilding the entire animation, making curriculum revisions faster and more cost-effective.",
+  },
+  {
+    question: "Do You Offer Package Pricing for Schools or Districts Producing Multiple Videos?",
+    answer:
+      "Yes. Schools and districts producing multiple videos typically receive better per-video pricing, and we can provide a custom package during the discovery stage.",
+  },
+  {
+    question: "Can Educational Animation Be Produced in a Series With a Consistent Host Character?",
+    answer:
+      "Yes. A recurring host or guide character is a popular approach for course series, creating familiarity and continuity across multiple lessons or training modules.",
   },
 ];
 
@@ -235,65 +251,55 @@ export default function EducationAnimationPage() {
   return (
     <main>
       <Banner
-        title="Enterprise Animation Built for Scale"
-        description="Large organizations do not need one video. They need a system that produces consistent, on-brand video across dozens of teams, markets, and stakeholders without losing quality along the way. Our enterprise animation services are built for exactly that kind of scale, from internal communications to global training rollouts. Every engagement is built around your actual approval structure and brand governance, not a one-off creative project, so the same standard holds whether a video comes from HR, marketing, or the executive team."
+        title="Education Animation That Actually Gets Retained"
+        description="Why do so many students forget a lesson within a week of learning it? Because reading and lecture alone are not how most people retain complex information. Our education animation service turns lessons, training modules, and difficult concepts into video that learners actually remember, built for schools, edtech platforms, and training teams alike. Every project is built around your actual curriculum and learning objectives, not a generic template, so the finished video supports the specific outcome your course or program is measuring."
         video="/videos/home.webm"
         showPlayButton={true}
       />
       <CostSection
-        subtitle="Enterprise Animation"
-        title="Why Animation Matters in the Enterprise Industry?"
-        description="Large organizations run video projects across multiple
-                departments, regions, and brand sub-lines at once, and keeping
-                all of that visually consistent is a real operational challenge.
-                Stakeholder approval chains are longer, legal and compliance
-                review adds time to every project, and content often needs to be
-                localized for multiple markets and languages. Internal teams
-                frequently lack the production bandwidth to keep up with demand
-                from HR, marketing, product, and leadership simultaneously, and
-                a patchwork of vendors used across departments tends to produce
-                inconsistent quality and messaging that undercuts a unified
-                brand. Over time, that inconsistency becomes visible to
-                employees and customers alike, making the organization feel less
-                coordinated than it actually is."
+        subtitle="Education Animation"
+        title="Why Animation Matters in the Education Industry?"
+        description="What makes educational content so hard to deliver effectively?
+                Attention spans are short, and abstract or highly technical
+                concepts are difficult to explain through text or static slides
+                alone. Educators and training teams need content that supports
+                different learning styles, while LMS platforms and YouTube demand
+                more engaging formats than written material can provide. Content
+                also needs to remain accessible across languages and abilities,
+                yet many organizations continue relying on outdated resources
+                because producing new material takes too much time and budget."
         videoSrc="https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
-        bottomText="Enterprise animation services solve that by giving large
-            organizations a single, reliable production partner who understands
-            how to work within complex approval structures. A corporate
-            animation studio that has built processes for multi-stakeholder
-            review, brand governance, and multilingual delivery can produce
-            content faster and more consistently than juggling multiple smaller
-            vendors. Companies using enterprise animation studio partnerships
-            report stronger brand consistency across departments, faster
-            turnaround on recurring content needs, and a single point of
-            accountability instead of managing several disconnected production
-            relationships. That consolidation also tends to reduce total
-            production cost once every department's spend is considered
-            together."
+        bottomText="What changes when a lesson becomes something learners watch rather
+            than read? Animation improves comprehension and retention,
+            particularly for spatial, sequential, and process-based concepts
+            that are difficult to explain with text alone. Whiteboard animation
+            for schools and educational animation videos consistently improve
+            engagement, completion, and knowledge recall. Schools, universities,
+            and training teams gain content that performs equally well in the
+            classroom, inside an LMS, or on YouTube, extending the value of a
+            single production across multiple courses and audiences."
       />
       <ServicesSection 
-        title="Animation Solutions for Enterprise"
-        description="What does an enterprise animation company actually need to deliver across a large organization? These four formats cover the range most enterprise teams need, from internal leadership updates to external brand storytelling, all built to the same governed brand standard."
+        title="Animation Solutions for Education"
+        description="What does a complete education animation service offer beyond a single explainer? These four formats span quick concept videos through full eLearning modules, built to fit whatever platform your learners actually use."
         sliderItems={sliderItems}
       />
             <TeamStandoutSection
         subtitle="Why Choose Us"
-        title={<>Common Enterprise <span>Animation</span> Projects</>}
-        description="Across large organizations, two recurring project types account for most enterprise animation work, each reaching a different internal audience with a different production cadence."
+        title={<>Common Education <span>Animation</span> Projects</>}
+        description="Across schools, edtech platforms, and corporate training teams, three project types account for most of the work we produce, each tied to a measurable learning outcome."
         features={whyChooseSectionFeatures}
       />
       <WhyInvestSection
         subtitle="HOW WE WORK"
-        title={<>Our Enterprise <br />Animation Process</>}
-        description="Enterprise work moves through more approval layers than a typical
-                project, so our process is built to keep that structure
-                predictable rather than a source of delay."
+        title={<>Our Education <br />Animation Process</>}
+        description="Retention is the real goal, not just visual polish, so our process keeps instructional design in view at every stage. Here is how a project runs from brief to delivery."
         accordionData={whyInvestAccordionData}
       />
       <CooperationModelsSection
         subtitle="WHY PIXEL STUDIOS"
         title="Why Choose Pixel Studios"
-        description="Plenty of studios can make one good video. Fewer can do it consistently across dozens of stakeholders and departments. Here is how we handle that difference."
+        description="An educational video that looks nice but does not teach anything has failed at its one job. Here is how our approach keeps comprehension at the center of the work."
         cards={cooperationModelsCards}
       />
       <TestimonialSection />
