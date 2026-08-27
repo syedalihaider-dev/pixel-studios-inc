@@ -1,14 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Play, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 import CTAButton from '@/components/Common/CTAButton';
 import styles from './HealthcareCluttered.module.css';
 
 export default function HealthcareCluttered({ content }) {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <>
@@ -22,7 +20,6 @@ export default function HealthcareCluttered({ content }) {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                onClick={() => setIsVideoOpen(true)}
               >
                 <div className={styles.thumbnailContainer}>
                   <Image 
@@ -32,11 +29,6 @@ export default function HealthcareCluttered({ content }) {
                     height={511}
                     className={styles.thumbnailImage}
                   />
-                  <div className={styles.playButtonOverlay}>
-                    <div className={styles.playCircle}>
-                      <Play className={styles.playIcon} fill="currentColor" />
-                    </div>
-                  </div>
                 </div>
               </motion.div>
             </div>
@@ -61,40 +53,6 @@ export default function HealthcareCluttered({ content }) {
           </div>
         </div>
       </section>
-
-      {/* Video Modal (FancyBox alternative) */}
-      <AnimatePresence>
-        {isVideoOpen && (
-          <motion.div 
-            className={styles.videoModal}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <div className={styles.modalBackdrop} onClick={() => setIsVideoOpen(false)}></div>
-            <button className={styles.closeModal} onClick={() => setIsVideoOpen(false)}>
-              <X size={32} />
-            </button>
-            <motion.div 
-              className={styles.modalContent}
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-            >
-              <video 
-                width="100%" 
-                height="100%" 
-                controls 
-                autoPlay
-                className={styles.htmlVideo}
-              >
-                <source src={content.videoUrl} type="video/mp4" />
-                Your browser does not support HTML video.
-              </video>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
 }
