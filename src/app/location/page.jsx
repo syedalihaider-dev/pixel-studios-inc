@@ -5,16 +5,16 @@ import TestimonialSection from "@/components/Common/TestimonialSection";
 
 
 export const metadata = {
-  title: "Location - Pixel Studios Inc",
-  description: "Welcome to Pixel Studios Inc Location page. We are an award-winning digital agency.",
+  title: "Top-Tier 2D and 3D Animation Services Worldwide - Pixel Studios Inc",
+  description: "Pixel Studios Inc is a top 2D and 3D animation studio world-wide that is considered a business result oriented, trendsetter and innovator in providing animated solutions to your unique and complex business challenges.",
 };
 
 export default function Location() {
   return (
     <main>
       <Banner
-        title="Locations We Serve"
-        description="We are a team of passionate storytellers and visual artists dedicated to bringing ideas to life. With years of experience in the animation industry, we combine creativity, technology, and strategic thinking to deliver exceptional results for our clients across various locations."
+        title="Top-Tier 2D and 3D Animation Services Worldwide"
+        description="Pixel Studios Inc is a top 2D and 3D animation studio world-wide that is considered a business result oriented, trendsetter and innovator in providing animated solutions to your unique and complex business challenges."
         video="https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/APr1MwnvxgJidhjKrvVy3t8/2D_01.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw"
         showPlayButton={true}
       />

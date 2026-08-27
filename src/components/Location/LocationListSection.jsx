@@ -4,25 +4,29 @@ import Link from 'next/link';
 import styles from './LocationListSection.module.css';
 
 const locations = [
-  { state: 'Florida', description: 'App Developers in Florida', path: '#' },
-  { state: 'San Francisco', description: 'App Developers San Francisco', path: '#' },
-  { state: 'Washington DC', description: 'App Developers in Washington DC', path: '#' },
-  { state: 'Los Angeles', description: 'App Development in Los Angeles', path: '#' },
-  { state: 'Dallas', description: 'App Developers in Dallas', path: '#' },
-  { state: 'Houston', description: 'App Developers in Houston', path: '#' },
-  { state: 'Austin', description: 'Mobile app development Austin', path: '#' },
-  { state: 'Chicago', description: 'Mobile App Development in Chicago', path: '#' },
-  { state: 'New York', description: 'App Developers in NYC', path: '#' },
-  { state: 'Miami', description: 'App Developers in Miami', path: '#' },
-  { state: 'New Jersey', description: 'Web Design Company In NJ', path: '#' },
-  { state: 'Texas', description: 'Mobile App Development Texas', path: '#' },
-  { state: 'San Diego', description: 'Mobile App Development San Diego', path: '#' },
-  { state: 'Atlanta', description: 'Mobile App Development Atlanta', path: '#' },
-  { state: 'Denver', description: 'Mobile App Development Denver', path: '#' },
-  { state: 'Indianapolis', description: 'Mobile App Development Indianapolis', path: '#' },
-  { state: 'California', description: 'Mobile App Development California', path: '#' },
-  { state: 'Boston', description: 'Mobile App Development Boston', path: '#' },
-  { state: 'Ohio', description: 'Mobile App Development Ohio', path: '#' }
+  // { state: 'Animation Studio in Florida', description: 'Hire Animators in Florida', path: '/animation-studio-florida' },
+  { state: 'Animation Studio in San Francisco', description: 'Hire Animators in San Francisco', path: '/animation-studio-san-francisco' },
+  // { state: 'Animation Studio in Washington DC', description: 'Hire Animators in Washington DC', path: '#' },
+  { state: 'Animation Studio in Los Angeles', description: 'Hire Animators in Los Angeles', path: '/animation-studio-los-angeles' },
+  { state: 'Animation Studio in Dallas', description: 'Hire Animators in Dallas', path: '/animation-studio-dallas' },
+  { state: 'Animation Studio in Houston', description: 'Hire Animators in Houston', path: '/animation-studio-houston' },
+  { state: 'Animation Studio in Austin', description: 'Hire Animators in Austin', path: '/animation-studio-austin' },
+  { state: 'Animation Studio in Chicago', description: 'Hire Animators in Chicago', path: '/animation-studio-chicago' },
+  // { state: 'Animation Studio in New York', description: 'Hire Animators in NYC', path: '#' },
+  // { state: 'Animation Studio in Miami', description: 'Hire Animators in Miami', path: '#' },
+  // { state: 'Animation Studio in New Jersey', description: 'Hire Animators in New Jersey', path: '#' },
+  // { state: 'Animation Studio in Texas', description: 'Hire Animators in Texas', path: '#' },
+  // { state: 'Animation Studio in San Diego', description: 'Hire Animators in San Diego', path: '#' },
+  // { state: 'Animation Studio in Atlanta', description: 'Hire Animators in Atlanta', path: '#' },
+  { state: 'Animation Studio in Denver', description: 'Hire Animators in Denver', path: '/animation-studio-denver' },
+  // { state: 'Animation Studio in Indianapolis', description: 'Hire Animators in Indianapolis', path: '#' },
+  { state: 'Animation Studio in California', description: 'Hire Animators in California', path: '/animation-studio-california' },
+  { state: 'Animation Studio in Boston', description: 'Hire Animators in Boston', path: '/animation-studio-boston' },
+  { state: 'Animation Studio in Dubai', description: 'Hire Animators in Dubai', path: '/animation-studio-dubai' },
+  { state: 'Animation Studio in Seattle', description: 'Hire Animators in Seattle', path: '/animation-studio-seattle' },
+  { state: 'Animation Studio in Toronto', description: 'Hire Animators in Toronto', path: '/animation-studio-toronto' },
+  { state: 'Animation Studio in UK', description: 'Hire Animators in UK', path: '/animation-studio-uk' },
+  // { state: 'Animation Studio in Ohio', description: 'Hire Animators in Ohio', path: '#' }
 ];
 
 const LocationListSection = () => {
@@ -31,7 +35,7 @@ const LocationListSection = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 text-center mb-5">
-            <h2 className={styles.mainHeading}>USA</h2>
+            <h2 className={styles.mainHeading}>Our Locations</h2>
           </div>
         </div>
         <div className="row g-4">
