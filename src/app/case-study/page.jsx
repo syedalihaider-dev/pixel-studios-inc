@@ -69,7 +69,7 @@ export default function CaseStudyPage() {
         <TestimonialSection />
       </div>
       <TrustedClientsSection />
-      <IndustrySection 
+      <IndustrySection
         heading="We've delivered results for companies in every industry."
         industries={industries}
         variant="gradient"

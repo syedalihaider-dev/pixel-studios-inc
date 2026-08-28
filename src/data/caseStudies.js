@@ -25,7 +25,7 @@ export const caseStudies = [
     highlight: {
       title: "Building a Music Video Kids Actually Rewatch",
       description: "Children's content lives or dies on the replay loop. DoMuzeum needed a video that could survive an audience with zero patience for a slow open and an unlimited appetite for repetition, once it earned their attention.",
-      cta: { text: 'Motion Graphics', href: '#' },
+      cta: { text: 'Get Started', href: '#' },
       meta: [
         { label: 'CLIENT', value: 'DoMuzeum' },
         { label: 'INDUSTRY', value: 'Kids Entertainment / Education' },
@@ -43,7 +43,7 @@ export const caseStudies = [
     productExplainer: {
       title: 'A Beat-Mapped Story Told Through Rounded, Musical Characters',
       description: "We broke the song into a beat map, tempo, phrase structure, chorus returns, and energy peaks, and used it as the skeleton of the storyboard, so scenes are built as musical units, not narrative ones. Character design leaned into a rounded, high-contrast, squash-and-stretch style that reads instantly on a phone screen and makes movement itself feel musical. Dance cycles locked to downbeats, lip sync was hand-checked against the vocal track, and sound design layered in small rewarding details for repeat viewers to discover.",
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/children/02.png',
       thumbnailAlt: 'Product explainer video thumbnail',
       videoUrl: 'https://www.youtube.com/embed/wKoZ-JiEsug',
@@ -53,7 +53,7 @@ export const caseStudies = [
       title: 'The Results',
       description: "The video did what children's content is supposed to do and rarely manages: it got replayed, and it earned trust from the adults who share it.",
       items: ["87% audience retention across the video's full runtime", "4,000+ subscriber growth on the channel following release", "Strong parent-driven sharing that extended reach past algorithmic recommendations"],
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/children/03.png',
       thumbnailAlt: 'Website redesign video thumbnail',
       videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
@@ -82,7 +82,7 @@ export const caseStudies = [
     highlight: {
       title: "Visualizing a Mechanism No Camera Can Reach",
       description: "AirSeal's core value, stable pneumoperitoneum, continuous smoke evacuation, and valve-free access, happens inside the human body during live procedures. Medical animation wasn't a stylistic choice for ConMed; it was the only medium that could show the mechanism at all.",
-      cta: { text: 'Motion Graphics', href: '#' },
+      cta: { text: 'Get Started', href: '#' },
       meta: [
         { label: 'CLIENT', value: 'ConMed' },
         { label: 'INDUSTRY', value: 'Medical Device / Healthcare' },
@@ -100,7 +100,7 @@ export const caseStudies = [
     productExplainer: {
       title: 'Two Visual Registers Built on Validated Clinical Fidelity',
       description: "Production began with a research and validation phase against device documentation and clinical reference, so every visualized behavior mapped to the system's real mechanics before storyboards went to review. The finished animation moves between two registers: photoreal 3D renders for the hardware, and a stylized clinical aesthetic, clean tissue tones, semi-transparent anatomy, legible particle airflow, for the inside-the-body sequences, keeping the video watchable without sacrificing credibility. Narration follows surgical logic: the clinical problem first, then the mechanism, then the outcome.",
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/conmed/02.png',
       thumbnailAlt: 'Product explainer video thumbnail',
       videoUrl: 'https://www.youtube.com/embed/wKoZ-JiEsug',
@@ -110,7 +110,7 @@ export const caseStudies = [
       title: 'The Results',
       description: "The animation gave ConMed's field teams a shared mental model that no brochure could offer, letting reps move straight into clinical and procurement specifics.",
       items: ["80% shorter early-stage sales cycles for the field team", "Used consistently across 5 trade events in the first year", "Reduced training and onboarding overhead for new OR staff"],
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/conmed/03.png',
       thumbnailAlt: 'Website redesign video thumbnail',
       videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
@@ -139,7 +139,7 @@ export const caseStudies = [
     highlight: {
       title: "Turning a Silent Disease Into a Personal, Actionable Moment",
       description: "Type 2 diabetes develops silently, and the audience most at risk rarely searches for it. Static infographic and text campaigns had produced awareness without behavior, so the brief was closing the gap between knowing diabetes is serious and acting on personal risk.",
-      cta: { text: 'Motion Graphics', href: '#' },
+      cta: { text: 'Get Started', href: '#' },
       meta: [
         { label: 'CLIENT', value: 'Rethink Diabetes Maine' },
         { label: 'INDUSTRY', value: 'Public Health / Healthcare' },
@@ -157,7 +157,7 @@ export const caseStudies = [
     productExplainer: {
       title: 'A Mirror-Character Structure Built Around Recognition, Not Alarm',
       description: "We designed a small cast of everyday characters spanning ages, builds, and routines, staged in ordinary moments, a desk lunch, a skipped walk, a family dinner, so viewers see a plausible version of themselves within seconds. Risk factors were animated as scenes rather than listed as text, with a gentle visual meter building alongside, deliberately free of reds or flashing so accumulation reads as information, not a verdict. The palette shifts from warm to bright at the resolution, and the final sequence collapses the call to action into one concrete, modeled step: take the assessment today.",
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/diabetes/02.png',
       thumbnailAlt: 'Product explainer video thumbnail',
       videoUrl: 'https://www.youtube.com/embed/wKoZ-JiEsug',
@@ -167,7 +167,7 @@ export const caseStudies = [
       title: 'The Results',
       description: "The video converted understanding into motion, holding viewer retention through the risk-factor sequence where health content typically loses its audience.",
       items: ["89% more risk-assessment completions in the launch window", "66% outperformance against the client's prior health content benchmarks", "Reusable master asset now serving clinics and community screenings at no extra cost"],
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/diabetes/03.png',
       thumbnailAlt: 'Website redesign video thumbnail',
       videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
@@ -196,7 +196,7 @@ export const caseStudies = [
     highlight: {
       title: "Selling the Feel of a Product You Can't Touch",
       description: "Gaming hardware sells on feel: the click of a switch, the glow of per-key lighting, the heft of an aluminum plate, none of which survives a static product photo. G Lab needed a launch asset that could stand next to content from far larger brands.",
-      cta: { text: 'Motion Graphics', href: '#' },
+      cta: { text: 'Get Started', href: '#' },
       meta: [
         { label: 'CLIENT', value: 'G Lab' },
         { label: 'INDUSTRY', value: 'Gaming Hardware / Consumer Electronics' },
@@ -214,7 +214,7 @@ export const caseStudies = [
     productExplainer: {
       title: 'One Digital Build, an Entire Launch Kit',
       description: "We modeled the keyboard to a tolerance that holds up at full-screen macro resolution, simulating RGB lighting per key so animations behave exactly as the firmware does. The edit escalates from darkness and silhouette through detail passes on switches, lighting, and build, peaking in a kinetic typing sequence cut to sound design, shot with the long lenses and shallow depth of field of product cinematography rather than a software render. Because everything lives in one 3D scene, the hero promo, vertical cutdowns, feature loops, and retail stills all came from a single build.",
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/keyboard/02.png',
       thumbnailAlt: 'Product explainer video thumbnail',
       videoUrl: 'https://www.youtube.com/embed/wKoZ-JiEsug',
@@ -224,7 +224,7 @@ export const caseStudies = [
       title: 'The Results',
       description: "The promo gave G Lab a launch presence that punched above its category weight, anchoring the product page and outperforming prior launch creative on social.",
       items: ["120% higher social engagement versus the brand's previous launch content", "One 3D build generated the entire multi-format launch kit", "Reusable scene already absorbed a follow-up request with zero new production cost"],
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/keyboard/03.png',
       thumbnailAlt: 'Website redesign video thumbnail',
       videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',
@@ -253,7 +253,7 @@ export const caseStudies = [
     highlight: {
       title: "Making an Abstract Product Feel Like a Better Day",
       description: "Scheduling software sells an absence: the meeting that wasn't double-booked, the client who didn't no-show. My Appointments needed prospects to feel that difference in the first thirty seconds, not read about it in another feature list.",
-      cta: { text: 'Motion Graphics', href: '#' },
+      cta: { text: 'Get Started', href: '#' },
       meta: [
         { label: 'CLIENT', value: 'My Appointments' },
         { label: 'INDUSTRY', value: 'SaaS / HealthTech Scheduling' },
@@ -271,7 +271,7 @@ export const caseStudies = [
     productExplainer: {
       title: 'A Chaos-to-Calm Arc Built on Real Product UI',
       description: "The opening dramatizes scheduling failure through fast, escalating motion, overlapping calendar blocks, notification pileups, deliberately kinetic and claustrophobic. The turn arrives with the app: motion eases, spacing opens, the palette calms, and real product UI is recreated as clean vector animation faithful enough that users recognize it after signup. Scriptwriting followed a strict answer-first logic, state the pain, show the fix, prove the outcome, ask for the action, with sound design mirroring the same arc from dissonance to a steady rhythmic bed.",
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/appointments/02.png',
       thumbnailAlt: 'Product explainer video thumbnail',
       videoUrl: 'https://www.youtube.com/embed/wKoZ-JiEsug',
@@ -281,7 +281,7 @@ export const caseStudies = [
       title: 'The Results',
       description: "Placed on the homepage, the explainer turned the first thirty seconds of a visit from a reading task into a watching one, and watching converted better.",
       items: ["77% higher visitor-to-signup conversion after launch", "45% improvement in cost per acquisition on paid social", "Adopted by the sales team as a first-touch asset that shortens early call explanations"],
-      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: '#', variant: 'outline' }],
+      ctas: [{ text: "Let's Talk", href: '#' }, { text: 'Call Now', href: 'tel:443-487-0213', variant: 'outline' }],
       thumbnail: '/case-study/appointments/03.png',
       thumbnailAlt: 'Website redesign video thumbnail',
       videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4',

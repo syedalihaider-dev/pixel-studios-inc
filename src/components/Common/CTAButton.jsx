@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 import { brandInfo } from '@/constants/brandInfo';
 
-const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClick, className = '' }) => {
+const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClick, className = '', target, rel }) => {
   let finalHref = href;
   if (href && (href.startsWith('tel:') || href.includes('443-487-0213'))) {
     finalHref = brandInfo.phone.href;
@@ -70,13 +70,13 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
     // For tel: and mailto:, use regular anchor tag to avoid Next.js router issues
     if (finalHref.startsWith('tel:') || finalHref.startsWith('mailto:')) {
       return (
-        <a href={finalHref} className={buttonClass} onClick={handleClick}>
+        <a href={finalHref} className={buttonClass} onClick={handleClick} target={target} rel={rel}>
           {text} {getIcon()}
         </a>
       );
     }
     return (
-      <Link href={finalHref} className={buttonClass} onClick={handleClick}>
+      <Link href={finalHref} className={buttonClass} onClick={handleClick} target={target} rel={rel}>
         {text} {getIcon()}
       </Link>
     );
