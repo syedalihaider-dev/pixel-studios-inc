@@ -60,9 +60,11 @@ export default function CaseStudyPage() {
   return (
     <main>
       <Banner
-        title="Professional 2D Animation Services in the USA"
-        description="Why do most brands walk away from their 2D animation investment with a video their marketing team likes and their sales team never uses? Because most 2D animation studios are hired to produce something visually competent, and visual competence is not the same as commercial usefulness."
+        title="2D & 3D Animation Case Studies Built Around Real Business Goals"
+        description="Explore selected animation case studies from Pixel Studios and see how strategy, storytelling, and visual production come together. Our work includes 2D animation, 3D product animation, animated explainer videos, motion graphics, and character-led projects created to simplify complex ideas, support product launches, educate audiences, and strengthen marketing campaigns."
         showPlayButton={true}
+        bgVideo="/videos/home.mp4"
+        popupVideo="https://www.youtube.com/embed/RS7JvL6Oyws"
       />
       <div style={{ background: "radial-gradient(60.57% 91.94% at 69.22% 43%, #19042D 0%, #19042D 100%)" }}>
         <FeaturedProjects />

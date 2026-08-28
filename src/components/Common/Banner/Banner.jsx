@@ -17,6 +17,7 @@ const Banner = ({
   showTrustBadges = false,
   showPlayButton = false,
   breadcrumbs = null,
+  popupVideo = null,
 }) => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false);
@@ -93,42 +94,49 @@ const Banner = ({
     return () => ctx.revert();
   }, [activeSlide, isSlider, finalSlides.length]);
 
-  const [videoSrc, setVideoSrc] = useState('');
+  const [bgVideoSrc, setBgVideoSrc] = useState('');
+  const [popupVideoSrc, setPopupVideoSrc] = useState('');
 
   useEffect(() => {
-    let src = video || bgVideo;
-    if (src === "/videos/home.webm" || src === "/videos/home.mp4") {
+    // Determine background video source
+    let bgSrc = bgVideo;
+    if (bgSrc === "/videos/home.webm" || bgSrc === "/videos/home.mp4") {
       const is3d = window.location.pathname.toLowerCase().includes('3d') ||
         window.location.pathname.toLowerCase().includes('modeling') ||
         window.location.pathname.toLowerCase().includes('industrial');
 
       if (is3d) {
-        src = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/AG0FLYKtoOt3hfVuq2BFJRY/3D.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw";
+        bgSrc = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/AG0FLYKtoOt3hfVuq2BFJRY/3D.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw";
       } else {
-        src = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/APr1MwnvxgJidhjKrvVy3t8/2D_01.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw";
+        bgSrc = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/APr1MwnvxgJidhjKrvVy3t8/2D_01.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw";
       }
     }
-    setVideoSrc(src || '');
-  }, [video, bgVideo]);
+    setBgVideoSrc(bgSrc || video || '');
 
-  const isVimeo = videoSrc && (videoSrc.includes('vimeo.com') || videoSrc.includes('youtube.com') || videoSrc.includes('player.vimeo.com'));
+    // Determine popup video source (defaults to video, or popupVideo, or bgVideoSrc)
+    let popSrc = popupVideo || video || bgSrc;
+    setPopupVideoSrc(popSrc || '');
+  }, [video, bgVideo, popupVideo]);
+
+  const isVimeoBg = bgVideoSrc && (bgVideoSrc.includes('vimeo.com') || bgVideoSrc.includes('youtube.com') || bgVideoSrc.includes('player.vimeo.com'));
+  const isVimeoPopup = popupVideoSrc && (popupVideoSrc.includes('vimeo.com') || popupVideoSrc.includes('youtube.com') || popupVideoSrc.includes('player.vimeo.com'));
 
   return (
     <section className={styles.bannerSection}>
       <div className={styles.overlay}></div>
-      {isVimeo ? (
+      {isVimeoBg ? (
         <div className={styles.videoWrapper}>
           <iframe loading="lazy"
-            src={videoSrc}
+            src={bgVideoSrc}
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
             className={styles.iframe}
           ></iframe>
         </div>
-      ) : videoSrc ? (
+      ) : bgVideoSrc ? (
         <video
-          src={videoSrc}
+          src={bgVideoSrc}
           autoPlay
           loop
           muted
@@ -222,9 +230,9 @@ const Banner = ({
         <div className={styles.videoPopupModal} onClick={() => setIsVideoPopupOpen(false)}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <button className={styles.closeBtn} onClick={() => setIsVideoPopupOpen(false)}>×</button>
-            {isVimeo ? (
+            {isVimeoPopup ? (
               <iframe loading="lazy"
-                src={videoSrc}
+                src={popupVideoSrc}
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
@@ -232,7 +240,7 @@ const Banner = ({
               ></iframe>
             ) : (
               <video
-                src={videoSrc}
+                src={popupVideoSrc}
                 controls
                 autoPlay
                 className={styles.popupVideo}
