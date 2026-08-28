@@ -58,6 +58,9 @@ async function proxyRequest(request) {
 
   // Ensure host header matches the WordPress server domain
   forwardHeaders.set("Host", "blog.pixelstudiosinc.com");
+  
+  // Custom header so WP can identify proxy traffic vs direct visits
+  forwardHeaders.set("x-pixel-proxy", "true");
 
   let response;
   let redirectCount = 0;
