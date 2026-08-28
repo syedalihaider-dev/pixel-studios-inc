@@ -24,7 +24,7 @@ const caseStudiesData = [
     coverImage: "/case-study/children/thumbnail.png",
     categories: ["2D Animation"],
     slug: 'domuzeum-childrens-music-video-animation',
-    website: 'http://domuzeum.pl'
+    website: null
   },
   {
     id: 'conmed',
@@ -36,7 +36,7 @@ const caseStudiesData = [
     coverImage: "/case-study/conmed/thumbnail.png",
     categories: ["3D Medical Animation"],
     slug: 'conmed-airseal-medical-device-explainer',
-    website: 'http://conmed.com'
+    website: null
   },
   {
     id: 'rethink',
@@ -48,7 +48,7 @@ const caseStudiesData = [
     coverImage: "/case-study/diabetes/thumbnail.png",
     categories: ["Healthcare Explainer Animation"],
     slug: 'rethink-diabetes-maine-assess-your-diabetes-risk-today',
-    website: 'http://RethinkDiabetesMaine.org'
+    website: null
   },
   {
     id: 'glab',
@@ -72,7 +72,7 @@ const caseStudiesData = [
     coverImage: "/case-study/appointments/thumbnail.png",
     categories: ["Animated Explainer Video"],
     slug: 'my-appointments-saas-scheduling-app-explainer-video',
-    website: 'http://myappointments.app'
+    website: null
   }
 ];
 
@@ -95,7 +95,7 @@ const FeaturedProjects = () => {
     <section className={styles.featuredSection}>
       <div className="container">
         {/* Header Area */}
-        <motion.div 
+        <motion.div
           className={styles.headerArea}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,8 +113,8 @@ const FeaturedProjects = () => {
         <div className={styles.tabsContainer}>
           <ul className={styles.tabsList}>
             {tabs.map((tab) => (
-              <li 
-                key={tab} 
+              <li
+                key={tab}
                 className={`${styles.tabItem} ${activeTab === tab ? styles.active : ''}`}
                 onClick={() => setActiveTab(tab)}
               >
@@ -150,7 +150,7 @@ const FeaturedProjects = () => {
                     <div className={styles.projectContent}>
                       <h3 className={styles.projectTitle}>{project.title}</h3>
                       <p className={styles.projectDescription}>{project.description}</p>
-                      
+
                       <div className={styles.featuresRow}>
                         <div className={styles.featureItem}>
                           <span className={styles.featureLabel}>DELIVERABLES</span>
@@ -171,11 +171,11 @@ const FeaturedProjects = () => {
 
                       {project.logoImage && (
                         <div className={styles.logoImageWrapper}>
-                          <Image 
-                            src={project.logoImage} 
-                            alt={`${project.title} logo`} 
-                            width={666} 
-                            height={321} 
+                          <Image
+                            src={project.logoImage}
+                            alt={`${project.title} logo`}
+                            width={666}
+                            height={321}
                             className={styles.logoImage}
                           />
                         </div>
@@ -186,11 +186,11 @@ const FeaturedProjects = () => {
                   {/* Right Content */}
                   <div className="col-lg-7">
                     <div className={styles.coverImageWrapper}>
-                      <Image 
-                        src={project.coverImage} 
-                        alt={`${project.title} cover`} 
-                        width={870} 
-                        height={776} 
+                      <Image
+                        src={project.coverImage}
+                        alt={`${project.title} cover`}
+                        width={870}
+                        height={776}
                         className={styles.coverImage}
                       />
                     </div>

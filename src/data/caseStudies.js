@@ -30,7 +30,7 @@ export const caseStudies = [
         { label: 'CLIENT', value: 'DoMuzeum' },
         { label: 'INDUSTRY', value: 'Kids Entertainment / Education' },
         { label: 'REGION', value: 'Poland' },
-        { label: 'WEBSITE', value: <Link className="text-white" href="http://domuzeum.pl" target="_blank">http://domuzeum.pl</Link> },
+        { label: 'WEBSITE', value: <Link className="text-white" href="#" target="_blank">http://domuzeum.pl</Link> },
       ],
     },
     dealing: {
@@ -87,7 +87,7 @@ export const caseStudies = [
         { label: 'CLIENT', value: 'ConMed' },
         { label: 'INDUSTRY', value: 'Medical Device / Healthcare' },
         { label: 'REGION', value: 'United States' },
-        { label: 'WEBSITE', value: <Link className="text-white" href="http://conmed.com" target="_blank">conmed.com</Link> },
+        { label: 'WEBSITE', value: <Link className="text-white" href="#" target="_blank">conmed.com</Link> },
       ],
     },
     dealing: {
@@ -144,7 +144,7 @@ export const caseStudies = [
         { label: 'CLIENT', value: 'Rethink Diabetes Maine' },
         { label: 'INDUSTRY', value: 'Public Health / Healthcare' },
         { label: 'REGION', value: 'Maine, United States' },
-        { label: 'WEBSITE', value: <Link className="text-white" href="http://RethinkDiabetesMaine.org" target="_blank">RethinkDiabetesMaine.org</Link> },
+        { label: 'WEBSITE', value: <Link className="text-white" href="#" target="_blank">RethinkDiabetesMaine.org</Link> },
       ],
     },
     dealing: {
@@ -201,7 +201,7 @@ export const caseStudies = [
         { label: 'CLIENT', value: 'G Lab' },
         { label: 'INDUSTRY', value: 'Gaming Hardware / Consumer Electronics' },
         { label: 'REGION', value: 'United States' },
-        // { label: 'WEBSITE', value: <Link className="text-white" href="http://RethinkDiabetesMaine.org" target="_blank">RethinkDiabetesMaine.org</Link> },
+        { label: 'WEBSITE', value: <Link className="text-white" href="#" target="_blank">RethinkDiabetesMaine.org</Link> },
       ],
     },
     dealing: {
@@ -258,7 +258,7 @@ export const caseStudies = [
         { label: 'CLIENT', value: 'My Appointments' },
         { label: 'INDUSTRY', value: 'SaaS / HealthTech Scheduling' },
         { label: 'REGION', value: 'United States' },
-        { label: 'WEBSITE', value: <Link className="text-white" href="http://myappointments.app" target="_blank">Myappointments.app </Link> },
+        { label: 'WEBSITE', value: <Link className="text-white" href="#" target="_blank">Myappointments.app </Link> },
       ],
     },
     dealing: {
