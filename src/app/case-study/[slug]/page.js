@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
   return {
     title: caseStudy.seo.title,
     description: caseStudy.seo.description,
-    robots: { index: false, follow: false },
+    robots: { index: true, follow: true },
   };
 }
 
