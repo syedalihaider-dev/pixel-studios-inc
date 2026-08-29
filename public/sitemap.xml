@@ -373,10 +373,88 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.pixelstudiosinc.com/blog/</loc>
-    <lastmod>2026-08-25T22:08:09+00:00</lastmod>
+    <loc>https://www.pixelstudiosinc.com/case-study</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/case-study/domuzeum-childrens-music-video-animation</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/case-study/conmed-airseal-medical-device-explainer</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/case-study/rethink-diabetes-maine-assess-your-diabetes-risk-today</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/case-study/g-lab-gaming-keyboard-3d-product-promo</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/case-study/my-appointments-saas-scheduling-app-explainer-video</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog</loc>
+    <lastmod>2026-08-28T20:16:33+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/photorealistic-vs-stylized-3d-animation</loc>
+    <lastmod>2026-08-28T20:16:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/turn-cad-files-to-3d-animation</loc>
+    <lastmod>2026-08-28T19:10:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/2d-vs-3d-animation</loc>
+    <lastmod>2026-08-27T23:55:49+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/3d-modeling-vs-rendering-vs-animation</loc>
+    <lastmod>2026-08-27T23:13:39+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/3d-animation-pipeline-and-process</loc>
+    <lastmod>2026-08-27T22:36:04+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/what-is-3d-animation</loc>
+    <lastmod>2026-08-27T18:32:08+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/list-of-frames-in-animation</loc>
+    <lastmod>2026-08-27T00:30:09+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.pixelstudiosinc.com/blog/how-character-design-shapes-a-2d-animated-video</loc>
@@ -599,11 +677,5 @@
     <lastmod>2026-08-12T16:29:16+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelstudiosinc.com/blog/the-complete-guide-to-3d-animation-services-for-modern-businesses</loc>
-    <lastmod>2026-07-31T19:06:55+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
