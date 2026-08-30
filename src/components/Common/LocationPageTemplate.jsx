@@ -43,10 +43,25 @@ export default function LocationPageTemplate({ content }) {
       <MissionSection {...mission} />
       <FullCycleSection {...fullCycle} />
       <PortfolioShowcase {...portfolio} />
-      <WonderingSection {...industries} />
+      <WonderingSection 
+        subtitle={industries?.eyebrow}
+        title={industries?.heading}
+        description={industries?.description}
+        data={industries?.industries || industries?.data}
+      />
       <LocationAccordionSection {...services} />
-      <WhyInvestSection {...workflow} />
-      <CooperationModelsSection {...benefits} />
+      <WhyInvestSection 
+        subtitle={workflow?.eyebrow}
+        title={workflow?.heading}
+        description={workflow?.description}
+        accordionData={workflow?.items || workflow?.accordionData}
+      />
+      <CooperationModelsSection 
+        subtitle={benefits?.eyebrow}
+        title={benefits?.heading}
+        description={benefits?.description}
+        cards={benefits?.cards}
+      />
       <GreatVideosSection {...greatVideos} />
       <TestimonialSection {...testimonials} />
       <FaqSection {...faq} />
