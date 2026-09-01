@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://www.pixelstudiosinc.com/location</loc>
-    <lastmod>2026-08-14T17:08:41+00:00</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -373,6 +373,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-miami</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-new-york</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/animation-studio-washington-dc</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.pixelstudiosinc.com/case-study</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -410,8 +428,38 @@
   </url>
   <url>
     <loc>https://www.pixelstudiosinc.com/blog</loc>
-    <lastmod>2026-08-28T20:16:33+00:00</lastmod>
+    <lastmod>2026-09-01T21:18:32+00:00</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/animation-market-trends</loc>
+    <lastmod>2026-09-01T21:18:32+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/types-of-motion-graphics</loc>
+    <lastmod>2026-09-01T21:03:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/what-is-motion-graphics</loc>
+    <lastmod>2026-09-01T20:22:02+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/how-to-choose-3d-animation-company</loc>
+    <lastmod>2026-09-01T20:00:42+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pixelstudiosinc.com/blog/3d-animation-cost</loc>
+    <lastmod>2026-09-01T19:00:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>

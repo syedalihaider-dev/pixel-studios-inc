@@ -3,6 +3,10 @@ export const brandInfo = {
     display: "+1-443-487-0213",
     href: "tel:+1-443-487-0213"
   },
+  lpPhone: {
+    display: "(02) 4095 2013",
+    href: "tel:0240952013"
+  },
   email: {
     display: "info@pixelstudiosinc.com",
     href: "mailto:info@pixelstudiosinc.com"
