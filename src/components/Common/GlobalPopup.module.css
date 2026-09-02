@@ -19,7 +19,8 @@
   position: relative;
   width: 800px;
   height: 600px;
-  background: #fcf4fc;
+  background: #fcf4fc url('/popup-bg.webp') no-repeat left center;
+  background-size: cover;
   border-radius: 28px;
   box-shadow: 0 25px 50px -12px rgba(25, 4, 45, 0.4);
   overflow: hidden;

@@ -40,17 +40,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${lexend.variable}`}>
       <head>
         <CanonicalLink />
-        {/* Preconnect to Video Hosting CDNs for Performance */}
-        <link rel="preconnect" href="https://player.vimeo.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://vimeocdn.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://f.vimeocdn.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://i.vimeocdn.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.youtube.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://s.ytimg.com" crossOrigin="anonymous" />
-        
-        <link rel="dns-prefetch" href="https://player.vimeo.com" />
-        <link rel="dns-prefetch" href="https://vimeocdn.com" />
-        <link rel="dns-prefetch" href="https://www.youtube.com" />
       </head>
       <body>
         <LeadTracker />
@@ -75,8 +64,12 @@ export default function RootLayout({ children }) {
         
         <GlobalPopup />
 
-        <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=239dfa05-01f6-4362-bfb9-4f75a7455e10" strategy="afterInteractive" />
-        <Script id="zopim-init" strategy="afterInteractive">
+        <Script
+          id="ze-snippet"
+          src="https://static.zdassets.com/ekr/snippet.js?key=239dfa05-01f6-4362-bfb9-4f75a7455e10"
+          strategy="lazyOnload"
+        />
+        <Script id="zopim-init" strategy="lazyOnload">
           {`
             window.$zopim || function (a, d) {
                 var b = $zopim = function (a) {
@@ -123,32 +116,18 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* Google Tag (gtag.js) AW-17029360199 */}
+        {/* A single gtag.js instance supports both Google Ads and Analytics. */}
         <Script
-          id="google-tag-aw"
+          id="google-tag"
           src="https://www.googletagmanager.com/gtag/js?id=AW-17029360199"
           strategy="afterInteractive"
         />
-        <Script id="google-tag-aw-init" strategy="afterInteractive">
+        <Script id="google-tag-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-17029360199');
-          `}
-        </Script>
-
-        {/* Google Tag (gtag.js) G-TDJP607ZP4 */}
-        <Script
-          id="google-analytics"
-          src="https://www.googletagmanager.com/gtag/js?id=G-TDJP607ZP4"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
             gtag('config', 'G-TDJP607ZP4');
           `}
         </Script>
