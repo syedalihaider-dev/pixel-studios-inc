@@ -348,11 +348,13 @@ function PortfolioCard({ item, onClick }) {
   return (
     <div className={styles.cardWrapper} onClick={onClick}>
       {thumbnail && (
-        <img
+        <Image
           src={thumbnail}
           alt={item.title}
           className={styles.videoPreview}
-          loading="lazy"
+          width={400}
+          height={225}
+          sizes="(max-width: 768px) 100vw, 400px"
         />
       )}
       <div className={styles.cardOverlay}>

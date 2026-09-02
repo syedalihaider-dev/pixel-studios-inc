@@ -107,6 +107,7 @@ export default function TestimonialSection({
                   src="/trust-badges.png"
                   width={536}
                   height={62}
+                  sizes="(max-width: 768px) 100vw, 536px"
                   alt="Trust Badges"
                   style={{ maxWidth: '100%', height: 'auto' }}
                 />
@@ -128,6 +129,7 @@ export default function TestimonialSection({
                     src="/trust-badges.png"
                     width={536}
                     height={62}
+                    sizes="(max-width: 768px) 100vw, 536px"
                     alt="Trust Badges"
                     style={{ maxWidth: '100%', height: 'auto' }}
                   />

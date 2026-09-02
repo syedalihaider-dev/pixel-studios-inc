@@ -202,6 +202,7 @@ const ServicesSection = () => {
                   alt="Logo Mockup"
                   width={231}
                   height={296}
+                  sizes="(max-width: 768px) 100vw, 231px"
                 />
               </div>
             </motion.div>

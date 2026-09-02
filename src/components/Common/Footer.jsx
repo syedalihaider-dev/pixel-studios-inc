@@ -58,7 +58,7 @@ const Footer = () => {
           {/* Column 1: Logo & Paragraph */}
           <div className={styles.footerCol}>
             <Link href="/" className={styles.logoLink}>
-              <Image src="/logo.webp" alt="Pixel Studios" width={500} height={250} />
+              <Image src="/logo.webp" alt="Pixel Studios" width={160} height={80} />
             </Link>
             <p className={styles.aboutText}>
               We are a creative digital agency specializing in animation and video production. Let us help you tell your story through captivating visuals.

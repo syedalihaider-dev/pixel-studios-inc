@@ -98,6 +98,7 @@ const WhyInvestSection = () => {
                 alt="3D Growth Rocket"
                 width={529}
                 height={676}
+                sizes="(max-width: 768px) 100vw, 380px"
                 className={styles.rocketImage}
                 priority
               />

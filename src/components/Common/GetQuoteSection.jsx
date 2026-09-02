@@ -75,6 +75,7 @@ export default function GetQuoteSection() {
                 className={styles.movieMakerImg}
                 width={624}
                 height={624}
+                sizes="(max-width: 768px) 100vw, 400px"
               />
             </motion.div>
 

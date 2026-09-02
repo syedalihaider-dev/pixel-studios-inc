@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import styles from './GlobalPopup.module.css';
 import { User, Phone, Mail, Send, X, Check } from 'lucide-react';
 import CTAButton from './CTAButton';
+import Image from 'next/image';
 import { submitLead } from '../../utils/formSubmit';
 import TrackingFields from './TrackingFields';
 
@@ -72,6 +73,14 @@ const GlobalPopup = () => {
   return (
     <div className={styles.popupOverlay} onClick={() => setIsOpen(false)}>
       <div className={styles.popupContainer} onClick={(e) => e.stopPropagation()}>
+        <Image
+          src="/popup-bg.png"
+          alt="Popup Background"
+          fill
+          style={{ objectFit: 'cover', zIndex: 0 }}
+          sizes="(max-width: 800px) 100vw, 800px"
+          quality={75}
+        />
         {/* Close Button */}
         <button className={styles.closeBtn} onClick={() => setIsOpen(false)} aria-label="Close Popup">
           <X size={18} />

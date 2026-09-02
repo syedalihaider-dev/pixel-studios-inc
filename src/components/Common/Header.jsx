@@ -348,8 +348,8 @@ const Header = () => {
             <Image
               src="/logo.webp"
               alt="Pixel Studios Logo"
-              width={500}
-              height={250}
+              width={160}
+              height={80}
               priority
             />
           </Link>
