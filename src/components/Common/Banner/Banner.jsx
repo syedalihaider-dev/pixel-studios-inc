@@ -99,7 +99,7 @@ const Banner = ({
 
   useEffect(() => {
     // Determine background video source
-    let bgSrc = bgVideo;
+    let bgSrc = bgVideo || video;
     if (bgSrc === "/videos/home.webm" || bgSrc === "/videos/home.mp4") {
       const is3d = window.location.pathname.toLowerCase().includes('3d') ||
         window.location.pathname.toLowerCase().includes('modeling') ||
@@ -113,8 +113,8 @@ const Banner = ({
     }
     setBgVideoSrc(bgSrc || video || '');
 
-    // Determine popup video source (defaults to video, or popupVideo, or bgVideoSrc)
-    let popSrc = popupVideo || video || bgSrc;
+    // Determine popup video source (defaults to resolved bgSrc, or explicit popupVideo)
+    let popSrc = popupVideo || bgSrc;
     setPopupVideoSrc(popSrc || '');
   }, [video, bgVideo, popupVideo]);
 
