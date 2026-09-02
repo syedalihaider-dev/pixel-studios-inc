@@ -31,7 +31,7 @@ const CostSection = () => {
                             transition={{ duration: 0.6 }}
                         >
                             <iframe loading="lazy"
-                                src="https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                                data-deferred-src="https://player.vimeo.com/video/1064481379?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
                                 frameBorder="0"
                                 allow="autoplay; fullscreen; picture-in-picture"
                                 allowFullScreen

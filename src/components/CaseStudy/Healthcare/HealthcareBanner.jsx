@@ -89,7 +89,7 @@ export default function HealthcareBanner({ content }) {
               <iframe loading="lazy"
                 width="100%"
                 height="100%"
-                src={`${content.videoUrl}${content.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
+                data-deferred-src={`${content.videoUrl}${content.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
                 title={content.videoTitle}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

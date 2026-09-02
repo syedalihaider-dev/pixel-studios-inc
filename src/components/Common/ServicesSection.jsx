@@ -147,7 +147,7 @@ const ServicesSection = ({
                   className={styles.videoInner}
                 >
                   <iframe loading="lazy"
-                    src={sliderItems[activeIndex].videoSrc}
+                    data-deferred-src={sliderItems[activeIndex].videoSrc}
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen

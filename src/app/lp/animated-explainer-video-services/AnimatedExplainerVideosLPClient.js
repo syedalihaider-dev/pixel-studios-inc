@@ -897,7 +897,7 @@ export default function AnimatedExplainerVideosLP() {
             <button className="modal-video-close" onClick={() => setActiveVideoUrl(null)}>×</button>
             <div className="modal-video-iframe-wrapper">
               <iframe
-                src={getEmbedUrl(activeVideoUrl)}
+                data-deferred-src={getEmbedUrl(activeVideoUrl)}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

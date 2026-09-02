@@ -31,7 +31,7 @@ const CostSection = ({ subtitle, title, description, videoSrc, bottomText }) => 
               transition={{ duration: 0.6 }}
             >
               <iframe loading="lazy"
-                src={videoSrc}
+                data-deferred-src={videoSrc}
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen

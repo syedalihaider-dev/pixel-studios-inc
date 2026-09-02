@@ -85,7 +85,7 @@ const TeamStandoutSection = ({ subtitle, title, description, features, videoSrc 
               >
                 {videoSrc ? (
                   <iframe loading="lazy"
-                    src={videoSrc}
+                    data-deferred-src={videoSrc}
                     title="Pixel Studio Video"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
@@ -93,7 +93,7 @@ const TeamStandoutSection = ({ subtitle, title, description, features, videoSrc 
                   />
                 ) : (
                   <iframe loading="lazy"
-                    src="https://player.vimeo.com/video/1201856415?dnt=1&autoplay=1&loop=1&muted=1&background=1"
+                    data-deferred-src="https://player.vimeo.com/video/1201856415?dnt=1&autoplay=1&loop=1&muted=1&background=1"
                     title="Pixel Studio Video"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"

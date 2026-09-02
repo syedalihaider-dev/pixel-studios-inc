@@ -228,7 +228,7 @@ const ContactFormSection = () => {
             >
               <button className={styles.closeModal} onClick={() => setModalOpen(false)}>×</button>
               <iframe loading="lazy"
-                src="https://player.vimeo.com/video/1064481379?dnt=1&autoplay=1"
+                data-deferred-src="https://player.vimeo.com/video/1064481379?dnt=1&autoplay=1"
                 className={styles.videoIframe}
                 allow="autoplay; fullscreen"
                 allowFullScreen

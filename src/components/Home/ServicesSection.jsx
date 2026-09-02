@@ -145,7 +145,7 @@ const ServicesSection = () => {
                 <div className={styles.videoWrapper}>
                   {/* Background Video Loop */}
                   <iframe loading="lazy"
-                    src={service.videoUrl}
+                    data-deferred-src={service.videoUrl}
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen>

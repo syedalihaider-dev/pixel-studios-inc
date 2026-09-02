@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import styles from './GlobalPopup.module.css';
 import { User, Phone, Mail, Send, X, Check } from 'lucide-react';
 import CTAButton from './CTAButton';
@@ -10,10 +11,7 @@ import TrackingFields from './TrackingFields';
 
 const GlobalPopup = () => {
   const pathname = usePathname();
-
-  if (pathname && pathname.startsWith('/lp/')) {
-    return null;
-  }
+  const isLandingPage = pathname?.startsWith('/lp/');
 
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -25,6 +23,10 @@ const GlobalPopup = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
+    if (isLandingPage) {
+      return undefined;
+    }
+
     // Event listener for button clicks
     const handleOpenPopup = () => {
       setIsOpen(true);
@@ -33,21 +35,57 @@ const GlobalPopup = () => {
 
     window.addEventListener('open-global-popup', handleOpenPopup);
 
-    // Auto popup after 4 seconds
+    // Do not let an automatically inserted modal replace the page content as LCP.
+    // Engaged visitors still see it after the original four-second delay.
     const hasShownPopup = sessionStorage.getItem('hasShownAutoPopup');
     let timer;
     if (!hasShownPopup) {
-      timer = setTimeout(() => {
+      let isPopupEligible = false;
+      let hasUserInteracted = false;
+      const interactionEvents = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
+
+      const removeInteractionListeners = () => {
+        interactionEvents.forEach((eventName) => {
+          window.removeEventListener(eventName, handleUserInteraction);
+        });
+      };
+
+      const showAutoPopup = () => {
+        removeInteractionListeners();
         setIsOpen(true);
+        setIsSubmitted(false);
         sessionStorage.setItem('hasShownAutoPopup', 'true');
+      };
+
+      const handleUserInteraction = () => {
+        hasUserInteracted = true;
+        if (isPopupEligible) {
+          showAutoPopup();
+        }
+      };
+
+      interactionEvents.forEach((eventName) => {
+        window.addEventListener(eventName, handleUserInteraction, { once: true, passive: true });
+      });
+
+      timer = setTimeout(() => {
+        isPopupEligible = true;
+        if (hasUserInteracted) {
+          showAutoPopup();
+        }
       }, 4000);
+
+      return () => {
+        removeInteractionListeners();
+        clearTimeout(timer);
+        window.removeEventListener('open-global-popup', handleOpenPopup);
+      };
     }
 
     return () => {
       window.removeEventListener('open-global-popup', handleOpenPopup);
-      if (timer) clearTimeout(timer);
     };
-  }, []);
+  }, [isLandingPage]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -68,11 +106,23 @@ const GlobalPopup = () => {
     });
   };
 
+  if (isLandingPage) return null;
+
   if (!isOpen) return null;
 
   return (
     <div className={styles.popupOverlay} onClick={() => setIsOpen(false)}>
       <div className={styles.popupContainer} onClick={(e) => e.stopPropagation()}>
+        <Image
+          src="/popup-bg.webp"
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="(max-width: 575px) 300px, (max-width: 767px) 500px, (max-width: 991px) 650px, 800px"
+          quality={75}
+          loading="eager"
+          className={styles.backgroundImage}
+        />
         {/* Close Button */}
         <button className={styles.closeBtn} onClick={() => setIsOpen(false)} aria-label="Close Popup">
           <X size={18} />
