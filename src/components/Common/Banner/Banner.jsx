@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Banner.module.css';
 import Image from 'next/image';
+import Script from 'next/script';
 import gsap from 'gsap';
 import PlayButton from '../PlayButton';
 import CTAButton from '../CTAButton';
@@ -122,135 +123,143 @@ const Banner = ({
   const isVimeoPopup = popupVideoSrc && (popupVideoSrc.includes('vimeo.com') || popupVideoSrc.includes('youtube.com') || popupVideoSrc.includes('player.vimeo.com'));
 
   return (
-    <section className={styles.bannerSection}>
-      <div className={styles.overlay}></div>
-      {isVimeoBg ? (
-        <div className={styles.videoWrapper}>
-          <iframe loading="lazy"
+    <>
+      {showTrustBadges && (
+        <Script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" strategy="lazyOnload" />
+      )}
+      <section className={styles.bannerSection}>
+        <div className={styles.overlay}></div>
+        {isVimeoBg ? (
+          <div className={styles.videoWrapper}>
+            <iframe loading="lazy"
+              src={bgVideoSrc}
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              className={styles.iframe}
+            ></iframe>
+          </div>
+        ) : bgVideoSrc ? (
+          <video
             src={bgVideoSrc}
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            className={styles.iframe}
-          ></iframe>
-        </div>
-      ) : bgVideoSrc ? (
-        <video
-          src={bgVideoSrc}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className={styles.bgMedia}
-        />
-      ) : bgImage ? (
-        <img src={bgImage} alt="Banner Background" className={styles.bgMedia} />
-      ) : null}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={styles.bgMedia}
+          />
+        ) : bgImage ? (
+          <img src={bgImage} alt="Banner Background" className={styles.bgMedia} />
+        ) : null}
 
-      <div className="container position-relative h-100">
-        <div className={`row h-100 align-items-center ${centered ? 'justify-content-center' : ''}`}>
-          <div className={centered ? "col-lg-10" : "col-lg-11"}>
-            <div className={`${styles.contentCol} ${centered ? styles.centered : ''} banner-reveal`}>
+        <div className="container position-relative h-100">
+          <div className={`row h-100 align-items-center ${centered ? 'justify-content-center' : ''}`}>
+            <div className={centered ? "col-lg-10" : "col-lg-11"}>
+              <div className={`${styles.contentCol} ${centered ? styles.centered : ''} banner-reveal`}>
 
-              {breadcrumbs && (
-                <div className={styles.breadcrumbs}>
-                  {breadcrumbs}
-                </div>
-              )}
-
-              <div className={styles.sliderContainer}>
-                {finalSlides.map((slide, index) => (
-                  <div
-                    key={index}
-                    ref={el => slidesRef.current[index] = el}
-                    className={`${styles.slide} ${!isSlider || index === activeSlide ? styles.active : ''}`}
-                    style={{ position: (!isSlider || index === activeSlide) ? 'relative' : 'absolute' }}
-                  >
-                    {index === 0 ? (
-                      <h1 className={styles.heading}>{slide.title}</h1>
-                    ) : (
-                      <h2 className={styles.heading}>{slide.title}</h2>
-                    )}
-                    <p className={`${styles.description} scroll_block`}>
-                      {slide.description}
-                    </p>
+                {breadcrumbs && (
+                  <div className={styles.breadcrumbs}>
+                    {breadcrumbs}
                   </div>
-                ))}
-              </div>
+                )}
 
-              <div className={`${styles.actionRow} ${centered ? 'justify-content-center mt-5' : ''} banner-reveal`}>
-                <CTAButton
-                  type="popup"
-                  text="Get a Quote"
-                />
-                <CTAButton
-                  type="chat"
-                  text="Let's Talk"
-                  variant="outline"
-                />
-              </div>
+                <div className={styles.sliderContainer}>
+                  {finalSlides.map((slide, index) => (
+                    <div
+                      key={index}
+                      ref={el => slidesRef.current[index] = el}
+                      className={`${styles.slide} ${!isSlider || index === activeSlide ? styles.active : ''}`}
+                      style={{ position: (!isSlider || index === activeSlide) ? 'relative' : 'absolute' }}
+                    >
+                      {index === 0 ? (
+                        <h1 className={styles.heading}>{slide.title}</h1>
+                      ) : (
+                        <h2 className={styles.heading}>{slide.title}</h2>
+                      )}
+                      <p className={`${styles.description} scroll_block`}>
+                        {slide.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
 
-              {showTrustBadges && (
-                <div className={`${styles.trustBadges} banner-reveal`}>
-                  <Image
-                    src="/trust-badges.png"
-                    width={536}
-                    height={62}
-                    sizes="(max-width: 768px) 100vw, 536px"
-                    alt="Trust Badges"
-                    style={{ maxWidth: '100%', height: 'auto' }}
+                <div className={`${styles.actionRow} ${centered ? 'justify-content-center mt-5' : ''} banner-reveal`}>
+                  <CTAButton
+                    type="popup"
+                    text="Get a Quote"
+                  />
+                  <CTAButton
+                    type="chat"
+                    text="Let's Talk"
+                    variant="outline"
                   />
                 </div>
+
+                {showTrustBadges && (
+                  <div className={`${styles.trustBadges} banner-reveal`} style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                    <Image
+                      src="/trust-badge.png"
+                      width={329}
+                      height={62}
+                      sizes="(max-width: 768px) 100vw, 536px"
+                      alt="Trust Badges"
+                      style={{ maxWidth: '100%', height: 'auto' }}
+                    />
+                    <div className="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="645545d36bf0e4f01cf0f44d" data-style-height="52px" data-style-width="250px" data-token="2d4eb80d-99ca-4d89-9669-a87d6ec92651">
+                      <a href="https://www.trustpilot.com/review/pixelstudiosinc.com" target="_blank" rel="noopener">Trustpilot</a>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {(isSlider || showPlayButton) && (
+          <div className={styles.progressContainer}>
+            {showPlayButton && (
+              <div className="mb-5 pb-5">
+                <PlayButton text="SHOW REEL" onClick={() => setIsVideoPopupOpen(true)} />
+              </div>
+            )}
+
+            {isSlider && finalSlides.map((_, index) => (
+              <div key={index} className={styles.progressSegment}>
+                <div
+                  ref={el => progressRefs.current[index] = el}
+                  className={styles.progressFill}
+                ></div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Video Popup Modal */}
+        {isVideoPopupOpen && (
+          <div className={styles.videoPopupModal} onClick={() => setIsVideoPopupOpen(false)}>
+            <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+              <button className={styles.closeBtn} onClick={() => setIsVideoPopupOpen(false)}>×</button>
+              {isVimeoPopup ? (
+                <iframe loading="lazy"
+                  src={popupVideoSrc}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  className={styles.popupIframe}
+                ></iframe>
+              ) : (
+                <video
+                  src={popupVideoSrc}
+                  controls
+                  autoPlay
+                  className={styles.popupVideo}
+                />
               )}
             </div>
           </div>
-        </div>
-      </div>
-
-      {(isSlider || showPlayButton) && (
-        <div className={styles.progressContainer}>
-          {showPlayButton && (
-            <div className="mb-5 pb-5">
-              <PlayButton text="SHOW REEL" onClick={() => setIsVideoPopupOpen(true)} />
-            </div>
-          )}
-
-          {isSlider && finalSlides.map((_, index) => (
-            <div key={index} className={styles.progressSegment}>
-              <div
-                ref={el => progressRefs.current[index] = el}
-                className={styles.progressFill}
-              ></div>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Video Popup Modal */}
-      {isVideoPopupOpen && (
-        <div className={styles.videoPopupModal} onClick={() => setIsVideoPopupOpen(false)}>
-          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-            <button className={styles.closeBtn} onClick={() => setIsVideoPopupOpen(false)}>×</button>
-            {isVimeoPopup ? (
-              <iframe loading="lazy"
-                src={popupVideoSrc}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                className={styles.popupIframe}
-              ></iframe>
-            ) : (
-              <video
-                src={popupVideoSrc}
-                controls
-                autoPlay
-                className={styles.popupVideo}
-              />
-            )}
-          </div>
-        </div>
-      )}
-    </section>
+        )}
+      </section>
+    </>
   );
 };
 
