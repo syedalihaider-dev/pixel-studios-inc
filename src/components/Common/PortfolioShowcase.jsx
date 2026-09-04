@@ -573,7 +573,7 @@ export default function PortfolioShowcase({
                 <X size={24} />
               </button>
               <iframe
-                data-deferred-src={videoDetails.embedUrl}
+                src={videoDetails.embedUrl}
                 className={styles.popupIframe}
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
