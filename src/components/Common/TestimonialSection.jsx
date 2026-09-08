@@ -242,7 +242,7 @@ export default function TestimonialSection({
                 <div className={styles.modalContent}>
                   {activeVideo.includes("youtube.com") || activeVideo.includes("youtu.be") ? (
                     <iframe
-                      data-deferred-src={activeVideo}
+                      src={activeVideo}
                       frameBorder="0"
                       allow="autoplay; fullscreen"
                       allowFullScreen
