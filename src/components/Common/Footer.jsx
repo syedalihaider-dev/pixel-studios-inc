@@ -103,7 +103,7 @@ const Footer = () => {
               </li>
               <li className={styles.locationItem}>
                 <MapPin className={styles.contactIcon} size={18} />
-                <span>{brandInfo.address.display}</span>
+                <a href={brandInfo.address.href} target="_blank" rel="noopener noreferrer">{brandInfo.address.display}</a>
               </li>
             </ul>
             <div className={styles.socialLinks}>

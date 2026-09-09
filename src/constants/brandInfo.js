@@ -12,7 +12,8 @@ export const brandInfo = {
     href: "mailto:info@pixelstudiosinc.com"
   },
   address: {
-    display: "195 Cadman Plaza West, One Pierrepont Plaza, 12th Floor, Brooklyn, NY 11201, United States"
+    display: "195 Cadman Plaza West, One Pierrepont Plaza, 12th Floor, Brooklyn, NY 11201, United States",
+    href: "https://share.google/Jn4nrLFi1Qi1dzCbe"
   },
   socials: {
     linkedin: "https://www.linkedin.com/company/pixel-studios-global/",
