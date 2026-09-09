@@ -1,32 +1,33 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useMemo, useSyncExternalStore } from "react";
+
+const emptyFields = {
+  first_landing_url: "",
+  lead_source: "",
+  utm_source: "",
+  utm_medium: "",
+  utm_campaign: "",
+  gclid: "",
+  original_referrer: "",
+  form_submission_url: ""
+};
+
+const subscribe = () => () => {};
+const getServerSnapshot = () => JSON.stringify(emptyFields);
+const getSnapshot = () => JSON.stringify({
+  first_landing_url: localStorage.getItem("first_landing_url") || "",
+  lead_source: localStorage.getItem("lead_source") || "Organic",
+  utm_source: localStorage.getItem("utm_source") || "",
+  utm_medium: localStorage.getItem("utm_medium") || "",
+  utm_campaign: localStorage.getItem("utm_campaign") || "",
+  gclid: localStorage.getItem("gclid") || "",
+  original_referrer: localStorage.getItem("original_referrer") || "",
+  form_submission_url: window.location.pathname || ""
+});
 
 export default function TrackingFields() {
-  const [fields, setFields] = useState({
-    first_landing_url: "",
-    lead_source: "",
-    utm_source: "",
-    utm_medium: "",
-    utm_campaign: "",
-    gclid: "",
-    original_referrer: "",
-    form_submission_url: ""
-  });
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setFields({
-        first_landing_url: localStorage.getItem("first_landing_url") || "",
-        lead_source: localStorage.getItem("lead_source") || "Organic",
-        utm_source: localStorage.getItem("utm_source") || "",
-        utm_medium: localStorage.getItem("utm_medium") || "",
-        utm_campaign: localStorage.getItem("utm_campaign") || "",
-        gclid: localStorage.getItem("gclid") || "",
-        original_referrer: localStorage.getItem("original_referrer") || "",
-        form_submission_url: window.location.pathname || ""
-      });
-    }
-  }, []);
+  const serializedFields = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const fields = useMemo(() => JSON.parse(serializedFields), [serializedFields]);
 
   return (
     <>

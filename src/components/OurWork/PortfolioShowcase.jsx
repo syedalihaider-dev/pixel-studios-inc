@@ -322,28 +322,29 @@ const ITEMS_PER_PAGE = 6;
 
 // Custom Card Component to fetch Vimeo thumbnails dynamically
 function PortfolioCard({ item, onClick }) {
-  const [thumbnail, setThumbnail] = useState("");
+  const details = useMemo(() => getVideoDetails(item.videoUrl), [item.videoUrl]);
+  const fallbackThumbnail = details.type === "youtube" || details.type === "vimeo" ? details.thumbnail : "";
+  const [vimeoThumbnail, setVimeoThumbnail] = useState("");
 
   useEffect(() => {
-    const details = getVideoDetails(item.videoUrl);
-    if (details.type === "youtube") {
-      setThumbnail(details.thumbnail);
-    } else if (details.type === "vimeo") {
-      // Set the instant vumbnail image fallback immediately
-      setThumbnail(details.thumbnail);
+    let isCurrent = true;
+    if (details.type === "vimeo") {
       // Fetch dynamic high quality thumbnail from Vimeo API
       fetch(`https://vimeo.com/api/v2/video/${details.id}.json`)
         .then((res) => res.json())
         .then((data) => {
-          if (data && data[0] && data[0].thumbnail_large) {
-            setThumbnail(data[0].thumbnail_large);
+          if (isCurrent && data && data[0] && data[0].thumbnail_large) {
+            setVimeoThumbnail(data[0].thumbnail_large);
           }
         })
         .catch(() => {
           // Fallback is already set
         });
     }
-  }, [item.videoUrl]);
+    return () => { isCurrent = false; };
+  }, [details]);
+
+  const thumbnail = vimeoThumbnail || fallbackThumbnail;
 
   return (
     <div className={styles.cardWrapper} onClick={onClick}>

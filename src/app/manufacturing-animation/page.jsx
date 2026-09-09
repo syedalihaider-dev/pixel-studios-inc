@@ -140,7 +140,7 @@ const cooperationModelsCards = [
 
 const title = (
     <>
-      Let's Discuss Your <span>Manufacturing Animation</span> Project
+      Let&apos;s Discuss Your <span>Manufacturing Animation</span> Project
     </>
   );
 

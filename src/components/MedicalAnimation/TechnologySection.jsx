@@ -66,7 +66,7 @@ const TechnologySection = () => {
             <p className="subtitle">Pricing Factors</p>
             <h2 className={styles.mainHeading}>Medical Animation Pricing and Project Cost Factors</h2>
             <p className={styles.topParagraph}>
-              Medical animation services' cost reflects the clinical accuracy requirements and medical review cycles that distinguish this category from general animation production.
+              Medical animation services&apos; cost reflects the clinical accuracy requirements and medical review cycles that distinguish this category from general animation production.
             </p>
           </div>
         </div>

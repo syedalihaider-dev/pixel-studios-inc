@@ -25,7 +25,7 @@ const industries = [
     id: 2,
     title: "Healthcare & Medical",
     image: "/industry/02.png",
-    text: <>We produce 2D animations that communicate complex medical information with clarity and accuracy. Whether it's patient education, healthcare awareness, medical device demonstrations, or clinical training, our <Link href="/healthcare-animation">medical and healthcare animations</Link> help organizations educate audiences while maintaining trust and professionalism.</>,
+    text: <>We produce 2D animations that communicate complex medical information with clarity and accuracy. Whether it&apos;s patient education, healthcare awareness, medical device demonstrations, or clinical training, our <Link href="/healthcare-animation">medical and healthcare animations</Link> help organizations educate audiences while maintaining trust and professionalism.</>,
     link: "#"
   },
   {
@@ -61,7 +61,7 @@ const industries = [
     id: 7,
     title: "Startups & Enterprises",
     image: "/industry/06.png",
-    text: <>Whether you're introducing an innovative product, pitching investors, training employees, or communicating organizational changes, our 2D <Link href="/enterprise-animation">startup animation services</Link> provide scalable visual content that grows alongside your business and supports every stage of your journey.</>,
+    text: <>Whether you&apos;re introducing an innovative product, pitching investors, training employees, or communicating organizational changes, our 2D <Link href="/enterprise-animation">startup animation services</Link> provide scalable visual content that grows alongside your business and supports every stage of your journey.</>,
     link: "#"
   },
   {
@@ -111,7 +111,7 @@ const sliderItems = [
   {
     id: 2,
     title: "2D Whiteboard Animations",
-    description: <><Link href="/whiteboard-animation-services">2d Whiteboard Animation services</Link> has outlasted every video marketing trend for one reason: clarity never goes out of style. The format removes visual noise and puts the viewer's full attention on the concept being explained. Our whiteboard animation productions combine professional voiceover, clean illustration, and carefully paced narration built for training, compliance communication, and sales enablement content that has to work without a facilitator present.</>,
+    description: <><Link href="/whiteboard-animation-services">2d Whiteboard Animation services</Link> has outlasted every video marketing trend for one reason: clarity never goes out of style. The format removes visual noise and puts the viewer&apos;s full attention on the concept being explained. Our whiteboard animation productions combine professional voiceover, clean illustration, and carefully paced narration built for training, compliance communication, and sales enablement content that has to work without a facilitator present.</>,
     videoSrc: "https://player.vimeo.com/video/1064481971?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {

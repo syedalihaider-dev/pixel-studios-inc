@@ -60,7 +60,7 @@ const CooperationModelsSection = () => {
             <p className="subtitle">Software & Technology</p>
             <h2 className={styles.mainHeading}>Logo Animation Software and Technologies</h2>
             <p className={styles.topParagraph}>
-              Professional results come from using the right tool for the right job. We work across the industry's leading whiteboard animation and illustration platforms, selecting the best fit based on your project's visual requirements and delivery specs.
+              Professional results come from using the right tool for the right job. We work across the industry&apos;s leading whiteboard animation and illustration platforms, selecting the best fit based on your project&apos;s visual requirements and delivery specs.
             </p>
           </div>
         </div>

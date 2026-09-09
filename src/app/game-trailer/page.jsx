@@ -148,7 +148,7 @@ const whyInvestAccordionData = [
 
 const title = (
   <>
-    Let's Talk About Your <span>Project</span>
+    Let&apos;s Talk About Your <span>Project</span>
   </>
 );
 

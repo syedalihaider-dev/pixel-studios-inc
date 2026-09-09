@@ -300,19 +300,19 @@ const Header = () => {
   const [mobileAccordion, setMobileAccordion] = useState(null);
   const pathname = usePathname();
 
-  if (pathname && pathname.startsWith('/lp/')) {
-    return null;
-  }
+  const isLandingPage = pathname && pathname.startsWith('/lp/');
 
   useEffect(() => {
+    if (isLandingPage) return;
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isLandingPage]);
 
   useEffect(() => {
+    if (isLandingPage) return;
     // Lock body scroll when mobile menu is open
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -320,7 +320,11 @@ const Header = () => {
       document.body.style.overflow = '';
     }
     return () => { document.body.style.overflow = ''; };
-  }, [mobileMenuOpen]);
+  }, [isLandingPage, mobileMenuOpen]);
+
+  if (isLandingPage) {
+    return null;
+  }
 
   const handleMouseEnter = (name) => {
     setActiveDropdown(name);

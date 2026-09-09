@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import styles from './Banner.module.css';
 import Image from 'next/image';
 import Script from 'next/script';
@@ -22,6 +23,7 @@ const Banner = ({
 }) => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false);
+  const pathname = usePathname();
   const slideDuration = 5; // seconds
   const slidesRef = useRef([]);
   const progressRefs = useRef([]);
@@ -95,16 +97,14 @@ const Banner = ({
     return () => ctx.revert();
   }, [activeSlide, isSlider, finalSlides.length]);
 
-  const [bgVideoSrc, setBgVideoSrc] = useState('');
-  const [popupVideoSrc, setPopupVideoSrc] = useState('');
-
-  useEffect(() => {
+  const { bgVideoSrc, popupVideoSrc } = useMemo(() => {
     // Determine background video source
     let bgSrc = video || bgVideo;
     if (bgSrc === "/videos/home.webm" || bgSrc === "/videos/home.mp4") {
-      const is3d = window.location.pathname.toLowerCase().includes('3d') ||
-        window.location.pathname.toLowerCase().includes('modeling') ||
-        window.location.pathname.toLowerCase().includes('industrial');
+      const normalizedPathname = (pathname || '').toLowerCase();
+      const is3d = normalizedPathname.includes('3d') ||
+        normalizedPathname.includes('modeling') ||
+        normalizedPathname.includes('industrial');
 
       if (is3d) {
         bgSrc = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/AG0FLYKtoOt3hfVuq2BFJRY/3D.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw";
@@ -112,12 +112,10 @@ const Banner = ({
         bgSrc = "https://dl.dropboxusercontent.com/scl/fo/d7f5pmdtiote831w4ravn/APr1MwnvxgJidhjKrvVy3t8/2D_01.mp4?dl=1&rlkey=k073vgd1ke8at52isx6ywoibw";
       }
     }
-    setBgVideoSrc(bgSrc || '');
-
     // Determine popup video source (defaults to resolved bgSrc, or explicit popupVideo)
-    let popSrc = popupVideo || bgSrc;
-    setPopupVideoSrc(popSrc || '');
-  }, [video, bgVideo, popupVideo]);
+    const popSrc = popupVideo || bgSrc;
+    return { bgVideoSrc: bgSrc || '', popupVideoSrc: popSrc || '' };
+  }, [video, bgVideo, popupVideo, pathname]);
 
   const isVimeoBg = bgVideoSrc && (bgVideoSrc.includes('vimeo.com') || bgVideoSrc.includes('youtube.com') || bgVideoSrc.includes('player.vimeo.com'));
   const isVimeoPopup = popupVideoSrc && (popupVideoSrc.includes('vimeo.com') || popupVideoSrc.includes('youtube.com') || popupVideoSrc.includes('player.vimeo.com'));

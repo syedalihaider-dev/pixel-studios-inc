@@ -87,7 +87,7 @@ const CostSection = () => {
             turnaround on recurring content needs, and a single point of
             accountability instead of managing several disconnected production
             relationships. That consolidation also tends to reduce total
-            production cost once every department's spend is considered
+            production cost once every department&apos;s spend is considered
             together.
           </p>
 

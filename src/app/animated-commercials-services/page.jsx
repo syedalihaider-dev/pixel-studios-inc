@@ -198,7 +198,7 @@ const sliderItems = [
     id: 4,
     title: "Character Animation Commercials",
     description:
-      <><Link href="/character-animation">Character-driven animation</Link> commercials for brands whose audience responds to emotional narrative. The character is not a decoration. It is the device through which the commercial earns the viewer's attention long enough to deliver the message.</>,
+      <><Link href="/character-animation">Character-driven animation</Link> commercials for brands whose audience responds to emotional narrative. The character is not a decoration. It is the device through which the commercial earns the viewer&apos;s attention long enough to deliver the message.</>,
     videoSrc: "https://player.vimeo.com/video/1201624848?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {
@@ -226,7 +226,7 @@ const sliderItems = [
     id: 8,
     title: "Social Media Commercials",
     description:
-      <><Link href="/social-media-animation">Social media commercial videos</Link> are built for the platform rather than adapted to it. Vertical formats, hooks in the first frame, and captions for the majority watching without sound. Produced to each platform's specific creative requirements.</>,
+      <><Link href="/social-media-animation">Social media commercial videos</Link> are built for the platform rather than adapted to it. Vertical formats, hooks in the first frame, and captions for the majority watching without sound. Produced to each platform&apos;s specific creative requirements.</>,
     videoSrc: "https://player.vimeo.com/video/1201624848?dnt=1&background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
   },
   {

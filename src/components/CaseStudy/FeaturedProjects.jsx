@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './FeaturedProjects.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import CTAButton from '../Common/CTAButton';
@@ -79,13 +79,12 @@ const caseStudiesData = [
 const FeaturedProjects = () => {
   const [activeTab, setActiveTab] = useState("2D Animation");
   const [visibleCount, setVisibleCount] = useState(3);
-  const [filteredProjects, setFilteredProjects] = useState([]);
+  const filteredProjects = caseStudiesData.filter(project => project.categories.includes(activeTab));
 
-  useEffect(() => {
-    const filtered = caseStudiesData.filter(project => project.categories.includes(activeTab));
-    setFilteredProjects(filtered);
+  const selectTab = (tab) => {
+    setActiveTab(tab);
     setVisibleCount(3); // reset when tab changes
-  }, [activeTab]);
+  };
 
   const loadMore = () => {
     setVisibleCount(prev => prev + 3);
@@ -116,7 +115,7 @@ const FeaturedProjects = () => {
               <li
                 key={tab}
                 className={`${styles.tabItem} ${activeTab === tab ? styles.active : ''}`}
-                onClick={() => setActiveTab(tab)}
+                onClick={() => selectTab(tab)}
               >
                 {tab}
                 {activeTab === tab && (

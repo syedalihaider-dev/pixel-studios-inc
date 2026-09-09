@@ -37,7 +37,7 @@ const CostSection = () => {
                 frequently lack in-house production skills to create anything
                 beyond a basic phone video. International or field-based work
                 can also make live-action filming logistically difficult or
-                unsafe, leaving gaps in an organization's ability to show its
+                unsafe, leaving gaps in an organization&apos;s ability to show its
                 work visually, even when that work is exactly what would move a
                 hesitant donor to give.
               </p>

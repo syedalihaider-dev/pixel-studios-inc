@@ -721,7 +721,7 @@ export default function AnimatedExplainerVideosLP() {
                 <span>
                   <h4>William Smith</h4>
                   <h6>President & Founder</h6>
-                  <p>Pixel Studios never disappoints. Whether it's a simple video or complex character animation, they always hit the deadline and make sure everything is on point.</p>
+                  <p>Pixel Studios never disappoints. Whether it&apos;s a simple video or complex character animation, they always hit the deadline and make sure everything is on point.</p>
                 </span>
               </div>
             </div>
@@ -791,7 +791,7 @@ export default function AnimatedExplainerVideosLP() {
                 <span>
                   <h4>Megan Duncan</h4>
                   <h6>Creative Director</h6>
-                  <p>It's been a pleasure working with Pixel Studios. They have been great at taking our vision and turning it into reality. We have very high standards, and they have exceeded them time and time again.</p>
+                  <p>It&apos;s been a pleasure working with Pixel Studios. They have been great at taking our vision and turning it into reality. We have very high standards, and they have exceeded them time and time again.</p>
                 </span>
               </div>
             </div>

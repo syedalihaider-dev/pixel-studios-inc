@@ -109,7 +109,7 @@ const industries = [
     id: 14,
     title: "YouTube Video Production",
     image: "/industry/youtube-video-production.png",
-    text: <>Channel content, multi-episode series, long-form educational and <Link href="/entertainment-animation">entertainment animations</Link> video produced to YouTube's technical specifications and optimized for the engagement patterns of YouTube's search and recommendation algorithm.</>,
+    text: <>Channel content, multi-episode series, long-form educational and <Link href="/entertainment-animation">entertainment animations</Link> video produced to YouTube&apos;s technical specifications and optimized for the engagement patterns of YouTube&apos;s search and recommendation algorithm.</>,
     link: "#"
   },
   {

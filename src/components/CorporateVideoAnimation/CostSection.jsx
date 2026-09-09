@@ -50,7 +50,7 @@ const CostSection = () => {
         >
           <div className={styles.divider}></div>
           <p className={styles.bottomText}>
-            Animated corporate video gives brands full control over the information sequence, the visual emphasis, and the audience's emotional engagement with the content, making it one of the most reliable formats available for business communication at scale.
+            Animated corporate video gives brands full control over the information sequence, the visual emphasis, and the audience&apos;s emotional engagement with the content, making it one of the most reliable formats available for business communication at scale.
           </p>
           <div className={styles.divider}></div>
         </motion.div>

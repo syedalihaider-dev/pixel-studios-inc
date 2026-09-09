@@ -5,7 +5,7 @@ import GlobalGreatVideosSection from '../Common/GreatVideosSection';
 const GreatVideosSection = () => {
   const title = (
     <>
-      Let's Discuss Your <span>Healthcare Animation</span> Project
+      Let&apos;s Discuss Your <span>Healthcare Animation</span> Project
     </>
   );
 
