@@ -350,8 +350,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Professional Video Editing Services for Brands & Businesses | Pixel Studios",
-  description: "Need professional video editing services that make your footage perform? Pixel Studios delivers custom video post production for brands and creators. Get a quote today.",
+  title: "Professional Video Editing Services That Drive Results",
+  description: "Get professional video editing services with color grading, sound design, motion graphics, and post-production for brands and creators.",
 };
 
 export default function VideoEditingServices() {

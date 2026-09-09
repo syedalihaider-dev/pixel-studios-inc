@@ -208,8 +208,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Top-Tier Gaming Trailer Services to Ignite Your Launch | Pixel Studios",
-  description: "Need a game trailer that actually sells the game? Pixel Studios builds cinematic reveal trailers, gameplay trailers, launch trailers, and mobile UA videos. Get a quote.",
+  title: "Cinematic Game Trailer Services That Build Excitement",
+  description: "Get Cinematic game trailer services for reveals, gameplay showcases, launch campaigns, and mobile UA videos designed to motivate players.",
 };
 
 export default function GameTrailerPage() {

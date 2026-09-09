@@ -373,8 +373,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Logo Animation Services That Bring Your Brand to Life | Pixel Studios",
-  description: "Looking for professional logo animation services in the USA? Pixel Studios creates custom 2D and 3D logo animations for every brand. Get your free quote today.",
+  title: "Custom Logo Animation Services That Elevate Your Brand",
+  description: "We provide logo animation services in 2D and 3D, creating polished brand reveals for websites, videos, social media, and presentations.",
 };
 
 export default function LogoAnimation() {

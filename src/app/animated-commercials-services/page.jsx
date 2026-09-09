@@ -525,8 +525,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Animated Commercial Services That Capture Attention & Drive Results | Pixel Studios ",
-  description: "Need animated commercial services that convert, not just impress? Pixel Studios builds strategy-driven animated commercials for brands across the USA. Get a quote today.",
+  title: "Conversion-Focused Animated Commercial Services",
+  description: "High-quality animated commercial services for digital, social, streaming, and broadcast campaigns, from strategy and script to final delivery.",
 };
 
 export default function AnimatedCommercialsPage() {

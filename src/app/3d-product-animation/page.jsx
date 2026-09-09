@@ -408,8 +408,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Conversion-Focused 3D Product Animation Services | Pixel Studios",
-  description: "Need 3D product animation services that drive conversions? Pixel Studios builds custom product animations for eCommerce, industrial, and consumer brands.",
+  title: "Conversion-Focused 3D Product Animation Services",
+  description: "Get high-quality 3D product animation services for eCommerce and industrial brands, showcasing product features, functions, materials, and benefits.",
 };
 
 export default function TitlesAndProductAnimation3D() {

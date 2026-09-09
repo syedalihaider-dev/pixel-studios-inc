@@ -378,8 +378,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Legal Graphics Animation Services for Litigation, Trial & Courtroom | Pixel Studios",
-  description: "Need courtroom animation that holds up to judicial scrutiny? Pixel Studios builds accident reconstruction, medical legal animation, and trial demonstratives. Get a quote.",
+  title: "Courtroom-Ready Legal Graphics Animation Services",
+  description: "Looking for legal graphics animation services for accident reconstruction, medical visuals, courtroom demonstratives, and trial support?",
 };
 
 export default function LegalGraphicsPage() {

@@ -395,8 +395,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Hybrid & Cel Animation Services for Unique and Expressive Visual Storytelling | Pixel Studios",
-  description: "Need cel animation or hybrid 2D/3D production with genuine craft behind it? Pixel Studios delivers traditional cel, digital cel, and hybrid animation for brands and creators who want a distinctive visual identity.",
+  title: "Handcrafted Hybrid and Cel Animation Services",
+  description: "Get high quality hybrid and cel animation services for brands seeking expressive storytelling, handcrafted movement, and visual distinction.",
 };
 
 export default function HybridAnimationPage() {

@@ -350,8 +350,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Medical Animation Services for Healthcare & Life Sciences | Pixel Studios",
-  description: "Need medical animation services that pass clinical review? Pixel Studios builds 3D medical animations for pharma, medical devices, and healthcare education. Get a quote.",
+  title: "Clinically Accurate Medical Animation Services",
+  description: "Get clinally approved medical animation services for pharmaceuticals, medical devices, clinical procedures, patient education, and healthcare marketing.",
 };
 
 export default function MedicalAnimationPage() {

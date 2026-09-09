@@ -355,8 +355,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Corporate Video Animation Services for Businesses | Pixel Studios",
-  description: "Need corporate video animation services that actually drive business results? Pixel Studios builds custom animated corporate videos for brands across the USA. Get a quote.",
+  title: "Results-Driven Corporate Video Animation Services",
+  description: "Our corporate video animation services includes training, internal communications, sales, onboarding, presentations, and brand storytelling.",
 };
 
 export default function CorporateVideoAnimationPage() {

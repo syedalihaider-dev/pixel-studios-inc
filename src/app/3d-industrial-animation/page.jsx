@@ -350,8 +350,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "3D Industrial Animation Services for Modern Industries | Pixel Studios",
-  description: "Need 3D industrial animation services that engineers actually trust? Pixel Studios builds technically accurate animation for manufacturing and industrial brands.",
+  title: "Technically Accurate 3D Industrial Animation Services",
+  description: "We offer 3D industrial animation services for machinery, manufacturing processes, engineering, safety training, and product demonstrations.",
 };
 
 export default function IndustrialAnimation3DPage() {

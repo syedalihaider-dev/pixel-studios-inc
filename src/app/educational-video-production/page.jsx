@@ -505,8 +505,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Educational Video Production Services | Improve Learning and Knowledge Retention | Pixel Studios",
-  description: "Need educational video production services that learners actually finish? Pixel Studios builds e-learning, training, and corporate learning videos that improve outcomes. Get a quote.",
+  title: "Engaging Educational Video Production Services",
+  description: "Get educational video production services for e-learning, training, courses, and corporate education that improve retention.",
 };
 
 export default function EducationalVideoProductionPage() {

@@ -281,8 +281,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "AI Animation Services for Smart, Scalable Storytelling | Pixel Studios",
-  description: "AI animation services that combine the speed of AI with the creative control your brand actually needs. Pixel Studios delivers AI-powered animation without the uncanny valley. Get a quote.",
+  title: "Scalable AI Animation Services for Modern Content Teams",
+  description: "Get AI animation services with creative direction for scalable, brand-consistent product videos, campaigns, and ongoing content.",
 };
 
 export default function AnimationAIPage() {

@@ -415,8 +415,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Whiteboard Animation Services | Pixel Studios Inc.",
-  description: "Professional whiteboard animation services for explainer videos, training, and marketing. Pixel Studios Inc. delivers clear, compelling whiteboard animation videos built to educate and convert.",
+  title: "Engaging Whiteboard Animation Services That Simplify Ideas",
+  description: "We offer whiteboard animation services for explainers, training, education, and marketing, helping brands simplify ideas and inspire action.",
 };
 
 export default function WhiteboardAnimation() {

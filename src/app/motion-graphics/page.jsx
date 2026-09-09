@@ -351,8 +351,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Motion Graphics Services for Brands & Campaigns | Pixel Studios",
-  description: "Need professional motion graphics services in the USA? Pixel Studios delivers brand, product, and campaign motion graphics that convert. Get your free quote today.",
+  title: "High-Impact Motion Graphics Services for Modern Brands",
+  description: "We offer motion graphics services for product videos, campaigns, social media, and presentations that clarify ideas and drive action.",
 };
 
 export default function MotionGraphics() {

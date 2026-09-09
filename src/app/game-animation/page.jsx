@@ -81,9 +81,9 @@ export const whyChooseSectionFeatures = [
   }
 ];
 
-const metadata = {
-  title: "Professional Game Animation Services for Engaging Gameplay | Pixel Studios",
-  description: "Need game animation services that make players feel the weight of every move? Pixel Studios delivers 2D and 3D game animation for Unity, Unreal, and any engine.",
+export const metadata = {
+  title: "Immersive Game Animation Services for 2D and 3D Games",
+  description: "Affoardable game animation services for characters, creatures, combat, cinematics, trailers, and gameplay built for Unity and Unreal Engine.",
 };
 
 const statsData = [

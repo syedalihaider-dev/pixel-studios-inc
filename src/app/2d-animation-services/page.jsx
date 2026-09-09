@@ -236,8 +236,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Creative 2D Animation Services in the USA | Pixel Studios Inc.",
-  description: "Looking for high-quality 2D animations services for your business? Pixel Studios offers comprehensive 2D animation production services at a competitive price.",
+  title: "Professional 2D Animation Services in the USA",
+  description: "Pixel Studios Inc offers 2D animation services for explainers, product videos, campaigns, and branded content, from concept and script to final delivery.",
 };
 
 export default function TwoDAnimation() {
