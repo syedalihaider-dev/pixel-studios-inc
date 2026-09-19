@@ -77,6 +77,9 @@ export default function DeferredThirdParties() {
       });
     };
 
+    // Auto-load chat widget on website load
+    loadZendesk();
+
     window.toggleChat = () => loadZendesk(true);
 
     const loadOnIntent = () => {
