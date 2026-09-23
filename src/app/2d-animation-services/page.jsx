@@ -16,7 +16,7 @@ import Link from 'next/link';
 const industries = [
   {
     id: 1,
-    title: "SaaS & Technology ",
+    title: "SaaS & Technology",
     image: "/industry/01.png",
     text: <>From product explainers and onboarding videos to feature demonstrations and software tutorials, our <Link href="/saas-explainer-videos">2D Saas animation services</Link> help companies simplify complex platforms and improve user adoption. We create content that shortens the learning curve, increases engagement, and supports customer acquisition and retention.</>,
     link: "#"

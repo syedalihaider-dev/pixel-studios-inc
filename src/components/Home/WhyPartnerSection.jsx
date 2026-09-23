@@ -41,7 +41,7 @@ export default function WhyPartnerSection() {
   return (
     <GlobalWhyPartnerSection
       heading="Why Pixel Studios Is the Animation Partner Brands Come Back to Year After Year"
-      description="Don’t worry, Our team 2D & 3D animation services in the USA always begin with a genuine discovery process. We learn about your product, your audience, your brand voice, your market positioning, and precisely what you want a viewer to think, feel, or do after watching the video."
+      // description="Don’t worry, Our team 2D & 3D animation services in the USA always begin with a genuine discovery process. We learn about your product, your audience, your brand voice, your market positioning, and precisely what you want a viewer to think, feel, or do after watching the video."
       cardsData={cardsData}
       variant="default"
     />
