@@ -48,6 +48,8 @@ async function proxyRequest(request) {
     "accept-language",
     "cookie",
     "referer",
+    "content-type",
+    "x-requested-with",
   ];
   for (const header of headersToForward) {
     const val = request.headers.get(header);
@@ -66,14 +68,20 @@ async function proxyRequest(request) {
   let redirectCount = 0;
   const maxRedirects = 3;
 
+  const fetchOptions = {
+    method: request.method,
+    headers: forwardHeaders,
+    redirect: "manual",
+    cache: "no-store",
+  };
+
+  if (request.method !== "GET" && request.method !== "HEAD") {
+    fetchOptions.body = await request.arrayBuffer();
+  }
+
   // Follow internal redirects (like trailing-slash corrections) server-side
   while (redirectCount < maxRedirects) {
-    response = await fetch(currentUrl, {
-      method: request.method,
-      headers: forwardHeaders,
-      redirect: "manual",
-      cache: "no-store",
-    });
+    response = await fetch(currentUrl, fetchOptions);
 
     if (response.status >= 300 && response.status < 400) {
       const location = response.headers.get("location");
@@ -156,5 +164,9 @@ export async function GET(request) {
 }
 
 export async function HEAD(request) {
+  return proxyRequest(request);
+}
+
+export async function POST(request) {
   return proxyRequest(request);
 }
