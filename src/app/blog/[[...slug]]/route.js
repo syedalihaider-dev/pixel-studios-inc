@@ -131,11 +131,21 @@ async function proxyRequest(request) {
   ) {
     let bodyText = await response.text();
 
-    // Match http:// or https:// blog.pixelstudiosinc.com, EXCEPT for static/API paths
-    const wpUrlRegex = /https?:\/\/blog\.pixelstudiosinc\.com(?!(\/wp-(?:content|includes|json|admin|login)|xmlrpc))/g;
     const requestUrl = new URL(request.url);
     const replacement = `${requestUrl.origin}/blog`;
+
+    // Rewrite ALL WordPress URLs to go through the proxy
+    // EXCEPT wp-content and wp-includes (static assets served directly is fine,
+    // but wp-admin/admin-ajax.php and wp-json MUST go through proxy for AJAX/Load More to work)
+    const wpUrlRegex = /https?:\/\/blog\.pixelstudiosinc\.com(?!(\/wp-(?:content|includes)))/g;
     bodyText = bodyText.replace(wpUrlRegex, replacement);
+
+    // Also rewrite any JS variables like ajaxurl that WordPress themes inject
+    // e.g. var ajaxurl = "https://blog.pixelstudiosinc.com/wp-admin/admin-ajax.php";
+    bodyText = bodyText.replace(
+      /(["'])https?:\/\/blog\.pixelstudiosinc\.com(\/wp-(?:admin|json)[^"']*)/g,
+      `$1${requestUrl.origin}/blog$2`
+    );
 
     // Remove trailing slashes from canonical tags
     bodyText = bodyText.replace(/<link[^>]+rel=["']canonical["'][^>]+>/ig, (match) => {
