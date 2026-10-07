@@ -75,6 +75,11 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/our-services",
+        destination: "/",
+        permanent: true,
+      },
 
       // =========================
       // Logo Animation (301)
